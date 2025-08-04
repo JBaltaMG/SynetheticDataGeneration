@@ -225,14 +225,11 @@ def insert_dataframe_from_csv(
     conn.cursor().execute(version_query)  # Ensure the connection is established
     conn.commit()
 
-    version_id = (
-        conn.cursor()
-        .execute("SELECT id FROM dbo.dim_version WHERE version = ?", version_tag)
-        .fetchone()[0]
-    )
+    version_id_query = f"SELECT id FROM dbo.dim_version WHERE version = '{version_tag}'"
+    version_id = conn.cursor().execute(version_id_query).fetchone()[0]
 
     df = load_dataframe_from_csv(csv_path, schemadict[table_name])
-
+    df["id"] = df.index
     df = optimize_datatypes(df)
     df["version_id"] = version_id  # Add version_id column to the DataFrame
     tbl_statement = create_table_statement(df, table_name)
@@ -242,6 +239,12 @@ def insert_dataframe_from_csv(
         conn.cursor().execute(tbl_statement)
         conn.commit()
 
+    max_id_query = f"SELECT MAX(id) FROM {table_name}"
+    max_id = conn.cursor().execute(max_id_query).fetchone()[0]
+    if max_id is None:
+        max_id = 0  # If the table is empty, start from 0
+    print(f"Max ID in {table_name}: {max_id}")
+    df["id"] = max_id + df.index + 1
     insert_dataframe(df, table_name, conn=conn)
 
 
