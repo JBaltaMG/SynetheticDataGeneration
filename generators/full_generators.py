@@ -182,10 +182,11 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
         estimated_financials["EstimatedPayroll"] * df_departments["Proportionality"], -3
     )
 
-
     df_erp_expenses, df_map_expenses = utils.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
-    df_erp_payroll, df_map_payroll   = utils.map_payroll(df_payroll=df_payroll, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
     df_erp_products, df_map_products = utils.map_products(df_products=df_products, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
+
+    df_erp_payroll = payroll.add_taxes(df_payroll=df_payroll)
+    df_map_payroll = pd.read_csv("data/inputdata/line_id_accounts.csv")
 
     print(f"✔ All mapping data generated.")
 
@@ -221,12 +222,11 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
 
     document_metadata_expense = random_generators.generate_document_metadata(n=30, start_index=1000)
     document_metadata_products = random_generators.generate_document_metadata(n=30, start_index=2000)
-    document_metadata_payroll = random_generators.generate_document_metadata(n=30, start_index=3000)
+    #document_metadata_payroll = random_generators.generate_document_metadata(n=30, start_index=3000)
 
     df_erp_expenses_full = erp.create_erp_data(df_expenses=df_erp_expenses, df_expenses_mapping=df_map_expenses, df_document_metadata=document_metadata_expense)
     df_erp_products_full = erp.create_erp_data(df_expenses=df_erp_products, df_expenses_mapping=df_map_products, df_document_metadata=document_metadata_products)
-    df_erp_payroll_full = erp.create_erp_data(df_expenses=df_erp_payroll, df_expenses_mapping=df_map_payroll, df_document_metadata=document_metadata_payroll)
-
+    df_erp_payroll_full = payroll.create_full_payroll(df_payroll=df_erp_payroll, df_mapping=df_map_payroll)
     
     # Full target schema
     full_columns = [
@@ -240,12 +240,10 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     # Reindex all ERP dataframes to align to full schema
     df_expenses_full = df_erp_expenses_full.reindex(columns=full_columns)
     df_products_full = df_erp_products_full.reindex(columns=full_columns)
-    df_payroll_full  = df_erp_payroll_full.reindex(columns=full_columns)
-
 
     # Concatenate all ERP data
-    df_erp_all = pd.concat([df_expenses_full, df_products_full, df_payroll_full], ignore_index=True)
-
+    df_erp_all = pd.concat([df_expenses_full, df_products_full], ignore_index=True)
+    
     print(f"✔ All erp-data generated.")
 
     if save_to_csv:
