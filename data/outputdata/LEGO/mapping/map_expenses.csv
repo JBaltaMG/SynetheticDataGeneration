@@ -1,0 +1,402 @@
+ItemName,GLAccount,GLAccountName,CostCenter
+ABS Plastic Resin (Acrylonitrile Butadiene Styrene),40721,Raw Materials,CC108
+ABS Plastic Resin (Acrylonitrile Butadiene Styrene),40211,Packaging Materials,CC102
+ABS Plastic Resin (Acrylonitrile Butadiene Styrene),40211,Packaging Materials,CC107
+ABS Plastic Resin (Acrylonitrile Butadiene Styrene),42307,Manufacturing Supplies,CC108
+ABS Plastic Resin (Acrylonitrile Butadiene Styrene),45015,Freight-In,CC109
+ABS Plastic Resin (Acrylonitrile Butadiene Styrene),40721,Raw Materials,CC104
+High-Impact Polystyrene (HIPS),45015,Freight-In,CC103
+High-Impact Polystyrene (HIPS),40211,Packaging Materials,CC103
+High-Impact Polystyrene (HIPS),40721,Raw Materials,CC108
+High-Impact Polystyrene (HIPS),40211,Packaging Materials,CC101
+High-Impact Polystyrene (HIPS),40211,Packaging Materials,CC102
+High-Impact Polystyrene (HIPS),40721,Raw Materials,CC103
+Polyethylene Packaging Film,45015,Freight-In,CC103
+Polyethylene Packaging Film,40211,Packaging Materials,CC109
+Polyethylene Packaging Film,45015,Freight-In,CC105
+Injection Molding Machinery Spare Parts,45015,Freight-In,CC102
+Injection Molding Machinery Spare Parts,45015,Freight-In,CC103
+Injection Molding Machinery Spare Parts,42307,Manufacturing Supplies,CC107
+Automated Sorting System Components,40211,Packaging Materials,CC102
+Automated Sorting System Components,40721,Raw Materials,CC108
+Automated Sorting System Components,42307,Manufacturing Supplies,CC103
+Automated Sorting System Components,40721,Raw Materials,CC108
+Automated Sorting System Components,42307,Manufacturing Supplies,CC104
+Automated Sorting System Components,42307,Manufacturing Supplies,CC107
+Silicone Rubber for Minifigure Accessories,40721,Raw Materials,CC103
+Silicone Rubber for Minifigure Accessories,40211,Packaging Materials,CC108
+Custom Steel Molds for Bricks,42307,Manufacturing Supplies,CC109
+Custom Steel Molds for Bricks,45015,Freight-In,CC109
+Boxboard Packaging Cartons,40211,Packaging Materials,CC107
+Boxboard Packaging Cartons,42307,Manufacturing Supplies,CC108
+Primary Cardboard Shipping Boxes,42307,Manufacturing Supplies,CC105
+Primary Cardboard Shipping Boxes,40721,Raw Materials,CC101
+Primary Cardboard Shipping Boxes,40721,Raw Materials,CC107
+Primary Cardboard Shipping Boxes,40721,Raw Materials,CC104
+Primary Cardboard Shipping Boxes,40211,Packaging Materials,CC107
+Primary Cardboard Shipping Boxes,42307,Manufacturing Supplies,CC105
+Printing Inks for Packaging,40211,Packaging Materials,CC100
+Printing Inks for Packaging,45015,Freight-In,CC104
+Printing Inks for Packaging,40211,Packaging Materials,CC108
+Printing Inks for Packaging,40721,Raw Materials,CC109
+Thermal Transfer Barcode Labels,40211,Packaging Materials,CC109
+Thermal Transfer Barcode Labels,40211,Packaging Materials,CC108
+Thermal Transfer Barcode Labels,40211,Packaging Materials,CC109
+Warehouse Conveyor Belts,45015,Freight-In,CC105
+Warehouse Conveyor Belts,45015,Freight-In,CC109
+Warehouse Conveyor Belts,40721,Raw Materials,CC100
+Warehouse Conveyor Belts,40211,Packaging Materials,CC102
+Warehouse Conveyor Belts,42307,Manufacturing Supplies,CC100
+Warehouse Conveyor Belts,40211,Packaging Materials,CC103
+Shrink Wrap Film,40721,Raw Materials,CC101
+Shrink Wrap Film,40721,Raw Materials,CC104
+Shrink Wrap Film,40721,Raw Materials,CC103
+Shrink Wrap Film,42307,Manufacturing Supplies,CC100
+Robotic Arm Grippers & End Effectors,40211,Packaging Materials,CC106
+Robotic Arm Grippers & End Effectors,45015,Freight-In,CC107
+Robotic Arm Grippers & End Effectors,42307,Manufacturing Supplies,CC107
+Electric Motors for Assembly Lines,45015,Freight-In,CC109
+Electric Motors for Assembly Lines,40721,Raw Materials,CC101
+Electric Motors for Assembly Lines,42307,Manufacturing Supplies,CC108
+Electric Motors for Assembly Lines,40211,Packaging Materials,CC108
+Steel Pallets and Racking,40721,Raw Materials,CC107
+Steel Pallets and Racking,40721,Raw Materials,CC102
+Steel Pallets and Racking,40211,Packaging Materials,CC109
+Steel Pallets and Racking,45015,Freight-In,CC100
+Automated Guided Vehicle (AGV) Batteries,42307,Manufacturing Supplies,CC109
+Automated Guided Vehicle (AGV) Batteries,45015,Freight-In,CC103
+Automated Guided Vehicle (AGV) Batteries,40721,Raw Materials,CC105
+Automated Guided Vehicle (AGV) Batteries,40211,Packaging Materials,CC109
+Automated Guided Vehicle (AGV) Batteries,42307,Manufacturing Supplies,CC108
+Automated Guided Vehicle (AGV) Batteries,40721,Raw Materials,CC105
+RFID Tags for Inventory Tracking,40721,Raw Materials,CC109
+RFID Tags for Inventory Tracking,45015,Freight-In,CC105
+RFID Tags for Inventory Tracking,40721,Raw Materials,CC101
+RFID Tags for Inventory Tracking,45015,Freight-In,CC107
+RFID Tags for Inventory Tracking,40721,Raw Materials,CC100
+Industrial Cleaning Chemicals,42307,Manufacturing Supplies,CC103
+Industrial Cleaning Chemicals,42307,Manufacturing Supplies,CC108
+Industrial Cleaning Chemicals,40211,Packaging Materials,CC104
+Industrial Cleaning Chemicals,40211,Packaging Materials,CC101
+Industrial Cleaning Chemicals,42307,Manufacturing Supplies,CC102
+Industrial Cleaning Chemicals,45015,Freight-In,CC107
+Mold Release Agents,40211,Packaging Materials,CC109
+Mold Release Agents,45015,Freight-In,CC107
+Mold Release Agents,40211,Packaging Materials,CC101
+Mold Release Agents,40211,Packaging Materials,CC108
+Mold Release Agents,40211,Packaging Materials,CC109
+Safety Workwear (PPE),42307,Manufacturing Supplies,CC100
+Safety Workwear (PPE),40721,Raw Materials,CC105
+Sensor Modules (for Automation),45015,Freight-In,CC108
+Sensor Modules (for Automation),45015,Freight-In,CC105
+Sensor Modules (for Automation),42307,Manufacturing Supplies,CC104
+Sensor Modules (for Automation),40721,Raw Materials,CC102
+Industrial Adhesives & Solvents,42307,Manufacturing Supplies,CC102
+Industrial Adhesives & Solvents,42307,Manufacturing Supplies,CC102
+Compressed Air Filters and Hoses,40721,Raw Materials,CC104
+Compressed Air Filters and Hoses,42307,Manufacturing Supplies,CC103
+Compressed Air Filters and Hoses,40211,Packaging Materials,CC107
+Compressed Air Filters and Hoses,42307,Manufacturing Supplies,CC102
+Machine Tooling Inserts,45015,Freight-In,CC107
+Machine Tooling Inserts,40721,Raw Materials,CC108
+Machine Tooling Inserts,40211,Packaging Materials,CC101
+Machine Tooling Inserts,45015,Freight-In,CC100
+Fire Suppression System Parts,40211,Packaging Materials,CC107
+Fire Suppression System Parts,45015,Freight-In,CC105
+Fire Suppression System Parts,40211,Packaging Materials,CC105
+Fire Suppression System Parts,40211,Packaging Materials,CC101
+Fire Suppression System Parts,40211,Packaging Materials,CC108
+Fire Suppression System Parts,45015,Freight-In,CC108
+Circuit Boards for Machine Controls,45015,Freight-In,CC109
+Circuit Boards for Machine Controls,40721,Raw Materials,CC104
+Circuit Boards for Machine Controls,40721,Raw Materials,CC109
+Replacement Conveyor Rollers,42307,Manufacturing Supplies,CC100
+Replacement Conveyor Rollers,45015,Freight-In,CC102
+Replacement Conveyor Rollers,42307,Manufacturing Supplies,CC101
+Replacement Conveyor Rollers,40211,Packaging Materials,CC102
+HVAC Filters and Components,40721,Raw Materials,CC100
+HVAC Filters and Components,45015,Freight-In,CC105
+HVAC Filters and Components,42307,Manufacturing Supplies,CC108
+HVAC Filters and Components,40721,Raw Materials,CC105
+HVAC Filters and Components,42307,Manufacturing Supplies,CC102
+Forklift Spare Parts,45015,Freight-In,CC107
+Forklift Spare Parts,40721,Raw Materials,CC100
+Forklift Spare Parts,42307,Manufacturing Supplies,CC102
+Safety Signage and Floor Markings,40721,Raw Materials,CC101
+Safety Signage and Floor Markings,40211,Packaging Materials,CC104
+Safety Signage and Floor Markings,40721,Raw Materials,CC102
+Safety Signage and Floor Markings,40721,Raw Materials,CC104
+Safety Signage and Floor Markings,42307,Manufacturing Supplies,CC100
+Safety Signage and Floor Markings,42307,Manufacturing Supplies,CC101
+Waste Management Bins & Bags,42307,Manufacturing Supplies,CC105
+Waste Management Bins & Bags,42307,Manufacturing Supplies,CC105
+Waste Management Bins & Bags,40721,Raw Materials,CC105
+Waste Management Bins & Bags,45015,Freight-In,CC104
+Waste Management Bins & Bags,40721,Raw Materials,CC103
+Waste Management Bins & Bags,42307,Manufacturing Supplies,CC102
+Hydraulic Fluid for Machines,45015,Freight-In,CC109
+Hydraulic Fluid for Machines,42307,Manufacturing Supplies,CC104
+Hydraulic Fluid for Machines,40211,Packaging Materials,CC105
+Hydraulic Fluid for Machines,40211,Packaging Materials,CC100
+Hydraulic Fluid for Machines,40721,Raw Materials,CC107
+First Aid Kit Supplies,40721,Raw Materials,CC105
+First Aid Kit Supplies,40721,Raw Materials,CC103
+First Aid Kit Supplies,45015,Freight-In,CC102
+Industrial Batteries (General),45015,Freight-In,CC107
+Industrial Batteries (General),40721,Raw Materials,CC105
+Industrial Batteries (General),42307,Manufacturing Supplies,CC107
+Industrial Batteries (General),42307,Manufacturing Supplies,CC109
+Industrial Batteries (General),45015,Freight-In,CC106
+Industrial Batteries (General),42307,Manufacturing Supplies,CC109
+Employee Uniforms,40721,Raw Materials,CC100
+Employee Uniforms,45015,Freight-In,CC108
+Employee Uniforms,45015,Freight-In,CC108
+Employee Uniforms,42307,Manufacturing Supplies,CC105
+Employee Uniforms,40721,Raw Materials,CC104
+"Hand Tools (Screwdrivers, Wrenches, etc.)",40721,Raw Materials,CC101
+"Hand Tools (Screwdrivers, Wrenches, etc.)",40211,Packaging Materials,CC106
+Lockout/Tagout Devices,40721,Raw Materials,CC103
+Lockout/Tagout Devices,40211,Packaging Materials,CC108
+Lockout/Tagout Devices,40211,Packaging Materials,CC107
+Lockout/Tagout Devices,40211,Packaging Materials,CC101
+Cleaning Cloths and Paper Towels,42307,Manufacturing Supplies,CC100
+Cleaning Cloths and Paper Towels,40721,Raw Materials,CC106
+Cleaning Cloths and Paper Towels,42307,Manufacturing Supplies,CC107
+Cleaning Cloths and Paper Towels,40721,Raw Materials,CC108
+Cleaning Cloths and Paper Towels,40211,Packaging Materials,CC106
+Janitorial Paper Products,40721,Raw Materials,CC105
+Janitorial Paper Products,40721,Raw Materials,CC103
+Janitorial Paper Products,42307,Manufacturing Supplies,CC104
+Janitorial Paper Products,42307,Manufacturing Supplies,CC107
+Office Printer Toner Cartridges,40211,Packaging Materials,CC100
+Office Printer Toner Cartridges,40211,Packaging Materials,CC106
+Copy Paper,40211,Packaging Materials,CC108
+Copy Paper,42307,Manufacturing Supplies,CC106
+Copy Paper,40211,Packaging Materials,CC105
+Copy Paper,45015,Freight-In,CC104
+Copy Paper,42307,Manufacturing Supplies,CC106
+General Office Furniture,45015,Freight-In,CC100
+General Office Furniture,45015,Freight-In,CC106
+"Standard Office Stationery (Pens, Notebooks)",42307,Manufacturing Supplies,CC106
+"Standard Office Stationery (Pens, Notebooks)",42307,Manufacturing Supplies,CC109
+"Standard Office Stationery (Pens, Notebooks)",42307,Manufacturing Supplies,CC108
+"Standard Office Stationery (Pens, Notebooks)",45015,Freight-In,CC105
+"Standard Office Stationery (Pens, Notebooks)",40721,Raw Materials,CC109
+"Standard Office Stationery (Pens, Notebooks)",42307,Manufacturing Supplies,CC100
+Coffee and Breakroom Supplies,42307,Manufacturing Supplies,CC108
+Coffee and Breakroom Supplies,42307,Manufacturing Supplies,CC108
+Coffee and Breakroom Supplies,40211,Packaging Materials,CC106
+Coffee and Breakroom Supplies,40211,Packaging Materials,CC104
+Coffee and Breakroom Supplies,40721,Raw Materials,CC106
+Coffee and Breakroom Supplies,40721,Raw Materials,CC105
+Water Dispensers and Bottled Water,40211,Packaging Materials,CC102
+Water Dispensers and Bottled Water,45015,Freight-In,CC106
+Office Waste Bins,45015,Freight-In,CC107
+Office Waste Bins,40211,Packaging Materials,CC105
+Desk Organizers,42307,Manufacturing Supplies,CC101
+Desk Organizers,42307,Manufacturing Supplies,CC107
+Desk Organizers,40721,Raw Materials,CC109
+Desk Organizers,40211,Packaging Materials,CC108
+Desk Organizers,40721,Raw Materials,CC101
+Desk Organizers,42307,Manufacturing Supplies,CC102
+Calendar and Wall Planners,45015,Freight-In,CC101
+Calendar and Wall Planners,40211,Packaging Materials,CC104
+Batteries (AA/AAA),40211,Packaging Materials,CC103
+Batteries (AA/AAA),42307,Manufacturing Supplies,CC109
+Batteries (AA/AAA),40211,Packaging Materials,CC101
+Batteries (AA/AAA),45015,Freight-In,CC104
+Batteries (AA/AAA),45015,Freight-In,CC109
+Strategic IT Infrastructure Implementation,56629,Software Subscriptions,CC101
+Strategic IT Infrastructure Implementation,51645,Utilities Expense,CC103
+Manufacturing Equipment Maintenance Contract,51645,Utilities Expense,CC107
+Manufacturing Equipment Maintenance Contract,51645,Utilities Expense,CC102
+Manufacturing Equipment Maintenance Contract,55399,Research and Development,CC106
+Manufacturing Equipment Maintenance Contract,51645,Utilities Expense,CC103
+Manufacturing Equipment Maintenance Contract,56629,Software Subscriptions,CC104
+Manufacturing Equipment Maintenance Contract,51645,Utilities Expense,CC100
+International Marketing Campaign Management,56629,Software Subscriptions,CC109
+International Marketing Campaign Management,56629,Software Subscriptions,CC102
+International Marketing Campaign Management,51493,Office Supplies,CC105
+Retail Store Fit-Out Services,55399,Research and Development,CC103
+Retail Store Fit-Out Services,59210,Legal Fees,CC105
+Retail Store Fit-Out Services,56616,Marketing Expenses,CC108
+Retail Store Fit-Out Services,56616,Marketing Expenses,CC109
+Retail Store Fit-Out Services,55399,Research and Development,CC106
+SAP Enterprise License,59210,Legal Fees,CC103
+SAP Enterprise License,56616,Marketing Expenses,CC105
+SAP Enterprise License,51493,Office Supplies,CC109
+SAP Enterprise License,51493,Office Supplies,CC101
+SAP Enterprise License,56616,Marketing Expenses,CC100
+Product Safety Certification and Testing,56616,Marketing Expenses,CC101
+Product Safety Certification and Testing,59210,Legal Fees,CC105
+Product Safety Certification and Testing,56629,Software Subscriptions,CC103
+Product Safety Certification and Testing,51645,Utilities Expense,CC101
+Product Safety Certification and Testing,51493,Office Supplies,CC108
+Product Safety Certification and Testing,58510,Travel Expenses,CC102
+Large-Scale Event Sponsorship Fees,56616,Marketing Expenses,CC104
+Large-Scale Event Sponsorship Fees,59210,Legal Fees,CC103
+Large-Scale Event Sponsorship Fees,55399,Research and Development,CC107
+Large-Scale Event Sponsorship Fees,55399,Research and Development,CC101
+Global Legal Retainer,56629,Software Subscriptions,CC100
+Global Legal Retainer,56616,Marketing Expenses,CC100
+Brand Licensing Agreements,55399,Research and Development,CC106
+Brand Licensing Agreements,59210,Legal Fees,CC105
+Brand Licensing Agreements,56629,Software Subscriptions,CC105
+Brand Licensing Agreements,56616,Marketing Expenses,CC108
+Brand Licensing Agreements,51493,Office Supplies,CC104
+Brand Licensing Agreements,56629,Software Subscriptions,CC109
+Packaging Design and Procurement,51493,Office Supplies,CC101
+Packaging Design and Procurement,51645,Utilities Expense,CC109
+Packaging Design and Procurement,58510,Travel Expenses,CC100
+Packaging Design and Procurement,51645,Utilities Expense,CC109
+Customs Brokerage Services,55399,Research and Development,CC106
+Customs Brokerage Services,58510,Travel Expenses,CC109
+Customs Brokerage Services,58510,Travel Expenses,CC102
+Market Research and Consumer Insights,55399,Research and Development,CC104
+Market Research and Consumer Insights,56616,Marketing Expenses,CC107
+Market Research and Consumer Insights,56629,Software Subscriptions,CC104
+Market Research and Consumer Insights,56629,Software Subscriptions,CC101
+Market Research and Consumer Insights,56616,Marketing Expenses,CC105
+Market Research and Consumer Insights,56616,Marketing Expenses,CC109
+Corporate Insurance Brokerage,51493,Office Supplies,CC103
+Corporate Insurance Brokerage,56616,Marketing Expenses,CC101
+Corporate Insurance Brokerage,55399,Research and Development,CC100
+3PL (Third-Party Logistics) Services,51645,Utilities Expense,CC105
+3PL (Third-Party Logistics) Services,55399,Research and Development,CC107
+3PL (Third-Party Logistics) Services,51493,Office Supplies,CC102
+3PL (Third-Party Logistics) Services,51493,Office Supplies,CC104
+3PL (Third-Party Logistics) Services,56629,Software Subscriptions,CC104
+Digital Transformation Consulting,55399,Research and Development,CC106
+Digital Transformation Consulting,59210,Legal Fees,CC108
+Recruitment Process Outsourcing (RPO),51645,Utilities Expense,CC106
+Recruitment Process Outsourcing (RPO),55399,Research and Development,CC105
+Recruitment Process Outsourcing (RPO),51645,Utilities Expense,CC105
+Recruitment Process Outsourcing (RPO),58510,Travel Expenses,CC104
+Facilities Management Contract,56629,Software Subscriptions,CC101
+Facilities Management Contract,59210,Legal Fees,CC101
+Facilities Management Contract,56616,Marketing Expenses,CC106
+Environmental Compliance Audits,59210,Legal Fees,CC100
+Environmental Compliance Audits,51493,Office Supplies,CC101
+Global Tax Advisory Services,51645,Utilities Expense,CC100
+Global Tax Advisory Services,59210,Legal Fees,CC107
+Global Tax Advisory Services,56616,Marketing Expenses,CC107
+Global Tax Advisory Services,58510,Travel Expenses,CC108
+Employee Relocation Services,58510,Travel Expenses,CC102
+Employee Relocation Services,56629,Software Subscriptions,CC106
+Employee Relocation Services,56616,Marketing Expenses,CC108
+Employee Relocation Services,55399,Research and Development,CC108
+Sustainability Reporting Consulting,51645,Utilities Expense,CC101
+Sustainability Reporting Consulting,58510,Travel Expenses,CC107
+Regional Payroll Processing Services,55399,Research and Development,CC105
+Regional Payroll Processing Services,56629,Software Subscriptions,CC102
+Regional Payroll Processing Services,59210,Legal Fees,CC106
+Custom E-commerce Platform Support,55399,Research and Development,CC100
+Custom E-commerce Platform Support,58510,Travel Expenses,CC104
+Custom E-commerce Platform Support,58510,Travel Expenses,CC101
+Custom E-commerce Platform Support,58510,Travel Expenses,CC105
+Custom E-commerce Platform Support,58510,Travel Expenses,CC109
+Custom E-commerce Platform Support,59210,Legal Fees,CC105
+HR Benefits Administration,51645,Utilities Expense,CC101
+HR Benefits Administration,55399,Research and Development,CC108
+HR Benefits Administration,56616,Marketing Expenses,CC102
+HR Benefits Administration,56616,Marketing Expenses,CC109
+HR Benefits Administration,51493,Office Supplies,CC106
+HR Benefits Administration,58510,Travel Expenses,CC101
+IT Helpdesk and Support Contract,58510,Travel Expenses,CC103
+IT Helpdesk and Support Contract,58510,Travel Expenses,CC109
+IT Helpdesk and Support Contract,56616,Marketing Expenses,CC107
+Janitorial Services,55399,Research and Development,CC108
+Janitorial Services,59210,Legal Fees,CC108
+Janitorial Services,56629,Software Subscriptions,CC105
+Janitorial Services,56616,Marketing Expenses,CC107
+Janitorial Services,56616,Marketing Expenses,CC103
+Translation and Localization Services,59210,Legal Fees,CC102
+Translation and Localization Services,58510,Travel Expenses,CC102
+Translation and Localization Services,56616,Marketing Expenses,CC104
+Translation and Localization Services,56616,Marketing Expenses,CC107
+Custom CRM Support and Maintenance,51493,Office Supplies,CC104
+Custom CRM Support and Maintenance,51645,Utilities Expense,CC102
+Custom CRM Support and Maintenance,55399,Research and Development,CC106
+Custom CRM Support and Maintenance,51645,Utilities Expense,CC105
+Travel Management Services,51493,Office Supplies,CC108
+Travel Management Services,51493,Office Supplies,CC106
+Travel Management Services,59210,Legal Fees,CC106
+Digital Content Production Services,51645,Utilities Expense,CC107
+Digital Content Production Services,55399,Research and Development,CC106
+Digital Content Production Services,56629,Software Subscriptions,CC105
+Corporate Training Programs,51645,Utilities Expense,CC106
+Corporate Training Programs,51493,Office Supplies,CC109
+Recruitment Agency Fees,51645,Utilities Expense,CC108
+Recruitment Agency Fees,56616,Marketing Expenses,CC101
+Recruitment Agency Fees,56629,Software Subscriptions,CC100
+Recruitment Agency Fees,56616,Marketing Expenses,CC107
+Recruitment Agency Fees,59210,Legal Fees,CC105
+Health and Safety Audits,51493,Office Supplies,CC103
+Health and Safety Audits,56616,Marketing Expenses,CC107
+Health and Safety Audits,51493,Office Supplies,CC108
+Health and Safety Audits,59210,Legal Fees,CC107
+Office Security Services,56616,Marketing Expenses,CC103
+Office Security Services,51493,Office Supplies,CC105
+Office Security Services,55399,Research and Development,CC105
+Office Security Services,55399,Research and Development,CC105
+Office Security Services,58510,Travel Expenses,CC105
+Office Security Services,56629,Software Subscriptions,CC103
+Waste Management Contract,58510,Travel Expenses,CC108
+Waste Management Contract,51493,Office Supplies,CC108
+Waste Management Contract,56629,Software Subscriptions,CC100
+Waste Management Contract,51493,Office Supplies,CC108
+Document Shredding Services,56616,Marketing Expenses,CC101
+Document Shredding Services,55399,Research and Development,CC106
+Document Shredding Services,59210,Legal Fees,CC106
+Document Shredding Services,56629,Software Subscriptions,CC105
+Document Shredding Services,59210,Legal Fees,CC105
+Accounting and Audit Services,51493,Office Supplies,CC100
+Accounting and Audit Services,56629,Software Subscriptions,CC107
+Legal Document Review Fees,56616,Marketing Expenses,CC107
+Legal Document Review Fees,55399,Research and Development,CC107
+Microsoft 365 Enterprise License,51493,Office Supplies,CC101
+Microsoft 365 Enterprise License,51493,Office Supplies,CC108
+Microsoft 365 Enterprise License,55399,Research and Development,CC100
+Telecommunications Services,55399,Research and Development,CC105
+Telecommunications Services,55399,Research and Development,CC102
+Telecommunications Services,56616,Marketing Expenses,CC101
+Telecommunications Services,59210,Legal Fees,CC102
+Adobe Creative Cloud Subscription,51645,Utilities Expense,CC108
+Adobe Creative Cloud Subscription,59210,Legal Fees,CC109
+Adobe Creative Cloud Subscription,55399,Research and Development,CC104
+Adobe Creative Cloud Subscription,59210,Legal Fees,CC104
+Video Conferencing Platform Subscription (Zoom),51493,Office Supplies,CC100
+Video Conferencing Platform Subscription (Zoom),51645,Utilities Expense,CC102
+Video Conferencing Platform Subscription (Zoom),56629,Software Subscriptions,CC101
+Video Conferencing Platform Subscription (Zoom),51493,Office Supplies,CC102
+Power BI Pro License,58510,Travel Expenses,CC101
+Power BI Pro License,51645,Utilities Expense,CC101
+Power BI Pro License,51493,Office Supplies,CC101
+Power BI Pro License,59210,Legal Fees,CC107
+Power BI Pro License,59210,Legal Fees,CC103
+Power BI Pro License,56616,Marketing Expenses,CC109
+Antivirus Software Subscription,58510,Travel Expenses,CC103
+Antivirus Software Subscription,56616,Marketing Expenses,CC104
+Antivirus Software Subscription,51493,Office Supplies,CC108
+Antivirus Software Subscription,59210,Legal Fees,CC103
+Domain Registration and Hosting,58510,Travel Expenses,CC108
+Domain Registration and Hosting,55399,Research and Development,CC106
+Cloud File Storage Plan (OneDrive/Dropbox),55399,Research and Development,CC102
+Cloud File Storage Plan (OneDrive/Dropbox),59210,Legal Fees,CC100
+Cloud File Storage Plan (OneDrive/Dropbox),51493,Office Supplies,CC101
+Cloud File Storage Plan (OneDrive/Dropbox),51645,Utilities Expense,CC103
+Expense Management Software License,58510,Travel Expenses,CC101
+Expense Management Software License,58510,Travel Expenses,CC103
+Time Tracking Software Subscription,59210,Legal Fees,CC104
+Time Tracking Software Subscription,58510,Travel Expenses,CC106
+Time Tracking Software Subscription,55399,Research and Development,CC106
+E-signature Platform Subscription (DocuSign),51645,Utilities Expense,CC104
+E-signature Platform Subscription (DocuSign),59210,Legal Fees,CC106
+E-signature Platform Subscription (DocuSign),51493,Office Supplies,CC103
+E-signature Platform Subscription (DocuSign),55399,Research and Development,CC102
+E-signature Platform Subscription (DocuSign),58510,Travel Expenses,CC102
+Online Survey Tool Subscription,59210,Legal Fees,CC109
+Online Survey Tool Subscription,56616,Marketing Expenses,CC101
+Online Survey Tool Subscription,51645,Utilities Expense,CC107
+Online Survey Tool Subscription,59210,Legal Fees,CC109
+Online Survey Tool Subscription,51645,Utilities Expense,CC101

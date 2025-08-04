@@ -1,0 +1,112 @@
+import pandas as pd
+import numpy as np
+import random
+import generators.random_generators as random_generators
+import utils.utils as utils
+
+utils.set_global_seed(42)
+
+def create_pay_roll(df_roles: pd.DataFrame, df_employees: pd.DataFrame, mean_pay: float = 42000, if_long: bool = True) -> pd.DataFrame:
+    df_role = assign_monthly_pay(df_roles, mean_pay)
+    df = pd.concat([df_role, df_employees], axis=1)    
+    df["Employee_ID"] = random_generators.generate_employee_ids(len(df))
+    
+    if if_long:
+        df = expand_employees_across_months(df)
+        df = apply_raise_and_fire(df)
+    else:
+        df = df.copy()
+        
+    return df
+
+def assign_monthly_pay(df_roles: pd.DataFrame, mean_pay: float = 42000) -> pd.DataFrame:
+    pay = utils.simulate_log_normal_pay_distribution(len(df_roles), scale=mean_pay)
+    df_roles["MonthlyPay"] = pay
+    return df_roles
+
+def expand_employees_across_months(df_employees: pd.DataFrame, year: int = 2025) -> pd.DataFrame:
+    months = random_generators.generate_month_list(year)
+    rows = []
+
+    for _, row in df_employees.iterrows():
+        for m in months:
+            rows.append({
+                "Employee_ID": row["Employee_ID"],
+                "RoleName": row["RoleName"],
+                "FirstName": row["FirstName"],
+                "LastName": row["LastName"],
+                "Month": m,
+                "MonthlyPay": row["MonthlyPay"]
+            })
+
+    return pd.DataFrame(rows)
+
+def apply_raise_and_fire(df: pd.DataFrame, raise_pct: float = 0.05, fire_pct: float = 0.03) -> pd.DataFrame:
+    employee_ids = df['Employee_ID'].unique()
+
+    raise_ids = random.sample(list(employee_ids), int(len(employee_ids) * raise_pct))
+    remaining = list(set(employee_ids) - set(raise_ids))
+    fire_ids = random.sample(remaining, int(len(employee_ids) * fire_pct))
+
+    for eid in raise_ids:
+        start = random.choice(df["Month"].unique())
+        df.loc[(df.Employee_ID == eid) & (df.Month >= start), "MonthlyPay"] *= 1.05
+
+    for eid in fire_ids:
+        start = random.choice(df["Month"].unique())
+        df.loc[(df.Employee_ID == eid) & (df.Month >= start), "MonthlyPay"] = 0
+
+    return df
+
+
+def Add_taxes(df: pd.DataFrame) -> pd.DataFrame:
+    # Tax configuration
+    tax_config = {
+        "A-skat": {"code": "0015", "type": "percent", "rate": 0.30, "source": "0013"},
+        "AM-bidrag": {"code": "0016", "type": "percent", "rate": 0.08, "source": "0013"},
+        "Fri bil": {"code": "0019", "type": "percent", "rate": 0.06, "source": "0013"},
+        "Fri telefon": {"code": "0020", "type": "fixed", "value": 275},
+        "Sundhedsforsikring": {"code": "0026", "type": "fixed", "value": 44},
+        "ATP-bidrag": {"code": "0046", "type": "fixed", "value": 297},
+        "Pension medarbejder": {"code": "0147", "type": "percent", "rate": 0.03, "source": "0013"},
+        "Pension arbejdsgiver": {"code": "0148", "type": "percent", "rate": 0.09, "source": "0013"},
+        "Feriepenge": {"code": "0202", "type": "percent", "rate": 0.007, "source": "0013"},
+        "A-indkomst uden bidrag": {"code": "0014", "type": "manual"},
+        "B-indkomst med bidrag": {"code": "0036", "type": "manual"},
+        "Kørselsgodtgørelse": {"code": "0048", "type": "manual"},
+        "Fradrag": {"code": "0069", "type": "manual"},
+    }
+
+    # Initialize all codes with 0
+    for entry in tax_config.values():
+        df[entry["code"]] = 0
+
+    # Apply percent and fixed taxes
+    for name, entry in tax_config.items():
+        if entry["type"] == "percent":
+            df[entry["code"]] = df[entry["source"]] * entry["rate"]
+        elif entry["type"] == "fixed":
+            df[entry["code"]] = entry["value"]
+
+    # Randomized manual entries
+    unique_ids = df['Employee_ID'].unique().tolist()
+    months = df["Month"].unique().tolist()
+
+    # Fradrag (e.g. personfradrag) to 2 random people/months
+    for id_, month_ in zip(random.sample(unique_ids, 2), random.sample(months, 2)):
+        condition = (df['Employee_ID'] == id_) & (df['Month'] == month_)
+        df.loc[condition, tax_config["Fradrag"]["code"]] = 8000
+
+    # A-indkomst uden bidrag to 1 random employee
+    for id_ in random.sample(unique_ids, 1):
+        df.loc[df['Employee_ID'] == id_, tax_config["A-indkomst uden bidrag"]["code"]] = 2000
+
+    # Kørselsgodtgørelse to 60 random employees
+    for id_ in random.sample(unique_ids, 60):
+        df.loc[df['Employee_ID'] == id_, tax_config["Kørselsgodtgørelse"]["code"]] = np.random.randint(100, 400)
+
+    # B-indkomst med bidrag to 5 random employees
+    for id_ in random.sample(unique_ids, 5):
+        df.loc[df['Employee_ID'] == id_, tax_config["B-indkomst med bidrag"]["code"]] = 5201
+
+    return df

@@ -1,0 +1,11 @@
+Customer_ID,CustomerName,CustomerSegment,Proportionality
+10,Walmart,Retail,20.0
+11,Amazon,Retail,15.0
+12,"Toys ""R"" Us",Retail,10.0
+13,Target,Retail,10.0
+14,Carrefour,Retail,8.0
+15,Smithsonian Institution,Non-profit,5.0
+16,The LEGO Foundation,Non-profit,7.000000000000001
+17,Hamleys,Retail,5.0
+18,John Lewis Partnership,Retail,10.0
+19,Educational Insights,Wholesale,10.0

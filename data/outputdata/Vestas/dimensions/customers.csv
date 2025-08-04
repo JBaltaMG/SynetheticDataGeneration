@@ -1,0 +1,11 @@
+Customer_ID,CustomerName,CustomerSegment,Proportionality
+10,Siemens Gamesa,Enterprise,20.000000000000004
+11,General Electric,Enterprise,15.000000000000002
+12,Nordex SE,Enterprise,12.000000000000002
+13,Enel Green Power,Government,10.000000000000002
+14,Ørsted,Enterprise,8.000000000000002
+15,Iberdrola,Enterprise,7.000000000000002
+16,Acciona Energia,Enterprise,6.000000000000001
+17,E.ON,Enterprise,5.000000000000001
+18,Pattern Energy,SME,9.000000000000002
+19,NextEra Energy,Enterprise,8.000000000000002

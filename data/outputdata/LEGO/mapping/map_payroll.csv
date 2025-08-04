@@ -1,0 +1,207 @@
+ItemName,GLAccount,GLAccountName,Department,CostCenter
+131,92767,Pension Contributions,IT Services,CC108
+131,97086,Salaries,Customer Support,CC106
+131,92767,Pension Contributions,Marketing,CC101
+170,92767,Pension Contributions,Supply Chain Management,CC107
+170,97086,Salaries,Supply Chain Management,CC107
+170,97086,Salaries,Production,CC103
+176,92767,Pension Contributions,Marketing,CC101
+176,97086,Salaries,Sales,CC102
+176,92767,Pension Contributions,Supply Chain Management,CC107
+176,92767,Pension Contributions,Finance,CC104
+176,92767,Pension Contributions,Human Resources,CC105
+176,97086,Salaries,Production,CC103
+187,92767,Pension Contributions,Customer Support,CC106
+187,97086,Salaries,Customer Support,CC106
+187,97086,Salaries,Supply Chain Management,CC107
+187,95842,Health Insurance,Supply Chain Management,CC107
+196,97086,Salaries,Customer Support,CC106
+196,92767,Pension Contributions,Production,CC103
+196,92767,Pension Contributions,Sales,CC102
+196,97086,Salaries,Human Resources,CC105
+201,97086,Salaries,Research & Development,CC100
+201,97086,Salaries,Production,CC103
+201,92767,Pension Contributions,Sales,CC102
+201,95842,Health Insurance,Sales,CC102
+287,92767,Pension Contributions,Research & Development,CC100
+287,97086,Salaries,Human Resources,CC105
+287,95842,Health Insurance,Marketing,CC101
+287,95842,Health Insurance,IT Services,CC108
+287,95842,Health Insurance,Finance,CC104
+287,95842,Health Insurance,IT Services,CC108
+299,95842,Health Insurance,IT Services,CC108
+299,97086,Salaries,Sales,CC102
+299,97086,Salaries,Marketing,CC101
+299,97086,Salaries,IT Services,CC108
+299,95842,Health Insurance,Research & Development,CC100
+299,92767,Pension Contributions,IT Services,CC108
+313,95842,Health Insurance,Legal & Compliance,CC109
+313,95842,Health Insurance,Production,CC103
+313,95842,Health Insurance,Research & Development,CC100
+313,95842,Health Insurance,IT Services,CC108
+344,92767,Pension Contributions,Production,CC103
+344,95842,Health Insurance,Research & Development,CC100
+344,95842,Health Insurance,Research & Development,CC100
+344,95842,Health Insurance,Research & Development,CC100
+344,92767,Pension Contributions,Supply Chain Management,CC107
+344,97086,Salaries,Finance,CC104
+360,97086,Salaries,Supply Chain Management,CC107
+360,95842,Health Insurance,Research & Development,CC100
+360,92767,Pension Contributions,Sales,CC102
+360,95842,Health Insurance,Human Resources,CC105
+386,95842,Health Insurance,Sales,CC102
+386,95842,Health Insurance,Production,CC103
+386,97086,Salaries,IT Services,CC108
+386,97086,Salaries,Legal & Compliance,CC109
+389,97086,Salaries,Sales,CC102
+389,92767,Pension Contributions,IT Services,CC108
+389,95842,Health Insurance,Finance,CC104
+389,97086,Salaries,IT Services,CC108
+389,95842,Health Insurance,IT Services,CC108
+399,97086,Salaries,Marketing,CC101
+399,95842,Health Insurance,Finance,CC104
+399,92767,Pension Contributions,Research & Development,CC100
+429,92767,Pension Contributions,Legal & Compliance,CC109
+429,97086,Salaries,Research & Development,CC100
+429,92767,Pension Contributions,Marketing,CC101
+429,97086,Salaries,IT Services,CC108
+429,92767,Pension Contributions,IT Services,CC108
+429,95842,Health Insurance,Finance,CC104
+450,97086,Salaries,Customer Support,CC106
+450,95842,Health Insurance,Customer Support,CC106
+450,95842,Health Insurance,Sales,CC102
+450,92767,Pension Contributions,Sales,CC102
+452,97086,Salaries,Supply Chain Management,CC107
+452,92767,Pension Contributions,Customer Support,CC106
+452,97086,Salaries,Research & Development,CC100
+461,92767,Pension Contributions,Sales,CC102
+461,92767,Pension Contributions,Customer Support,CC106
+461,97086,Salaries,Marketing,CC101
+465,95842,Health Insurance,Human Resources,CC105
+465,92767,Pension Contributions,Human Resources,CC105
+465,95842,Health Insurance,Marketing,CC101
+465,97086,Salaries,Supply Chain Management,CC107
+465,97086,Salaries,Legal & Compliance,CC109
+465,92767,Pension Contributions,IT Services,CC108
+513,95842,Health Insurance,Human Resources,CC105
+513,97086,Salaries,Supply Chain Management,CC107
+513,97086,Salaries,Customer Support,CC106
+513,92767,Pension Contributions,IT Services,CC108
+513,97086,Salaries,Marketing,CC101
+513,92767,Pension Contributions,IT Services,CC108
+547,97086,Salaries,Human Resources,CC105
+547,95842,Health Insurance,Marketing,CC101
+547,95842,Health Insurance,Marketing,CC101
+547,92767,Pension Contributions,IT Services,CC108
+547,95842,Health Insurance,Customer Support,CC106
+578,92767,Pension Contributions,Finance,CC104
+578,97086,Salaries,IT Services,CC108
+578,95842,Health Insurance,Production,CC103
+578,92767,Pension Contributions,Customer Support,CC106
+579,95842,Health Insurance,Finance,CC104
+579,92767,Pension Contributions,Human Resources,CC105
+590,92767,Pension Contributions,Supply Chain Management,CC107
+590,97086,Salaries,Research & Development,CC100
+618,95842,Health Insurance,Sales,CC102
+618,95842,Health Insurance,Sales,CC102
+618,97086,Salaries,Marketing,CC101
+618,97086,Salaries,Legal & Compliance,CC109
+618,95842,Health Insurance,Supply Chain Management,CC107
+618,92767,Pension Contributions,Supply Chain Management,CC107
+629,95842,Health Insurance,Marketing,CC101
+629,92767,Pension Contributions,Production,CC103
+629,92767,Pension Contributions,Supply Chain Management,CC107
+652,97086,Salaries,Research & Development,CC100
+652,95842,Health Insurance,Research & Development,CC100
+652,95842,Health Insurance,Marketing,CC101
+683,97086,Salaries,Production,CC103
+683,92767,Pension Contributions,Customer Support,CC106
+683,97086,Salaries,Customer Support,CC106
+690,95842,Health Insurance,IT Services,CC108
+690,95842,Health Insurance,Human Resources,CC105
+690,97086,Salaries,Legal & Compliance,CC109
+700,95842,Health Insurance,Production,CC103
+700,95842,Health Insurance,Production,CC103
+700,95842,Health Insurance,Customer Support,CC106
+717,95842,Health Insurance,Research & Development,CC100
+717,97086,Salaries,Finance,CC104
+717,92767,Pension Contributions,Supply Chain Management,CC107
+717,97086,Salaries,Production,CC103
+720,92767,Pension Contributions,Research & Development,CC100
+720,95842,Health Insurance,Finance,CC104
+720,95842,Health Insurance,Human Resources,CC105
+720,97086,Salaries,Sales,CC102
+729,92767,Pension Contributions,Production,CC103
+729,97086,Salaries,Production,CC103
+730,97086,Salaries,Legal & Compliance,CC109
+730,97086,Salaries,Customer Support,CC106
+752,97086,Salaries,Finance,CC104
+752,97086,Salaries,Customer Support,CC106
+752,92767,Pension Contributions,Customer Support,CC106
+752,95842,Health Insurance,Sales,CC102
+787,97086,Salaries,Sales,CC102
+787,97086,Salaries,Production,CC103
+787,95842,Health Insurance,Legal & Compliance,CC109
+787,97086,Salaries,IT Services,CC108
+789,95842,Health Insurance,Supply Chain Management,CC107
+789,97086,Salaries,Human Resources,CC105
+789,92767,Pension Contributions,Supply Chain Management,CC107
+789,92767,Pension Contributions,Marketing,CC101
+789,95842,Health Insurance,Supply Chain Management,CC107
+789,97086,Salaries,Supply Chain Management,CC107
+793,95842,Health Insurance,Supply Chain Management,CC107
+793,92767,Pension Contributions,Supply Chain Management,CC107
+793,97086,Salaries,Customer Support,CC106
+793,95842,Health Insurance,Legal & Compliance,CC109
+793,97086,Salaries,Marketing,CC101
+794,95842,Health Insurance,Legal & Compliance,CC109
+794,95842,Health Insurance,IT Services,CC108
+794,97086,Salaries,Research & Development,CC100
+794,95842,Health Insurance,Legal & Compliance,CC109
+794,92767,Pension Contributions,Supply Chain Management,CC107
+794,95842,Health Insurance,Human Resources,CC105
+795,97086,Salaries,IT Services,CC108
+795,92767,Pension Contributions,Sales,CC102
+821,97086,Salaries,Human Resources,CC105
+821,97086,Salaries,Human Resources,CC105
+821,97086,Salaries,Marketing,CC101
+821,92767,Pension Contributions,Customer Support,CC106
+821,95842,Health Insurance,Production,CC103
+841,97086,Salaries,Human Resources,CC105
+841,97086,Salaries,Human Resources,CC105
+855,97086,Salaries,Legal & Compliance,CC109
+855,97086,Salaries,Legal & Compliance,CC109
+855,95842,Health Insurance,Legal & Compliance,CC109
+855,95842,Health Insurance,Research & Development,CC100
+855,97086,Salaries,Production,CC103
+855,92767,Pension Contributions,Legal & Compliance,CC109
+888,97086,Salaries,Finance,CC104
+888,92767,Pension Contributions,Legal & Compliance,CC109
+888,92767,Pension Contributions,Legal & Compliance,CC109
+888,97086,Salaries,Research & Development,CC100
+891,97086,Salaries,Sales,CC102
+891,92767,Pension Contributions,IT Services,CC108
+891,95842,Health Insurance,IT Services,CC108
+891,97086,Salaries,Customer Support,CC106
+891,97086,Salaries,Supply Chain Management,CC107
+929,95842,Health Insurance,Production,CC103
+929,95842,Health Insurance,IT Services,CC108
+929,97086,Salaries,Production,CC103
+929,97086,Salaries,Sales,CC102
+929,97086,Salaries,Finance,CC104
+929,92767,Pension Contributions,Finance,CC104
+935,95842,Health Insurance,Customer Support,CC106
+935,92767,Pension Contributions,Marketing,CC101
+953,97086,Salaries,Customer Support,CC106
+953,92767,Pension Contributions,Human Resources,CC105
+953,97086,Salaries,Legal & Compliance,CC109
+985,92767,Pension Contributions,Human Resources,CC105
+985,95842,Health Insurance,Human Resources,CC105
+985,95842,Health Insurance,Supply Chain Management,CC107
+985,95842,Health Insurance,Legal & Compliance,CC109
+985,97086,Salaries,Finance,CC104
+992,92767,Pension Contributions,IT Services,CC108
+992,95842,Health Insurance,Human Resources,CC105
+992,97086,Salaries,Sales,CC102
+992,92767,Pension Contributions,Legal & Compliance,CC109
+992,95842,Health Insurance,Research & Development,CC100
