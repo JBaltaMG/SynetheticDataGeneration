@@ -58,8 +58,10 @@ def apply_raise_and_fire(df: pd.DataFrame, raise_pct: float = 0.05, fire_pct: fl
 
     return df
 
+def add_taxes(df_payroll: pd.DataFrame) -> pd.DataFrame:
 
-def Add_taxes(df: pd.DataFrame) -> pd.DataFrame:
+    df_payroll = df_payroll.rename(columns={'MonthlyPay': '0013'})
+
     # Tax configuration
     tax_config = {
         "A-skat": {"code": "0015", "type": "percent", "rate": 0.30, "source": "0013"},
@@ -79,34 +81,142 @@ def Add_taxes(df: pd.DataFrame) -> pd.DataFrame:
 
     # Initialize all codes with 0
     for entry in tax_config.values():
-        df[entry["code"]] = 0
+        df_payroll[entry["code"]] = 0
 
     # Apply percent and fixed taxes
     for name, entry in tax_config.items():
         if entry["type"] == "percent":
-            df[entry["code"]] = df[entry["source"]] * entry["rate"]
+            df_payroll[entry["code"]] = df_payroll[entry["source"]] * entry["rate"]
         elif entry["type"] == "fixed":
-            df[entry["code"]] = entry["value"]
+            df_payroll[entry["code"]] = entry["value"]
 
     # Randomized manual entries
-    unique_ids = df['Employee_ID'].unique().tolist()
-    months = df["Month"].unique().tolist()
+    unique_ids = df_payroll['Employee_ID'].unique().tolist()
+    months = df_payroll["Month"].unique().tolist()
 
     # Fradrag (e.g. personfradrag) to 2 random people/months
     for id_, month_ in zip(random.sample(unique_ids, 2), random.sample(months, 2)):
-        condition = (df['Employee_ID'] == id_) & (df['Month'] == month_)
-        df.loc[condition, tax_config["Fradrag"]["code"]] = 8000
+        condition = (df_payroll['Employee_ID'] == id_) & (df_payroll['Month'] == month_)
+        df_payroll.loc[condition, tax_config["Fradrag"]["code"]] = 8000
 
     # A-indkomst uden bidrag to 1 random employee
-    for id_ in random.sample(unique_ids, 1):
-        df.loc[df['Employee_ID'] == id_, tax_config["A-indkomst uden bidrag"]["code"]] = 2000
+    for id_ in random.sample(unique_ids, len(unique_ids) // 100):
+        df_payroll.loc[df_payroll['Employee_ID'] == id_, tax_config["A-indkomst uden bidrag"]["code"]] = 2000
 
     # Kørselsgodtgørelse to 60 random employees
-    for id_ in random.sample(unique_ids, 60):
-        df.loc[df['Employee_ID'] == id_, tax_config["Kørselsgodtgørelse"]["code"]] = np.random.randint(100, 400)
+    for id_ in random.sample(unique_ids, len(unique_ids) // 10):
+        df_payroll.loc[df_payroll['Employee_ID'] == id_, tax_config["Kørselsgodtgørelse"]["code"]] = np.random.randint(100, 400)
 
     # B-indkomst med bidrag to 5 random employees
-    for id_ in random.sample(unique_ids, 5):
-        df.loc[df['Employee_ID'] == id_, tax_config["B-indkomst med bidrag"]["code"]] = 5201
+    for id_ in random.sample(unique_ids, len(unique_ids) // 20):
+        df_payroll.loc[df_payroll['Employee_ID'] == id_, tax_config["B-indkomst med bidrag"]["code"]] = 5201
+    
+    return df_payroll
 
-    return df
+def add_LineID_Pay(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Transforms wide payroll dataframe to long format with PERIODE, FIRMA, MEDARBEJDER, Line_ID, BELØB.
+    """
+    line_id_cols = [
+        '0013', '0014', '0015', '0016', '0019', '0020',
+        '0026', '0036', '0046', '0048', '0069', '0147',
+        '0148', '0202'
+    ]
+
+    df_long = df.melt(
+        id_vars=['Month', 'Employee_ID', "RoleName", "FirstName", "LastName"],
+        value_vars=line_id_cols,
+        var_name='Line_ID',
+        value_name='Amount'
+    )
+
+
+    return df_long
+
+
+def split_Pay(df_base: pd.DataFrame, df_mapping: pd.DataFrame,
+              min_split: int = 2, max_split: int = 3) -> pd.DataFrame:
+    """
+    Splits Amount across multiple Accounts based on Line_ID -> PayTypeKey mapping.
+    """
+    df_base = df_base.copy()
+    df_mapping = df_mapping.copy()
+
+    # Ensure consistent string format for Line_ID
+    df_base['Line_ID'] = df_base['Line_ID'].astype(str).str.zfill(4)
+    df_mapping['Line_ID'] = df_mapping['Line_ID'].astype(str).str.zfill(4)
+
+    # Map Line_ID to list of PayTypeKeys (as strings to keep formatting consistent)
+    mapping_dict = df_mapping.groupby('Line_ID')['Account'].apply(list).to_dict()
+
+    new_rows = []
+
+    for _, row in df_base.iterrows():
+        line_id = row['Line_ID']
+        amount = row['Amount']
+        paytypes = mapping_dict.get(line_id, [])
+
+        if not paytypes:
+            continue
+
+        n = random.randint(min_split, max_split)
+
+        if len(paytypes) < n:
+            selected = [random.choice(paytypes) for _ in range(n)]
+        else:
+            selected = random.sample(paytypes, n)
+
+        # Generate split proportions + noise
+        proportions = np.random.dirichlet(np.ones(n))
+        raw = proportions * amount 
+
+        for ptk, amt in zip(selected, raw):
+            new_rows.append({
+                'Month': row['Month'],
+                'Employee_ID': row['Employee_ID'],
+                'RoleName': row['RoleName'],
+                'FirstName': row['FirstName'],
+                'LastName': row['LastName'],
+                'Line_ID': line_id,
+                'Account': int(ptk), 
+                'Amount': np.round(amt, -2)
+            })
+
+    return pd.DataFrame(new_rows)
+
+def map_line_names(df: pd.DataFrame) -> pd.DataFrame:
+    tax_config = {
+        "A-skat": {"code": "0015", "type": "percent", "rate": 0.30, "source": "0013"},
+        "AM-bidrag": {"code": "0016", "type": "percent", "rate": 0.08, "source": "0013"},
+        "Fri bil": {"code": "0019", "type": "percent", "rate": 0.06, "source": "0013"},
+        "Fri telefon": {"code": "0020", "type": "fixed", "value": 275},
+        "Sundhedsforsikring": {"code": "0026", "type": "fixed", "value": 44},
+        "ATP-bidrag": {"code": "0046", "type": "fixed", "value": 297},
+        "Pension medarbejder": {"code": "0147", "type": "percent", "rate": 0.03, "source": "0013"},
+        "Pension arbejdsgiver": {"code": "0148", "type": "percent", "rate": 0.09, "source": "0013"},
+        "Feriepenge": {"code": "0202", "type": "percent", "rate": 0.007, "source": "0013"},
+        "A-indkomst uden bidrag": {"code": "0014", "type": "manual"},
+        "B-indkomst med bidrag": {"code": "0036", "type": "manual"},
+        "Kørselsgodtgørelse": {"code": "0048", "type": "manual"},
+        "Fradrag": {"code": "0069", "type": "manual"},
+    }
+
+    # Add the base code not in the config
+    code_to_name = {"0013": "Monthly-pay"}
+    # Reverse mapping from code to name
+    code_to_name.update({v["code"]: k for k, v in tax_config.items()})
+
+    df["LineName"] = df["Line_ID"].map(code_to_name)
+
+    cols = ['Month', 'Employee_ID', 'RoleName', 'FirstName', 'LastName', 'Amount', 'Line_ID', 'LineName']
+
+    return df[cols]
+
+def create_full_payroll(df_payroll: pd.DataFrame, df_mapping: pd.DataFrame) -> pd.DataFrame:
+    """
+    Splits the full payroll data into multiple accounts based on Line_ID mapping.
+    """
+    df_payroll = add_LineID_Pay(df_payroll)
+    #df_payroll = split_Pay(df_payroll, df_mapping)
+    df_payroll = map_line_names(df_payroll)
+    return df_payroll
