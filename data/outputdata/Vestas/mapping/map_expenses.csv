@@ -1,0 +1,402 @@
+ItemName,GLAccount,GLAccountName,CostCenter
+Wind Turbine Blades,46616,Manufacturing Overhead,CC103
+Wind Turbine Blades,49210,Direct Labor,CC106
+Wind Turbine Blades,49210,Direct Labor,CC105
+Wind Turbine Gearboxes,49210,Direct Labor,CC108
+Wind Turbine Gearboxes,49210,Direct Labor,CC107
+Wind Turbine Gearboxes,46616,Manufacturing Overhead,CC109
+Large Diameter Steel Towers,49210,Direct Labor,CC100
+Large Diameter Steel Towers,49210,Direct Labor,CC105
+Large Diameter Steel Towers,49210,Direct Labor,CC101
+Permanent Magnets (Rare Earth),49210,Direct Labor,CC108
+Permanent Magnets (Rare Earth),49210,Direct Labor,CC103
+Generator Assemblies,49210,Direct Labor,CC103
+Generator Assemblies,46616,Manufacturing Overhead,CC109
+Generator Assemblies,49210,Direct Labor,CC105
+Pitch Systems,49210,Direct Labor,CC102
+Pitch Systems,49210,Direct Labor,CC103
+Pitch Systems,46616,Manufacturing Overhead,CC107
+Main Bearings,46616,Manufacturing Overhead,CC102
+Main Bearings,49210,Direct Labor,CC108
+Main Bearings,46616,Manufacturing Overhead,CC103
+Main Bearings,49210,Direct Labor,CC108
+Main Bearings,46616,Manufacturing Overhead,CC104
+Main Bearings,46616,Manufacturing Overhead,CC107
+Yaw Drive Systems,49210,Direct Labor,CC103
+Yaw Drive Systems,46616,Manufacturing Overhead,CC108
+Power Converters,46616,Manufacturing Overhead,CC109
+Power Converters,49210,Direct Labor,CC109
+Transformer Units,46616,Manufacturing Overhead,CC107
+Transformer Units,46616,Manufacturing Overhead,CC108
+Control Panels,46616,Manufacturing Overhead,CC105
+Control Panels,49210,Direct Labor,CC101
+Control Panels,49210,Direct Labor,CC107
+Control Panels,49210,Direct Labor,CC104
+Control Panels,46616,Manufacturing Overhead,CC107
+Control Panels,46616,Manufacturing Overhead,CC105
+Hub Castings,46616,Manufacturing Overhead,CC100
+Hub Castings,49210,Direct Labor,CC104
+Hub Castings,46616,Manufacturing Overhead,CC108
+Hub Castings,49210,Direct Labor,CC109
+Rotor Shafts,46616,Manufacturing Overhead,CC109
+Rotor Shafts,46616,Manufacturing Overhead,CC108
+Rotor Shafts,46616,Manufacturing Overhead,CC109
+High-Voltage Cabling,49210,Direct Labor,CC105
+High-Voltage Cabling,49210,Direct Labor,CC109
+High-Voltage Cabling,49210,Direct Labor,CC100
+High-Voltage Cabling,46616,Manufacturing Overhead,CC102
+High-Voltage Cabling,46616,Manufacturing Overhead,CC100
+High-Voltage Cabling,46616,Manufacturing Overhead,CC103
+Blade Bearings,49210,Direct Labor,CC101
+Blade Bearings,49210,Direct Labor,CC104
+Blade Bearings,49210,Direct Labor,CC103
+Blade Bearings,46616,Manufacturing Overhead,CC100
+Hydraulic Units and Fluids,46616,Manufacturing Overhead,CC106
+Hydraulic Units and Fluids,49210,Direct Labor,CC107
+Hydraulic Units and Fluids,46616,Manufacturing Overhead,CC107
+Switchgear Equipment,49210,Direct Labor,CC109
+Switchgear Equipment,49210,Direct Labor,CC101
+Switchgear Equipment,46616,Manufacturing Overhead,CC108
+Switchgear Equipment,46616,Manufacturing Overhead,CC108
+Cooling Systems (Liquid & Air),49210,Direct Labor,CC107
+Cooling Systems (Liquid & Air),49210,Direct Labor,CC102
+Cooling Systems (Liquid & Air),46616,Manufacturing Overhead,CC109
+Cooling Systems (Liquid & Air),49210,Direct Labor,CC100
+Composite Resin for Blades,46616,Manufacturing Overhead,CC109
+Composite Resin for Blades,49210,Direct Labor,CC103
+Composite Resin for Blades,49210,Direct Labor,CC105
+Composite Resin for Blades,46616,Manufacturing Overhead,CC109
+Composite Resin for Blades,46616,Manufacturing Overhead,CC108
+Composite Resin for Blades,49210,Direct Labor,CC105
+Lightning Protection Systems,49210,Direct Labor,CC109
+Lightning Protection Systems,49210,Direct Labor,CC105
+Lightning Protection Systems,49210,Direct Labor,CC101
+Lightning Protection Systems,49210,Direct Labor,CC107
+Lightning Protection Systems,49210,Direct Labor,CC100
+"Fasteners (Bolts, Nuts, Washers)",46616,Manufacturing Overhead,CC103
+"Fasteners (Bolts, Nuts, Washers)",46616,Manufacturing Overhead,CC108
+"Fasteners (Bolts, Nuts, Washers)",46616,Manufacturing Overhead,CC104
+"Fasteners (Bolts, Nuts, Washers)",46616,Manufacturing Overhead,CC101
+"Fasteners (Bolts, Nuts, Washers)",46616,Manufacturing Overhead,CC102
+"Fasteners (Bolts, Nuts, Washers)",49210,Direct Labor,CC107
+Braking Systems,46616,Manufacturing Overhead,CC109
+Braking Systems,49210,Direct Labor,CC107
+Braking Systems,46616,Manufacturing Overhead,CC101
+Braking Systems,46616,Manufacturing Overhead,CC108
+Braking Systems,46616,Manufacturing Overhead,CC109
+Lubrication Systems,46616,Manufacturing Overhead,CC100
+Lubrication Systems,49210,Direct Labor,CC105
+Steel Plates and Profiles,49210,Direct Labor,CC108
+Steel Plates and Profiles,49210,Direct Labor,CC105
+Steel Plates and Profiles,46616,Manufacturing Overhead,CC104
+Steel Plates and Profiles,49210,Direct Labor,CC102
+Paints & Surface Coatings,46616,Manufacturing Overhead,CC102
+Paints & Surface Coatings,46616,Manufacturing Overhead,CC102
+Industrial Sensors,49210,Direct Labor,CC104
+Industrial Sensors,46616,Manufacturing Overhead,CC103
+Industrial Sensors,46616,Manufacturing Overhead,CC107
+Industrial Sensors,46616,Manufacturing Overhead,CC102
+Turbine Control Software Licenses,49210,Direct Labor,CC107
+Turbine Control Software Licenses,49210,Direct Labor,CC108
+Turbine Control Software Licenses,46616,Manufacturing Overhead,CC101
+Turbine Control Software Licenses,49210,Direct Labor,CC100
+Electrical Relays and Contactors,46616,Manufacturing Overhead,CC107
+Electrical Relays and Contactors,49210,Direct Labor,CC105
+Electrical Relays and Contactors,46616,Manufacturing Overhead,CC105
+Electrical Relays and Contactors,46616,Manufacturing Overhead,CC101
+Electrical Relays and Contactors,46616,Manufacturing Overhead,CC108
+Electrical Relays and Contactors,49210,Direct Labor,CC108
+Auxiliary Motors,49210,Direct Labor,CC109
+Auxiliary Motors,49210,Direct Labor,CC104
+Auxiliary Motors,49210,Direct Labor,CC109
+Sealants and Adhesives,46616,Manufacturing Overhead,CC100
+Sealants and Adhesives,49210,Direct Labor,CC102
+Sealants and Adhesives,46616,Manufacturing Overhead,CC101
+Sealants and Adhesives,46616,Manufacturing Overhead,CC102
+Anemometers and Wind Vanes,49210,Direct Labor,CC100
+Anemometers and Wind Vanes,49210,Direct Labor,CC105
+Anemometers and Wind Vanes,46616,Manufacturing Overhead,CC108
+Anemometers and Wind Vanes,49210,Direct Labor,CC105
+Anemometers and Wind Vanes,46616,Manufacturing Overhead,CC102
+Ballasts for Lighting,49210,Direct Labor,CC107
+Ballasts for Lighting,49210,Direct Labor,CC100
+Ballasts for Lighting,46616,Manufacturing Overhead,CC102
+Vibration Dampers,49210,Direct Labor,CC101
+Vibration Dampers,46616,Manufacturing Overhead,CC104
+Vibration Dampers,49210,Direct Labor,CC102
+Vibration Dampers,49210,Direct Labor,CC104
+Vibration Dampers,46616,Manufacturing Overhead,CC100
+Vibration Dampers,46616,Manufacturing Overhead,CC101
+Communication Cabling,46616,Manufacturing Overhead,CC105
+Communication Cabling,46616,Manufacturing Overhead,CC105
+Communication Cabling,49210,Direct Labor,CC105
+Communication Cabling,49210,Direct Labor,CC104
+Communication Cabling,49210,Direct Labor,CC103
+Communication Cabling,46616,Manufacturing Overhead,CC102
+Spare Parts Kits,49210,Direct Labor,CC109
+Spare Parts Kits,46616,Manufacturing Overhead,CC104
+Spare Parts Kits,46616,Manufacturing Overhead,CC105
+Spare Parts Kits,46616,Manufacturing Overhead,CC100
+Spare Parts Kits,49210,Direct Labor,CC107
+Machine Tools (Handheld & Stationary),49210,Direct Labor,CC105
+Machine Tools (Handheld & Stationary),49210,Direct Labor,CC103
+Machine Tools (Handheld & Stationary),49210,Direct Labor,CC102
+Mechanical Seals and Gaskets,49210,Direct Labor,CC107
+Mechanical Seals and Gaskets,49210,Direct Labor,CC105
+Mechanical Seals and Gaskets,46616,Manufacturing Overhead,CC107
+Mechanical Seals and Gaskets,46616,Manufacturing Overhead,CC109
+Mechanical Seals and Gaskets,49210,Direct Labor,CC106
+Mechanical Seals and Gaskets,46616,Manufacturing Overhead,CC109
+Safety Harnesses and PPE,49210,Direct Labor,CC100
+Safety Harnesses and PPE,49210,Direct Labor,CC108
+Safety Harnesses and PPE,49210,Direct Labor,CC108
+Safety Harnesses and PPE,46616,Manufacturing Overhead,CC105
+Safety Harnesses and PPE,49210,Direct Labor,CC104
+Hydraulic Hoses,49210,Direct Labor,CC101
+Hydraulic Hoses,46616,Manufacturing Overhead,CC106
+Grounding Equipment,49210,Direct Labor,CC103
+Grounding Equipment,46616,Manufacturing Overhead,CC108
+Grounding Equipment,46616,Manufacturing Overhead,CC107
+Grounding Equipment,46616,Manufacturing Overhead,CC101
+Maintenance Lubricants & Oils,46616,Manufacturing Overhead,CC100
+Maintenance Lubricants & Oils,49210,Direct Labor,CC106
+Maintenance Lubricants & Oils,46616,Manufacturing Overhead,CC107
+Maintenance Lubricants & Oils,49210,Direct Labor,CC108
+Maintenance Lubricants & Oils,46616,Manufacturing Overhead,CC106
+"Workshop Consumables (Rags, Tapes, etc.)",49210,Direct Labor,CC105
+"Workshop Consumables (Rags, Tapes, etc.)",49210,Direct Labor,CC103
+"Workshop Consumables (Rags, Tapes, etc.)",46616,Manufacturing Overhead,CC104
+"Workshop Consumables (Rags, Tapes, etc.)",46616,Manufacturing Overhead,CC107
+Inspection Cameras & Testers,46616,Manufacturing Overhead,CC100
+Inspection Cameras & Testers,46616,Manufacturing Overhead,CC106
+Printer Paper & Toner,46616,Manufacturing Overhead,CC108
+Printer Paper & Toner,46616,Manufacturing Overhead,CC106
+Printer Paper & Toner,46616,Manufacturing Overhead,CC105
+Printer Paper & Toner,49210,Direct Labor,CC104
+Printer Paper & Toner,46616,Manufacturing Overhead,CC106
+"IT Peripherals (Mice, Keyboards, etc.)",49210,Direct Labor,CC100
+"IT Peripherals (Mice, Keyboards, etc.)",49210,Direct Labor,CC106
+Standard Office Furniture,46616,Manufacturing Overhead,CC106
+Standard Office Furniture,46616,Manufacturing Overhead,CC109
+Standard Office Furniture,46616,Manufacturing Overhead,CC108
+Standard Office Furniture,49210,Direct Labor,CC105
+Standard Office Furniture,49210,Direct Labor,CC109
+Standard Office Furniture,46616,Manufacturing Overhead,CC100
+Laptops & Workstations,46616,Manufacturing Overhead,CC108
+Laptops & Workstations,46616,Manufacturing Overhead,CC108
+Laptops & Workstations,46616,Manufacturing Overhead,CC106
+Laptops & Workstations,46616,Manufacturing Overhead,CC104
+Laptops & Workstations,49210,Direct Labor,CC106
+Laptops & Workstations,49210,Direct Labor,CC105
+Office Stationery,46616,Manufacturing Overhead,CC102
+Office Stationery,49210,Direct Labor,CC106
+Coffee & Beverage Supplies,49210,Direct Labor,CC107
+Coffee & Beverage Supplies,46616,Manufacturing Overhead,CC105
+First Aid Kits,46616,Manufacturing Overhead,CC101
+First Aid Kits,46616,Manufacturing Overhead,CC107
+First Aid Kits,49210,Direct Labor,CC109
+First Aid Kits,46616,Manufacturing Overhead,CC108
+First Aid Kits,49210,Direct Labor,CC101
+First Aid Kits,46616,Manufacturing Overhead,CC102
+"Engineering, Procurement & Construction (EPC) Management",55842,Marketing Expenses,CC101
+"Engineering, Procurement & Construction (EPC) Management",52071,Utilities,CC104
+Major Equipment Transportation & Logistics,52767,Legal Fees,CC103
+Major Equipment Transportation & Logistics,56495,Depreciation Expense,CC109
+Major Equipment Transportation & Logistics,52767,Legal Fees,CC101
+Major Equipment Transportation & Logistics,54859,Travel Expenses,CC104
+Major Equipment Transportation & Logistics,54857,Insurance Expense,CC109
+Turbine Blade Repair & Refurbishment,54857,Insurance Expense,CC101
+Turbine Blade Repair & Refurbishment,56495,Depreciation Expense,CC101
+Site Civil Works Contract,57086,Consulting Fees,CC107
+Site Civil Works Contract,56495,Depreciation Expense,CC102
+Site Civil Works Contract,55842,Marketing Expenses,CC106
+Site Civil Works Contract,56495,Depreciation Expense,CC103
+Site Civil Works Contract,56495,Depreciation Expense,CC104
+Site Civil Works Contract,52773,Office Supplies,CC100
+Foundation Construction Services,57086,Consulting Fees,CC102
+Foundation Construction Services,54857,Insurance Expense,CC102
+Foundation Construction Services,55842,Marketing Expenses,CC105
+Substation Design & Build,52767,Legal Fees,CC104
+Substation Design & Build,55842,Marketing Expenses,CC109
+Substation Design & Build,55842,Marketing Expenses,CC107
+Substation Design & Build,54857,Insurance Expense,CC102
+Substation Design & Build,54859,Travel Expenses,CC106
+Project Management Consultancy,58510,Research and Development,CC105
+Project Management Consultancy,55842,Marketing Expenses,CC109
+Project Management Consultancy,52767,Legal Fees,CC101
+Project Management Consultancy,58510,Research and Development,CC100
+Project Management Consultancy,52773,Office Supplies,CC101
+Environmental Impact Assessment Services,55842,Marketing Expenses,CC105
+Environmental Impact Assessment Services,57086,Consulting Fees,CC101
+Environmental Impact Assessment Services,56495,Depreciation Expense,CC100
+Environmental Impact Assessment Services,55842,Marketing Expenses,CC106
+Environmental Impact Assessment Services,52767,Legal Fees,CC108
+Electrical Cabling & Trenching Services,52071,Utilities,CC103
+Electrical Cabling & Trenching Services,58510,Research and Development,CC107
+Electrical Cabling & Trenching Services,57086,Consulting Fees,CC101
+Onshore/Offshore Marine Survey Services,57086,Consulting Fees,CC103
+Onshore/Offshore Marine Survey Services,56495,Depreciation Expense,CC100
+Legal Advisory Retainer,52773,Office Supplies,CC106
+Legal Advisory Retainer,52767,Legal Fees,CC101
+Legal Advisory Retainer,54857,Insurance Expense,CC105
+"Health, Safety & Environmental (HSE) Audits",52767,Legal Fees,CC100
+"Health, Safety & Environmental (HSE) Audits",56495,Depreciation Expense,CC104
+"Health, Safety & Environmental (HSE) Audits",54859,Travel Expenses,CC109
+"Health, Safety & Environmental (HSE) Audits",54857,Insurance Expense,CC101
+Cybersecurity Risk Assessment,57086,Consulting Fees,CC105
+Cybersecurity Risk Assessment,54857,Insurance Expense,CC109
+Operations & Maintenance (O&M) Contract,52767,Legal Fees,CC100
+Operations & Maintenance (O&M) Contract,52767,Legal Fees,CC106
+Operations & Maintenance (O&M) Contract,52071,Utilities,CC109
+Operations & Maintenance (O&M) Contract,52773,Office Supplies,CC102
+Operations & Maintenance (O&M) Contract,56495,Depreciation Expense,CC104
+Technical Training & Certification Programs,55842,Marketing Expenses,CC105
+Technical Training & Certification Programs,57086,Consulting Fees,CC109
+Technical Training & Certification Programs,58510,Research and Development,CC104
+Technical Training & Certification Programs,56495,Depreciation Expense,CC105
+Customs Clearance & Export Documentation,58510,Research and Development,CC103
+Customs Clearance & Export Documentation,54859,Travel Expenses,CC101
+Customs Clearance & Export Documentation,54857,Insurance Expense,CC100
+Customs Clearance & Export Documentation,55842,Marketing Expenses,CC101
+Customs Clearance & Export Documentation,52767,Legal Fees,CC106
+Customs Clearance & Export Documentation,55842,Marketing Expenses,CC108
+Recruitment Agency Services,54857,Insurance Expense,CC106
+Recruitment Agency Services,55842,Marketing Expenses,CC104
+Recruitment Agency Services,58510,Research and Development,CC106
+Recruitment Agency Services,57086,Consulting Fees,CC108
+IT Infrastructure Maintenance Contract,52773,Office Supplies,CC106
+IT Infrastructure Maintenance Contract,52071,Utilities,CC105
+IT Infrastructure Maintenance Contract,54859,Travel Expenses,CC105
+IT Infrastructure Maintenance Contract,52071,Utilities,CC104
+Fleet Vehicle Leasing,54857,Insurance Expense,CC101
+Fleet Vehicle Leasing,55842,Marketing Expenses,CC101
+Fleet Vehicle Leasing,52773,Office Supplies,CC106
+HR Payroll Processing,52767,Legal Fees,CC100
+HR Payroll Processing,58510,Research and Development,CC101
+Employee Relocation Services,52767,Legal Fees,CC105
+Employee Relocation Services,58510,Research and Development,CC100
+Employee Relocation Services,54857,Insurance Expense,CC107
+Employee Relocation Services,52071,Utilities,CC108
+Translation & Localization Services,54859,Travel Expenses,CC106
+Translation & Localization Services,57086,Consulting Fees,CC100
+Translation & Localization Services,52071,Utilities,CC105
+Translation & Localization Services,56495,Depreciation Expense,CC103
+Market Research & Feasibility Study,54859,Travel Expenses,CC101
+Market Research & Feasibility Study,57086,Consulting Fees,CC107
+Waste Management Services,52071,Utilities,CC105
+Waste Management Services,57086,Consulting Fees,CC102
+Waste Management Services,52767,Legal Fees,CC106
+Corporate Tax Advisory Services,54859,Travel Expenses,CC102
+Corporate Tax Advisory Services,54859,Travel Expenses,CC104
+Corporate Tax Advisory Services,54859,Travel Expenses,CC101
+Corporate Tax Advisory Services,56495,Depreciation Expense,CC105
+Corporate Tax Advisory Services,52773,Office Supplies,CC109
+Corporate Tax Advisory Services,52773,Office Supplies,CC105
+Document Management System License,52071,Utilities,CC107
+Document Management System License,55842,Marketing Expenses,CC103
+Document Management System License,55842,Marketing Expenses,CC102
+Document Management System License,58510,Research and Development,CC104
+Document Management System License,52071,Utilities,CC104
+Document Management System License,58510,Research and Development,CC101
+Network Security Monitoring Subscription,56495,Depreciation Expense,CC102
+Network Security Monitoring Subscription,54859,Travel Expenses,CC101
+Network Security Monitoring Subscription,58510,Research and Development,CC107
+Catering & Office Hospitality Services,52071,Utilities,CC103
+Catering & Office Hospitality Services,52767,Legal Fees,CC101
+Catering & Office Hospitality Services,57086,Consulting Fees,CC101
+Catering & Office Hospitality Services,55842,Marketing Expenses,CC100
+Catering & Office Hospitality Services,52071,Utilities,CC103
+Conference & Event Organization,52767,Legal Fees,CC105
+Conference & Event Organization,52071,Utilities,CC107
+Conference & Event Organization,56495,Depreciation Expense,CC103
+Conference & Event Organization,57086,Consulting Fees,CC107
+Branding & Marketing Agency Fees,56495,Depreciation Expense,CC102
+Branding & Marketing Agency Fees,52767,Legal Fees,CC106
+Branding & Marketing Agency Fees,54857,Insurance Expense,CC105
+Branding & Marketing Agency Fees,54857,Insurance Expense,CC103
+Branding & Marketing Agency Fees,56495,Depreciation Expense,CC101
+Regulatory Compliance Consulting,52773,Office Supplies,CC107
+Regulatory Compliance Consulting,52767,Legal Fees,CC107
+Regulatory Compliance Consulting,58510,Research and Development,CC108
+Power BI Pro License,57086,Consulting Fees,CC105
+Power BI Pro License,57086,Consulting Fees,CC104
+Power BI Pro License,52071,Utilities,CC101
+Power BI Pro License,54859,Travel Expenses,CC104
+Power BI Pro License,57086,Consulting Fees,CC105
+Power BI Pro License,54857,Insurance Expense,CC107
+IT Helpdesk Support Contract,52767,Legal Fees,CC108
+IT Helpdesk Support Contract,55842,Marketing Expenses,CC106
+IT Helpdesk Support Contract,57086,Consulting Fees,CC101
+IT Helpdesk Support Contract,52767,Legal Fees,CC107
+Telecom & Unified Communications Service,58510,Research and Development,CC100
+Telecom & Unified Communications Service,56495,Depreciation Expense,CC100
+Telecom & Unified Communications Service,52071,Utilities,CC107
+Microsoft 365 Enterprise License,52773,Office Supplies,CC105
+Microsoft 365 Enterprise License,57086,Consulting Fees,CC105
+Microsoft 365 Enterprise License,52773,Office Supplies,CC105
+Microsoft 365 Enterprise License,52767,Legal Fees,CC103
+Microsoft 365 Enterprise License,54859,Travel Expenses,CC103
+Microsoft 365 Enterprise License,55842,Marketing Expenses,CC101
+Adobe Creative Cloud License,52071,Utilities,CC102
+Adobe Creative Cloud License,54859,Travel Expenses,CC104
+Adobe Creative Cloud License,57086,Consulting Fees,CC100
+Adobe Creative Cloud License,54859,Travel Expenses,CC103
+Adobe Creative Cloud License,56495,Depreciation Expense,CC109
+Adobe Creative Cloud License,52773,Office Supplies,CC107
+Workplace Ergonomics Assessment,57086,Consulting Fees,CC105
+Workplace Ergonomics Assessment,54859,Travel Expenses,CC101
+Workplace Ergonomics Assessment,52773,Office Supplies,CC102
+Mobile Device Management License,55842,Marketing Expenses,CC103
+Mobile Device Management License,55842,Marketing Expenses,CC106
+Data Backup & Recovery Service,54857,Insurance Expense,CC107
+Data Backup & Recovery Service,56495,Depreciation Expense,CC100
+Data Backup & Recovery Service,52071,Utilities,CC104
+Data Backup & Recovery Service,52071,Utilities,CC102
+Data Backup & Recovery Service,54857,Insurance Expense,CC101
+Cloud Storage Subscription (e.g. OneDrive),54857,Insurance Expense,CC102
+Cloud Storage Subscription (e.g. OneDrive),58510,Research and Development,CC109
+Cloud Storage Subscription (e.g. OneDrive),57086,Consulting Fees,CC104
+Cloud Storage Subscription (e.g. OneDrive),54859,Travel Expenses,CC104
+Cloud Storage Subscription (e.g. OneDrive),55842,Marketing Expenses,CC109
+Zoom Video Conferencing License,52071,Utilities,CC102
+Zoom Video Conferencing License,54859,Travel Expenses,CC101
+Zoom Video Conferencing License,58510,Research and Development,CC102
+Zoom Video Conferencing License,54859,Travel Expenses,CC103
+Antivirus & Endpoint Security Subscription,58510,Research and Development,CC101
+Antivirus & Endpoint Security Subscription,52071,Utilities,CC107
+Antivirus & Endpoint Security Subscription,55842,Marketing Expenses,CC103
+Antivirus & Endpoint Security Subscription,55842,Marketing Expenses,CC109
+Antivirus & Endpoint Security Subscription,57086,Consulting Fees,CC104
+Antivirus & Endpoint Security Subscription,55842,Marketing Expenses,CC108
+Website Domain Hosting,58510,Research and Development,CC109
+Website Domain Hosting,54857,Insurance Expense,CC103
+Website Domain Hosting,52767,Legal Fees,CC104
+Website Domain Hosting,54859,Travel Expenses,CC106
+Website Domain Hosting,58510,Research and Development,CC108
+E-signature Platform License (e.g. DocuSign),58510,Research and Development,CC104
+E-signature Platform License (e.g. DocuSign),52767,Legal Fees,CC101
+VPN & Remote Access Service,52773,Office Supplies,CC105
+VPN & Remote Access Service,54859,Travel Expenses,CC101
+VPN & Remote Access Service,56495,Depreciation Expense,CC103
+VPN & Remote Access Service,54857,Insurance Expense,CC100
+Office Supplies Ordering Service,52071,Utilities,CC108
+Office Supplies Ordering Service,52773,Office Supplies,CC102
+Office Supplies Ordering Service,52071,Utilities,CC104
+Visitor Management System Subscription,52773,Office Supplies,CC103
+Visitor Management System Subscription,58510,Research and Development,CC102
+Visitor Management System Subscription,56495,Depreciation Expense,CC102
+Visitor Management System Subscription,56495,Depreciation Expense,CC102
+Visitor Management System Subscription,55842,Marketing Expenses,CC105
+Online Training Platform Subscription,57086,Consulting Fees,CC108
+Online Training Platform Subscription,57086,Consulting Fees,CC101
+Online Training Platform Subscription,52773,Office Supplies,CC106
+Online Training Platform Subscription,58510,Research and Development,CC101
+Online Training Platform Subscription,55842,Marketing Expenses,CC108
+Online Training Platform Subscription,54857,Insurance Expense,CC106
+Secure File Transfer Service,57086,Consulting Fees,CC107
+Secure File Transfer Service,57086,Consulting Fees,CC103
+Secure File Transfer Service,57086,Consulting Fees,CC107
+Secure File Transfer Service,56495,Depreciation Expense,CC109
+Secure File Transfer Service,56495,Depreciation Expense,CC102
+Time Tracking Software License,55842,Marketing Expenses,CC107
+Time Tracking Software License,52767,Legal Fees,CC108
