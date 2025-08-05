@@ -101,7 +101,6 @@ def split_fact_into_gl(df_fact: pd.DataFrame, df_accounts: pd.DataFrame) -> pd.D
         amount = row["AmountLocal"]
         accounts = df_accounts.sample(2)
         split1 = round(amount * random.uniform(0.4, 0.6), 2)
-        split2 = amount - split1
 
         rows.append({**row, "Account_ID": accounts.iloc[0]["Account_ID"], "Amount": split1})
         rows.append({**row, "Account_ID": accounts.iloc[1]["Account_ID"], "Amount": -split1})
@@ -127,7 +126,8 @@ def estimate_costs_from_payroll(
     Returns:
         dict: Estimated cost breakdown.
     """
-    total_payroll = df_pay["MonthlyPay"].sum()
+    temp_df = df_pay[df_pay["line_id"]=="Monthly-pay"]
+    total_payroll = temp_df["amount"].sum()
 
     return {
         "EstimatedPayroll": total_payroll,

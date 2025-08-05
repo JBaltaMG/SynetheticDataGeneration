@@ -151,3 +151,54 @@ def create_mapping_from_metadata(
             mappings.append(mapping)
 
     return pd.DataFrame(mappings)
+
+def assign_departments(df_pay: pd.DataFrame, df_departments: pd.DataFrame) -> pd.DataFrame:
+    """
+    Assign departments to employees based on proportionality.
+
+    Args:
+        df_pay: DataFrame with at least an 'employee_id' column.
+        df_departments: DataFrame with 'Department' and 'Proportionality' columns.
+        seed: Random seed for reproducibility.
+
+    Returns:
+        df_pay with a new 'Department' column assigned.
+    """
+    n_employees = len(df_pay)
+
+    # Normalize proportionality to ensure sum = 1
+    df_departments['Proportionality'] = df_departments['Proportionality'] / df_departments['Proportionality'].sum()
+
+    # Determine how many employees per department
+    df_departments['NumEmployees'] = (df_departments['Proportionality'] * n_employees).round().astype(int)
+
+    # Correct for rounding errors to make total match
+    diff = n_employees - df_departments['NumEmployees'].sum()
+    if diff != 0:
+        # Add or subtract the diff to the department with the largest proportion
+        idx = df_departments['Proportionality'].idxmax()
+        df_departments.loc[idx, 'NumEmployees'] += diff
+
+    # Build the list of departments to assign
+    department_assignments = []
+    for _, row in df_departments.iterrows():
+        department_assignments.extend([row['name']] * row['NumEmployees'])
+
+    np.random.shuffle(department_assignments)
+
+    # Assign to employees
+    df_pay = df_pay.copy()
+    df_pay['name'] = department_assignments
+
+    cols = ["role_name", "monthly_pay", "first_name", "last_name", "employee_id", "department"]
+
+    df_pay = df_pay.rename(columns={
+        "RoleName": "role_name",
+        "MonthlyPay": "monthly_pay",
+        "FirstName": "first_name",
+        "LastName": "last_name",
+        "Employee_ID": "employee_id",
+        "name": "department"
+    })
+    
+    return df_pay[cols]

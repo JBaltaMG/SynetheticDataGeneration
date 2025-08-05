@@ -1,31 +1,31 @@
 name,AccountType,Account_ID
-Sales Revenue,Revenue,35015
-Licensing Revenue,Revenue,32307
-Retail Store Revenue,Revenue,36629
-Packaging Materials,Product Expense,49210
-Freight-In,Product Expense,46616
-Manufacturing Overhead,Product Expense,47086
-Product Development Costs,Product Expense,42767
-Consulting Fees,Service Expense,55842
-Software Subscriptions,Service Expense,52071
-Legal Fees,Service Expense,52773
-Marketing and Advertising,Service Expense,53454
-Salaries,Payroll,96169
-Bonuses,Payroll,96064
-Pension Contributions,Payroll,92231
-Health Insurance,Payroll,91043
-Payroll Taxes,Payroll,99126
-Cash,Asset,16344
-Accounts Receivable,Asset,15814
-Inventory,Asset,12395
-Prepaid Expenses,Asset,17097
-Intangible Assets,Asset,16012
-Accounts Payable,Liability,90871
-Accrued Liabilities,Liability,98685
-Long-term Debt,Liability,95399
-Deferred Revenue,Liability,91645
-Common Stock,Equity,21493
-Retained Earnings,Equity,28510
-Additional Paid-In Capital,Equity,24859
-Treasury Stock,Equity,26495
-Dividends Declared,Equity,24857
+Sales Revenue,Revenue,31528
+Licensing Revenue,Revenue,33030
+Interest Income,Revenue,34377
+Raw Materials,Product Expense,46200
+Packaging Materials,Product Expense,42565
+Freight-In Costs,Product Expense,45525
+Consulting Fees,Service Expense,57140
+Software Subscriptions,Service Expense,50423
+Legal Fees,Service Expense,52004
+Marketing Expenses,Service Expense,55284
+Salaries,Payroll,97042
+Pension Contributions,Payroll,90346
+Health Insurance,Payroll,90218
+Cash on Hand,Asset,19592
+Accounts Receivable,Asset,17715
+Inventory,Asset,16191
+Prepaid Expenses,Asset,19070
+"Property, Plant, and Equipment",Asset,18569
+Accumulated Depreciation,Asset,16921
+Accounts Payable,Liability,98796
+Accrued Liabilities,Liability,98330
+Long-term Debt,Liability,97261
+Deferred Revenue,Liability,91652
+Common Stock,Equity,28959
+Retained Earnings,Equity,29503
+Research and Development,Service Expense,59554
+Utilities Expense,Service Expense,50744
+Office Supplies,Service Expense,56353
+Training and Development,Service Expense,52673
+Depreciation Expense,Service Expense,51920

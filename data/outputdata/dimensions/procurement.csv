@@ -1,51 +1,11 @@
 name,Proportionality
-Acrylonitrile Butadiene Styrene (ABS) Polymer Resin,0.31194295900178254
-Polycarbonate (PC) Resin,0.1120448179271709
-Masterbatch Color Pigments,0.07512095747389866
-High-Impact Polystyrene (HIPS) Resin,0.05984211866564809
-Thermoplastic Elastomers (TPE),0.043290043290043295
-Packaging Cardboard Boxes,0.035650623885918005
-Decorative Sticker Sheets,0.03183091418385536
-Mold Release Agents,0.02673796791443851
-Vacuum-Formed Plastic Trays,0.022918258212375864
-Motors and Electronic Components,0.01909854851031322
-Steel Molding Inserts,0.017825311942959002
-Plastic Granule Storage Silos,0.015278838808250575
-Printed Instruction Booklets,0.014005602240896363
-Shrink Wrap Film,0.012732365673542146
-Pallets (Wood and Plastic),0.012477718360071303
-Label Printing Consumables,0.010949834479246245
-Robotic Automation Spare Parts,0.01044053985230456
-Quality Control Testing Equipment,0.009167303284950344
-Industrial Safety Equipment (PPE),0.008912655971479501
-Laser Engraving Supplies,0.008530685001273238
-Compressed Air Systems and Filters,0.008276037687802395
-Industrial Cleaning Agents,0.008148714031066973
-Cooling System Chemicals,0.007766743060860709
-Replacement Heating Elements,0.007639419404125288
-Calibration Weights and Tools,0.007257448433919023
-Electrical Control Cabinets,0.007130124777183603
-Forklift Spare Parts,0.006366182836771073
-Protective Pallet Strapping,0.0062388591800356516
-RFID Tags and Readers,0.005984211866564808
-Anti-Static Flooring Mats,0.005729564553093966
-Industrial Racking Systems,0.005474917239623123
-Waste Management Containers,0.00522026992615228
-Compressed Gas Cylinders,0.004965622612681438
-General Workshop Tools,0.0048382989559460155
-Spare Conveyor Rollers,0.004710975299210594
-Pneumatic Hoses and Fittings,0.004456327985739751
-Maintenance Power Tools,0.00432900432900433
-Heavy-Duty Shelving Units,0.004201680672268908
-Canteen and Breakroom Supplies,0.004074357015533487
-"Batteries (AA, AAA, 9V, Coin)",0.0035650623885918015
-Office Chairs and Desks,0.00343773873185638
-Printer Ink and Toner Cartridges,0.003310415075120958
-Desktop and Laptop Computers,0.0031830914183855366
-"Writing Instruments (Pens, Pencils, Markers)",0.00254647313470843
-Staplers and Staples,0.0024191494779730077
-Desk Organizers and Trays,0.002291825821237586
-General Cleaning Supplies,0.002164502164502165
-Coffee Machines and Supplies,0.0020371785077667433
-First Aid Kits,0.001909854851031322
-Mouse Pads and Computer Accessories,0.0015278838808250575
+Acrylonitrile Butadiene Styrene (ABS) Plastic Resin,0.4636591478696741
+Injection Molding Machine Parts & Maintenance Kits,0.11278195488721802
+Color Masterbatch Pigments,0.09398496240601502
+Thermoplastic Elastomers (TPE) Granules,0.07518796992481201
+Corrugated Cardboard Packaging Materials,0.06892230576441101
+Production Mold Tooling and Dies,0.06265664160401001
+Automated Sorting & Assembly Machine Components,0.05012531328320801
+Industrial Cleaning Chemicals & Lubricants,0.037593984962406006
+"IT Hardware (PCs, Servers, Network Devices)",0.022556390977443608
+Office Stationery and Printer Consumables,0.012531328320802003
