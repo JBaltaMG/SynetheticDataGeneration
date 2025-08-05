@@ -8,6 +8,17 @@ def set_global_seed(seed: int = 42):
     random.seed(seed)
     np.random.seed(seed)
 
+def add_id_column(df: pd.DataFrame, column_name: str = "ID", start_index: int = 1) -> pd.DataFrame:
+    """
+    Adds a sequential ID column to the DataFrame.
+    
+    """
+    if column_name in df.columns:
+        raise ValueError(f"Column '{column_name}' already exists in DataFrame.")
+
+    df[column_name] = range(start_index, start_index + len(df))
+    return df
+
 def create_clean_directory(path):
     if os.path.exists(path):
         shutil.rmtree(path)  # Deletes the entire folder and contents
@@ -133,13 +144,6 @@ def create_mapping_from_metadata(
                 "GLAccountName": acc["AccountName"],
             }
 
-            if name_column in ["ProductName", "ServiceName", "ProcurementName", "Employee_ID"]:
-                dept = df_departments.sample(1).iloc[0]
-                mapping["CostCenter"] = f"CC{dept['Department_ID']}"
-
-            if name_column == "Employee_ID":
-                mapping["Department"] = dept["DepartmentName"]
-
             if name_column == "ProductName" and df_customers is not None:
                 customer = df_customers.sample(1).iloc[0]
                 mapping["CustomerName"] = customer["CustomerName"]
@@ -147,109 +151,3 @@ def create_mapping_from_metadata(
             mappings.append(mapping)
 
     return pd.DataFrame(mappings)
-
-def map_procurement_services(
-        df_procurement: pd.DataFrame,
-        df_services: pd.DataFrame,
-        df_accounts: pd.DataFrame,
-        df_departments: pd.DataFrame,
-        df_customers: pd.DataFrame
-    ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """
-    Combines product and service data, mapping them to GL accounts and departments.
-    Returns 2 DataFrames with combined product and service data, and the mapping between these.
-    """
-    procurement_mapping = create_mapping_from_metadata(df_procurement, df_accounts, df_departments, df_customers, name_column="ProcurementName")
-    services_mapping = create_mapping_from_metadata(df_services, df_accounts, df_departments, df_customers, name_column="ServiceName")
-
-    # Clean and combine service and product data
-    df_procurement["ItemName"] = df_procurement["ProcurementName"]
-    df_services["ItemName"] = df_services["ServiceName"]
-
-    df_procurement["SourceType"] = "Procurement"
-    df_services["SourceType"] = "Service"
-
-    df_spend = pd.concat([df_procurement, df_services], ignore_index=True)
-    #Set itemname as the first column in the dataframe
-    cols = ['ItemName', 'TotalAnnualSpend', 'Proportionality', 'SourceType']
-    df_spend = df_spend[cols]
-
-    # CLean and combine mappings
-    procurement_mapping["ItemName"] = procurement_mapping["ProcurementName"]
-    services_mapping["ItemName"] = services_mapping["ServiceName"]
-
-    df_mapping = pd.concat([procurement_mapping, services_mapping], ignore_index=True)
-
-    cols = ['ItemName', 'GLAccount', 'GLAccountName', 'CostCenter']
-    #remove ProcurementName and ServiceName columns
-    df_mapping = df_mapping[cols]
-
-    return df_spend, df_mapping
-
-def map_payroll(
-        df_payroll: pd.DataFrame, 
-        df_accounts: pd.DataFrame, 
-        df_departments: pd.DataFrame,
-        df_customers: pd.DataFrame
-    ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """
-    Maps each Employee_ID in payroll data to payroll GL accounts and departments.
-
-    Returns:
-        - df_spend: Employee payroll spend summary
-        - df_mapping: Mapping between Employee_ID, GL accounts, departments
-    """
-    df_spend = df_payroll.groupby("Employee_ID", as_index=False)["MonthlyPay"].sum()
-    df_spend["TotalAnnualSpend"] = df_spend["MonthlyPay"].round(-2)
-    df_spend["Proportionality"] = df_spend["TotalAnnualSpend"] / df_spend["TotalAnnualSpend"].sum()
-    df_spend["SourceType"] = "Payroll"
-    df_spend["ItemName"] = df_spend["Employee_ID"]
-    df_spend = df_spend[["ItemName", "TotalAnnualSpend", "Proportionality", "SourceType"]]
-
-    # Map Employee_IDs to GL accounts and departments
-    df_mapping = create_mapping_from_metadata(
-        df=df_spend.rename(columns={"ItemName": "Employee_ID"}),
-        df_accounts=df_accounts,
-        df_departments=df_departments,
-        df_customers=None,
-        name_column="Employee_ID"
-    )
-
-    # Rename after mapping
-    df_mapping.rename(columns={"Employee_ID": "ItemName"}, inplace=True)
-
-    df_mapping = df_mapping[["ItemName", "GLAccount", "GLAccountName", "Department", "CostCenter"]]
-
-    return df_spend, df_mapping
-
-
-def map_products(
-        df_products: pd.DataFrame, 
-        df_accounts: pd.DataFrame, 
-        df_departments: pd.DataFrame,
-        df_customers: pd.DataFrame
-    ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """
-    Maps products to GL revenue accounts, departments, and customers.
-
-    Returns:
-        - df_spend: Product sales spend (based on Proportionality)
-        - df_mapping: Product to GL/cost center/customer mapping
-    """
-    df_products = df_products.copy()
-    df_products["ItemName"] = df_products["ProductName"]
-    df_products["SourceType"] = "Product Sales"
-
-    df_mapping = create_mapping_from_metadata(
-        df=df_products,
-        df_accounts=df_accounts,
-        df_departments=df_departments,
-        df_customers=df_customers,
-        name_column="ProductName"
-    )
-
-    df_spend = df_products[["ItemName", "TotalAnnualSpend", "Proportionality", "SourceType"]]
-    df_mapping = df_mapping[["ProductName","GLAccount",	"GLAccountName",	"CostCenter",	"CustomerName"]]
-    df_mapping = df_mapping.rename(columns={"ProductName": "ItemName"})
-
-    return df_spend, df_mapping

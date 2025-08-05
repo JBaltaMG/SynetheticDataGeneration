@@ -6,7 +6,7 @@ import generators.random_generators as random_generators
 import generators.llm_generators as llm_generators
 import modeling.payroll as payroll
 import modeling.erp as erp
-from tqdm import tqdm
+import modeling.mapping as mapping
 
 
 def create_company_data(company_name: str, count_employee: int = 100, count_products: int = 50,
@@ -68,6 +68,7 @@ def generate_all_dimensions(company_name: str,
         mean_pay = mean_pay,
         if_long=False  # Set to True for long format
     )
+
     df_payroll = payroll.create_pay_roll(
         df_roles = df_roles,
         df_employees = df_employees,
@@ -103,7 +104,7 @@ def generate_all_dimensions(company_name: str,
 
     # Save files if requested
     if save_to_csv:
-        output_dir = f"data/outputdata/{company_name}"
+        output_dir = f"data/outputdata/"
         os.makedirs(output_dir, exist_ok=True)
         os.makedirs(f"{output_dir}/dimensions", exist_ok=True)
 
@@ -146,7 +147,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
         raise ValueError("You must provide either 'generated_data' or 'company_name'.")
 
     if company_name:
-        base_path = f"data/outputdata/{company_name}/dimensions/"
+        base_path = f"data/outputdata/dimensions/"
         try:
             df_products    = pd.read_csv(os.path.join(base_path, "products.csv"))
             df_services    = pd.read_csv(os.path.join(base_path, "services.csv"))
@@ -182,8 +183,8 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
         estimated_financials["EstimatedPayroll"] * df_departments["Proportionality"], -3
     )
 
-    df_erp_expenses, df_map_expenses = utils.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
-    df_erp_products, df_map_products = utils.map_products(df_products=df_products, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
+    df_erp_expenses, df_map_expenses = mapping.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
+    df_erp_products, df_map_products = mapping.map_products(df_products=df_products, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
 
     df_erp_payroll = payroll.add_taxes(df_payroll=df_payroll)
     df_map_payroll = pd.read_csv("data/inputdata/line_id_accounts.csv")
@@ -191,7 +192,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     print(f"✔ All mapping data generated.")
 
     if save_to_csv:
-        output_dir = f"data/outputdata/{company_name}/mapping"
+        output_dir = f"data/outputdata/mapping"
         os.makedirs(output_dir, exist_ok=True)
         df_map_expenses.to_csv(f"{output_dir}/map_expenses.csv", index=False)
         df_map_payroll.to_csv(f"{output_dir}/map_payroll.csv", index=False)
@@ -222,19 +223,15 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
 
     document_metadata_expense = random_generators.generate_document_metadata(n=30, start_index=1000)
     document_metadata_products = random_generators.generate_document_metadata(n=30, start_index=2000)
-    #document_metadata_payroll = random_generators.generate_document_metadata(n=30, start_index=3000)
-
+    
     df_erp_expenses_full = erp.create_erp_data(df_expenses=df_erp_expenses, df_expenses_mapping=df_map_expenses, df_document_metadata=document_metadata_expense)
     df_erp_products_full = erp.create_erp_data(df_expenses=df_erp_products, df_expenses_mapping=df_map_products, df_document_metadata=document_metadata_products)
     df_erp_payroll_full = payroll.create_full_payroll(df_payroll=df_erp_payroll, df_mapping=df_map_payroll)
     
-    # Full target schema
+    # Full target schema # also Currency, AmountEUR, Type
     full_columns = [
-        'DocumentNumber', 'Date', 'Currency',
-        'AmountDKK', 'AmountEUR', 'Type',
-        'GLAccount', 'CostCenter',
-        'Department', 'CustomerName',
-        'ItemName', 'SourceType'
+        'DocumentNumber', 'Date', 'AmountDKK', 
+        'GLAccount', 'product_id', 'procurement_id', 'service_id'
     ]
 
     # Reindex all ERP dataframes to align to full schema
@@ -247,7 +244,7 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     print(f"✔ All erp-data generated.")
 
     if save_to_csv:
-        output_dir = f"data/outputdata/{company_name}/ERP"
+        output_dir = f"data/outputdata/fact"
         os.makedirs(output_dir, exist_ok=True)
         df_erp_expenses_full.to_csv(f"{output_dir}/erp_expenses.csv", index=False)
         df_erp_payroll_full.to_csv(f"{output_dir}/erp_payroll.csv", index=False)

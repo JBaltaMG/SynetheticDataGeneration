@@ -1,51 +1,11 @@
 RoleName,MonthlyPay,FirstName,LastName,Employee_ID
-Chief Financial Officer,165000.0,Poul,Simonsen,700
-Chief Operations Officer,145900.0,Birgit,Larsen,578
-Chief Technology Officer,142300.0,Lone,Jensen,789
-Senior Vice President of Sales,138700.0,Lisbeth,Lund,131
-Senior Vice President of Human Resources,115400.0,Vibeke,Bach,717
-Vice President of Manufacturing,103800.0,Lene,Frandsen,787
-Vice President of Supply Chain,101300.0,Mogens,Rasmussen,652
-Vice President of Research and Development,100000.0,Frank,Hansen,935
-Vice President of Marketing,96000.0,Grethe,Christiansen,176
-Vice President of Legal Affairs,91500.0,Lene,Madsen,513
-Director of Engineering,89700.0,Frank,Hansen,683
-Director of Human Resources,84900.0,Pia,Winther,170
-Director of Operations,83700.0,Bent,Petersen,888
-Director of Finance,82600.0,Inger,Carlsen,201
-Director of IT,79900.0,Tina,Leth,720
-Director of Quality Assurance,78800.0,Pia,Winther,752
-Director of Procurement,78300.0,Pia,Winther,730
-Engineering Manager,77400.0,Charlotte,Hviid,399
-Sales Manager,75400.0,Erik,Olsen,793
-Human Resources Manager,73900.0,Jan,Lind,547
-Operations Manager,71300.0,Hanne,Bjerre,196
-Finance Manager,68100.0,Kurt,Schmidt,287
-Quality Assurance Manager,67400.0,Thomas,Bjerregaard,360
-Procurement Manager,64800.0,Johnny,Bonde,450
-Senior Project Manager,64500.0,Bodil,Sørensen,629
-Senior Engineer,64500.0,Jørgen,Holm,795
-Senior Sales Executive,62900.0,Birgit,Larsen,461
-Senior HR Specialist,62600.0,Martin,Nielsen,953
-Senior Operations Specialist,58300.0,Bent,Petersen,985
-Senior Financial Analyst,58200.0,Else,Iversen,590
-Senior Quality Assurance Specialist,58100.0,Dorthe,Poulsen,821
-Senior Procurement Specialist,58000.0,Else,Iversen,794
-Mechanical Engineer,56100.0,Thomas,Bjerregaard,187
-Electrical Engineer,55700.0,Anders,Pedersen,618
-Sales Executive,54700.0,Else,Jørgensen,891
-HR Specialist,54700.0,Søren,Møller,841
-Operations Specialist,51900.0,Preben,Thomsen,313
-Financial Analyst,47600.0,Inger,Carlsen,690
-Quality Assurance Specialist,45500.0,Bodil,Sørensen,465
-Procurement Specialist,44500.0,Lone,Jensen,299
-Junior Engineer,42700.0,Lene,Madsen,855
-Junior Sales Executive,41400.0,Frank,Hansen,729
-Junior HR Specialist,39400.0,Helle,Bertelsen,929
-Junior Operations Specialist,38000.0,Susanne,Mortensen,452
-Junior Financial Analyst,37800.0,Jørgen,Knudsen,429
-Junior Quality Assurance Specialist,36900.0,Else,Iversen,579
-Junior Procurement Specialist,33000.0,Gitte,Hedegaard,992
-Administrative Assistant,32400.0,Preben,Thomsen,344
-Customer Service Representative,30300.0,Johnny,Bonde,386
-Technical Support Specialist,29700.0,Lisbeth,Lund,389
+Chief Executive Officer,165000.0,Dorthe,Poulsen,265
+Chief Financial Officer,160900.0,Helle,Bertelsen,530
+Chief Operations Officer,114500.0,Kirsten,Andersen,130
+Vice President of Engineering,108500.0,Pia,Winther,167
+Vice President of Sales,103500.0,Inger,Carlsen,849
+Director of Human Resources,101400.0,Vibeke,Bach,983
+Senior Project Manager,76200.0,Michael,Krogh,462
+Lead Engineer,73000.0,Inger,Carlsen,207
+Financial Analyst,73000.0,Helle,Bertelsen,414
+Administrative Assistant,65600.0,Else,Iversen,392
