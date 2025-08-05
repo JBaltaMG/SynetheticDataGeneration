@@ -21,6 +21,7 @@ def map_procurement_services(
     """
 
     # Create mappings
+
     procurement_mapping = create_mapping_from_metadata(
         df_procurement, df_accounts, df_departments, df_customers, name_column="ProcurementName"
     )
@@ -30,17 +31,17 @@ def map_procurement_services(
 
     # Assign ID and metadata columns
     df_procurement = df_procurement.copy()
-    df_procurement["procurement_id"] = df_procurement["ProcurementName"]
+    df_procurement["procurement_id"] = df_procurement["name"]
     df_procurement["service_id"] = None
     df_procurement["product_id"] = None
-    df_procurement["ItemName"] = df_procurement["ProcurementName"]
+    df_procurement["ItemName"] = df_procurement["name"]
     df_procurement["SourceType"] = "Procurement"
 
     df_services = df_services.copy()
-    df_services["service_id"] = df_services["ServiceName"]
+    df_services["service_id"] = df_services["name"]
     df_services["procurement_id"] = None
     df_services["product_id"] = None
-    df_services["ItemName"] = df_services["ServiceName"]
+    df_services["ItemName"] = df_services["name"]
     df_services["SourceType"] = "Service"
 
     # Combine and select columns
@@ -51,8 +52,8 @@ def map_procurement_services(
     ]]
 
     # Add ItemName to mappings for merge compatibility
-    procurement_mapping["ItemName"] = procurement_mapping["ProcurementName"]
-    services_mapping["ItemName"] = services_mapping["ServiceName"]
+    procurement_mapping["ItemName"] = procurement_mapping["name"]
+    services_mapping["ItemName"] = services_mapping["name"]
 
     df_mapping = pd.concat([procurement_mapping, services_mapping], ignore_index=True)
     df_mapping = df_mapping[["ItemName", "GLAccount", "GLAccountName"]]
@@ -76,10 +77,10 @@ def map_products(
     df_products = df_products.copy()
 
     # Assign ID and metadata columns
-    df_products["product_id"] = df_products["ProductName"]
+    df_products["product_id"] = df_products["name"]
     df_products["procurement_id"] = None
     df_products["service_id"] = None
-    df_products["ItemName"] = df_products["ProductName"]
+    df_products["ItemName"] = df_products["name"]
     df_products["SourceType"] = "Product Sales"
 
     # Build spend data
@@ -97,7 +98,7 @@ def map_products(
         name_column="ProductName"
     )
 
-    df_mapping["ItemName"] = df_mapping["ProductName"]
+    df_mapping["ItemName"] = df_mapping["name"]
     df_mapping = df_mapping[["ItemName", "GLAccount", "GLAccountName", "CustomerName"]]
 
     return df_spend, df_mapping

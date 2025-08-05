@@ -2,7 +2,7 @@ import pyodbc
 import dotenv
 import pandas as pd
 import numpy as np
-from schema import schemadict
+from db.schema import schemadict
 
 # Load environment variables from .env file
 dotenv.load_dotenv()
@@ -68,7 +68,7 @@ def map_dtype(dtype):
         return "decimal(18,2)"
     elif str(dtype) == "bool":
         return "bit"
-    elif str(dtype).startswith("datetime64"):
+    elif str(dtype).startswith("datetime64") or "datetime" in str(dtype) or str(dtype) == "datetime64[ns]":
         return "datetime"
     elif str(dtype).startswith("timedelta"):
         return "bigint"
@@ -202,7 +202,7 @@ def optimize_datatypes(df):
 
 
 def insert_dataframe_from_csv(
-    csv_path: str, table_name: str, schemadict: dict, conn=None, version_tag=None
+    csv_path: str, table_name: str, schemadict: dict, conn=None, version_tag=None, final_dim_dict=None
 ):
     """
     Insert data from a CSV file into a specified table in Microsoft SQL Server.
@@ -220,10 +220,7 @@ def insert_dataframe_from_csv(
     -------
     None
     """
-    version_query = f"INSERT INTO dbo.dim_version (version) VALUES ('{version_tag}')"
-    print(version_query)
-    conn.cursor().execute(version_query)  # Ensure the connection is established
-    conn.commit()
+    
 
     version_id_query = f"SELECT id FROM dbo.dim_version WHERE version = '{version_tag}'"
     version_id = conn.cursor().execute(version_id_query).fetchone()[0]
@@ -246,15 +243,42 @@ def insert_dataframe_from_csv(
     print(f"Max ID in {table_name}: {max_id}")
     df["id"] = max_id + df.index + 1
     insert_dataframe(df, table_name, conn=conn)
+    final_dim_dict[table_name] = df
+    
+def remap_dataframe_ids(df_erp: pd.DataFrame, dim_dict: dict) -> pd.DataFrame:
+    """
+    Remap the IDs in a DataFrame based on a provided mapping dictionary.
+    If a value is not found in the mapping, it's replaced with -1.
+    """
+    for key, item in dim_dict.items():
+        id_col_name = key.split("_")[-1] + "_id"
+        if id_col_name not in df_erp.columns:
+            continue  # Skip if the ID column is not present
+
+        mapping = dict(zip(item['name'], item['id']))
+        df_erp[id_col_name] = (
+            df_erp[id_col_name]
+            .map(mapping)
+            .fillna(-1)             # Fill unmapped (NaN) values with -1
+            .astype("Int64")        # Keep as nullable integer
+        )
+
+    return df_erp
 
 
-if __name__ == "__main__":
-
+def execute_db_operations(version_tag: str = "test6"):
+    
+    final_dim_dict = {}
     print(dotenv.get_key(".env", "SERVER"))
     print(dotenv.get_key(".env", "DATABASE"))
     print(dotenv.get_key(".env", "UID"))
     print(dotenv.get_key(".env", "PWD"))
     conn = connect_to_database()
+
+    version_query = f"INSERT INTO dbo.dim_version (version) VALUES ('{version_tag}')"
+    print(version_query)
+    conn.cursor().execute(version_query)  # Ensure the connection is established
+    conn.commit()
 
     for file_name in [
         "department.csv",
@@ -272,28 +296,75 @@ if __name__ == "__main__":
             table_name=table_name,
             schemadict=schemadict,
             conn=conn,
-            version_tag="test3",
+            version_tag=version_tag,
+            final_dim_dict=final_dim_dict,
         )
+    
+    df_erp = pd.read_csv("data/outputdata/fact/general_ledger.csv")
+    df_erp_mapped = remap_dataframe_ids(df_erp, final_dim_dict)
+    df_erp_mapped.to_csv("data/outputdata/fact/general_ledger_mapped.csv", index=False)
+
+    #mapping = dict(zip(final_dim_dict['dim_product']['productname'], final_dim_dict['dim_product']['id']))
+    #df_erp['product_id'] = df_erp['product_id'].map(mapping)
+
+
 
     insert_dataframe_from_csv(
-        csv_path="data/outputdata/fact/general_ledger.csv",
-        table_name="general_ledger",
+        csv_path="data/outputdata/fact/general_ledger_mapped.csv",
+        table_name="fact_general_ledger",
         schemadict=schemadict,
         conn=conn,
-        version_tag="test3",
+        version_tag=version_tag,
     )
 
-    # df_departments = load_dataframe_from_csv(
-    #     "data/outputdata/Vestas/dimensions/customers.csv", schema_dim_departments
-    # )
-    # df_departments = optimize_datatypes(df_departments)
+if __name__ == "__main__":
 
-    # tbl_statement = create_table_statement(df_departments, "dim_departments")
-    # table_exists_result = table_exists("dim_departments", conn=conn)
-    # if not table_exists_result:
-    #     conn.cursor().execute(tbl_statement)
-    #     conn.commit()
+    final_dim_dict = {}
+    print(dotenv.get_key(".env", "SERVER"))
+    print(dotenv.get_key(".env", "DATABASE"))
+    print(dotenv.get_key(".env", "UID"))
+    print(dotenv.get_key(".env", "PWD"))
+    conn = connect_to_database()
 
-    # insert_dataframe(df_departments, "dim_departments", conn=conn)
+    version_query = f"INSERT INTO dbo.dim_version (version) VALUES ('test6')"
+    print(version_query)
+    conn.cursor().execute(version_query)  # Ensure the connection is established
+    conn.commit()
 
-    # print(tbl_statement)
+    for file_name in [
+        "department.csv",
+        "customer.csv",
+        "product.csv",
+        "account.csv",
+        "procurement.csv",
+        "service.csv",
+    ]:
+        print(f"inserting {file_name} into database")
+        table_name = "dim_" + file_name.split(".")[0].replace(" ", "_").lower()
+
+        insert_dataframe_from_csv(
+            csv_path=f"data/outputdata/dimensions/{file_name}",
+            table_name=table_name,
+            schemadict=schemadict,
+            conn=conn,
+            version_tag="test6",
+        )
+    
+    print(final_dim_dict["dim_account"])
+    #print(final_dim_dict)
+    df_erp = pd.read_csv("data/outputdata/fact/general_ledger.csv")
+    df_erp_mapped = remap_dataframe_ids(df_erp, final_dim_dict)
+    df_erp_mapped.to_csv("data/outputdata/fact/general_ledger_mapped.csv", index=False)
+
+    #mapping = dict(zip(final_dim_dict['dim_product']['productname'], final_dim_dict['dim_product']['id']))
+    #df_erp['product_id'] = df_erp['product_id'].map(mapping)
+
+
+
+    insert_dataframe_from_csv(
+        csv_path="data/outputdata/fact/general_ledger_mapped.csv",
+        table_name="fact_general_ledger",
+        schemadict=schemadict,
+        conn=conn,
+        version_tag="test6",
+    )

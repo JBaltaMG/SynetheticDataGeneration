@@ -1,11 +1,51 @@
 RoleName,MonthlyPay,FirstName,LastName,Employee_ID
-Chief Executive Officer,165000.0,Dorthe,Poulsen,265
-Chief Financial Officer,160900.0,Helle,Bertelsen,530
-Chief Operations Officer,114500.0,Kirsten,Andersen,130
-Vice President of Engineering,108500.0,Pia,Winther,167
-Vice President of Sales,103500.0,Inger,Carlsen,849
-Director of Human Resources,101400.0,Vibeke,Bach,983
-Senior Project Manager,76200.0,Michael,Krogh,462
-Lead Engineer,73000.0,Inger,Carlsen,207
-Financial Analyst,73000.0,Helle,Bertelsen,414
-Administrative Assistant,65600.0,Else,Iversen,392
+Chief Financial Officer,135000.0,Poul,Simonsen,700
+Chief Operating Officer,119400.0,Birgit,Larsen,578
+Chief Marketing Officer,116400.0,Lone,Jensen,789
+Chief Technology Officer,113400.0,Lisbeth,Lund,131
+Senior Vice President of Product Development,94400.0,Vibeke,Bach,717
+Vice President of Human Resources,84900.0,Lene,Frandsen,787
+Vice President of Supply Chain,82900.0,Mogens,Rasmussen,652
+Vice President of Manufacturing,81800.0,Frank,Hansen,935
+Vice President of Marketing,78500.0,Grethe,Christiansen,176
+Vice President of Finance,74900.0,Lene,Madsen,513
+Vice President of IT,73400.0,Frank,Hansen,683
+Director of Product Design,69500.0,Pia,Winther,170
+Director of Engineering,68500.0,Bent,Petersen,888
+Director of Sales,67600.0,Inger,Carlsen,201
+Director of Marketing,65400.0,Tina,Leth,720
+Director of Human Resources,64400.0,Pia,Winther,752
+Director of Supply Chain,64100.0,Pia,Winther,730
+Director of Manufacturing,63400.0,Charlotte,Hviid,399
+Director of Finance,61700.0,Erik,Olsen,793
+Director of IT,60500.0,Jan,Lind,547
+Director of Legal,58300.0,Hanne,Bjerre,196
+Senior Product Manager,55700.0,Kurt,Schmidt,287
+Senior Marketing Manager,55100.0,Thomas,Bjerregaard,360
+Senior Sales Manager,53000.0,Johnny,Bonde,450
+Senior HR Manager,52800.0,Bodil,Sørensen,629
+Senior Supply Chain Manager,52800.0,Jørgen,Holm,795
+Senior Manufacturing Manager,51400.0,Birgit,Larsen,461
+Senior Finance Manager,51200.0,Martin,Nielsen,953
+Senior IT Manager,47700.0,Bent,Petersen,985
+Senior Legal Counsel,47600.0,Else,Iversen,590
+Software Engineer,47600.0,Dorthe,Poulsen,821
+Marketing Manager,47500.0,Else,Iversen,794
+HR Manager,45900.0,Thomas,Bjerregaard,187
+Supply Chain Manager,45500.0,Anders,Pedersen,618
+Manufacturing Manager,44800.0,Else,Jørgensen,891
+Finance Manager,44700.0,Søren,Møller,841
+IT Manager,42400.0,Preben,Thomsen,313
+Legal Counsel,39000.0,Inger,Carlsen,690
+Mechanical Engineer,37200.0,Bodil,Sørensen,465
+Marketing Specialist,36400.0,Lone,Jensen,299
+Sales Specialist,34900.0,Lene,Madsen,855
+HR Specialist,33900.0,Frank,Hansen,729
+Supply Chain Specialist,32300.0,Helle,Bertelsen,929
+Manufacturing Specialist,31100.0,Susanne,Mortensen,452
+Financial Analyst,30900.0,Jørgen,Knudsen,429
+Legal Assistant,30200.0,Else,Iversen,579
+Administrative Assistant,27000.0,Gitte,Hedegaard,992
+Customer Service Representative,26500.0,Preben,Thomsen,344
+Production Worker,24800.0,Johnny,Bonde,386
+Warehouse Worker,24300.0,Lisbeth,Lund,389

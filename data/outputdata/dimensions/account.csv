@@ -1,31 +1,31 @@
-AccountName,AccountType,Account_ID
+name,AccountType,Account_ID
 Sales Revenue,Revenue,35015
-Service Revenue,Revenue,32307
-Interest Income,Revenue,36629
-Direct Labor,Product Expense,49210
-Manufacturing Overhead,Product Expense,46616
-Consulting Fees,Service Expense,57086
-Legal Fees,Service Expense,52767
-Marketing Expenses,Service Expense,55842
-Utilities,Service Expense,52071
-Office Supplies,Service Expense,52773
-Bonuses,Payroll,93454
-Pension Contributions,Payroll,96169
-Health Insurance,Payroll,96064
-Cash,Asset,12231
-Accounts Receivable,Asset,11043
-Inventory,Asset,19126
-Prepaid Expenses,Asset,16344
-"Property, Plant, and Equipment",Asset,15814
-Accumulated Depreciation,Asset,12395
-Accounts Payable,Asset,17097
-Bank Loan,Asset,16012
-Common Stock,Equity,20871
-Retained Earnings,Equity,28685
-Dividends Paid,Equity,25399
-Share Premium,Equity,21645
-Treasury Stock,Equity,21493
-Research and Development,Service Expense,58510
-Travel Expenses,Service Expense,54859
-Depreciation Expense,Service Expense,56495
-Insurance Expense,Service Expense,54857
+Licensing Revenue,Revenue,32307
+Retail Store Revenue,Revenue,36629
+Packaging Materials,Product Expense,49210
+Freight-In,Product Expense,46616
+Manufacturing Overhead,Product Expense,47086
+Product Development Costs,Product Expense,42767
+Consulting Fees,Service Expense,55842
+Software Subscriptions,Service Expense,52071
+Legal Fees,Service Expense,52773
+Marketing and Advertising,Service Expense,53454
+Salaries,Payroll,96169
+Bonuses,Payroll,96064
+Pension Contributions,Payroll,92231
+Health Insurance,Payroll,91043
+Payroll Taxes,Payroll,99126
+Cash,Asset,16344
+Accounts Receivable,Asset,15814
+Inventory,Asset,12395
+Prepaid Expenses,Asset,17097
+Intangible Assets,Asset,16012
+Accounts Payable,Liability,90871
+Accrued Liabilities,Liability,98685
+Long-term Debt,Liability,95399
+Deferred Revenue,Liability,91645
+Common Stock,Equity,21493
+Retained Earnings,Equity,28510
+Additional Paid-In Capital,Equity,24859
+Treasury Stock,Equity,26495
+Dividends Declared,Equity,24857

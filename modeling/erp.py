@@ -177,7 +177,7 @@ def create_erp_data(
     df.rename(columns={"Amount": "AmountDKK"}, inplace=True)
 
     # Build final column list
-    cols = ['DocumentNumber', 'Date', 'Currency', 'AmountDKK', 'AmountEUR', 'Type', 'GLAccount']
+    cols = ['DocumentNumber', 'Date', 'Currency', 'AmountDKK', 'AmountEUR', 'Type', 'GLAccount', 'GLAccountName']
     if "Department" in df.columns:
         cols.append("Department")
     if "CustomerName" in df.columns:
@@ -273,6 +273,7 @@ def pre_split_spend_lines(
             entry = {
                 "Type": "Credit",
                 "Amount": round(-amt, 2),
+                "GLAccountName": map_row["GLAccountName"],
                 "GLAccount": map_row["GLAccount"],
                 "ItemName": item_name,
                 "SourceType": source_type,
@@ -291,6 +292,7 @@ def pre_split_spend_lines(
                 "Type": "Debit",
                 "Amount": round(amt, 2),
                 "GLAccount": map_row["GLAccount"],
+                "GLAccountName": map_row["GLAccountName"],
                 "ItemName": item_name,
                 "SourceType": source_type,
                 "product_id": product_id,
@@ -397,6 +399,7 @@ def assign_to_documents(df_lines, df_documentnumber, df_date):
                 "Amount": correction_amount if correction_type == "Debit" else -correction_amount,
                 "Type": correction_type,
                 "GLAccount": sample_row["GLAccount"],
+                "GLAccountName": sample_row["GLAccountName"],
                 "ItemName": sample_row["ItemName"],
                 "SourceType": sample_row.get("SourceType", "Correction"),
                 "product_id": sample_row.get("product_id"),
@@ -451,6 +454,7 @@ def patch_unbalanced_documents(df: pd.DataFrame, tolerance: float = 10) -> pd.Da
                     "Amount": correction_sign * amt,
                     "Type": correction_type,
                     "GLAccount": sample_row["GLAccount"],
+                    "GLAccountName": sample_row["GLAccountName"],
                     "CostCenter": sample_row.get("CostCenter"),
                     "ItemName": sample_row.get("ItemName", "Correction Line"),
                     "SourceType": sample_row.get("SourceType", "Correction"),

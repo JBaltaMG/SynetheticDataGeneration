@@ -133,20 +133,20 @@ def create_mapping_from_metadata(
         raise ValueError(f"Unsupported name_column: {name_column}")
 
     for _, row in df.iterrows():
-        item_value = row[name_column]
+        item_value = row["name"]
         n_accounts_per_item = np.random.randint(2, 7)
         gl_sample = expense_accounts.sample(n_accounts_per_item, replace=True)
 
         for _, acc in gl_sample.iterrows():
             mapping = {
-                name_column: item_value,
+                "name": item_value,
                 "GLAccount": acc["Account_ID"],
-                "GLAccountName": acc["AccountName"],
+                "GLAccountName": acc["name"],
             }
 
             if name_column == "ProductName" and df_customers is not None:
                 customer = df_customers.sample(1).iloc[0]
-                mapping["CustomerName"] = customer["CustomerName"]
+                mapping["CustomerName"] = customer["name"]
 
             mappings.append(mapping)
 

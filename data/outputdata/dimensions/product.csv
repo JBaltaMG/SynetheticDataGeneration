@@ -1,51 +1,51 @@
-ProductName,Proportionality
-Utility-Scale Onshore Wind Turbine,21.844429670434042
-Utility-Scale Offshore Wind Turbine,14.436318738721626
-Wind Turbine Maintenance Service Contract,7.6930382752398145
-Wind Turbine Blades,5.8884984328996115
-Wind Turbine Gearboxes,5.318643745844811
-Wind Turbine Towers,4.74878905879001
-Wind Turbine Nacelles,4.273910152911008
-Wind Turbine Control Systems,3.039224997625606
-Turbine Installation Services,2.469370310570805
-Remote Monitoring & Diagnostics Platform,2.1844429670434042
-Grid Connection Solutions,1.994491404691804
-Hybrid Wind-Solar Solutions,1.7570519517523036
-Energy Storage Integration Package,1.6145882799886033
-Wind Turbine Generators,1.4721246082249029
-Turbine Upgrades & Life Extension Kits,1.2821730458733027
-Predictive Maintenance Software,1.1397093741096023
-Annual Safety Inspection Package,0.9782505461107418
-Wind Resource Assessment Services,0.9497578117580018
-Turbine Retrofit Packages,0.9022699211701016
-Digital Twin Modeling Service,0.8737771868173618
-Performance Optimization Analytics,0.8547820305822016
-Blade Repair Services,0.7882989837591414
-Component Refurbishment Services,0.7598062494064015
-Fleet Asset Management Platform,0.7313135150536615
-Decommissioning & Repowering Services,0.7028207807009214
-Lightning Protection Systems,0.6838256244657613
-High-Voltage Transformer Units,0.6648304682306013
-Noise Reduction Retrofit Kits,0.6363377338778614
-Foundation Design & Supply,0.5983474214075412
-Environmental Impact Assessment Service,0.5793522651723811
-Crane & Heavy Lift Rental Services,0.560357108937221
-Offshore Substation Packages,0.541361952702061
-Turbine Commissioning Services,0.522366796466901
-Power Purchase Agreement Advisory Service,0.503371640231741
-Wind Measurement Equipment,0.4843764839965809
-Subsea Cable & Connection Solutions,0.46538132776142094
-Smart Power Forecasting Tools,0.4463861715262608
-Wind Farm Design & Engineering Consulting,0.4273910152911008
-Remote Troubleshooting Support,0.41789343717352084
-Ice Detection & Prevention Systems,0.40839585905594084
-Project Financing Solutions,0.3988982809383607
-Training & Certification Programs,0.37990312470320076
-Access & Service Platforms,0.37040554658562075
-Oil & Lubricant Supply Services,0.36090796846804074
-Customer Portal Access Subscription,0.3514103903504607
-Rotor Balancing Service,0.33241523411530066
-Offshore Crew Transfer Solutions,0.32291765599772065
-Blade Cleaning Equipment,0.30392249976256064
-Wind Farm Operations Management,0.2754297654098205
-SCADA System Upgrades,0.26593218729224055
+name,Proportionality
+LEGO City Sets,0.13563855191517812
+LEGO Star Wars Sets,0.12513134014710095
+LEGO Technic Sets,0.08310249307479224
+LEGO Friends Sets,0.06877447702741427
+LEGO Harry Potter Sets,0.06304327060846307
+LEGO Marvel Super Heroes Sets,0.05635686311968669
+LEGO Creator Sets,0.049670455630910305
+LEGO Ninjago Sets,0.04393924921195912
+LEGO DUPLO Sets,0.039163243862833125
+LEGO Disney Princess Sets,0.03438723851370713
+LEGO Architecture Sets,0.027700831024930744
+LEGO Speed Champions Sets,0.02101442353615436
+LEGO Minecraft Sets,0.019104021396503964
+LEGO DOTS Sets,0.017193619256853566
+LEGO Super Mario Sets,0.01623841818702837
+LEGO Classic Brick Boxes,0.014328016047377972
+LEGO Jurassic World Sets,0.011462412837902378
+LEGO Minifigures Collectible Series,0.011462412837902378
+LEGO Botanical Collection,0.01050721176807718
+LEGO Batman/DC Sets,0.009552010698251982
+LEGO Accessories Packs,0.009169930270321902
+LEGO Creator Expert Sets,0.008310249307479223
+LEGO Storage Boxes & Drawers,0.008023688986531665
+LEGO Advent Calendars,0.007832648772566625
+LEGO Keychains,0.007259528130671506
+LEGO BrickHeadz,0.006972967809723946
+LEGO Polybags,0.006590887381793867
+LEGO Gift Cards,0.006304327060846307
+LEGO Exclusive Limited Edition Sets,0.005731206418951189
+LEGO Wear (Clothing and Apparel),0.005635686311968669
+LEGO Watches & Clocks,0.0054446460980036296
+LEGO Buildable Figures,0.00525360588403859
+LEGO Stationery Products,0.004967045563091031
+LEGO Custom Printing Service,0.004680485242143471
+LEGO Bags & Backpacks,0.004489445028178431
+LEGO Board & Family Games,0.004298404814213392
+LEGO Storage & Display Cases,0.004202884707230872
+LEGO Books & Activity Packs,0.004107364600248352
+LEGO In-Store Birthday Parties,0.003916324386283312
+LEGO Pick-A-Brick Wall,0.0037252841723182726
+LEGO House Admission Tickets,0.003629764065335753
+LEGO Online Instructions & Digital Content,0.003438723851370713
+LEGO Online Masterclasses & Events,0.003056643423440634
+LEGO Theme Park Merchandise,0.002770083102493075
+LEGO Pro Educational Kits (B2B),0.002674562995510555
+LEGO Video Games & Apps,0.0024835227815455155
+LEGO Seasonal Ornaments & Gifts,0.0023880026745629955
+LEGO Subscription Boxes,0.002101442353615436
+LEGO Building Mats & Play Surfaces,0.001528321711720317
+LEGO Custom Mosaic Kits,0.0012417613907727578

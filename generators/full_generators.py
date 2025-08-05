@@ -81,26 +81,28 @@ def generate_all_dimensions(company_name: str,
     df_procurement = llm_generators.generate_procurement_llm(company_name, count_products)
     validate_length(df_procurement, count_products, "procurement")
     print("✔ Procurement data generated.")
-    df_services = llm_generators.generate_services_llm(company_name, count_products)
-    validate_length(df_services, count_products, "services")
+    df_service = llm_generators.generate_services_llm(company_name, count_products)
+    validate_length(df_service, count_products, "service")
     print("✔ Services data generated.")
-    df_products = llm_generators.generate_sales_products_llm(company_name, count_products)
-    validate_length(df_products, count_products, "products")
+    df_product = llm_generators.generate_sales_products_llm(company_name, count_products)
+    validate_length(df_product, count_products, "product")
     print("✔ Products data generated.")
 
     # Generate other dimension tables
-    df_accounts    = llm_generators.generate_accounts_llm(company_name, count_accounts)
-    df_customers   = llm_generators.generate_customers_llm(company_name, count_customers)
-    df_departments = llm_generators.generate_departments_llm(company_name, count_departments)
-    validate_length(df_accounts, count_accounts, "accounts")
-    validate_length(df_customers, count_customers, "customers")
-    validate_length(df_departments, count_departments, "departments")
+    df_account    = llm_generators.generate_accounts_llm(company_name, count_accounts)
+    df_customer   = llm_generators.generate_customers_llm(company_name, count_customers)
+    df_department = llm_generators.generate_departments_llm(company_name, count_departments)
+    validate_length(df_account, count_accounts, "account")
+    validate_length(df_customer, count_customers, "customer")
+    validate_length(df_department, count_departments, "department")
     print("✔ Accounts, Customers, and Departments generated.")
 
     # Convert proportionality
-    for df, _ in zip([df_procurement, df_services, df_products, df_customers, df_departments],
-                         ["procurement", "services", "products", "customers", "departments"]):
-        df = utils.convert_column_to_percentage(df, 'Proportionality', scale=100.0)
+    dfs = [df_procurement, df_service, df_product, df_customer, df_department]
+    dfs = [utils.convert_column_to_percentage(df, 'Proportionality', scale=1.0) for df in dfs]
+
+    # Then unpack if needed
+    df_procurement, df_service, df_product, df_customer, df_department = dfs
 
     # Save files if requested
     if save_to_csv:
@@ -111,22 +113,22 @@ def generate_all_dimensions(company_name: str,
         df_pay.to_csv(f"{output_dir}/dimensions/pay.csv", index=False)
         df_payroll.to_csv(f"{output_dir}/dimensions/payroll.csv", index=False)
         df_procurement.to_csv(f"{output_dir}/dimensions/procurement.csv", index=False)
-        df_services.to_csv(f"{output_dir}/dimensions/services.csv", index=False)
-        df_products.to_csv(f"{output_dir}/dimensions/products.csv", index=False)
-        df_accounts.to_csv(f"{output_dir}/dimensions/accounts.csv", index=False)
-        df_customers.to_csv(f"{output_dir}/dimensions/customers.csv", index=False)
-        df_departments.to_csv(f"{output_dir}/dimensions/departments.csv", index=False)
+        df_service.to_csv(f"{output_dir}/dimensions/service.csv", index=False)
+        df_product.to_csv(f"{output_dir}/dimensions/product.csv", index=False)
+        df_account.to_csv(f"{output_dir}/dimensions/account.csv", index=False)
+        df_customer.to_csv(f"{output_dir}/dimensions/customer.csv", index=False)
+        df_department.to_csv(f"{output_dir}/dimensions/department.csv", index=False)
         print(f"✔ All CSVs saved to: {output_dir}")
 
     return {
         "pay": df_pay,
         "payroll": df_payroll,
         "procurement": df_procurement,
-        "services": df_services,
-        "products": df_products,
-        "accounts": df_accounts,
-        "customers": df_customers,
-        "departments": df_departments
+        "service": df_service,
+        "product": df_product,
+        "account": df_account,
+        "customer": df_customer,
+        "department": df_department
     }
 
 def create_mapping_between_all(generated_data: dict = None, company_name: str = None, save_to_csv: bool = True) -> dict:
@@ -149,25 +151,26 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     if company_name:
         base_path = f"data/outputdata/dimensions/"
         try:
-            df_products    = pd.read_csv(os.path.join(base_path, "products.csv"))
-            df_services    = pd.read_csv(os.path.join(base_path, "services.csv"))
+            df_products    = pd.read_csv(os.path.join(base_path, "product.csv"))
+            df_services    = pd.read_csv(os.path.join(base_path, "service.csv"))
             df_procurement = pd.read_csv(os.path.join(base_path, "procurement.csv"))
-            df_departments = pd.read_csv(os.path.join(base_path, "departments.csv"))
-            df_accounts    = pd.read_csv(os.path.join(base_path, "accounts.csv"))
-            df_customers   = pd.read_csv(os.path.join(base_path, "customers.csv"))
+            df_departments = pd.read_csv(os.path.join(base_path, "department.csv"))
+            df_accounts    = pd.read_csv(os.path.join(base_path, "account.csv"))
+            df_customers   = pd.read_csv(os.path.join(base_path, "customer.csv"))
             df_payroll     = pd.read_csv(os.path.join(base_path, "payroll.csv"))
         except FileNotFoundError as e:
             raise FileNotFoundError(f"Missing file in folder: {e.filename}")
     else:
-        df_products    = generated_data["products"].copy()
-        df_services    = generated_data["services"].copy()
+        df_products    = generated_data["product"].copy()
+        df_services    = generated_data["service"].copy()
         df_procurement = generated_data["procurement"].copy()
-        df_departments = generated_data["departments"].copy()
-        df_accounts    = generated_data["accounts"].copy()
-        df_customers   = generated_data["customers"].copy()
+        df_departments = generated_data["department"].copy()
+        df_accounts    = generated_data["account"].copy()
+        df_customers   = generated_data["customer"].copy()
         df_payroll     = generated_data["payroll"].copy()
 
     estimated_financials = erp.estimate_costs_from_payroll(df_pay=df_payroll)
+
 
     # Apply proportional spend estimates
     df_procurement["TotalAnnualSpend"] = np.round(
@@ -230,13 +233,26 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     
     # Full target schema # also Currency, AmountEUR, Type
     full_columns = [
-        'DocumentNumber', 'Date', 'AmountDKK', 
-        'GLAccount', 'product_id', 'procurement_id', 'service_id'
+        'DocumentNumber', 'Type', 'Date', 'AmountDKK', 'GLAccountName', 'product_id', 'procurement_id', 'service_id'
     ]
+
+
+    rename_cols = {
+        'DocumentNumber': 'document_number',
+        'Type': 'debit_credit', 
+        'Date': 'date',
+        'AmountDKK': 'amount',
+        'GLAccountName': 'account_id',
+        'product_id': 'product_id',
+        'procurement_id': 'procurement_id',
+        'service_id': 'service_id'}
 
     # Reindex all ERP dataframes to align to full schema
     df_expenses_full = df_erp_expenses_full.reindex(columns=full_columns)
     df_products_full = df_erp_products_full.reindex(columns=full_columns)
+
+    df_expenses_full.rename(columns=rename_cols, inplace=True)
+    df_products_full.rename(columns=rename_cols, inplace=True)
 
     # Concatenate all ERP data
     df_erp_all = pd.concat([df_expenses_full, df_products_full], ignore_index=True)
@@ -249,7 +265,7 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         df_erp_expenses_full.to_csv(f"{output_dir}/erp_expenses.csv", index=False)
         df_erp_payroll_full.to_csv(f"{output_dir}/erp_payroll.csv", index=False)
         df_erp_products_full.to_csv(f"{output_dir}/erp_products.csv", index=False)
-        df_erp_all.to_csv(f"{output_dir}/erp_all.csv", index=False)
+        df_erp_all.to_csv(f"{output_dir}/general_ledger.csv", index=False)
         print(f"✔ All ERP CSVs saved to: {output_dir}")
     
     return {

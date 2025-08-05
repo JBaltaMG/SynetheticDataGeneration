@@ -1,51 +1,51 @@
-ServiceName,Proportionality
-"Engineering, Procurement & Construction (EPC) Management",10.517799352750806
-Major Equipment Transportation & Logistics,8.360302049622437
-Turbine Blade Repair & Refurbishment,7.551240560949298
-Site Civil Works Contract,6.877022653721681
-Foundation Construction Services,5.663430420711974
-Substation Design & Build,4.854368932038835
-Project Management Consultancy,4.449838187702264
-Environmental Impact Assessment Services,4.0453074433656955
-Electrical Cabling & Trenching Services,3.640776699029126
-Onshore/Offshore Marine Survey Services,3.3710895361380793
-Legal Advisory Retainer,3.1014023732470326
-"Health, Safety & Environmental (HSE) Audits",2.696871628910463
-Cybersecurity Risk Assessment,2.157497303128371
-Operations & Maintenance (O&M) Contract,1.8878101402373244
-Technical Training & Certification Programs,1.7529665587918013
-Customs Clearance & Export Documentation,1.6181229773462777
-Recruitment Agency Services,1.4832793959007549
-IT Infrastructure Maintenance Contract,1.3484358144552315
-Fleet Vehicle Leasing,1.2810140237324699
-HR Payroll Processing,1.2135922330097086
-Employee Relocation Services,1.1866235167206038
-Translation & Localization Services,1.146170442286947
-Market Research & Feasibility Study,1.1192017259978422
-Waste Management Services,1.0787486515641855
-Corporate Tax Advisory Services,1.0248112189859762
-Document Management System License,0.9978425026968715
-Network Security Monitoring Subscription,0.9708737864077669
-Catering & Office Hospitality Services,0.9439050701186622
-Conference & Event Organization,0.9169363538295576
-Branding & Marketing Agency Fees,0.8764832793959006
-Regulatory Compliance Consulting,0.849514563106796
-Power BI Pro License,0.8225458468176914
-IT Helpdesk Support Contract,0.7955771305285866
-Telecom & Unified Communications Service,0.768608414239482
-Microsoft 365 Enterprise License,0.7416396979503774
-Adobe Creative Cloud License,0.7146709816612729
-Workplace Ergonomics Assessment,0.6877022653721682
-Mobile Device Management License,0.6607335490830635
-Data Backup & Recovery Service,0.6337648327939588
-Cloud Storage Subscription (e.g. OneDrive),0.6067961165048543
-Zoom Video Conferencing License,0.5798274002157496
-Antivirus & Endpoint Security Subscription,0.552858683926645
-Website Domain Hosting,0.5258899676375405
-E-signature Platform License (e.g. DocuSign),0.49892125134843573
-VPN & Remote Access Service,0.4719525350593311
-Office Supplies Ordering Service,0.44498381877022647
-Visitor Management System Subscription,0.41801510248112184
-Online Training Platform Subscription,0.3910463861920172
-Secure File Transfer Service,0.36407766990291257
-Time Tracking Software License,0.3371089536138079
+name,Proportionality
+SAP Enterprise Resource Planning License,0.09791400595998298
+Manufacturing Automation Integration,0.07095217823187172
+International Customs & Regulatory Advisory,0.06527600397332198
+Raw Material Sourcing Brokerage Fees,0.05959982971477225
+Supply Chain Risk Assessment Services,0.049666524762310205
+Facility Construction Project Management,0.04257130693912303
+Environmental Compliance Auditing,0.03831417624521073
+Packaging Design & Branding Services,0.03547608911593586
+IT Infrastructure Managed Services,0.034057045551298425
+Workforce Recruitment Agency Fees,0.03121895842202356
+Global Tax Advisory Services,0.02838087129274869
+Employee Training & Development Programs,0.026961827728111253
+Product Safety Certification Fees,0.021285653469561516
+Quality Assurance & Product Testing Services,0.018447566340286648
+Patent & Intellectual Property Legal Fees,0.017028522775649212
+Corporate Insurance Brokerage Services,0.017028522775649212
+Custom Software Development Services,0.01560947921101178
+Translation & Localization Services,0.014190435646374344
+Corporate Travel Management Services,0.013764722576983112
+Employee Health & Wellness Program Fees,0.01319710515112814
+Janitorial & Cleaning Contract,0.01277139208173691
+Cloud Data Storage Subscription,0.012487583368809422
+Internal Audit & Compliance Services,0.012203774655881936
+Fleet Vehicle Leasing & Maintenance,0.012061870299418192
+Business Continuity & Disaster Recovery Services,0.011636157230026962
+HR Benefits Administration Fees,0.011352348517099476
+Digital Asset Management System License,0.011068539804171988
+Office Equipment Leasing,0.010784731091244502
+E-commerce Platform Service Fees,0.010642826734780758
+Procurement Platform Subscription,0.010500922378317014
+Remote Collaboration Tools (MS Teams),0.01035901802185327
+Facility Waste Management Services,0.010217113665389528
+Document Management System License,0.010075209308925784
+Corporate Event Planning Services,0.00993330495246204
+Occupational Health & Safety Consulting,0.009649496239534554
+Recruitment Advertising Fees,0.00950759188307081
+IT Security Audit Service,0.009365687526607068
+Data Analytics Software License (Power BI),0.009223783170143324
+Graphic Design Software License (Adobe CC),0.008939974457215836
+Video Conferencing License (Zoom),0.008798070100752094
+Business Intelligence Tools License,0.008514261387824606
+Antivirus & Endpoint Security Subscription,0.008230452674897118
+File Sharing & Backup Service,0.008088548318433376
+Domain Registration & Web Hosting,0.007946643961969634
+Expense Management Software Subscription,0.00780473960550589
+Electronic Signature Platform License (DocuSign),0.007662835249042146
+Time Tracking & Workforce Management License,0.007520930892578403
+Password Management Tool Subscription,0.007379026536114659
+Fax-to-Email Service,0.007237122179650915
+Online Survey & Feedback Tool License,0.007095217823187172
