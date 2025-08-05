@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import random
 import generators.random_generators as random_generators
+from modeling import mapping
 import utils.utils as utils
 
 utils.set_global_seed(42)
@@ -219,4 +220,21 @@ def create_full_payroll(df_payroll: pd.DataFrame, df_mapping: pd.DataFrame) -> p
     df_payroll = add_LineID_Pay(df_payroll)
     #df_payroll = split_Pay(df_payroll, df_mapping)
     df_payroll = map_line_names(df_payroll)
-    return df_payroll
+
+    df_payroll = df_payroll.rename(columns={
+        "Employee_ID": "employee_id",
+        "RoleName": "role_name",
+        "FirstName": "first_name",
+        "LastName": "last_name",
+        "Line_ID": "line_id",
+        "LineName": "name",
+        "Amount": "amount",
+        "Month": "date"
+    })
+
+    cols_pay = ['date', 'employee_id', 'name', 'amount']
+    df_payroll_keep = df_payroll[cols_pay]
+    df_mapping = df_payroll[['name', 'line_id']]
+
+    df_payroll_keep = df_payroll_keep.rename(columns={"name": "line_id"})
+    return df_payroll_keep, df_mapping

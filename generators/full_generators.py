@@ -60,23 +60,6 @@ def generate_all_dimensions(company_name: str,
     validate_length(df_employees, count_employee, "names")
     print("✔ Roles and Names generated.")
 
-    mean_pay = llm_generators.estimate_mean_pay_llm(company_name)
-
-    df_pay = payroll.create_pay_roll(
-        df_roles = df_roles,
-        df_employees = df_employees,
-        mean_pay = mean_pay,
-        if_long=False  # Set to True for long format
-    )
-
-    df_payroll = payroll.create_pay_roll(
-        df_roles = df_roles,
-        df_employees = df_employees,
-        mean_pay = mean_pay,
-        if_long=True  # Set to True for long format
-    )
-    print("✔ Payroll data generated.")
-
     # Generate products and services
     df_procurement = llm_generators.generate_procurement_llm(company_name, count_products)
     validate_length(df_procurement, count_products, "procurement")
@@ -104,14 +87,37 @@ def generate_all_dimensions(company_name: str,
     # Then unpack if needed
     df_procurement, df_service, df_product, df_customer, df_department = dfs
 
+
+    mean_pay = llm_generators.estimate_mean_pay_llm(company_name)
+
+    df_pay = payroll.create_pay_roll(
+        df_roles = df_roles,
+        df_employees = df_employees,
+        mean_pay = mean_pay,
+        if_long=False  # Set to True for long format
+    )
+
+    df_payroll = payroll.create_pay_roll(
+        df_roles = df_roles,
+        df_employees = df_employees,
+        mean_pay = mean_pay,
+        if_long=True  # Set to True for long format
+    )
+    
+    df_pay, df_payroll, df_linemap = create_payroll_data(df_pay=df_pay, df_payroll=df_payroll, df_department=df_department)
+    df_linemap = df_linemap.drop_duplicates(subset='name')
+    print("✔ Payroll data generated.")
+
     # Save files if requested
     if save_to_csv:
         output_dir = f"data/outputdata/"
         os.makedirs(output_dir, exist_ok=True)
         os.makedirs(f"{output_dir}/dimensions", exist_ok=True)
+        os.makedirs(f"{output_dir}/fact", exist_ok=True)
 
-        df_pay.to_csv(f"{output_dir}/dimensions/pay.csv", index=False)
-        df_payroll.to_csv(f"{output_dir}/dimensions/payroll.csv", index=False)
+        df_pay.to_csv(f"{output_dir}/dimensions/employee.csv", index=False)
+        df_payroll.to_csv(f"{output_dir}/fact/erp_payroll.csv", index=False)
+        df_linemap.to_csv(f"{output_dir}/dimensions/payline.csv", index=False)
         df_procurement.to_csv(f"{output_dir}/dimensions/procurement.csv", index=False)
         df_service.to_csv(f"{output_dir}/dimensions/service.csv", index=False)
         df_product.to_csv(f"{output_dir}/dimensions/product.csv", index=False)
@@ -123,6 +129,7 @@ def generate_all_dimensions(company_name: str,
     return {
         "pay": df_pay,
         "payroll": df_payroll,
+        "payline": df_linemap,
         "procurement": df_procurement,
         "service": df_service,
         "product": df_product,
@@ -130,6 +137,17 @@ def generate_all_dimensions(company_name: str,
         "customer": df_customer,
         "department": df_department
     }
+
+def create_payroll_data(df_pay: pd.DataFrame, df_payroll: pd.DataFrame, df_department: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """
+    
+    """
+    df_erp_payroll = payroll.add_taxes(df_payroll=df_payroll)
+    df_map_payroll = pd.read_csv("data/inputdata/line_id_accounts.csv")
+
+    df_pay = utils.assign_departments(df_pay, df_department)
+    df_erp_payroll_full, df_line_mapping = payroll.create_full_payroll(df_payroll=df_erp_payroll, df_mapping=df_map_payroll)
+    return df_pay, df_erp_payroll_full, df_line_mapping
 
 def create_mapping_between_all(generated_data: dict = None, company_name: str = None, save_to_csv: bool = True) -> dict:
     """
@@ -157,7 +175,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
             df_departments = pd.read_csv(os.path.join(base_path, "department.csv"))
             df_accounts    = pd.read_csv(os.path.join(base_path, "account.csv"))
             df_customers   = pd.read_csv(os.path.join(base_path, "customer.csv"))
-            df_payroll     = pd.read_csv(os.path.join(base_path, "payroll.csv"))
+            df_payroll     = pd.read_csv(os.path.join("data/outputdata/fact/", "erp_payroll.csv"))
         except FileNotFoundError as e:
             raise FileNotFoundError(f"Missing file in folder: {e.filename}")
     else:
@@ -189,8 +207,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     df_erp_expenses, df_map_expenses = mapping.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
     df_erp_products, df_map_products = mapping.map_products(df_products=df_products, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
 
-    df_erp_payroll = payroll.add_taxes(df_payroll=df_payroll)
-    df_map_payroll = pd.read_csv("data/inputdata/line_id_accounts.csv")
+
 
     print(f"✔ All mapping data generated.")
 
@@ -198,15 +215,12 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
         output_dir = f"data/outputdata/mapping"
         os.makedirs(output_dir, exist_ok=True)
         df_map_expenses.to_csv(f"{output_dir}/map_expenses.csv", index=False)
-        df_map_payroll.to_csv(f"{output_dir}/map_payroll.csv", index=False)
         df_map_products.to_csv(f"{output_dir}/map_products.csv", index=False)
         print(f"✔ All mapping CSVs saved to: {output_dir}")
 
     return {
         "df_erp_expenses": df_erp_expenses,
         "df_map_expenses": df_map_expenses,
-        "df_erp_payroll": df_erp_payroll,
-        "df_map_payroll": df_map_payroll,
         "df_erp_products": df_erp_products,
         "df_map_products": df_map_products,
     }
@@ -217,10 +231,8 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     Creates all ERP-related data by combining generated and mapped data.
     """
 
-    df_map_payroll = generated_mapped_data["df_map_payroll"]
     df_map_products = generated_mapped_data["df_map_products"]
     df_map_expenses = generated_mapped_data["df_map_expenses"]
-    df_erp_payroll = generated_mapped_data["df_erp_payroll"]
     df_erp_products = generated_mapped_data["df_erp_products"]
     df_erp_expenses = generated_mapped_data["df_erp_expenses"]
 
@@ -229,7 +241,6 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     
     df_erp_expenses_full = erp.create_erp_data(df_expenses=df_erp_expenses, df_expenses_mapping=df_map_expenses, df_document_metadata=document_metadata_expense)
     df_erp_products_full = erp.create_erp_data(df_expenses=df_erp_products, df_expenses_mapping=df_map_products, df_document_metadata=document_metadata_products)
-    df_erp_payroll_full = payroll.create_full_payroll(df_payroll=df_erp_payroll, df_mapping=df_map_payroll)
     
     # Full target schema # also Currency, AmountEUR, Type
     full_columns = [
@@ -263,14 +274,12 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         output_dir = f"data/outputdata/fact"
         os.makedirs(output_dir, exist_ok=True)
         df_erp_expenses_full.to_csv(f"{output_dir}/erp_expenses.csv", index=False)
-        df_erp_payroll_full.to_csv(f"{output_dir}/erp_payroll.csv", index=False)
         df_erp_products_full.to_csv(f"{output_dir}/erp_products.csv", index=False)
         df_erp_all.to_csv(f"{output_dir}/general_ledger.csv", index=False)
         print(f"✔ All ERP CSVs saved to: {output_dir}")
     
     return {
         "df_erp_expenses_full": df_erp_expenses_full,
-        "df_erp_payroll_full": df_erp_payroll_full,
         "df_erp_products_full": df_erp_products_full,
         "df_erp_all": df_erp_all,
     }
