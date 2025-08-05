@@ -137,6 +137,57 @@ def estimate_costs_from_payroll(
     }
 
 def create_erp_data(
+    df_expenses: pd.DataFrame,
+    df_expenses_mapping: pd.DataFrame,
+    df_document_metadata: pd.DataFrame
+) -> pd.DataFrame:
+    """
+    Create ERP journal lines from spend data and mapping.
+
+    Args:
+        df_expenses: Spend data with 'ItemName', 'TotalAnnualSpend', 'SourceType'
+        df_expenses_mapping: Mapping with 'GLAccount', 'CostCenter', optionally 'Department', 'CustomerName'
+        df_document_metadata: Pre-generated document metadata with 'DocumentNumber', 'Currency'
+
+    Returns:
+        ERP journal DataFrame with product_id, procurement_id, and service_id columns
+    """
+
+    df_expenses = assign_split_count(df_expenses)
+    df_date = generate_dim_date()
+
+    df = pre_split_spend_lines(
+        df_spend=df_expenses,
+        df_mapping=df_expenses_mapping,
+        n_lines_per_item=30
+    )
+
+    df = assign_to_documents(
+        df_lines=df,
+        df_documentnumber=df_document_metadata,
+        df_date=df_date.sample(1000, replace=True)
+    )
+
+    if "CustomerName" not in df.columns:
+        df = patch_unbalanced_documents(df, tolerance=10)
+
+    # Currency conversion
+    exchange_rate = 7.45
+    df["AmountEUR"] = (df["Amount"] / exchange_rate).round(2)
+    df.rename(columns={"Amount": "AmountDKK"}, inplace=True)
+
+    # Build final column list
+    cols = ['DocumentNumber', 'Date', 'Currency', 'AmountDKK', 'AmountEUR', 'Type', 'GLAccount']
+    if "Department" in df.columns:
+        cols.append("Department")
+    if "CustomerName" in df.columns:
+        cols.append("CustomerName")
+    cols += ["product_id", "procurement_id", "service_id"]
+
+    return df[cols]
+
+
+def create_erp_data_v1(
         df_expenses: pd.DataFrame,
         df_expenses_mapping: pd.DataFrame,
         df_document_metadata: pd.DataFrame,
@@ -183,7 +234,6 @@ def create_erp_data(
         cols += ["ItemName", "SourceType"]
 
         return df[cols]
-
 def pre_split_spend_lines(
     df_spend,
     df_mapping,
@@ -194,19 +244,24 @@ def pre_split_spend_lines(
     sampled independently from the mapping.
 
     Assumes:
-        - df_spend includes 'ItemName', 'TotalAnnualSpend', and 'SourceType'
+        - df_spend includes 'ItemName', 'TotalAnnualSpend', 'SourceType'
         - df_mapping includes 'ItemName' and relevant account info
 
     Returns:
         DataFrame with one row per ERP journal line
     """
-    np.random.seed(42)
+
     line_items = []
 
     for _, row in df_spend.iterrows():
         item_name = row["ItemName"]
         source_type = row["SourceType"]
         total = row["TotalAnnualSpend"]
+
+        # Track ids
+        product_id = row.get("product_id")
+        procurement_id = row.get("procurement_id")
+        service_id = row.get("service_id")
 
         weights = np.random.dirichlet(np.ones(n_lines_per_item) * 0.5)
         credit_amounts = weights * total
@@ -219,9 +274,11 @@ def pre_split_spend_lines(
                 "Type": "Credit",
                 "Amount": round(-amt, 2),
                 "GLAccount": map_row["GLAccount"],
-                "CostCenter": map_row.get("CostCenter"),
                 "ItemName": item_name,
-                "SourceType": source_type
+                "SourceType": source_type,
+                "product_id": product_id,
+                "procurement_id": procurement_id,
+                "service_id": service_id
             }
             if "Department" in map_row:
                 entry["Department"] = map_row["Department"]
@@ -234,9 +291,11 @@ def pre_split_spend_lines(
                 "Type": "Debit",
                 "Amount": round(amt, 2),
                 "GLAccount": map_row["GLAccount"],
-                "CostCenter": map_row.get("CostCenter"),
                 "ItemName": item_name,
-                "SourceType": source_type
+                "SourceType": source_type,
+                "product_id": product_id,
+                "procurement_id": procurement_id,
+                "service_id": service_id
             }
             if "Department" in map_row:
                 entry["Department"] = map_row["Department"]
@@ -245,6 +304,7 @@ def pre_split_spend_lines(
             line_items.append(entry)
 
     return pd.DataFrame(line_items)
+
 
 
 def assign_split_count(df_spend: pd.DataFrame, non_linear_multiplier: int = 10,
@@ -288,7 +348,6 @@ def assign_split_count(df_spend: pd.DataFrame, non_linear_multiplier: int = 10,
 
     df.drop(columns=["IndexRankNorm"], inplace=True)
     return df
-
 def assign_to_documents(df_lines, df_documentnumber, df_date):
     """
     Assigns journal lines to documents, ensuring:
@@ -338,9 +397,11 @@ def assign_to_documents(df_lines, df_documentnumber, df_date):
                 "Amount": correction_amount if correction_type == "Debit" else -correction_amount,
                 "Type": correction_type,
                 "GLAccount": sample_row["GLAccount"],
-                "CostCenter": sample_row["CostCenter"],
                 "ItemName": sample_row["ItemName"],
-                "SourceType": sample_row.get("SourceType", "Correction")
+                "SourceType": sample_row.get("SourceType", "Correction"),
+                "product_id": sample_row.get("product_id"),
+                "procurement_id": sample_row.get("procurement_id"),
+                "service_id": sample_row.get("service_id")
             }
             if "Department" in sample_row:
                 correction_row["Department"] = sample_row["Department"]
@@ -355,7 +416,7 @@ def assign_to_documents(df_lines, df_documentnumber, df_date):
 
 def patch_unbalanced_documents(df: pd.DataFrame, tolerance: float = 10) -> pd.DataFrame:
     """
-    Adds a balancing debit or credit line for each DocumentNumber that doesn't sum to 0.
+    Adds multiple small balancing debit/credit lines for each DocumentNumber that doesn't sum to 0.
     Metadata (GLAccount, Department, CostCenter, etc.) is sampled from existing lines in the document.
     """
     df = df.copy()
@@ -364,29 +425,46 @@ def patch_unbalanced_documents(df: pd.DataFrame, tolerance: float = 10) -> pd.Da
 
     for doc_id, group in grouped:
         imbalance = round(group["Amount"].sum(), 2)
+
         if abs(imbalance) > tolerance:
             correction_type = "Debit" if imbalance < 0 else "Credit"
-            correction_amount = round(abs(imbalance), 2)
+            correction_sign = 1 if correction_type == "Debit" else -1
+            remaining = abs(imbalance)
+
+            # Break into small chunks
+            np.random.seed(42)
+            chunks = []
+            while remaining > 0:
+                step = round(np.random.uniform(0, 10000), 2)
+                if step > remaining:
+                    step = round(remaining, 2)
+                chunks.append(step)
+                remaining -= step
+
             sample_row = group.sample(1).iloc[0]
 
-            correction_row = {
-                "DocumentNumber": doc_id,
-                "Date": sample_row["Date"],
-                "Currency": sample_row["Currency"],
-                "Amount": correction_amount if correction_type == "Debit" else -correction_amount,
-                "Type": correction_type,
-                "GLAccount": sample_row["GLAccount"],
-                "CostCenter": sample_row["CostCenter"],
-                "ItemName": sample_row.get("ItemName", "Correction Line"),
-                "SourceType": sample_row.get("SourceType", "Correction")
-            }
+            for amt in chunks:
+                correction_row = {
+                    "DocumentNumber": doc_id,
+                    "Date": sample_row["Date"],
+                    "Currency": sample_row["Currency"],
+                    "Amount": correction_sign * amt,
+                    "Type": correction_type,
+                    "GLAccount": sample_row["GLAccount"],
+                    "CostCenter": sample_row.get("CostCenter"),
+                    "ItemName": sample_row.get("ItemName", "Correction Line"),
+                    "SourceType": sample_row.get("SourceType", "Correction"),
+                    "product_id": sample_row.get("product_id"),
+                    "procurement_id": sample_row.get("procurement_id"),
+                    "service_id": sample_row.get("service_id")
+                }
 
-            if "Department" in sample_row:
-                correction_row["Department"] = sample_row["Department"]
-            if "CustomerName" in sample_row:
-                correction_row["CustomerName"] = sample_row["CustomerName"]
+                if "Department" in sample_row:
+                    correction_row["Department"] = sample_row["Department"]
+                if "CustomerName" in sample_row:
+                    correction_row["CustomerName"] = sample_row["CustomerName"]
 
-            patched_rows.append(correction_row)
+                patched_rows.append(correction_row)
 
     if patched_rows:
         df = pd.concat([df, pd.DataFrame(patched_rows)], ignore_index=True)

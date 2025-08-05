@@ -1,601 +1,121 @@
 Employee_ID,RoleName,FirstName,LastName,Month,MonthlyPay
-700,Chief Financial Officer,Poul,Simonsen,2025-01,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-02,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-03,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-04,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-05,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-06,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-07,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-08,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-09,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-10,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-11,165000.0
-700,Chief Financial Officer,Poul,Simonsen,2025-12,165000.0
-578,Chief Operations Officer,Birgit,Larsen,2025-01,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-02,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-03,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-04,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-05,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-06,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-07,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-08,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-09,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-10,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-11,145900.0
-578,Chief Operations Officer,Birgit,Larsen,2025-12,145900.0
-789,Chief Technology Officer,Lone,Jensen,2025-01,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-02,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-03,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-04,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-05,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-06,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-07,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-08,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-09,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-10,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-11,142300.0
-789,Chief Technology Officer,Lone,Jensen,2025-12,142300.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-01,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-02,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-03,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-04,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-05,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-06,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-07,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-08,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-09,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-10,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-11,138700.0
-131,Senior Vice President of Sales,Lisbeth,Lund,2025-12,138700.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-01,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-02,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-03,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-04,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-05,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-06,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-07,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-08,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-09,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-10,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-11,115400.0
-717,Senior Vice President of Human Resources,Vibeke,Bach,2025-12,115400.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-01,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-02,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-03,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-04,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-05,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-06,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-07,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-08,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-09,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-10,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-11,103800.0
-787,Vice President of Manufacturing,Lene,Frandsen,2025-12,103800.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-01,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-02,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-03,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-04,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-05,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-06,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-07,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-08,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-09,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-10,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-11,101300.0
-652,Vice President of Supply Chain,Mogens,Rasmussen,2025-12,101300.0
-935,Vice President of Research and Development,Frank,Hansen,2025-01,100000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-02,100000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-03,100000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-04,100000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-05,105000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-06,105000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-07,105000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-08,105000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-09,105000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-10,105000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-11,105000.0
-935,Vice President of Research and Development,Frank,Hansen,2025-12,105000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-01,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-02,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-03,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-04,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-05,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-06,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-07,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-08,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-09,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-10,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-11,96000.0
-176,Vice President of Marketing,Grethe,Christiansen,2025-12,96000.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-01,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-02,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-03,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-04,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-05,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-06,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-07,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-08,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-09,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-10,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-11,91500.0
-513,Vice President of Legal Affairs,Lene,Madsen,2025-12,91500.0
-683,Director of Engineering,Frank,Hansen,2025-01,89700.0
-683,Director of Engineering,Frank,Hansen,2025-02,89700.0
-683,Director of Engineering,Frank,Hansen,2025-03,89700.0
-683,Director of Engineering,Frank,Hansen,2025-04,89700.0
-683,Director of Engineering,Frank,Hansen,2025-05,89700.0
-683,Director of Engineering,Frank,Hansen,2025-06,89700.0
-683,Director of Engineering,Frank,Hansen,2025-07,89700.0
-683,Director of Engineering,Frank,Hansen,2025-08,89700.0
-683,Director of Engineering,Frank,Hansen,2025-09,89700.0
-683,Director of Engineering,Frank,Hansen,2025-10,89700.0
-683,Director of Engineering,Frank,Hansen,2025-11,89700.0
-683,Director of Engineering,Frank,Hansen,2025-12,89700.0
-170,Director of Human Resources,Pia,Winther,2025-01,84900.0
-170,Director of Human Resources,Pia,Winther,2025-02,84900.0
-170,Director of Human Resources,Pia,Winther,2025-03,84900.0
-170,Director of Human Resources,Pia,Winther,2025-04,84900.0
-170,Director of Human Resources,Pia,Winther,2025-05,84900.0
-170,Director of Human Resources,Pia,Winther,2025-06,84900.0
-170,Director of Human Resources,Pia,Winther,2025-07,84900.0
-170,Director of Human Resources,Pia,Winther,2025-08,84900.0
-170,Director of Human Resources,Pia,Winther,2025-09,84900.0
-170,Director of Human Resources,Pia,Winther,2025-10,84900.0
-170,Director of Human Resources,Pia,Winther,2025-11,84900.0
-170,Director of Human Resources,Pia,Winther,2025-12,84900.0
-888,Director of Operations,Bent,Petersen,2025-01,83700.0
-888,Director of Operations,Bent,Petersen,2025-02,83700.0
-888,Director of Operations,Bent,Petersen,2025-03,83700.0
-888,Director of Operations,Bent,Petersen,2025-04,83700.0
-888,Director of Operations,Bent,Petersen,2025-05,83700.0
-888,Director of Operations,Bent,Petersen,2025-06,83700.0
-888,Director of Operations,Bent,Petersen,2025-07,83700.0
-888,Director of Operations,Bent,Petersen,2025-08,83700.0
-888,Director of Operations,Bent,Petersen,2025-09,83700.0
-888,Director of Operations,Bent,Petersen,2025-10,83700.0
-888,Director of Operations,Bent,Petersen,2025-11,83700.0
-888,Director of Operations,Bent,Petersen,2025-12,83700.0
-201,Director of Finance,Inger,Carlsen,2025-01,82600.0
-201,Director of Finance,Inger,Carlsen,2025-02,82600.0
-201,Director of Finance,Inger,Carlsen,2025-03,82600.0
-201,Director of Finance,Inger,Carlsen,2025-04,82600.0
-201,Director of Finance,Inger,Carlsen,2025-05,82600.0
-201,Director of Finance,Inger,Carlsen,2025-06,82600.0
-201,Director of Finance,Inger,Carlsen,2025-07,82600.0
-201,Director of Finance,Inger,Carlsen,2025-08,82600.0
-201,Director of Finance,Inger,Carlsen,2025-09,82600.0
-201,Director of Finance,Inger,Carlsen,2025-10,82600.0
-201,Director of Finance,Inger,Carlsen,2025-11,82600.0
-201,Director of Finance,Inger,Carlsen,2025-12,82600.0
-720,Director of IT,Tina,Leth,2025-01,79900.0
-720,Director of IT,Tina,Leth,2025-02,79900.0
-720,Director of IT,Tina,Leth,2025-03,79900.0
-720,Director of IT,Tina,Leth,2025-04,79900.0
-720,Director of IT,Tina,Leth,2025-05,79900.0
-720,Director of IT,Tina,Leth,2025-06,79900.0
-720,Director of IT,Tina,Leth,2025-07,79900.0
-720,Director of IT,Tina,Leth,2025-08,79900.0
-720,Director of IT,Tina,Leth,2025-09,79900.0
-720,Director of IT,Tina,Leth,2025-10,79900.0
-720,Director of IT,Tina,Leth,2025-11,79900.0
-720,Director of IT,Tina,Leth,2025-12,79900.0
-752,Director of Quality Assurance,Pia,Winther,2025-01,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-02,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-03,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-04,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-05,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-06,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-07,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-08,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-09,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-10,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-11,78800.0
-752,Director of Quality Assurance,Pia,Winther,2025-12,78800.0
-730,Director of Procurement,Pia,Winther,2025-01,78300.0
-730,Director of Procurement,Pia,Winther,2025-02,78300.0
-730,Director of Procurement,Pia,Winther,2025-03,78300.0
-730,Director of Procurement,Pia,Winther,2025-04,78300.0
-730,Director of Procurement,Pia,Winther,2025-05,78300.0
-730,Director of Procurement,Pia,Winther,2025-06,78300.0
-730,Director of Procurement,Pia,Winther,2025-07,78300.0
-730,Director of Procurement,Pia,Winther,2025-08,78300.0
-730,Director of Procurement,Pia,Winther,2025-09,78300.0
-730,Director of Procurement,Pia,Winther,2025-10,78300.0
-730,Director of Procurement,Pia,Winther,2025-11,78300.0
-730,Director of Procurement,Pia,Winther,2025-12,78300.0
-399,Engineering Manager,Charlotte,Hviid,2025-01,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-02,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-03,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-04,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-05,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-06,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-07,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-08,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-09,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-10,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-11,77400.0
-399,Engineering Manager,Charlotte,Hviid,2025-12,77400.0
-793,Sales Manager,Erik,Olsen,2025-01,75400.0
-793,Sales Manager,Erik,Olsen,2025-02,75400.0
-793,Sales Manager,Erik,Olsen,2025-03,75400.0
-793,Sales Manager,Erik,Olsen,2025-04,75400.0
-793,Sales Manager,Erik,Olsen,2025-05,75400.0
-793,Sales Manager,Erik,Olsen,2025-06,75400.0
-793,Sales Manager,Erik,Olsen,2025-07,75400.0
-793,Sales Manager,Erik,Olsen,2025-08,75400.0
-793,Sales Manager,Erik,Olsen,2025-09,75400.0
-793,Sales Manager,Erik,Olsen,2025-10,75400.0
-793,Sales Manager,Erik,Olsen,2025-11,75400.0
-793,Sales Manager,Erik,Olsen,2025-12,75400.0
-547,Human Resources Manager,Jan,Lind,2025-01,73900.0
-547,Human Resources Manager,Jan,Lind,2025-02,73900.0
-547,Human Resources Manager,Jan,Lind,2025-03,73900.0
-547,Human Resources Manager,Jan,Lind,2025-04,73900.0
-547,Human Resources Manager,Jan,Lind,2025-05,73900.0
-547,Human Resources Manager,Jan,Lind,2025-06,73900.0
-547,Human Resources Manager,Jan,Lind,2025-07,73900.0
-547,Human Resources Manager,Jan,Lind,2025-08,73900.0
-547,Human Resources Manager,Jan,Lind,2025-09,73900.0
-547,Human Resources Manager,Jan,Lind,2025-10,73900.0
-547,Human Resources Manager,Jan,Lind,2025-11,73900.0
-547,Human Resources Manager,Jan,Lind,2025-12,73900.0
-196,Operations Manager,Hanne,Bjerre,2025-01,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-02,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-03,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-04,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-05,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-06,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-07,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-08,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-09,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-10,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-11,71300.0
-196,Operations Manager,Hanne,Bjerre,2025-12,71300.0
-287,Finance Manager,Kurt,Schmidt,2025-01,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-02,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-03,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-04,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-05,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-06,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-07,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-08,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-09,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-10,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-11,68100.0
-287,Finance Manager,Kurt,Schmidt,2025-12,68100.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-01,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-02,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-03,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-04,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-05,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-06,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-07,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-08,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-09,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-10,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-11,67400.0
-360,Quality Assurance Manager,Thomas,Bjerregaard,2025-12,67400.0
-450,Procurement Manager,Johnny,Bonde,2025-01,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-02,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-03,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-04,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-05,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-06,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-07,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-08,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-09,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-10,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-11,64800.0
-450,Procurement Manager,Johnny,Bonde,2025-12,64800.0
-629,Senior Project Manager,Bodil,Sørensen,2025-01,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-02,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-03,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-04,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-05,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-06,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-07,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-08,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-09,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-10,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-11,64500.0
-629,Senior Project Manager,Bodil,Sørensen,2025-12,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-01,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-02,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-03,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-04,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-05,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-06,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-07,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-08,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-09,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-10,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-11,64500.0
-795,Senior Engineer,Jørgen,Holm,2025-12,64500.0
-461,Senior Sales Executive,Birgit,Larsen,2025-01,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-02,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-03,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-04,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-05,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-06,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-07,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-08,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-09,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-10,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-11,62900.0
-461,Senior Sales Executive,Birgit,Larsen,2025-12,62900.0
-953,Senior HR Specialist,Martin,Nielsen,2025-01,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-02,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-03,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-04,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-05,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-06,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-07,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-08,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-09,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-10,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-11,62600.0
-953,Senior HR Specialist,Martin,Nielsen,2025-12,62600.0
-985,Senior Operations Specialist,Bent,Petersen,2025-01,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-02,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-03,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-04,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-05,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-06,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-07,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-08,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-09,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-10,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-11,58300.0
-985,Senior Operations Specialist,Bent,Petersen,2025-12,58300.0
-590,Senior Financial Analyst,Else,Iversen,2025-01,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-02,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-03,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-04,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-05,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-06,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-07,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-08,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-09,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-10,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-11,58200.0
-590,Senior Financial Analyst,Else,Iversen,2025-12,58200.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-01,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-02,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-03,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-04,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-05,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-06,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-07,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-08,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-09,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-10,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-11,58100.0
-821,Senior Quality Assurance Specialist,Dorthe,Poulsen,2025-12,58100.0
-794,Senior Procurement Specialist,Else,Iversen,2025-01,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-02,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-03,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-04,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-05,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-06,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-07,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-08,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-09,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-10,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-11,58000.0
-794,Senior Procurement Specialist,Else,Iversen,2025-12,58000.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-01,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-02,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-03,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-04,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-05,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-06,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-07,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-08,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-09,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-10,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-11,56100.0
-187,Mechanical Engineer,Thomas,Bjerregaard,2025-12,56100.0
-618,Electrical Engineer,Anders,Pedersen,2025-01,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-02,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-03,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-04,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-05,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-06,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-07,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-08,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-09,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-10,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-11,55700.0
-618,Electrical Engineer,Anders,Pedersen,2025-12,55700.0
-891,Sales Executive,Else,Jørgensen,2025-01,54700.0
-891,Sales Executive,Else,Jørgensen,2025-02,54700.0
-891,Sales Executive,Else,Jørgensen,2025-03,54700.0
-891,Sales Executive,Else,Jørgensen,2025-04,54700.0
-891,Sales Executive,Else,Jørgensen,2025-05,54700.0
-891,Sales Executive,Else,Jørgensen,2025-06,54700.0
-891,Sales Executive,Else,Jørgensen,2025-07,54700.0
-891,Sales Executive,Else,Jørgensen,2025-08,54700.0
-891,Sales Executive,Else,Jørgensen,2025-09,54700.0
-891,Sales Executive,Else,Jørgensen,2025-10,54700.0
-891,Sales Executive,Else,Jørgensen,2025-11,54700.0
-891,Sales Executive,Else,Jørgensen,2025-12,54700.0
-841,HR Specialist,Søren,Møller,2025-01,54700.0
-841,HR Specialist,Søren,Møller,2025-02,54700.0
-841,HR Specialist,Søren,Møller,2025-03,54700.0
-841,HR Specialist,Søren,Møller,2025-04,54700.0
-841,HR Specialist,Søren,Møller,2025-05,54700.0
-841,HR Specialist,Søren,Møller,2025-06,54700.0
-841,HR Specialist,Søren,Møller,2025-07,54700.0
-841,HR Specialist,Søren,Møller,2025-08,54700.0
-841,HR Specialist,Søren,Møller,2025-09,54700.0
-841,HR Specialist,Søren,Møller,2025-10,54700.0
-841,HR Specialist,Søren,Møller,2025-11,54700.0
-841,HR Specialist,Søren,Møller,2025-12,54700.0
-313,Operations Specialist,Preben,Thomsen,2025-01,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-02,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-03,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-04,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-05,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-06,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-07,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-08,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-09,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-10,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-11,51900.0
-313,Operations Specialist,Preben,Thomsen,2025-12,51900.0
-690,Financial Analyst,Inger,Carlsen,2025-01,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-02,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-03,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-04,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-05,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-06,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-07,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-08,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-09,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-10,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-11,47600.0
-690,Financial Analyst,Inger,Carlsen,2025-12,47600.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-01,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-02,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-03,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-04,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-05,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-06,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-07,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-08,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-09,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-10,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-11,45500.0
-465,Quality Assurance Specialist,Bodil,Sørensen,2025-12,45500.0
-299,Procurement Specialist,Lone,Jensen,2025-01,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-02,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-03,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-04,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-05,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-06,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-07,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-08,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-09,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-10,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-11,44500.0
-299,Procurement Specialist,Lone,Jensen,2025-12,44500.0
-855,Junior Engineer,Lene,Madsen,2025-01,42700.0
-855,Junior Engineer,Lene,Madsen,2025-02,42700.0
-855,Junior Engineer,Lene,Madsen,2025-03,42700.0
-855,Junior Engineer,Lene,Madsen,2025-04,42700.0
-855,Junior Engineer,Lene,Madsen,2025-05,42700.0
-855,Junior Engineer,Lene,Madsen,2025-06,42700.0
-855,Junior Engineer,Lene,Madsen,2025-07,42700.0
-855,Junior Engineer,Lene,Madsen,2025-08,42700.0
-855,Junior Engineer,Lene,Madsen,2025-09,42700.0
-855,Junior Engineer,Lene,Madsen,2025-10,42700.0
-855,Junior Engineer,Lene,Madsen,2025-11,42700.0
-855,Junior Engineer,Lene,Madsen,2025-12,44835.0
-729,Junior Sales Executive,Frank,Hansen,2025-01,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-02,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-03,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-04,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-05,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-06,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-07,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-08,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-09,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-10,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-11,41400.0
-729,Junior Sales Executive,Frank,Hansen,2025-12,41400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-01,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-02,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-03,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-04,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-05,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-06,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-07,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-08,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-09,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-10,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-11,39400.0
-929,Junior HR Specialist,Helle,Bertelsen,2025-12,39400.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-01,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-02,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-03,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-04,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-05,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-06,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-07,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-08,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-09,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-10,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-11,38000.0
-452,Junior Operations Specialist,Susanne,Mortensen,2025-12,38000.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-01,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-02,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-03,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-04,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-05,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-06,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-07,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-08,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-09,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-10,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-11,37800.0
-429,Junior Financial Analyst,Jørgen,Knudsen,2025-12,37800.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-01,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-02,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-03,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-04,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-05,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-06,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-07,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-08,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-09,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-10,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-11,36900.0
-579,Junior Quality Assurance Specialist,Else,Iversen,2025-12,36900.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-01,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-02,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-03,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-04,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-05,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-06,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-07,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-08,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-09,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-10,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-11,33000.0
-992,Junior Procurement Specialist,Gitte,Hedegaard,2025-12,33000.0
-344,Administrative Assistant,Preben,Thomsen,2025-01,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-02,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-03,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-04,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-05,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-06,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-07,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-08,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-09,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-10,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-11,32400.0
-344,Administrative Assistant,Preben,Thomsen,2025-12,32400.0
-386,Customer Service Representative,Johnny,Bonde,2025-01,30300.0
-386,Customer Service Representative,Johnny,Bonde,2025-02,30300.0
-386,Customer Service Representative,Johnny,Bonde,2025-03,30300.0
-386,Customer Service Representative,Johnny,Bonde,2025-04,0.0
-386,Customer Service Representative,Johnny,Bonde,2025-05,0.0
-386,Customer Service Representative,Johnny,Bonde,2025-06,0.0
-386,Customer Service Representative,Johnny,Bonde,2025-07,0.0
-386,Customer Service Representative,Johnny,Bonde,2025-08,0.0
-386,Customer Service Representative,Johnny,Bonde,2025-09,0.0
-386,Customer Service Representative,Johnny,Bonde,2025-10,0.0
-386,Customer Service Representative,Johnny,Bonde,2025-11,0.0
-386,Customer Service Representative,Johnny,Bonde,2025-12,0.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-01,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-02,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-03,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-04,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-05,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-06,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-07,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-08,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-09,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-10,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-11,29700.0
-389,Technical Support Specialist,Lisbeth,Lund,2025-12,29700.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-01,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-02,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-03,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-04,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-05,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-06,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-07,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-08,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-09,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-10,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-11,165000.0
+265,Chief Executive Officer,Dorthe,Poulsen,2025-12,165000.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-01,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-02,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-03,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-04,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-05,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-06,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-07,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-08,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-09,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-10,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-11,160900.0
+530,Chief Financial Officer,Helle,Bertelsen,2025-12,160900.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-01,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-02,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-03,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-04,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-05,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-06,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-07,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-08,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-09,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-10,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-11,114500.0
+130,Chief Operations Officer,Kirsten,Andersen,2025-12,114500.0
+167,Vice President of Engineering,Pia,Winther,2025-01,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-02,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-03,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-04,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-05,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-06,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-07,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-08,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-09,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-10,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-11,108500.0
+167,Vice President of Engineering,Pia,Winther,2025-12,108500.0
+849,Vice President of Sales,Inger,Carlsen,2025-01,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-02,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-03,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-04,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-05,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-06,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-07,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-08,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-09,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-10,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-11,103500.0
+849,Vice President of Sales,Inger,Carlsen,2025-12,103500.0
+983,Director of Human Resources,Vibeke,Bach,2025-01,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-02,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-03,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-04,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-05,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-06,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-07,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-08,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-09,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-10,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-11,101400.0
+983,Director of Human Resources,Vibeke,Bach,2025-12,101400.0
+462,Senior Project Manager,Michael,Krogh,2025-01,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-02,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-03,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-04,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-05,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-06,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-07,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-08,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-09,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-10,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-11,76200.0
+462,Senior Project Manager,Michael,Krogh,2025-12,76200.0
+207,Lead Engineer,Inger,Carlsen,2025-01,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-02,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-03,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-04,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-05,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-06,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-07,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-08,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-09,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-10,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-11,73000.0
+207,Lead Engineer,Inger,Carlsen,2025-12,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-01,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-02,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-03,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-04,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-05,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-06,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-07,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-08,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-09,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-10,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-11,73000.0
+414,Financial Analyst,Helle,Bertelsen,2025-12,73000.0
+392,Administrative Assistant,Else,Iversen,2025-01,65600.0
+392,Administrative Assistant,Else,Iversen,2025-02,65600.0
+392,Administrative Assistant,Else,Iversen,2025-03,65600.0
+392,Administrative Assistant,Else,Iversen,2025-04,65600.0
+392,Administrative Assistant,Else,Iversen,2025-05,65600.0
+392,Administrative Assistant,Else,Iversen,2025-06,65600.0
+392,Administrative Assistant,Else,Iversen,2025-07,65600.0
+392,Administrative Assistant,Else,Iversen,2025-08,65600.0
+392,Administrative Assistant,Else,Iversen,2025-09,65600.0
+392,Administrative Assistant,Else,Iversen,2025-10,65600.0
+392,Administrative Assistant,Else,Iversen,2025-11,65600.0
+392,Administrative Assistant,Else,Iversen,2025-12,65600.0

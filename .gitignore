@@ -2,3 +2,22 @@
 Pipfile
 Pipfile.lock
 */__pycache__/
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore all CSV output files
+data/outputdata/**/*.csv
+
+# Ignore all input line_id mapping
+data/inputdata/line_id_accounts.csv
+
+# Ignore Jupyter notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# Optional: ignore any generated data in general
+data/outputdata/**
+
+# Optional: ignore any temporary files
+*.tmp
+*.log

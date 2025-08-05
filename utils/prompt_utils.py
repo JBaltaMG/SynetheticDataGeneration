@@ -6,9 +6,9 @@ from openai import OpenAI
 
 import dotenv
 dotenv.load_dotenv()
-api_key=dotenv.get_key('.env', 'api_key')
+API_KEY=dotenv.get_key('.env', 'api_key')
 
-openai.api_key = api_key
+openai.api_key=API_KEY
 
 def get_openai_client():
     return OpenAI(api_key=API_KEY)
