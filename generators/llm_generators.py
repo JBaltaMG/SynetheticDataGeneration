@@ -7,7 +7,7 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
     client = prompt_utils.get_openai_client()
 
     over_request_count = int(count) * 1.2
-    header = "ProcurementName;Proportionality"
+    header = "name;Proportionality"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -15,7 +15,7 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
     commonly purchased by a company like {company_name}, based on its industry and typical operations.
 
     Each row should contain:
-    - ProcurementName: A specific, realistic name of the purchased item or material
+    - name: A specific, realistic name of the purchased item or material
     - Proportionality: an estimation of how much of the total procurement budget is spent on this item, as a percentage (0-100).
 
     The list must cover the full range of procurement, including:
@@ -63,7 +63,7 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
     client = prompt_utils.get_openai_client()
 
     over_request_count = int(count * 1.2)
-    header = "ProductName;Proportionality"
+    header = "name;Proportionality"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -71,7 +71,7 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
     that a company like {company_name} would sell, based on its industry, brand identity, and market focus.
 
     Each row should contain:
-    - ProductName: A specific, realistic name of a sellable product or SKU category
+    - name: A specific, realistic name of a sellable product or SKU category
     - Proportionality: An estimation of how much of the total sales revenue is attributed to this product, as a percentage (0-100)
 
     Ensure that:
@@ -102,7 +102,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     client = prompt_utils.get_openai_client()
 
     over_request_count = int(count) * 1.2
-    header = "ServiceName;Proportionality"
+    header = "name;Proportionality"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -110,7 +110,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     commonly incurred by a company like {company_name}, based on its industry and typical operations.
 
     Each row should contain:
-    - ServiceName: A realistic and specific name of a fee or service (e.g. 'IT Consulting', 'Cleaning Contract', 'Microsoft 365 License', 'Legal Retainer')
+    - name: A realistic and specific name of a fee or service (e.g. 'IT Consulting', 'Cleaning Contract', 'Microsoft 365 License', 'Legal Retainer')
     - Proportionality: an estimation of how much of the total procurement budget is spent on this item, as a percentage (0-100).
 
     The list should include a broad mix of services such as:
@@ -212,7 +212,7 @@ def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-
     client = prompt_utils.get_openai_client()
     over_request_count = int(count) * 1.2
 
-    header = "AccountName;AccountType"
+    header = "name;AccountType"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -220,7 +220,7 @@ def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-
     for a company like {company_name}, suitable for use in general ledger data, ERP demos, and financial modeling.
 
     For each row, return:
-    - AccountName: a descriptive name of the account (e.g., "Sales Revenue", "Consulting Fees", "Bank Account", etc.)
+    - name: a descriptive name of the account (e.g., "Sales Revenue", "Consulting Fees", "Bank Account", etc.)
     - AccountType: the type of the account — must be one of the following categories:
     "Revenue", "Product Expense", "Service Expense", "Payroll", "Asset", or "Equity"
 
@@ -252,7 +252,7 @@ def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-
 def generate_departments_llm(company_name: str, count: int = 10, model: str = "gpt-4o", temp: float = 0.3):
     client = prompt_utils.get_openai_client()
 
-    header = "DepartmentName;Proportionality"
+    header = "name;Proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
 
     prompt = f"""
@@ -260,7 +260,7 @@ def generate_departments_llm(company_name: str, count: int = 10, model: str = "g
     including their location and relative share of total payroll.
 
     For each department, provide the following fields in CSV format:
-    - DepartmentName: A realistic department name (e.g. R&D, Sales, Finance, Customer Support)
+    - name: A realistic department name (e.g. R&D, Sales, Finance, Customer Support)
     - Proportionality: An estimated proportion of the company's total payroll allocated to this department, expressed as a decimal (e.g. 0.25 for 25%)
 
     The total Proportionality values should sum to approximately 1.0 across all departments.
@@ -290,7 +290,7 @@ def generate_departments_llm(company_name: str, count: int = 10, model: str = "g
 def generate_customers_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.3):
     client = prompt_utils.get_openai_client()
 
-    header = "CustomerName;CustomerSegment;Proportionality"
+    header = "name;CustomerSegment;Proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
 
     prompt = f"""
@@ -298,7 +298,7 @@ def generate_customers_llm(company_name: str, count: int = 100, model: str = "gp
     These customers should reflect typical business clients based on the company's industry, geography, and operations.
 
     For each customer, provide the following fields in CSV format:
-    - CustomerName: The name of the customer (company or organization)
+    - name: The name of the customer (company or organization)
     - CustomerSegment: One of the following segments: Enterprise, SME, Government, Non-profit, Retail, Wholesale, or Startup
     - Proportionality: An estimated proportion of the company's total revenue generated by this customer, expressed as a decimal (e.g. 0.05 for 5%)
 

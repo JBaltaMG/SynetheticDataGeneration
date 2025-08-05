@@ -26,4 +26,13 @@ schemadict = {
     "dim_service": {
         "ServiceName": "str",
     },
+    "fact_general_ledger": {
+        "document_number": "int",   
+        "date": "str",             
+        "amount": "float",
+        "account_id": "int",
+        "product_id": "int",
+        "procurement_id": "int",
+        "service_id": "int",
+    }
 }
