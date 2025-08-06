@@ -1,11 +1,51 @@
 name,Proportionality
-Acrylonitrile Butadiene Styrene (ABS) Plastic Resin,0.4636591478696741
-Injection Molding Machine Parts & Maintenance Kits,0.11278195488721802
-Color Masterbatch Pigments,0.09398496240601502
-Thermoplastic Elastomers (TPE) Granules,0.07518796992481201
-Corrugated Cardboard Packaging Materials,0.06892230576441101
-Production Mold Tooling and Dies,0.06265664160401001
-Automated Sorting & Assembly Machine Components,0.05012531328320801
-Industrial Cleaning Chemicals & Lubricants,0.037593984962406006
-"IT Hardware (PCs, Servers, Network Devices)",0.022556390977443608
-Office Stationery and Printer Consumables,0.012531328320802003
+"Wind turbine blades (fiberglass, carbon fiber)",0.16254805052169138
+Nacelle housing assemblies,0.1230093355299286
+Gearboxes (precision machined),0.10214168039538715
+Generator units (direct drive/DFIG),0.0944535969247666
+Steel tower sections,0.08676551345414608
+Main shaft forgings,0.071389346512905
+Pitch system components,0.04503020318506315
+Yaw system components,0.03953871499176277
+Controller and power electronics,0.032948929159802305
+HV electrical cables,0.02745744096650192
+Hydraulic systems,0.018671059857221308
+Transformer units,0.014277869302580999
+Lightning protection systems,0.012081274025260845
+Brake systems and brake pads,0.010982976386600769
+SCADA hardware,0.01043382756727073
+Shaft seals,0.009884678747940693
+Lubrication systems,0.00900604063701263
+Anemometers and wind vanes,0.0085667215815486
+Vibration sensors,0.008237232289950576
+"Fasteners (bolts, nuts, washers)",0.007688083470620537
+Composite resins and adhesives,0.007138934651290499
+Surface coatings and paints,0.006809445359692476
+High-tension anchor bolts,0.006370126304228445
+Greases and lubricants,0.005820977484898408
+Epoxy compounds,0.005601317957166393
+Switchgear components,0.005271828665568369
+Cable management systems,0.005052169137836354
+Spare gear sets,0.0049423393739703465
+Replacement filters,0.004722679846238331
+Condition monitoring modules,0.004503020318506315
+Turbine access ladders,0.004393190554640308
+Maintenance tool kits,0.0042833607907743
+Safety harnesses and PPE,0.004173531026908292
+Portable diagnostic devices,0.004063701263042284
+Service lifts and elevators,0.0038440417353102687
+"Hand tools (wrenches, screwdrivers, etc.)",0.003624382207578254
+"Workshop consumables (rags, solvents)",0.0031850631521142224
+Spill containment kits,0.0030752333882482154
+Lockout/tagout devices,0.0027457440966501922
+Anti-corrosion sprays,0.002526084568918177
+Paint brushes and rollers,0.002196595277320154
+Ladders and work platforms,0.001976935749588138
+First aid kits,0.001757276221856123
+General-purpose printers,0.0013179571663920922
+Office chairs and desks,0.0012081274025260845
+Monitors and display screens,0.001098297638660077
+Printer toner and ink cartridges,0.000988467874794069
+Standard office paper,0.0008786381109280615
+"Stationery (pens, pencils, markers)",0.0007688083470620538
+Coffee and kitchen supplies,0.0005491488193300384

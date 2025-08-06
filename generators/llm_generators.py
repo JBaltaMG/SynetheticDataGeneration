@@ -46,7 +46,7 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
     df_procurement = utils.convert_column_to_percentage(df_procurement, "Proportionality", scale=1.0)
     return df_procurement
 
-def generate_sales_products_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
+def generate_sales_products_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 1):
     """
     Generates a list of products that the company sells, with proportionality scores.
     The products are categorical and realistic to the company's industry and operations.
