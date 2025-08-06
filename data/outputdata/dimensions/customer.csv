@@ -1,11 +1,11 @@
 Customer_ID,name,CustomerSegment,Proportionality
-10,Walmart,Retail,0.19999999999999998
-11,Amazon,Retail,0.15
-12,Target,Retail,0.09999999999999999
-13,"Toys ""R"" Us",Retail,0.08
-14,Costco,Wholesale,0.11999999999999998
-15,Disney Parks,Enterprise,0.09999999999999999
-16,Smithsonian Institution,Non-profit,0.049999999999999996
-17,British Museum,Non-profit,0.049999999999999996
-18,Startup Toy Store,Startup,0.049999999999999996
-19,Local Toy Shop,SME,0.09999999999999999
+10,Siemens Gamesa,Enterprise,0.20000000000000004
+11,General Electric,Enterprise,0.15000000000000002
+12,Nordex SE,Enterprise,0.12000000000000001
+13,Acciona Energy,Enterprise,0.10000000000000002
+14,Iberdrola,Enterprise,0.08000000000000002
+15,Enel Green Power,Enterprise,0.07000000000000002
+16,Orsted,Enterprise,0.060000000000000005
+17,EDF Renewables,Enterprise,0.05000000000000001
+18,Pattern Energy,Enterprise,0.09000000000000001
+19,Invenergy,Enterprise,0.08000000000000002

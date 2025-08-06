@@ -190,7 +190,7 @@ def assign_departments(df_pay: pd.DataFrame, df_departments: pd.DataFrame) -> pd
     df_pay = df_pay.copy()
     df_pay['name'] = department_assignments
 
-    cols = ["role_name", "monthly_pay", "first_name", "last_name", "employee_id", "department"]
+    cols = ["role_name", "monthly_pay", "first_name", "last_name", "employee_id", "department_id"]
 
     df_pay = df_pay.rename(columns={
         "RoleName": "role_name",
@@ -198,7 +198,7 @@ def assign_departments(df_pay: pd.DataFrame, df_departments: pd.DataFrame) -> pd
         "FirstName": "first_name",
         "LastName": "last_name",
         "Employee_ID": "employee_id",
-        "name": "department"
+        "name": "department_id"
     })
     
     return df_pay[cols]

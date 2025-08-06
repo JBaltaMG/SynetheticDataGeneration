@@ -1,31 +1,31 @@
 name,AccountType,Account_ID
-Sales Revenue,Revenue,31528
-Licensing Revenue,Revenue,33030
-Interest Income,Revenue,34377
-Raw Materials,Product Expense,46200
-Packaging Materials,Product Expense,42565
-Freight-In Costs,Product Expense,45525
-Consulting Fees,Service Expense,57140
-Software Subscriptions,Service Expense,50423
-Legal Fees,Service Expense,52004
-Marketing Expenses,Service Expense,55284
-Salaries,Payroll,97042
-Pension Contributions,Payroll,90346
-Health Insurance,Payroll,90218
-Cash on Hand,Asset,19592
-Accounts Receivable,Asset,17715
-Inventory,Asset,16191
-Prepaid Expenses,Asset,19070
-"Property, Plant, and Equipment",Asset,18569
-Accumulated Depreciation,Asset,16921
-Accounts Payable,Liability,98796
-Accrued Liabilities,Liability,98330
-Long-term Debt,Liability,97261
-Deferred Revenue,Liability,91652
-Common Stock,Equity,28959
-Retained Earnings,Equity,29503
-Research and Development,Service Expense,59554
-Utilities Expense,Service Expense,50744
-Office Supplies,Service Expense,56353
-Training and Development,Service Expense,52673
-Depreciation Expense,Service Expense,51920
+Interest Income,Revenue,39056
+Raw Materials,Product Expense,47981
+Packaging Materials,Product Expense,49144
+Direct Labor,Product Expense,45270
+Consulting Fees,Service Expense,55306
+Software Subscriptions,Service Expense,58335
+Legal Fees,Service Expense,52569
+Marketing Expenses,Service Expense,59262
+Utilities,Service Expense,51937
+Office Supplies,Service Expense,58602
+Salaries,Payroll,98087
+Bonuses,Payroll,90545
+Pension Contributions,Payroll,99454
+Health Insurance,Payroll,94322
+Cash,Asset,13818
+Accounts Receivable,Asset,10045
+Inventory,Asset,15268
+"Property, Plant, and Equipment",Asset,19757
+Accumulated Depreciation,Asset,14793
+Accounts Payable,Asset,19791
+Bank Loan,Asset,14835
+Common Stock,Equity,20804
+Retained Earnings,Equity,23251
+Additional Paid-In Capital,Equity,22481
+Dividends Declared,Equity,29714
+Cost of Goods Sold,Product Expense,46705
+Research and Development,Service Expense,50104
+Travel Expenses,Service Expense,59850
+Training Expenses,Service Expense,50182
+Rent Expense,Service Expense,50465
