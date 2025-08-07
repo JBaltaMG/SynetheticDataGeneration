@@ -77,12 +77,12 @@ def generate_all_dimensions(company_name: str,
     df_department = llm_generators.generate_departments_llm(company_name, count_departments)
     validate_length(df_account, count_accounts, "account")
     validate_length(df_customer, count_customers, "customer")
-    validate_length(df_department, count_departments, "department")
+    validate_length(df_department, count_departments, "department_name")
     print("✔ Accounts, Customers, and Departments generated.")
 
     # Convert proportionality
     dfs = [df_procurement, df_service, df_product, df_customer, df_department]
-    dfs = [utils.convert_column_to_percentage(df, 'Proportionality', scale=1.0) for df in dfs]
+    dfs = [utils.convert_column_to_percentage(df, 'proportionality', scale=1.0) for df in dfs]
 
     # Then unpack if needed
     df_procurement, df_service, df_product, df_customer, df_department = dfs
@@ -135,7 +135,7 @@ def generate_all_dimensions(company_name: str,
         "product": df_product,
         "account": df_account,
         "customer": df_customer,
-        "department": df_department
+        "department_name": df_department
     }
 
 def create_payroll_data(df_pay: pd.DataFrame, df_payroll: pd.DataFrame, df_department: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -157,7 +157,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     Args:
         generated_data (dict, optional): Dictionary containing all generated dimension tables.
         company_name (str, optional): If provided, will load data from CSVs located at
-                                      data/outputdata/{company_name}_data/
+                                      data/outputdata/
 
     Returns:
         Tuple[pd.DataFrame, pd.DataFrame]: (df_spend, df_mapped)
@@ -182,7 +182,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
         df_products    = generated_data["product"].copy()
         df_services    = generated_data["service"].copy()
         df_procurement = generated_data["procurement"].copy()
-        df_departments = generated_data["department"].copy()
+        df_departments = generated_data["department_name"].copy()
         df_accounts    = generated_data["account"].copy()
         df_customers   = generated_data["customer"].copy()
         df_payroll     = generated_data["payroll"].copy()
@@ -191,17 +191,17 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
 
 
     # Apply proportional spend estimates
-    df_procurement["TotalAnnualSpend"] = np.round(
-        estimated_financials["EstimatedProductCost"] * df_procurement["Proportionality"], -3
+    df_procurement["annual_spend"] = np.round(
+        estimated_financials["estimated_product"] * df_procurement["proportionality"], -3
     )
-    df_products["TotalAnnualSpend"] = np.round(
-        estimated_financials["EstimatedProductCost"] * df_products["Proportionality"], -3
+    df_products["annual_spend"] = np.round(
+        estimated_financials["estimated_product"] * df_products["proportionality"], -3
     )
-    df_services["TotalAnnualSpend"] = np.round(
-        estimated_financials["EstimatedServiceCost"] * df_services["Proportionality"], -3
+    df_services["annual_spend"] = np.round(
+        estimated_financials["estimated_service"] * df_services["proportionality"], -3
     )
-    df_departments["TotalAnnualSpend"] = np.round(
-        estimated_financials["EstimatedPayroll"] * df_departments["Proportionality"], -3
+    df_departments["annual_spend"] = np.round(
+        estimated_financials["estimated_payroll"] * df_departments["proportionality"], -3
     )
 
     df_erp_expenses, df_map_expenses = mapping.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
@@ -241,19 +241,16 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     
     df_erp_expenses_full = erp.create_erp_data(df_expenses=df_erp_expenses, df_expenses_mapping=df_map_expenses, df_document_metadata=document_metadata_expense)
     df_erp_products_full = erp.create_erp_data(df_expenses=df_erp_products, df_expenses_mapping=df_map_products, df_document_metadata=document_metadata_products)
-    
-    # Full target schema # also Currency, AmountEUR, Type
-    full_columns = [
-        'DocumentNumber', 'Type', 'Date', 'AmountDKK', 'GLAccountName', 'product_id', 'procurement_id', 'service_id'
-    ]
-
+      
+    # Full target schema # also currency, amount_eur, Type
+    full_columns = ['document_number', 'type', 'date', 'amount_dkk', 'account_name', 'product_id', 'procurement_id', 'service_id']
 
     rename_cols = {
-        'DocumentNumber': 'document_number',
-        'Type': 'debit_credit', 
-        'Date': 'date',
-        'AmountDKK': 'amount',
-        'GLAccountName': 'account_id',
+        'document_number': 'document_number',
+        'type': 'debit_credit', 
+        'date': 'date',
+        'amount_dkk': 'amount',
+        'account_name': 'account_id',
         'product_id': 'product_id',
         'procurement_id': 'procurement_id',
         'service_id': 'service_id'}

@@ -7,7 +7,7 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
     client = prompt_utils.get_openai_client()
 
     over_request_count = int(count) * 1.2
-    header = "name;Proportionality"
+    header = "name;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -16,7 +16,7 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
 
     Each row should contain:
     - name: A specific, realistic name of the purchased item or material
-    - Proportionality: an estimation of how much of the total procurement budget is spent on this item, as a percentage (0-100).
+    - proportionality: an estimation of how much of the total procurement budget is spent on this item, as a percentage (0-100).
 
     The list must cover the full range of procurement, including:
     - Raw materials and base components used in the company’s production
@@ -29,7 +29,7 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
     - The middle of the list reflects typical tools, spare parts, and operational items
     - The last items consist of low-cost, generic office and administrative supplies
 
-    Rank the entire list by Proportionality in descending order.
+    Rank the entire list by proportionality in descending order.
 
     {constraints}
     """
@@ -43,7 +43,7 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
         temperature=temp,
     )
     df_procurement = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_procurement = utils.convert_column_to_percentage(df_procurement, "Proportionality", scale=1.0)
+    df_procurement = utils.convert_column_to_percentage(df_procurement, "proportionality", scale=1.0)
     return df_procurement
 
 def generate_sales_products_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 1):
@@ -58,12 +58,12 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
         temp (float): Temperature setting for generation.
 
     Returns:
-        pd.DataFrame: A DataFrame with columns 'ProductName' and 'Proportionality'.
+        pd.DataFrame: A DataFrame with columns 'product_name' and 'proportionality'.
     """
     client = prompt_utils.get_openai_client()
 
     over_request_count = int(count * 1.2)
-    header = "name;Proportionality"
+    header = "name;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -72,14 +72,14 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
 
     Each row should contain:
     - name: A specific, realistic name of a sellable product or SKU category
-    - Proportionality: An estimation of how much of the total sales revenue is attributed to this product, as a percentage (0-100)
+    - proportionality: An estimation of how much of the total sales revenue is attributed to this product, as a percentage (0-100)
 
     Ensure that:
     - Products reflect typical B2B or B2C outputs for a company in the relevant industry
     - There is a natural mix of high-revenue flagship items, mid-range products, and low-cost accessories or services
     - Product names should remain categorical, not overly specific (e.g., “Premium Hiking Boots” or “Small Business CRM Plan”)
 
-    Rank the entire list by Proportionality in descending order.
+    Rank the entire list by proportionality in descending order.
 
     {constraints}
     """
@@ -94,7 +94,7 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
     )
 
     df_products = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_products = utils.convert_column_to_percentage(df_products, "Proportionality", scale=1.0)
+    df_products = utils.convert_column_to_percentage(df_products, "proportionality", scale=1.0)
     return df_products
 
 
@@ -102,7 +102,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     client = prompt_utils.get_openai_client()
 
     over_request_count = int(count) * 1.2
-    header = "name;Proportionality"
+    header = "name;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -111,7 +111,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
 
     Each row should contain:
     - name: A realistic and specific name of a fee or service (e.g. 'IT Consulting', 'Cleaning Contract', 'Microsoft 365 License', 'Legal Retainer')
-    - Proportionality: an estimation of how much of the total procurement budget is spent on this item, as a percentage (0-100).
+    - proportionality: an estimation of how much of the total procurement budget is spent on this item, as a percentage (0-100).
 
     The list should include a broad mix of services such as:
     - One-time fees (e.g. onboarding, legal review, security audits)
@@ -125,7 +125,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     - The **middle** contains regular professional services and departmental support
     - The **bottom entries** are standardized, lower-cost software licenses and administrative services (e.g. antivirus subscriptions, file storage plans, domain hosting, video conferencing tools)
 
-    Rank the list by descending Proportionality.
+    Rank the list by descending proportionality.
 
     {constraints}
     """
@@ -139,14 +139,14 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
         temperature=temp,
     )
     df_services = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_services = utils.convert_column_to_percentage(df_services, "Proportionality", scale=1.0)
+    df_services = utils.convert_column_to_percentage(df_services, "proportionality", scale=1.0)
     return df_services
 
 def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.1):
     client = prompt_utils.get_openai_client()
 
     over_request_count = int(count) * 1.2
-    header = "RoleName"
+    header = "role_name"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -154,7 +154,7 @@ def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4o
     based on its industry and typical operations.
 
     Each row should contain:
-    - RoleName: The job title or position of the employee
+    - role_name: The job title or position of the employee
 
     The output should reflect realistic HR data for financial modeling and analytics purposes. 
     It should be ranked by the highest monthly salary.
@@ -179,7 +179,7 @@ def generate_names_llm(count: int = 100, model: str = "gpt-4o", temp: float = 0.
     # Over-request
     over_request_count = int(count) * 1.2
 
-    header = "FirstName;LastName"
+    header = "first_name;last_name"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -212,7 +212,7 @@ def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-
     client = prompt_utils.get_openai_client()
     over_request_count = int(count) * 1.2
 
-    header = "name;AccountType"
+    header = "name;account_type"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
@@ -221,7 +221,7 @@ def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-
 
     For each row, return:
     - name: a descriptive name of the account (e.g., "Sales Revenue", "Consulting Fees", "Bank Account", etc.)
-    - AccountType: the type of the account — must be one of the following categories:
+    - account_type: the type of the account — must be one of the following categories:
     "Revenue", "Product Expense", "Service Expense", "Payroll", "Asset", or "Equity"
 
     Ensure the following:
@@ -245,14 +245,14 @@ def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-
     )
 
     df_accounts = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_accounts["Account_ID"] = random_generators.generate_account_ids(df_accounts["AccountType"])
+    df_accounts["account_id"] = random_generators.generate_account_ids(df_accounts["account_type"])
 
     return df_accounts
 
 def generate_departments_llm(company_name: str, count: int = 10, model: str = "gpt-4o", temp: float = 0.3):
     client = prompt_utils.get_openai_client()
 
-    header = "name;Proportionality"
+    header = "name;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
 
     prompt = f"""
@@ -261,9 +261,9 @@ def generate_departments_llm(company_name: str, count: int = 10, model: str = "g
 
     For each department, provide the following fields in CSV format:
     - name: A realistic department name (e.g. R&D, Sales, Finance, Customer Support)
-    - Proportionality: An estimated proportion of the company's total payroll allocated to this department, expressed as a decimal (e.g. 0.25 for 25%)
+    - proportionality: An estimated proportion of the company's total payroll allocated to this department, expressed as a decimal (e.g. 0.25 for 25%)
 
-    The total Proportionality values should sum to approximately 1.0 across all departments.
+    The total proportionality values should sum to approximately 1.0 across all departments.
 
     Departments should vary in size and function, including both strategic and operational units.
 
@@ -282,15 +282,15 @@ def generate_departments_llm(company_name: str, count: int = 10, model: str = "g
     )
 
     df_offices = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_offices.insert(0, "Department_ID", range(100, len(df_offices) + 100))
-    df_offices = utils.convert_column_to_percentage(df_offices, "Proportionality", scale=1.0)
+    df_offices.insert(0, "department_id", range(100, len(df_offices) + 100))
+    df_offices = utils.convert_column_to_percentage(df_offices, "proportionality", scale=1.0)
     return df_offices
 
 
 def generate_customers_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.3):
     client = prompt_utils.get_openai_client()
 
-    header = "name;CustomerSegment;Proportionality"
+    header = "name;customer_segment;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
 
     prompt = f"""
@@ -299,10 +299,10 @@ def generate_customers_llm(company_name: str, count: int = 100, model: str = "gp
 
     For each customer, provide the following fields in CSV format:
     - name: The name of the customer (company or organization)
-    - CustomerSegment: One of the following segments: Enterprise, SME, Government, Non-profit, Retail, Wholesale, or Startup
-    - Proportionality: An estimated proportion of the company's total revenue generated by this customer, expressed as a decimal (e.g. 0.05 for 5%)
+    - customer_segment: One of the following segments: Enterprise, SME, Government, Non-profit, Retail, Wholesale, or Startup
+    - proportionality: An estimated proportion of the company's total revenue generated by this customer, expressed as a decimal (e.g. 0.05 for 5%)
 
-    The Proportionality values should vary realistically across customers and sum to approximately 1.0 in total.
+    The proportionality values should vary realistically across customers and sum to approximately 1.0 in total.
     Ensure variation in customer size and segment, including both large key accounts and smaller clients.
 
     {constraints}
@@ -322,8 +322,8 @@ def generate_customers_llm(company_name: str, count: int = 100, model: str = "gp
     )
 
     df_customers = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_customers.insert(0, "Customer_ID", range(10, len(df_customers) + 10))
-    df_customers = utils.convert_column_to_percentage(df_customers, "Proportionality", scale=1.0)
+    df_customers.insert(0, "customer_id", range(10, len(df_customers) + 10))
+    df_customers = utils.convert_column_to_percentage(df_customers, "proportionality", scale=1.0)
     return df_customers
 
 

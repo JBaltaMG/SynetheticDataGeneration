@@ -10,7 +10,7 @@ utils.set_global_seed(42)
 def create_pay_roll(df_roles: pd.DataFrame, df_employees: pd.DataFrame, mean_pay: float = 42000, if_long: bool = True) -> pd.DataFrame:
     df_role = assign_monthly_pay(df_roles, mean_pay)
     df = pd.concat([df_role, df_employees], axis=1)    
-    df["Employee_ID"] = random_generators.generate_employee_ids(len(df))
+    df["employee_id"] = random_generators.generate_employee_ids(len(df))
     
     if if_long:
         df = expand_employees_across_months(df)
@@ -22,46 +22,46 @@ def create_pay_roll(df_roles: pd.DataFrame, df_employees: pd.DataFrame, mean_pay
 
 def assign_monthly_pay(df_roles: pd.DataFrame, mean_pay: float = 42000) -> pd.DataFrame:
     pay = utils.simulate_log_normal_pay_distribution(len(df_roles), scale=mean_pay)
-    df_roles["MonthlyPay"] = pay
+    df_roles["monthly_pay"] = pay
     return df_roles
 
 def expand_employees_across_months(df_employees: pd.DataFrame, year: int = 2025) -> pd.DataFrame:
-    months = random_generators.generate_month_list(year)
+    months = random_generators.generate_month_list(year_start=year-5, year_end=year)
     rows = []
 
     for _, row in df_employees.iterrows():
         for m in months:
             rows.append({
-                "Employee_ID": row["Employee_ID"],
-                "RoleName": row["RoleName"],
-                "FirstName": row["FirstName"],
-                "LastName": row["LastName"],
-                "Month": m,
-                "MonthlyPay": row["MonthlyPay"]
+                "employee_id": row["employee_id"],
+                "role_name": row["role_name"],
+                "first_name": row["first_name"],
+                "last_name": row["last_name"],
+                "month": m,
+                "monthly_pay": row["monthly_pay"]
             })
 
     return pd.DataFrame(rows)
 
 def apply_raise_and_fire(df: pd.DataFrame, raise_pct: float = 0.05, fire_pct: float = 0.03) -> pd.DataFrame:
-    employee_ids = df['Employee_ID'].unique()
+    employee_ids = df['employee_id'].unique()
 
     raise_ids = random.sample(list(employee_ids), int(len(employee_ids) * raise_pct))
     remaining = list(set(employee_ids) - set(raise_ids))
     fire_ids = random.sample(remaining, int(len(employee_ids) * fire_pct))
 
     for eid in raise_ids:
-        start = random.choice(df["Month"].unique())
-        df.loc[(df.Employee_ID == eid) & (df.Month >= start), "MonthlyPay"] *= 1.05
+        start = random.choice(df["month"].unique())
+        df.loc[(df.employee_id == eid) & (df.Month >= start), "monthly_pay"] *= 1.05
 
     for eid in fire_ids:
-        start = random.choice(df["Month"].unique())
-        df.loc[(df.Employee_ID == eid) & (df.Month >= start), "MonthlyPay"] = 0
+        start = random.choice(df["month"].unique())
+        df.loc[(df.employee_id == eid) & (df.Month >= start), "monthly_pay"] = 0
 
     return df
 
 def add_taxes(df_payroll: pd.DataFrame) -> pd.DataFrame:
 
-    df_payroll = df_payroll.rename(columns={'MonthlyPay': '0013'})
+    df_payroll = df_payroll.rename(columns={'monthly_pay': '0013'})
 
     # Tax configuration
     tax_config = {
@@ -92,25 +92,25 @@ def add_taxes(df_payroll: pd.DataFrame) -> pd.DataFrame:
             df_payroll[entry["code"]] = entry["value"]
 
     # Randomized manual entries
-    unique_ids = df_payroll['Employee_ID'].unique().tolist()
-    months = df_payroll["Month"].unique().tolist()
+    unique_ids = df_payroll['employee_id'].unique().tolist()
+    months = df_payroll["month"].unique().tolist()
 
     # Fradrag (e.g. personfradrag) to 2 random people/months
     for id_, month_ in zip(random.sample(unique_ids, 2), random.sample(months, 2)):
-        condition = (df_payroll['Employee_ID'] == id_) & (df_payroll['Month'] == month_)
+        condition = (df_payroll['employee_id'] == id_) & (df_payroll['month'] == month_)
         df_payroll.loc[condition, tax_config["Fradrag"]["code"]] = 8000
 
     # A-indkomst uden bidrag to 1 random employee
     for id_ in random.sample(unique_ids, len(unique_ids) // 100):
-        df_payroll.loc[df_payroll['Employee_ID'] == id_, tax_config["A-indkomst uden bidrag"]["code"]] = 2000
+        df_payroll.loc[df_payroll['employee_id'] == id_, tax_config["A-indkomst uden bidrag"]["code"]] = 2000
 
     # Kørselsgodtgørelse to 60 random employees
     for id_ in random.sample(unique_ids, len(unique_ids) // 10):
-        df_payroll.loc[df_payroll['Employee_ID'] == id_, tax_config["Kørselsgodtgørelse"]["code"]] = np.random.randint(100, 400)
+        df_payroll.loc[df_payroll['employee_id'] == id_, tax_config["Kørselsgodtgørelse"]["code"]] = np.random.randint(100, 400)
 
     # B-indkomst med bidrag to 5 random employees
     for id_ in random.sample(unique_ids, len(unique_ids) // 20):
-        df_payroll.loc[df_payroll['Employee_ID'] == id_, tax_config["B-indkomst med bidrag"]["code"]] = 5201
+        df_payroll.loc[df_payroll['employee_id'] == id_, tax_config["B-indkomst med bidrag"]["code"]] = 5201
     
     return df_payroll
 
@@ -125,10 +125,10 @@ def add_LineID_Pay(df: pd.DataFrame) -> pd.DataFrame:
     ]
 
     df_long = df.melt(
-        id_vars=['Month', 'Employee_ID', "RoleName", "FirstName", "LastName"],
+        id_vars=['month', 'employee_id', "role_name", "first_name", "last_name"],
         value_vars=line_id_cols,
-        var_name='Line_ID',
-        value_name='Amount'
+        var_name='line_id',
+        value_name='amount'
     )
 
 
@@ -144,17 +144,17 @@ def split_Pay(df_base: pd.DataFrame, df_mapping: pd.DataFrame,
     df_mapping = df_mapping.copy()
 
     # Ensure consistent string format for Line_ID
-    df_base['Line_ID'] = df_base['Line_ID'].astype(str).str.zfill(4)
-    df_mapping['Line_ID'] = df_mapping['Line_ID'].astype(str).str.zfill(4)
+    df_base['line_id'] = df_base['line_id'].astype(str).str.zfill(4)
+    df_mapping['line_id'] = df_mapping['line_id'].astype(str).str.zfill(4)
 
     # Map Line_ID to list of PayTypeKeys (as strings to keep formatting consistent)
-    mapping_dict = df_mapping.groupby('Line_ID')['Account'].apply(list).to_dict()
+    mapping_dict = df_mapping.groupby('line_id')['Account'].apply(list).to_dict()
 
     new_rows = []
 
     for _, row in df_base.iterrows():
-        line_id = row['Line_ID']
-        amount = row['Amount']
+        line_id = row['line_id']
+        amount = row['amount']
         paytypes = mapping_dict.get(line_id, [])
 
         if not paytypes:
@@ -173,14 +173,14 @@ def split_Pay(df_base: pd.DataFrame, df_mapping: pd.DataFrame,
 
         for ptk, amt in zip(selected, raw):
             new_rows.append({
-                'Month': row['Month'],
-                'Employee_ID': row['Employee_ID'],
-                'RoleName': row['RoleName'],
-                'FirstName': row['FirstName'],
-                'LastName': row['LastName'],
-                'Line_ID': line_id,
+                'month': row['month'],
+                'employee_id': row['employee_id'],
+                'role_name': row['role_name'],
+                'first_name': row['first_name'],
+                'last_name': row['last_name'],
+                'line_id': line_id,
                 'Account': int(ptk), 
-                'Amount': np.round(amt, -2)
+                'amount': np.round(amt, -2)
             })
 
     return pd.DataFrame(new_rows)
@@ -207,9 +207,9 @@ def map_line_names(df: pd.DataFrame) -> pd.DataFrame:
     # Reverse mapping from code to name
     code_to_name.update({v["code"]: k for k, v in tax_config.items()})
 
-    df["LineName"] = df["Line_ID"].map(code_to_name)
+    df["line_name"] = df["line_id"].map(code_to_name)
 
-    cols = ['Month', 'Employee_ID', 'RoleName', 'FirstName', 'LastName', 'Amount', 'Line_ID', 'LineName']
+    cols = ['month', 'employee_id', 'role_name', 'first_name', 'last_name', 'amount', 'line_id', 'line_name']
 
     return df[cols]
 
@@ -222,16 +222,16 @@ def create_full_payroll(df_payroll: pd.DataFrame, df_mapping: pd.DataFrame) -> p
     df_payroll = map_line_names(df_payroll)
 
     df_payroll = df_payroll.rename(columns={
-        "Employee_ID": "employee_id",
-        "RoleName": "role_name",
-        "FirstName": "first_name",
-        "LastName": "last_name",
-        "Line_ID": "line_id",
-        "LineName": "name",
-        "Amount": "amount",
-        "Month": "date"
+        "employee_id": "employee_id",
+        "role_name": "role_name",
+        "first_name": "first_name",
+        "last_name": "last_name",
+        "line_id": "line_id",
+        "line_name": "name",
+        "amount": "amount",
+        "month": "date"
     })
-
+    
     cols_pay = ['date', 'employee_id', 'name', 'amount']
     df_payroll_keep = df_payroll[cols_pay]
     df_mapping = df_payroll[['name', 'line_id']]

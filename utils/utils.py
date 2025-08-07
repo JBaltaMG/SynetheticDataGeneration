@@ -48,22 +48,22 @@ def simulate_log_normal_pay_distribution(n: int, scale: float = 50000, top_multi
 
 def sample_employees(count_employees: int, filename: str = "data/inputdata/NameList.csv", if_fullname: bool = False) -> pd.DataFrame:
     """
-    Samples a number of employees from a CSV with 'FirstName' and 'LastName',
-    and returns a DataFrame with FirstName, LastName, and full name.
+    Samples a number of employees from a CSV with 'first_name' and 'last_name',
+    and returns a DataFrame with first_name, last_name, and full name.
 
     Args:
         count_employees (int): Number of employee names to sample.
         filename (str): Path to the name list CSV file.
 
     Returns:
-        pd.DataFrame: DataFrame with columns 'FirstName', 'LastName', 'EmployeeName'.
+        pd.DataFrame: DataFrame with columns 'first_name', 'last_name', 'EmployeeName'.
     """
     # Load name list
     name_df = pd.read_csv(filename)
 
     # Check required columns
-    if not {'FirstName', 'LastName'}.issubset(name_df.columns):
-        raise ValueError("CSV must contain 'FirstName' and 'LastName' columns.")
+    if not {'first_name', 'last_name'}.issubset(name_df.columns):
+        raise ValueError("CSV must contain 'first_name' and 'last_name' columns.")
 
     # Sample rows (with replacement if not enough unique)
     if count_employees > len(name_df):
@@ -73,10 +73,10 @@ def sample_employees(count_employees: int, filename: str = "data/inputdata/NameL
 
     # Add full name column
     if if_fullname:
-        sampled_df['EmployeeName'] = sampled_df['FirstName'].str.strip() + ' ' + sampled_df['LastName'].str.strip()
-        return sampled_df[['FirstName', 'LastName', 'EmployeeName']]
+        sampled_df['EmployeeName'] = sampled_df['first_name'].str.strip() + ' ' + sampled_df['last_name'].str.strip()
+        return sampled_df[['first_name', 'last_name', 'EmployeeName']]
     
-    return sampled_df[['FirstName', 'LastName']]
+    return sampled_df[['first_name', 'last_name']]
 
 
 def format_month_string(year: int, month: int) -> str:
@@ -109,26 +109,24 @@ def create_mapping_from_metadata(
     df_accounts: pd.DataFrame, 
     df_departments: pd.DataFrame, 
     df_customers: pd.DataFrame, 
-    name_column="ProductName"
+    name_column="product_name"
 ) -> pd.DataFrame:
     """
     Maps each item (product/service/employee/procurement) to multiple GL accounts and departments.
 
     Special case:
-    - If name_column == 'Employee_ID', maps each employee to payroll accounts.
+    - If name_column == 'employee_id', maps each employee to payroll accounts.
 
-    Returns a DataFrame with one row per (item, GLAccount, Department) combination.
+    Returns a DataFrame with one row per (item, account_id, Department) combination.
     """
     mappings = []
 
-    if name_column == "ProductName":
-        expense_accounts = df_accounts[df_accounts["AccountType"] == "Revenue"]
-    elif name_column == "ServiceName":
-        expense_accounts = df_accounts[df_accounts["AccountType"] == "Service Expense"]
-    elif name_column == "Employee_ID":
-        expense_accounts = df_accounts[df_accounts["AccountType"] == "Payroll"]
-    elif name_column == "ProcurementName":
-        expense_accounts = df_accounts[df_accounts["AccountType"] == "Product Expense"]
+    if name_column == "product_name":
+        expense_accounts = df_accounts[df_accounts["account_type"] == "Revenue"]
+    elif name_column == "service_name":
+        expense_accounts = df_accounts[df_accounts["account_type"] == "Service Expense"]
+    elif name_column == "procurement_name":
+        expense_accounts = df_accounts[df_accounts["account_type"] == "Product Expense"]
     else:
         raise ValueError(f"Unsupported name_column: {name_column}")
 
@@ -140,13 +138,13 @@ def create_mapping_from_metadata(
         for _, acc in gl_sample.iterrows():
             mapping = {
                 "name": item_value,
-                "GLAccount": acc["Account_ID"],
-                "GLAccountName": acc["name"],
+                "account_id": acc["account_id"],
+                "account_name": acc["name"],
             }
 
-            if name_column == "ProductName" and df_customers is not None:
+            if name_column == "product_name" and df_customers is not None:
                 customer = df_customers.sample(1).iloc[0]
-                mapping["CustomerName"] = customer["name"]
+                mapping["customer_name"] = customer["name"]
 
             mappings.append(mapping)
 
@@ -158,31 +156,31 @@ def assign_departments(df_pay: pd.DataFrame, df_departments: pd.DataFrame) -> pd
 
     Args:
         df_pay: DataFrame with at least an 'employee_id' column.
-        df_departments: DataFrame with 'Department' and 'Proportionality' columns.
+        df_departments: DataFrame with 'department_name' and 'proportionality' columns.
         seed: Random seed for reproducibility.
 
     Returns:
-        df_pay with a new 'Department' column assigned.
+        df_pay with a new 'department_name' column assigned.
     """
     n_employees = len(df_pay)
 
     # Normalize proportionality to ensure sum = 1
-    df_departments['Proportionality'] = df_departments['Proportionality'] / df_departments['Proportionality'].sum()
+    df_departments['proportionality'] = df_departments['proportionality'] / df_departments['proportionality'].sum()
 
     # Determine how many employees per department
-    df_departments['NumEmployees'] = (df_departments['Proportionality'] * n_employees).round().astype(int)
+    df_departments['num_employee'] = (df_departments['proportionality'] * n_employees).round().astype(int)
 
     # Correct for rounding errors to make total match
-    diff = n_employees - df_departments['NumEmployees'].sum()
+    diff = n_employees - df_departments['num_employee'].sum()
     if diff != 0:
         # Add or subtract the diff to the department with the largest proportion
-        idx = df_departments['Proportionality'].idxmax()
-        df_departments.loc[idx, 'NumEmployees'] += diff
+        idx = df_departments['proportionality'].idxmax()
+        df_departments.loc[idx, 'num_employee'] += diff
 
     # Build the list of departments to assign
     department_assignments = []
     for _, row in df_departments.iterrows():
-        department_assignments.extend([row['name']] * row['NumEmployees'])
+        department_assignments.extend([row['name']] * row['num_employee'])
 
     np.random.shuffle(department_assignments)
 
@@ -193,11 +191,11 @@ def assign_departments(df_pay: pd.DataFrame, df_departments: pd.DataFrame) -> pd
     cols = ["role_name", "monthly_pay", "first_name", "last_name", "employee_id", "department_id"]
 
     df_pay = df_pay.rename(columns={
-        "RoleName": "role_name",
-        "MonthlyPay": "monthly_pay",
-        "FirstName": "first_name",
-        "LastName": "last_name",
-        "Employee_ID": "employee_id",
+        "role_name": "role_name",
+        "monthly_pay": "monthly_pay",
+        "first_name": "first_name",
+        "last_name": "last_name",
+        "employee_id": "employee_id",
         "name": "department_id"
     })
     

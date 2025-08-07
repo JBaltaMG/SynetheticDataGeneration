@@ -1,51 +1,11 @@
-name,Proportionality
-Wind Turbine Installation Services,0.10349446000243517
-Major Equipment Commissioning Fee,0.0876658955314745
-Grid Connection Engineering Services,0.07914282235480337
-Project Management Consulting,0.07061974917813223
-Turbine Maintenance Contracts,0.06453183976622429
-SCADA System Integration Services,0.04626811153050043
-Environmental Impact Assessment Services,0.0377450383538293
-Site Security Services,0.03409229270668453
-Heavy Transportation Logistics,0.031657128941921346
-Legal Advisory Retainer,0.029221965177158166
-Quality Assurance Audits,0.025569219530013395
-Customs Clearance Services,0.023134055765250214
-Health and Safety Compliance Consulting,0.021916473882868624
-Land Use and Permitting Fees,0.020698892000487034
-Accounting and Audit Services,0.019481310118105444
-Recruitment Agency Fees,0.018263728235723854
-Technical Training Services,0.017046146353342263
-IT Infrastructure Support Services,0.015828564470960673
-SAP ERP License and Maintenance,0.014610982588579083
-Procurement Outsourcing Services,0.013393400706197494
-Fleet Vehicle Leasing,0.012175818823815902
-Waste Management Services,0.011932302447339584
-Translation and Localization Services,0.01120175331791063
-Travel Management Services,0.010958236941434312
-Market Research Consulting,0.010714720564957994
-Corporate Tax Advisory,0.010349446000243517
-Catering and Hospitality Contracts,0.009740655059052722
-Patent and IP Legal Services,0.009253622306100086
-Telecom and Mobile Services,0.009010105929623768
-Facility Management Services,0.00876658955314745
-Payroll Processing Services,0.008523073176671132
-Document Digitization Services,0.008279556800194814
-Workforce Health Screening Services,0.008036040423718496
-Energy Management Consulting,0.0077925240472421775
-Business Continuity Planning Services,0.0075490076707658595
-Cybersecurity Audit and Advisory,0.007305491294289541
-Cloud Infrastructure Subscription,0.0070619749178132225
-Microsoft 365 Enterprise License,0.006818458541336906
-AutoCAD License,0.006574942164860587
-Salesforce CRM License,0.006087909411907951
-Adobe Creative Cloud License,0.005844393035431633
-Power BI Pro License,0.005600876658955315
-Zoom Enterprise Subscription,0.005357360282478997
-DocuSign eSignature License,0.005113843906002679
-Antivirus Software Subscription,0.004870327529526361
-VPN and Remote Access Services,0.004626811153050043
-File Storage Plan (OneDrive/SharePoint),0.004383294776573725
-Domain Hosting and SSL Certificates,0.004139778400097407
-SurveyMonkey Business License,0.0038962620236210888
-Slack Business Subscription,0.0036527456471447707
+name,proportionality
+Global Logistics & Freight Forwarding Services,0.2945113788487283
+Enterprise IT Infrastructure Outsourcing,0.1673360107095047
+Product Design & Innovation Consulting,0.12048192771084339
+Legal & Intellectual Property Retainer,0.10040160642570282
+Global Marketing & Advertising Agency Fees,0.09103078982597056
+Regulatory Compliance Advisory Services,0.07630522088353416
+Recruitment & Talent Acquisition Services,0.05756358768406962
+Facility Cleaning & Janitorial Contract,0.04685408299866132
+Microsoft 365 Enterprise License,0.034805890227576984
+Cloud Storage & File Sharing Plan,0.010709504685408303
