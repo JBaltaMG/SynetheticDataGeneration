@@ -10,20 +10,30 @@ schemadict = {
         "customer_name": "str",
         "customer_segment": "str",
     },
+
+    "dim_vendor": {
+        "vendor_id": "int",
+        "vendor_name": "str",
+        "vendor_segment": "str",
+    },
+
     "dim_product": {
         "product_id": "int",
         "product_name": "str",
         "product_category": "str",
         "product_subcategory": "str",
     },
+
     "dim_account": {
         "account_id": "int",
         "account_name": "str",
         "account_type": "str",
     },
+
     "dim_procurement": {
         "procurement_name": "str",
     },
+    
     "dim_service": {
         "service_name": "str",
     },

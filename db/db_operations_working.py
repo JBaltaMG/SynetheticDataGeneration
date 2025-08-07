@@ -257,13 +257,15 @@ def remap_dataframe_ids(df: pd.DataFrame, dim_dict: dict) -> pd.DataFrame:
     for key, mapping in id_maps.items():
         id_col_name = key.split("_")[-1] + "_id"
         if id_col_name in df.columns:
+            # Perform safe replacement
             df[id_col_name] = (
                 df[id_col_name]
                 .replace(mapping)
-                .infer_objects(copy=False)       
+                .apply(pd.to_numeric, errors='coerce')  # Forces invalid values to NaN
                 .fillna(-1)
-                .astype("Int64")
+                .astype("Int64")  # Nullable integer dtype
             )
+
     return df
 
 
@@ -289,7 +291,7 @@ def execute_db_operations(version_tag: str = "test6"):
         "procurement.csv",
         "service.csv",
         "line.csv",
-        #"employee.csv",
+        "vendor.csv",
     ]:
         print(f"inserting {file_name} into database")
         table_name = "dim_" + file_name.split(".")[0].replace(" ", "_").lower()
@@ -369,7 +371,7 @@ if __name__ == "__main__":
         "procurement.csv",
         "service.csv",
         "line.csv",
-        #"employee.csv",
+        "vendor.csv",
     ]:
         print(f"inserting {file_name} into database")
         table_name = "dim_" + file_name.split(".")[0].replace(" ", "_").lower()

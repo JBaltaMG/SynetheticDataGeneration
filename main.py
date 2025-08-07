@@ -16,3 +16,8 @@ count_products = 50
 count_employees = 50
 
 data = create_company_data(company_name, count_employee = 50, count_products = 50, count_accounts = 30, count_departments = 10, count_customers = 10, save_to_csv=True)
+
+
+# add costumer_id, vendor_id, 
+# rename pay to department_id,
+

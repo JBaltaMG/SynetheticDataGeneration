@@ -10,7 +10,7 @@ import modeling.mapping as mapping
 
 
 def create_company_data(company_name: str, count_employee: int = 100, count_products: int = 50,
-                        count_accounts: int = 30, count_customers: int = 10,
+                        count_accounts: int = 30, count_customers: int = 30,
                         count_departments: int = 10, save_to_csv: bool = True) -> dict:
     """
     Generates all dimension tables for a company and saves them to CSV files.
@@ -40,11 +40,11 @@ def create_company_data(company_name: str, count_employee: int = 100, count_prod
 
 
 def generate_all_dimensions(company_name: str,
-                            count_employee: int = 100,
-                            count_products: int = 50,
+                            count_employee: int = 200,
+                            count_products: int = 100,
                             count_accounts: int = 30,
-                            count_customers: int = 10,
-                            count_departments: int = 10,
+                            count_customers: int = 30,
+                            count_departments: int = 20,
                             save_to_csv: bool = True) -> dict:
 
     print(f"Generating data for company: {company_name}...")
@@ -67,18 +67,20 @@ def generate_all_dimensions(company_name: str,
     df_service = llm_generators.generate_services_llm(company_name, count_products)
     validate_length(df_service, count_products, "service")
     print("✔ Services data generated.")
-    df_product = llm_generators.generate_sales_products_llm(company_name, count_products)
-    validate_length(df_product, count_products, "product")
+    df_product = llm_generators.generate_sales_products_llm(company_name, count_products*2)
+    validate_length(df_product, count_products*2, "product")
     print("✔ Products data generated.")
 
     # Generate other dimension tables
     df_account    = llm_generators.generate_accounts_llm(company_name, count_accounts)
     df_customer   = llm_generators.generate_customers_llm(company_name, count_customers)
     df_department = llm_generators.generate_departments_llm(company_name, count_departments)
+    df_vendor     = llm_generators.generate_vendors_llm(company_name, count_customers)
     validate_length(df_account, count_accounts, "account")
     validate_length(df_customer, count_customers, "customer")
     validate_length(df_department, count_departments, "department_name")
-    print("✔ Accounts, Customers, and Departments generated.")
+    validate_length(df_vendor, count_customers, "vendor")
+    print("✔ Accounts, Customers, Departments, and Vendors generated.")
 
     # Convert proportionality
     dfs = [df_procurement, df_service, df_product, df_customer, df_department]
@@ -124,6 +126,8 @@ def generate_all_dimensions(company_name: str,
         df_account.to_csv(f"{output_dir}/dimensions/account.csv", index=False)
         df_customer.to_csv(f"{output_dir}/dimensions/customer.csv", index=False)
         df_department.to_csv(f"{output_dir}/dimensions/department.csv", index=False)
+        df_vendor.to_csv(f"{output_dir}/dimensions/vendor.csv", index=False)
+
         print(f"✔ All CSVs saved to: {output_dir}")
 
     return {
@@ -135,7 +139,8 @@ def generate_all_dimensions(company_name: str,
         "product": df_product,
         "account": df_account,
         "customer": df_customer,
-        "department_name": df_department
+        "department_name": df_department,
+        "vendor": df_vendor
     }
 
 def create_payroll_data(df_pay: pd.DataFrame, df_payroll: pd.DataFrame, df_department: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -175,6 +180,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
             df_departments = pd.read_csv(os.path.join(base_path, "department.csv"))
             df_accounts    = pd.read_csv(os.path.join(base_path, "account.csv"))
             df_customers   = pd.read_csv(os.path.join(base_path, "customer.csv"))
+            df_vendors     = pd.read_csv(os.path.join(base_path, "vendor.csv"))
             df_payroll     = pd.read_csv(os.path.join("data/outputdata/fact/", "erp_payroll.csv"))
         except FileNotFoundError as e:
             raise FileNotFoundError(f"Missing file in folder: {e.filename}")
@@ -186,6 +192,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
         df_accounts    = generated_data["account"].copy()
         df_customers   = generated_data["customer"].copy()
         df_payroll     = generated_data["payroll"].copy()
+        df_vendors     = generated_data["vendor"].copy()
 
     estimated_financials = erp.estimate_costs_from_payroll(df_pay=df_payroll)
 
@@ -195,7 +202,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
         estimated_financials["estimated_product"] * df_procurement["proportionality"], -3
     )
     df_products["annual_spend"] = np.round(
-        estimated_financials["estimated_product"] * df_products["proportionality"], -3
+        estimated_financials["estimated_revenue"] * df_products["proportionality"], -3
     )
     df_services["annual_spend"] = np.round(
         estimated_financials["estimated_service"] * df_services["proportionality"], -3
@@ -204,10 +211,8 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
         estimated_financials["estimated_payroll"] * df_departments["proportionality"], -3
     )
 
-    df_erp_expenses, df_map_expenses = mapping.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
-    df_erp_products, df_map_products = mapping.map_products(df_products=df_products, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers)
-
-
+    df_erp_expenses, df_map_expenses = mapping.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers, df_vendors=df_vendors)
+    df_erp_products, df_map_products = mapping.map_products(df_products=df_products, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers, df_vendors=df_vendors)
 
     print(f"✔ All mapping data generated.")
 
@@ -244,6 +249,13 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
       
     # Full target schema # also currency, amount_eur, Type
     full_columns = ['document_number', 'type', 'date', 'amount_dkk', 'account_name', 'product_id', 'procurement_id', 'service_id']
+    vendor_col = ['vendor_name']    
+    customer_col = ['customer_name']
+
+    # Reindex all ERP dataframes to align to full schema
+    df_expenses_full = df_erp_expenses_full.reindex(columns=full_columns + vendor_col)
+    df_products_full = df_erp_products_full.reindex(columns=full_columns + customer_col)
+
 
     rename_cols = {
         'document_number': 'document_number',
@@ -253,17 +265,27 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         'account_name': 'account_id',
         'product_id': 'product_id',
         'procurement_id': 'procurement_id',
-        'service_id': 'service_id'}
+        'service_id': 'service_id',
+        'vendor_name': 'vendor_id',
+        'customer_name': 'customer_id'}
+    
 
-    # Reindex all ERP dataframes to align to full schema
-    df_expenses_full = df_erp_expenses_full.reindex(columns=full_columns)
-    df_products_full = df_erp_products_full.reindex(columns=full_columns)
 
     df_expenses_full.rename(columns=rename_cols, inplace=True)
     df_products_full.rename(columns=rename_cols, inplace=True)
+    print("YESYES")
+    if save_to_csv:
+        output_dir = f"data/outputdata/fact"
+        os.makedirs(output_dir, exist_ok=True)
+        df_erp_expenses_full.to_csv(f"{output_dir}/erp_expenses.csv", index=False)
+        df_erp_products_full.to_csv(f"{output_dir}/erp_products.csv", index=False)
+
 
     # Concatenate all ERP data
     df_erp_all = pd.concat([df_expenses_full, df_products_full], ignore_index=True)
+    df_accounts = pd.read_csv("data/outputdata/dimensions/account.csv")
+
+    df_erp_all = erp.balance_documents_with_assets(df_erp=df_erp_all, df_accounts=df_accounts, tolerance=100)
     
     print(f"✔ All erp-data generated.")
 

@@ -109,8 +109,9 @@ def create_mapping_from_metadata(
     df_accounts: pd.DataFrame, 
     df_departments: pd.DataFrame, 
     df_customers: pd.DataFrame, 
+    df_vendors: pd.DataFrame,
     name_column="product_name"
-) -> pd.DataFrame:
+    ) -> pd.DataFrame:
     """
     Maps each item (product/service/employee/procurement) to multiple GL accounts and departments.
 
@@ -145,6 +146,14 @@ def create_mapping_from_metadata(
             if name_column == "product_name" and df_customers is not None:
                 customer = df_customers.sample(1).iloc[0]
                 mapping["customer_name"] = customer["name"]
+
+            if name_column == "service_name" and df_vendors is not None:
+                vendor = df_vendors.sample(1).iloc[0]
+                mapping["vendor_name"] = vendor["name"]
+
+            if name_column == "procurement_name" and df_vendors is not None:
+                vendor = df_vendors.sample(1).iloc[0]
+                mapping["vendor_name"] = vendor["name"]
 
             mappings.append(mapping)
 

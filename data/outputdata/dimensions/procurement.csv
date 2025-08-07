@@ -1,11 +1,51 @@
 name,proportionality
-Acrylonitrile Butadiene Styrene (ABS) Resin Pellets,0.35634743875278396
-Polycarbonate (PC) Granules,0.20601336302895323
-Color Masterbatch Pigments,0.13919821826280623
-Injection Molding Machine Parts & Maintenance Kits,0.08351893095768374
-In-mold Labeling Films,0.0601336302895323
-Steel Molds (Production Tooling),0.053452115812917596
-Electricity & Utilities (Production),0.042316258351893093
-Plastic Pallets & Material Handling Bins,0.031180400890868595
-"IT Hardware (Computers, Printers, Scanners)",0.01670378619153675
-Office Stationery and Supplies,0.011135857461024499
+ABS plastic resin (Acrylonitrile Butadiene Styrene),0.3513048465729854
+Polycarbonate resin,0.09320332664181245
+Injection molding machinery,0.08316604531115572
+Mold tooling (custom steel molds),0.07026096931459709
+PVC resin (for flexible elements),0.0401491253226269
+Automated assembly line systems,0.030111843991970175
+Decorative inks and printing supplies,0.02724404932606825
+Polypropylene resin,0.02437625466016633
+Metal axles and pins,0.022942357327215373
+Warehouse automation equipment,0.02150845999426441
+Shipping cartons (secondary packaging),0.01864066532836249
+Robotics and pick-and-place systems,0.01720676799541153
+Plastic granule drying equipment,0.01577287066246057
+Electric motors (for machinery),0.012905075996558647
+Mold release agents,0.011471178663607686
+Heat transfer foil for prints,0.010754229997132205
+Compressed air filters and dryers,0.010037281330656725
+Servo drives and controllers,0.009750501864066534
+Packaging strapping and banding,0.008890163464295957
+Industrial lubricants and greases,0.008316604531115572
+Industrial cleaning solutions,0.00802982506452538
+Safety sensors and light curtains,0.007886435331230285
+Antistatic agents,0.007743045597935188
+Spare parts for injection molding machines,0.007599655864640092
+Machine vision inspection systems,0.0068827071981646115
+Maintenance hand tools,0.00659592773157442
+Personal protective equipment (PPE),0.006309148264984227
+Industrial gloves and wipes,0.005878979065098939
+Hydraulic oils,0.005592199598508747
+Adhesives and glues,0.005162030398623459
+Tool calibration services,0.004588471465443075
+Coolants for mold temperature control,0.0044450817321479786
+Printer cartridges and toner,0.004158302265557786
+General maintenance spare parts,0.003871522798967594
+Industrial batteries,0.0034413535990823058
+Cleaning cloths and disposable towels,0.0030111843991970175
+Safety signage and floor tapes,0.0027244049326068252
+Work uniforms and safety shoes,0.0024376254660166334
+"Office paper (A4, A3, etc.)",0.002150845999426441
+Office computers and peripherals,0.002007456266131345
+IT network equipment,0.001864066532836249
+"Writing instruments (pens, markers)",0.0017206767995411529
+Desktop stationery supplies,0.0015772870662460567
+Coffee and breakroom consumables,0.0014338973329509608
+Printer and copier paper,0.0012905075996558647
+First aid kits,0.0010037281330656726
+Desk organizers and filing folders,0.0008603383997705764
+Flip charts and whiteboard supplies,0.0007169486664754804
+Post-it notes and notepads,0.0005735589331803844
+Staplers and staples,0.0004301691998852882

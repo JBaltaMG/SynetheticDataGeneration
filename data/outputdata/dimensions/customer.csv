@@ -1,11 +1,11 @@
 customer_id,name,customer_segment,proportionality
-10,Walmart,Retail,0.25
-11,Amazon,Retail,0.2
-12,Target,Retail,0.15
-13,Toys R Us,Retail,0.1
+10,Walmart,Retail,0.2
+11,Amazon,Retail,0.15
+12,"Toys ""R"" Us",Retail,0.1
+13,Target,Retail,0.1
 14,Carrefour,Retail,0.08
 15,Hamleys,Retail,0.07
-16,Smyths Toys,Retail,0.05
-17,The Entertainer,Retail,0.04
-18,FAO Schwarz,Retail,0.03
-19,Mastermind Toys,Retail,0.03
+16,The LEGO Store,Retail,0.05
+17,Educational Insights,Wholesale,0.12
+18,Smithsonian Institution,Non-profit,0.08
+19,Local Toy Shop,SME,0.05

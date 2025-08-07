@@ -57,12 +57,6 @@ def generate_document_metadata(n: int, start_index: int = 0) -> pd.DataFrame:
 def generate_account_ids(account_types: pd.Series) -> pd.Series:
     """
     Generate 5-digit account numbers based on account type prefix:
-    - Asset: starts with 1
-    - Equity: starts with 2
-    - Revenue: starts with 3
-    - Product Expense: starts with 4
-    - Service Expense: starts with 5
-    - Payroll Expense: starts with 6
     """
     prefix_map = {
         'Asset': '1',
@@ -70,7 +64,6 @@ def generate_account_ids(account_types: pd.Series) -> pd.Series:
         'Revenue': '3',
         'Product Expense': '4',
         'Service Expense': '5',
-        'Payroll Expense': '6',
     }
 
     used_numbers = set()
