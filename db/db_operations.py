@@ -351,24 +351,6 @@ def remap_dataframe_ids_emp(df: pd.DataFrame, dim_dict: dict) -> pd.DataFrame:
             )
     return df
 
-def handle_employee_id(input_string: str, dim_dict: dict) -> pd.DataFrame:
-    """
-    Handles the remapping of employee IDs in the DataFrame based on the provided dimension dictionary.
-    """
-
-    #df_employee = pd.read_csv(input_string)
-    #df_employee = remap_dataframe_ids_emp(df_employee, dim_dict)
-    #df_employee.to_csv("data/outputdata/dimensions/employee_mapped.csv", index=False)
-
-    #insert_dataframe_from_csv(
-    #    csv_path="data/outputdata/dimensions/employee_mapped.csv",
-    #    table_name="dim_employee",
-    #    schemadict=schemadict,
-    #    conn=conn,
-    #    version_tag=version_tag,
-    #    final_dim_dict=final_dim_dict,
-    #) 
-
 def execute_db_operations(version_tag: str):
     conn = connect_to_database()
 
@@ -388,7 +370,18 @@ def execute_db_operations(version_tag: str):
     ]
     process_dimension_tables(dim_files, schemadict, conn, version_tag, final_dim_dict)
 
-    handle_employee_id("data/outputdata/dimensions/employee.csv", final_dim_dict)
+    df_employee = pd.read_csv("data/outputdata/dimensions/employee.csv")
+    df_employee_mapped = remap_dataframe_ids_emp(df_employee, final_dim_dict)
+    df_employee_mapped.to_csv("data/outputdata/dimensions/employee_mapped.csv", index=False)
+
+    insert_dataframe_from_csv(
+        csv_path="data/outputdata/dimensions/employee_mapped.csv",
+        table_name="dim_employee",
+        schemadict=schemadict,
+        conn=conn,
+        version_tag=version_tag,
+        final_dim_dict=final_dim_dict,
+    ) 
 
     process_fact_table(
         input_path="data/outputdata/fact/general_ledger.csv",

@@ -48,14 +48,13 @@ def apply_raise_and_fire(df: pd.DataFrame, raise_pct: float = 0.05, fire_pct: fl
     raise_ids = random.sample(list(employee_ids), int(len(employee_ids) * raise_pct))
     remaining = list(set(employee_ids) - set(raise_ids))
     fire_ids = random.sample(remaining, int(len(employee_ids) * fire_pct))
-
     for eid in raise_ids:
         start = random.choice(df["month"].unique())
-        df.loc[(df.employee_id == eid) & (df.Month >= start), "monthly_pay"] *= 1.05
+        df.loc[(df["employee_id"] == eid) & (df["month"] >= start), "monthly_pay"] *= 1.05
 
     for eid in fire_ids:
         start = random.choice(df["month"].unique())
-        df.loc[(df.employee_id == eid) & (df.Month >= start), "monthly_pay"] = 0
+        df.loc[(df["employee_id"] == eid) & (df["month"] >= start), "monthly_pay"] = 0
 
     return df
 

@@ -221,15 +221,15 @@ def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-
 
     For each row, return:
     - name: a descriptive name of the account (e.g., "Sales Revenue", "Consulting Fees", "Bank Account", etc.)
-    - account_type: the type of the account — must be one of the following categories:
-    "Revenue", "Product Expense", "Service Expense", "Payroll", "Asset", or "Equity"
+    - account_type: the type of the account — must be one of the following categories: 
+    "Revenue", "Product Expense", "Service Expense", "Asset", or "Equity"
+    Ignore payroll accounts, as they are not relevant for this task.
 
     Ensure the following:
     - Include a diverse mix of accounts, including both P&L and balance sheet categories.
     - Clearly separate expense accounts into:
     * "Product Expense" — raw materials, packaging, freight-in, etc.
     * "Service Expense" — consulting, software subscriptions, legal fees, etc.
-    * "Payroll" — salaries, bonuses, pension contributions, etc.
 
     Include a diverse mix of accounts (e.g., income, overhead, balance sheet accounts). Avoid duplicates.
     {constraints}
@@ -326,6 +326,40 @@ def generate_customers_llm(company_name: str, count: int = 100, model: str = "gp
     df_customers = utils.convert_column_to_percentage(df_customers, "proportionality", scale=1.0)
     return df_customers
 
+def generate_vendors_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.3):
+    client = prompt_utils.get_openai_client()
+
+    header = "name;vendor_type;proportionality"
+    constraints = prompt_utils.get_standard_constraints(header, count)
+
+    prompt = f"""
+    You are a B2B procurement and supply chain expert. Your task is to generate a list of {count} realistic vendors (suppliers) for a company like {company_name}.
+    These vendors should reflect typical suppliers based on the company's industry, geography, and operations.
+
+    For each vendor, provide the following fields in CSV format:
+    - name: The name of the vendor (company or organization)
+    - vendor_type: One of the following types: Raw Materials, Equipment, IT Services, Logistics, Facilities, Office Supplies, Contract Labor, or Consulting
+    - proportionality: An estimated proportion of the company's total spend allocated to this vendor, expressed as a decimal (e.g. 0.04 for 4%)
+
+    The proportionality values should vary realistically across vendors and sum to approximately 1.0 in total.
+    Ensure variation in vendor size and type, including both critical suppliers and minor service providers.
+
+    {constraints}
+    """
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "You are a helpful data assistant and B2B vendor segmentation expert."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=temp,
+    )
+
+    df_vendors = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
+    df_vendors.insert(0, "vendor_id", range(20, len(df_vendors) + 20))
+    df_vendors = utils.convert_column_to_percentage(df_vendors, "proportionality", scale=1.0)
+    return df_vendors
 
 def estimate_mean_pay_llm(company_name: str, model: str = "gpt-4o", temp: float = 0):
     client = prompt_utils.get_openai_client()

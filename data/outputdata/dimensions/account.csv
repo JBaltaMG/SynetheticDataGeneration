@@ -1,31 +1,31 @@
 name,account_type,account_id
-Sales Revenue,Revenue,32611
-Licensing Revenue,Revenue,36528
-Interest Income,Revenue,39599
-Raw Materials,Product Expense,45039
-Packaging Materials,Product Expense,45540
-Manufacturing Overhead,Product Expense,47446
-Consulting Fees,Service Expense,53532
-Software Subscriptions,Service Expense,56731
-Legal Fees,Service Expense,59207
-Marketing Expenses,Service Expense,52969
-Salaries,Payroll,94946
-Bonuses,Payroll,98409
-Pension Contributions,Payroll,99015
-Health Insurance,Payroll,98740
-Cash,Asset,16456
-Accounts Receivable,Asset,12924
-Inventory,Asset,15840
-Prepaid Expenses,Asset,13499
-Accounts Payable,Asset,14630
-Bank Loan,Asset,14699
-Common Stock,Equity,25431
-Additional Paid-In Capital,Equity,23992
-Dividends Declared,Equity,29074
-Research and Development,Product Expense,43761
-Utilities Expense,Service Expense,50371
-Travel Expenses,Service Expense,52002
-Training and Development,Payroll,94200
-Interest Expense,Service Expense,57912
-Depreciation Expense,Service Expense,51260
-Income Tax Expense,Service Expense,59799
+Sales Revenue,Revenue,37574
+Interest Income,Revenue,37939
+Raw Materials,Product Expense,47914
+Packaging Materials,Product Expense,48350
+Freight-In,Product Expense,48043
+Manufacturing Supplies,Product Expense,42512
+Product Development Costs,Product Expense,44819
+Consulting Fees,Service Expense,57146
+Legal Fees,Service Expense,57050
+Marketing Expenses,Service Expense,51049
+Research and Development,Service Expense,58500
+Utilities Expense,Service Expense,51820
+Office Supplies,Service Expense,54650
+Accounts Receivable,Asset,14452
+Inventory,Asset,14644
+Prepaid Expenses,Asset,14992
+"Property, Plant, and Equipment",Asset,10480
+Accumulated Depreciation,Asset,12300
+Cash and Cash Equivalents,Asset,17176
+Bank Account,Asset,19915
+Intangible Assets,Asset,15210
+Accounts Payable,Liability,95480
+Deferred Revenue,Liability,96441
+Long-term Debt,Liability,92651
+Short-term Debt,Liability,95111
+Retained Earnings,Equity,22138
+Common Stock,Equity,25076
+Dividends Payable,Liability,99204
+Income Tax Payable,Liability,93970
+Warranty Liability,Liability,99037
