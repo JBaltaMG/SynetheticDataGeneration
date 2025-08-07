@@ -23,19 +23,19 @@ def generate_account_numbers(n=50):
         replace=False
     ))
 
-def generate_month_list(year: int = 2025) -> list:
-    return [utils.format_month_string(year, m) for m in range(1, 13)]
+def generate_month_list(year_start: int = 2025, year_end: int = 2025) -> list:
+    return [utils.format_month_string(year, m) for year in range(year_start, year_end + 1) for m in range(1, 13)]
 
-def generate_dim_date(year: int = 2025) -> pd.DataFrame:
+def generate_dim_date(year_start: int = 2025, year_end: int = 2025) -> pd.DataFrame:
 
-    dates = pd.date_range(start=f"{year}-01-01", end=f"{year}-12-31", freq="D")
-    
+    dates = pd.date_range(start=f"{year_start}-01-01", end=f"{year_end}-12-31", freq="D")
+
     return pd.DataFrame({
-        "Date_ID": range(1, len(dates) + 1),
-        "Date": dates,
-        "Month": dates.month,
-        "Quarter": dates.quarter,
-        "Year": dates.year
+        "date_id": range(1, len(dates) + 1),
+        "date": dates,
+        "month": dates.month,
+        "quarter": dates.quarter,
+        "year": dates.year
     })
 
 def generate_document_metadata(n: int, start_index: int = 0) -> pd.DataFrame:
@@ -48,9 +48,9 @@ def generate_document_metadata(n: int, start_index: int = 0) -> pd.DataFrame:
     ]
 
     return pd.DataFrame({
-        "DocumentNumber": document_numbers,
-        "DocumentType": random.choices(doc_types, k=n),
-        "Currency": random.choices(currencies, k=n)
+        "document_number": document_numbers,
+        "document_type": random.choices(doc_types, k=n),
+        "currency": random.choices(currencies, k=n)
     })
 
 

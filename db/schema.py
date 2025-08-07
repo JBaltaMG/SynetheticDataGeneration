@@ -3,7 +3,7 @@ schemadict = {
         "department_id": "int",
         "department_name": "str",
         "proportionality": "float",
-        "numemployees": "int",
+        "num_employee": "int",
     },
     "dim_customer": {
         "customer_id": "int",

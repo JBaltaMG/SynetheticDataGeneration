@@ -307,7 +307,7 @@ def execute_db_operations(version_tag: str = "test6"):
     df_erp_mapped = remap_dataframe_ids(df_erp, final_dim_dict)
     df_erp_mapped.to_csv("data/outputdata/fact/general_ledger_mapped.csv", index=False)
 
-    #mapping = dict(zip(final_dim_dict['dim_product']['productname'], final_dim_dict['dim_product']['id']))
+    #mapping = dict(zip(final_dim_dict['dim_product']['product_name'], final_dim_dict['dim_product']['id']))
     #df_erp['product_id'] = df_erp['product_id'].map(mapping)
     print("Mapping complete for general ledger.")
     print("Inserting payroll data...")
@@ -388,7 +388,7 @@ if __name__ == "__main__":
     #df_erp_mapped = remap_dataframe_ids(df_erp, final_dim_dict)
     #df_erp_mapped.to_csv("data/outputdata/fact/general_ledger_mapped.csv", index=False)
 
-    #mapping = dict(zip(final_dim_dict['dim_product']['productname'], final_dim_dict['dim_product']['id']))
+    #mapping = dict(zip(final_dim_dict['dim_product']['product_name'], final_dim_dict['dim_product']['id']))
     #df_erp['product_id'] = df_erp['product_id'].map(mapping)
 
 
