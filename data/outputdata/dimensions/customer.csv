@@ -1,11 +1,31 @@
 customer_id,name,customer_segment,proportionality
-10,Walmart,Retail,0.2
-11,Amazon,Retail,0.15
-12,"Toys ""R"" Us",Retail,0.1
-13,Target,Retail,0.1
-14,Carrefour,Retail,0.08
-15,Hamleys,Retail,0.07
-16,The LEGO Store,Retail,0.05
-17,Educational Insights,Wholesale,0.12
-18,Smithsonian Institution,Non-profit,0.08
-19,Local Toy Shop,SME,0.05
+10,Siemens Gamesa,Enterprise,0.13392857142857145
+11,GE Renewable Energy,Enterprise,0.10714285714285715
+12,Nordex Group,Enterprise,0.0892857142857143
+13,Acciona Energy,Enterprise,0.07142857142857144
+14,Iberdrola,Enterprise,0.06250000000000001
+15,Enel Green Power,Enterprise,0.053571428571428575
+16,EDF Renewables,Enterprise,0.04464285714285715
+17,Orsted,Enterprise,0.03571428571428572
+18,RWE Renewables,Enterprise,0.03571428571428572
+19,NextEra Energy,Enterprise,0.026785714285714288
+20,Pattern Energy,Enterprise,0.026785714285714288
+21,Invenergy,Enterprise,0.026785714285714288
+22,Engie,Enterprise,0.01785714285714286
+23,ScottishPower,Enterprise,0.01785714285714286
+24,Statkraft,Enterprise,0.01785714285714286
+25,E.ON,Enterprise,0.01785714285714286
+26,Duke Energy,Enterprise,0.01785714285714286
+27,Repsol,Enterprise,0.01785714285714286
+28,Vattenfall,Enterprise,0.01785714285714286
+29,RES Group,Enterprise,0.01785714285714286
+30,Mainstream Renewable Power,Enterprise,0.01785714285714286
+31,Copenhagen Infrastructure Partners,Enterprise,0.01785714285714286
+32,Aker Solutions,Enterprise,0.01785714285714286
+33,TotalEnergies,Enterprise,0.01785714285714286
+34,BP Wind Energy,Enterprise,0.01785714285714286
+35,Shell New Energies,Enterprise,0.01785714285714286
+36,Amazon Web Services,Enterprise,0.00892857142857143
+37,Google Energy,Enterprise,0.00892857142857143
+38,Facebook Data Centers,Enterprise,0.00892857142857143
+39,Microsoft Azure,Enterprise,0.00892857142857143
