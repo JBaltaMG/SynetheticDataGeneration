@@ -1,31 +1,31 @@
 name,account_type,account_id
-Sales Revenue,Revenue,37574
-Interest Income,Revenue,37939
-Raw Materials,Product Expense,47914
-Packaging Materials,Product Expense,48350
-Freight-In,Product Expense,48043
-Manufacturing Supplies,Product Expense,42512
-Product Development Costs,Product Expense,44819
-Consulting Fees,Service Expense,57146
-Legal Fees,Service Expense,57050
-Marketing Expenses,Service Expense,51049
-Research and Development,Service Expense,58500
-Utilities Expense,Service Expense,51820
-Office Supplies,Service Expense,54650
-Accounts Receivable,Asset,14452
-Inventory,Asset,14644
-Prepaid Expenses,Asset,14992
-"Property, Plant, and Equipment",Asset,10480
-Accumulated Depreciation,Asset,12300
-Cash and Cash Equivalents,Asset,17176
-Bank Account,Asset,19915
-Intangible Assets,Asset,15210
-Accounts Payable,Liability,95480
-Deferred Revenue,Liability,96441
-Long-term Debt,Liability,92651
-Short-term Debt,Liability,95111
-Retained Earnings,Equity,22138
-Common Stock,Equity,25076
-Dividends Payable,Liability,99204
-Income Tax Payable,Liability,93970
-Warranty Liability,Liability,99037
+Sales Revenue,Revenue,38676
+Service Revenue,Revenue,38731
+Raw Materials,Product Expense,44131
+Packaging Materials,Product Expense,44507
+Freight-In,Product Expense,41474
+Manufacturing Supplies,Product Expense,42500
+Software Subscriptions,Service Expense,57699
+Legal Fees,Service Expense,52770
+Research and Development,Service Expense,59611
+Office Supplies,Service Expense,51463
+Accounts Receivable,Asset,13898
+Prepaid Expenses,Asset,16937
+"Property, Plant, and Equipment",Asset,19226
+Accumulated Depreciation,Asset,18330
+Cash and Cash Equivalents,Asset,10268
+Short-term Investments,Asset,13155
+Long-term Investments,Asset,18372
+Accounts Payable,Asset,11857
+Notes Payable,Asset,19800
+Deferred Revenue,Asset,14866
+Common Stock,Equity,21231
+Retained Earnings,Equity,29846
+Additional Paid-in Capital,Equity,28453
+Treasury Stock,Equity,27004
+Dividends Declared,Equity,29812
+Cost of Goods Sold,Product Expense,47425
+Warranty Expense,Product Expense,45445
+Insurance Expense,Service Expense,51512
+Depreciation Expense,Service Expense,51008
+Amortization Expense,Service Expense,53496

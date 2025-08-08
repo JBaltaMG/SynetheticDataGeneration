@@ -92,7 +92,7 @@ def pre_split_spend_lines(
                 signed_amount = round(amt, 2)
 
             entry = {
-                "type": "Entry",
+                "type": "Credit",
                 "amount": signed_amount,
                 "account_id": map_row["account_id"],
                 "account_name": map_row["account_name"],

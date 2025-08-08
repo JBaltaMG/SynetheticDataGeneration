@@ -44,7 +44,7 @@ schemadict = {
     },
 
     "dim_employee": {
-        "name": "str",
+        "role_name": "str",
         "monthly_pay": "float",
         "first_name": "str",
         "last_name": "str",

@@ -1,51 +1,51 @@
 name,proportionality
-ABS plastic resin (Acrylonitrile Butadiene Styrene),0.3513048465729854
-Polycarbonate resin,0.09320332664181245
-Injection molding machinery,0.08316604531115572
-Mold tooling (custom steel molds),0.07026096931459709
-PVC resin (for flexible elements),0.0401491253226269
-Automated assembly line systems,0.030111843991970175
-Decorative inks and printing supplies,0.02724404932606825
-Polypropylene resin,0.02437625466016633
-Metal axles and pins,0.022942357327215373
-Warehouse automation equipment,0.02150845999426441
-Shipping cartons (secondary packaging),0.01864066532836249
-Robotics and pick-and-place systems,0.01720676799541153
-Plastic granule drying equipment,0.01577287066246057
-Electric motors (for machinery),0.012905075996558647
-Mold release agents,0.011471178663607686
-Heat transfer foil for prints,0.010754229997132205
-Compressed air filters and dryers,0.010037281330656725
-Servo drives and controllers,0.009750501864066534
-Packaging strapping and banding,0.008890163464295957
-Industrial lubricants and greases,0.008316604531115572
-Industrial cleaning solutions,0.00802982506452538
-Safety sensors and light curtains,0.007886435331230285
-Antistatic agents,0.007743045597935188
-Spare parts for injection molding machines,0.007599655864640092
-Machine vision inspection systems,0.0068827071981646115
-Maintenance hand tools,0.00659592773157442
-Personal protective equipment (PPE),0.006309148264984227
-Industrial gloves and wipes,0.005878979065098939
-Hydraulic oils,0.005592199598508747
-Adhesives and glues,0.005162030398623459
-Tool calibration services,0.004588471465443075
-Coolants for mold temperature control,0.0044450817321479786
-Printer cartridges and toner,0.004158302265557786
-General maintenance spare parts,0.003871522798967594
-Industrial batteries,0.0034413535990823058
-Cleaning cloths and disposable towels,0.0030111843991970175
-Safety signage and floor tapes,0.0027244049326068252
-Work uniforms and safety shoes,0.0024376254660166334
-"Office paper (A4, A3, etc.)",0.002150845999426441
-Office computers and peripherals,0.002007456266131345
-IT network equipment,0.001864066532836249
-"Writing instruments (pens, markers)",0.0017206767995411529
-Desktop stationery supplies,0.0015772870662460567
-Coffee and breakroom consumables,0.0014338973329509608
-Printer and copier paper,0.0012905075996558647
-First aid kits,0.0010037281330656726
-Desk organizers and filing folders,0.0008603383997705764
-Flip charts and whiteboard supplies,0.0007169486664754804
-Post-it notes and notepads,0.0005735589331803844
-Staplers and staples,0.0004301691998852882
+Wind Turbine Blades,0.14358751223757207
+Wind Turbine Nacelles,0.12727074948330253
+Steel Tower Sections,0.1066028499945611
+Gearboxes,0.0804960295877298
+Main Bearings,0.05547699336451648
+Generator Units,0.05003807244642663
+Yaw Systems,0.04242358316110084
+Pitch Systems,0.03480909387577505
+Power Converters,0.0293701729576852
+Electrical Control Cabinets,0.026106820406831287
+HVAC Systems for Turbines,0.02284346785597738
+Hydraulic Systems,0.020667899488741433
+Blade Bearing Assemblies,0.018492331121505494
+"Sensor Packages (Anemometers, Accelerometers)",0.014141194387033615
+Cables and Wiring Harnesses,0.013053410203415643
+Slip Rings,0.011965626019797674
+Brake Systems,0.010877841836179703
+Lightning Protection Systems,0.010333949744370716
+SCADA Hardware,0.009790057652561733
+Lubrication Systems,0.009572500815838138
+Oil and Grease (Turbine Grade),0.009354943979114544
+Vibration Dampers,0.00913738714239095
+Hydraulic Fluid,0.00881105188730556
+Paints and Surface Coatings,0.008267159795496574
+Spare Blades and Blade Repair Kits,0.00804960295877298
+Spare Gearbox Components,0.007832046122049385
+Spare Generator Components,0.007614489285325791
+Service Cranes and Hoists,0.007396932448602198
+Portable Diagnostic Tools,0.007288154030240401
+Safety Harnesses and PPE,0.007070597193516807
+Inspection Drones,0.006744261938431416
+Remote Monitoring Equipment,0.006417926683346025
+Industrial Cleaning Supplies,0.005982813009898837
+Torque Wrenches,0.005765256173175243
+Electrical Testing Instruments,0.005547699336451648
+Hydraulic Jacks,0.0053301424997280545
+Cable Management Supplies,0.00511258566300446
+Fall Protection Systems,0.004895028826280867
+Consumable Cutting Tools,0.004677471989557272
+Spare Hydraulic Pumps,0.004459915152833678
+Spare Sensors and Transducers,0.004351136734471881
+Adhesives and Sealants,0.004133579897748287
+Battery Packs (for equipment & sensors),0.003698466224301099
+First Aid Supplies,0.0031545741324921135
+Industrial Gloves and Workwear,0.00293701729576852
+Office Computers and Laptops,0.0023931252039595344
+Network Switches and Routers,0.0021755683672359406
+Printer Ink and Toner Cartridges,0.0015228978570651585
+Standard Office Stationery,0.0011965626019797672
+Cleaning and Janitorial Products,0.0007614489285325792
