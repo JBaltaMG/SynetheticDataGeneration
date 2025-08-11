@@ -11,6 +11,7 @@ DROP TABLE IF EXISTS dbo.dim_procurement;
 DROP TABLE IF EXISTS dbo.dim_service;
 DROP TABLE IF EXISTS dbo.dim_line;
 DROP TABLE IF EXISTS dbo.dim_employee;
+DROP TABLE IF EXISTS dbo.dim_vendor;
 
 -- Drop all fact tables
 DROP TABLE IF EXISTS dbo.fact_general_ledger;

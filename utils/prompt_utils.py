@@ -80,3 +80,29 @@ def parse_and_truncate_csv(text: str, expected_rows: int) -> pd.DataFrame:
     else:
         print(f"Only received {current_len} rows, expected {expected_rows}")
         return -1
+
+
+# --- Context helpers (add once near your imports) --------------------------
+def _load_context(company_name: str, max_chars: int = 8_000) -> str:
+    """
+    Loads the company's year-end context text if present, clipped to max_chars.
+    """
+    path = f"data/inputdata/reports/generated/{company_name}_context_report.txt"
+    try:
+        return utils.read_text(path, max_chars=max_chars)  # uses your utils
+    except Exception:
+        return ""
+
+def _ctx_block(company_name: str) -> str:
+    """
+    Returns a prompt-ready context block or a short fallback note.
+    """
+    ctx = _load_context(company_name)
+    if not ctx.strip():
+        return "\n(No context file found; infer realistically for Denmark and the industry.)\n"
+    return f"""
+Use the following year-end context for {company_name}. Prefer explicit numeric KPIs when present; otherwise estimate sensibly.
+CONTEXT:
+\"\"\"{ctx}\"\"\"
+"""
+# ---------------------------------------------------------------------------

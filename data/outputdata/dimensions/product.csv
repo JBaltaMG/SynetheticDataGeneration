@@ -1,101 +1,101 @@
 name,proportionality
-Onshore Wind Turbine Platform,0.17482517482517482
-Offshore Wind Turbine Platform,0.13111888111888112
-Large-Scale Turbine Installation Service,0.0777000777000777
-Turbine Operations and Maintenance Contract,0.06313131313131314
-Wind Turbine Service Upgrades,0.05050505050505051
-Standard Turbine Spare Parts Kit,0.036907536907536904
-Turbine Lifetime Extension Program,0.031080031080031083
-Remote Monitoring and Diagnostic Service,0.028166278166278168
-Advanced Turbine Control System,0.024281274281274284
-Turbine Gearbox Replacement,0.021367521367521368
-Turbine Blades (Replacement Set),0.019425019425019424
-Hybrid Power Solutions Package,0.018453768453768452
-Wind Farm Optimization Software,0.016511266511266512
-Turbine Retrofit Solution,0.01456876456876457
-SCADA Integration Package,0.012626262626262628
-Predictive Maintenance Analytics Suite,0.011655011655011654
-Turbine Condition Monitoring System,0.010683760683760684
-Wind Turbine Foundation Design Service,0.009712509712509712
-Wind Resource Assessment Service,0.009518259518259518
-Fleet Performance Management Software,0.009226884226884226
-Turbine Nacelle Crane System,0.008741258741258742
-Wind Turbine Power Converter,0.008547008547008546
-Medium Voltage Switchgear Unit,0.008352758352758352
-Asset Management Service Plan,0.007964257964257964
-Energy Storage Integration Service,0.007770007770007771
-Turbine Yaw System Assembly,0.007575757575757576
-Blade Repair and Inspection Service,0.007381507381507382
-Ice Detection and Protection System,0.007284382284382285
-Transformer Supply Package,0.007187257187257187
-Mobile Turbine Maintenance Team,0.00709013209013209
-Wind Measurement Equipment Rental,0.006798756798756799
-Lightning Protection System,0.006604506604506605
-Turbine Tower Assembly,0.006313131313131314
-Hybrid O&M Service Agreement,0.006021756021756022
-Turbine Generator Replacement,0.005827505827505827
-Environmental Compliance Service,0.005439005439005439
-Pitch System Retrofit,0.005244755244755245
-High Voltage Cable Supply,0.005147630147630148
-Wind Turbine Drivetrain Diagnostics,0.004856254856254856
-Rotor Bearing Replacement,0.004662004662004662
-End-of-Warranty Inspection,0.004467754467754468
-Site Feasibility Study,0.004273504273504273
-Meteorological Mast Installation,0.004176379176379176
-Turbine Condition-Based Service Agreement,0.003982128982128982
-Blade Transport Solution,0.0038850038850038854
-Spare Parts Express Delivery,0.003787878787878788
-Reactive Power Compensation System,0.003690753690753691
-Fleet Availability Reporting Tool,0.0035936285936285935
-Wind Farm Layout Optimization Service,0.0034965034965034965
-Blade Integrity Sensor Kit,0.0033022533022533025
-Remote Troubleshooting Package,0.0032051282051282055
-Nacelle Anemometer System,0.0031080031080031084
-Environmental Monitoring System,0.003010878010878011
-Safety System Audit,0.0029137529137529135
-Weather Data Subscription Service,0.002816627816627816
-Energy Yield Assessment Package,0.0027195027195027195
-Crane-Free Maintenance Solution,0.0026223776223776225
-Hydraulic System Retrofit,0.002525252525252525
-Wind Farm Security Solution,0.002428127428127428
-HVAC Unit (Turbine),0.0021367521367521365
-Digital Twin Platform Subscription,0.0019425019425019427
-End-of-Life Turbine Dismantling,0.0018453768453768455
-Resource Training Videos,0.0017482517482517483
-Wind Farm Control Retrofit,0.0016511266511266512
-Parts Management and Logistics Service,0.0014568764568764568
-Turbine Pad-Mounted Transformer,0.0013597513597513598
-Long-Term Service Agreement Extension,0.0012626262626262625
-Data Analytics Training Session,0.0011655011655011655
-Turnkey Grid Connection Service,0.0009712509712509714
-Cybersecurity Upgrade,0.0008741258741258741
-Access Platform Rental,0.0008741258741258741
-SCADA Data Visualization Dashboard,0.0007770007770007771
-Power Curve Verification,0.0007770007770007771
-Offshore Substation Design,0.0007770007770007771
-Turbine Safety Retrofit,0.0006798756798756799
-Air Filter Replacement Kit,0.0006798756798756799
-Project Management Consultancy,0.0006798756798756799
-O&M Documentation Service,0.0005827505827505828
-Emergency Response Kit,0.0005827505827505828
-Personal Protective Equipment Kit,0.0005827505827505828
-Grid Code Compliance Assessment,0.0004856254856254857
-Wind Farm Asset Re-powering Service,0.0004856254856254857
-Lift System Maintenance Kit,0.0004856254856254857
-Wind Energy Educational Workshops,0.0004856254856254857
-Hybrid Microgrid Solution,0.0004856254856254857
-Drivetrain Lubricant Analysis,0.00038850038850038855
-Nacelle Camera System,0.00038850038850038855
-HV Substation Maintenance,0.00038850038850038855
-IEC Compliance Consultancy,0.00038850038850038855
-Blade Cleaning Service,0.0002913752913752914
-Foundation Grouting Material Supply,0.0002913752913752914
-Wildlife Impact Mitigation Program,0.0002913752913752914
-Cable Trays and Routing Accessories,0.0002913752913752914
-Onsite Generator Rental,0.0002913752913752914
-Third-Party SCADA Integration,0.00019425019425019428
-Technical Support Hotline,0.00019425019425019428
-Warranty Claims Handling Service,0.00019425019425019428
-Wind Farm Decommissioning Consulting,9.712509712509714e-05
-Turbine Painting & Restoration,9.712509712509714e-05
-Noise Monitoring Service,9.712509712509714e-05
+Ocean Container Shipping Services,0.2403534492215939
+End-to-End Supply Chain Solutions,0.11269684548564363
+Freight Forwarding,0.08477196341840448
+Logistics Management Services,0.06682025351803648
+Inland Transportation Services,0.03889537145079735
+Reefer Container Shipping,0.03291146815067468
+Intermodal Transport Solutions,0.027924882067239122
+Contract Logistics,0.0259302476338649
+Warehousing and Distribution,0.023935613200490678
+Customs Brokerage,0.019946344333742233
+Less-than-Container Load (LCL) Services,0.018450368508711564
+Full Container Load (FCL) Services,0.017453051292024454
+E-commerce Logistics Solutions,0.01645573407533734
+Project Cargo Services,0.01545841685865023
+Marine Insurance Solutions,0.01296512381693245
+Supply Chain Visibility Software,0.011967806600245339
+Barge Shipping Services,0.010970489383558229
+Consolidation and Deconsolidation Services,0.010471830775214672
+Digital Freight Marketplace,0.00947451355852756
+Last Mile Delivery Services,0.008975854950184005
+Port Terminal Handling Services,0.00867665978517787
+Cargo Tracking and Monitoring,0.007978537733496893
+Value-Added Packaging Services,0.007779074290159471
+Rail Freight Services,0.007280415681815915
+Customizable Shipping Contracts,0.0069812205168097805
+Compliance and Advisory Services,0.006682025351803648
+Cargo Risk Management Solutions,0.006482561908466225
+Air-Sea Intermodal Services,0.006183366743460092
+Inventory Management Solutions,0.005983903300122669
+Dangerous Goods Shipping,0.005485244691779114
+Sustainable Logistics Solutions,0.0052857812484416915
+Automotive Supply Chain Services,0.004986586083435558
+Pharma and Healthcare Logistics,0.0047871226400981355
+Specialized Container Leasing,0.004487927475092002
+Duty Drawback Services,0.0042884640317545795
+Temperature-Controlled Warehousing,0.004188732310085869
+Automated Customs Documentation,0.003989268866748446
+Transloading Services,0.0038895371450797353
+Container Pooling Services,0.0037898054234110244
+E-commerce Fulfillment Services,0.0035903419800736016
+Customs Pre-Clearance Services,0.0034906102584048903
+Flexible Delivery Solutions,0.0032911468150674684
+Cargo Consolidation Software,0.0031914150933987574
+Cross-Border Logistics Services,0.003091683371730046
+Retail Distribution Solutions,0.0029919516500613347
+Shipment Analytics Dashboard,0.0028922199283926233
+Container Relocation Services,0.002792488206723913
+Supply Chain Consulting,0.0026927564850552014
+Short Sea Shipping,0.0025930247633864905
+Integrated Customs Filing,0.002493293041717779
+Supply Chain Risk Assessment Services,0.002293829598380357
+Heavy-Lift Cargo Transport,0.0021940978767116454
+Alternative Fuel Transportation Solutions,0.0020943661550429345
+Cargo Damage Inspection Services,0.0018949027117055122
+High-Security Container Seals,0.0017951709900368008
+Documentation Training Services,0.0017453051292024451
+Demurrage & Detention Management,0.0016455734075337342
+Online Rate Quoting Platform,0.0015957075466993787
+Route Optimization Software,0.0014959758250306673
+Container Storage Services,0.0014461099641963117
+Data-Driven Customer Portals,0.0013463782425276007
+Customs Valuation Services,0.0012965123816932453
+Certifications and Compliance Audits,0.0012665928651926317
+Bonded Warehouse Services,0.0012366733486920184
+Return Logistics Solutions,0.0011967806600245339
+Electronic Data Interchange (EDI) Connectivity,0.0011668611435239206
+Customs Duty Payment Portal,0.0011469147991901784
+Smart Container Technology Deployment,0.0010970489383558227
+Customs Classification Consulting,0.0010471830775214673
+Cargo Claims Management Services,0.0010172635610208537
+Integrated Transport Management System,0.0009973172166871116
+Vendor Managed Inventory,0.0009673977001864983
+IoT-Enabled Asset Monitoring,0.0009474513558527561
+Container Handling Training Packages,0.0008975854950184004
+Empty Container Repositioning,0.0008676659785177871
+Mobile Shipment Notification Apps,0.0008477196341840449
+Track-and-Trace APIs,0.0008178001176834315
+Reverse Logistics for Retail,0.0007978537733496894
+Secure Warehousing Solutions,0.0007878806011828182
+Customer Support Packages,0.0007679342568490759
+Remote Container Inspection Services,0.0007479879125153337
+Time-Definite Delivery Solutions,0.0007280415681815914
+eB/L (Electronic Bill of Lading) Services,0.000688148879514107
+Container Depot Management,0.000678175707347236
+Order Management Software Integration,0.0006682025351803648
+Freight Rate Management Software,0.0006582293630134937
+Port Call Optimization Tools,0.0006482561908466226
+Green Shipping Certificates,0.0006382830186797514
+Regulatory Change Alerts,0.0006283098465128804
+Shipment CO2 Footprinting Services,0.0006183366743460092
+Temperature Logger Rentals,0.0006083635021791381
+Hazardous Material Consulting,0.0005983903300122669
+On-Demand Warehousing,0.0005884171578453959
+Shipper Export Declaration Filing,0.0005684708135116536
+Container Cleaning and Maintenance,0.0005584976413447825
+Legal Advisory for Trade,0.0005485244691779114
+Online Booking Support,0.0005285781248441691
+Supply Chain Finance Platform,0.0004886854361766847
+Transport Insurance Brokerage,0.0004787122640098136
+Real-Time Port Congestion Alerts,0.00046873909184294246

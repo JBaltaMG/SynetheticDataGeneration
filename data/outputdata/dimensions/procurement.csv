@@ -1,51 +1,51 @@
 name,proportionality
-Wind Turbine Blades,0.14358751223757207
-Wind Turbine Nacelles,0.12727074948330253
-Steel Tower Sections,0.1066028499945611
-Gearboxes,0.0804960295877298
-Main Bearings,0.05547699336451648
-Generator Units,0.05003807244642663
-Yaw Systems,0.04242358316110084
-Pitch Systems,0.03480909387577505
-Power Converters,0.0293701729576852
-Electrical Control Cabinets,0.026106820406831287
-HVAC Systems for Turbines,0.02284346785597738
-Hydraulic Systems,0.020667899488741433
-Blade Bearing Assemblies,0.018492331121505494
-"Sensor Packages (Anemometers, Accelerometers)",0.014141194387033615
-Cables and Wiring Harnesses,0.013053410203415643
-Slip Rings,0.011965626019797674
-Brake Systems,0.010877841836179703
-Lightning Protection Systems,0.010333949744370716
-SCADA Hardware,0.009790057652561733
-Lubrication Systems,0.009572500815838138
-Oil and Grease (Turbine Grade),0.009354943979114544
-Vibration Dampers,0.00913738714239095
-Hydraulic Fluid,0.00881105188730556
-Paints and Surface Coatings,0.008267159795496574
-Spare Blades and Blade Repair Kits,0.00804960295877298
-Spare Gearbox Components,0.007832046122049385
-Spare Generator Components,0.007614489285325791
-Service Cranes and Hoists,0.007396932448602198
-Portable Diagnostic Tools,0.007288154030240401
-Safety Harnesses and PPE,0.007070597193516807
-Inspection Drones,0.006744261938431416
-Remote Monitoring Equipment,0.006417926683346025
-Industrial Cleaning Supplies,0.005982813009898837
-Torque Wrenches,0.005765256173175243
-Electrical Testing Instruments,0.005547699336451648
-Hydraulic Jacks,0.0053301424997280545
-Cable Management Supplies,0.00511258566300446
-Fall Protection Systems,0.004895028826280867
-Consumable Cutting Tools,0.004677471989557272
-Spare Hydraulic Pumps,0.004459915152833678
-Spare Sensors and Transducers,0.004351136734471881
-Adhesives and Sealants,0.004133579897748287
-Battery Packs (for equipment & sensors),0.003698466224301099
-First Aid Supplies,0.0031545741324921135
-Industrial Gloves and Workwear,0.00293701729576852
-Office Computers and Laptops,0.0023931252039595344
-Network Switches and Routers,0.0021755683672359406
-Printer Ink and Toner Cartridges,0.0015228978570651585
-Standard Office Stationery,0.0011965626019797672
-Cleaning and Janitorial Products,0.0007614489285325792
+Marine fuel oil (Bunker fuel),0.2072596907909478
+Container steel plates,0.1142729105982523
+Propulsion engines,0.0717006497871387
+Shipbuilding steel,0.0660990365225185
+Container refrigeration units,0.048173874075733814
+Marine lubricants,0.04033161550526552
+Cargo securing and lashing equipment,0.03248935693479722
+Ship propellers and shafts,0.030248711628949144
+Ballast water treatment systems,0.02576742101725297
+Marine paints and coatings,0.02352677571140489
+Electrical switchboards and panels,0.0212861304055568
+Shipboard HVAC systems,0.02016580775263276
+Lifeboats and safety rafts,0.019045485099708718
+Spare engine parts,0.017925162446784677
+Marine pumps and compressors,0.016804839793860632
+Anchor chains and anchors,0.01568451714093659
+Fire detection and suppression systems,0.01456419448801255
+Container tracking devices,0.014004033161550527
+"Deck machinery (winches, cranes)",0.013443871835088507
+Navigation radar and ECDIS units,0.012323549182164465
+Freshwater generators/desalination units,0.0106430652027784
+Shipboard cabling and wiring,0.01008290387631638
+Valves and pipe fittings,0.009746807080439167
+"Seals, gaskets, and o-rings",0.009522742549854359
+Marine batteries,0.008962581223392338
+Anti-fouling chemicals,0.008402419896930316
+Shipboard lighting fixtures,0.008066323101053104
+Mooring ropes and wires,0.007842258570468295
+Shipboard IT servers and routers,0.007282097244006275
+Personal protective equipment (PPE),0.0070580327134214665
+Oil and fuel filters,0.006721935917544253
+Paint brushes and rollers,0.006497871386959444
+Marine hoses and couplings,0.006273806856374637
+Deck cleaning machines and supplies,0.006049742325789829
+Spare navigation bulbs and lamps,0.0059377100604974245
+Workwear and uniforms,0.005601613264620211
+"Hand tools (wrenches, hammers, screwdrivers)",0.005377548734035402
+Grit and sand for blasting,0.005153484203450595
+Portable testing and measuring instruments,0.004929419672865786
+Adhesives and sealants,0.0048173874075733815
+First aid kits and medical supplies,0.004481290611696169
+Office computers and monitors,0.0035850324893569353
+Printer cartridges and toners,0.0033609679587721267
+"Office furniture (desks, chairs, cabinets)",0.003248935693479722
+Photocopier paper,0.0029128388976025097
+Batteries (AA/AAA),0.002688774367017701
+Kitchen and galley supplies,0.0025767421017252974
+Office cleaning supplies,0.002464709836432893
+Coffee and refreshments,0.0023526775711404887
+Toiletries and hygiene consumables,0.0022406453058480846

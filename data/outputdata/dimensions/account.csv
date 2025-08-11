@@ -1,31 +1,31 @@
 name,account_type,account_id
-Sales Revenue,Revenue,38676
-Service Revenue,Revenue,38731
-Raw Materials,Product Expense,44131
-Packaging Materials,Product Expense,44507
-Freight-In,Product Expense,41474
-Manufacturing Supplies,Product Expense,42500
-Software Subscriptions,Service Expense,57699
-Legal Fees,Service Expense,52770
-Research and Development,Service Expense,59611
-Office Supplies,Service Expense,51463
-Accounts Receivable,Asset,13898
-Prepaid Expenses,Asset,16937
-"Property, Plant, and Equipment",Asset,19226
-Accumulated Depreciation,Asset,18330
-Cash and Cash Equivalents,Asset,10268
-Short-term Investments,Asset,13155
-Long-term Investments,Asset,18372
-Accounts Payable,Asset,11857
-Notes Payable,Asset,19800
-Deferred Revenue,Asset,14866
-Common Stock,Equity,21231
-Retained Earnings,Equity,29846
-Additional Paid-in Capital,Equity,28453
-Treasury Stock,Equity,27004
-Dividends Declared,Equity,29812
-Cost of Goods Sold,Product Expense,47425
-Warranty Expense,Product Expense,45445
-Insurance Expense,Service Expense,51512
-Depreciation Expense,Service Expense,51008
-Amortization Expense,Service Expense,53496
+Freight Revenue,Revenue,35121
+Logistics Services Revenue,Revenue,30083
+Container Leasing Revenue,Revenue,34961
+Interest Income,Revenue,39839
+Raw Materials,Product Expense,49073
+Packaging Materials,Product Expense,46284
+Freight-in Costs,Product Expense,44282
+Port Charges,Product Expense,41889
+Fuel Costs,Product Expense,43395
+Consulting Fees,Service Expense,58792
+Software Subscriptions,Service Expense,55652
+Marketing and Advertising,Service Expense,58318
+IT Support Services,Service Expense,52541
+Cash and Cash Equivalents,Asset,10826
+Accounts Receivable,Asset,18895
+Inventory,Asset,17825
+Prepaid Expenses,Asset,14668
+"Property, Plant, and Equipment",Asset,10543
+Intangible Assets,Asset,19039
+Goodwill,Asset,16309
+Accounts Payable,Asset,10094
+Accrued Liabilities,Asset,16871
+Short-term Investments,Asset,18394
+Deferred Tax Assets,Asset,14350
+Bank Loans,Asset,11337
+Share Capital,Equity,28353
+Retained Earnings,Equity,23835
+Additional Paid-in Capital,Equity,28266
+Revaluation Surplus,Equity,20147
+Non-controlling Interest,Equity,25625

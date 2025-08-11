@@ -1,11 +1,11 @@
 department_id,name,proportionality,num_employee
-100,Research & Development,0.2,20
-101,Sales & Marketing,0.15,15
-102,Manufacturing Operations,0.25,25
-103,Finance & Accounting,0.1,10
-104,Human Resources,0.05,5
-105,Customer Support,0.08,8
-106,Supply Chain Management,0.07,7
-107,Information Technology,0.05,5
-108,Legal & Compliance,0.03,3
-109,Corporate Strategy,0.02,2
+100,Operations,0.2,9
+101,Sales,0.15,8
+102,Finance,0.1,5
+103,Human Resources,0.08,4
+104,Information Technology,0.12,6
+105,Customer Support,0.1,5
+106,Logistics,0.1,5
+107,Research and Development,0.07,4
+108,Legal,0.05,2
+109,Marketing,0.03,2
