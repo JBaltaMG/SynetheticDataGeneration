@@ -8,6 +8,13 @@ def set_global_seed(seed: int = 42):
     random.seed(seed)
     np.random.seed(seed)
 
+def read_text(path: str, max_chars: int = None, encoding: str = "utf-8") -> str:
+    with open(path, "r", encoding=encoding) as f:
+        text = f.read()
+    if max_chars is not None:
+        return text[:max_chars]
+    return text
+
 def add_id_column(df: pd.DataFrame, column_name: str = "ID", start_index: int = 1) -> pd.DataFrame:
     """
     Adds a sequential ID column to the DataFrame.
@@ -46,13 +53,13 @@ def simulate_log_normal_pay_distribution(n: int, scale: float = 50000, top_multi
 
     return pd.Series(np.round(pay_values, -2))  # round to nearest 100
 
-def sample_employees(count_employees: int, filename: str = "data/inputdata/NameList.csv", if_fullname: bool = False) -> pd.DataFrame:
+def sample_employees(count_employee: int, filename: str = "data/inputdata/NameList.csv", if_fullname: bool = False) -> pd.DataFrame:
     """
     Samples a number of employees from a CSV with 'first_name' and 'last_name',
     and returns a DataFrame with first_name, last_name, and full name.
 
     Args:
-        count_employees (int): Number of employee names to sample.
+        count_employee (int): Number of employee names to sample.
         filename (str): Path to the name list CSV file.
 
     Returns:
@@ -66,10 +73,10 @@ def sample_employees(count_employees: int, filename: str = "data/inputdata/NameL
         raise ValueError("CSV must contain 'first_name' and 'last_name' columns.")
 
     # Sample rows (with replacement if not enough unique)
-    if count_employees > len(name_df):
-        sampled_df = name_df.sample(n=count_employees, replace=True).reset_index(drop=True)
+    if count_employee > len(name_df):
+        sampled_df = name_df.sample(n=count_employee, replace=True).reset_index(drop=True)
     else:
-        sampled_df = name_df.sample(n=count_employees, replace=False).reset_index(drop=True)
+        sampled_df = name_df.sample(n=count_employee, replace=False).reset_index(drop=True)
 
     # Add full name column
     if if_fullname:

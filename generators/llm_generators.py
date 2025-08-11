@@ -3,324 +3,222 @@ import utils.prompt_utils as prompt_utils
 import utils.utils as utils
 import generators.random_generators as random_generators
 
+
 def generate_procurement_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
 
-    over_request_count = int(count) * 1.2
+    over_request_count = int(count) * 1.4
     header = "name;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
+    ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are a procurement and industry expert. Your task is to generate a realistic ranked list of the top {over_request_count} procurement items, materials, and consumables 
-    commonly purchased by a company like {company_name}, based on its industry and typical operations.
+You are a procurement and industry expert. Generate a realistic ranked list of the top {over_request_count} procurement items, materials, and consumables 
+commonly purchased by a company like {company_name}, based on its industry and typical operations.
 
-    Each row should contain:
-    - name: A specific, realistic name of the purchased item or material
-    - proportionality: an estimation of how much of the total procurement budget is spent on this item, as a percentage (0-100).
+Each row:
+- name: specific purchased item/material
+- proportionality: % of total procurement budget (0–100)
 
-    The list must cover the full range of procurement, including:
-    - Raw materials and base components used in the company’s production
-    - Operational and maintenance supplies
-    - General-purpose equipment and consumables
-    - Standardized office and administrative products
+Coverage:
+- Raw materials & base components
+- Operational & maintenance supplies
+- General equipment & consumables
+- Office/admin products
 
-    Ensure that:
-    - The beginning of the list contains the most expensive raw materials or specialized production inputs
-    - The middle of the list reflects typical tools, spare parts, and operational items
-    - The last items consist of low-cost, generic office and administrative supplies
+Ranking:
+- Top: most expensive raw/specialized inputs
+- Middle: tools, spares, operational items
+- Bottom: low-cost office/admin supplies
 
-    Rank the entire list by proportionality in descending order.
+{ctxb}
+Rank by proportionality in descending order.
 
-    {constraints}
-    """
+{constraints}
+""".strip()
 
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful data analyst and industry expert."},
-            {"role": "user", "content": prompt}
-        ],
+        messages=[{"role": "system", "content": "You are a helpful data analyst and industry expert."},
+                  {"role": "user", "content": prompt}],
         temperature=temp,
     )
     df_procurement = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
     df_procurement = utils.convert_column_to_percentage(df_procurement, "proportionality", scale=1.0)
     return df_procurement
 
-def generate_sales_products_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 1):
-    """
-    Generates a list of products that the company sells, with proportionality scores.
-    The products are categorical and realistic to the company's industry and operations.
-
-    Args:
-        company_name (str): Name of the company (used for industry context).
-        count (int): Number of products to generate.
-        model (str): OpenAI model to use.
-        temp (float): Temperature setting for generation.
-
-    Returns:
-        pd.DataFrame: A DataFrame with columns 'product_name' and 'proportionality'.
-    """
+def generate_sales_products_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
 
-    over_request_count = int(count * 1.2)
+    over_request_count = int(count * 1.4)
     header = "name;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
+    ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are a product marketing and industry expert. Your task is to generate a realistic ranked list of the top {over_request_count} products
-    that a company like {company_name} would sell, based on its industry, brand identity, and market focus.
+You are a product marketing and industry expert. Generate a realistic ranked list of the top {over_request_count} products
+that a company like {company_name} would sell, based on its industry, brand identity, and market focus.
 
-    Each row should contain:
-    - name: A specific, realistic name of a sellable product or SKU category
-    - proportionality: An estimation of how much of the total sales revenue is attributed to this product, as a percentage (0-100)
+Each row:
+- name: realistic product/SKU category (categorical, not overly specific)
+- proportionality: % of total sales revenue (0–100)
 
-    Ensure that:
-    - Products reflect typical B2B or B2C outputs for a company in the relevant industry
-    - There is a natural mix of high-revenue flagship items, mid-range products, and low-cost accessories or services
-    - Product names should remain categorical, not overly specific (e.g., “Premium Hiking Boots” or “Small Business CRM Plan”)
+Ensure a mix of high-revenue flagships, mid-range products, and low-cost accessories/services.
+{ctxb}
+Rank the list by proportionality in descending order.
 
-    Rank the entire list by proportionality in descending order.
-
-    {constraints}
-    """
+{constraints}
+""".strip()
 
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful data analyst and industry expert."},
-            {"role": "user", "content": prompt}
-        ],
+        messages=[{"role": "system", "content": "You are a helpful data analyst and industry expert."},
+                  {"role": "user", "content": prompt}],
         temperature=temp,
     )
-
     df_products = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
     df_products = utils.convert_column_to_percentage(df_products, "proportionality", scale=1.0)
     return df_products
 
-
-def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.5):
+def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.1):
     client = prompt_utils.get_openai_client()
 
-    over_request_count = int(count) * 1.2
-    header = "name;proportionality"
+    over_request_count = int(count) * 1.4
+    header = "role_name"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
+    ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are a finance and procurement expert. Your task is to generate a realistic ranked list of the top {over_request_count} services, licenses, and fees 
-    commonly incurred by a company like {company_name}, based on its industry and typical operations.
+You are an HR and industry expert. Generate {over_request_count} realistic employee roles for a company like {company_name}.
+Bias titles/functions indicated by the context (e.g., R&D intensity, retail footprint, digital focus).
+Each row: role_name
+Rank by highest monthly salary first.
+{ctxb}
+{constraints}
+""".strip()
 
-    Each row should contain:
-    - name: A realistic and specific name of a fee or service (e.g. 'IT Consulting', 'Cleaning Contract', 'Microsoft 365 License', 'Legal Retainer')
-    - proportionality: an estimation of how much of the total procurement budget is spent on this item, as a percentage (0-100).
-
-    The list should include a broad mix of services such as:
-    - One-time fees (e.g. onboarding, legal review, security audits)
-    - Recurring contracts (e.g. accounting, IT maintenance, janitorial services)
-    - Software licenses and subscriptions (e.g. Microsoft 365, Power BI Pro, Zoom, Adobe Acrobat)
-    - General professional services (e.g. recruitment agency fees, compliance advisory)
-    Do not make anual entries
-
-    Ensure that:
-    - The **top** of the list contains expensive project-based services and enterprise retainers
-    - The **middle** contains regular professional services and departmental support
-    - The **bottom entries** are standardized, lower-cost software licenses and administrative services (e.g. antivirus subscriptions, file storage plans, domain hosting, video conferencing tools)
-
-    Rank the list by descending proportionality.
-
-    {constraints}
-    """
-    
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful data analyst and finance expert."},
-            {"role": "user", "content": prompt}
-        ],
+        messages=[{"role": "system", "content": "You are a helpful data analyst and HR expert."},
+                  {"role": "user", "content": prompt}],
+        temperature=temp,
+    )
+    return prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
+
+def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
+    client = prompt_utils.get_openai_client()
+
+    over_request_count = int(count) * 1.4
+    header = "name;proportionality"
+    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
+    ctxb = prompt_utils._ctx_block(company_name)
+
+    prompt = f"""
+You are a finance and procurement expert. Generate a realistic ranked list of the top {over_request_count} services, licenses, and fees 
+commonly incurred by a company like {company_name}.
+
+Each row:
+- name: specific service/fee (e.g. 'IT Consulting', 'Microsoft 365 License', 'Legal Retainer')
+- proportionality: % of total procurement budget (0–100)
+Do not make annual entries.
+
+Top: expensive projects/enterprise retainers
+Middle: regular professional services and departmental support
+Bottom: standardized low-cost licenses/admin services
+{ctxb}
+Rank by proportionality in descending order.
+
+{constraints}
+""".strip()
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "system", "content": "You are a helpful data analyst and finance expert."},
+                  {"role": "user", "content": prompt}],
         temperature=temp,
     )
     df_services = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
     df_services = utils.convert_column_to_percentage(df_services, "proportionality", scale=1.0)
     return df_services
 
-def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.1):
+def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-4o", temp: float=0.5) -> pd.DataFrame:
     client = prompt_utils.get_openai_client()
-
-    over_request_count = int(count) * 1.2
-    header = "role_name"
-    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-
-    prompt = f"""
-    You are a human resources and industry expert. Your task is to generate a realistic list of {over_request_count} employees in a company like {company_name}, 
-    based on its industry and typical operations.
-
-    Each row should contain:
-    - role_name: The job title or position of the employee
-
-    The output should reflect realistic HR data for financial modeling and analytics purposes. 
-    It should be ranked by the highest monthly salary.
-
-    {constraints}
-    """
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful data analyst and HR expert."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=temp,
-    )
-
-    return prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-
-def generate_names_llm(count: int = 100, model: str = "gpt-4o", temp: float = 0.1):
-    client = prompt_utils.get_openai_client()
-
-    # Over-request
-    over_request_count = int(count) * 1.2
-
-    header = "first_name;last_name"
-    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-
-    prompt = f"""
-    You are a data assistant. Your task is to generate {over_request_count} realistic and common Danish full names. 
-    The names should be common Danish names, suitable for a diverse population. 
-
-    Set the split between the sexes to 50/50, and ensure that the names are diverse and representative of a Danish population. 
-    They should sound like they are between 30-60 years old — no trendy names.
-
-    {constraints}
-    """
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful data assistant."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=temp,
-    )
-
-    return  prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-
-
-def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-4o", temp: float=0.1) -> pd.DataFrame:
-    """
-    Generate a realistic Chart of Accounts (COA) for a company using LLMs.
-    """
-
-    client = prompt_utils.get_openai_client()
-    over_request_count = int(count) * 1.2
-
+    over_request_count = int(count) * 1.4
     header = "name;account_type"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
+    ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are a financial accountant and ERP systems expert. Your task is to generate a realistic Chart of Accounts (COA)
-    for a company like {company_name}, suitable for use in general ledger data, ERP demos, and financial modeling.
-
-    For each row, return:
-    - name: a descriptive name of the account (e.g., "Sales Revenue", "Consulting Fees", "Bank Account", etc.)
-    - account_type: the type of the account — must be one of the following categories: 
-    "Revenue", "Product Expense", "Service Expense", "Asset", or "Equity"
-    Ignore payroll accounts, as they are not relevant for this task.
-
-    Ensure the following:
-    - Include a diverse mix of accounts, including both P&L and balance sheet categories.
-    - Clearly separate expense accounts into:
-    * "Product Expense" — raw materials, packaging, freight-in, etc.
-    * "Service Expense" — consulting, software subscriptions, legal fees, etc.
-
-    Include a diverse mix of accounts (e.g., income, overhead, balance sheet accounts). Avoid duplicates.
-    {constraints}
-    """
+You are a financial accountant and ERP systems expert. Generate a realistic Chart of Accounts for {company_name}.
+Return:
+- name
+- account_type: "Revenue","Product Expense","Service Expense","Asset","Equity"
+Ignore payroll accounts.
+Ensure diverse P&L and BS accounts; clearly split Product vs Service expenses.
+{ctxb}
+{constraints}
+""".strip()
 
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful ERP and accounting assistant."},
-            {"role": "user", "content": prompt}
-        ],
+        messages=[{"role": "system", "content": "You are a helpful ERP and accounting assistant."},
+                  {"role": "user", "content": prompt}],
         temperature=temp,
     )
-
     df_accounts = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
     df_accounts["account_id"] = random_generators.generate_account_ids(df_accounts["account_type"])
-
     return df_accounts
 
-def generate_departments_llm(company_name: str, count: int = 10, model: str = "gpt-4o", temp: float = 0.3):
+def generate_departments_llm(company_name: str, count: int = 10, model: str = "gpt-4o", temp: float = 0.5):
     client = prompt_utils.get_openai_client()
-
     header = "name;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
+    ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are an HR and workforce distribution expert. Your task is to generate {count} realistic departments for a company like {company_name}, 
-    including their location and relative share of total payroll.
+You are an HR and workforce distribution expert. Generate {count} realistic departments for {company_name} with payroll share.
+Fields:
+- name
+- proportionality: decimal share of total payroll (sums ~1.0)
+Use context signals (e.g., manufacturing vs retail vs digital) to bias department mix.
+{ctxb}
+{constraints}
+""".strip()
 
-    For each department, provide the following fields in CSV format:
-    - name: A realistic department name (e.g. R&D, Sales, Finance, Customer Support)
-    - proportionality: An estimated proportion of the company's total payroll allocated to this department, expressed as a decimal (e.g. 0.25 for 25%)
-
-    The total proportionality values should sum to approximately 1.0 across all departments.
-
-    Departments should vary in size and function, including both strategic and operational units.
-
-    {constraints}
-    """
-    ### Recomendation: 
-    # Model = "gpt-4o"  Medium reasoning
-    # temperature = 0.3 Low creativity
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful real estate and HR data assistant."},
-            {"role": "user", "content": prompt}
-        ],
+        messages=[{"role": "system", "content": "You are a helpful real estate and HR data assistant."},
+                  {"role": "user", "content": prompt}],
         temperature=temp,
     )
-
     df_offices = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
     df_offices.insert(0, "department_id", range(100, len(df_offices) + 100))
     df_offices = utils.convert_column_to_percentage(df_offices, "proportionality", scale=1.0)
     return df_offices
 
-
 def generate_customers_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.3):
     client = prompt_utils.get_openai_client()
-
     header = "name;customer_segment;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
+    ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are a B2B sales and marketing expert. Your task is to generate a list of {count} realistic customers for a company like {company_name}.
-    These customers should reflect typical business clients based on the company's industry, geography, and operations.
-
-    For each customer, provide the following fields in CSV format:
-    - name: The name of the customer (company or organization)
-    - customer_segment: One of the following segments: Enterprise, SME, Government, Non-profit, Retail, Wholesale, or Startup
-    - proportionality: An estimated proportion of the company's total revenue generated by this customer, expressed as a decimal (e.g. 0.05 for 5%)
-
-    The proportionality values should vary realistically across customers and sum to approximately 1.0 in total.
-    Ensure variation in customer size and segment, including both large key accounts and smaller clients.
-
-    {constraints}
-    """
-    
-    ### Recomendation: 
-    # Model = "gpt-4o"  Medium reasoning
-    # temperature = 0.3 Low creativity
+You are a B2B sales/marketing expert. Generate {count} realistic customers for {company_name}.
+Fields:
+- name
+- customer_segment: Enterprise, SME, Government, Non-profit, Retail, Wholesale, Startup
+- proportionality: decimal revenue share (sums ~1.0)
+Reflect size/segment mix implied by the context.
+{ctxb}
+{constraints}
+""".strip()
 
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful data assistant and B2B customer segmentation expert."},
-            {"role": "user", "content": prompt}
-        ],
+        messages=[{"role": "system", "content": "You are a helpful data assistant and B2B customer segmentation expert."},
+                  {"role": "user", "content": prompt}],
         temperature=temp,
     )
-
     df_customers = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
     df_customers.insert(0, "customer_id", range(10, len(df_customers) + 10))
     df_customers = utils.convert_column_to_percentage(df_customers, "proportionality", scale=1.0)
@@ -328,95 +226,77 @@ def generate_customers_llm(company_name: str, count: int = 100, model: str = "gp
 
 def generate_vendors_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.3):
     client = prompt_utils.get_openai_client()
-
     header = "name;vendor_type;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
+    ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are a B2B procurement and supply chain expert. Your task is to generate a list of {count} realistic vendors (suppliers) for a company like {company_name}.
-    These vendors should reflect typical suppliers based on the company's industry, geography, and operations.
-
-    For each vendor, provide the following fields in CSV format:
-    - name: The name of the vendor (company or organization)
-    - vendor_type: One of the following types: Raw Materials, Equipment, IT Services, Logistics, Facilities, Office Supplies, Contract Labor, or Consulting
-    - proportionality: An estimated proportion of the company's total spend allocated to this vendor, expressed as a decimal (e.g. 0.04 for 4%)
-
-    The proportionality values should vary realistically across vendors and sum to approximately 1.0 in total.
-    Ensure variation in vendor size and type, including both critical suppliers and minor service providers.
-
-    {constraints}
-    """
+You are a B2B procurement and supply chain expert. Generate {count} realistic vendors for {company_name}.
+Fields:
+- name
+- vendor_type: Raw Materials, Equipment, IT Services, Logistics, Facilities, Office Supplies, Contract Labor, Consulting
+- proportionality: decimal spend share (sums ~1.0)
+Bias critical categories and concentration based on the context.
+{ctxb}
+{constraints}
+""".strip()
 
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful data assistant and B2B vendor segmentation expert."},
-            {"role": "user", "content": prompt}
-        ],
+        messages=[{"role": "system", "content": "You are a helpful data assistant and B2B vendor segmentation expert."},
+                  {"role": "user", "content": prompt}],
         temperature=temp,
     )
-
     df_vendors = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
     df_vendors.insert(0, "vendor_id", range(20, len(df_vendors) + 20))
     df_vendors = utils.convert_column_to_percentage(df_vendors, "proportionality", scale=1.0)
     return df_vendors
 
-def estimate_mean_pay_llm(company_name: str, model: str = "gpt-4o", temp: float = 0):
-    client = prompt_utils.get_openai_client()
-
-    prompt = f"""
-    What is the mean pay for a {company_name} employee in DKK? Include pension, vacation, and benefits. It should be a realistic estimate based on the company's industry and typical operations.
-    Output just a number — the mean monthly salary in DKK. No text or units, do not divide the number by a comma or period.
-    Output should be a single integer, rounded to the nearest whole number.
-    """
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful payroll analyst."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=temp,
-    )
-
-    return int(response.choices[0].message.content)
-
 def estimate_financials_llm(company_name: str, model: str = "gpt-4o", temp: float = 0):
     client = prompt_utils.get_openai_client()
+    ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are a financial controller.
+Estimate the **annual total revenue + operating costs (DKK)** for {company_name}, Denmark-only.
+Return a single integer (no text, no separators). Prefer explicit figures from context; otherwise estimate from scale/industry.
+{ctxb}
+""".strip()
 
-    Estimate the **annual total revenue** and **operating costs** for a company like "{company_name}" in DKK. Only the danish finances should be estimated.
-    Base it on the company's typical industry, geography, and scale.
-    Output format (no explanation):
-    <total_finances>
-
-    Output just a number — the added annual revenue and operating costs. No text or units, do not divide the number by a comma or period.
-    """
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful payroll analyst."},
-            {"role": "user", "content": prompt}
-        ],
+        messages=[{"role": "system", "content": "You are a helpful payroll analyst."},
+                  {"role": "user", "content": prompt}],
         temperature=temp,
     )
-
     total_finances = int(response.choices[0].message.content)
 
-    # We assume the following split for each 
-    # Allocate 35% to payroll, 45% to products, 15% to services, 5% to overhead. 
-    payroll = int(total_finances * 0.35)
+    payroll  = int(total_finances * 0.35)
     products = int(total_finances * 0.45)
     services = int(total_finances * 0.15)
     overhead = int(total_finances * 0.05)
 
-    final_finances = {
+    return {
         "total_finances": total_finances,
         "payroll": payroll,
         "products": products,
         "services": services,
         "overhead": overhead
     }
-    return final_finances
+
+def estimate_mean_pay_llm(company_name: str, model: str = "gpt-4o", temp: float = 0):
+    client = prompt_utils.get_openai_client()
+    ctxb = prompt_utils._ctx_block(company_name)
+
+    prompt = f"""
+What is the mean monthly pay in DKK for a {company_name} employee (incl. pension, vacation, benefits)?
+Return just one integer (no text, no separators). Prefer explicit salary numbers from context; otherwise estimate realistically for Denmark/industry.
+{ctxb}
+""".strip()
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "system", "content": "You are a helpful payroll analyst."},
+                  {"role": "user", "content": prompt}],
+        temperature=temp,
+    )
+    return int(response.choices[0].message.content)

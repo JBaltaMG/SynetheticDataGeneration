@@ -1,31 +1,31 @@
 customer_id,name,customer_segment,proportionality
-10,Siemens Gamesa,Enterprise,0.13392857142857145
-11,GE Renewable Energy,Enterprise,0.10714285714285715
-12,Nordex Group,Enterprise,0.0892857142857143
-13,Acciona Energy,Enterprise,0.07142857142857144
-14,Iberdrola,Enterprise,0.06250000000000001
-15,Enel Green Power,Enterprise,0.053571428571428575
-16,EDF Renewables,Enterprise,0.04464285714285715
-17,Orsted,Enterprise,0.03571428571428572
-18,RWE Renewables,Enterprise,0.03571428571428572
-19,NextEra Energy,Enterprise,0.026785714285714288
-20,Pattern Energy,Enterprise,0.026785714285714288
-21,Invenergy,Enterprise,0.026785714285714288
-22,Engie,Enterprise,0.01785714285714286
-23,ScottishPower,Enterprise,0.01785714285714286
-24,Statkraft,Enterprise,0.01785714285714286
-25,E.ON,Enterprise,0.01785714285714286
-26,Duke Energy,Enterprise,0.01785714285714286
-27,Repsol,Enterprise,0.01785714285714286
-28,Vattenfall,Enterprise,0.01785714285714286
-29,RES Group,Enterprise,0.01785714285714286
-30,Mainstream Renewable Power,Enterprise,0.01785714285714286
-31,Copenhagen Infrastructure Partners,Enterprise,0.01785714285714286
-32,Aker Solutions,Enterprise,0.01785714285714286
-33,TotalEnergies,Enterprise,0.01785714285714286
-34,BP Wind Energy,Enterprise,0.01785714285714286
-35,Shell New Energies,Enterprise,0.01785714285714286
-36,Amazon Web Services,Enterprise,0.00892857142857143
-37,Google Energy,Enterprise,0.00892857142857143
-38,Facebook Data Centers,Enterprise,0.00892857142857143
-39,Microsoft Azure,Enterprise,0.00892857142857143
+10,Walmart,Retail,0.11009174311926606
+11,Amazon,Retail,0.09174311926605506
+12,Costco,Wholesale,0.07339449541284404
+13,IKEA,Retail,0.06422018348623855
+14,Home Depot,Retail,0.05504587155963303
+15,General Electric,Enterprise,0.04587155963302753
+16,ExxonMobil,Enterprise,0.04587155963302753
+17,Ford Motor Company,Enterprise,0.03669724770642202
+18,Nestlé,Enterprise,0.03669724770642202
+19,Procter & Gamble,Enterprise,0.03669724770642202
+20,Siemens,Enterprise,0.027522935779816515
+21,Unilever,Enterprise,0.027522935779816515
+22,Shell,Enterprise,0.027522935779816515
+23,BP,Enterprise,0.027522935779816515
+24,Volkswagen,Enterprise,0.027522935779816515
+25,Toyota,Enterprise,0.027522935779816515
+26,Samsung,Enterprise,0.027522935779816515
+27,Sony,Enterprise,0.01834862385321101
+28,Lidl,Retail,0.01834862385321101
+29,Aldi,Retail,0.01834862385321101
+30,Carrefour,Retail,0.01834862385321101
+31,Tesco,Retail,0.01834862385321101
+32,Metro AG,Wholesale,0.01834862385321101
+33,Kroger,Retail,0.01834862385321101
+34,Target,Retail,0.01834862385321101
+35,US Department of Defense,Government,0.01834862385321101
+36,NATO,Government,0.01834862385321101
+37,World Food Programme,Non-profit,0.009174311926605505
+38,Doctors Without Borders,Non-profit,0.009174311926605505
+39,Greenpeace,Non-profit,0.009174311926605505
