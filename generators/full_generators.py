@@ -7,7 +7,7 @@ import generators.llm_generators as llm_generators
 import modeling.payroll as payroll
 import modeling.erp as erp
 import modeling.mapping as mapping
-from generators.llm_context_generators import generate_context_numbers_llm, generate_context_report
+from generators.llm_context_generators import generate_context_numbers_llm, generate_context_report, generate_year_end_report_from_pdf
 from typing import Dict, List, Tuple
 
 def create_company_data(company_name: str, save_to_csv: bool = True) -> dict:
@@ -16,7 +16,6 @@ def create_company_data(company_name: str, save_to_csv: bool = True) -> dict:
     """
 
     print(f"Generating data for company: {company_name}...")
-    print(f"Time estimates: 5-10 minutes for context, 15-25 minutes for full data generation.")
 
     path_to_report = f"data/inputdata/reports/generated/{company_name}_context_report.txt"
     if not os.path.exists(path_to_report):
@@ -27,9 +26,16 @@ def create_company_data(company_name: str, save_to_csv: bool = True) -> dict:
         
     data_context = generate_context_numbers_llm(company_name=company_name)
     
-    # Unpack the context data: 
-    count_employee = data_context['count_employee']; count_product = data_context['count_product']; count_department = data_context['count_department']; count_procurement = data_context['count_procurement']; 
-    count_service = data_context['count_service']; count_account = data_context['count_account']; count_customer = data_context['count_customer'];
+    # Unpack the context data:
+    (count_employee, count_product, count_department, count_procurement,
+     count_vendor, count_service, count_account, count_customer) = (
+        data_context['count_employee'], data_context['count_product'],
+        data_context['count_department'], data_context['count_procurement'],
+        data_context['count_vendor'], data_context['count_service'],
+        data_context['count_account'], data_context['count_customer']
+    )
+
+    print(f"Context data for {company_name} generated: {data_context}")
 
     generated_data = generate_all_dimensions(
         company_name=company_name,
@@ -39,6 +45,7 @@ def create_company_data(company_name: str, save_to_csv: bool = True) -> dict:
         count_service=count_service,
         count_account=count_account,
         count_customer=count_customer,
+        count_vendor=count_vendor,
         count_department=count_department,
         save_to_csv=save_to_csv
     )
@@ -68,18 +75,15 @@ def generate_context_report(company_name: str) -> dict:
         #data_report = generate_year_end_report_with_web_llm(company_name=company_name)
     else:
         print(f"Loading and reading year-end report for {company_name}.")
-        print(f"This may take up-to 10 mins...")
+        print(f"This usually takes 5-10 mins.")
         data_report = generate_year_end_report_from_pdf(company_name=company_name)
+        with open(f"data/inputdata/reports/generated/{company_name}_context_report.txt", "w", encoding="utf-8") as f:
+            f.write(str(data_report))
 
-    return {
-        "context": data_context,
-        "report": data_report
-    }
-
+    return data_report
 
 def generate_all_dimensions(
     company_name: str,
-    report: str = None,  # kept for compatibility; unused here
     count_employee: int = 200,
     count_product: int = 100,
     count_account: int = 30,
@@ -87,6 +91,7 @@ def generate_all_dimensions(
     count_department: int = 20,
     count_service: int = 100,
     count_procurement: int = 100,
+    count_vendor: int = 30,
     save_to_csv: bool = True,
     max_retries: int = 3,             
 ) -> dict:
@@ -94,7 +99,8 @@ def generate_all_dimensions(
     Generates all dimensions, validates final lengths, and retries if any mismatch.
     CSVs are saved only after a fully valid generation.
     """
-
+    print(f"Generating dimensions for company: {company_name}.")
+    print(f"This usually takes 2-5 mins.")
     def _run_once() -> dict:
 
         # Employees / Roles
@@ -112,11 +118,13 @@ def generate_all_dimensions(
 
         # Accounts / Customers / Departments / Vendors
         df_account    = llm_generators.generate_accounts_llm(company_name, count_account)
+        print("✔ Accounts data generated.")
         df_customer   = llm_generators.generate_customers_llm(company_name, count_customer)
+        print("✔ Customers data generated.")
         df_department = llm_generators.generate_departments_llm(company_name, count_department)
-        # keep vendor count aligned to customers (original behavior)
-        df_vendor     = llm_generators.generate_vendors_llm(company_name, count_customer)
-        print("✔ Accounts, Customers, Departments, and Vendors generated.")
+        print("✔ Departments data generated.")
+        df_vendor     = llm_generators.generate_vendors_llm(company_name, count_vendor)
+        print("✔ Vendors data generated.")
 
         # If your LLM functions already convert 'proportionality', you can remove this block.
         # Keeping as-is to match your current logic.
@@ -172,7 +180,7 @@ def generate_all_dimensions(
             "account":          count_account,
             "customer":         count_customer,
             "department_name":  count_department,
-            "vendor":           count_customer,   # original code expected same as customers
+            "vendor":           count_vendor, 
         }
 
         for key, exp in expected.items():
@@ -467,7 +475,7 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
 
     df_expenses_full.rename(columns=rename_cols, inplace=True)
     df_products_full.rename(columns=rename_cols, inplace=True)
-    print("YESYES")
+    
     if save_to_csv:
         output_dir = f"data/outputdata/fact"
         os.makedirs(output_dir, exist_ok=True)

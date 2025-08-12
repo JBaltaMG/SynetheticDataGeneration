@@ -1,31 +1,76 @@
 customer_id,name,customer_segment,proportionality
-10,Walmart,Retail,0.11009174311926606
-11,Amazon,Retail,0.09174311926605506
-12,Costco,Wholesale,0.07339449541284404
-13,IKEA,Retail,0.06422018348623855
-14,Home Depot,Retail,0.05504587155963303
-15,General Electric,Enterprise,0.04587155963302753
-16,ExxonMobil,Enterprise,0.04587155963302753
-17,Ford Motor Company,Enterprise,0.03669724770642202
-18,Nestlé,Enterprise,0.03669724770642202
-19,Procter & Gamble,Enterprise,0.03669724770642202
-20,Siemens,Enterprise,0.027522935779816515
-21,Unilever,Enterprise,0.027522935779816515
-22,Shell,Enterprise,0.027522935779816515
-23,BP,Enterprise,0.027522935779816515
-24,Volkswagen,Enterprise,0.027522935779816515
-25,Toyota,Enterprise,0.027522935779816515
-26,Samsung,Enterprise,0.027522935779816515
-27,Sony,Enterprise,0.01834862385321101
-28,Lidl,Retail,0.01834862385321101
-29,Aldi,Retail,0.01834862385321101
-30,Carrefour,Retail,0.01834862385321101
-31,Tesco,Retail,0.01834862385321101
-32,Metro AG,Wholesale,0.01834862385321101
-33,Kroger,Retail,0.01834862385321101
-34,Target,Retail,0.01834862385321101
-35,US Department of Defense,Government,0.01834862385321101
-36,NATO,Government,0.01834862385321101
-37,World Food Programme,Non-profit,0.009174311926605505
-38,Doctors Without Borders,Non-profit,0.009174311926605505
-39,Greenpeace,Non-profit,0.009174311926605505
+10,Novo Nordisk,Enterprise,0.0753186558516802
+11,Danske Bank,Enterprise,0.06025492468134414
+12,Aarhus Kommune,Government,0.0440324449594438
+13,Vestas Wind Systems,Enterprise,0.05214368482039397
+14,Coop Danmark,Retail,0.03823870220162225
+15,Region Midtjylland,Government,0.03128621089223639
+16,Arla Foods,Enterprise,0.03592120509849363
+17,Jysk,Retail,0.02549246813441483
+18,ISS Facility Services,Enterprise,0.024333719582850525
+19,LEGO Group,Enterprise,0.0324449594438007
+20,Odense Kommune,Government,0.02085747392815759
+21,Salling Group,Retail,0.0220162224797219
+22,Netto,Retail,0.013904982618771726
+23,DSV,Enterprise,0.0220162224797219
+24,Copenhagen Municipality,Government,0.024333719582850525
+25,Silvan,Retail,0.010428736964078795
+26,Brdr. A&O Johansen,Wholesale,0.009269988412514486
+27,Aalborg Universitet,Government,0.010428736964078795
+28,Sydbank,Enterprise,0.012746234067207415
+29,Solar Danmark,Wholesale,0.010428736964078795
+30,Kolding Kommune,Government,0.009269988412514486
+31,Fredericia Kommune,Government,0.008111239860950175
+32,Hedensted Kommune,Government,0.005793742757821553
+33,Horsens Kommune,Government,0.006952491309385863
+34,Blue Water Shipping,Enterprise,0.006952491309385863
+35,Kamstrup,Enterprise,0.008111239860950175
+36,Bankdata,Enterprise,0.009269988412514486
+37,Nykredit,Enterprise,0.015063731170336036
+38,TDC Erhverv,Enterprise,0.010428736964078795
+39,Atea Danmark,Enterprise,0.009269988412514486
+40,AP Pension,Enterprise,0.008111239860950175
+41,Syddansk Universitet,Government,0.009269988412514486
+42,Aarhus Universitetshospital,Government,0.008111239860950175
+43,Region Syddanmark,Government,0.01622247972190035
+44,Region Nordjylland,Government,0.013904982618771726
+45,Region Hovedstaden,Government,0.015063731170336036
+46,Hjerteforeningen,Non-profit,0.004634994206257243
+47,Kræftens Bekæmpelse,Non-profit,0.004634994206257243
+48,Dansk Flygtningehjælp,Non-profit,0.0034762456546929316
+49,Røde Kors Danmark,Non-profit,0.004634994206257243
+50,Børns Vilkår,Non-profit,0.0034762456546929316
+51,Dansk Industri,Non-profit,0.0034762456546929316
+52,Føtex,Retail,0.012746234067207415
+53,Elgiganten,Retail,0.009269988412514486
+54,XL-BYG,Wholesale,0.006952491309385863
+55,Bygma Gruppen,Wholesale,0.006952491309385863
+56,Stark Danmark,Wholesale,0.008111239860950175
+57,Danfoss,Enterprise,0.013904982618771726
+58,Coloplast,Enterprise,0.012746234067207415
+59,DFDS,Enterprise,0.009269988412514486
+60,FLSmidth,Enterprise,0.009269988412514486
+61,SimCorp,Enterprise,0.008111239860950175
+62,Netcompany,Enterprise,0.008111239860950175
+63,Lemvigh-Müller,Wholesale,0.008111239860950175
+64,Topdanmark,Enterprise,0.010428736964078795
+65,Tryg Forsikring,Enterprise,0.010428736964078795
+66,Hempel,Enterprise,0.006952491309385863
+67,Viborg Kommune,Government,0.005793742757821553
+68,Randers Kommune,Government,0.005793742757821553
+69,Esbjerg Kommune,Government,0.005793742757821553
+70,Frederiksberg Kommune,Government,0.005793742757821553
+71,Herning Kommune,Government,0.005793742757821553
+72,Aalborg Kommune,Government,0.005793742757821553
+73,EnergiMidt,SME,0.005793742757821553
+74,GreenLab Skive,Startup,0.0034762456546929316
+75,Too Good To Go,Startup,0.0034762456546929316
+76,Trustpilot,Startup,0.0034762456546929316
+77,Lunar,Startup,0.0034762456546929316
+78,Pleo,Startup,0.0034762456546929316
+79,Siteimprove,Startup,0.0034762456546929316
+80,Podio,Startup,0.0023174971031286215
+81,Falck,Enterprise,0.006952491309385863
+82,HOFOR,Enterprise,0.008111239860950175
+83,SEAS-NVE,Enterprise,0.009269988412514486
+84,Energinet,Enterprise,0.010428736964078795
