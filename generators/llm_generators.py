@@ -13,29 +13,32 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-You are a procurement and industry expert. Generate a realistic ranked list of the top {over_request_count} procurement items, materials, and consumables 
-commonly purchased by a company like {company_name}, based on its industry and typical operations.
+    You are a procurement and industry expert. 
+    Generate a realistic ranked list of the top {over_request_count} procurement items, materials, and consumables 
+    commonly purchased by a Denmark-only, large-scale company like {company_name}, based on its industry and typical operations.
 
-Each row:
-- name: specific purchased item/material
-- proportionality: % of total procurement budget (0–100)
+    Output format:
+    - CSV with two columns: name;proportionality
+    - `name` = specific purchased item/material (avoid vague terms like "miscellaneous" or "other")
+    - `proportionality` = share of total procurement budget
 
-Coverage:
-- Raw materials & base components
-- Operational & maintenance supplies
-- General equipment & consumables
-- Office/admin products
+    Coverage requirements (all must appear at least once):
+    - Raw materials & base components
+    - Operational & maintenance supplies
+    - General equipment & consumables
+    - Office/admin products
 
-Ranking:
-- Top: most expensive raw/specialized inputs
-- Middle: tools, spares, operational items
-- Bottom: low-cost office/admin supplies
+    Ranking rules:
+    - Sort by proportionality in descending order
+    - Top ranks: most expensive raw/specialized inputs
+    - Middle ranks: tools, spares, operational items
+    - Bottom ranks: low-cost office/admin supplies
 
-{ctxb}
-Rank by proportionality in descending order.
+    For context, here is a short version of the latest year-end report for {company_name}: 
+    {ctxb}
 
-{constraints}
-""".strip()
+    {constraints}
+    """.strip()
 
     response = client.chat.completions.create(
         model=model,
@@ -56,19 +59,25 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-You are a product marketing and industry expert. Generate a realistic ranked list of the top {over_request_count} products
-that a company like {company_name} would sell, based on its industry, brand identity, and market focus.
+    You are a product marketing and industry expert. 
+    Generate a realistic ranked list of the top {over_request_count} product categories 
+    that a Denmark-only, large-scale company like {company_name} would sell, 
+    based on its industry, brand identity, and market focus.
 
-Each row:
-- name: realistic product/SKU category (categorical, not overly specific)
-- proportionality: % of total sales revenue (0–100)
 
-Ensure a mix of high-revenue flagships, mid-range products, and low-cost accessories/services.
-{ctxb}
-Rank the list by proportionality in descending order.
+    Each row after the header:
+    - `name` = realistic product/SKU category (broad but specific enough for revenue analysis; e.g., "Running Shoes", not "Product A")
+    - `proportionality` = share of total sales revenue
 
-{constraints}
-""".strip()
+    Composition rules:
+    - Include a mix of high-revenue flagship lines, mid-range products, and low-cost accessories/services.
+    - Avoid overly granular SKUs or vague placeholders like "Miscellaneous".
+    - Rank the list in descending order of proportionality.
+
+    For context, here is a short version of the latest year-end report for {company_name}:
+    {ctxb}
+    {constraints}
+    """.strip()
 
     response = client.chat.completions.create(
         model=model,
@@ -80,7 +89,7 @@ Rank the list by proportionality in descending order.
     df_products = utils.convert_column_to_percentage(df_products, "proportionality", scale=1.0)
     return df_products
 
-def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.1):
+def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.9):
     client = prompt_utils.get_openai_client()
 
     over_request_count = int(count) * 1.4
@@ -88,14 +97,35 @@ def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4o
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
+    
     prompt = f"""
-You are an HR and industry expert. Generate {over_request_count} realistic employee roles for a company like {company_name}.
-Bias titles/functions indicated by the context (e.g., R&D intensity, retail footprint, digital focus).
-Each row: role_name
-Rank by highest monthly salary first.
-{ctxb}
-{constraints}
-""".strip()
+    You are an HR and industry expert. Generate {over_request_count} employee roles for a Denmark-only, large company like {company_name}.
+
+    Output format:
+    - CSV with a single column: role_name
+    - Duplicates are ALLOWED and ENCOURAGED for common roles.
+    - Rank by highest paid roles first. Any duplicates should be together. 
+
+    Distribution requirements:
+    - 60–80% must be generic base titles without seniority modifiers, e.g.:
+    Software Engineer, Data Analyst, Consultant, Accountant, Sales Representative,
+    Customer Support Specialist, Marketing Specialist, HR Generalist, Operations Coordinator,
+    Procurement Specialist, Warehouse Associate, Project Manager, Business Analyst,
+    QA Engineer, IT Support Specialist.
+    - ≤10% may include seniority prefixes (Senior, Lead, Director, Head, Chief). Prefer none.
+    - ≤3 entries total may be C‑level (CEO/CFO/CTO/etc.) or VP.
+    - Avoid hyper‑granular one-offs; repetition of core roles is preferred.
+
+    Style constraints:
+    - Avoid prefixes: Senior, Lead, Director, Head, Chief, Principal, Staff — unless within the ≤10% cap.
+    - Avoid internship/student titles.
+    - Keep roles realistic for Denmark-only operations; no global country managers.
+
+    For context, here is a short version of the lastest year-end report for {company_name}:
+    {ctxb}
+
+    {constraints}
+    """.strip()
 
     response = client.chat.completions.create(
         model=model,
@@ -114,22 +144,27 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-You are a finance and procurement expert. Generate a realistic ranked list of the top {over_request_count} services, licenses, and fees 
-commonly incurred by a company like {company_name}.
+    You are a finance and procurement expert. 
+    Generate a realistic ranked list of the top {over_request_count} services, licenses, and fees 
+    commonly incurred by a Denmark-only, large-scale company like {company_name}.
 
-Each row:
-- name: specific service/fee (e.g. 'IT Consulting', 'Microsoft 365 License', 'Legal Retainer')
-- proportionality: % of total procurement budget (0–100)
-Do not make annual entries.
+    Each row after the header:
+    - `name` = specific service, license, or fee (e.g., "IT Consulting", "Microsoft 365 License", "Legal Retainer")
+    - Avoid vague terms like "Miscellaneous" or "Various".
+    - Include annual/temporal entries such as "Annual IT Audit".
+    - `proportionality` = share of total sales revenue
 
-Top: expensive projects/enterprise retainers
-Middle: regular professional services and departmental support
-Bottom: standardized low-cost licenses/admin services
-{ctxb}
-Rank by proportionality in descending order.
+    Composition rules:
+    - Top ranks: expensive projects, enterprise retainers, major outsourcing contracts.
+    - Middle ranks: recurring professional services and departmental support.
+    - Bottom ranks: standardized low-cost licenses and administrative fees.
+    - Include a balance across IT, legal, marketing, HR, facilities, and general admin.
 
-{constraints}
-""".strip()
+    For context, here is a short version of the latest year-end report for {company_name}:
+    {ctxb}
+
+    {constraints}
+    """.strip()
 
     response = client.chat.completions.create(
         model=model,
@@ -141,23 +176,33 @@ Rank by proportionality in descending order.
     df_services = utils.convert_column_to_percentage(df_services, "proportionality", scale=1.0)
     return df_services
 
-def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-4o", temp: float=0.5) -> pd.DataFrame:
+def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-4.1", temp: float=0.5) -> pd.DataFrame:
     client = prompt_utils.get_openai_client()
     over_request_count = int(count) * 1.4
-    header = "name;account_type"
+    header = "level3;level4;name;account_type"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-You are a financial accountant and ERP systems expert. Generate a realistic Chart of Accounts for {company_name}.
-Return:
-- name
-- account_type: "Revenue","Product Expense","Service Expense","Asset","Equity"
-Ignore payroll accounts.
-Ensure diverse P&L and BS accounts; clearly split Product vs Service expenses.
-{ctxb}
-{constraints}
-""".strip()
+    You are a financial accountant and ERP systems expert. Generate a realistic **4-level** Chart of Accounts for {company_name} (Denmark-only, large company).
+
+    Each row describes a **leaf (posting) account** at level4:
+    - level3 = category (e.g., "Cash & Cash Equivalents", "Product COGS", "Service Delivery Costs", "Marketing")
+    - level4 = specific leaf category (e.g., "Raw Materials", "Subcontracted Services", "Cloud Hosting", "Office Rent")
+    - name = the posting account name (concise, no codes)
+    - account_type = one of: "Revenue","Product Expense","Service Expense","Asset","Equity"
+
+    Rules:
+    - Ignore payroll accounts.
+    - Clearly separate **Product Expense** vs **Service Expense** under Expenses.
+    - Include a balanced P&L and Balance Sheet spread (not only P&L).
+    - Keep names realistic; avoid vague buckets like "Miscellaneous".
+
+    Context (short year-end report):
+    {ctxb}
+
+    {constraints}
+    """.strip()
 
     response = client.chat.completions.create(
         model=model,
@@ -169,21 +214,39 @@ Ensure diverse P&L and BS accounts; clearly split Product vs Service expenses.
     df_accounts["account_id"] = random_generators.generate_account_ids(df_accounts["account_type"])
     return df_accounts
 
-def generate_departments_llm(company_name: str, count: int = 10, model: str = "gpt-4o", temp: float = 0.5):
+def generate_departments_llm(company_name: str, count: int = 10, model: str = "gpt-4.1", temp: float = 0.5):
     client = prompt_utils.get_openai_client()
     header = "name;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-You are an HR and workforce distribution expert. Generate {count} realistic departments for {company_name} with payroll share.
-Fields:
-- name
-- proportionality: decimal share of total payroll (sums ~1.0)
-Use context signals (e.g., manufacturing vs retail vs digital) to bias department mix.
-{ctxb}
-{constraints}
-""".strip()
+    You are an HR and workforce distribution expert.
+    Generate {count} realistic departments for a Denmark-only, large company like {company_name}, each with a payroll share.
+
+    STRICT OUTPUT:
+    - Fields (header must match exactly): name;proportionality
+    - proportionality = decimal share of total payroll using a dot (e.g., 0.125)
+    - Sort rows by proportionality in descending order.
+
+    Composition rules:
+    - Prefer **general department names** (avoid seniority or role-specific titles).
+    - Include a balanced mix across core functions. Strong candidates:
+    "Operations","Production","Manufacturing","R&D","Engineering","IT","Data & Analytics",
+    "Sales","Marketing","Customer Service","Finance","Procurement","Logistics",
+    "HR","Legal & Compliance","Facilities","Quality Assurance","Strategy/PMO".
+    - Avoid hyper-granular teams (e.g., "Backend Platform Team") and avoid temporal qualifiers.
+
+    Distribution rules:
+    - Shares should be realistic for a large Danish company.
+    - Sum of proportionality should be approximately 1.0 (±0.01).
+    - Allow multiple mid-sized departments; do not make one department dominate unrealistically.
+
+    Context (short year-end report):
+    {ctxb}
+
+    {constraints}
+    """.strip()
 
     response = client.chat.completions.create(
         model=model,
@@ -196,22 +259,25 @@ Use context signals (e.g., manufacturing vs retail vs digital) to bias departmen
     df_offices = utils.convert_column_to_percentage(df_offices, "proportionality", scale=1.0)
     return df_offices
 
-def generate_customers_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.3):
+def generate_customers_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.3):
     client = prompt_utils.get_openai_client()
     header = "name;customer_segment;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-You are a B2B sales/marketing expert. Generate {count} realistic customers for {company_name}.
-Fields:
-- name
-- customer_segment: Enterprise, SME, Government, Non-profit, Retail, Wholesale, Startup
-- proportionality: decimal revenue share (sums ~1.0)
-Reflect size/segment mix implied by the context.
-{ctxb}
-{constraints}
-""".strip()
+    You are a B2B sales/marketing expert. Generate {count} realistic customers for {company_name}.
+    Fields:
+    - name
+    - customer_segment: Enterprise, SME, Government, Non-profit, Retail, Wholesale, Startup
+    - proportionality: decimal revenue share (sums ~1.0)
+    Reflect size/segment mix implied by the context.
+
+    For context, here is a short version of the lastest year-end report for {company_name}: 
+    {ctxb}
+
+    {constraints}
+    """.strip()
 
     response = client.chat.completions.create(
         model=model,
@@ -224,22 +290,25 @@ Reflect size/segment mix implied by the context.
     df_customers = utils.convert_column_to_percentage(df_customers, "proportionality", scale=1.0)
     return df_customers
 
-def generate_vendors_llm(company_name: str, count: int = 100, model: str = "gpt-4o", temp: float = 0.3):
+def generate_vendors_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.3):
     client = prompt_utils.get_openai_client()
     header = "name;vendor_type;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, count)
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-You are a B2B procurement and supply chain expert. Generate {count} realistic vendors for {company_name}.
-Fields:
-- name
-- vendor_type: Raw Materials, Equipment, IT Services, Logistics, Facilities, Office Supplies, Contract Labor, Consulting
-- proportionality: decimal spend share (sums ~1.0)
-Bias critical categories and concentration based on the context.
-{ctxb}
-{constraints}
-""".strip()
+    You are a B2B procurement and supply chain expert. Generate {count} realistic vendors for {company_name}.
+    Fields:
+    - name
+    - vendor_type: Raw Materials, Equipment, IT Services, Logistics, Facilities, Office Supplies, Contract Labor, Consulting
+    - proportionality: decimal spend share (sums ~1.0)
+    Bias critical categories and concentration based on the context.
+
+    For context, here is a short version of the lastest year-end report for {company_name}: 
+    {ctxb}
+
+    {constraints}
+    """.strip()
 
     response = client.chat.completions.create(
         model=model,
@@ -259,6 +328,8 @@ def estimate_financials_llm(company_name: str, model: str = "gpt-4o", temp: floa
     prompt = f"""
 Estimate the **annual total revenue + operating costs (DKK)** for {company_name}, Denmark-only.
 Return a single integer (no text, no separators). Prefer explicit figures from context; otherwise estimate from scale/industry.
+
+For context, here is a short version of the lastest year-end report for {company_name}: 
 {ctxb}
 """.strip()
 
@@ -288,10 +359,12 @@ def estimate_mean_pay_llm(company_name: str, model: str = "gpt-4o", temp: float 
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-What is the mean monthly pay in DKK for a {company_name} employee (incl. pension, vacation, benefits)?
-Return just one integer (no text, no separators). Prefer explicit salary numbers from context; otherwise estimate realistically for Denmark/industry.
-{ctxb}
-""".strip()
+    What is the mean monthly pay in DKK for a {company_name} employee (incl. pension, vacation, benefits)?
+    Return just one integer (no text, no separators). Prefer explicit salary numbers from context; otherwise estimate realistically for Denmark/industry.
+
+    For context, here is a short version of the lastest year-end report for {company_name}: 
+    {ctxb}
+    """.strip()
 
     response = client.chat.completions.create(
         model=model,

@@ -1,31 +1,71 @@
-name,account_type,account_id
-Freight Revenue,Revenue,35121
-Logistics Services Revenue,Revenue,30083
-Container Leasing Revenue,Revenue,34961
-Interest Income,Revenue,39839
-Raw Materials,Product Expense,49073
-Packaging Materials,Product Expense,46284
-Freight-in Costs,Product Expense,44282
-Port Charges,Product Expense,41889
-Fuel Costs,Product Expense,43395
-Consulting Fees,Service Expense,58792
-Software Subscriptions,Service Expense,55652
-Marketing and Advertising,Service Expense,58318
-IT Support Services,Service Expense,52541
-Cash and Cash Equivalents,Asset,10826
-Accounts Receivable,Asset,18895
-Inventory,Asset,17825
-Prepaid Expenses,Asset,14668
-"Property, Plant, and Equipment",Asset,10543
-Intangible Assets,Asset,19039
-Goodwill,Asset,16309
-Accounts Payable,Asset,10094
-Accrued Liabilities,Asset,16871
-Short-term Investments,Asset,18394
-Deferred Tax Assets,Asset,14350
-Bank Loans,Asset,11337
-Share Capital,Equity,28353
-Retained Earnings,Equity,23835
-Additional Paid-in Capital,Equity,28266
-Revaluation Surplus,Equity,20147
-Non-controlling Interest,Equity,25625
+level3,level4,name,account_type,account_id
+Cash & Cash Equivalents,Bank Accounts,Danske Bank Operating Account,Asset,19575
+Cash & Cash Equivalents,Bank Accounts,Nordea Treasury Account,Asset,13353
+Cash & Cash Equivalents,Short-term Deposits,Short-term Time Deposit,Asset,17803
+Accounts Receivable,Provision for Doubtful Debts,Doubtful Receivables Provision,Asset,13152
+Inventory,Raw Materials,Cables and Conductors Inventory,Asset,16434
+Inventory,Finished Goods,Smart Meters Inventory,Asset,17265
+Inventory,Spare Parts,Transformer Spare Parts,Asset,10660
+Prepaid Expenses,Prepaid Insurance,Prepaid Property Insurance,Asset,18514
+Prepaid Expenses,Prepaid Rent,Prepaid Office Rent,Asset,13670
+"Property, Plant & Equipment",Plant & Machinery,High Voltage Transformers,Asset,14202
+"Property, Plant & Equipment",Plant & Machinery,Wind Turbine Equipment,Asset,15673
+"Property, Plant & Equipment",Vehicles,Company Electric Cars,Asset,12485
+"Property, Plant & Equipment",Fixtures & Fittings,Meeting Room Equipment,Asset,18760
+Intangible Assets,Software,ERP Software,Asset,13665
+Intangible Assets,Software,Customer Portal Platform,Asset,17592
+Intangible Assets,Licenses,Energy Trading Licenses,Asset,13209
+Intangible Assets,Licenses,Spectrum Licenses,Asset,14001
+Investments,Equity Investments,Joint Venture Investments,Asset,13572
+Investments,Bonds,Corporate Bonds,Asset,10224
+Accounts Payable,Trade Payables,Supplier Payables – Materials,Asset,13386
+Accounts Payable,Trade Payables,Supplier Payables – Services,Asset,13252
+Accounts Payable,Accrued Expenses,Accrued Legal Fees,Asset,15853
+Accounts Payable,Accrued Expenses,Accrued Utility Charges,Asset,14527
+Deferred Revenue,Prepaid Subscriptions,Prepaid District Heating,Asset,13799
+Deferred Revenue,Prepaid Connections,Prepaid Fiber Connections,Asset,12968
+Loans & Borrowings,Bank Loans,Danske Bank Term Loan,Asset,13726
+Loans & Borrowings,Bank Loans,Nordea Revolving Credit Facility,Asset,12699
+Loans & Borrowings,Lease Liabilities,Fleet Vehicle Leases,Asset,15125
+Loans & Borrowings,Lease Liabilities,Office Equipment Leases,Asset,13509
+Share Capital,Ordinary Shares,Ordinary Share Capital,Equity,20277
+Share Capital,Preference Shares,Preference Share Capital,Equity,23576
+Retained Earnings,Prior Years,Retained Earnings B/F,Equity,26389
+Other Reserves,Revaluation Reserve,Asset Revaluation Reserve,Equity,25244
+Other Reserves,Translation Reserve,Foreign Currency Translation Reserve,Equity,24788
+Revenue - Energy Sales,Electricity Sales,Residential Electricity Revenue,Revenue,35583
+Revenue - Energy Sales,Electricity Sales,Commercial Electricity Revenue,Revenue,35306
+Revenue - Energy Sales,District Heating Sales,District Heating Revenue,Revenue,39586
+Revenue - Energy Sales,Grid Connection Fees,Grid Connection Revenue,Revenue,36189
+Revenue - Service & Solutions,Fiber Internet Sales,Fiber Internet Residential Revenue,Revenue,38520
+Revenue - Service & Solutions,Fiber Internet Sales,Fiber Internet Business Revenue,Revenue,33202
+Revenue - Service & Solutions,Energy Consulting,Energy Consulting Revenue,Revenue,33782
+Revenue - Service & Solutions,Operation & Maintenance,O&M Contract Revenue,Revenue,35945
+Revenue - Service & Solutions,Equipment Leasing,Equipment Leasing Revenue,Revenue,33956
+Product COGS,Purchased Energy,Purchased Power for Resale,Product Expense,48965
+Product COGS,Subcontracted Production,Subcontracted Meter Assembly,Product Expense,40108
+Product COGS,Distribution Costs,Distribution – Meters,Product Expense,49986
+Product COGS,Packaging,Meter Packaging Costs,Product Expense,41530
+Product COGS,Freight Inwards,Freight In – Materials,Product Expense,40413
+Service Delivery Costs,Subcontracted Services,Fiber Installation Contractors,Service Expense,50359
+Service Delivery Costs,Network Maintenance,Fiber Network Maintenance,Service Expense,53061
+Service Delivery Costs,Cloud Hosting,Customer Portal Hosting,Service Expense,58277
+Service Delivery Costs,Customer Support,Fiber Customer Support,Service Expense,52313
+Service Delivery Costs,Service Vehicle Costs,Service Van Expenses,Service Expense,58123
+Service Delivery Costs,On-site Materials,On-site Fiber Materials,Service Expense,54069
+Service Delivery Costs,Licenses & Royalties,Service Platform Licenses,Service Expense,56835
+Service Delivery Costs,Service Tools,Fiber Splicing Tools,Service Expense,51319
+Sales & Distribution,Sales Commissions,Sales Agent Commissions,Service Expense,54609
+Sales & Distribution,Advertising,Digital Advertising,Service Expense,59695
+Sales & Distribution,Events & Sponsorships,Community Sponsorships,Service Expense,55775
+Sales & Distribution,Trade Shows,Energy Industry Trade Shows,Service Expense,52414
+Sales & Distribution,Transport Outwards,Freight Out – Products,Service Expense,58909
+Sales & Distribution,Marketing Materials,Printed Marketing Materials,Service Expense,54568
+Sales & Distribution,CRM Licenses,CRM Software Licenses,Service Expense,55460
+General & Admin Expenses,Office Rent,Aarhus Office Rent,Service Expense,54136
+General & Admin Expenses,Utilities,Office Electricity,Service Expense,54512
+General & Admin Expenses,IT Services,IT Support Contracts,Service Expense,56154
+General & Admin Expenses,Telecommunications,Office Telephony,Service Expense,59093
+General & Admin Expenses,Insurance,Property Insurance,Service Expense,51301
+General & Admin Expenses,Consulting,Business Consulting Fees,Service Expense,57515
+General & Admin Expenses,Office Supplies,General Office Supplies,Service Expense,59868

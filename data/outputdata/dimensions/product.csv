@@ -1,101 +1,241 @@
 name,proportionality
-Ocean Container Shipping Services,0.2403534492215939
-End-to-End Supply Chain Solutions,0.11269684548564363
-Freight Forwarding,0.08477196341840448
-Logistics Management Services,0.06682025351803648
-Inland Transportation Services,0.03889537145079735
-Reefer Container Shipping,0.03291146815067468
-Intermodal Transport Solutions,0.027924882067239122
-Contract Logistics,0.0259302476338649
-Warehousing and Distribution,0.023935613200490678
-Customs Brokerage,0.019946344333742233
-Less-than-Container Load (LCL) Services,0.018450368508711564
-Full Container Load (FCL) Services,0.017453051292024454
-E-commerce Logistics Solutions,0.01645573407533734
-Project Cargo Services,0.01545841685865023
-Marine Insurance Solutions,0.01296512381693245
-Supply Chain Visibility Software,0.011967806600245339
-Barge Shipping Services,0.010970489383558229
-Consolidation and Deconsolidation Services,0.010471830775214672
-Digital Freight Marketplace,0.00947451355852756
-Last Mile Delivery Services,0.008975854950184005
-Port Terminal Handling Services,0.00867665978517787
-Cargo Tracking and Monitoring,0.007978537733496893
-Value-Added Packaging Services,0.007779074290159471
-Rail Freight Services,0.007280415681815915
-Customizable Shipping Contracts,0.0069812205168097805
-Compliance and Advisory Services,0.006682025351803648
-Cargo Risk Management Solutions,0.006482561908466225
-Air-Sea Intermodal Services,0.006183366743460092
-Inventory Management Solutions,0.005983903300122669
-Dangerous Goods Shipping,0.005485244691779114
-Sustainable Logistics Solutions,0.0052857812484416915
-Automotive Supply Chain Services,0.004986586083435558
-Pharma and Healthcare Logistics,0.0047871226400981355
-Specialized Container Leasing,0.004487927475092002
-Duty Drawback Services,0.0042884640317545795
-Temperature-Controlled Warehousing,0.004188732310085869
-Automated Customs Documentation,0.003989268866748446
-Transloading Services,0.0038895371450797353
-Container Pooling Services,0.0037898054234110244
-E-commerce Fulfillment Services,0.0035903419800736016
-Customs Pre-Clearance Services,0.0034906102584048903
-Flexible Delivery Solutions,0.0032911468150674684
-Cargo Consolidation Software,0.0031914150933987574
-Cross-Border Logistics Services,0.003091683371730046
-Retail Distribution Solutions,0.0029919516500613347
-Shipment Analytics Dashboard,0.0028922199283926233
-Container Relocation Services,0.002792488206723913
-Supply Chain Consulting,0.0026927564850552014
-Short Sea Shipping,0.0025930247633864905
-Integrated Customs Filing,0.002493293041717779
-Supply Chain Risk Assessment Services,0.002293829598380357
-Heavy-Lift Cargo Transport,0.0021940978767116454
-Alternative Fuel Transportation Solutions,0.0020943661550429345
-Cargo Damage Inspection Services,0.0018949027117055122
-High-Security Container Seals,0.0017951709900368008
-Documentation Training Services,0.0017453051292024451
-Demurrage & Detention Management,0.0016455734075337342
-Online Rate Quoting Platform,0.0015957075466993787
-Route Optimization Software,0.0014959758250306673
-Container Storage Services,0.0014461099641963117
-Data-Driven Customer Portals,0.0013463782425276007
-Customs Valuation Services,0.0012965123816932453
-Certifications and Compliance Audits,0.0012665928651926317
-Bonded Warehouse Services,0.0012366733486920184
-Return Logistics Solutions,0.0011967806600245339
-Electronic Data Interchange (EDI) Connectivity,0.0011668611435239206
-Customs Duty Payment Portal,0.0011469147991901784
-Smart Container Technology Deployment,0.0010970489383558227
-Customs Classification Consulting,0.0010471830775214673
-Cargo Claims Management Services,0.0010172635610208537
-Integrated Transport Management System,0.0009973172166871116
-Vendor Managed Inventory,0.0009673977001864983
-IoT-Enabled Asset Monitoring,0.0009474513558527561
-Container Handling Training Packages,0.0008975854950184004
-Empty Container Repositioning,0.0008676659785177871
-Mobile Shipment Notification Apps,0.0008477196341840449
-Track-and-Trace APIs,0.0008178001176834315
-Reverse Logistics for Retail,0.0007978537733496894
-Secure Warehousing Solutions,0.0007878806011828182
-Customer Support Packages,0.0007679342568490759
-Remote Container Inspection Services,0.0007479879125153337
-Time-Definite Delivery Solutions,0.0007280415681815914
-eB/L (Electronic Bill of Lading) Services,0.000688148879514107
-Container Depot Management,0.000678175707347236
-Order Management Software Integration,0.0006682025351803648
-Freight Rate Management Software,0.0006582293630134937
-Port Call Optimization Tools,0.0006482561908466226
-Green Shipping Certificates,0.0006382830186797514
-Regulatory Change Alerts,0.0006283098465128804
-Shipment CO2 Footprinting Services,0.0006183366743460092
-Temperature Logger Rentals,0.0006083635021791381
-Hazardous Material Consulting,0.0005983903300122669
-On-Demand Warehousing,0.0005884171578453959
-Shipper Export Declaration Filing,0.0005684708135116536
-Container Cleaning and Maintenance,0.0005584976413447825
-Legal Advisory for Trade,0.0005485244691779114
-Online Booking Support,0.0005285781248441691
-Supply Chain Finance Platform,0.0004886854361766847
-Transport Insurance Brokerage,0.0004787122640098136
-Real-Time Port Congestion Alerts,0.00046873909184294246
+Electricity Supply (Business),0.07347406316478483
+"Broadband Internet (Fiber, Residential)",0.06414662084765178
+Natural Gas Supply (Residential),0.053591883488790716
+Mobile Phone Subscriptions,0.048355424644084447
+"Broadband Internet (Fiber, Business)",0.04491899852724596
+Natural Gas Supply (Business),0.036409752904598275
+TV Subscription Packages (Streaming),0.03338242513500247
+Solar Panel Installations,0.0233186057928326
+District Heating Supply,0.02061855670103093
+Business Connectivity Solutions,0.01947308132875144
+Green Electricity Plans,0.01849124529536901
+Home Energy Management Systems,0.017100310914743906
+Mobile Data Packages,0.01611847488136148
+Smart Home Bundles,0.015136638847979056
+Wireless Router Rental,0.014072983145148096
+Fiber Installation Services,0.013582065128456883
+Remote Work Connectivity Solutions,0.01309114711176567
+Electrical Vehicle Charging Subscriptions,0.012682048764522993
+Electricity for Public Sector,0.011618393061692033
+Energy Efficiency Consulting,0.011209294714449355
+Mobile Device Leasing,0.010718376697758143
+Home Alarm and Security Systems,0.010309278350515465
+Digital TV Channel Add-ons,0.01006381934216986
+Solar Inverter Products,0.009818360333824253
+Business VoIP Services,0.009327442317133042
+Light Commercial Solar Installations,0.00883652430044183
+Home Battery Storage Systems,0.008509245622647685
+Insurance (Energy Equipment),0.008345606283750617
+Business Energy Auditing,0.0076910489281623315
+Smart Plugs and Switches,0.007445589919816725
+Wi-Fi Mesh Extenders,0.0067910325642284415
+Residential EV Charger Sales,0.00662739322533137
+Business Security Solutions,0.0064637538864343
+Home Automation Starter Kits,0.006300114547537229
+Business Mobile Fleet Management,0.006218294878088694
+Electricity Spot Price Contracts,0.006054655539191623
+Digital Parental Control Services,0.0058910162002945516
+Outdoor Security Cameras,0.005727376861397481
+Home Internet Speed Upgrades,0.00556373752250041
+Business Data SIM Cards,0.005400098183603339
+"Mobile Accessories (Cases, Chargers)",0.005236458844706269
+Wholesale Telecom Services,0.005072819505809198
+Smart Door Locks,0.004827360497463591
+Business VPN Services,0.004745540828015055
+Home Streaming Devices,0.004663721158566521
+Solar Panel Maintenance Plans,0.004581901489117985
+Industrial Electricity Supply,0.004336442480772379
+Business Cloud Security Packages,0.004254622811323843
+Green District Heating Plans,0.0041728031418753085
+Solar Panel Leasing,0.0040091638029782365
+Extended Warranty (Electronics),0.003927344133529701
+Home Surveillance Subscriptions,0.00376370479463263
+Business Collaboration Tools,0.0036818851251840946
+Business Energy Storage Sales,0.0036818851251840946
+Mobile Hotspot Devices,0.0036000654557355595
+Premium TV Channel Subscriptions,0.003518245786287024
+Home Network Security Add-ons,0.0034364261168384883
+Outdoor Wi-Fi Solutions,0.003354606447389953
+Smart Radiator Valves,0.003354606447389953
+Electric Vehicle Leasing,0.0032727867779414176
+Self-Service App Premium Features,0.0032727867779414176
+Satellite TV Plans,0.003190967108492882
+Business IT Support,0.003109147439044347
+Small Business Telecom Bundles,0.0030273277695958114
+Mobile Device Recycling,0.0029455081001472758
+Home Energy Monitoring Displays,0.0028636884306987406
+Industrial Fiber Lines,0.002781868761250205
+Premium Mobile Roaming Packages,0.002781868761250205
+Business Data Backup,0.0026182294223531344
+Industrial Gas Supply,0.0026182294223531344
+TV Wall Mounting Services,0.0026182294223531344
+"Smart Sensors (Water, Gas Leakage)",0.002536409752904599
+Home Phone Line Subscriptions,0.002536409752904599
+Remote Heating Control Solutions,0.0024545900834560632
+Business Teleconferencing Packages,0.0024545900834560632
+Business Internet Failover,0.0024545900834560632
+TV Parental Lock Devices,0.0023727704140075277
+Business Smart Metering,0.0022909507445589925
+Solar Water Heater Sales,0.0022909507445589925
+Business Power Load Balancing,0.0022091310751104574
+Electric Scooter Subscriptions,0.0022091310751104574
+"TV Accessories (Cables, Remotes)",0.0022091310751104574
+Home Solar Panel Financing,0.0022091310751104574
+Green Gas Certificates,0.0021273114056619214
+Online Billing Analytics,0.0021273114056619214
+Business IoT Device Management,0.0020454917362133862
+Mobile Parental Control Apps,0.0020454917362133862
+Online Cloud Storage Subscriptions,0.0020454917362133862
+Home EV Charger Installation,0.0020454917362133862
+Business Energy Consumption Dashboards,0.0019636720667648507
+Home Battery Leasing,0.0019636720667648507
+Wi-Fi Antenna Upgrades,0.001881852397316315
+Smart Energy Tariff Switcher,0.001881852397316315
+Mobile Device Buyback Services,0.0018000327278677797
+Emergency Power Generators,0.0018000327278677797
+Home Network Cabling Services,0.0017182130584192442
+Smart Intercom Systems,0.0017182130584192442
+Business Digital Signage Solutions,0.0017182130584192442
+Cloud-Based TV Storage,0.0017182130584192442
+Solar Panel Roof Integration,0.0017182130584192442
+Outdoor Smart Lighting,0.0016363933889707088
+Virtual Landline Numbers,0.0016363933889707088
+Smart Water Metering,0.0016363933889707088
+Business Content Filtering Solutions,0.0015545737195221735
+In-Home Energy Surveys,0.0015545737195221735
+Business Data Analytics Services,0.0015545737195221735
+Home Wi-Fi Mesh System Sales,0.0015545737195221735
+Business Energy Control Apps,0.0014727540500736379
+Mobile Number Porting,0.0014727540500736379
+Digital TV Parental Controls,0.0014727540500736379
+Business Mobile App Licensing,0.0013909343806251025
+TV Program Replay Services,0.0013909343806251025
+Home Portable Air Purifiers,0.0013909343806251025
+Business EV Charging Management,0.0013091147111765672
+Business Multi-site Internet,0.0013091147111765672
+Solar Panel Cleaning Services,0.0013091147111765672
+Business Data Center Services,0.0013091147111765672
+Online Device Replacement Services,0.0012272950417280316
+Home Emergency Light Kits,0.0012272950417280316
+Business Asset Tracking,0.0012272950417280316
+Public Wi-Fi Hotspot Subscriptions,0.0012272950417280316
+Smart Home Integration Services,0.0012272950417280316
+Business Telecom Consulting,0.0012272950417280316
+Home Electronic Locks,0.0012272950417280316
+Mobile Device Setup Services,0.0011454753722794963
+Online Alarm Monitoring,0.0011454753722794963
+Wind Power Purchase Agreements,0.0011454753722794963
+Smart CO2 Sensors,0.0011454753722794963
+Residential Power Outage Insurance,0.0010636557028309607
+Solar Panel Sizing Consultations,0.0010636557028309607
+Business Fiber Speed Upgrades,0.0010636557028309607
+Smart Curtain Controllers,0.0010636557028309607
+Energy Saving Light Bulbs,0.0010636557028309607
+Self-Service Kiosk Solutions,0.0010636557028309607
+Virtual Utility Card Services,0.0009818360333824253
+Home TV Bracket Sales,0.0009818360333824253
+Business Fixed IP Addresses,0.0009818360333824253
+Smart Garage Door Openers,0.0009818360333824253
+Home Wi-Fi Extender Rental,0.0009818360333824253
+Business Device Health Monitoring,0.0009818360333824253
+Recycled Electronics Sales,0.0009818360333824253
+Smart Plug Power Monitors,0.0009000163639338899
+Business Backup Power Services,0.0009000163639338899
+Home Internet Security Software,0.0009000163639338899
+Business Communications Training,0.0009000163639338899
+Smart TV Dongles,0.0009000163639338899
+Business Email Hosting,0.0009000163639338899
+Home Wireless Phone Charging Pads,0.0009000163639338899
+Outdoor Smart Cameras,0.0009000163639338899
+Home Sub-metering Devices,0.0009000163639338899
+Business FWA (Fixed Wireless Access),0.0009000163639338899
+Home EV Charger Leasing,0.0008181966944853544
+Business Bandwidth Optimization,0.0008181966944853544
+Digital Invoice Archiving,0.0008181966944853544
+Smart Fridge Power Meters,0.0008181966944853544
+Business App Integration,0.0008181966944853544
+Solar Powerbank Bundles,0.0008181966944853544
+Smart Light Dimmer Switches,0.0008181966944853544
+Home Tech Recycling Pick-up,0.0008181966944853544
+Business Device Procurement,0.0007363770250368189
+Business Online Fault Reporting,0.0007363770250368189
+Virtual Private Network Endpoints,0.0007363770250368189
+Business Offsite Data Storage,0.0007363770250368189
+Home Smart Mirror Devices,0.0007363770250368189
+Mobile Device Resale Services,0.0007363770250368189
+Energy Contract Termination Services,0.0007363770250368189
+Remote Desktop Support,0.0007363770250368189
+Business Outage Notifications,0.0007363770250368189
+Business Telemetry Solutions,0.0007363770250368189
+Home Power Surge Protectors,0.0007363770250368189
+Smart Circuit Overload Monitors,0.0006545573555882836
+Business Digital Security Auditing,0.0006545573555882836
+Home Wi-Fi Antenna Accessories,0.0006545573555882836
+Business Mobile Device Lifecycle Services,0.0006545573555882836
+Smart Emergency Lighting Kits,0.0006545573555882836
+Business IoT Security Gateways,0.0006545573555882836
+Online Home Energy Calculators,0.0006545573555882836
+Smart TV Remote Controls,0.0006545573555882836
+Business Data Encryption Services,0.0006545573555882836
+Home Solar Array Monitoring,0.0006545573555882836
+Business Telecom Billing Services,0.0006545573555882836
+Business Device Reassignment,0.0006545573555882836
+Industrial TV Packages,0.0006545573555882836
+Smart Key Safe Boxes,0.0006545573555882836
+Business Hardware Leasing,0.0005727376861397481
+Home Device Firmware Updates,0.0005727376861397481
+Smart Smoke Detector Batteries,0.0005727376861397481
+Business Temporary Connectivity,0.0005727376861397481
+Business Analytics Dashboard Licensing,0.0005727376861397481
+Online TV Parental Notifications,0.0005727376861397481
+Business Customer Portal Licenses,0.0005727376861397481
+Solar Mounting Hardware,0.0005727376861397481
+Home Cable Splitters,0.0005727376861397481
+Home TV Streaming Sticks,0.0005727376861397481
+Business Device Onboarding,0.0005727376861397481
+Business Device Connectivity Testing,0.0005727376861397481
+Business Power Quality Monitoring,0.0005727376861397481
+Business Online Payment Gateways,0.0005727376861397481
+Home Surge Protector Installation,0.0005727376861397481
+Business Device Return Logistics,0.0005727376861397481
+Home Smart Light Bulbs,0.0005727376861397481
+Business Real-Time Usage Alerts,0.0005727376861397481
+Business Energy Benchmarking,0.0005727376861397481
+Home TV Wall Bracket Installation,0.0004909180166912127
+Business Device Decommissioning,0.0004909180166912127
+Home Smart Fan Controllers,0.0004909180166912127
+Business Device Localization Services,0.0004909180166912127
+Industrial Wi-Fi Solutions,0.0004909180166912127
+Business TV Licensing Services,0.0004909180166912127
+Business Battery Supply,0.0004909180166912127
+Home Network Adapter Sales,0.0004909180166912127
+Business Telecom Contract Review,0.0004909180166912127
+Business Network Cable Sales,0.0004909180166912127
+Home Power Consumption Sensors,0.0004909180166912127
+Business Customer Support Tickets,0.0004909180166912127
+Home Circuit Breaker Upgrades,0.0004909180166912127
+Business Workflow Automation,0.0004909180166912127
+Business Device Calibration,0.0004909180166912127
+Smart TV Screen Protectors,0.0004909180166912127
+Business IoT Usage Reporting,0.0004909180166912127
+Business Device Health Audits,0.0004909180166912127
+Business Fiber Redundancy Solutions,0.0004909180166912127
+Home Smart Washing Machine Plugs,0.0004909180166912127
+Home Sub-distribution Board Upgrades,0.0004909180166912127
+Business Hardware Procurement,0.0004909180166912127
+Business Customer Identification Services,0.0004909180166912127
+Home Portable Device Charging Stations,0.0004909180166912127
+Business Device Remote Lock,0.0004909180166912127
+Business Device Fleet Analytics,0.0004909180166912127
+Industrial Mobile Data Packages,0.0004909180166912127
+Home Smart Fridge Sensors,0.0004909180166912127
+Business Mobile Device Analytics,0.0004909180166912127
+Industrial Smart Metering,0.0004909180166912127
+Home TV Antenna Installation,0.0004909180166912127
+Business Device Malfunction Diagnostics,0.0004909180166912127
+Home Device Location Beacons,0.0004909180166912127
+Business Telecom Infrastructure Leasing,0.0004909180166912127
+Home Remote Device Management,0.0004909180166912127
+Business Device Usage Optimization,0.0004909180166912127
+Home Network Patch Cable Sales,0.0004909180166912127
