@@ -2,13 +2,15 @@ import pandas as pd
 import utils.prompt_utils as prompt_utils
 import utils.utils as utils
 import generators.random_generators as random_generators
+import numpy as np
 
 
 def generate_procurement_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
 
-    over_request_count = int(count) * 1.4
-    header = "name;proportionality"
+    over_request_count = int(np.floor(int(count) * 1.4))
+
+    header = "name;proportionality;unit_price"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
@@ -21,6 +23,7 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
     - CSV with two columns: name;proportionality
     - `name` = specific purchased item/material (avoid vague terms like "miscellaneous" or "other")
     - `proportionality` = share of total procurement budget
+    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number 
 
     Coverage requirements (all must appear at least once):
     - Raw materials & base components
@@ -53,8 +56,9 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
 def generate_sales_products_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
 
-    over_request_count = int(count * 1.4)
-    header = "name;proportionality"
+    over_request_count = int(np.floor(int(count) * 1.4))
+
+    header = "name;proportionality;unit_price"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
@@ -68,6 +72,7 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
     Each row after the header:
     - `name` = realistic product/SKU category (broad but specific enough for revenue analysis; e.g., "Running Shoes", not "Product A")
     - `proportionality` = share of total sales revenue
+    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number 
 
     Composition rules:
     - Include a mix of high-revenue flagship lines, mid-range products, and low-cost accessories/services.
@@ -92,7 +97,8 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
 def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.9):
     client = prompt_utils.get_openai_client()
 
-    over_request_count = int(count) * 1.4
+    over_request_count = int(np.floor(int(count) * 1.4))
+
     header = "role_name"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
@@ -138,8 +144,9 @@ def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4.
 def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
 
-    over_request_count = int(count) * 1.4
-    header = "name;proportionality"
+    over_request_count = int(np.floor(int(count) * 1.4))
+
+    header = "name;proportionality;unit_price"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
@@ -153,6 +160,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     - Avoid vague terms like "Miscellaneous" or "Various".
     - Include annual/temporal entries such as "Annual IT Audit".
     - `proportionality` = share of total sales revenue
+    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number 
 
     Composition rules:
     - Top ranks: expensive projects, enterprise retainers, major outsourcing contracts.
@@ -176,30 +184,30 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     df_services = utils.convert_column_to_percentage(df_services, "proportionality", scale=1.0)
     return df_services
 
-def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-4.1", temp: float=0.5) -> pd.DataFrame:
+def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-4.1", temp: float=0.8) -> pd.DataFrame:
     client = prompt_utils.get_openai_client()
-    over_request_count = int(count) * 1.4
+    over_request_count = int(np.floor(int(count) * 1.4))
+
     header = "level3;level4;name;account_type"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are a financial accountant and ERP systems expert. Generate a realistic **4-level** Chart of Accounts for {company_name} (Denmark-only, large company).
+    You are a financial accountant and ERP systems expert. Generate a realistic Chart of Accounts for {company_name} (Denmark-only, large company).
 
     Each row describes a **leaf (posting) account** at level4:
-    - level3 = category (e.g., "Cash & Cash Equivalents", "Product COGS", "Service Delivery Costs", "Marketing")
-    - level4 = specific leaf category (e.g., "Raw Materials", "Subcontracted Services", "Cloud Hosting", "Office Rent")
-    - name = the posting account name (concise, no codes)
-    - account_type = one of: "Revenue","Product Expense","Service Expense","Asset","Equity"
-
+    l1_code: General posting codes, i.e. 1000, 2000, 3000, etc 
+    account_type: "Revenue","Product Expense","Service Expense","Asset","Equity". THEY NEED TO MATCH THE BUSINESS CONTEXT.
+    l2_code: More specific posting codes, i.e. 1100, 2100, etc. 
+    l2_name: category (e.g., "Cash & Cash Equivalents", "Product COGS", "Service Delivery Costs", "Marketing")
+    account_id = the posting account id
+    name = the posting account name (concise, no codes)
+    WE NEED MANY COGS. For both products, services.     
     Rules:
     - Ignore payroll accounts.
     - Clearly separate **Product Expense** vs **Service Expense** under Expenses.
     - Include a balanced P&L and Balance Sheet spread (not only P&L).
     - Keep names realistic; avoid vague buckets like "Miscellaneous".
-
-    Context (short year-end report):
-    {ctxb}
 
     {constraints}
     """.strip()
@@ -214,15 +222,17 @@ def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-
     df_accounts["account_id"] = random_generators.generate_account_ids(df_accounts["account_type"])
     return df_accounts
 
-def generate_departments_llm(company_name: str, count: int = 10, model: str = "gpt-4.1", temp: float = 0.5):
+def generate_departments_llm(company_name: str, count: int = 10, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
     header = "name;proportionality"
-    constraints = prompt_utils.get_standard_constraints(header, count)
+    over_request_count = int(np.floor(int(count) * 1.4))
+
+    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
     You are an HR and workforce distribution expert.
-    Generate {count} realistic departments for a Denmark-only, large company like {company_name}, each with a payroll share.
+    Generate {over_request_count} realistic departments for a Denmark-only, large company like {company_name}, each with a payroll share.
 
     STRICT OUTPUT:
     - Fields (header must match exactly): name;proportionality
@@ -242,9 +252,6 @@ def generate_departments_llm(company_name: str, count: int = 10, model: str = "g
     - Sum of proportionality should be approximately 1.0 (±0.01).
     - Allow multiple mid-sized departments; do not make one department dominate unrealistically.
 
-    Context (short year-end report):
-    {ctxb}
-
     {constraints}
     """.strip()
 
@@ -259,22 +266,20 @@ def generate_departments_llm(company_name: str, count: int = 10, model: str = "g
     df_offices = utils.convert_column_to_percentage(df_offices, "proportionality", scale=1.0)
     return df_offices
 
-def generate_customers_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.3):
+def generate_customers_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
+    over_request_count = int(np.floor(int(count) * 1.4))
     header = "name;customer_segment;proportionality"
-    constraints = prompt_utils.get_standard_constraints(header, count)
-    ctxb = prompt_utils._ctx_block(company_name)
+    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
 
     prompt = f"""
-    You are a B2B sales/marketing expert. Generate {count} realistic customers for {company_name}.
+    You are a B2B sales/marketing expert. Generate {over_request_count} realistic customers for {company_name}.
     Fields:
     - name
     - customer_segment: Enterprise, SME, Government, Non-profit, Retail, Wholesale, Startup
-    - proportionality: decimal revenue share (sums ~1.0)
+    - proportionality: the proportionality of this customer 
     Reflect size/segment mix implied by the context.
 
-    For context, here is a short version of the lastest year-end report for {company_name}: 
-    {ctxb}
 
     {constraints}
     """.strip()
@@ -290,22 +295,20 @@ def generate_customers_llm(company_name: str, count: int = 100, model: str = "gp
     df_customers = utils.convert_column_to_percentage(df_customers, "proportionality", scale=1.0)
     return df_customers
 
-def generate_vendors_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.3):
+def generate_vendors_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
+    over_request_count = int(np.floor(int(count) * 1.4))
     header = "name;vendor_type;proportionality"
-    constraints = prompt_utils.get_standard_constraints(header, count)
+    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-    You are a B2B procurement and supply chain expert. Generate {count} realistic vendors for {company_name}.
+    You are a B2B procurement and supply chain expert. Generate {over_request_count} realistic vendors for {company_name}.
     Fields:
     - name
     - vendor_type: Raw Materials, Equipment, IT Services, Logistics, Facilities, Office Supplies, Contract Labor, Consulting
-    - proportionality: decimal spend share (sums ~1.0)
+    - proportionality: the proportionality of this vendor.
     Bias critical categories and concentration based on the context.
-
-    For context, here is a short version of the lastest year-end report for {company_name}: 
-    {ctxb}
 
     {constraints}
     """.strip()

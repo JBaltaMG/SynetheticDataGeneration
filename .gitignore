@@ -16,7 +16,7 @@ data/inputdata/line_id_accounts.csv
 .ipynb_checkpoints/
 
 # Optional: ignore any generated data in general
-data/outputdata/**
+data/**
 
 # Optional: ignore any temporary files
 *.tmp
