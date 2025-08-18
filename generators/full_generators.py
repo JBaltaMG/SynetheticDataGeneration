@@ -1,7 +1,10 @@
 import pandas as pd 
 import os
 import numpy as np
+import json
+from pathlib import Path
 import utils.utils as utils
+import utils.utils_llm as utils_llm
 import generators.random_generators as random_generators
 import generators.llm_generators as llm_generators
 import modeling.payroll as payroll
@@ -9,6 +12,20 @@ import modeling.erp as erp
 import modeling.mapping as mapping
 from generators.llm_context_generators import generate_context_numbers_llm, generate_context_report, generate_year_end_report_from_pdf
 from typing import Dict, List, Tuple
+
+def read_cached_context_report(company_name: str) -> dict:
+    """
+    Read cached context report from JSON file.
+    Returns the parsed JSON dict or None on missing/parse error.
+    """
+    try:
+        context_path = Path(f"data/inputdata/reports/generated/{company_name}_context.json")
+        if context_path.exists():
+            with open(context_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+    except:
+        pass
+    return None
 
 def create_company_data(company_name: str, save_to_csv: bool = True) -> dict:
     """
@@ -23,8 +40,14 @@ def create_company_data(company_name: str, save_to_csv: bool = True) -> dict:
         generate_context_report(company_name=company_name)
     else:
         print(f"Using existing context report for {company_name}.")
-        
-    data_context = generate_context_numbers_llm(company_name=company_name)
+    
+    # Check for cached context data first
+    #data_context = read_cached_context_report(company_name)
+    #if data_context is None:
+        #print(f"No cached context found. Generating context numbers with LLM...")
+        data_context = generate_context_numbers_llm(company_name=company_name)
+    #else:
+    #    print(f"Using cached context data for {company_name}.")
     
     # Unpack the context data:
     (count_employee, count_product, count_department, count_procurement,
@@ -412,7 +435,8 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     df_departments["annual_spend"] = np.round(
         estimated_financials["estimated_payroll"] * df_departments["proportionality"], -3
     )
-
+    print("\n * Semantic mapping started * :")
+    print("Time estimate: 3-5 minutes")
     df_erp_expenses, df_map_expenses = mapping.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers, df_vendors=df_vendors)
     df_erp_products, df_map_products = mapping.map_products(df_products=df_products, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers, df_vendors=df_vendors)
 
@@ -421,6 +445,7 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     if save_to_csv:
         output_dir = f"data/outputdata/mapping"
         os.makedirs(output_dir, exist_ok=True)
+        df_erp_expenses.to_csv(f"{output_dir}/erp_expenses_test.csv", index=False)
         df_map_expenses.to_csv(f"{output_dir}/map_expenses.csv", index=False)
         df_map_products.to_csv(f"{output_dir}/map_products.csv", index=False)
         print(f"✔ All mapping CSVs saved to: {output_dir}")
@@ -464,6 +489,7 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         'type': 'debit_credit', 
         'date': 'date',
         'amount_dkk': 'amount',
+        'quantity': 'quantity',
         'account_name': 'account_id',
         'product_id': 'product_id',
         'procurement_id': 'procurement_id',

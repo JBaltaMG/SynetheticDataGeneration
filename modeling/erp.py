@@ -97,6 +97,7 @@ def pre_split_spend_lines(
                 "account_id": map_row["account_id"],
                 "account_name": map_row["account_name"],
                 "item_name": item_name,
+                "unit_price": map_row["unit_price"],
                 "source_type": source_type,
                 "product_id": product_id,
                 "procurement_id": procurement_id,
@@ -142,9 +143,10 @@ def create_erp_data(
     exchange_rate = 7.45
     df["amount_eur"] = (df["amount"] / exchange_rate).round(2)
     df.rename(columns={"amount": "amount_dkk"}, inplace=True)
+    #df['quantity'] = np.floor(df['unit_price'] / df['amount_dkk']) 
 
     # Final output columns
-    cols = ['document_number', 'date', 'currency', 'amount_dkk', 'amount_eur', 'type',
+    cols = ['document_number', 'date', 'currency', 'amount_dkk', 'quantity', 'type',
             'account_id', 'account_name', 'product_id', 'procurement_id', 'service_id']
 
     if "department_name" in df.columns:
@@ -159,66 +161,96 @@ def create_erp_data(
 def balance_documents_with_assets(
     df_erp: pd.DataFrame,
     df_accounts: pd.DataFrame,
-    tolerance: float = 100
+    tolerance: float = 100.0,
+    min_corrections: int = 4,
+    max_corrections: int = 20,
+    rng: np.random.RandomState | None = None,
 ) -> pd.DataFrame:
     """
     Balances each document_number so its amount sums to 0,
-    using exactly 3 'Debit' lines from accounts with account_type == 'Asset'.
+    using a random number (4..20 by default) of 'Debit' correction lines
+    drawn from Asset accounts.
 
     Args:
-        df_erp: ERP journal data
-        df_accounts: Dimension table with 'account_id', 'account_type'
-        tolerance: Allowable imbalance without correction
+        df_erp: ERP journal data (must have: document_number, amount, date)
+        df_accounts: Dim table with at least ['account_id','account_type'] (Asset accounts used)
+        tolerance: allowable absolute imbalance without correction (in posting currency units)
+        min_corrections: minimum number of correction lines per imbalanced document
+        max_corrections: maximum number of correction lines per imbalanced document
+        rng: optional np.random.RandomState for reproducibility
 
     Returns:
         Balanced ERP DataFrame
     """
+    if rng is None:
+        rng = np.random.RandomState()
+
     df = df_erp.copy()
     asset_accounts = df_accounts[df_accounts["account_type"] == "Asset"]
+    if asset_accounts.empty:
+        # nothing to correct with
+        return df
 
     correction_rows = []
 
     for doc_id, group in df.groupby("document_number"):
-        imbalance = round(group["amount"].sum(), 2)
+        imbalance = round(float(group["amount"].sum()), 2)  # + => too much debit, - => too much credit
+        if abs(imbalance) <= tolerance:
+            continue
 
-        if abs(imbalance) > tolerance:
-            sample_row = group.sample(1).iloc[0]
-            correction_sign = -1 if imbalance > 0 else 1
-            total_correction = abs(imbalance)
+        # Sample a representative row for metadata propagation
+        sample_row = group.sample(1, random_state=rng).iloc[0]
 
-            # Split into exactly 3 chunks
-            weights = np.random.dirichlet([1, 1, 1])
-            chunk_values = np.round(weights * total_correction, 2)
+        # Sign we need to apply to each chunk to offset the imbalance
+        # If imbalance > 0 (too much debit), we need negative correction; else positive.
+        correction_sign = -1 if imbalance > 0 else 1
+        total_correction = abs(imbalance)
 
-            # Adjust the final value to ensure exact balancing
-            chunk_values[-1] = round(total_correction - chunk_values[:-1].sum(), 2)
+        # Random number of correction lines between 4 and 20
+        n_chunks = int(rng.randint(min_corrections, max_corrections + 1))
 
-            for amt in chunk_values:
-                asset_row = asset_accounts.sample(1).iloc[0]
-                signed_amt = correction_sign * amt
+        # Split into n_chunks using Dirichlet; round to cents; fix last for exact sum
+        weights = rng.dirichlet([1.0] * n_chunks)
+        raw = weights * total_correction
 
-                correction_entry = {
-                    "document_number": doc_id,
-                    "debit_credit": "Debit",
-                    "date": sample_row["date"],
-                    "amount": signed_amt,
-                    "account_id": asset_row["name"],
-                    "product_id": None,
-                    "procurement_id": None,
-                    "service_id": None,
-                }
+        # round to cents
+        chunk_values = np.round(raw, 2)
 
-                if "department_name" in sample_row:
-                    correction_entry["department_name"] = sample_row["department_name"]
-                if "customer_name" in sample_row:
-                    correction_entry["customer_name"] = sample_row["customer_name"]
-                if "vendor_name" in sample_row:
-                    correction_entry["vendor_name"] = sample_row["vendor_name"]
+        # Adjust last chunk to hit exact total (avoid rounding drift)
+        drift = round(total_correction - float(chunk_values[:-1].sum()), 2)
+        chunk_values[-1] = drift
 
-                correction_rows.append(correction_entry)
+        # Guard: if rounding made any zero chunks and you dislike that, jitter them slightly
+        # (optional; commented out)
+        # for i, v in enumerate(chunk_values):
+        #     if v == 0 and total_correction >= 0.01:
+        #         chunk_values[i] = 0.01
+        # # re-fix last
+        # chunk_values[-1] = round(total_correction - float(chunk_values[:-1].sum()), 2)
+
+        for amt in chunk_values:
+            asset_row = asset_accounts.sample(1, random_state=rng).iloc[0]
+            signed_amt = correction_sign * float(amt)
+
+            entry = {
+                "document_number": doc_id,
+                "debit_credit": "Debit",  # keep your original label choice
+                "date": sample_row["date"],
+                "amount": signed_amt,     # sign carries the balancing direction
+                "account_id": asset_row["account_id"],  # <- fixed from ["name"]
+                "product_id": None,
+                "procurement_id": None,
+                "service_id": None,
+            }
+
+            # copy context fields if present
+            for col in ("department_name", "customer_name", "vendor_name"):
+                if col in sample_row.index:
+                    entry[col] = sample_row[col]
+
+            correction_rows.append(entry)
 
     if correction_rows:
         df = pd.concat([df, pd.DataFrame(correction_rows)], ignore_index=True)
 
     return df
-

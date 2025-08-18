@@ -128,7 +128,7 @@ def create_mapping_from_metadata(
     Returns a DataFrame with one row per (item, account_id, Department) combination.
     """
     mappings = []
-
+    
     if name_column == "product_name":
         expense_accounts = df_accounts[df_accounts["account_type"] == "Revenue"]
     elif name_column == "service_name":
@@ -165,6 +165,7 @@ def create_mapping_from_metadata(
             mappings.append(mapping)
 
     return pd.DataFrame(mappings)
+ 
 
 def assign_departments(df_pay: pd.DataFrame, df_departments: pd.DataFrame) -> pd.DataFrame:
     """
