@@ -1,0 +1,221 @@
+item_name,account_id,account_name,vendor_name
+Electronic sensors,40614,COGS - Spare Parts,Siemens AG Digital Industries
+Polyethylene resin,45650,COGS - Plastic Granules,SABIC Europe
+POM (polyoxymethylene) resin,45650,COGS - Plastic Granules,SABIC Europe
+Color masterbatches,45650,COGS - Plastic Granules,Polykemi AB
+Electric motors (miniature),40614,COGS - Spare Parts,Festo AG & Co
+Polycarbonate resin,45650,COGS - Plastic Granules,SABIC Europe
+Automated assembly line components,40614,COGS - Spare Parts,Arburg GmbH
+ABS plastic resin,45650,COGS - Plastic Granules,SABIC Europe
+Robotic arms,40614,COGS - Spare Parts,Arburg GmbH
+Injection molding machines,49897,COGS - Factory Maintenance,Arburg GmbH
+Polypropylene resin,45650,COGS - Plastic Granules,SABIC Europe
+Printing inks (toys-grade),47965,COGS - Packaging Materials,Songwon Industrial
+LEGO sticker sheets,47965,COGS - Packaging Materials,Plastcom A/S
+Pneumatic components,40614,COGS - Spare Parts,Festo AG & Co
+TPE (thermoplastic elastomer),45650,COGS - Plastic Granules,SABIC Europe
+Industrial adhesives,49897,COGS - Factory Maintenance,Songwon Industrial
+Warehouse shelving systems,49897,COGS - Factory Maintenance,Beumer Group
+Shrink wrap film,47965,COGS - Packaging Materials,SABIC Europe
+Pallets (plastic),47965,COGS - Packaging Materials,Plastcom A/S
+Metal pins (for hinges),40614,COGS - Spare Parts,Lemvigh-Müller
+Copper wiring,45650,COGS - Plastic Granules,SABIC Europe
+Silicone rubber molds,45650,COGS - Plastic Granules,Elkem ASA
+Cooling water treatment chemicals,47094,COGS - Direct Utilities,Domo Chemicals
+Steel structural beams,45650,COGS - Plastic Granules,Lemvigh-Müller
+Pneumatic tubing,40614,COGS - Spare Parts,Festo AG & Co
+LED lights (accessory parts),40614,COGS - Spare Parts,Plastcom A/S
+Small gear sets,43698,COGS - LEGO Sets Production Billund,SABIC Europe
+Plastic pellets (general),45650,COGS - Plastic Granules,SABIC Europe
+Lego minifigure heads (blanks),40210,COGS - LEGO Bricklink Inventory,SABIC Europe
+Barcode scanners,40614,COGS - Spare Parts,Brother Nordic
+High-pressure air compressors,49897,COGS - Factory Maintenance,Arburg GmbH
+Custom printed bags,47965,COGS - Packaging Materials,Lyreco Denmark
+Ejector pins for molds,40614,COGS - Spare Parts,Arburg GmbH
+Plastic crates,47965,COGS - Packaging Materials,SABIC Europe
+Workstation computers,45650,COGS - Plastic Granules,SABIC Europe
+IT servers,45650,COGS - Plastic Granules,Microsoft Cloud Services
+Paint solvents,45650,COGS - Plastic Granules,SABIC Europe
+Resin colorant additives,45650,COGS - Plastic Granules,Songwon Industrial
+Uniforms (production floor),49897,COGS - Factory Maintenance,ISS Facility Services
+Maintenance lubricants,49897,COGS - Factory Maintenance,ISS Facility Services
+Industrial cleaning agents,49897,COGS - Factory Maintenance,ISS Facility Services
+Automated guided vehicles (AGV),49897,COGS - Factory Maintenance,Beumer Group
+Forklifts,40614,COGS - Spare Parts,Lemvigh-Müller
+Mold temperature controllers,49897,COGS - Factory Maintenance,Arburg GmbH
+Protective eyewear,40614,COGS - Spare Parts,SABIC Europe
+Pallet jacks,49897,COGS - Factory Maintenance,ISS Facility Services
+Pressure sensors,40614,COGS - Spare Parts,Lemvigh-Müller
+Circuit boards (for electronics sets),43698,COGS - LEGO Sets Production Billund,Siemens AG Digital Industries
+Fire suppression systems,49897,COGS - Factory Maintenance,Siemens Building Technologies
+Vacuum pumps,49897,COGS - Factory Maintenance,ISS Facility Services
+Loading dock doors,49897,COGS - Factory Maintenance,ISS Facility Services
+Waste separation bins,49897,COGS - Factory Maintenance,ISS Facility Services
+Network routers,45650,COGS - Plastic Granules,SABIC Europe
+Safety shoes,49897,COGS - Factory Maintenance,Lyreco Denmark
+Pneumatic valves,40614,COGS - Spare Parts,Festo AG & Co
+Detergent concentrates,45650,COGS - Plastic Granules,SABIC Europe
+First aid kits,40614,COGS - Spare Parts,Lyreco Denmark
+Battery packs,40614,COGS - Spare Parts,Elkem ASA
+Thermal labels (warehouse),47965,COGS - Packaging Materials,Brother Nordic
+RFID tags,40614,COGS - Spare Parts,Plastcom A/S
+Static mixers,40614,COGS - Spare Parts,Lemvigh-Müller
+Spill absorbent granules,45650,COGS - Plastic Granules,SABIC Europe
+Spare nozzles (molding),40614,COGS - Spare Parts,Arburg GmbH
+Digital calipers,45458,COGS - Quality Control,Siemens AG Digital Industries
+Temperature data loggers,45458,COGS - Quality Control,Teknologisk Institut
+Outdoor signage,45650,COGS - Plastic Granules,SABIC Europe
+Logistics software licenses,43172,COGS - Distribution Outbound Freight,Yusen Logistics
+Label printers,49897,COGS - Factory Maintenance,Brother Nordic
+Mobile hand scanners,40614,COGS - Spare Parts,Brother Nordic
+CCTV cameras,49897,COGS - Factory Maintenance,Siemens Building Technologies
+Wireless access points,49897,COGS - Factory Maintenance,Siemens Building Technologies
+Hazard waste containers,49897,COGS - Factory Maintenance,ISS Facility Services
+Printer toner cartridges,40614,COGS - Spare Parts,Brother Nordic
+Lockout-tagout kits,49897,COGS - Factory Maintenance,Lemvigh-Müller
+Hand trucks,49897,COGS - Factory Maintenance,ISS Facility Services
+Pallet straps,47965,COGS - Packaging Materials,Lyreco Denmark
+Battery chargers,40614,COGS - Spare Parts,Lemvigh-Müller
+HVAC filters,49897,COGS - Factory Maintenance,Siemens Building Technologies
+Heat exchangers (small),49897,COGS - Factory Maintenance,Siemens Building Technologies
+Keyboards (admin),45650,COGS - Plastic Granules,SABIC Europe
+Monitors (admin),45650,COGS - Plastic Granules,SABIC Europe
+Office desks,45650,COGS - Plastic Granules,SABIC Europe
+Office chairs,45650,COGS - Plastic Granules,SABIC Europe
+Conference room projectors,49897,COGS - Factory Maintenance,Siemens Building Technologies
+Breakroom refrigerators,49897,COGS - Factory Maintenance,ISS Facility Services
+Telephones (desk),45650,COGS - Plastic Granules,SABIC Europe
+Coffee machines,49897,COGS - Factory Maintenance,ISS Facility Services
+Copy paper (A4),47965,COGS - Packaging Materials,Lyreco Denmark
+Staplers,47965,COGS - Packaging Materials,Staples Solutions
+LED ceiling lights,43698,COGS - LEGO Sets Production Billund,Siemens Building Technologies
+Staple refills,40614,COGS - Spare Parts,Staples Solutions
+Ethernet cables,40614,COGS - Spare Parts,Lemvigh-Müller
+Notepads,47965,COGS - Packaging Materials,Lyreco Denmark
+Paper clips,47965,COGS - Packaging Materials,Lyreco Denmark
+Post-it notes,47965,COGS - Packaging Materials,Staples Solutions
+Desktop fans,40614,COGS - Spare Parts,Brother Nordic
+Document shredders,49897,COGS - Factory Maintenance,ISS Facility Services
+USB flash drives,40614,COGS - Spare Parts,Lyreco Denmark
+Desk lamps,45650,COGS - Plastic Granules,SABIC Europe
+Inkjet printer cartridges,40614,COGS - Spare Parts,Brother Nordic
+Ergonomic mouse,40614,COGS - Spare Parts,Polykemi AB
+Laser printer paper,47965,COGS - Packaging Materials,Lyreco Denmark
+Calculator (basic),40614,COGS - Spare Parts,Brother Nordic
+Binders (A4),47965,COGS - Packaging Materials,Staples Solutions
+Permanent markers,47965,COGS - Packaging Materials,Lyreco Denmark
+Whiteboard erasers,40614,COGS - Spare Parts,Lyreco Denmark
+Toner waste bins,40614,COGS - Spare Parts,Brother Nordic
+Hand soap (dispenser refill),49897,COGS - Factory Maintenance,Lyreco Denmark
+USB extension cables,40614,COGS - Spare Parts,Plastcom A/S
+Whiteboard markers,47965,COGS - Packaging Materials,Lyreco Denmark
+Toilet paper,49897,COGS - Factory Maintenance,Lyreco Denmark
+Cleaning cloths (office),49897,COGS - Factory Maintenance,ISS Facility Services
+Disinfectant wipes,49897,COGS - Factory Maintenance,ISS Facility Services
+Window cleaner (office),49897,COGS - Factory Maintenance,ISS Facility Services
+Batteries (AA),40614,COGS - Spare Parts,Lyreco Denmark
+Batteries (AAA),40614,COGS - Spare Parts,Lyreco Denmark
+Office waste bags,47965,COGS - Packaging Materials,Lyreco Denmark
+Visitor badges,45650,COGS - Plastic Granules,SABIC Europe
+Desk trays,47965,COGS - Packaging Materials,Staples Solutions
+Laminating pouches,47965,COGS - Packaging Materials,SABIC Europe
+Facility Management Outsourcing,58067,Service Delivery Utilities,ISS Facility Services
+Global Marketing Agency Retainer,52395,Marketing - Advertising Denmark,Accenture Denmark
+Product Design Consultancy,59637,Consultancy & Advisory Fees,EY Advisory
+Cloud Hosting Enterprise Agreement,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+SAP Maintenance Agreement,58705,IT Licenses & Subscriptions,SAP SE
+Annual Software Development Project,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+3PL Warehousing Services,56405,Direct Service Expense - LEGOLAND Billund,DHL Supply Chain
+IT Infrastructure Managed Services,58705,IT Licenses & Subscriptions,Atea Danmark
+Enterprise Cybersecurity Service,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Global HR Payroll Outsourcing,59637,Consultancy & Advisory Fees,EY Advisory
+Digital Transformation Consultancy,59637,Consultancy & Advisory Fees,EY Advisory
+Regional Distribution Contract,56405,Direct Service Expense - LEGOLAND Billund,PostNord Denmark
+Global Legal Advisory Retainer,54032,Legal Fees,EY Advisory
+R&D Innovation Consortium Fee,59637,Consultancy & Advisory Fees,EY Advisory
+Centralized Procurement Service,52641,Service Materials & Supplies,Lyreco Denmark
+Annual IT Audit,59637,Consultancy & Advisory Fees,EY Advisory
+Enterprise Backup Services,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Enterprise Data Analytics Platform,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Sustainability Reporting Service,59637,Consultancy & Advisory Fees,EY Advisory
+Business Intelligence Reporting,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Annual ISO 9001 Certification Fee,59637,Consultancy & Advisory Fees,Teknologisk Institut
+Annual GDPR Compliance Audit,59637,Consultancy & Advisory Fees,EY Advisory
+Market Research Subscription,59637,Consultancy & Advisory Fees,EY Advisory
+Corporate Social Responsibility Consultancy,59637,Consultancy & Advisory Fees,EY Advisory
+Centralized Document Archiving Service,58705,IT Licenses & Subscriptions,KMD A/S
+Server Maintenance Contract,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Environmental Impact Assessment,59637,Consultancy & Advisory Fees,EY Advisory
+Brand Licensing Fees,59637,Consultancy & Advisory Fees,EY Advisory
+Annual Patent Maintenance Fee,54032,Legal Fees,SABIC Europe
+IT Helpdesk Outsourcing,59637,Consultancy & Advisory Fees,ProData Consult
+Premium Office Cleaning Service,56405,Direct Service Expense - LEGOLAND Billund,ISS Facility Services
+Global Supply Chain Risk Assessment,59637,Consultancy & Advisory Fees,EY Advisory
+Energy Consumption Audit,58067,Service Delivery Utilities,Siemens Building Technologies
+CCTV Monitoring Contract,58067,Service Delivery Utilities,Siemens Building Technologies
+Building Security Service,58067,Service Delivery Utilities,Siemens Building Technologies
+Workplace Ergonomics Assessment,59637,Consultancy & Advisory Fees,EY Advisory
+Annual Fire Safety Inspection,58067,Service Delivery Utilities,Siemens Building Technologies
+Digital Subscription Platform License,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Annual Technical Translation Service,59637,Consultancy & Advisory Fees,Teknologisk Institut
+Annual Data Privacy Training,59637,Consultancy & Advisory Fees,EY Advisory
+General Legal Due Diligence,54032,Legal Fees,SABIC Europe
+Software License Management Service,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Annual Industry Association Dues,59637,Consultancy & Advisory Fees,EY Advisory
+Annual VAT Compliance Service,59637,Consultancy & Advisory Fees,EY Advisory
+Outplacement Support Service,59637,Consultancy & Advisory Fees,Randstad Denmark
+SaaS Contract Management Platform,58705,IT Licenses & Subscriptions,SAP SE
+Employee Wellness Software License,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Corporate Banking Service Fee,59637,Consultancy & Advisory Fees,EY Advisory
+Diversity & Inclusion Training Program,52956,Event & Program Costs,Randstad Denmark
+Trade Mark Registration Fee,54032,Legal Fees,Teknologisk Institut
+Annual Export License Fee,54032,Legal Fees,SABIC Europe
+Annual Employee Satisfaction Survey,59637,Consultancy & Advisory Fees,EY Advisory
+Professional Membership Dues,59637,Consultancy & Advisory Fees,EY Advisory
+Annual Conference Sponsorship,55021,Donations & Sponsorships,Covestro AG
+Annual External Pension Adviser Fee,59637,Consultancy & Advisory Fees,EY Advisory
+Annual Emissions Reporting Fee,59637,Consultancy & Advisory Fees,EY Advisory
+Annual Laboratory Accreditation Fee,59637,Consultancy & Advisory Fees,EY Advisory
+Public Relations Agency Retainer,59637,Consultancy & Advisory Fees,EY Advisory
+Enterprise Antivirus License,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Annual Forklift Inspection Fee,52641,Service Materials & Supplies,ISS Facility Services
+Annual Staff Uniform Procurement,52641,Service Materials & Supplies,Lyreco Denmark
+Annual Cafeteria Service Provider,56405,Direct Service Expense - LEGOLAND Billund,Sodexo Denmark
+Annual Visitor Management License,58705,IT Licenses & Subscriptions,KMD A/S
+Annual Access Control Maintenance,58067,Service Delivery Utilities,Siemens Building Technologies
+Annual Printing Services Agreement,52641,Service Materials & Supplies,Brother Nordic
+Annual Employee Benefit Platform,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Annual Meeting Room Booking License,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Annual Telephone System License,58705,IT Licenses & Subscriptions,KMD A/S
+Annual CRM Plugin License,58705,IT Licenses & Subscriptions,SAP SE
+Annual Photocopier Lease,58067,Service Delivery Utilities,Ricoh Denmark
+Annual Parking Lot Maintenance,58067,Service Delivery Utilities,ISS Facility Services
+Annual HR Analytics Software License,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Annual Web Domain Renewal,58705,IT Licenses & Subscriptions,Microsoft Cloud Services
+Annual Facility Access Permit,58067,Service Delivery Utilities,ISS Facility Services
+Annual Fire Extinguisher Inspection,58067,Service Delivery Utilities,Bravida Danmark
+Annual Municipal Waste Fee,58067,Service Delivery Utilities,KMD A/S
+Annual Postage Meter License,58067,Service Delivery Utilities,SABIC Europe
+Annual Document Shredding Service,52641,Service Materials & Supplies,ISS Facility Services
+Annual Business Registration Fee,54032,Legal Fees,SABIC Europe
+Annual Staff Shuttle Service,56405,Direct Service Expense - LEGOLAND Billund,PostNord Denmark
+Annual HR Hotline Subscription,59637,Consultancy & Advisory Fees,EY Advisory
+Annual Water Dispenser Rental,58067,Service Delivery Utilities,ISS Facility Services
+Annual Site Visitor Insurance Fee,58630,Insurance Expense,Elkem ASA
+Annual Cafeteria POS System License,58705,IT Licenses & Subscriptions,KMD A/S
+Annual HR System User Fee,58705,IT Licenses & Subscriptions,KMD A/S
+Annual IT Asset Tagging Fee,58705,IT Licenses & Subscriptions,Atea Danmark
+Annual Kitchen Hygiene Inspection,56405,Direct Service Expense - LEGOLAND Billund,ISS Facility Services
+Annual Facility Map Update,56405,Direct Service Expense - LEGOLAND Billund,ISS Facility Services
+Annual Payroll Data Backup,58705,IT Licenses & Subscriptions,KMD A/S
+Annual Digital Signature Certificate,58705,IT Licenses & Subscriptions,KMD A/S
+Annual Air Quality Monitoring Fee,58067,Service Delivery Utilities,Teknologisk Institut
+Annual HRIS Plugin License,58705,IT Licenses & Subscriptions,KMD A/S
+Annual Backup Generator Testing,58067,Service Delivery Utilities,Siemens Building Technologies
+Annual Time Attendance System Fee,58705,IT Licenses & Subscriptions,KMD A/S
+Annual Cafeteria Hygiene Permit,58067,Service Delivery Utilities,Sodexo Denmark
+Annual Utility Meter Calibration,58067,Service Delivery Utilities,Siemens Building Technologies
+Annual Staff Locker Maintenance,52641,Service Materials & Supplies,ISS Facility Services
+Annual First Aid Training,56405,Direct Service Expense - LEGOLAND Billund,Teknologisk Institut
+Annual Office Recycling Fee,58067,Service Delivery Utilities,ISS Facility Services
+Annual CCTV Camera License,58705,IT Licenses & Subscriptions,Siemens Building Technologies
