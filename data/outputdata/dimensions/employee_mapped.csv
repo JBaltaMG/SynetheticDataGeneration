@@ -1,0 +1,51 @@
+role_name,monthly_pay,first_name,last_name,employee_id,department_id
+Chief Executive Officer,195000.0,Steen,Ahlgren,700,222
+Chief Financial Officer,172500.0,Johnny,Thomassen,578,225
+Chief Operations Officer,168100.0,Johnny,Præst,789,226
+Chief Human Resources Officer,163900.0,Charlotte,Bruun,131,222
+Senior Vice President of Global Operations,136300.0,Bo,Falk,717,228
+Senior Vice President of Finance,122700.0,Anja,Dahl,787,227
+Senior Vice President of Sales,119700.0,Mette,Sørensen,652,221
+Senior Vice President of Human Resources,118100.0,Diana,Lykke,935,224
+Vice President of Supply Chain Management,113400.0,Katrine,Damgaard,176,221
+Vice President of Information Technology,108200.0,Esben,Krøyer,513,228
+Vice President of Marketing,106000.0,Annette,Skov,683,224
+Vice President of Legal Affairs,100300.0,Michael,Gertz,170,227
+Vice President of Corporate Strategy,98900.0,Bo,Bjerre,888,221
+Vice President of Customer Service,97600.0,Rikke,Mark,201,229
+Director of Global Logistics,94500.0,Heidi,Just,720,229
+Director of Financial Planning and Analysis,93100.0,Niels,Enevoldsen,752,225
+Director of Human Resources,92600.0,Louise,Bang,730,222
+Director of Information Security,91500.0,Gitte,Greve,399,223
+Director of Sales,89100.0,Nina,Skytte,793,222
+Director of Marketing,87300.0,Martin,Kaas,547,230
+Director of Operations,84200.0,Carsten,Riis,196,221
+Director of Procurement,80400.0,Lene,Vest,287,226
+Director of Compliance,79600.0,Signe,Nørskov,360,230
+Senior Manager of Logistics,76500.0,Steen,Kolding,450,226
+Senior Manager of Finance,76300.0,Vibeke,Justesen,629,221
+Senior Manager of IT Infrastructure,76300.0,Henrik,Kristensen,795,225
+Senior Manager of Sales,74300.0,Frederik,Nygaard,461,228
+Senior Manager of Marketing,74000.0,Christian,Toft,953,223
+Senior Manager of Operations,68900.0,Lotte,Bjørn,985,225
+Senior Manager of Customer Service,68800.0,Mia,Svenningsen,590,222
+Human Resources Business Partner,68700.0,Vibeke,Daugaard,821,222
+Sales Manager,68600.0,Lars,Kaspersen,794,224
+Marketing Manager,66300.0,Tobias,Nørgaard,187,221
+Operations Manager,65800.0,Mette,Skaarup,618,224
+Procurement Manager,64700.0,Charlotte,Bæk,891,227
+Customer Service Manager,64600.0,Rikke,Bredal,841,223
+Logistics Coordinator,61300.0,Thomas,Pedersen,313,221
+Accountant,56300.0,Anne,Malling,690,228
+IT Support Specialist,53700.0,Morten,Dalgaard,465,223
+Human Resources Coordinator,52600.0,Daniel,Madsen,299,226
+Sales Representative,50500.0,Charlotte,Dalsgaard,855,225
+Marketing Specialist,48900.0,Anne,Hjulmand,729,222
+Operations Coordinator,46600.0,Kristoffer,Mejlvang,929,226
+Procurement Specialist,44900.0,Jakob,Bro,452,227
+Logistics Specialist,44600.0,Thomas,Damm,429,222
+Administrative Assistant,43600.0,Annette,Rosted,579,221
+Data Analyst,39000.0,Mads,Westermann,992,225
+Junior Accountant,38300.0,Rikke,Larsen,344,223
+IT Technician,35800.0,Louise,Hansen,386,227
+Marketing Assistant,35100.0,Steen,Brink,389,221

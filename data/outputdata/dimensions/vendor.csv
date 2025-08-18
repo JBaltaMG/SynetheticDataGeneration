@@ -1,0 +1,61 @@
+vendor_id,name,vendor_type,proportionality
+20,BASF Plastics Europe,Raw Materials,0.12614678899082568
+21,SABIC Polymers,Raw Materials,0.09747706422018348
+22,INEOS Styrolution,Raw Materials,0.07110091743119265
+23,Clariant Masterbatches,Raw Materials,0.04587155963302752
+24,Solvay Chemicals,Raw Materials,0.025229357798165132
+25,Evonik Additives,Raw Materials,0.024082568807339447
+26,DSM Engineering Materials,Raw Materials,0.02293577981651376
+27,DHL Supply Chain,Logistics,0.05160550458715595
+28,Maersk Line,Logistics,0.030963302752293573
+29,DB Schenker,Logistics,0.02178899082568807
+30,Yusen Logistics,Logistics,0.013761467889908256
+31,Arburg Injection Molding,Equipment,0.03669724770642201
+32,ENGEL Austria,Equipment,0.029816513761467885
+33,Sumitomo (SHI) Demag,Equipment,0.024082568807339447
+34,KraussMaffei Group,Equipment,0.01720183486238532
+35,Netstal Machinery,Equipment,0.014908256880733942
+36,Motan-Colortronic,Equipment,0.01032110091743119
+37,Siemens Industrial Automation,Equipment,0.009174311926605503
+38,Accenture Digital,IT Services,0.013761467889908256
+39,Capgemini Consulting,IT Services,0.012614678899082566
+40,Tata Consultancy Services,IT Services,0.009174311926605503
+41,Microsoft Denmark,IT Services,0.006880733944954128
+42,IBM Cloud Services,IT Services,0.006880733944954128
+43,Johnson Controls Nordic,Facilities,0.013761467889908256
+44,Coor Service Management,Facilities,0.01146788990825688
+45,Sodexo Denmark,Facilities,0.01146788990825688
+46,Schneider Electric Energy,Facilities,0.009174311926605503
+47,AVIS Facility Management,Facilities,0.008027522935779815
+48,Canon Solutions Denmark,Office Supplies,0.01032110091743119
+49,Lyreco Nordics,Office Supplies,0.009174311926605503
+50,Ricoh Document Solutions,Office Supplies,0.006880733944954128
+51,3M Scandinavia,Office Supplies,0.006880733944954128
+52,Office Depot Europe,Office Supplies,0.00573394495412844
+53,HP Office Equipment,Office Supplies,0.00573394495412844
+54,Vikarbureauet Contract Staffing,Contract Labor,0.01032110091743119
+55,Randstad Denmark,Contract Labor,0.008027522935779815
+56,Adecco Denmark,Contract Labor,0.008027522935779815
+57,ManpowerGroup Denmark,Contract Labor,0.006880733944954128
+58,Kelly Services Nordic,Contract Labor,0.00573394495412844
+59,Moment A/S,Contract Labor,0.004587155963302752
+60,PwC Denmark,Consulting,0.008027522935779815
+61,McKinsey & Company,Consulting,0.006880733944954128
+62,Boston Consulting Group,Consulting,0.006880733944954128
+63,EY Denmark,Consulting,0.006880733944954128
+64,PA Consulting Group,Consulting,0.004587155963302752
+65,LEGO Tooling A/S,Equipment,0.02178899082568807
+66,Henkel Adhesives Nordics,Raw Materials,0.008027522935779815
+67,Borealis Polymers,Raw Materials,0.02064220183486238
+68,Transporeon Logistics Platform,Logistics,0.008027522935779815
+69,GEFCO Group,Logistics,0.006880733944954128
+70,Bring Logistics,Logistics,0.006880733944954128
+71,Schneider Electric IT,IT Services,0.004587155963302752
+72,ISS IT Solutions,IT Services,0.004587155963302752
+73,Schindler Elevators Denmark,Facilities,0.003440366972477064
+74,ISS Cleaning Services,Facilities,0.003440366972477064
+75,Nordic Office Supplies ApS,Office Supplies,0.002293577981651376
+76,Kinnarps Office Furniture,Office Supplies,0.002293577981651376
+77,Altran Denmark,Consulting,0.003440366972477064
+78,BlueCollar.dk Staffing,Contract Labor,0.002293577981651376
+79,Flextek Automation,Equipment,0.003440366972477064

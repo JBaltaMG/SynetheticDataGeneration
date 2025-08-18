@@ -1,0 +1,61 @@
+level3,level4,name,account_type,account_id
+1000,1100,Cash Denmark,Asset,13452
+1000,1110,Bank Accounts DKK,Asset,11343
+1000,1120,Bank Accounts EUR,Asset,12793
+1000,1130,Bank Accounts USD,Asset,11103
+1000,1200,Accounts Receivable Trade,Asset,19869
+1000,1210,Accounts Receivable Intercompany,Asset,16670
+1000,1220,Allowance for Doubtful Accounts,Asset,19973
+1000,1300,VAT Receivable,Asset,13356
+1000,1400,Inventory Raw Materials,Asset,15079
+1000,1410,Inventory Work in Progress,Asset,16554
+1000,1420,Inventory Finished Goods,Asset,15898
+1000,1430,Inventory Packaging Materials,Asset,19798
+1000,1500,Prepaid Expenses,Asset,19770
+1000,1510,Prepaid Insurance,Asset,19431
+1000,1520,Prepaid Rent,Asset,17236
+1000,1630,Moulds & Tools,Asset,19812
+1000,1700,Accumulated Depreciation,Asset,13906
+2000,2110,Accounts Payable Intercompany,Liability,91402
+2000,2210,Payroll Taxes Payable,Liability,91064
+2000,2220,Other Tax Payable,Liability,90542
+2000,2310,Accrued Interest,Liability,96988
+2000,2320,Accrued Royalties,Liability,98126
+2000,2400,Deferred Revenue,Liability,94129
+2000,2500,Short-Term Loans,Liability,95680
+2000,2510,Current Portion Long-Term Debt,Liability,96723
+3000,3200,Retained Earnings,Equity,29596
+4000,4100,Product Revenue Retail Denmark,Revenue,33740
+4000,4110,Product Revenue eCommerce Denmark,Revenue,33287
+4000,4120,Product Revenue Distribution Denmark,Revenue,30586
+4000,4200,Service Revenue Play Events,Revenue,33014
+4000,4220,Service Revenue Education Workshops,Revenue,34757
+4000,4230,Service Revenue Design Services,Revenue,31259
+5000,5110,Product COGS Purchased Components,Product Expense,42551
+5000,5130,Product COGS Manufacturing Overhead,Product Expense,46150
+5000,5140,Product COGS Utilities & Energy,Product Expense,42163
+5000,5170,Product COGS Freight In,Product Expense,47593
+5000,5180,Product COGS Inventory Shrinkage,Product Expense,44869
+5000,5190,Product COGS Warranty & Returns,Product Expense,48607
+5000,5200,Product COGS Royalties,Product Expense,43262
+5000,5300,Service COGS Play Events,Service Expense,57543
+5000,5310,Service COGS Licensing Fees,Service Expense,57708
+5000,5330,Service COGS Travel,Service Expense,54355
+5000,5350,Service COGS External Facilitators,Service Expense,51760
+5000,5360,Service COGS Outsourced Support,Service Expense,54531
+6000,6100,Marketing Advertising Denmark,Service Expense,53061
+6000,6110,Marketing Campaigns,Service Expense,51841
+6000,6120,Promotional Materials,Service Expense,58802
+6000,6210,Logistics Warehousing,Product Expense,43693
+6000,6300,IT Expenses Hardware,Service Expense,51652
+6000,6320,IT Expenses Cloud Services,Service Expense,55543
+6000,6400,Utilities Office Denmark,Service Expense,59095
+6000,6500,Professional Fees Audit,Service Expense,51279
+6000,6520,Professional Fees Consulting,Service Expense,55263
+6000,6610,Property Insurance,Service Expense,58421
+6000,6800,Travel Denmark,Service Expense,51213
+6000,6810,Travel International,Service Expense,51981
+6000,6900,Office Supplies Denmark,Service Expense,58503
+6000,6910,Stationery,Service Expense,50532
+6000,7000,Bad Debt Expense,Service Expense,52858
+6000,7100,Research & Development Prototyping,Service Expense,54174

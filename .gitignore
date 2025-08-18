@@ -8,16 +8,16 @@ __pycache__/
 *.py[cod]
 
 # Ignore all CSV output files
-data/outputdata/**/*.csv
+#data/outputdata/**/*.csv
 
 # Ignore all input line_id mapping
-data/inputdata/line_id_accounts.csv
+#data/inputdata/line_id_accounts.csv
 
 # Ignore Jupyter notebook checkpoints (if any)
 .ipynb_checkpoints/
 
 # Optional: ignore any generated data in general
-data/**
+#data/**
 
 # Optional: ignore any temporary files
 *.tmp
