@@ -160,7 +160,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     - Avoid vague terms like "Miscellaneous" or "Various".
     - Include annual/temporal entries such as "Annual IT Audit".
     - `proportionality` = share of total sales revenue
-    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number.
+    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number. Make the value much lower than you would think.
 
     Composition rules:
     - Top ranks: expensive projects, enterprise retainers, major outsourcing contracts.
@@ -182,6 +182,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     )
     df_services = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
     df_services = utils.convert_column_to_percentage(df_services, "proportionality", scale=1.0)
+    df_services["unit_price"] = df_services["unit_price"].astype(float) / 1000.0  # Scale down by factor of 1000
     return df_services
 
 def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-4.1", temp: float=0.8) -> pd.DataFrame:
