@@ -1,0 +1,241 @@
+item_name,source_type,annual_spend,unit_price,proportionality,product_id,procurement_id,service_id
+ABS plastic resin,procurement,661114000.0,14500.0,0.263294859627101,,ABS plastic resin,
+Color masterbatch,procurement,207559000.0,12000.0,0.0826623396503689,,Color masterbatch,
+Injection molding machinery,procurement,172966000.0,850000.0,0.0688852830419741,,Injection molding machinery,
+Electronic control units,procurement,73030000.0,11000.0,0.029084897284389,,Electronic control units,
+Thermoplastic elastomers,procurement,65343000.0,16000.0,0.0260233291491902,,Thermoplastic elastomers,
+Retail display stands,procurement,53812000.0,700.0,0.0214309769463919,,Retail display stands,
+Robotic assembly arms,procurement,49968000.0,650000.0,0.0199001928787925,,Robotic assembly arms,
+Automated conveyor systems,procurement,46124000.0,270000.0,0.018369408811193,,Automated conveyor systems,
+Barcode labeling systems,procurement,34593000.0,5500.0,0.0137770566083948,,Barcode labeling systems,
+"Pallets (plastic, reusable)",procurement,34209000.0,110.0,0.0136239782016348,,"Pallets (plastic, reusable)",
+Foil for packaging,procurement,33440000.0,16.0,0.0133178213881149,,Foil for packaging,
+Cardboard shipping cartons,procurement,31903000.0,5.0,0.0127055077610752,,Cardboard shipping cartons,
+Transport crates (returnable),procurement,31518000.0,160.0,0.0125524293543152,,Transport crates (returnable),
+Pallet wrappers (film rolls),procurement,30750000.0,19.0,0.0122462725407953,,Pallet wrappers (film rolls),
+Sealing tapes (industrial),procurement,29981000.0,8.0,0.0119401157272755,,Sealing tapes (industrial),
+LEDs for sets,procurement,29212000.0,9.0,0.0116339589137556,,LEDs for sets,
+Copper wire (electrical),procurement,28443000.0,95.0,0.0113278021002357,,Copper wire (electrical),
+Silicone rubber,procurement,27675000.0,2900.0,0.0110216452867158,,Silicone rubber,
+Ink for set instructions,procurement,26906000.0,27.0,0.0107154884731959,,Ink for set instructions,
+Instruction booklets (printed),procurement,26521000.0,3.0,0.010562410066436,,Instruction booklets (printed),
+Minifigure accessories (sourced),procurement,25368000.0,2.6,0.0101031748461562,,Minifigure accessories (sourced),
+Laser marking equipment,procurement,24215000.0,38000.0,0.0096439396258763,,Laser marking equipment,
+Prototyping 3D printer filament,procurement,23831000.0,1800.0,0.0094908612191164,,Prototyping 3D printer filament,
+Ultrasonic welders,procurement,23446000.0,95000.0,0.0093377828123564,,Ultrasonic welders,
+Plastic welding rods,procurement,23062000.0,33.0,0.0091847044055965,,Plastic welding rods,
+Mold release agents,procurement,22293000.0,340.0,0.0088785475920766,,Mold release agents,
+Polyester strapping bands,procurement,21909000.0,12.0,0.0087254691853167,,Polyester strapping bands,
+Custom printed tiles,procurement,21525000.0,1.5,0.0085723907785567,,Custom printed tiles,
+RFID tags,procurement,20372000.0,1.9,0.0081131555582769,,RFID tags,
+Blister packaging shells,procurement,19987000.0,2.9,0.007960077151517,,Blister packaging shells,
+Hot runner systems,procurement,19603000.0,74000.0,0.007806998744757,,Hot runner systems,
+Granulators (for plastics recycling),procurement,19218000.0,52000.0,0.0076539203379971,,Granulators (for plastics recycling),
+Cooling system chillers,procurement,18834000.0,320000.0,0.0075008419312371,,Cooling system chillers,
+Industrial air compressors,procurement,18450000.0,56000.0,0.0073477635244772,,Industrial air compressors,
+Drying hoppers (plastic drying),procurement,18065000.0,68000.0,0.0071946851177172,,Drying hoppers (plastic drying),
+Injection nozzle tips,procurement,17681000.0,700.0,0.0070416067109573,,Injection nozzle tips,
+Temperature controllers,procurement,17297000.0,2100.0,0.0068885283041974,,Temperature controllers,
+Mold temperature sensors,procurement,16528000.0,90.0,0.0065823714906775,,Mold temperature sensors,
+Laser engraving machines,procurement,15759000.0,60000.0,0.0062762146771576,,Laser engraving machines,
+Static eliminators,procurement,14990000.0,1900.0,0.0059700578636377,,Static eliminators,
+Precision scales,procurement,14606000.0,320.0,0.0058169794568778,,Precision scales,
+Industrial fans,procurement,14222000.0,1800.0,0.0056639010501178,,Industrial fans,
+Pneumatic valves,procurement,13837000.0,230.0,0.0055108226433579,,Pneumatic valves,
+"Lubricants (synthetic, machinery)",procurement,13453000.0,16.0,0.0053577442365979,,"Lubricants (synthetic, machinery)",
+Replacement mold inserts,procurement,12684000.0,12500.0,0.0050515874230781,,Replacement mold inserts,
+Safety sensors (machine guarding),procurement,11915000.0,340.0,0.0047454306095582,,Safety sensors (machine guarding),
+Tool steel blanks,procurement,11531000.0,1200.0,0.0045923522027982,,Tool steel blanks,
+End mills,procurement,10762000.0,320.0,0.0042861953892783,,End mills,
+EDM wire,procurement,10378000.0,270.0,0.0041331169825184,,EDM wire,
+CNC machine spares,procurement,9994000.0,1100.0,0.0039800385757585,,CNC machine spares,
+Waste bins (production),procurement,8840000.0,75.0,0.0035208033554786,,Waste bins (production),
+Fire suppression systems,procurement,8456000.0,12000.0,0.0033677249487187,,Fire suppression systems,
+Spare drive belts (machinery),procurement,8072000.0,60.0,0.0032146465419587,,Spare drive belts (machinery),
+Hand tools (maintenance),procurement,7611000.0,280.0,0.0030309524538468,,Hand tools (maintenance),
+Workbenches (production),procurement,7534000.0,1800.0,0.0030003367724948,,Workbenches (production),
+Operator chairs,procurement,7457000.0,650.0,0.0029697210911428,,Operator chairs,
+Safety shoes,procurement,7380000.0,600.0,0.0029391054097908,,Safety shoes,
+Safety glasses,procurement,7226000.0,35.0,0.0028778740470869,,Safety glasses,
+Hearing protection,procurement,7149000.0,22.0,0.0028472583657349,,Hearing protection,
+Protective aprons,procurement,6996000.0,110.0,0.0027860270030309,,Protective aprons,
+First aid kits,procurement,6919000.0,300.0,0.0027554113216789,,First aid kits,
+Fire extinguishers,procurement,6842000.0,340.0,0.0027247956403269,,Fire extinguishers,
+Respirator masks,procurement,6688000.0,27.0,0.0026635642776229,,Respirator masks,
+Industrial vacuum cleaners,procurement,6611000.0,5500.0,0.002632948596271,,Industrial vacuum cleaners,
+Cleaning cloths,procurement,6534000.0,0.6,0.002602332914919,,Cleaning cloths,
+Paper towels (industrial rolls),procurement,6381000.0,1.7,0.002541101552215,,Paper towels (industrial rolls),
+Workshop storage bins,procurement,6227000.0,35.0,0.002479870189511,,Workshop storage bins,
+Forklift tires,procurement,5996000.0,900.0,0.0023880231454551,,Forklift tires,
+Pallet jacks,procurement,5766000.0,2900.0,0.0022961761013991,,Pallet jacks,
+Forklift trucks (spares),procurement,5689000.0,620.0,0.0022655604200471,,Forklift trucks (spares),
+LED warehouse lights,procurement,5612000.0,320.0,0.0022349447386951,,LED warehouse lights,
+Battery chargers,procurement,5535000.0,2100.0,0.0022043290573431,,Battery chargers,
+Shrink wrap guns,procurement,5381000.0,1160.0,0.0021430976946391,,Shrink wrap guns,
+Stretch wrap rolls,procurement,5304000.0,33.0,0.0021124820132872,,Stretch wrap rolls,
+Loading dock bumpers,procurement,5227000.0,185.0,0.0020818663319352,,Loading dock bumpers,
+Dock levelers,procurement,5151000.0,8900.0,0.0020512506505832,,Dock levelers,
+Strapping tools,procurement,5074000.0,980.0,0.0020206349692312,,Strapping tools,
+Industrial adhesive,procurement,4997000.0,24.0,0.0019900192878792,,Industrial adhesive,
+Rivet guns,procurement,4920000.0,780.0,0.0019594036065272,,Rivet guns,
+Industrial tapes (double-sided),procurement,4843000.0,14.0,0.0019287879251752,,Industrial tapes (double-sided),
+Power strips,procurement,4689000.0,65.0,0.0018675565624712,,Power strips,
+Extension cords,procurement,4536000.0,38.0,0.0018063251997673,,Extension cords,
+Solder wire,procurement,4382000.0,42.0,0.0017450938370633,,Solder wire,
+Anti-static wrist straps,procurement,4228000.0,12.0,0.0016838624743593,,Anti-static wrist straps,
+Multimeters,procurement,4151000.0,520.0,0.0016532467930073,,Multimeters,
+Tool chests,procurement,4074000.0,1900.0,0.0016226311116553,,Tool chests,
+Office chairs,procurement,3921000.0,880.0,0.0015613997489514,,Office chairs,
+Desks,procurement,3844000.0,2400.0,0.0015307840675994,,Desks,
+Conference tablets,procurement,3767000.0,3200.0,0.0015001683862474,,Conference tablets,
+Desktop computers,procurement,3690000.0,5400.0,0.0014695527048954,,Desktop computers,
+Laser printers,procurement,3536000.0,3100.0,0.0014083213421914,,Laser printers,
+Printer cartridges (black),procurement,3382000.0,410.0,0.0013470899794874,,Printer cartridges (black),
+Copy paper (ream),procurement,3306000.0,31.0,0.0013164742981355,,Copy paper (ream),
+Document shredders,procurement,3229000.0,950.0,0.0012858586167835,,Document shredders,
+Whiteboards,procurement,3152000.0,420.0,0.0012552429354315,,Whiteboards,
+Markers (whiteboard),procurement,3075000.0,12.0,0.0012246272540795,,Markers (whiteboard),
+Ballpoint pens,procurement,2998000.0,2.2,0.0011940115727275,,Ballpoint pens,
+Permanent markers,procurement,2921000.0,5.0,0.0011633958913755,,Permanent markers,
+Staplers,procurement,2844000.0,40.0,0.0011327802100235,,Staplers,
+Staple refills,procurement,2767000.0,2.0,0.0011021645286715,,Staple refills,
+Notebooks,procurement,2614000.0,12.0,0.0010409331659676,,Notebooks,
+Network cables (Cat6),procurement,2229000.0,22.0,0.0008878547592076,,Network cables (Cat6),
+Wi-Fi routers,procurement,2152000.0,270.0,0.0008572390778556,,Wi-Fi routers,
+Coffee machines,procurement,2076000.0,3200.0,0.0008266233965036,,Coffee machines,
+Coffee beans,procurement,1999000.0,90.0,0.0007960077151517,,Coffee beans,
+Tea bags,procurement,1922000.0,0.4,0.0007653920337997,,Tea bags,
+Paper cups,procurement,1537000.0,1.6,0.0006123136270397,,Paper cups,
+Disposable plates,procurement,1461000.0,2.0,0.0005816979456877,,Disposable plates,
+Kitchen towels,procurement,1384000.0,2.7,0.0005510822643357,,Kitchen towels,
+Computer mice,procurement,1230000.0,120.0,0.0004898509016318,,Computer mice,
+Headsets,procurement,1076000.0,380.0,0.0004286195389278,,Headsets,
+Telephone handsets,procurement,999000.0,520.0,0.0003980038575758,,Telephone handsets,
+Postage stamps,procurement,922000.0,14.0,0.0003673881762238,,Postage stamps,
+Bubble envelopes,procurement,846000.0,3.5,0.0003367724948718,,Bubble envelopes,
+Packaging tape (office),procurement,769000.0,7.0,0.0003061568135198,,Packaging tape (office),
+Desk lamps,procurement,615000.0,110.0,0.0002449254508159,,Desk lamps,
+Floor mats,procurement,538000.0,85.0,0.0002143097694639,,Floor mats,
+Toilet paper,procurement,384000.0,3.9,0.0001530784067599,,Toilet paper,
+Paper napkins,procurement,231000.0,2.6,9.184704405596546e-05,,Paper napkins,
+Visitors badges,procurement,154000.0,0.8,6.123136270397697e-05,,Visitors badges,
+SAP Enterprise License and Support,service,64265000.0,22000000.0,0.0511882998171846,,,SAP Enterprise License and Support
+European Marketing Campaign Retainer,service,61970000.0,21000000.0,0.0493601462522851,,,European Marketing Campaign Retainer
+Global Distribution Center Lease,service,50494000.0,17200000.0,0.0402193784277879,,,Global Distribution Center Lease
+Supply Chain Optimization Service,service,48199000.0,16800000.0,0.0383912248628884,,,Supply Chain Optimization Service
+International Freight Forwarding,service,39018000.0,13800000.0,0.0310786106032906,,,International Freight Forwarding
+Digital Transformation Consulting,service,39018000.0,13600000.0,0.0310786106032906,,,Digital Transformation Consulting
+Large-Scale Cloud Infrastructure,service,36723000.0,12800000.0,0.0292504570383912,,,Large-Scale Cloud Infrastructure
+Global Tax Advisory Retainer,service,34428000.0,12000000.0,0.0274223034734917,,,Global Tax Advisory Retainer
+Raw Materials Quality Assurance Service,service,34428000.0,11900000.0,0.0274223034734917,,,Raw Materials Quality Assurance Service
+European HR Outsourcing,service,32133000.0,11200000.0,0.0255941499085923,,,European HR Outsourcing
+National Warehousing Lease,service,29837000.0,10500000.0,0.0237659963436928,,,National Warehousing Lease
+Global Legal Retainer,service,27542000.0,9800000.0,0.0219378427787934,,,Global Legal Retainer
+Corporate Insurance Premium,service,25247000.0,8900000.0,0.0201096892138939,,,Corporate Insurance Premium
+Global Recruitment Partnership,service,22952000.0,8500000.0,0.0182815356489945,,,Global Recruitment Partnership
+Factory Utilities Contract,service,22952000.0,8400000.0,0.0182815356489945,,,Factory Utilities Contract
+Danish Data Center Hosting,service,18361000.0,7100000.0,0.0146252285191956,,,Danish Data Center Hosting
+Strategic Sourcing Advisory,service,18361000.0,6900000.0,0.0146252285191956,,,Strategic Sourcing Advisory
+International Patent Filing Fee,service,18361000.0,6700000.0,0.0146252285191956,,,International Patent Filing Fee
+Trade Show Sponsorship Fee,service,18361000.0,6500000.0,0.0146252285191956,,,Trade Show Sponsorship Fee
+Global CRM Subscription,service,18361000.0,6300000.0,0.0146252285191956,,,Global CRM Subscription
+Corporate Event Management Contract,service,16066000.0,5900000.0,0.0127970749542961,,,Corporate Event Management Contract
+Annual Brand Valuation Service,service,16066000.0,5700000.0,0.0127970749542961,,,Annual Brand Valuation Service
+Employee Training Platform License,service,16066000.0,5600000.0,0.0127970749542961,,,Employee Training Platform License
+Energy Procurement Contract,service,16066000.0,5500000.0,0.0127970749542961,,,Energy Procurement Contract
+Global Talent Management Software,service,13771000.0,5200000.0,0.0109689213893967,,,Global Talent Management Software
+Global Incident Response Retainer,service,13771000.0,5000000.0,0.0109689213893967,,,Global Incident Response Retainer
+Language Localization Service,service,13771000.0,4700000.0,0.0109689213893967,,,Language Localization Service
+Annual Emissions Reporting Fee,service,13771000.0,4650000.0,0.0109689213893967,,,Annual Emissions Reporting Fee
+Corporate Tax Filing Fee,service,13771000.0,4550000.0,0.0109689213893967,,,Corporate Tax Filing Fee
+Denmark Health & Safety Audit,service,13771000.0,4500000.0,0.0109689213893967,,,Denmark Health & Safety Audit
+European Competition Law Advisory,service,13771000.0,4450000.0,0.0109689213893967,,,European Competition Law Advisory
+Workforce Diversity Training,service,11476000.0,4400000.0,0.0091407678244972,,,Workforce Diversity Training
+Annual Facility Fire Safety Inspection,service,11476000.0,4300000.0,0.0091407678244972,,,Annual Facility Fire Safety Inspection
+Danish Broadcasting License Fee,service,11476000.0,4100000.0,0.0091407678244972,,,Danish Broadcasting License Fee
+Workplace Ergonomics Consulting,service,11476000.0,4000000.0,0.0091407678244972,,,Workplace Ergonomics Consulting
+Annual Customs Compliance Audit,service,11476000.0,3950000.0,0.0091407678244972,,,Annual Customs Compliance Audit
+Cloud Storage Subscription,service,11476000.0,3900000.0,0.0091407678244972,,,Cloud Storage Subscription
+Cloud-Based Collaboration Tool License,service,11476000.0,3850000.0,0.0091407678244972,,,Cloud-Based Collaboration Tool License
+Annual HR Policy Review,service,11476000.0,3750000.0,0.0091407678244972,,,Annual HR Policy Review
+Denmark Trade Union Fee,service,11476000.0,3700000.0,0.0091407678244972,,,Denmark Trade Union Fee
+European Employee Relocation Service,service,9181000.0,3600000.0,0.0073126142595978,,,European Employee Relocation Service
+Product Artwork Licensing Fee,service,9181000.0,3400000.0,0.0073126142595978,,,Product Artwork Licensing Fee
+Supplier Quality Audit,service,9181000.0,3300000.0,0.0073126142595978,,,Supplier Quality Audit
+Denmark Chamber of Commerce Fee,service,9181000.0,3100000.0,0.0073126142595978,,,Denmark Chamber of Commerce Fee
+IT Asset Disposal Service,service,9181000.0,3000000.0,0.0073126142595978,,,IT Asset Disposal Service
+Recruitment Agency Placement Fee,service,9181000.0,2950000.0,0.0073126142595978,,,Recruitment Agency Placement Fee
+Annual Mobile Device Management Fee,service,9181000.0,2850000.0,0.0073126142595978,,,Annual Mobile Device Management Fee
+Product Recall Insurance Fee,service,9181000.0,2700000.0,0.0073126142595978,,,Product Recall Insurance Fee
+Video Conferencing Solution License,service,9181000.0,2650000.0,0.0073126142595978,,,Video Conferencing Solution License
+Remote IT Support Contract,service,9181000.0,2600000.0,0.0073126142595978,,,Remote IT Support Contract
+Translation Services Retainer,service,6886000.0,2550000.0,0.0054844606946983,,,Translation Services Retainer
+Corporate Social Responsibility Audit,service,6886000.0,2450000.0,0.0054844606946983,,,Corporate Social Responsibility Audit
+External Shareholder Reporting Fee,service,6886000.0,2400000.0,0.0054844606946983,,,External Shareholder Reporting Fee
+Annual Intellectual Property Audit,service,6886000.0,2350000.0,0.0054844606946983,,,Annual Intellectual Property Audit
+Corporate Fitness Program Fee,service,6886000.0,2150000.0,0.0054844606946983,,,Corporate Fitness Program Fee
+Annual Brand Protection Monitoring,service,6886000.0,2100000.0,0.0054844606946983,,,Annual Brand Protection Monitoring
+Annual Danish Food Safety Audit,service,6886000.0,2000000.0,0.0054844606946983,,,Annual Danish Food Safety Audit
+Annual Website Accessibility Audit,service,6886000.0,1900000.0,0.0054844606946983,,,Annual Website Accessibility Audit
+Annual Copyright Royalty Fee,service,4590000.0,1800000.0,0.0036563071297989,,,Annual Copyright Royalty Fee
+Employee Health Screening Service,service,4590000.0,1750000.0,0.0036563071297989,,,Employee Health Screening Service
+Office Plant Maintenance Service,service,4590000.0,1700000.0,0.0036563071297989,,,Office Plant Maintenance Service
+Annual Internal Communication Review,service,4590000.0,1550000.0,0.0036563071297989,,,Annual Internal Communication Review
+Occupational Accident Insurance,service,4590000.0,1500000.0,0.0036563071297989,,,Occupational Accident Insurance
+Danish Broadcasting Content Fee,service,4590000.0,1450000.0,0.0036563071297989,,,Danish Broadcasting Content Fee
+Danish Patent Renewal Fee,service,4590000.0,1380000.0,0.0036563071297989,,,Danish Patent Renewal Fee
+Annual Export Documentation Service,service,4590000.0,1350000.0,0.0036563071297989,,,Annual Export Documentation Service
+Monthly Software Patch Management,service,4590000.0,1320000.0,0.0036563071297989,,,Monthly Software Patch Management
+Canteen Services Contract,service,4590000.0,1300000.0,0.0036563071297989,,,Canteen Services Contract
+Annual Copyright Registration,service,4590000.0,1270000.0,0.0036563071297989,,,Annual Copyright Registration
+Online Recruitment Portal License,service,4590000.0,1250000.0,0.0036563071297989,,,Online Recruitment Portal License
+Annual Security Awareness Training,service,4590000.0,1230000.0,0.0036563071297989,,,Annual Security Awareness Training
+Annual Pest Control Service,service,4590000.0,1200000.0,0.0036563071297989,,,Annual Pest Control Service
+Annual Office Waste Disposal,service,4590000.0,1170000.0,0.0036563071297989,,,Annual Office Waste Disposal
+Annual Vehicle Registration Fee,service,4590000.0,1140000.0,0.0036563071297989,,,Annual Vehicle Registration Fee
+Annual Water Quality Certification,service,4590000.0,1120000.0,0.0036563071297989,,,Annual Water Quality Certification
+Annual Medical Devices License,service,4590000.0,1080000.0,0.0036563071297989,,,Annual Medical Devices License
+Annual Danish Road Tax,service,2295000.0,920000.0,0.0018281535648994,,,Annual Danish Road Tax
+Annual Library Content License,service,2295000.0,820000.0,0.0018281535648994,,,Annual Library Content License
+Annual Staff Uniform Rental,service,2295000.0,780000.0,0.0018281535648994,,,Annual Staff Uniform Rental
+Annual Danish Trade License,service,2295000.0,760000.0,0.0018281535648994,,,Annual Danish Trade License
+Annual Electrical Safety Inspection,service,2295000.0,740000.0,0.0018281535648994,,,Annual Electrical Safety Inspection
+Annual Danish Food Handler's License,service,2295000.0,720000.0,0.0018281535648994,,,Annual Danish Food Handler's License
+Annual City Council Fee,service,2295000.0,700000.0,0.0018281535648994,,,Annual City Council Fee
+Annual Danish Advertising Fee,service,2295000.0,680000.0,0.0018281535648994,,,Annual Danish Advertising Fee
+Annual Fireworks Storage Permit,service,2295000.0,660000.0,0.0018281535648994,,,Annual Fireworks Storage Permit
+Annual Danish Music License,service,2295000.0,620000.0,0.0018281535648994,,,Annual Danish Music License
+Annual Danish Product Registration,service,2295000.0,600000.0,0.0018281535648994,,,Annual Danish Product Registration
+Annual Danish Outdoor Event Permit,service,2295000.0,560000.0,0.0018281535648994,,,Annual Danish Outdoor Event Permit
+Annual Staff Photo ID Card Fee,service,2295000.0,520000.0,0.0018281535648994,,,Annual Staff Photo ID Card Fee
+Annual Wastewater Discharge Permit,service,2295000.0,480000.0,0.0018281535648994,,,Annual Wastewater Discharge Permit
+Annual Danish Utility Network Fee,service,2295000.0,460000.0,0.0018281535648994,,,Annual Danish Utility Network Fee
+Annual Danish Road Sign Permit,service,2295000.0,420000.0,0.0018281535648994,,,Annual Danish Road Sign Permit
+Annual Danish Hazardous Waste Permit,service,2295000.0,380000.0,0.0018281535648994,,,Annual Danish Hazardous Waste Permit
+Annual Danish Tourist Tax,service,2295000.0,360000.0,0.0018281535648994,,,Annual Danish Tourist Tax
+Annual Danish Tax Stamp Fee,service,2295000.0,340000.0,0.0018281535648994,,,Annual Danish Tax Stamp Fee
+Annual Danish Water Use Permit,service,2295000.0,320000.0,0.0018281535648994,,,Annual Danish Water Use Permit
+Microsoft 365 Enterprise License,service,2295000.0,280000.0,0.0018281535648994,,,Microsoft 365 Enterprise License
+Slack Enterprise Grid License,service,2295000.0,220000.0,0.0018281535648994,,,Slack Enterprise Grid License
+Zoom Business License,service,2295000.0,200000.0,0.0018281535648994,,,Zoom Business License
+Atlassian Jira Enterprise License,service,2295000.0,180000.0,0.0018281535648994,,,Atlassian Jira Enterprise License
+Tableau Server License,service,2295000.0,170000.0,0.0018281535648994,,,Tableau Server License
+Cisco Webex License,service,2295000.0,160000.0,0.0018281535648994,,,Cisco Webex License
+SurveyMonkey Enterprise License,service,2295000.0,155000.0,0.0018281535648994,,,SurveyMonkey Enterprise License
+DocuSign Business License,service,2295000.0,150000.0,0.0018281535648994,,,DocuSign Business License
+Confluence Enterprise License,service,2295000.0,140000.0,0.0018281535648994,,,Confluence Enterprise License
+Lucidchart Enterprise License,service,2295000.0,130000.0,0.0018281535648994,,,Lucidchart Enterprise License
+ZoomInfo Platform License,service,2295000.0,125000.0,0.0018281535648994,,,ZoomInfo Platform License
+Asana Enterprise License,service,2295000.0,115000.0,0.0018281535648994,,,Asana Enterprise License
+Salesforce Sandbox License,service,2295000.0,110000.0,0.0018281535648994,,,Salesforce Sandbox License
+Spotify Business License,service,2295000.0,90000.0,0.0018281535648994,,,Spotify Business License
+Hootsuite Enterprise License,service,2295000.0,85000.0,0.0018281535648994,,,Hootsuite Enterprise License
+Mailchimp Enterprise License,service,2295000.0,80000.0,0.0018281535648994,,,Mailchimp Enterprise License
+SurveyGizmo Enterprise License,service,2295000.0,70000.0,0.0018281535648994,,,SurveyGizmo Enterprise License
+Typeform Enterprise License,service,2295000.0,65000.0,0.0018281535648994,,,Typeform Enterprise License
+Canva Business License,service,2295000.0,55000.0,0.0018281535648994,,,Canva Business License
+Smartsheet Enterprise License,service,2295000.0,50000.0,0.0018281535648994,,,Smartsheet Enterprise License
+TeamViewer Corporate License,service,2295000.0,45000.0,0.0018281535648994,,,TeamViewer Corporate License
+Airtable Enterprise License,service,2295000.0,40000.0,0.0018281535648994,,,Airtable Enterprise License
+Evernote Business License,service,2295000.0,35000.0,0.0018281535648994,,,Evernote Business License
+Dropbox Sign Business License,service,2295000.0,30000.0,0.0018281535648994,,,Dropbox Sign Business License

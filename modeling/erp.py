@@ -73,6 +73,7 @@ def pre_split_spend_lines(
         item_name = row["item_name"]
         source_type = row["source_type"]
         total = row["annual_spend"]
+        unit_price = row["unit_price"]
 
         product_id = row.get("product_id")
         procurement_id = row.get("procurement_id")
@@ -97,7 +98,7 @@ def pre_split_spend_lines(
                 "account_id": map_row["account_id"],
                 "account_name": map_row["account_name"],
                 "item_name": item_name,
-                "unit_price": map_row["unit_price"],
+                "unit_price": unit_price,
                 "source_type": source_type,
                 "product_id": product_id,
                 "procurement_id": procurement_id,
@@ -114,7 +115,6 @@ def pre_split_spend_lines(
             line_items.append(entry)
 
     return pd.DataFrame(line_items)
-
 
 def create_erp_data(
     df_expenses: pd.DataFrame,
@@ -139,14 +139,19 @@ def create_erp_data(
     df["document_number"] = np.random.choice(df_document_metadata["document_number"], size=len(df), replace=True)
     df["date"] = np.random.choice(df_date["date"], size=len(df), replace=True)
 
-    # Currency conversion
-    exchange_rate = 7.45
-    df["amount_eur"] = (df["amount"] / exchange_rate).round(2)
-    df.rename(columns={"amount": "amount_dkk"}, inplace=True)
-    #df['quantity'] = np.floor(df['unit_price'] / df['amount_dkk']) 
+    if df["service_id"].isna().all():   # all values are NaN
+        df['quantity'] = np.ceil(df['amount'] / df['unit_price'])
+        df['amount'] = df['unit_price'] * df['quantity']
+        df['quantity'] = abs(df['quantity'])
+
+    else:  # at least one non-NaN in service_id
+        df['unit_price'] = df['unit_price'] / 1000
+        df['quantity'] = np.ceil(df['amount'] / df['unit_price'])
+        df['amount'] = df['unit_price'] * df['quantity']
+        df['quantity'] = abs(df['quantity'])
 
     # Final output columns
-    cols = ['document_number', 'date', 'currency', 'amount_dkk', 'quantity', 'type',
+    cols = ['document_number', 'date', 'currency', 'amount', 'quantity', 'type',
             'account_id', 'account_name', 'product_id', 'procurement_id', 'service_id']
 
     if "department_name" in df.columns:
@@ -162,8 +167,8 @@ def balance_documents_with_assets(
     df_erp: pd.DataFrame,
     df_accounts: pd.DataFrame,
     tolerance: float = 100.0,
-    min_corrections: int = 4,
-    max_corrections: int = 20,
+    min_corrections: int = 5,
+    max_corrections: int = 25,
     rng: np.random.RandomState | None = None,
 ) -> pd.DataFrame:
     """
@@ -237,6 +242,7 @@ def balance_documents_with_assets(
                 "debit_credit": "Debit",  # keep your original label choice
                 "date": sample_row["date"],
                 "amount": signed_amt,     # sign carries the balancing direction
+                "quantity": None,
                 "account_id": asset_row["account_id"],  # <- fixed from ["name"]
                 "product_id": None,
                 "procurement_id": None,
