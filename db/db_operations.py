@@ -6,6 +6,20 @@ from sqlalchemy import create_engine
 import urllib
 from db.schema import schemadict
 from sqlalchemy import text
+from sqlalchemy.exc import ProgrammingError
+
+def get_max_id_safe(conn, table_name: str, schema: str = "dbo") -> int:
+    try:
+        # Qualify with schema to be explicit
+        res = conn.execute(text(f"SELECT MAX(id) FROM {schema}.{table_name}"))
+        row = res.fetchone()
+        return row[0] if row and row[0] is not None else 0
+    except ProgrammingError as e:
+        # Table missing → treat as empty
+        if "Invalid object name" in str(e):
+            return 0
+        raise
+
 
 def get_sqlalchemy_engine():
     servername = dotenv.get_key(".env", "SERVER")
@@ -63,38 +77,64 @@ def insert_dataframe(df: pd.DataFrame, table_name: str, engine) -> None:
         chunksize=2_000
     )
 
-def insert_dataframe_from_csv(csv_path: str, table_name: str, schemadict: dict, engine, version_tag=None, final_dim_dict=None):
+
+def insert_dataframe_from_csv(
+    csv_path: str,
+    table_name: str,
+    schemadict: dict,
+    engine,
+    version_tag: str = None,
+    final_dim_dict: dict = None,
+    schema: str = "dbo",
+) -> None:
     df = pd.read_csv(csv_path)
     df.columns = [col.lower() for col in df.columns]
-    df["id"] = df.index
     df = optimize_datatypes(df)
 
-    with engine.connect() as conn:
-        version_id = conn.execute(text(f"SELECT id FROM dbo.dim_version WHERE version = '{version_tag}'")).fetchone()[0]
+    with engine.begin() as conn:
+        # get version_id safely (fail fast if missing)
+        row = conn.execute(
+            text("SELECT id FROM dbo.dim_version WHERE version = :v"),
+            {"v": version_tag}
+        ).fetchone()
+        if not row or row[0] is None:
+            raise ValueError(f"version_tag '{version_tag}' not found in dbo.dim_version")
+        version_id = int(row[0])
+
+        # compute new ids (ok if table doesn't exist yet)
+        max_id = get_max_id_safe(conn, table_name, schema=schema)
+        df.insert(0, "id", range(max_id + 1, max_id + 1 + len(df)))
         df["version_id"] = version_id
+        # ensure integer dtypes
+        df["id"] = df["id"].astype("int64")
+        df["version_id"] = df["version_id"].astype("int64")
 
-        max_id = conn.execute(text(f"SELECT MAX(id) FROM {table_name}")).fetchone()[0]
-        if max_id is None:
-            max_id = 0
-        df["id"] = max_id + df.index + 1
-
+    # to_sql will auto-create the table if it doesn't exist (schema inferred)
     insert_dataframe(df, table_name, engine)
-    final_dim_dict[table_name] = df
+
+    if final_dim_dict is not None:
+        # store a copy to avoid accidental external mutation
+        final_dim_dict[table_name] = df.copy()
 
 def insert_dataframe_from_csv_fact(csv_path: str, table_name: str, schemadict: dict, engine, version_tag=None):
     df = pd.read_csv(csv_path)
     df.columns = [col.lower() for col in df.columns]
-    df["id"] = df.index
+    df["id"] = df.index  # will be overwritten
     df = optimize_datatypes(df)
 
-    with engine.connect() as conn:
-        version_id = conn.execute(text(f"SELECT id FROM dbo.dim_version WHERE version = '{version_tag}'")).fetchone()[0]
-        df["version_id"] = version_id
+    with engine.begin() as conn:
+        row = conn.execute(
+            text("SELECT id FROM dbo.dim_version WHERE version = :v"),
+            {"v": version_tag}
+        ).fetchone()
+        if not row:
+            raise ValueError(f"version_tag '{version_tag}' not found in dbo.dim_version")
 
-        max_id = conn.execute(text(f"SELECT MAX(id) FROM {table_name}")).fetchone()[0]
-        if max_id is None:
-            max_id = 0
-        df["id"] = max_id + df.index + 1
+        df["version_id"] = int(row[0])
+
+        max_id = get_max_id_safe(conn, table_name, schema="dbo")
+        df["id"] = (max_id + df.index + 1).astype("int64")
+        df["version_id"] = df["version_id"].astype("int64")
 
     insert_dataframe(df, table_name, engine)
 
@@ -107,7 +147,7 @@ def execute_db_operations(version_tag: str = "test_version"):
 
     dimension_files = [
         "department.csv", "customer.csv", "product.csv", "account.csv",
-        "procurement.csv", "service.csv", "line.csv", "vendor.csv"
+        "procurement.csv", "service.csv", "payline.csv", "vendor.csv"
     ]
 
     for file_name in dimension_files:
@@ -156,6 +196,19 @@ def execute_db_operations(version_tag: str = "test_version"):
         engine=engine,
         version_tag=version_tag
     )
+
+    df_budget = pd.read_csv("data/outputdata/fact/fact_budget.csv")
+    df_budget = remap_dataframe_ids(df_budget, final_dim_dict)
+    df_budget.to_csv("data/outputdata/fact/fact_budget_mapped.csv", index=False)
+
+    insert_dataframe_from_csv_fact(
+        csv_path="data/outputdata/fact/fact_budget_mapped.csv",
+        table_name="fact_budget",
+        schemadict=schemadict,
+        engine=engine,
+        version_tag=version_tag
+    )
+
 
 if __name__ == "__main__":
     version_tag = "demo_" + dt.now().strftime("%Y%m%d_%H%M")

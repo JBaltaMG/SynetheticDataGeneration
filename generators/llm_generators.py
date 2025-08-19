@@ -160,7 +160,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     - Avoid vague terms like "Miscellaneous" or "Various".
     - Include annual/temporal entries such as "Annual IT Audit".
     - `proportionality` = share of total sales revenue
-    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number 
+    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number.
 
     Composition rules:
     - Top ranks: expensive projects, enterprise retainers, major outsourcing contracts.

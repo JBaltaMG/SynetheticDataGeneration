@@ -18,16 +18,16 @@ schemadict = {
     },
 
     "dim_product": {
-        "product_id": "int",
         "product_name": "str",
-        "product_category": "str",
-        "product_subcategory": "str",
+        "unit_price": "str",
     },
 
     "dim_account": {
-        "account_id": "int",
+        "level3": "int",
+        "level4": "int",
         "account_name": "str",
-        "account_type": "str",
+        "level4_name": "str",
+        "account_id": "int",
     },
 
     "dim_procurement": {
@@ -38,7 +38,7 @@ schemadict = {
         "service_name": "str",
     },
 
-    "dim_line": {
+    "dim_payline": {
         "line_name": "str",
         "line_id": "int",
     },
@@ -57,10 +57,27 @@ schemadict = {
         "debit_credit": "str",  
         "date": "str",             
         "amount": "float",
+        "quantity": "float",
         "account_id": "int",
         "product_id": "int",
         "procurement_id": "int",
         "service_id": "int",
+        "vendor_id": "int",
+        "customer_id": "int"
+    },
+
+    "fact_budget": {
+        "document_number": "int",
+        "debit_credit": "str",  
+        "date": "str",             
+        "amount": "float",
+        "quantity": "float",
+        "account_id": "int",
+        "product_id": "int",
+        "procurement_id": "int",
+        "service_id": "int",
+        "vendor_id": "int",
+        "customer_id": "int"
     },
 
     "fact_payroll": {

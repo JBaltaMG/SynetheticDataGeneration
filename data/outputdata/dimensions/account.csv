@@ -1,61 +1,61 @@
 level3,level4,name,account_type,account_id
-1000,1100,Cash Denmark,Asset,13452
-1000,1110,Bank Accounts DKK,Asset,11343
-1000,1120,Bank Accounts EUR,Asset,12793
-1000,1130,Bank Accounts USD,Asset,11103
-1000,1200,Accounts Receivable Trade,Asset,19869
-1000,1210,Accounts Receivable Intercompany,Asset,16670
-1000,1220,Allowance for Doubtful Accounts,Asset,19973
-1000,1300,VAT Receivable,Asset,13356
-1000,1400,Inventory Raw Materials,Asset,15079
-1000,1410,Inventory Work in Progress,Asset,16554
-1000,1420,Inventory Finished Goods,Asset,15898
-1000,1430,Inventory Packaging Materials,Asset,19798
-1000,1500,Prepaid Expenses,Asset,19770
-1000,1510,Prepaid Insurance,Asset,19431
-1000,1520,Prepaid Rent,Asset,17236
-1000,1630,Moulds & Tools,Asset,19812
-1000,1700,Accumulated Depreciation,Asset,13906
-2000,2110,Accounts Payable Intercompany,Liability,91402
-2000,2210,Payroll Taxes Payable,Liability,91064
-2000,2220,Other Tax Payable,Liability,90542
-2000,2310,Accrued Interest,Liability,96988
-2000,2320,Accrued Royalties,Liability,98126
-2000,2400,Deferred Revenue,Liability,94129
-2000,2500,Short-Term Loans,Liability,95680
-2000,2510,Current Portion Long-Term Debt,Liability,96723
-3000,3200,Retained Earnings,Equity,29596
-4000,4100,Product Revenue Retail Denmark,Revenue,33740
-4000,4110,Product Revenue eCommerce Denmark,Revenue,33287
-4000,4120,Product Revenue Distribution Denmark,Revenue,30586
-4000,4200,Service Revenue Play Events,Revenue,33014
-4000,4220,Service Revenue Education Workshops,Revenue,34757
-4000,4230,Service Revenue Design Services,Revenue,31259
-5000,5110,Product COGS Purchased Components,Product Expense,42551
-5000,5130,Product COGS Manufacturing Overhead,Product Expense,46150
-5000,5140,Product COGS Utilities & Energy,Product Expense,42163
-5000,5170,Product COGS Freight In,Product Expense,47593
-5000,5180,Product COGS Inventory Shrinkage,Product Expense,44869
-5000,5190,Product COGS Warranty & Returns,Product Expense,48607
-5000,5200,Product COGS Royalties,Product Expense,43262
-5000,5300,Service COGS Play Events,Service Expense,57543
-5000,5310,Service COGS Licensing Fees,Service Expense,57708
-5000,5330,Service COGS Travel,Service Expense,54355
-5000,5350,Service COGS External Facilitators,Service Expense,51760
-5000,5360,Service COGS Outsourced Support,Service Expense,54531
-6000,6100,Marketing Advertising Denmark,Service Expense,53061
-6000,6110,Marketing Campaigns,Service Expense,51841
-6000,6120,Promotional Materials,Service Expense,58802
-6000,6210,Logistics Warehousing,Product Expense,43693
-6000,6300,IT Expenses Hardware,Service Expense,51652
-6000,6320,IT Expenses Cloud Services,Service Expense,55543
-6000,6400,Utilities Office Denmark,Service Expense,59095
-6000,6500,Professional Fees Audit,Service Expense,51279
-6000,6520,Professional Fees Consulting,Service Expense,55263
-6000,6610,Property Insurance,Service Expense,58421
-6000,6800,Travel Denmark,Service Expense,51213
-6000,6810,Travel International,Service Expense,51981
-6000,6900,Office Supplies Denmark,Service Expense,58503
-6000,6910,Stationery,Service Expense,50532
-6000,7000,Bad Debt Expense,Service Expense,52858
-6000,7100,Research & Development Prototyping,Service Expense,54174
+1000,1101,Corporate Bank Account DKK,Asset,18671
+1000,1102,Corporate Bank Account EUR,Asset,16536
+1000,1103,Corporate Bank Account USD,Asset,13196
+1000,1120,Short-Term Investments,Asset,17140
+1000,1200,Accounts Receivable Trade,Asset,16754
+1000,1220,Allowance for Bad Debts,Asset,15106
+1000,1301,Prepaid Rent,Asset,16991
+1000,1310,Value Added Tax Receivable,Asset,11097
+1000,1320,Other Prepaid Expenses,Asset,17078
+1000,1401,Inventory Raw Materials,Asset,13002
+1000,1402,Inventory Work in Progress,Asset,14489
+1000,1410,Inventory Packaging Materials,Asset,11158
+1000,1420,Inventory Spare Parts,Asset,10888
+1000,1500,Machinery and Equipment,Asset,14831
+1000,1510,Buildings,Asset,15352
+1000,1511,Accumulated Depreciation Buildings,Asset,15118
+1000,1521,Accumulated Depreciation Vehicles,Asset,16207
+1000,1602,Intangible Assets Software,Asset,15684
+1000,1700,Other Non-Current Assets,Asset,10964
+2000,2100,Accounts Payable Trade,Liability,92800
+2000,2110,Accounts Payable Intercompany,Liability,90259
+2000,2120,Accrued Expenses,Liability,92791
+2000,2130,VAT Payable,Liability,98249
+2000,2310,Current Portion Long-Term Debt,Liability,97154
+2000,2400,Long-Term Bank Loans,Liability,99841
+2000,2410,Long-Term Lease Liabilities,Liability,94365
+2000,2500,Other Non-Current Liabilities,Liability,91466
+3000,3200,Share Premium,Equity,24832
+3000,3300,Retained Earnings,Equity,23452
+3000,3400,Current Year Earnings,Equity,21343
+4000,4100,Domestic Product Sales,Revenue,32793
+4000,4101,Export Product Sales,Revenue,31103
+4000,4102,Online Store Sales,Revenue,39869
+4000,4110,Retail Store Sales,Revenue,36670
+4000,4200,Licensing Revenue,Revenue,39973
+4000,4201,Royalty Income,Revenue,33356
+4000,4400,Other Operating Income,Revenue,35079
+5000,5110,COGS Assembly Costs,Product Expense,46554
+5000,5111,COGS Direct Labour Factory,Product Expense,45898
+5000,5115,COGS Outsourced Manufacturing,Product Expense,49798
+5000,5120,COGS Moulds & Tooling Amortization,Product Expense,49770
+5000,5121,COGS Production Scrap,Product Expense,49431
+5000,5130,COGS Freight Inbound,Product Expense,47236
+5000,5140,COGS Finished Goods Write-off,Product Expense,49812
+5000,5150,COGS Packaging Supplies,Product Expense,43906
+5000,5200,COGS Product Returns,Product Expense,41402
+5000,5201,COGS Warranty Claims,Product Expense,41064
+6000,6100,Service Delivery Materials,Service Expense,50542
+6000,6103,Service Delivery Third Party Fees,Service Expense,56988
+6000,6104,Service Delivery IT Costs,Service Expense,58126
+6000,6201,Customer Support Telecoms,Service Expense,54129
+6000,6202,Customer Support Training,Service Expense,55680
+6000,6300,Consulting External Fees,Service Expense,56723
+6000,6301,Consulting Subcontractors,Service Expense,59596
+6000,6400,Service Warranty Expense,Service Expense,53740
+7000,7100,Advertising Campaigns,Service Expense,53287
+7000,7101,Digital Marketing Spend,Service Expense,50586
+7000,7300,Distribution Freight Out,Service Expense,53014
+7000,7401,IT Software Subscriptions,Service Expense,54757
+7000,7600,Research & Development Materials,Service Expense,51259

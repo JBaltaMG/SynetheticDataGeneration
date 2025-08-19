@@ -172,7 +172,6 @@ def map_procurement_services(
     df_procurement: pd.DataFrame,
     df_services: pd.DataFrame,
     df_accounts: pd.DataFrame,
-    df_departments: pd.DataFrame,
     df_vendors: pd.DataFrame,
     df_customers: pd.DataFrame
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -201,6 +200,7 @@ def map_procurement_services(
     df_procurement["service_id"] = None
     df_procurement["product_id"] = None
     df_procurement["item_name"] = df_procurement["name"]
+    df_procurement["unit_price"] = df_procurement["unit_price"].fillna(0)  # Ensure unit_price is numeric
     df_procurement["source_type"] = "procurement"
 
     df_services = df_services.copy()
@@ -208,6 +208,7 @@ def map_procurement_services(
     df_services["procurement_id"] = None
     df_services["product_id"] = None
     df_services["item_name"] = df_services["name"]
+    df_services["unit_price"] = df_services["unit_price"].fillna(0)  # Ensure unit_price is numeric
     df_services["source_type"] = "service"
 
     # Combine and select columns
@@ -229,7 +230,6 @@ def map_procurement_services(
 def map_products(
     df_products: pd.DataFrame, 
     df_accounts: pd.DataFrame, 
-    df_departments: pd.DataFrame,
     df_customers: pd.DataFrame,
     df_vendors: pd.DataFrame
     ) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -265,7 +265,6 @@ def map_products(
     print("✔ Product mapping done!")
 
     df_mapping["item_name"] = df_mapping["name"]
-    df_mapping["unit_price"] = df_products["unit_price"]
     df_mapping = df_mapping[["item_name", "account_id", "account_name", "customer_name"]]
 
     return df_spend, df_mapping

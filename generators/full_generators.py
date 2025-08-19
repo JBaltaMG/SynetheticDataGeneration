@@ -10,6 +10,7 @@ import generators.llm_generators as llm_generators
 import modeling.payroll as payroll
 import modeling.erp as erp
 import modeling.mapping as mapping
+import modeling.budget as budget
 from generators.llm_context_generators import generate_context_numbers_llm, generate_context_report, generate_year_end_report_from_pdf
 from typing import Dict, List, Tuple
 
@@ -437,8 +438,8 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     )
     print("\n * Semantic mapping started * :")
     print("Time estimate: 3-5 minutes")
-    df_erp_expenses, df_map_expenses = mapping.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers, df_vendors=df_vendors)
-    df_erp_products, df_map_products = mapping.map_products(df_products=df_products, df_accounts=df_accounts, df_departments=df_departments, df_customers=df_customers, df_vendors=df_vendors)
+    df_erp_expenses, df_map_expenses = mapping.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_customers=df_customers, df_vendors=df_vendors)
+    df_erp_products, df_map_products = mapping.map_products(df_products=df_products, df_accounts=df_accounts, df_customers=df_customers, df_vendors=df_vendors)
 
     print(f"✔ All mapping data generated.")
 
@@ -475,7 +476,7 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     df_erp_products_full = erp.create_erp_data(df_expenses=df_erp_products, df_expenses_mapping=df_map_products, df_document_metadata=document_metadata_products)
       
     # Full target schema # also currency, amount_eur, Type
-    full_columns = ['document_number', 'type', 'date', 'amount_dkk', 'account_name', 'product_id', 'procurement_id', 'service_id']
+    full_columns = ['document_number', 'type', 'date', 'amount', 'quantity', 'account_name', 'product_id', 'procurement_id', 'service_id']
     vendor_col = ['vendor_name']    
     customer_col = ['customer_name']
 
@@ -483,12 +484,11 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     df_expenses_full = df_erp_expenses_full.reindex(columns=full_columns + vendor_col)
     df_products_full = df_erp_products_full.reindex(columns=full_columns + customer_col)
 
-
     rename_cols = {
         'document_number': 'document_number',
         'type': 'debit_credit', 
         'date': 'date',
-        'amount_dkk': 'amount',
+        'amount': 'amount',
         'quantity': 'quantity',
         'account_name': 'account_id',
         'product_id': 'product_id',
@@ -497,8 +497,6 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         'vendor_name': 'vendor_id',
         'customer_name': 'customer_id'}
     
-
-
     df_expenses_full.rename(columns=rename_cols, inplace=True)
     df_products_full.rename(columns=rename_cols, inplace=True)
     
@@ -514,7 +512,8 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     df_accounts = pd.read_csv("data/outputdata/dimensions/account.csv")
 
     df_erp_all = erp.balance_documents_with_assets(df_erp=df_erp_all, df_accounts=df_accounts, tolerance=100)
-    
+    df_erp_budget = budget.generate_budget_from_gl_all_years(df_erp_all)
+
     print(f"✔ All erp-data generated.")
 
     if save_to_csv:
@@ -523,10 +522,12 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         df_erp_expenses_full.to_csv(f"{output_dir}/erp_expenses.csv", index=False)
         df_erp_products_full.to_csv(f"{output_dir}/erp_products.csv", index=False)
         df_erp_all.to_csv(f"{output_dir}/general_ledger.csv", index=False)
+        df_erp_budget.to_csv(f"{output_dir}/fact_budget.csv", index=False)
         print(f"✔ All ERP CSVs saved to: {output_dir}")
     
     return {
         "df_erp_expenses_full": df_erp_expenses_full,
         "df_erp_products_full": df_erp_products_full,
         "df_erp_all": df_erp_all,
+        "df_erp_budget": df_erp_budget
     }
