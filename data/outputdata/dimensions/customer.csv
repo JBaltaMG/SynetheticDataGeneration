@@ -1,56 +1,51 @@
 customer_id,name,customer_segment,proportionality
-10,Target,Retail,0.09473684210526313
-11,Walmart,Retail,0.09473684210526313
-12,Amazon,Retail,0.08421052631578946
-13,Carrefour,Retail,0.0631578947368421
-14,Costco,Wholesale,0.05263157894736841
-15,Zulily,Retail,0.03157894736842105
-16,Big Lots,Retail,0.021052631578947364
-17,Kmart Australia,Retail,0.021052631578947364
-18,Myer,Retail,0.021052631578947364
-19,Shopkins World,Retail,0.010526315789473682
-20,Nordstrom,Retail,0.010526315789473682
-21,Hamleys,Retail,0.010526315789473682
-22,Indigo Books & Music,Retail,0.010526315789473682
-23,Smithsonian Institution,Non-profit,0.010526315789473682
-24,Children's Museum of Indianapolis,Non-profit,0.010526315789473682
-25,Royal Danish Library,Government,0.010526315789473682
-26,United Nations Development Programme,Non-profit,0.010526315789473682
-27,LEGO Education North America,Enterprise,0.03157894736842105
-28,Scholastic Inc.,Enterprise,0.021052631578947364
-29,Tech Innovators LLC,Startup,0.010526315789473682
-30,EduToys Asia Co.,Wholesale,0.010526315789473682
-31,Miniso,Retail,0.010526315789473682
-32,Fun&Learn Distributors,Wholesale,0.010526315789473682
-33,Kiddo Toys Online,SME,0.010526315789473682
-34,Tiny Builders Inc.,Startup,0.010526315789473682
-35,Spark Learning Foundation,Non-profit,0.010526315789473682
-36,Little Genius Academy,SME,0.010526315789473682
-37,Kinderland Schools Group,Enterprise,0.010526315789473682
-38,Playworld Distribution,Wholesale,0.010526315789473682
-39,Bricks & Blocks Emporium,SME,0.010526315789473682
-40,City of Helsinki Education Department,Government,0.010526315789473682
-41,Australian Toy Distributors,Wholesale,0.010526315789473682
-42,Family Toys Superstore,Retail,0.010526315789473682
-43,Berlin Children's Museum,Non-profit,0.010526315789473682
-44,Bristol Learning Foundation,Non-profit,0.010526315789473682
-45,PlayTech Startups SE,Startup,0.010526315789473682
-46,Nova Learning Solutions,Startup,0.010526315789473682
-47,Copenhagen Toy Retailers,SME,0.010526315789473682
-48,KidsPlay & Co,SME,0.010526315789473682
-49,Metro Markets,Retail,0.010526315789473682
-50,The Entertainer,Retail,0.010526315789473682
-51,LegoLand Windsor Resort,Enterprise,0.010526315789473682
-52,Stockholm University,Government,0.010526315789473682
-53,Learning Express,Retail,0.010526315789473682
-54,Inspire Early Education,SME,0.010526315789473682
-55,BricksWorld PH,SME,0.010526315789473682
-56,Playtime Ltd.,SME,0.010526315789473682
-57,Creative Minds Daycare,SME,0.010526315789473682
-58,Learning Tree Foundation,Non-profit,0.010526315789473682
-59,Kids Innovate Hub,Startup,0.010526315789473682
-60,STEM Toys Canada,Wholesale,0.010526315789473682
-61,Super Toy Club,Retail,0.010526315789473682
-62,South Africa Department of Education,Government,0.010526315789473682
-63,Hong Kong Educators Network,Government,0.010526315789473682
-64,Brookstone,Retail,0.010526315789473682
+10,Walmart,Retail,0.09523809523809523
+11,Target,Retail,0.08465608465608465
+12,Amazon,Retail,0.10582010582010581
+13,"Toys ""R"" Us",Retail,0.07407407407407407
+14,Barnes & Noble,Retail,0.05291005291005291
+15,John Lewis,Retail,0.031746031746031744
+16,Tesco,Retail,0.031746031746031744
+17,Smyths Toys,Retail,0.042328042328042326
+18,Hamleys,Retail,0.021164021164021163
+19,Macy's,Retail,0.031746031746031744
+20,Big W,Retail,0.021164021164021163
+21,Canadian Tire,Retail,0.021164021164021163
+22,Myer,Retail,0.015873015873015872
+23,Galeries Lafayette,Retail,0.012698412698412698
+24,Aeon,Retail,0.019047619047619046
+25,El Corte Inglés,Retail,0.014814814814814814
+26,Kmart Australia,Retail,0.014814814814814814
+27,Toys Center,Retail,0.010582010582010581
+28,B2B Toy Supply,Wholesale,0.042328042328042326
+29,Funland Distributors,Wholesale,0.037037037037037035
+30,TransGlobal Toys,Wholesale,0.031746031746031744
+31,Kids World Distributors,Wholesale,0.029629629629629627
+32,FutureBuilders Robotics,SME,0.005291005291005291
+33,Imagination Academy,SME,0.005291005291005291
+34,Little Engineers Club,SME,0.005291005291005291
+35,MiniMakers Toy Shop,SME,0.004232804232804232
+36,PlayLab Discovery Centers,SME,0.004232804232804232
+37,Tiny Town Preschool,SME,0.004232804232804232
+38,Creative Blocks Studio,Startup,0.0031746031746031746
+39,PlayEd Solutions,Startup,0.0031746031746031746
+40,EduTinker Technologies,Startup,0.0031746031746031746
+41,BlockSmart Innovations,Startup,0.0031746031746031746
+42,FutureMinds Robotics,Startup,0.0031746031746031746
+43,Makedo Club,Startup,0.0031746031746031746
+44,Kids4Change Foundation,Non-profit,0.002116402116402116
+45,Educational Builders Trust,Non-profit,0.002116402116402116
+46,Toy Libraries International,Non-profit,0.002116402116402116
+47,STEM4All Foundation,Non-profit,0.002116402116402116
+48,TechEd for Kids,Non-profit,0.002116402116402116
+49,New York Department of Education,Government,0.009523809523809523
+50,"Federal Office of Education, Germany",Government,0.007407407407407407
+51,Singapore Ministry of Education,Government,0.006349206349206349
+52,Sydney Department of Education,Government,0.004232804232804232
+53,San Francisco Public Library,Government,0.0031746031746031746
+54,STEM Innovators Group,Enterprise,0.015873015873015872
+55,Discovery World Enterprises,Enterprise,0.013756613756613755
+56,Blocktopia Holdings,Enterprise,0.011640211640211638
+57,KidsZone Entertainment,Enterprise,0.010582010582010581
+58,PlayNation Group,Enterprise,0.008465608465608464
+59,BrightKids Holdings,Enterprise,0.008465608465608464

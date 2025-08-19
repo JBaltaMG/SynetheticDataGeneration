@@ -1,61 +1,61 @@
 level3,level4,name,account_type,account_id
-1000,1101,Corporate Bank Account DKK,Asset,18671
-1000,1102,Corporate Bank Account EUR,Asset,16536
-1000,1103,Corporate Bank Account USD,Asset,13196
-1000,1120,Short-Term Investments,Asset,17140
-1000,1200,Accounts Receivable Trade,Asset,16754
-1000,1220,Allowance for Bad Debts,Asset,15106
-1000,1301,Prepaid Rent,Asset,16991
-1000,1310,Value Added Tax Receivable,Asset,11097
-1000,1320,Other Prepaid Expenses,Asset,17078
-1000,1401,Inventory Raw Materials,Asset,13002
-1000,1402,Inventory Work in Progress,Asset,14489
-1000,1410,Inventory Packaging Materials,Asset,11158
-1000,1420,Inventory Spare Parts,Asset,10888
-1000,1500,Machinery and Equipment,Asset,14831
-1000,1510,Buildings,Asset,15352
-1000,1511,Accumulated Depreciation Buildings,Asset,15118
-1000,1521,Accumulated Depreciation Vehicles,Asset,16207
-1000,1602,Intangible Assets Software,Asset,15684
-1000,1700,Other Non-Current Assets,Asset,10964
-2000,2100,Accounts Payable Trade,Liability,92800
-2000,2110,Accounts Payable Intercompany,Liability,90259
-2000,2120,Accrued Expenses,Liability,92791
-2000,2130,VAT Payable,Liability,98249
-2000,2310,Current Portion Long-Term Debt,Liability,97154
-2000,2400,Long-Term Bank Loans,Liability,99841
-2000,2410,Long-Term Lease Liabilities,Liability,94365
-2000,2500,Other Non-Current Liabilities,Liability,91466
-3000,3200,Share Premium,Equity,24832
-3000,3300,Retained Earnings,Equity,23452
-3000,3400,Current Year Earnings,Equity,21343
-4000,4100,Domestic Product Sales,Revenue,32793
-4000,4101,Export Product Sales,Revenue,31103
-4000,4102,Online Store Sales,Revenue,39869
-4000,4110,Retail Store Sales,Revenue,36670
-4000,4200,Licensing Revenue,Revenue,39973
-4000,4201,Royalty Income,Revenue,33356
-4000,4400,Other Operating Income,Revenue,35079
-5000,5110,COGS Assembly Costs,Product Expense,46554
-5000,5111,COGS Direct Labour Factory,Product Expense,45898
-5000,5115,COGS Outsourced Manufacturing,Product Expense,49798
-5000,5120,COGS Moulds & Tooling Amortization,Product Expense,49770
-5000,5121,COGS Production Scrap,Product Expense,49431
-5000,5130,COGS Freight Inbound,Product Expense,47236
-5000,5140,COGS Finished Goods Write-off,Product Expense,49812
-5000,5150,COGS Packaging Supplies,Product Expense,43906
-5000,5200,COGS Product Returns,Product Expense,41402
-5000,5201,COGS Warranty Claims,Product Expense,41064
-6000,6100,Service Delivery Materials,Service Expense,50542
-6000,6103,Service Delivery Third Party Fees,Service Expense,56988
-6000,6104,Service Delivery IT Costs,Service Expense,58126
-6000,6201,Customer Support Telecoms,Service Expense,54129
-6000,6202,Customer Support Training,Service Expense,55680
-6000,6300,Consulting External Fees,Service Expense,56723
-6000,6301,Consulting Subcontractors,Service Expense,59596
-6000,6400,Service Warranty Expense,Service Expense,53740
-7000,7100,Advertising Campaigns,Service Expense,53287
-7000,7101,Digital Marketing Spend,Service Expense,50586
-7000,7300,Distribution Freight Out,Service Expense,53014
-7000,7401,IT Software Subscriptions,Service Expense,54757
-7000,7600,Research & Development Materials,Service Expense,51259
+1000,1101,Operating Bank Account,Asset,14407
+1000,1102,Foreign Currency Bank Account,Asset,17369
+1000,1103,Short-term Investments,Asset,12599
+1000,1111,Allowance for Doubtful Accounts,Asset,18043
+1000,1120,VAT Receivable,Asset,17085
+1000,1130,Prepaid Insurance,Asset,13844
+1000,1150,Inventory - Raw Materials,Asset,14007
+1000,1153,Inventory - Finished Goods,Asset,17531
+1000,1154,Spare Parts Inventory,Asset,11843
+1000,1180,Other Receivables,Asset,19062
+1000,1200,"Property, Plant & Equipment",Asset,15444
+1000,1201,Accumulated Depreciation - PPE,Asset,10029
+1000,1210,Production Machinery,Asset,13417
+1000,1211,Accumulated Depreciation - Machinery,Asset,11818
+1000,1220,Molds & Tooling,Asset,16716
+1000,1221,Accumulated Depreciation - Tooling,Asset,15363
+1000,1231,Accumulated Depreciation - Office Equipment,Asset,11967
+1000,1241,Accumulated Depreciation - Leasehold,Asset,11406
+1000,1301,Accumulated Amortization - Intangibles,Asset,17545
+1000,1400,Intercompany Receivables,Asset,11066
+1000,1500,Deferred Tax Asset,Asset,19911
+2000,2100,Trade Payables,Asset,10977
+2000,2110,VAT Payable,Asset,10783
+2000,2120,Accrued Expenses,Asset,10024
+2000,2130,Customer Advances,Asset,14891
+2000,2140,Other Payables,Asset,11580
+2000,2200,Short-term Loans,Asset,18884
+2000,2300,Long-term Debt,Asset,18315
+3000,3100,Share Capital,Equity,23525
+3000,3110,Share Premium,Equity,21186
+3000,3300,Other Reserves,Equity,22075
+3000,3400,Current Year Earnings,Equity,26840
+4000,4100,Product Sales Denmark,Revenue,39642
+4000,4101,Product Sales Export,Revenue,38000
+4000,4110,Online Sales,Revenue,32592
+4000,4130,Licensing Revenue,Revenue,37918
+4000,4140,Service Revenue,Revenue,32497
+5000,5100,Raw Materials Consumption,Product Expense,41549
+5000,5101,Packaging Materials Consumption,Product Expense,48414
+5000,5103,Production Facility Utilities,Product Expense,43651
+5000,5104,Depreciation - Production Machinery,Product Expense,44664
+5000,5106,Quality Control Costs,Product Expense,48323
+5000,5107,Finished Goods Write-off,Product Expense,44521
+5000,5108,Inventory Shrinkage,Product Expense,43432
+5000,5112,Import Duties,Product Expense,47931
+5000,5114,Customs Clearance Fees,Product Expense,41039
+5100,5201,External Service Providers,Service Expense,58696
+5100,5203,Depreciation - Service Equipment,Service Expense,56709
+5100,5204,Customer Support Outsourcing,Service Expense,59733
+5100,5205,Service Travel Expenses,Service Expense,53565
+5100,5207,Licensing Royalties Paid,Service Expense,50796
+5100,5209,Service Warranty Claims,Service Expense,55545
+6000,6100,Sales Promotion Costs,Product Expense,48989
+6000,6101,Trade Marketing,Product Expense,47989
+6000,6102,Advertising Campaigns,Product Expense,47709
+6000,6103,Market Research,Product Expense,44317
+6000,6105,Sponsorships & Events,Product Expense,42369
+6000,6106,Customer Loyalty Programs,Product Expense,48123
+6000,6107,Public Relations Expenses,Product Expense,49061
+6000,6108,Digital Marketing Expenses,Product Expense,44021

@@ -469,8 +469,8 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     df_erp_products = generated_mapped_data["df_erp_products"]
     df_erp_expenses = generated_mapped_data["df_erp_expenses"]
 
-    document_metadata_expense = random_generators.generate_document_metadata(n=30, start_index=1000)
-    document_metadata_products = random_generators.generate_document_metadata(n=30, start_index=2000)
+    document_metadata_expense = random_generators.generate_document_metadata(n=2000, start_index=1000)
+    document_metadata_products = random_generators.generate_document_metadata(n=2000, start_index=2000)
     
     df_erp_expenses_full = erp.create_erp_data(df_expenses=df_erp_expenses, df_expenses_mapping=df_map_expenses, df_document_metadata=document_metadata_expense)
     df_erp_products_full = erp.create_erp_data(df_expenses=df_erp_products, df_expenses_mapping=df_map_products, df_document_metadata=document_metadata_products)
