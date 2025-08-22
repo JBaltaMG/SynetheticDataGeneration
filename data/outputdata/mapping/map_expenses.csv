@@ -1,221 +1,281 @@
 item_name,account_id,account_name,vendor_name
-Masterbatch color pigments,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Mould maintenance parts,41549,Raw Materials Consumption,SABIC Innovative Plastics
-High-precision mould inserts,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Mould steel,41549,Raw Materials Consumption,ENGEL Austria GmbH
-Polyethylene (PE) resin,41549,Raw Materials Consumption,LyondellBasell Industries
-Laser engraving machines,44664,Depreciation - Production Machinery,ENGEL Austria GmbH
-Automation robotics systems,44664,Depreciation - Production Machinery,Stäubli Robotics
-Electrical automation control units,41549,Raw Materials Consumption,Siemens Industry Software
-Polycarbonate (PC) resin,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Polypropylene (PP) resin,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Ultrasonic welding machines,44664,Depreciation - Production Machinery,ENGEL Austria GmbH
-Production line conveyors,44664,Depreciation - Production Machinery,ENGEL Austria GmbH
-Quality control vision cameras,48323,Quality Control Costs,Canon Danmark A/S
-In-mould labeling films,48414,Packaging Materials Consumption,SABIC Innovative Plastics
-Mold release agents,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Acrylonitrile Butadiene Styrene (ABS) resin,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Packaging cardboard boxes,48414,Packaging Materials Consumption,Büro Nord ApS
-Shrink wrap film,48414,Packaging Materials Consumption,SABIC Innovative Plastics
-Pallets (wooden),48414,Packaging Materials Consumption,JYSK A/S
-Pallets (plastic),48414,Packaging Materials Consumption,SABIC Innovative Plastics
-Automated guided vehicles (AGVs),44664,Depreciation - Production Machinery,ENGEL Austria GmbH
-Industrial air compressors,44664,Depreciation - Production Machinery,Festo AG & Co. KG
-Precision metal springs,41549,Raw Materials Consumption,Festo AG & Co. KG
-Adhesive labels,48414,Packaging Materials Consumption,Tesa SE
-Mechanical gears and belts,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Robotic end effectors,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Industrial sensors,41549,Raw Materials Consumption,Songwon Industrial
-Hydraulic valves,41549,Raw Materials Consumption,Festo AG & Co. KG
-PLC control systems,44664,Depreciation - Production Machinery,Siemens Industry Software
-Anti-static mats,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Bagging machines,44664,Depreciation - Production Machinery,ENGEL Austria GmbH
-Heat exchangers,44664,Depreciation - Production Machinery,Danfoss Drives A/S
-Cooling fans (industrial),41549,Raw Materials Consumption,Covestro AG
-Material handling bins (plastic),41549,Raw Materials Consumption,SABIC Innovative Plastics
-Molding machine spare parts,44664,Depreciation - Production Machinery,ENGEL Austria GmbH
-Production safety guards,43651,Production Facility Utilities,ENGEL Austria GmbH
-Electric motors (industrial),41549,Raw Materials Consumption,Danfoss Drives A/S
-Conveyor belts,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Lubricants (industrial),41549,Raw Materials Consumption,Songwon Industrial
-Modular workstations,41549,Raw Materials Consumption,SABIC Innovative Plastics
-PLC input modules,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Compressed air dryers,43651,Production Facility Utilities,Festo AG & Co. KG
-Resin drying hoppers,44664,Depreciation - Production Machinery,Motan-Colortronic GmbH
-Fire suppression systems,43651,Production Facility Utilities,CBRE Denmark
-Pneumatic actuators,41549,Raw Materials Consumption,Festo AG & Co. KG
-Static eliminators,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Control panel enclosures,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Tooling calibration gauges,48323,Quality Control Costs,ENGEL Austria GmbH
-Tool steel blanks,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Warehouse shelving,41549,Raw Materials Consumption,Büro Nord ApS
-Laser printer labels,48414,Packaging Materials Consumption,Tesa SE
-Barcode scanners,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Strapping machines,48414,Packaging Materials Consumption,Fellowes Brands ApS
-Stretch film rolls,48414,Packaging Materials Consumption,Dow Europe GmbH
-Heavy duty racking,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Forklift batteries,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Pallet jacks,44664,Depreciation - Production Machinery,ENGEL Austria GmbH
-Forklift tires,41549,Raw Materials Consumption,SABIC Innovative Plastics
-RFID tags,41549,Raw Materials Consumption,SABIC Innovative Plastics
-RFID readers,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Protective eyewear,48323,Quality Control Costs,SABIC Innovative Plastics
-Warehouse management software licenses,41549,Raw Materials Consumption,SAP Denmark A/S
-High visibility vests,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Safety helmets,41549,Raw Materials Consumption,SABIC Innovative Plastics
-First aid kits,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Safety footwear,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Industrial vacuum cleaners,43651,Production Facility Utilities,Fellowes Brands ApS
-Spill containment kits,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Industrial floor sweepers,43651,Production Facility Utilities,CBRE Denmark
-Fire extinguishers,43651,Production Facility Utilities,Fellowes Brands ApS
-Battery chargers,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Ear protection earmuffs,41549,Raw Materials Consumption,SABIC Innovative Plastics
-UPS systems,43651,Production Facility Utilities,Danfoss Drives A/S
-Backup power generators,43651,Production Facility Utilities,Danfoss Drives A/S
-IT network switches,43651,Production Facility Utilities,ISS IT Services
-Production laptops,43651,Production Facility Utilities,Ricoh Danmark A/S
-IT cabling,41549,Raw Materials Consumption,ISS IT Services
-Production data servers,43651,Production Facility Utilities,Siemens Industry Software
-Desiccant packs,48414,Packaging Materials Consumption,Fellowes Brands ApS
-Desktop computers,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Computer monitors,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Wireless routers,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Office chairs,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Copy paper (A4),41549,Raw Materials Consumption,Büro Nord ApS
-High-volume printers,41549,Raw Materials Consumption,Canon Danmark A/S
-Office desks,41549,Raw Materials Consumption,Büro Nord ApS
-Whiteboards,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Notepads,41549,Raw Materials Consumption,Fellowes Brands ApS
-Sticky notes,41549,Raw Materials Consumption,Tesa SE
-Ballpoint pens,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Highlighters,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Whiteboard markers,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Staplers,41549,Raw Materials Consumption,Fellowes Brands ApS
-Mechanical pencils,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Binder clips,41549,Raw Materials Consumption,Fellowes Brands ApS
-Staple refills,41549,Raw Materials Consumption,Fellowes Brands ApS
-Document folders,48414,Packaging Materials Consumption,Fellowes Brands ApS
-Paper clips,41549,Raw Materials Consumption,Fellowes Brands ApS
-Ring binders,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Desk organizers,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Wastepaper baskets,41549,Raw Materials Consumption,Fellowes Brands ApS
-Office shredders,41549,Raw Materials Consumption,Fellowes Brands ApS
-Postage stamps,41549,Raw Materials Consumption,Tesa SE
-Mailing envelopes,48414,Packaging Materials Consumption,Fellowes Brands ApS
-Scissors,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Wall clocks,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Letter openers,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Coffee machines,44664,Depreciation - Production Machinery,ENGEL Austria GmbH
-Coffee filters,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Sugar sticks,41549,Raw Materials Consumption,JYSK A/S
-Biscuits (office),41549,Raw Materials Consumption,Fellowes Brands ApS
-Milk (office),41549,Raw Materials Consumption,Fellowes Brands ApS
-Bottled water (office),41549,Raw Materials Consumption,Blue Water Shipping
-Hand soap,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Facial tissues,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Paper towels,41549,Raw Materials Consumption,Fellowes Brands ApS
-Disinfectant wipes,41549,Raw Materials Consumption,Fellowes Brands ApS
-Desk calendars,48989,Sales Promotion Costs,Fellowes Brands ApS
-Dish sponges,41549,Raw Materials Consumption,SABIC Innovative Plastics
-Trash bags,48414,Packaging Materials Consumption,SABIC Innovative Plastics
-Internal Audit Services,58696,External Service Providers,PwC Denmark
-Workforce Outsourcing Contract,58696,External Service Providers,Adecco Denmark
-Property Facility Management,58696,External Service Providers,CBRE Denmark
-OEM Manufacturing Contract,58696,External Service Providers,ENGEL Austria GmbH
-Cloud Services Enterprise License,58696,External Service Providers,Microsoft Denmark ApS
-SAP Enterprise Support,58696,External Service Providers,SAP Denmark A/S
-Annual Tax Advisory,58696,External Service Providers,Deloitte Denmark
-SAP S/4HANA License,50796,Licensing Royalties Paid,SAP Denmark A/S
-Intellectual Property Legal Services,58696,External Service Providers,Tata Consultancy Services Nordic
-Corporate Legal Retainer,58696,External Service Providers,Deloitte Denmark
-Digital Advertising Campaign Management,58696,External Service Providers,SABIC Innovative Plastics
-Business Process Outsourcing Fee,58696,External Service Providers,Accenture Denmark
-International Distribution Agreements,58696,External Service Providers,SABIC Innovative Plastics
-Annual Financial Audit,58696,External Service Providers,Deloitte Denmark
-Global Supply Chain Consulting,58696,External Service Providers,PA Consulting Denmark
-Brand Licensing Fee,50796,Licensing Royalties Paid,SABIC Innovative Plastics
-SAP Maintenance Support,58696,External Service Providers,SAP Denmark A/S
-Global HR Outsourcing,58696,External Service Providers,Adecco Denmark
-Telecom Connectivity Contract,58696,External Service Providers,SABIC Innovative Plastics
-Product Safety Regulatory Fees,58696,External Service Providers,SABIC Innovative Plastics
-Energy Procurement Contract,58696,External Service Providers,SABIC Innovative Plastics
-Annual ISO 9001 Certification,58696,External Service Providers,SABIC Innovative Plastics
-Annual GDPR Compliance Audit,58696,External Service Providers,Deloitte Denmark
-Global Payroll Processing,58696,External Service Providers,Adecco Denmark
-Patent Filing Service,58696,External Service Providers,SABIC Innovative Plastics
-Environmental Permit Fee,58696,External Service Providers,CBRE Denmark
-Enterprise Risk Management Consulting,58696,External Service Providers,PA Consulting Denmark
-Recruitment Process Outsourcing,58696,External Service Providers,Adecco Denmark
-Annual Occupational Health & Safety Audit,58696,External Service Providers,SABIC Innovative Plastics
-Corporate Travel Management,53565,Service Travel Expenses,DSV A/S
-Digital Product Development Services,58696,External Service Providers,Tata Consultancy Services Nordic
-Annual Anti-Bribery Compliance Review,58696,External Service Providers,Deloitte Denmark
-Salesforce Enterprise License,58696,External Service Providers,Microsoft Denmark ApS
-Executive Search Fee,58696,External Service Providers,Adecco Denmark
-Brand Protection Consulting,58696,External Service Providers,PA Consulting Denmark
-Warehouse Rental Contract,58696,External Service Providers,CBRE Denmark
-Annual Fire Safety Inspection,58696,External Service Providers,CBRE Denmark
-Internal Communications Platform License,50796,Licensing Royalties Paid,Microsoft Denmark ApS
-Strategic Market Research Subscription,58696,External Service Providers,McKinsey & Company Nordics
-Crisis Management Retainer,58696,External Service Providers,McKinsey & Company Nordics
-Corporate Security Services,58696,External Service Providers,Tata Consultancy Services Nordic
-Worldwide Logistics Tracking License,50796,Licensing Royalties Paid,DSV A/S
-Enterprise Fleet Management,58696,External Service Providers,SABIC Innovative Plastics
-Annual Data Privacy Impact Assessment,58696,External Service Providers,Microsoft Denmark ApS
-Mobile Device Management License,58696,External Service Providers,Microsoft Denmark ApS
-Annual Employee Engagement Survey,58696,External Service Providers,Adecco Denmark
-Annual Customs Compliance Audit,58696,External Service Providers,Deloitte Denmark
-Third Party Due Diligence Service,58696,External Service Providers,SABIC Innovative Plastics
-Annual Employee Training Platform,58696,External Service Providers,Adecco Denmark
-Annual Water Usage Audit,58696,External Service Providers,Blue Water Shipping
-Global Mobility Services,58696,External Service Providers,Kelly Services Denmark
-Annual Contract Management Review,58696,External Service Providers,SABIC Innovative Plastics
-Global Event Sponsorship Fee,58696,External Service Providers,SABIC Innovative Plastics
-Annual Digital Accessibility Audit,58696,External Service Providers,Büro Nord ApS
-Annual Import Compliance Audit,58696,External Service Providers,SABIC Innovative Plastics
-SAP Integration Support,58696,External Service Providers,SAP Denmark A/S
-Annual Time Tracking System License,58696,External Service Providers,Siemens Industry Software
-Annual Employee Benefits Consulting,58696,External Service Providers,PA Consulting Denmark
-Annual HR Policy Audit,58696,External Service Providers,Adecco Denmark
-Annual Competitive Benchmarking,58696,External Service Providers,McKinsey & Company Nordics
-Annual Mental Health & Wellness Program,58696,External Service Providers,Adecco Denmark
-Annual Press Release Distribution Fee,58696,External Service Providers,SABIC Innovative Plastics
-Annual Intellectual Property Portfolio Review,58696,External Service Providers,SABIC Innovative Plastics
-Annual Market Compliance Review,58696,External Service Providers,SABIC Innovative Plastics
-Annual Mobile Device Security Audit,58696,External Service Providers,ProData Consult
-Annual Sustainability Consulting,58696,External Service Providers,PA Consulting Denmark
-Annual Corporate Registry Fee,58696,External Service Providers,SABIC Innovative Plastics
-Annual Fixed Asset Valuation,58696,External Service Providers,CBRE Denmark
-Annual Procurement Platform Fee,58696,External Service Providers,SAP Denmark A/S
-Annual Social Media Management License,58696,External Service Providers,SABIC Innovative Plastics
-Annual Public Liability Insurance Fee,58696,External Service Providers,SABIC Innovative Plastics
-Annual Accounting Software License,58696,External Service Providers,Siemens Industry Software
-Annual Web Domain Renewal,58696,External Service Providers,SABIC Innovative Plastics
-Annual Food Handling Permit,58696,External Service Providers,SABIC Innovative Plastics
-Annual Import License Renewal,58696,External Service Providers,SABIC Innovative Plastics
-Annual ISO 14001 Certification,58696,External Service Providers,SABIC Innovative Plastics
-Annual LEI Registration,58696,External Service Providers,SABIC Innovative Plastics
-Annual Audio-Visual Equipment Lease,56709,Depreciation - Service Equipment,Ricoh Danmark A/S
-Adobe Creative Cloud License,58696,External Service Providers,Canon Danmark A/S
-Annual Data Protection Officer Fee,58696,External Service Providers,NNIT A/S
-Annual Timesheet Software License,58696,External Service Providers,Siemens Industry Software
-Annual CRM User License,58696,External Service Providers,SABIC Innovative Plastics
-Annual VPN Subscription,58696,External Service Providers,Microsoft Denmark ApS
-Annual Payroll Software License,58696,External Service Providers,CGI Group Inc.
-Annual Virtual Server Subscription,58696,External Service Providers,Microsoft Denmark ApS
-Annual Utility Grid Connection Fee,58696,External Service Providers,SABIC Innovative Plastics
-Annual Social Media Listening Tool,58696,External Service Providers,SABIC Innovative Plastics
-Annual Data Visualization Tool License,50796,Licensing Royalties Paid,Siemens Industry Software
-Annual Online Survey Tool License,58696,External Service Providers,CGI Group Inc.
-Annual Analytics Platform License,58696,External Service Providers,Siemens Industry Software
-Annual Mobile App Store Developer Fee,58696,External Service Providers,Microsoft Denmark ApS
-Annual Digital Certificate Renewal,58696,External Service Providers,SABIC Innovative Plastics
-Annual Industry Association Dues,58696,External Service Providers,Siemens Industry Software
-Annual Trade Mark Renewal Fee,58696,External Service Providers,Tesa SE
-Annual Customs Warehouse Permit,58696,External Service Providers,DSV A/S
-Annual News Monitoring Service,58696,External Service Providers,SABIC Innovative Plastics
-Annual Professional Membership Dues,58696,External Service Providers,SABIC Innovative Plastics
-Annual Address Validation Service,58696,External Service Providers,PostNord Denmark
-Annual Domain Privacy Protection,58696,External Service Providers,SABIC Innovative Plastics
-Annual Mobile Network Fee,58696,External Service Providers,ISS IT Services
+Robotic arms,45461,Component Sourcing Expense,KUKA Robotics
+Electric motors,45461,Component Sourcing Expense,Schneider Electric Danmark
+Automated assembly equipment,49144,Product Assembly Subcontracting,ENGEL Austria GmbH
+Injection molding machine,45461,Component Sourcing Expense,ENGEL Austria GmbH
+Thermoplastic elastomers,45461,Component Sourcing Expense,TotalEnergies Polymers
+Conveyor systems,49144,Product Assembly Subcontracting,ENGEL Austria GmbH
+Steel molds,41430,Mould Maintenance,Unger Steel Group
+Mold maintenance tools,41430,Mould Maintenance,ENGEL Austria GmbH
+ABS plastic resin,45461,Component Sourcing Expense,TotalEnergies Polymers
+Polyethylene resin,46564,Packaging Material Purchases,TotalEnergies Polymers
+Pneumatic cylinders,45461,Component Sourcing Expense,Festo AG & Co. KG
+Polycarbonate resin,45461,Component Sourcing Expense,DOW Polycarbonate
+Quality control scanners,42043,Finished Goods Inspection,ENGEL Austria GmbH
+Industrial chillers,44554,Production Utilities,Piovan Group
+Packaging machines,46564,Packaging Material Purchases,ENGEL Austria GmbH
+Printed instructions booklets,46564,Packaging Material Purchases,Papyrus A/S
+Pallets (plastic),46564,Packaging Material Purchases,TotalEnergies Polymers
+Adhesive labels,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Shrink wrap film,46564,Packaging Material Purchases,TotalEnergies Polymers
+Plastic granulate transport tubes,45461,Component Sourcing Expense,Freja Transport & Logistics
+Granulate dryers,44554,Production Utilities,Piovan Group
+Spare machine parts,41430,Mould Maintenance,ENGEL Austria GmbH
+Plastic storage bins,46564,Packaging Material Purchases,TotalEnergies Polymers
+Cardboard packaging boxes,46564,Packaging Material Purchases,Papyrus A/S
+Barcode readers,45461,Component Sourcing Expense,Canon Danmark A/S
+Linear actuators,45461,Component Sourcing Expense,Festo AG & Co. KG
+Dust extraction filters,44554,Production Utilities,Atlas Copco A/S
+Central vacuum system components,45461,Component Sourcing Expense,Piovan Group
+Granule silos,45461,Component Sourcing Expense,TotalEnergies Polymers
+Material handling trolleys,46404,Freight Inward,Kuehne + Nagel A/S
+Machine lubricants,44554,Production Utilities,TotalEnergies Polymers
+Industrial cleaning agents,44554,Production Utilities,Initial Danmark A/S
+Industrial safety guards,44554,Production Utilities,G4S Danmark
+Workbenches,45461,Component Sourcing Expense,ENGEL Austria GmbH
+Mold temperature controllers,44554,Production Utilities,Piovan Group
+Compressed air systems,44554,Production Utilities,Atlas Copco A/S
+Pallet stretch wrap,46564,Packaging Material Purchases,TotalEnergies Polymers
+Forklifts,46564,Packaging Material Purchases,TotalEnergies Polymers
+Granule colorants,45461,Component Sourcing Expense,Clariant Colorants
+Safety sensors,45461,Component Sourcing Expense,Rockwell Automation Inc.
+Industrial gloves,45461,Component Sourcing Expense,TotalEnergies Polymers
+Precision cutting blades,45461,Component Sourcing Expense,FIPA GmbH
+Machine screws,45461,Component Sourcing Expense,Würth Denmark A/S
+Tool calibration kits,41430,Mould Maintenance,ENGEL Austria GmbH
+Alarm systems,45461,Component Sourcing Expense,G4S Danmark
+Emergency stop switches,45461,Component Sourcing Expense,Rockwell Automation Inc.
+Ear protection equipment,45461,Component Sourcing Expense,TotalEnergies Polymers
+Fire suppression systems,44554,Production Utilities,Imtech Nordic
+First aid kits,45461,Component Sourcing Expense,Lyreco Danmark A/S
+Hi-vis safety vests,45461,Component Sourcing Expense,Lyreco Danmark A/S
+Safety helmets,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Industrial signage,46564,Packaging Material Purchases,TotalEnergies Polymers
+Protective eyewear,46564,Packaging Material Purchases,PolyOne Corporation
+Replacement circuit boards,45461,Component Sourcing Expense,Rockwell Automation Inc.
+LED lighting fixtures,45461,Component Sourcing Expense,DOW Polycarbonate
+Ethernet cables,45461,Component Sourcing Expense,Würth Denmark A/S
+PLC controllers,45461,Component Sourcing Expense,Rockwell Automation Inc.
+Data loggers,45461,Component Sourcing Expense,NTT Data Denmark
+Humidity sensors,45461,Component Sourcing Expense,TotalEnergies Polymers
+Laptop computers,45461,Component Sourcing Expense,Office Depot Denmark
+UPS backup units,44554,Production Utilities,Schneider Electric Danmark
+Computer monitors,45461,Component Sourcing Expense,Covestro Deutschland AG
+Laser printers,46564,Packaging Material Purchases,Canon Danmark A/S
+Desktop computers,45461,Component Sourcing Expense,Microsoft Denmark ApS
+Barcode label printers,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Office chairs,46564,Packaging Material Purchases,Nordic Office Supplies
+Waste bins,46564,Packaging Material Purchases,LyondellBasell Industries
+Filing cabinets,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Office desks,46564,Packaging Material Purchases,Nordic Office Supplies
+Conference phones,46564,Packaging Material Purchases,TotalEnergies Polymers
+Meeting room tables,49697,Production Facility Rent,ISS Facility Services Denmark
+Wireless headsets,45461,Component Sourcing Expense,DOW Polycarbonate
+Coffee machines,45461,Component Sourcing Expense,DOW Polycarbonate
+Breakroom furniture,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Kitchen appliances,46564,Packaging Material Purchases,TotalEnergies Polymers
+Water dispensers,44554,Production Utilities,ISS Facility Services Denmark
+Refrigerators,45461,Component Sourcing Expense,Wanhua Chemical Group
+Toilet paper,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Soap cartridges,46564,Packaging Material Purchases,Initial Danmark A/S
+Cleaning detergents,44554,Production Utilities,Initial Danmark A/S
+Mops and buckets,44554,Production Utilities,Initial Danmark A/S
+Hand sanitizer dispensers,46564,Packaging Material Purchases,TotalEnergies Polymers
+Microwave ovens,45461,Component Sourcing Expense,DOW Polycarbonate
+Brooms,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Vacuum cleaners,45461,Component Sourcing Expense,DOW Polycarbonate
+Hand dryers,44554,Production Utilities,Initial Danmark A/S
+Batteries (AA),45461,Component Sourcing Expense,Lyreco Danmark A/S
+Extension cords,44554,Production Utilities,Schneider Electric Danmark
+Batteries (AAA),45461,Component Sourcing Expense,Lyreco Danmark A/S
+Light bulbs (LED),44554,Production Utilities,Schneider Electric Danmark
+USB drives,45461,Component Sourcing Expense,TotalEnergies Polymers
+External hard drives,45461,Component Sourcing Expense,Office Depot Denmark
+Markers,45461,Component Sourcing Expense,Clariant Colorants
+Whiteboards,46564,Packaging Material Purchases,Papyrus A/S
+Projectors,46564,Packaging Material Purchases,Papyrus A/S
+Pencils,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Pens,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Staple refills,46564,Packaging Material Purchases,Staples Denmark
+Binder folders,46564,Packaging Material Purchases,Papyrus A/S
+Notebooks,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Paper clips,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Printer paper (A3),46564,Packaging Material Purchases,Lyreco Danmark A/S
+Printer paper (A4),46564,Packaging Material Purchases,Lyreco Danmark A/S
+Envelopes,46564,Packaging Material Purchases,Papyrus A/S
+Highlighters,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Desk organizers,46564,Packaging Material Purchases,TotalEnergies Polymers
+Scissors,45461,Component Sourcing Expense,PolyOne Corporation
+Rubber bands,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Rulers,45461,Component Sourcing Expense,TotalEnergies Polymers
+Post-it notes,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Clear tape,46564,Packaging Material Purchases,Papyrus A/S
+USB cables,45461,Component Sourcing Expense,PolyOne Corporation
+Glue sticks,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Laptop docking stations,45461,Component Sourcing Expense,Lyreco Danmark A/S
+Tape dispensers,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Monitor stands,45461,Component Sourcing Expense,PolyOne Corporation
+Webcams,45461,Component Sourcing Expense,Canon Danmark A/S
+Packing tape,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Document trays,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Keyboards,45461,Component Sourcing Expense,DOW Polycarbonate
+Mouse pads,45461,Component Sourcing Expense,TotalEnergies Polymers
+Cable organizers,46564,Packaging Material Purchases,Clariant Colorants
+Computer mice,45461,Component Sourcing Expense,DOW Polycarbonate
+Whiteboard erasers,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Surge protectors,45461,Component Sourcing Expense,Schneider Electric Danmark
+Printer ink cartridges,46564,Packaging Material Purchases,Canon Danmark A/S
+ID card holders,46564,Packaging Material Purchases,TotalEnergies Polymers
+Lanyards,46564,Packaging Material Purchases,Clariant Colorants
+Photo paper,46564,Packaging Material Purchases,Canon Danmark A/S
+Window blinds,49697,Production Facility Rent,ISS Facility Services Denmark
+Magnetic badges,46564,Packaging Material Purchases,TotalEnergies Polymers
+Printer toner cartridges,46564,Packaging Material Purchases,Lyreco Danmark A/S
+AED units,45461,Component Sourcing Expense,TotalEnergies Polymers
+Visitor badges,46564,Packaging Material Purchases,Lyreco Danmark A/S
+Coat racks,45461,Component Sourcing Expense,TotalEnergies Polymers
+First response kits,45461,Component Sourcing Expense,TotalEnergies Polymers
+Fire extinguishers,44554,Production Utilities,ISS Facility Services Denmark
+Hand tools set,45461,Component Sourcing Expense,Würth Denmark A/S
+Emergency torches,45461,Component Sourcing Expense,Covestro Deutschland AG
+Door mats,46564,Packaging Material Purchases,Initial Danmark A/S
+Enterprise IT Outsourcing,51317,IT Support Services,Accenture Denmark
+Product Design and Development Consulting,55700,Research Collaboration Fees,Boston Consulting Group Denmark
+Regional Distribution Center Lease,58010,Distribution Center Services,Kuehne + Nagel A/S
+Supply Chain Management Services,59197,Logistics Outsourcing,Hellmann Worldwide Logistics
+Data Center Co-Location Services,51317,IT Support Services,NTT Data Denmark
+R&D Project Management,55700,Research Collaboration Fees,Archroma Management LLC
+Large-Scale Manufacturing Automation Support,51317,IT Support Services,Rockwell Automation Inc.
+Cloud Infrastructure Subscription,57933,IT Software Subscriptions,Microsoft Denmark ApS
+Global Logistics and Freight Management,59197,Logistics Outsourcing,Hellmann Worldwide Logistics
+Warehouse Operations Outsourcing,59197,Logistics Outsourcing,Maersk Logistics
+Facility Management Contract,58010,Distribution Center Services,ISS Facility Services Denmark
+SAP Enterprise License,56493,Licensing Fees Paid,Siemens Digital Industries
+Annual IT Security Audit,54617,Legal and Audit Fees,Deloitte Denmark
+Workforce Recruitment Process Outsourcing,59197,Logistics Outsourcing,Adecco Denmark
+Brand Licensing Fees,56493,Licensing Fees Paid,TotalEnergies Polymers
+Product Safety Testing Services,55700,Research Collaboration Fees,DOW Polycarbonate
+ISO 9001 Certification,56493,Licensing Fees Paid,TotalEnergies Polymers
+SAP Maintenance and Support Fee,51317,IT Support Services,Capgemini Danmark
+Annual Environmental Compliance Audit,54617,Legal and Audit Fees,KPMG Denmark
+ERP System Maintenance Contract,51317,IT Support Services,Accenture Denmark
+CRM Platform License,56493,Licensing Fees Paid,Microsoft Denmark ApS
+National Advertising Campaign Management,59490,Advertising Expense,Boston Consulting Group Denmark
+Global HR Outsourcing Contract,59197,Logistics Outsourcing,Adecco Denmark
+SAP User License,56493,Licensing Fees Paid,Siemens Digital Industries
+Packaging Design Consulting,52835,Marketing Agency Fees,Boston Consulting Group Denmark
+National Tax Advisory Retainer,54617,Legal and Audit Fees,KPMG Denmark
+Corporate Insurance Premiums,50434,Insurance Expense,G4S Danmark
+Third-Party Logistics Service Fee,59197,Logistics Outsourcing,Maersk Logistics
+Enterprise Antivirus Subscription,57933,IT Software Subscriptions,Microsoft Denmark ApS
+Energy Procurement Consulting,56493,Licensing Fees Paid,Boston Consulting Group Denmark
+Bulk Printing Services,59490,Advertising Expense,Canon Danmark A/S
+E-commerce Platform License,56493,Licensing Fees Paid,Cegid SAS
+Strategic Planning Consulting,52835,Marketing Agency Fees,Boston Consulting Group Denmark
+Annual Product Certification Fee,56493,Licensing Fees Paid,Covestro Deutschland AG
+Corporate Communication Consulting,52835,Marketing Agency Fees,Boston Consulting Group Denmark
+Global Payroll Processing Service,56493,Licensing Fees Paid,Cegid SAS
+Danish Data Protection Legal Support,54617,Legal and Audit Fees,KPMG Denmark
+Mobile Device Management License,56493,Licensing Fees Paid,Microsoft Denmark ApS
+Annual Sustainability Reporting Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Market Research Services,55700,Research Collaboration Fees,Boston Consulting Group Denmark
+UK Trade Compliance Services,59197,Logistics Outsourcing,Maersk Logistics
+Patent Registration Fee,54617,Legal and Audit Fees,KPMG Denmark
+Corporate Event Production Service,58078,Brand Promotion Events,Accenture Denmark
+Custom Product Mold Production,55700,Research Collaboration Fees,ENGEL Austria GmbH
+ISO 14001 Certification,56493,Licensing Fees Paid,Covestro Deutschland AG
+European Union Regulatory Filing,56493,Licensing Fees Paid,Covestro Deutschland AG
+Domestic Freight Forwarding Fees,59197,Logistics Outsourcing,Maersk Logistics
+Annual Corporate Tax Filing Fee,54617,Legal and Audit Fees,KPMG Denmark
+Translation and Localization Services,52835,Marketing Agency Fees,Kelly Services Denmark
+Cloud Storage License,56493,Licensing Fees Paid,Microsoft Denmark ApS
+Corporate Fleet Management Service,58010,Distribution Center Services,Kuehne + Nagel A/S
+Legal Document Review Service,54617,Legal and Audit Fees,KPMG Denmark
+Machine Maintenance Contract,51317,IT Support Services,Siemens Digital Industries
+Health and Safety Audit,54617,Legal and Audit Fees,KPMG Denmark
+CCTV Security Monitoring Service,51317,IT Support Services,G4S Danmark
+Utility Infrastructure Maintenance Fee,50647,Utilities - Non-production,Imtech Nordic
+IT Disaster Recovery Planning,51317,IT Support Services,Capgemini Danmark
+Internal Audit Services,54617,Legal and Audit Fees,KPMG Denmark
+Employee Health Insurance Premium,50434,Insurance Expense,TotalEnergies Polymers
+Facility Cleaning Contract,58010,Distribution Center Services,ISS Facility Services Denmark
+Danish Business Registration Fee,56493,Licensing Fees Paid,Microsoft Denmark ApS
+High-Volume Telecom Service Contract,51317,IT Support Services,T-Systems Nordic
+Employee Assistance Program Subscription,52727,Staff Training & Development,Adecco Denmark
+Waste Management Service,50647,Utilities - Non-production,REN KBH ApS
+Corporate Travel Insurance,50434,Insurance Expense,TotalEnergies Polymers
+Digital Asset Management License,56493,Licensing Fees Paid,Siemens Digital Industries
+Annual Fire Safety Training,52727,Staff Training & Development,ISS Facility Services Denmark
+Product Liability Insurance Fee,50434,Insurance Expense,TotalEnergies Polymers
+Server Hosting Fee,51317,IT Support Services,T-Systems Nordic
+Annual Network Penetration Testing,51317,IT Support Services,Capgemini Danmark
+Annual Pension Scheme Administration,54617,Legal and Audit Fees,KPMG Denmark
+Customs Broker Service,59197,Logistics Outsourcing,Maersk Logistics
+Annual Trademarks Renewal,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Copyright Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Time and Attendance Software License,57933,IT Software Subscriptions,Cegid SAS
+HRIS Platform License,56493,Licensing Fees Paid,Cegid SAS
+Facility Access Control Service,58010,Distribution Center Services,G4S Danmark
+Occupational Health Provider Fee,56493,Licensing Fees Paid,Xellia Pharmaceuticals ApS
+Microsoft 365 Enterprise License,56493,Licensing Fees Paid,Microsoft Denmark ApS
+Legal Entity Maintenance Fee,54617,Legal and Audit Fees,KPMG Denmark
+Corporate Governance Advisory Retainer,54617,Legal and Audit Fees,KPMG Denmark
+Graphic Design Agency Retainer,52835,Marketing Agency Fees,TotalEnergies Polymers
+Digital Marketing Subscription,52835,Marketing Agency Fees,Accenture Denmark
+Executive Training Program Fee,52727,Staff Training & Development,Boston Consulting Group Denmark
+Foreign Exchange Transaction Fees,57933,IT Software Subscriptions,Microsoft Denmark ApS
+Mobile Carrier Corporate Plan,51317,IT Support Services,T-Systems Nordic
+Website Hosting Fee,51317,IT Support Services,T-Systems Nordic
+Document Management Software License,57933,IT Software Subscriptions,Microsoft Denmark ApS
+IT Helpdesk Outsourcing,51317,IT Support Services,Capgemini Danmark
+Annual Emergency Response Training,52727,Staff Training & Development,Adecco Denmark
+Licensing Board Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Corporate Recruitment Platform License,56493,Licensing Fees Paid,Adecco Denmark
+Cloud Backup Subscription,57933,IT Software Subscriptions,Microsoft Denmark ApS
+HR Benefits Administration Fee,52727,Staff Training & Development,Adecco Denmark
+Annual Hazardous Waste Disposal Fee,56493,Licensing Fees Paid,ISS Facility Services Denmark
+Annual Public Relations Retainer,52835,Marketing Agency Fees,Boston Consulting Group Denmark
+Product Recall Insurance Premium,50434,Insurance Expense,TotalEnergies Polymers
+Corporate Branding License,56493,Licensing Fees Paid,TotalEnergies Polymers
+Document Translation Software License,57933,IT Software Subscriptions,Microsoft Denmark ApS
+Facility HVAC Maintenance Fee,58010,Distribution Center Services,ISS Facility Services Denmark
+Annual Export Control Audit,54617,Legal and Audit Fees,KPMG Denmark
+Annual Water Quality Testing Fee,56493,Licensing Fees Paid,Blue Water Shipping
+Enterprise Backup Appliance Maintenance,51317,IT Support Services,Microsoft Denmark ApS
+Domain Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Social Media Monitoring Fee,52835,Marketing Agency Fees,TotalEnergies Polymers
+Annual Cybersecurity Awareness Training,52727,Staff Training & Development,Microsoft Denmark ApS
+Customs Clearance Fee,59197,Logistics Outsourcing,Maersk Logistics
+Annual GDPR Compliance Audit,54617,Legal and Audit Fees,KPMG Denmark
+Annual Market Access Licensing,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Mobile Device Audit,54617,Legal and Audit Fees,KPMG Denmark
+Board of Directors Fee,54617,Legal and Audit Fees,KPMG Denmark
+Corporate Library Subscription,56493,Licensing Fees Paid,Cegid SAS
+Annual Network Equipment Renewal,56493,Licensing Fees Paid,Microsoft Denmark ApS
+Annual Anti-Bribery Compliance Review,54617,Legal and Audit Fees,KPMG Denmark
+Annual Workplace Ergonomics Assessment,52727,Staff Training & Development,ISS Facility Services Denmark
+Annual Cafeteria Service Contract,58010,Distribution Center Services,ISS Facility Services Denmark
+Annual Printer Maintenance Fee,51317,IT Support Services,Canon Danmark A/S
+Annual Employee Onboarding Training,52727,Staff Training & Development,Adecco Denmark
+Annual Environmental Impact Study,55700,Research Collaboration Fees,Covestro Deutschland AG
+Annual Social Responsibility Certification,56493,Licensing Fees Paid,Covestro Deutschland AG
+Annual Diversity and Inclusion Training,52727,Staff Training & Development,Adecco Denmark
+Annual Payroll Software Subscription,57933,IT Software Subscriptions,Cegid SAS
+Annual Timekeeping System License,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Workstation Health Check,51317,IT Support Services,Capgemini Danmark
+Annual Cloud Security Audit,54617,Legal and Audit Fees,KPMG Denmark
+Annual Leadership Development Program,52727,Staff Training & Development,Mercuri Urval Denmark
+Annual Event Sponsorship Fee,58078,Brand Promotion Events,TotalEnergies Polymers
+Annual Email Security Filter License,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Corporate Social Media License,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Danish Chamber of Commerce Dues,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Professional Association Membership,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Industry Membership Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Mobile Device Management Fee,51317,IT Support Services,Microsoft Denmark ApS
+Annual Telephone Number License,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Vehicle Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Postal Licensing Fee,56493,Licensing Fees Paid,PostNord Danmark
+Annual Electric Vehicle Charging Permit,56493,Licensing Fees Paid,Schneider Electric Danmark
+Annual Copyright Deposit Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Trademark Monitoring Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Annual Music Licensing Fee,56493,Licensing Fees Paid,TotalEnergies Polymers

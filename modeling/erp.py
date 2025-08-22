@@ -28,8 +28,8 @@ def estimate_costs_from_payroll(
 def assign_split_count(
     df_spend: pd.DataFrame,
     non_linear_multiplier: int = 10,
-    min_splits: int = 2,
-    max_splits: int = 20
+    min_splits: int = 5,
+    max_splits: int = 40
 ) -> pd.DataFrame:
     """
     Assigns 'num_splits' to each product based on proportionality of spend.
@@ -61,7 +61,7 @@ def assign_split_count(
 def pre_split_spend_lines(
     df_spend: pd.DataFrame,
     df_mapping: pd.DataFrame,
-    n_lines_per_item: int = 30
+    n_lines_per_item: int = 50
 ) -> pd.DataFrame:
     """
     Splits each item (product or service) into journal lines,
@@ -164,7 +164,7 @@ def balance_documents_with_assets(
     df_accounts: pd.DataFrame,
     tolerance: float = 100.0,
     min_corrections: int = 5,
-    max_corrections: int = 25,
+    max_corrections: int = 20,
     rng: np.random.RandomState | None = None,
 ) -> pd.DataFrame:
     """

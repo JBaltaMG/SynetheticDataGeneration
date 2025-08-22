@@ -1,401 +1,551 @@
 role_name,monthly_pay,first_name,last_name,employee_id,department_id
-Legal Counsel,150000.0,Rasmus,Brandt,900,Quality Assurance
-Software Engineer,90100.0,Trine,Meier,789,Production
-Software Engineer,80300.0,Martin,Mejlvang,486,R&D
-Software Engineer,75100.0,Simon,Thisted,461,Sustainability
-Software Engineer,71000.0,Simon,Rasmussen,620,Production
-Data Scientist,71000.0,Christian,Hald,199,Production
-Data Scientist,69800.0,Allan,Bundgaard,193,Internal Audit
-Data Scientist,69500.0,Rikke,Larsen,654,R&D
-Solution Architect,69200.0,Mette,Skaarup,972,Data & Analytics
-Solution Architect,68800.0,Patrick,Kragh,780,Risk Management
-Product Manager,67900.0,Henrik,Schack,707,Production
-Product Manager,62200.0,Henrik,Schack,416,Manufacturing
-Product Manager,61900.0,Claus,Holst,690,Logistics
-Business Controller,61600.0,Simon,Leth,121,Manufacturing
-Account Manager,61300.0,Katrine,Søborg,329,Data & Analytics
-Account Manager,61000.0,Morten,Dalgaard,779,Finance
-Supply Chain Manager,60400.0,Sofie,Nyholm,130,IT
-Product Designer,58600.0,Carsten,Riis,351,Business Development
-Product Designer,55200.0,Kim,Skibsted,988,Sales
-Product Designer,54100.0,Thomas,Pedersen,259,Facilities
-Product Designer,53900.0,Helena,Bay,604,Data & Analytics
-Project Manager,53600.0,Rikke,Mark,644,Marketing
-Project Manager,53200.0,Tine,Lindberg,120,Quality Assurance
-Project Manager,52900.0,Anders,Jensen,235,Legal & Compliance
-Project Manager,52800.0,Torben,Hassing,129,Facilities
-Mechanical Engineer,52600.0,Martin,Gormsen,701,IT
-Mechanical Engineer,51500.0,Trine,Poulsen,637,Logistics
-Mechanical Engineer,51500.0,Dorte,Ehlers,809,Design
-Mechanical Engineer,51200.0,Hanne,Østergaard,371,Legal & Compliance
-Embedded Systems Engineer,51000.0,Katrine,Glavind,302,Quality Assurance
-Embedded Systems Engineer,50900.0,Maria,Skafte,454,Marketing
-Process Engineer,50700.0,Karen,Friis,169,Sales
-Process Engineer,49800.0,Patrick,Kolby,157,Quality Assurance
-Business Analyst,48800.0,Helene,Bendixen,457,IT
-Business Analyst,48700.0,Simon,Thisted,361,Quality Assurance
-Data Analyst,47700.0,Jakob,Bro,368,Sales
-QA Engineer,47700.0,Thomas,Engholm,582,Marketing
-QA Engineer,47100.0,Dorte,La Cour,848,Manufacturing
-IT Support Specialist,46900.0,Brian,Skou,842,Facilities
-IT Support Specialist,46200.0,Karina,Brøndum,563,Production
-IT Support Specialist,45000.0,Rikke,Damgaard,398,Quality Assurance
-Financial Analyst,44700.0,Heidi,Møller,123,Product Development
-Financial Analyst,44600.0,Morten,Dalgaard,732,Marketing
-Financial Analyst,44600.0,Jeanette,Kristiansen,132,Manufacturing
-Financial Analyst,44300.0,Dennis,Fogh,383,Marketing
-Financial Analyst,44200.0,Niels,Enevoldsen,533,Legal & Compliance
-Financial Analyst,43400.0,Rikke,Larsen,768,Production
-Accountant,43200.0,Anders,Brinch,719,Production
-Accountant,43100.0,Michael,Gertz,769,Product Development
-Accountant,42600.0,Bente,Lauritzen,451,Product Development
-Accountant,42600.0,Anders,Refslund,305,Production
-Accountant,42200.0,Henrik,Westh,998,Sales
-Accountant,42100.0,Karina,Brøndum,570,Finance
-Procurement Specialist,41600.0,Dorte,La Cour,466,Logistics
-Procurement Specialist,41100.0,Anne,Knudsen,892,Sales
-Procurement Specialist,41100.0,Gitte,Skov,835,HR
-Procurement Specialist,41000.0,Katrine,Glavind,190,IT
-Procurement Specialist,40900.0,Heidi,Just,224,Manufacturing
-Procurement Specialist,40800.0,Diana,Lykke,819,Quality Assurance
-Operations Coordinator,40700.0,Anne,Knudsen,442,Sales
-Operations Coordinator,40600.0,Thomas,Damm,165,Sales
-Operations Coordinator,40300.0,Jesper,Christensen,159,R&D
-Operations Coordinator,40000.0,Søren,Nielsen,511,Marketing
-Operations Coordinator,40000.0,Martin,Mejlvang,731,Production
-Sales Representative,39700.0,Heidi,Aggerholm,665,Manufacturing
-Sales Representative,39200.0,Brian,Skou,855,Marketing
-Sales Representative,39100.0,Signe,Højlund,688,Finance
-Sales Representative,39000.0,Christian,Trier,137,Production
-Sales Representative,39000.0,Peter,Overgaard,453,Sales
-Sales Representative,38900.0,Brian,Thomsen,515,IT
-Customer Support Specialist,38800.0,Charlotte,Sloth,875,Production
-Customer Support Specialist,38400.0,Michael,Stenstrup,926,Product Development
-Customer Support Specialist,38400.0,Gitte,Skov,430,Legal & Compliance
-Customer Support Specialist,38400.0,Lotte,Bjørn,505,IT
-Customer Support Specialist,38400.0,Mads,Gregersen,357,HR
-Customer Support Specialist,38400.0,Claus,Haastrup,254,Sales
-Customer Support Specialist,38200.0,Thomas,Hagedorn,668,Production
-Customer Support Specialist,38200.0,Dorte,Veje,968,Production
-Customer Support Specialist,38200.0,Line,Holmberg,474,Production
-Customer Support Specialist,38200.0,Rasmus,Holten,487,HR
-Customer Support Specialist,37800.0,Kenneth,Bøgh,843,Logistics
-Marketing Specialist,37800.0,Jan,Brovst,709,Production
-Marketing Specialist,37800.0,Henrik,Kristensen,913,Production
-Marketing Specialist,37700.0,Mia,Torp,739,R&D
-Marketing Specialist,37500.0,Kenneth,Bøgh,914,R&D
-Marketing Specialist,37400.0,Mie,Bjerg,895,Sales
-Graphic Designer,37300.0,Nicolaj,Mørk,713,HR
-Graphic Designer,37200.0,Martin,Gormsen,204,Finance
-UX Designer,37100.0,Peter,Abrahamsen,785,Manufacturing
-UX Designer,36900.0,Stine,Thygesen,284,Sales
-Industrial Designer,36500.0,Martin,Mejlvang,262,Internal Audit
-Industrial Designer,36100.0,Mette,Bjerring,290,Sales
-Product Developer,36100.0,Martin,Mejlvang,149,Production
-Product Developer,36000.0,Hanne,Østergaard,805,R&D
-Product Developer,36000.0,Martin,Mejlvang,903,IT
-Quality Assurance Specialist,35700.0,Christina,Egede,320,Finance
-Quality Assurance Specialist,35600.0,Jonas,Seerup,431,Production
-Quality Assurance Specialist,35500.0,Johnny,Præst,659,IT
-Quality Assurance Specialist,35500.0,Malene,Ravn,406,Production
-Purchasing Coordinator,35200.0,Jacob,Haugaard,632,Sales
-Materials Planner,35200.0,Camilla,Madsen,520,Manufacturing
-Materials Planner,35200.0,Bente,Lauritzen,507,Sales
-Warehouse Associate,35100.0,Helene,Bendixen,698,Legal & Compliance
-Warehouse Associate,35100.0,Jeanette,Malling,910,Legal & Compliance
-Warehouse Associate,34900.0,Jesper,Dahl,981,Logistics
-Warehouse Associate,34900.0,Brian,Kjeldsen,496,Sales
-Warehouse Associate,34600.0,Maja,Langkjær,590,Facilities
-Warehouse Associate,34500.0,Kim,Skibsted,714,Logistics
-Warehouse Associate,34500.0,Nicoline,Bennedsen,516,IT
-Warehouse Associate,34300.0,Kristina,Fabricius,856,Production
-Production Operator,34100.0,Charlotte,Bruun,397,Legal & Compliance
-Production Operator,33900.0,Louise,Hansen,209,Production
-Production Operator,33800.0,Allan,Bundgaard,991,Sales
-Production Operator,33500.0,Malene,Skytte,751,HR
-Production Operator,33500.0,Jonas,Bredahl,643,HR
-Production Operator,33400.0,Jacob,Hald,268,R&D
-Production Operator,33400.0,Philip,Bendsen,452,Production
-Production Operator,33400.0,Allan,Toft,482,Manufacturing
-Production Operator,33400.0,Christina,Kragh,822,Production
-Production Operator,33300.0,Jesper,Dahl,269,Sustainability
-Production Operator,33100.0,Bente,Bak,151,Logistics
-Production Operator,33100.0,Dennis,Eskildsen,170,IT
-Production Operator,33100.0,Camilla,Madsen,973,Manufacturing
-Production Operator,32900.0,Louise,Bang,912,R&D
-Production Operator,32800.0,Philip,Kirkegaard,176,Marketing
-Production Operator,32800.0,Louise,Hansen,303,IT
-Production Operator,32800.0,Mette,Dideriksen,634,Marketing
-Production Operator,32600.0,Marianne,Graversen,483,Production
-Production Operator,32400.0,Mette,Krogsgaard,529,R&D
-Production Operator,31900.0,Maja,Lund,550,Sustainability
-Machine Operator,31900.0,Kristina,Bræmer,312,R&D
-Machine Operator,31800.0,Nicklas,Ringsted,223,HR
-Machine Operator,31800.0,Jeanette,Kristiansen,359,R&D
-Machine Operator,31700.0,Brian,Lykke,882,Manufacturing
-Machine Operator,31500.0,Rasmus,Holten,480,Marketing
-Maintenance Technician,31400.0,Torben,Hassing,965,Sales
-Maintenance Technician,31200.0,Marianne,Graversen,339,R&D
-Maintenance Technician,31200.0,Ole,Frandsen,364,Logistics
-Maintenance Technician,31100.0,Mia,Torp,711,Production
-Maintenance Technician,31100.0,Esben,Krøyer,167,Manufacturing
-Maintenance Technician,31100.0,Helle,Andreasen,522,HR
-Maintenance Technician,31000.0,Anders,Brinch,241,Manufacturing
-Facilities Technician,30900.0,Annette,Jakobsen,865,Manufacturing
-Facilities Technician,30900.0,Jakob,Bro,164,R&D
-Packaging Operator,30900.0,Anders,Jensen,626,Data & Analytics
-Packaging Operator,30800.0,Camilla,Plum,755,Legal & Compliance
-Packaging Operator,30700.0,Vibeke,Justesen,285,Production
-Packaging Operator,30700.0,Pernille,Munch,347,Risk Management
-Packaging Operator,30700.0,Mia,Hede,861,R&D
-Lab Technician,30600.0,Nicklas,Bach,409,Quality Assurance
-Lab Technician,30500.0,Bo,Bjerre,721,Sales
-Lab Technician,30500.0,Preben,Bach,984,Production
-Lab Technician,30400.0,Camilla,Hall,588,IT
-Logistics Coordinator,30300.0,Maria,Jørgensen,618,Marketing
-Logistics Coordinator,30300.0,Kristoffer,Mejlvang,222,Marketing
-Logistics Coordinator,30300.0,Karina,Friis,481,Product Development
-Logistics Coordinator,30200.0,Maria,Winther,527,Marketing
-Logistics Coordinator,30100.0,Henrik,Kristensen,370,Product Development
-Shipping Coordinator,30000.0,Tine,Vedel,727,Facilities
-Shipping Coordinator,29800.0,Louise,Engberg,983,Manufacturing
-Shipping Coordinator,29800.0,Lone,Skytte,831,Production
-Shipping Coordinator,29700.0,Jacob,Haugaard,424,Sales
-Inventory Controller,29700.0,Claus,Haastrup,812,Production
-Warehouse Supervisor,29600.0,Frank,Stær,273,Production
-Production Planner,29600.0,Pernille,Munch,943,Sales
-Production Planner,29500.0,Mette,Krogsgaard,794,Production
-Production Planner,29400.0,Allan,Bundgaard,543,Logistics
-Production Planner,29400.0,Daniel,Seerup,716,R&D
-Production Planner,29300.0,Jonas,Seerup,885,Production
-Production Planner,29300.0,Jonas,Bredahl,627,Design
-Production Scheduler,29200.0,Diana,Storm,440,Product Development
-Production Scheduler,29200.0,Christian,Friis,652,Production
-Production Scheduler,29100.0,Anders,Jensen,959,Manufacturing
-Supply Planner,29000.0,Johnny,Thomassen,389,HR
-Supply Planner,28900.0,Maj-Britt,Enevoldsen,400,Corporate Communications
-Demand Planner,28800.0,René,Nystrøm,270,Production
-Demand Planner,28800.0,Jesper,Dahl,136,Risk Management
-Purchasing Assistant,28800.0,Maria,Dahlin,639,Finance
-Purchasing Assistant,28700.0,Heidi,Sonne,374,Marketing
-Purchasing Assistant,28600.0,Vibeke,Daugaard,144,Finance
-Purchasing Assistant,28600.0,Kasper,Hvidt,576,Business Development
-Purchasing Assistant,28400.0,Frank,Busk,375,Corporate Communications
-Manufacturing Engineer,28300.0,Thomas,Pedersen,655,Production
-Manufacturing Engineer,28100.0,Katrine,Glavind,319,HR
-Tooling Engineer,27900.0,Maja,Lund,337,HR
-Tooling Engineer,27900.0,Camilla,Grøn,938,Production
-Tooling Engineer,27800.0,Michael,Rahn,340,Marketing
-Tooling Engineer,27700.0,Henrik,Blichfeldt,415,Logistics
-Toolmaker,27700.0,Malene,Ravn,266,Quality Assurance
-Toolmaker,27700.0,Michael,Rahn,215,Manufacturing
-Toolmaker,27700.0,Johnny,Thomassen,555,Facilities
-Toolmaker,27600.0,Katrine,Damgaard,930,R&D
-Toolmaker,27600.0,Lars,Klitgaard,963,Production
-Toolmaker,27500.0,Anne,Knudsen,275,Design
-Toolmaker,27400.0,Gitte,Dideriksen,994,Manufacturing
-Injection Molding Technician,27300.0,Jesper,Thyrrestrup,601,Corporate Communications
-Injection Molding Technician,27300.0,Dennis,Graversen,471,Production
-Injection Molding Technician,27300.0,Bo,Jakobsen,932,Manufacturing
-Injection Molding Technician,27300.0,Kasper,Bang,178,HR
-Injection Molding Technician,27200.0,Nicolai,Kruse,432,Business Development
-Injection Molding Technician,27200.0,Esben,Husted,234,Production
-Quality Inspector,27000.0,Jan,Brovst,814,Production
-Quality Inspector,26800.0,Esben,Krøyer,538,Design
-Quality Inspector,26700.0,Lars,Klitgaard,467,Finance
-Quality Inspector,26600.0,Lars,Klitgaard,682,Sales
-Quality Inspector,26600.0,Mads,Gregersen,298,Marketing
-Quality Control Technician,26600.0,Nicoline,Bennedsen,115,Manufacturing
-Quality Control Technician,26600.0,Mette,Dideriksen,821,R&D
-Quality Control Technician,26300.0,Nicolaj,Mørk,782,Production
-Product Tester,26300.0,Jesper,Thyrrestrup,628,Production
-Product Tester,26300.0,Malene,Ravn,750,Product Development
-Product Tester,26300.0,Brian,Thomsen,497,Design
-Customer Experience Specialist,26200.0,Martin,Mejlvang,508,Corporate Communications
-Customer Experience Specialist,26200.0,Steen,Brink,439,Production
-Customer Experience Specialist,26100.0,Brian,Kjeldsen,683,Manufacturing
-Customer Experience Specialist,26100.0,Thomas,Hagedorn,936,Facilities
-Customer Experience Specialist,25800.0,Steen,Brink,691,R&D
-Customer Experience Specialist,25600.0,Pernille,Munch,585,Logistics
-Customer Experience Specialist,25600.0,Rasmus,Hertz,579,Logistics
-Customer Service Agent,25600.0,Brian,Kjeldsen,299,Product Development
-Customer Service Agent,25600.0,Rikke,Vedel,797,R&D
-Customer Service Agent,25200.0,Mads,Westermann,307,Data & Analytics
-Customer Service Agent,25200.0,Dorte,Veje,552,Sales
-Customer Service Agent,25200.0,Maria,Jørgensen,583,Legal & Compliance
-Customer Service Agent,25200.0,Thomas,Pedersen,568,Production
-Customer Service Agent,25000.0,Kenneth,Leth,403,Sales
-Customer Service Agent,24900.0,Marianne,Graversen,893,Manufacturing
-Customer Service Agent,24800.0,Christian,Trier,606,IT
-Customer Service Agent,24700.0,Johnny,Hjorth,980,Production
-Customer Service Agent,24700.0,Mette,Bjerring,684,Logistics
-Customer Service Agent,24600.0,Heidi,Just,179,Quality Assurance
-Customer Service Agent,24400.0,Mette,Skaarup,161,Data & Analytics
-Customer Service Agent,24300.0,Brian,Thomsen,344,Marketing
-Retail Sales Associate,24200.0,Steen,Brink,648,R&D
-Retail Sales Associate,24100.0,Christina,Brandt,758,Sales
-Retail Sales Associate,24100.0,Kristoffer,Mejlvang,156,IT
-Retail Sales Associate,24000.0,Steen,Brink,173,Manufacturing
-Retail Sales Associate,24000.0,Jakob,Bro,560,Production
-Retail Sales Associate,24000.0,Brian,Lykke,904,Product Development
-Store Manager,23900.0,Louise,Engberg,793,Sales
-Store Manager,23800.0,Allan,Bundgaard,661,Manufacturing
-Store Manager,23800.0,Søren,Isaksen,143,IT
-Store Manager,23800.0,Philip,Bendsen,200,R&D
-Store Supervisor,23800.0,Dennis,Fogh,532,R&D
-Store Supervisor,23700.0,Helene,Bendixen,111,Corporate Communications
-Store Supervisor,23600.0,Stine,Bækkelund,378,R&D
-Store Supervisor,23500.0,Jesper,Dideriksen,201,Production
-Visual Merchandiser,23300.0,Daniel,Seerup,499,Logistics
-Visual Merchandiser,23200.0,Heidi,Frandsen,992,Corporate Communications
-Visual Merchandiser,23200.0,Peter,Mortensen,728,Sales
-Retail Operations Coordinator,23100.0,Rikke,Vedel,207,Sales
-Retail Operations Coordinator,23100.0,Pernille,Munch,951,Production
-Retail Operations Coordinator,23000.0,Mette,Dideriksen,341,Manufacturing
-Retail Operations Coordinator,23000.0,Vibeke,Niemann,867,Production
-Retail Operations Coordinator,22900.0,Bo,Jakobsen,134,Manufacturing
-HR Generalist,22900.0,Maria,Skafte,678,Production
-HR Generalist,22900.0,Daniel,Dalsgaard,572,Sales
-HR Generalist,22800.0,Lars,Klitgaard,413,IT
-HR Specialist,22700.0,Line,Bloch,806,Manufacturing
-HR Specialist,22300.0,Martin,Mejlvang,883,R&D
-Recruiter,22300.0,Lars,Klitgaard,316,Manufacturing
-Recruiter,22200.0,Allan,Ravn,228,IT
-Recruiter,22100.0,Torben,Hassing,472,R&D
-Recruiter,21900.0,Mia,Hede,531,Marketing
-HR Coordinator,21700.0,Henrik,Westh,864,Production
-HR Coordinator,21700.0,Kristoffer,Buch,494,Business Development
-HR Coordinator,21500.0,Helena,Bay,492,HR
-Compensation and Benefits Specialist,21500.0,Carsten,Nyborg,592,Marketing
-Compensation and Benefits Specialist,21500.0,Carsten,Riis,444,Production
-Compensation and Benefits Specialist,21500.0,Johnny,Simonsen,553,Finance
-HR Administrator,21400.0,Johnny,Thomassen,489,Manufacturing
-HR Administrator,21400.0,Lene,Hviid,669,Design
-HR Administrator,21400.0,Dorte,La Cour,960,Production
-HR Administrator,21400.0,René,Nystrøm,921,R&D
-HR Administrator,21400.0,Niels,Enevoldsen,927,Sales
-HR Administrator,21300.0,Jacob,Haugaard,901,Production
-HR Administrator,21300.0,Karen,Tofte,832,Internal Audit
-Learning and Development Specialist,21200.0,Anja,Dahl,503,Corporate Communications
-Learning and Development Specialist,21100.0,Anders,Jensen,747,Finance
-Learning and Development Specialist,21100.0,Ole,Boesen,326,Production
-Learning and Development Specialist,21100.0,Patrick,Bech,331,Logistics
-Training Coordinator,21000.0,Jonas,Bredahl,286,Manufacturing
-Training Coordinator,20900.0,Lotte,Bjørn,686,Sustainability
-Training Coordinator,20900.0,Jesper,Stensgaard,263,R&D
-Finance Assistant,20700.0,Diana,Lykke,456,Logistics
-Finance Assistant,20600.0,Vibeke,Daugaard,366,IT
-Finance Assistant,20600.0,Kasper,Bang,824,Facilities
-Finance Assistant,20600.0,Louise,Storgaard,915,IT
-Finance Assistant,20500.0,Kenneth,Bøgh,788,Production
-Treasury Assistant,20400.0,Camilla,Plum,280,Sustainability
-Accounts Payable Clerk,20300.0,Philip,Kirkegaard,292,Facilities
-Accounts Payable Clerk,20300.0,Christian,Trier,708,Sales
-Accounts Payable Clerk,20200.0,Line,Bloch,163,Manufacturing
-Accounts Receivable Clerk,20200.0,Martin,Olesen,868,Sales
-Payroll Specialist,20200.0,Sanne,Just,221,Sales
-Payroll Specialist,20200.0,Søren,Brandstrup,289,Data & Analytics
-Payroll Specialist,20000.0,Jesper,Thyrrestrup,748,Manufacturing
-IT Administrator,19800.0,Anja,Dahl,595,Legal & Compliance
-IT Administrator,19800.0,Malene,Skytte,954,R&D
-IT Administrator,19700.0,Kenneth,Bøgh,718,Manufacturing
-Network Engineer,19700.0,Bente,Lauritzen,726,Sales
-Network Engineer,19500.0,Nicoline,Bennedsen,318,Manufacturing
-Network Engineer,19500.0,Preben,Bach,638,Production
-System Administrator,19500.0,Dennis,Schrøder,386,Marketing
-System Administrator,19400.0,Jonas,Kure,126,Product Development
-System Administrator,19300.0,Kasper,Bang,597,IT
-System Administrator,19300.0,Maja,Langkjær,657,Production
-System Administrator,19200.0,Diana,Lykke,175,Marketing
-System Administrator,19200.0,Mia,Svenningsen,252,IT
-Cloud Engineer,19200.0,Dennis,Krogh,890,R&D
-Database Administrator,19200.0,Lone,Skytte,581,Sales
-Database Administrator,19100.0,Dennis,Schrøder,796,Business Development
-Database Administrator,18900.0,Heidi,Frandsen,140,Manufacturing
-Database Administrator,18800.0,Marianne,Graversen,692,Quality Assurance
-Security Analyst,18800.0,Kasper,Bang,437,Manufacturing
-Security Analyst,18700.0,Niels,Bjerregaard,801,Sales
-Security Analyst,18700.0,Dennis,Krogh,589,Data & Analytics
-Cybersecurity Specialist,18600.0,Niels,Enevoldsen,450,Production
-Cybersecurity Specialist,18500.0,Katrine,Skytte,438,Production
-Cybersecurity Specialist,18500.0,Daniel,Dalsgaard,931,Manufacturing
-Cybersecurity Specialist,18400.0,Steen,Kolding,802,R&D
-Web Developer,18400.0,Bo,Winther,844,Facilities
-Web Developer,18400.0,Charlotte,Dalsgaard,562,Logistics
-Front End Developer,18300.0,Anne,Hjulmand,759,Manufacturing
-Front End Developer,18300.0,Jonas,Kure,334,HR
-Front End Developer,18300.0,Heidi,Sonne,377,IT
-Back End Developer,18300.0,Helle,Lauridsen,345,Quality Assurance
-Back End Developer,18300.0,Jan,Mikkelsen,300,Production
-Back End Developer,18200.0,Lotte,Holm,889,Production
-E-commerce Specialist,18200.0,Niels,Enevoldsen,336,Facilities
-E-commerce Specialist,18200.0,Katrine,Glavind,767,Manufacturing
-E-commerce Specialist,18100.0,Kenneth,Marcussen,108,Design
-E-commerce Specialist,18000.0,Kristina,Bræmer,113,Risk Management
-E-commerce Specialist,17800.0,Anders,Brinch,435,Finance
-Content Specialist,17800.0,Helene,Vestergård,214,Legal & Compliance
-Content Specialist,17700.0,Annette,Skov,308,IT
-Content Specialist,17700.0,Jeanette,Stjerne,544,IT
-Content Specialist,17600.0,Camilla,Grøn,923,Production
-Content Manager,17600.0,Christina,Egede,578,Corporate Communications
-Content Manager,17500.0,Ole,Boesen,158,Manufacturing
-Content Manager,17500.0,Rasmus,Mørch,956,IT
-Content Manager,17400.0,Gitte,Dideriksen,854,Product Development
-Communications Specialist,17100.0,Pia,Herskind,600,R&D
-Communications Specialist,17000.0,Signe,Nørskov,917,Production
-Communications Specialist,17000.0,Thomas,Skafte,379,Marketing
-Communications Specialist,16900.0,Ole,Boesen,551,Legal & Compliance
-Communications Specialist,16800.0,Gitte,Dideriksen,933,Business Development
-PR Specialist,16800.0,Camilla,Hall,325,Finance
-Brand Manager,16700.0,Rikke,Larsen,614,IT
-Brand Manager,16500.0,Jacob,Hald,355,IT
-Brand Manager,16400.0,Jesper,Høj,392,Sales
-Brand Manager,16400.0,Sanne,Rahbek,990,Sustainability
-Digital Marketing Specialist,16300.0,Simon,Thisted,119,Production
-Digital Marketing Specialist,16100.0,Brian,Skou,218,Product Development
-Digital Marketing Specialist,15800.0,Jesper,Dahl,887,Production
-Social Media Specialist,15800.0,Nicolaj,Mørk,333,R&D
-Social Media Specialist,15700.0,Carsten,Riis,640,Facilities
-Social Media Specialist,15500.0,Rasmus,Hertz,296,IT
-Event Coordinator,15500.0,Helena,Bay,845,Production
-Event Coordinator,15400.0,Christina,Egede,101,R&D
-Event Coordinator,15300.0,Vibeke,Daugaard,181,Corporate Communications
-Event Coordinator,15300.0,Anne-Mette,Illum,287,Manufacturing
-Event Coordinator,15200.0,Annette,Rosted,541,Production
-Facilities Manager,15200.0,Katrine,Glavind,135,Quality Assurance
-Facilities Manager,15200.0,Gitte,Dideriksen,211,Manufacturing
-Facilities Manager,15100.0,Jeanette,Skou,246,Sales
-Facilities Manager,15100.0,Frank,Busk,978,Production
-"Environment, Health and Safety Specialist",15000.0,Anja,Dahl,250,Production
-"Environment, Health and Safety Specialist",14600.0,Dennis,Eskildsen,876,Internal Audit
-"Environment, Health and Safety Specialist",14600.0,Jesper,Christensen,362,IT
-Health and Safety Coordinator,14600.0,Morten,Høegh,911,Finance
-Health and Safety Coordinator,14300.0,Preben,Bach,830,Finance
-Sustainability Specialist,14100.0,Simon,Rasmussen,410,Production
-Sustainability Specialist,14100.0,Preben,Ring,764,Finance
-Process Technician,14000.0,Philip,Gravgaard,820,Finance
-Process Technician,14000.0,Charlotte,Bruun,699,Product Development
-Process Technician,14000.0,Bente,Bak,635,R&D
-Process Technician,13900.0,Jonas,Kure,219,R&D
-Process Technician,13900.0,Susanne,Thybo,880,Production
-Product Assembler,13800.0,Merete,Falk,525,Production
-Product Assembler,13700.0,Mette,Sørensen,187,Logistics
-Product Assembler,13600.0,Karina,Flensted,195,Sales
-Product Assembler,13400.0,Peter,Mortensen,594,Logistics
-Product Assembler,13400.0,Kristina,Blicher,514,Internal Audit
-Product Assembler,13200.0,Henrik,Schack,191,Data & Analytics
-Product Assembler,12900.0,Michael,Stenstrup,663,Quality Assurance
-Product Assembler,12800.0,Helle,Andreasen,622,Production
-Product Assembler,12300.0,Kristoffer,Mejlvang,804,Manufacturing
-Product Assembler,12200.0,Mia,Hede,702,Marketing
-Product Assembler,12000.0,Stine,Askjær,859,Sustainability
-Product Assembler,11400.0,Annette,Skov,935,Legal & Compliance
-Product Assembler,11200.0,Jeanette,Malling,953,R&D
-Product Assembler,11200.0,Torben,Hald,427,Production
-Security Guard,11000.0,Anne,Sørum,354,Production
-Security Guard,11000.0,Frank,Boe,422,Manufacturing
-Security Guard,10800.0,Lotte,Bjørn,346,R&D
-Security Guard,10700.0,Anne,Hjulmand,598,Sales
-Security Guard,10200.0,Jeanette,Skou,849,HR
-CFO,8200.0,Jesper,Ahrenkiel,850,Design
-CEO,6200.0,Steen,Kolding,877,Production
+CFO,150000.0,Henrik,Kristensen,661,Production
+VP of Marketing,105900.0,Tine,Vedel,397,Quality Assurance
+VP of Supply Chain,90100.0,Louise,Engberg,741,Production
+Marketing Manager,80300.0,Lone,Skytte,732,HR
+Sales Manager,75100.0,Jacob,Haugaard,142,Customer Service
+Operations Manager,71000.0,Claus,Haastrup,686,Quality Assurance
+Production Manager,71000.0,Frank,Stær,170,IT
+Supply Chain Manager,69800.0,Pernille,Munch,193,Public Affairs
+Logistics Manager,69500.0,Mette,Krogsgaard,156,Customer Service
+Engineering Manager,69200.0,Allan,Bundgaard,642,Customer Service
+Design Manager,68800.0,Daniel,Seerup,491,R&D
+R&D Manager,67900.0,Jonas,Seerup,555,Innovation
+Business Development Manager,67000.0,Jonas,Bredahl,147,Manufacturing
+Quality Manager,64100.0,Diana,Storm,558,Supply Chain
+Innovation Manager,62600.0,Christian,Friis,319,Supply Chain
+Facilities Manager,62200.0,Anders,Jensen,553,R&D
+Data Science Manager,61900.0,Johnny,Thomassen,550,IT
+ERP Manager,61600.0,Maj-Britt,Enevoldsen,416,Production
+Security Manager,61300.0,René,Nystrøm,402,Environment & Sustainability
+Environment Health and Safety Manager,61000.0,Jesper,Dahl,497,Production
+CRM Manager,60400.0,Maria,Dahlin,578,Manufacturing
+Communications Manager,58600.0,Heidi,Sonne,852,Strategy/PMO
+Audit Manager,58400.0,Vibeke,Daugaard,376,Production
+Risk Manager,56600.0,Kasper,Hvidt,607,Operations
+Brand Manager,55500.0,Frank,Busk,211,Customer Service
+Corporate Affairs Manager,55200.0,Thomas,Pedersen,859,Product Development
+Training Manager,55100.0,Katrine,Glavind,874,R&D
+Talent Acquisition Manager,54100.0,Maja,Lund,587,Finance
+Compensation and Benefits Manager,53900.0,Camilla,Grøn,444,Operations
+Infrastructure Manager,53600.0,Michael,Rahn,911,Quality Assurance
+Maintenance Manager,53200.0,Henrik,Blichfeldt,902,Finance
+Software Engineer,53200.0,Malene,Ravn,820,Manufacturing
+Software Engineer,52900.0,Michael,Rahn,389,Strategy/PMO
+Software Engineer,52800.0,Johnny,Thomassen,310,R&D
+Software Engineer,52600.0,Katrine,Damgaard,320,Operations
+Software Engineer,52600.0,Lars,Klitgaard,662,Production
+Software Engineer,52100.0,Anne,Knudsen,362,Production
+Software Engineer,51600.0,Gitte,Dideriksen,987,Operations
+Software Engineer,51500.0,Jesper,Thyrrestrup,199,Operations
+Data Engineer,51500.0,Dennis,Graversen,403,Production
+Data Engineer,51200.0,Bo,Jakobsen,134,Production
+Data Engineer,51000.0,Kasper,Bang,109,HR
+Data Engineer,50900.0,Nicolai,Kruse,127,Operations
+Data Engineer,50700.0,Esben,Husted,354,Production
+Data Scientist,50700.0,Jan,Brovst,234,Manufacturing
+Data Scientist,49800.0,Esben,Krøyer,704,Quality Assurance
+Data Scientist,49000.0,Lars,Klitgaard,364,Legal & Compliance
+Data Scientist,49000.0,Lars,Klitgaard,774,Security
+Data Scientist,48800.0,Mads,Gregersen,586,Supply Chain
+Data Scientist,48700.0,Nicoline,Bennedsen,952,Product Development
+Data Scientist,47700.0,Mette,Dideriksen,753,Customer Service
+Data Analyst,47700.0,Nicolaj,Mørk,794,Manufacturing
+Data Analyst,47100.0,Jesper,Thyrrestrup,797,Training & Development
+Data Analyst,47100.0,Malene,Ravn,901,Manufacturing
+Data Analyst,46900.0,Brian,Thomsen,450,R&D
+Data Analyst,46200.0,Martin,Mejlvang,556,Production
+Data Analyst,45000.0,Steen,Brink,635,Customer Service
+Data Analyst,45000.0,Brian,Kjeldsen,956,Strategy/PMO
+Data Analyst,44700.0,Thomas,Hagedorn,644,Production
+Data Analyst,44600.0,Steen,Brink,288,Production
+Data Analyst,44600.0,Pernille,Munch,949,Risk Management
+Data Analyst,44300.0,Rasmus,Hertz,135,Logistics
+Data Analyst,44200.0,Brian,Kjeldsen,863,IT
+Data Analyst,43800.0,Rikke,Vedel,664,Production
+Data Analyst,43400.0,Mads,Westermann,792,Operations
+Business Analyst,43200.0,Dorte,Veje,688,Operations
+Business Analyst,43100.0,Maria,Jørgensen,569,Legal & Compliance
+Business Analyst,42700.0,Thomas,Pedersen,378,IT
+Business Analyst,42600.0,Kenneth,Leth,169,Manufacturing
+Business Analyst,42600.0,Marianne,Graversen,399,Supply Chain
+Business Analyst,42200.0,Christian,Trier,894,Public Affairs
+Business Analyst,42100.0,Johnny,Hjorth,345,Manufacturing
+Business Analyst,41700.0,Mette,Bjerring,393,Supply Chain
+Business Analyst,41600.0,Heidi,Just,695,Customer Service
+Financial Analyst,41100.0,Mette,Skaarup,930,Logistics
+Financial Analyst,41100.0,Brian,Thomsen,873,Quality Assurance
+Financial Analyst,41000.0,Steen,Brink,289,IT
+Financial Analyst,41000.0,Christina,Brandt,190,IT
+Financial Controller,40900.0,Kristoffer,Mejlvang,615,Manufacturing
+Financial Controller,40800.0,Steen,Brink,583,R&D
+Financial Controller,40700.0,Jakob,Bro,677,Supply Chain
+Financial Controller,40700.0,Brian,Lykke,182,HR
+Accountant,40600.0,Louise,Engberg,879,HR
+Accountant,40300.0,Allan,Bundgaard,406,Operations
+Accountant,40200.0,Søren,Isaksen,543,Internal Audit
+Accountant,40000.0,Philip,Bendsen,571,R&D
+Accountant,40000.0,Dennis,Fogh,424,HR
+Accountant,39700.0,Helene,Bendixen,973,Production
+Accountant,39400.0,Stine,Bækkelund,951,Production
+Accountant,39200.0,Jesper,Dideriksen,511,Legal & Compliance
+Accountant,39100.0,Daniel,Seerup,532,Production
+Accountant,39000.0,Heidi,Frandsen,650,Operations
+Accountant,39000.0,Peter,Mortensen,304,Manufacturing
+Accountant,38900.0,Rikke,Vedel,166,Operations
+Accountant,38800.0,Pernille,Munch,461,Production
+Procurement Specialist,38600.0,Mette,Dideriksen,329,Production
+Procurement Specialist,38400.0,Vibeke,Niemann,818,Manufacturing
+Procurement Specialist,38400.0,Bo,Jakobsen,629,HR
+Procurement Specialist,38400.0,Maria,Skafte,447,Manufacturing
+Procurement Specialist,38400.0,Daniel,Dalsgaard,579,HR
+Procurement Specialist,38400.0,Lars,Klitgaard,228,Manufacturing
+Procurement Specialist,38200.0,Line,Bloch,806,Manufacturing
+Supply Planner,38200.0,Martin,Mejlvang,430,HR
+Supply Planner,38200.0,Lars,Klitgaard,165,Legal & Compliance
+Supply Planner,38200.0,Allan,Ravn,585,Production
+Supply Planner,37800.0,Torben,Hassing,307,Customer Service
+Supply Planner,37800.0,Mia,Hede,637,IT
+Supply Planner,37800.0,Henrik,Westh,531,R&D
+Supply Planner,37700.0,Kristoffer,Buch,375,Manufacturing
+Supply Planner,37500.0,Helena,Bay,129,Supply Chain
+Demand Planner,37400.0,Carsten,Nyborg,654,Quality Assurance
+Demand Planner,37300.0,Carsten,Riis,861,Production
+Demand Planner,37300.0,Johnny,Simonsen,778,Legal & Compliance
+Demand Planner,37200.0,Johnny,Thomassen,313,Customer Service
+Demand Planner,37200.0,Lene,Hviid,101,IT
+Demand Planner,37200.0,Dorte,La Cour,929,Finance
+Demand Planner,37100.0,René,Nystrøm,420,Production
+Production Planner,36900.0,Niels,Enevoldsen,924,Logistics
+Production Planner,36600.0,Jacob,Haugaard,526,Public Affairs
+Production Planner,36500.0,Karen,Tofte,786,Design
+Production Planner,36500.0,Anja,Dahl,235,Finance
+Production Technician,36100.0,Anders,Jensen,881,Manufacturing
+Production Technician,36100.0,Ole,Boesen,711,Manufacturing
+Production Technician,36100.0,Patrick,Bech,604,Innovation
+Production Technician,36000.0,Jonas,Bredahl,469,Design
+Production Technician,36000.0,Lotte,Bjørn,179,Operations
+Production Technician,35800.0,Jesper,Stensgaard,398,Risk Management
+Production Technician,35700.0,Diana,Lykke,988,Production
+Production Technician,35600.0,Vibeke,Daugaard,333,Supply Chain
+Industrial Designer,35500.0,Kasper,Bang,220,R&D
+Industrial Designer,35500.0,Louise,Storgaard,175,HR
+Industrial Designer,35400.0,Kenneth,Bøgh,694,Customer Service
+Industrial Designer,35300.0,Camilla,Plum,249,Manufacturing
+Industrial Designer,35200.0,Philip,Kirkegaard,237,Manufacturing
+Industrial Designer,35200.0,Christian,Trier,632,HR
+Product Designer,35200.0,Line,Bloch,337,Operations
+Product Designer,35100.0,Martin,Olesen,676,IT
+Product Designer,35100.0,Sanne,Just,868,Production
+Product Designer,35100.0,Søren,Brandstrup,312,Innovation
+Product Designer,34900.0,Jesper,Thyrrestrup,903,Customer Service
+Product Designer,34900.0,Anja,Dahl,209,HR
+Graphic Designer,34900.0,Malene,Skytte,960,Logistics
+Graphic Designer,34600.0,Kenneth,Bøgh,787,Operations
+Graphic Designer,34500.0,Bente,Lauritzen,656,Product Development
+Graphic Designer,34500.0,Nicoline,Bennedsen,618,Manufacturing
+Packaging Designer,34300.0,Preben,Bach,974,HR
+Packaging Designer,34300.0,Dennis,Schrøder,850,Operations
+Packaging Designer,34300.0,Jonas,Kure,853,Strategy/PMO
+Packaging Designer,34200.0,Kasper,Bang,466,Legal & Compliance
+Packaging Designer,34100.0,Maja,Langkjær,754,Operations
+Packaging Designer,34100.0,Diana,Lykke,311,Operations
+Mechanical Engineer,33900.0,Mia,Svenningsen,834,Manufacturing
+Mechanical Engineer,33800.0,Dennis,Krogh,484,Production
+Mechanical Engineer,33800.0,Lone,Skytte,436,Production
+Mechanical Engineer,33800.0,Dennis,Schrøder,757,Quality Assurance
+Mechanical Engineer,33600.0,Heidi,Frandsen,306,Production
+Electrical Engineer,33500.0,Marianne,Graversen,489,HR
+Electrical Engineer,33500.0,Kasper,Bang,492,Records Management
+Electrical Engineer,33400.0,Niels,Bjerregaard,904,R&D
+Electrical Engineer,33400.0,Dennis,Krogh,706,Manufacturing
+Electronics Engineer,33400.0,Niels,Enevoldsen,486,Operations
+Electronics Engineer,33400.0,Katrine,Skytte,266,Customer Service
+Electronics Engineer,33400.0,Daniel,Dalsgaard,221,Operations
+Electronics Engineer,33300.0,Steen,Kolding,516,IT
+Safety Engineer,33200.0,Bo,Winther,746,Production
+Safety Engineer,33200.0,Charlotte,Dalsgaard,272,Production
+Safety Engineer,33100.0,Anne,Hjulmand,603,Production
+Process Engineer,33100.0,Jonas,Kure,351,Customer Service
+Process Engineer,33100.0,Heidi,Sonne,816,Manufacturing
+Process Engineer,32900.0,Helle,Lauridsen,862,Operations
+Process Engineer,32800.0,Jan,Mikkelsen,937,Customer Service
+Process Engineer,32800.0,Lotte,Holm,724,Customer Service
+QA Engineer,32800.0,Niels,Enevoldsen,192,Supply Chain
+QA Engineer,32600.0,Katrine,Glavind,457,Operations
+QA Engineer,32400.0,Kenneth,Marcussen,849,HR
+Test Engineer,31900.0,Kristina,Bræmer,836,IT
+Test Engineer,31900.0,Anders,Brinch,487,Public Affairs
+Test Engineer,31800.0,Helene,Vestergård,352,Manufacturing
+Test Engineer,31800.0,Annette,Skov,296,R&D
+Test Engineer,31700.0,Jeanette,Stjerne,791,Training & Development
+Test Engineer,31500.0,Camilla,Grøn,619,HR
+Test Engineer,31500.0,Christina,Egede,123,Operations
+Automation Engineer,31400.0,Ole,Boesen,648,Operations
+Automation Engineer,31300.0,Rasmus,Mørch,163,Operations
+Automation Engineer,31200.0,Gitte,Dideriksen,370,Production
+Automation Engineer,31200.0,Pia,Herskind,776,Customer Service
+Industrial Engineer,31200.0,Signe,Nørskov,483,Finance
+Industrial Engineer,31100.0,Thomas,Skafte,265,R&D
+Industrial Engineer,31100.0,Ole,Boesen,733,Operations
+Production Operator,31100.0,Gitte,Dideriksen,934,IT
+Production Operator,31000.0,Camilla,Hall,857,Production
+Production Operator,30900.0,Rikke,Larsen,573,Customer Service
+Production Operator,30900.0,Jacob,Hald,533,Legal & Compliance
+Production Operator,30900.0,Jesper,Høj,407,Manufacturing
+Production Operator,30800.0,Sanne,Rahbek,105,Production
+Production Operator,30800.0,Simon,Thisted,652,Training & Development
+Production Operator,30700.0,Brian,Skou,663,Risk Management
+Production Operator,30700.0,Jesper,Dahl,200,Customer Service
+Production Operator,30700.0,Nicolaj,Mørk,468,Strategy/PMO
+Production Operator,30600.0,Carsten,Riis,120,Production
+Production Operator,30500.0,Rasmus,Hertz,405,Production
+Assembly Operator,30500.0,Helena,Bay,283,Risk Management
+Assembly Operator,30500.0,Christina,Egede,225,Production
+Assembly Operator,30400.0,Vibeke,Daugaard,421,IT
+Assembly Operator,30300.0,Anne-Mette,Illum,440,Customer Service
+Assembly Operator,30300.0,Annette,Rosted,961,Security
+Assembly Operator,30300.0,Katrine,Glavind,331,Logistics
+Assembly Operator,30200.0,Gitte,Dideriksen,356,Records Management
+Assembly Operator,30100.0,Jeanette,Skou,817,Customer Service
+Assembly Operator,30000.0,Frank,Busk,898,Logistics
+Assembly Operator,29900.0,Anja,Dahl,982,Supply Chain
+Assembly Operator,29800.0,Dennis,Eskildsen,822,Logistics
+Assembly Operator,29800.0,Jesper,Christensen,801,Public Affairs
+Assembly Operator,29800.0,Morten,Høegh,215,Legal & Compliance
+Assembly Operator,29700.0,Preben,Bach,699,Legal & Compliance
+Machine Operator,29700.0,Simon,Rasmussen,909,Environment & Sustainability
+Machine Operator,29600.0,Preben,Ring,953,Manufacturing
+Machine Operator,29600.0,Philip,Gravgaard,730,Manufacturing
+Machine Operator,29500.0,Charlotte,Bruun,680,Manufacturing
+Machine Operator,29400.0,Bente,Bak,917,Production
+Machine Operator,29400.0,Jonas,Kure,545,Customer Service
+Machine Operator,29300.0,Susanne,Thybo,942,Customer Service
+Machine Operator,29300.0,Merete,Falk,714,Corporate Communications
+Machine Operator,29200.0,Mette,Sørensen,564,Operations
+Machine Operator,29200.0,Karina,Flensted,339,IT
+Machine Operator,29200.0,Peter,Mortensen,916,Manufacturing
+Machine Operator,29100.0,Kristina,Blicher,273,Risk Management
+Machine Operator,29000.0,Henrik,Schack,494,Corporate Communications
+Warehouse Associate,29000.0,Michael,Stenstrup,125,Finance
+Warehouse Associate,28900.0,Helle,Andreasen,467,Corporate Communications
+Warehouse Associate,28800.0,Kristoffer,Mejlvang,157,Customer Service
+Warehouse Associate,28800.0,Mia,Hede,302,Logistics
+Warehouse Associate,28800.0,Stine,Askjær,833,Quality Assurance
+Warehouse Associate,28700.0,Annette,Skov,995,Operations
+Warehouse Associate,28600.0,Jeanette,Malling,178,Quality Assurance
+Warehouse Associate,28600.0,Torben,Hald,210,Corporate Communications
+Warehouse Associate,28400.0,Anne,Sørum,892,Production
+Warehouse Associate,28300.0,Frank,Boe,132,Finance
+Warehouse Worker,28100.0,Lotte,Bjørn,238,Production
+Warehouse Worker,28000.0,Anne,Hjulmand,347,Finance
+Warehouse Worker,27900.0,Jeanette,Skou,608,Quality Assurance
+Warehouse Worker,27900.0,Jesper,Ahrenkiel,941,Operations
+Logistics Coordinator,27900.0,Steen,Kolding,224,IT
+Logistics Coordinator,27800.0,Sanne,Just,829,Operations
+Logistics Coordinator,27700.0,Katrine,Skytte,453,Production
+Logistics Coordinator,27700.0,Rikke,Bredal,263,Legal & Compliance
+Logistics Coordinator,27700.0,Søren,Isaksen,303,Environment & Sustainability
+Logistics Coordinator,27700.0,Rikke,Bredal,442,Manufacturing
+Shipping Coordinator,27700.0,Anne,Knudsen,815,Production
+Shipping Coordinator,27600.0,Lars,Rasmussen,433,IT
+Shipping Coordinator,27600.0,Christina,Kragh,580,Product Development
+Shipping Coordinator,27500.0,Henrik,Blichfeldt,149,Security
+Shipping Coordinator,27400.0,Patrick,Kragh,560,Operations
+Shipping Coordinator,27400.0,Søren,Hoffmann,449,Finance
+Shipping Coordinator,27400.0,Charlotte,Bæk,451,Supply Chain
+Shipping Coordinator,27300.0,Camilla,Nørup,518,Design
+Supply Chain Coordinator,27300.0,Sanne,Helt,121,Customer Service
+Supply Chain Coordinator,27300.0,Louise,Hansen,512,IT
+Supply Chain Coordinator,27300.0,Diana,Lykke,709,Production
+Forklift Operator,27300.0,Johnny,Simonsen,544,Production
+Forklift Operator,27200.0,Peter,Abrahamsen,291,R&D
+Forklift Operator,27200.0,Christina,Hørdum,318,Operations
+Forklift Operator,27100.0,Steen,Kolding,341,Customer Service
+Forklift Operator,27100.0,Mia,Hede,925,Innovation
+Material Handler,27100.0,Philip,Kirkegaard,425,Design
+Material Handler,27100.0,Stine,Thygesen,783,Environment & Sustainability
+Material Handler,27000.0,Sanne,Just,159,Training & Development
+Material Handler,26900.0,Malene,Ravn,720,Manufacturing
+Material Handler,26800.0,Nicolai,Dam,630,Training & Development
+Material Handler,26700.0,Hanne,Østergaard,173,Product Development
+Material Handler,26600.0,Martin,Olesen,262,Operations
+Maintenance Technician,26600.0,Frank,Busk,996,Production
+Maintenance Technician,26600.0,Esben,Husted,589,Quality Assurance
+Maintenance Technician,26600.0,Diana,Storm,835,Corporate Communications
+Maintenance Technician,26600.0,Thomas,Skafte,332,R&D
+Maintenance Technician,26400.0,Jesper,Stensgaard,669,Customer Service
+Maintenance Technician,26300.0,René,Kjær,866,Corporate Communications
+Facilities Technician,26300.0,Carsten,Nyborg,145,Logistics
+Facilities Technician,26300.0,Mette,Dideriksen,112,Manufacturing
+Facilities Technician,26300.0,Christian,Toft,536,Strategy/PMO
+Electrician,26200.0,Tine,Vedel,713,R&D
+IT Support Specialist,26200.0,Christina,Hørdum,176,Legal & Compliance
+IT Support Specialist,26100.0,Lene,Vest,305,Training & Development
+Network Administrator,26100.0,Henrik,Blichfeldt,357,HR
+Network Administrator,26100.0,Brian,Lykke,655,R&D
+Network Administrator,25900.0,Pia,Holten,539,Operations
+Network Administrator,25800.0,Sofie,Nyholm,756,IT
+System Administrator,25800.0,Dorte,Ehlers,454,Training & Development
+System Administrator,25800.0,Lisbeth,Høgh,890,R&D
+System Administrator,25700.0,Louise,Engberg,130,Logistics
+System Administrator,25600.0,Lars,Dam,348,Production
+System Administrator,25600.0,Jakob,Munch,499,Legal & Compliance
+System Administrator,25600.0,Dennis,Fogh,705,Legal & Compliance
+System Administrator,25600.0,Helene,Bendixen,875,Logistics
+Database Administrator,25500.0,Johnny,Simonsen,598,Quality Assurance
+Database Administrator,25200.0,Patrick,Bech,591,IT
+Database Administrator,25200.0,René,Nystrøm,254,Customer Service
+Database Administrator,25200.0,Johnny,Thomassen,290,Finance
+Database Administrator,25200.0,Peter,Mortensen,808,Production
+Database Administrator,25200.0,Anne,Malling,280,Manufacturing
+ERP Specialist,25200.0,Anders,Brinch,144,Production
+ERP Specialist,25000.0,Thomas,Damm,452,Operations
+Information Security Analyst,25000.0,Katrine,Damgaard,268,Legal & Compliance
+Information Security Analyst,24900.0,Camilla,Eskesen,975,Logistics
+Information Security Analyst,24800.0,Peter,Overgaard,731,Manufacturing
+Web Developer,24800.0,Christina,Hørdum,191,Manufacturing
+Web Developer,24700.0,Ole,Boesen,685,Training & Development
+Web Developer,24700.0,Martin,Mejlvang,740,Design
+Web Developer,24600.0,Malene,Skytte,456,Customer Service
+Application Developer,24400.0,Charlotte,Bæk,482,Quality Assurance
+Application Developer,24300.0,Daniel,Seerup,807,Logistics
+Application Developer,24300.0,Brian,Kjeldsen,710,Training & Development
+Application Developer,24200.0,Lone,Vester,413,Design
+Application Developer,24200.0,Bente,Bak,993,Public Affairs
+Application Developer,24100.0,Brian,Skou,155,Operations
+Application Developer,24100.0,Heidi,Frandsen,285,Quality Assurance
+Application Developer,24000.0,Peter,Overgaard,880,Operations
+Application Developer,24000.0,Louise,Storgaard,323,Operations
+Front End Developer,24000.0,Søren,Hoffmann,681,Production
+Front End Developer,24000.0,Diana,Lykke,435,Manufacturing
+Front End Developer,23900.0,Patrick,Kolby,906,Supply Chain
+Front End Developer,23800.0,Søren,Hoffmann,923,Logistics
+Front End Developer,23800.0,Johnny,Thomassen,383,Production
+Back End Developer,23800.0,Martin,Olesen,502,Production
+Back End Developer,23800.0,Allan,Falkenberg,415,Finance
+Back End Developer,23800.0,Jacob,Buch,136,Finance
+Back End Developer,23700.0,Morten,Dalgaard,189,Production
+Back End Developer,23700.0,Lars,Klitgaard,595,Operations
+Back End Developer,23700.0,Malene,Ravn,548,Manufacturing
+UI Designer,23600.0,Kenneth,Bøgh,594,Production
+UI Designer,23500.0,Mads,Gregersen,137,Operations
+UI Designer,23500.0,Vibeke,Daugaard,223,Manufacturing
+UI Designer,23400.0,Rasmus,Mørch,524,Manufacturing
+UI Designer,23300.0,Jesper,Dahl,626,Production
+UI Designer,23200.0,Nina,Schmidt,641,Risk Management
+UI Designer,23200.0,Maria,Winther,139,Production
+UI Designer,23100.0,Pernille,Hesselbjerg,738,Corporate Communications
+UX Designer,23100.0,Trine,Poulsen,749,Design
+UX Designer,23000.0,Ole,Frandsen,431,Operations
+UX Designer,23000.0,Jacob,Haugaard,690,HR
+UX Designer,22900.0,Line,Aagaard,294,Manufacturing
+UX Designer,22900.0,Martin,Olesen,638,Strategy/PMO
+Scrum Master,22900.0,Frederik,Nygaard,537,Production
+Scrum Master,22800.0,Trine,Poulsen,222,Operations
+Scrum Master,22700.0,Rune,Dreyer,422,Operations
+Scrum Master,22300.0,Heidi,Just,204,Supply Chain
+Scrum Master,22300.0,Christina,Egede,366,Quality Assurance
+Scrum Master,22300.0,Patrick,Bech,838,Manufacturing
+Agile Coach,22200.0,Frank,Boe,167,Production
+Agile Coach,22100.0,Steen,Kolding,428,R&D
+Agile Coach,21900.0,Nicoline,Bennedsen,922,Customer Service
+Agile Coach,21700.0,Vibeke,Niemann,751,R&D
+Agile Coach,21700.0,Kenneth,Bøgh,546,Production
+HR Generalist,21600.0,Michael,Rahn,702,Product Development
+HR Generalist,21500.0,Lene,Vest,259,Innovation
+HR Generalist,21500.0,Nicolai,Kruse,520,Production
+HR Generalist,21500.0,Jesper,Ahrenkiel,728,Manufacturing
+HR Generalist,21500.0,Jeanette,Kristiansen,954,Logistics
+HR Generalist,21400.0,Jakob,Bro,813,IT
+HR Generalist,21400.0,Gitte,Dideriksen,437,Logistics
+HR Generalist,21400.0,Pia,Herskind,771,Strategy/PMO
+HR Specialist,21400.0,Stine,Clausen,503,Design
+HR Specialist,21400.0,Ole,Vang,474,Design
+HR Specialist,21300.0,Helene,Bendixen,119,Product Development
+HR Specialist,21300.0,Dorte,Veje,198,Production
+HR Specialist,21300.0,Lone,Vester,108,Manufacturing
+HR Specialist,21200.0,Maria,Dahlin,959,Operations
+Recruiter,21100.0,Jesper,Stensgaard,592,Manufacturing
+Recruiter,21100.0,Jesper,Christensen,921,Manufacturing
+Recruiter,21100.0,Jonas,Bredahl,955,Corporate Communications
+Recruiter,21000.0,Louise,Møller,727,Legal & Compliance
+Recruiter,21000.0,Steen,Kolding,979,Operations
+Recruiter,20900.0,Merete,Falk,361,Customer Service
+Recruiter,20900.0,Dennis,Eskildsen,358,Environment & Sustainability
+Talent Acquisition Specialist,20900.0,Tobias,Nørgaard,340,Production
+Talent Acquisition Specialist,20900.0,Claus,Haastrup,885,Production
+Talent Acquisition Specialist,20700.0,Anne,Knudsen,767,Quality Assurance
+Talent Acquisition Specialist,20700.0,Johnny,Hjorth,493,Logistics
+Talent Acquisition Specialist,20600.0,Malene,Skytte,206,Environment & Sustainability
+Payroll Specialist,20600.0,Nina,Schmidt,627,IT
+Payroll Specialist,20600.0,Susanne,Thybo,465,Manufacturing
+Payroll Specialist,20500.0,Karen,Friis,342,IT
+Payroll Specialist,20400.0,Christina,Hørdum,472,Corporate Communications
+Payroll Specialist,20400.0,Rasmus,Mørch,856,Finance
+Payroll Specialist,20400.0,Mia,Hede,810,Production
+Compensation Specialist,20400.0,Allan,Ravn,563,Operations
+Compensation Specialist,20300.0,Christian,Hald,658,R&D
+Compensation Specialist,20300.0,Mads,Gregersen,171,IT
+Compensation Specialist,20300.0,Brian,Thomsen,717,Manufacturing
+Compensation Specialist,20200.0,Louise,Hansen,359,Finance
+Compensation Specialist,20200.0,Line,Bloch,151,Internal Audit
+Training Specialist,20200.0,Preben,Bach,609,Risk Management
+Training Specialist,20200.0,Stine,Clausen,527,Manufacturing
+Training Specialist,20200.0,Nina,Schmidt,725,Production
+Training Specialist,20200.0,Peter,Overgaard,432,HR
+Training Specialist,20000.0,Rikke,Mark,161,Quality Assurance
+Training Specialist,19800.0,Hanne,Østergaard,992,Strategy/PMO
+Learning and Development Specialist,19800.0,Søren,Brandstrup,507,Logistics
+Learning and Development Specialist,19800.0,Jacob,Hald,538,Logistics
+Learning and Development Specialist,19800.0,Kasper,Skytte,418,Production
+Learning and Development Specialist,19800.0,Daniel,Dalsgaard,965,IT
+Customer Support Specialist,19700.0,Signe,Højlund,947,Customer Service
+Customer Support Specialist,19700.0,Anne-Mette,Illum,775,R&D
+Customer Support Specialist,19700.0,Peter,Overgaard,643,Records Management
+Customer Support Specialist,19500.0,Mads,Gregersen,514,Finance
+Customer Support Specialist,19500.0,Johnny,Simonsen,668,Manufacturing
+Customer Support Specialist,19500.0,Nicklas,Trier,239,Internal Audit
+Customer Support Specialist,19400.0,Jonas,Seerup,443,Manufacturing
+Customer Support Specialist,19300.0,Jonas,Nørregaard,529,Manufacturing
+Customer Service Representative,19300.0,Mette,Lykke,798,Customer Service
+Customer Service Representative,19300.0,Jonas,Seerup,498,Manufacturing
+Customer Service Representative,19200.0,Brian,Skou,659,Finance
+Customer Service Representative,19200.0,Pia,Herskind,292,Design
+Customer Service Representative,19200.0,Nicklas,Hede,691,Security
+Customer Service Representative,19200.0,Dennis,Schrøder,572,Travel & Events
+Customer Service Representative,19100.0,Søren,Nielsen,698,Manufacturing
+Call Center Agent,18900.0,Vibeke,Justesen,876,Production
+Call Center Agent,18900.0,Anne,Hjulmand,718,IT
+Call Center Agent,18900.0,Stine,Thygesen,617,Logistics
+Call Center Agent,18800.0,Mia,Hede,241,Manufacturing
+Call Center Agent,18800.0,Esben,Husted,102,Quality Assurance
+Retail Associate,18800.0,Lars,Dam,865,IT
+Retail Associate,18700.0,Patrick,Kolby,164,Product Development
+Retail Associate,18700.0,Annette,Jakobsen,488,IT
+Retail Associate,18600.0,Thomas,Damm,439,Customer Service
+Retail Associate,18500.0,Mia,Hede,896,R&D
+Retail Associate,18500.0,Morten,Dalgaard,562,Legal & Compliance
+Retail Associate,18500.0,Nicoline,Bennedsen,683,Manufacturing
+Retail Associate,18500.0,Katrine,Damgaard,670,R&D
+Store Manager,18400.0,Peter,Mortensen,476,Finance
+Store Manager,18400.0,Maja,Lund,831,Finance
+Store Manager,18400.0,Jeanette,Malling,634,Supply Chain
+Store Manager,18300.0,Esben,Husted,371,Operations
+Store Manager,18300.0,Ole,Vang,284,Strategy/PMO
+Store Manager,18300.0,Eva,Terkelsen,335,Production
+Merchandiser,18300.0,Malene,Enggaard,344,Manufacturing
+Merchandiser,18300.0,Jesper,Ahrenkiel,624,Operations
+Merchandiser,18200.0,Lene,Justesen,845,Product Development
+Merchandiser,18200.0,Heidi,Frandsen,888,R&D
+Merchandiser,18200.0,Kasper,Bang,567,Logistics
+Merchandiser,18200.0,Philip,Bendsen,977,Environment & Sustainability
+Merchandiser,18100.0,Rikke,Damgaard,552,Logistics
+Sales Representative,18000.0,Jeanette,Malling,755,Quality Assurance
+Sales Representative,18000.0,Maria,Skafte,515,Logistics
+Sales Representative,18000.0,Allan,Svenstrup,373,IT
+Sales Representative,18000.0,Bo,Bjerre,805,Finance
+Sales Representative,17900.0,Anne-Mette,Nyborg,368,Production
+Key Account Manager,17800.0,Thomas,Pedersen,346,Production
+Key Account Manager,17800.0,Kristoffer,Mejlvang,350,Product Development
+Key Account Manager,17700.0,Sanne,Rahbek,513,Manufacturing
+Key Account Manager,17700.0,Jakob,Bro,693,Manufacturing
+Key Account Manager,17600.0,Steen,Kolding,269,HR
+Key Account Manager,17600.0,Dennis,Schrøder,667,Manufacturing
+Key Account Manager,17600.0,Lars,Rasmussen,410,Logistics
+Field Sales Representative,17600.0,Niels,Ladegaard,962,Operations
+Field Sales Representative,17500.0,Helle,Andreasen,481,Production
+Field Sales Representative,17500.0,Allan,Svenstrup,614,Customer Service
+Field Sales Representative,17400.0,Morten,Dalgaard,525,Strategy/PMO
+Field Sales Representative,17400.0,Camilla,Hall,610,IT
+Field Sales Representative,17200.0,Maja,Lund,826,Operations
+Field Sales Representative,17200.0,Jan,Brovst,839,Manufacturing
+Marketing Specialist,17100.0,Heidi,Just,496,Operations
+Marketing Specialist,17100.0,Søren,Nielsen,508,Internal Audit
+Marketing Specialist,17000.0,Katrine,Søborg,828,Production
+Marketing Specialist,17000.0,Peter,Overgaard,758,Production
+Marketing Specialist,17000.0,Kasper,Skytte,475,Product Development
+Marketing Specialist,16900.0,Jeanette,Skou,913,Operations
+Marketing Specialist,16800.0,Michael,Rahn,640,Product Development
+Digital Marketing Specialist,16800.0,Mie,Bjerg,860,Customer Service
+Digital Marketing Specialist,16700.0,Christina,Hørdum,282,Supply Chain
+Digital Marketing Specialist,16600.0,René,Nystrøm,793,Manufacturing
+Digital Marketing Specialist,16600.0,Anette,Stokholm,270,Quality Assurance
+Digital Marketing Specialist,16500.0,Kenneth,Leth,392,Production
+Digital Marketing Specialist,16400.0,Johnny,Simonsen,639,R&D
+Digital Marketing Specialist,16400.0,Jonas,Bredahl,665,Production
+Digital Marketing Specialist,16400.0,Henrik,Schack,400,Manufacturing
+Content Specialist,16400.0,Jeanette,Malling,287,Design
+Content Specialist,16300.0,Rikke,Mark,843,IT
+Content Specialist,16300.0,Lars,Rasmussen,251,Manufacturing
+Content Specialist,16100.0,Christina,Kragh,918,Travel & Events
+Content Specialist,16000.0,Kenneth,Bøgh,113,IT
+Content Specialist,15900.0,Kristoffer,Mejlvang,372,Product Development
+Social Media Specialist,15800.0,Jeanette,Malling,202,R&D
+Social Media Specialist,15800.0,Trine,Mose,766,Logistics
+Social Media Specialist,15700.0,Pernille,Munch,968,Logistics
+Social Media Specialist,15600.0,Søren,Brandstrup,582,Design
+Social Media Specialist,15500.0,Louise,Møller,522,Production
+Social Media Specialist,15500.0,Camilla,Plum,471,Quality Assurance
+Public Relations Specialist,15500.0,Claus,Villadsen,633,Customer Service
+Public Relations Specialist,15400.0,Louise,Møller,322,R&D
+Public Relations Specialist,15400.0,Bente,Vestergård,735,Manufacturing
+Public Relations Specialist,15300.0,Frank,Boe,796,Production
+Public Relations Specialist,15300.0,Helene,Vestergård,804,Manufacturing
+Public Relations Specialist,15200.0,Christina,Kragh,414,Design
+Communications Specialist,15200.0,Karen,Friis,821,Manufacturing
+Communications Specialist,15200.0,Katrine,Skytte,275,Finance
+Communications Specialist,15100.0,Søren,Isaksen,679,Product Development
+Communications Specialist,15100.0,Gitte,Greve,851,Risk Management
+Visual Merchandiser,15000.0,Karina,Brøndum,744,Customer Service
+Visual Merchandiser,14700.0,Christina,Kragh,847,Travel & Events
+Visual Merchandiser,14600.0,Christina,Kragh,434,R&D
+Visual Merchandiser,14600.0,Henrik,Blichfeldt,985,Operations
+Project Manager,14600.0,Brian,Kjeldsen,770,IT
+Project Manager,14300.0,Anne-Mette,Nyborg,349,Operations
+Project Manager,14200.0,Heidi,Just,185,Manufacturing
+Project Manager,14200.0,Philip,Gravgaard,946,Innovation
+Project Coordinator,14100.0,Tine,Vedel,381,Production
+Project Coordinator,14100.0,Helena,Bay,864,Quality Assurance
+Project Coordinator,14100.0,Jesper,Ahrenkiel,682,Quality Assurance
+Project Coordinator,14000.0,Jesper,Ahrenkiel,298,Operations
+Operations Coordinator,14000.0,Michael,Holm,115,IT
+Operations Coordinator,14000.0,Kasper,Skytte,365,Training & Development
+Operations Coordinator,14000.0,Jonas,Vestergaard,752,Manufacturing
+Admin Coordinator,13900.0,Jakob,Munch,908,Logistics
+Admin Coordinator,13900.0,Rikke,Mark,588,Production
+Admin Coordinator,13800.0,René,Bertelsen,684,HR
+Admin Coordinator,13700.0,Claus,Holst,969,Logistics
+Admin Coordinator,13600.0,Susanne,Thybo,565,R&D
+Administrative Assistant,13400.0,Jesper,Christensen,299,HR
+Administrative Assistant,13400.0,Torben,Hassing,473,Manufacturing
+Administrative Assistant,13400.0,Sanne,Helt,584,R&D
+Administrative Assistant,13300.0,Jonas,Vestergaard,180,Legal & Compliance
+Administrative Assistant,13200.0,Simon,Thisted,438,Operations
+Administrative Assistant,12900.0,Allan,Toft,915,Legal & Compliance
+Office Assistant,12900.0,Bo,Jakobsen,802,Corporate Communications
+Office Assistant,12900.0,Katrine,Søborg,111,Operations
+Office Assistant,12800.0,Anne,Hjulmand,596,Customer Service
+Office Assistant,12700.0,Mads,Gregersen,781,Production
+Office Assistant,12500.0,Merete,Falk,645,Operations
+Office Assistant,12500.0,Line,Kure,143,R&D
+Office Assistant,12300.0,Anne,Weis,374,Customer Service
+Office Assistant,12300.0,Emil,Bach,623,Manufacturing
+Office Assistant,12200.0,Trine,Poulsen,201,Customer Service
+Office Assistant,12000.0,Katrine,Damgaard,935,Customer Service
+Receptionist,12000.0,Katrine,Skytte,803,Customer Service
+Receptionist,11800.0,Henrik,Kristensen,271,IT
+Receptionist,11400.0,Dorte,Ehlers,207,Corporate Communications
+Receptionist,11200.0,Claus,Holst,762,Production
+Receptionist,11200.0,Anders,Brinch,597,Operations
+Legal Assistant,11000.0,Martin,Gormsen,230,Operations
+Legal Assistant,11000.0,Martin,Olesen,948,Production
+Legal Assistant,10800.0,Dennis,Eskildsen,830,Strategy/PMO
+Legal Assistant,10700.0,Susanne,Thybo,696,Operations
+Legal Assistant,10600.0,Martin,Kaas,160,Production
+Legal Assistant,10400.0,Mia,Hviid,316,Manufacturing
+Legal Assistant,10200.0,Martin,Gormsen,719,Production
+Document Controller,9400.0,Katrine,Skytte,672,IT
+Document Controller,8700.0,Maj-Britt,Enevoldsen,172,Production
+Document Controller,8200.0,Annette,Skov,827,R&D
+Document Controller,6200.0,Claus,Villadsen,549,Environment & Sustainability

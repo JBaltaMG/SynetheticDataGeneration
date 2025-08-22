@@ -1,101 +1,141 @@
 name,proportionality,unit_price
-OEM Manufacturing Contract,0.05302226935312832,2.6
-International Distribution Agreements,0.04878048780487805,2.5
-SAP Enterprise Support,0.04453870625662779,2.1
-Corporate Legal Retainer,0.04029692470837752,1.7
-Workforce Outsourcing Contract,0.03181336161187699,1.05
-Cloud Services Enterprise License,0.02969247083775186,0.95
-SAP S/4HANA License,0.027571580063626724,0.9
-Property Facility Management,0.02545068928950159,0.85
-Intellectual Property Legal Services,0.02332979851537646,0.81
-Internal Audit Services,0.02332979851537646,0.8
-Annual Tax Advisory,0.021208907741251327,0.78
-Digital Advertising Campaign Management,0.0207847295864263,0.73
-Business Process Outsourcing Fee,0.02057264050901379,0.72
-Global Supply Chain Consulting,0.02014846235418876,0.7
-Annual Financial Audit,0.01930010604453871,0.68
-Brand Licensing Fee,0.01802757158006363,0.63
-SAP Maintenance Support,0.016542948038176037,0.57
-Telecom Connectivity Contract,0.015906680805938496,0.54
-Energy Procurement Contract,0.015058324496288442,0.52
-Global HR Outsourcing,0.01484623541887593,0.5
-Annual GDPR Compliance Audit,0.014634146341463415,0.47
-Product Safety Regulatory Fees,0.014209968186638389,0.455
-Patent Filing Service,0.013785790031813362,0.44
-Enterprise Risk Management Consulting,0.01357370095440085,0.43
-Annual ISO 9001 Certification,0.013361611876988337,0.41
-Global Payroll Processing,0.013149522799575823,0.4
-Environmental Permit Fee,0.013149522799575823,0.395
-Annual Occupational Health & Safety Audit,0.01293743372216331,0.39
-Recruitment Process Outsourcing,0.01293743372216331,0.386
-Salesforce Enterprise License,0.012725344644750796,0.38
-Corporate Travel Management,0.012301166489925769,0.37
-Digital Product Development Services,0.012089077412513256,0.36
-Annual Anti-Bribery Compliance Review,0.012089077412513256,0.355
-Executive Search Fee,0.011876988335100744,0.35
-Strategic Market Research Subscription,0.01166489925768823,0.34
-Brand Protection Consulting,0.01166489925768823,0.335
-Warehouse Rental Contract,0.011240721102863204,0.325
-Internal Communications Platform License,0.010604453870625663,0.31
-Annual Fire Safety Inspection,0.01039236479321315,0.308
-Corporate Security Services,0.010180275715800637,0.305
-Worldwide Logistics Tracking License,0.009968186638388124,0.295
-Annual Employee Engagement Survey,0.009544008483563097,0.288
-Crisis Management Retainer,0.009331919406150585,0.282
-Global Mobility Services,0.00911983032873807,0.28
-Enterprise Fleet Management,0.008907741251325558,0.278
-Annual Data Privacy Impact Assessment,0.008907741251325558,0.275
-Annual Customs Compliance Audit,0.008695652173913045,0.272
-SAP Integration Support,0.008271474019088019,0.265
-Mobile Device Management License,0.008059384941675504,0.258
-Annual Water Usage Audit,0.006998939554612938,0.245
-Third Party Due Diligence Service,0.006786850477200425,0.242
-Annual Contract Management Review,0.006362672322375398,0.238
-Annual Employee Training Platform,0.0061505832449628844,0.234
-Annual Digital Accessibility Audit,0.0057264050901378585,0.23
-Global Event Sponsorship Fee,0.005514316012725345,0.228
-Annual Import Compliance Audit,0.005302226935312832,0.22
-Annual Competitive Benchmarking,0.005090137857900318,0.216
-Annual Time Tracking System License,0.004665959703075292,0.21
-Annual HR Policy Audit,0.004665959703075292,0.208
-Annual Employee Benefits Consulting,0.004453870625662779,0.205
-Annual Press Release Distribution Fee,0.0042417815482502655,0.2
-Annual Mental Health & Wellness Program,0.0042417815482502655,0.198
-Annual Market Compliance Review,0.004029692470837752,0.194
-Annual Sustainability Consulting,0.0038176033934252387,0.19
-Annual Intellectual Property Portfolio Review,0.0036055143160127253,0.188
-Annual Web Domain Renewal,0.0033934252386002123,0.185
-Annual Social Media Management License,0.0033934252386002123,0.183
-Annual Mobile Device Security Audit,0.003181336161187699,0.182
-Annual Corporate Registry Fee,0.003181336161187699,0.181
-Annual Fixed Asset Valuation,0.002969247083775186,0.178
-Annual Procurement Platform Fee,0.0027571580063626725,0.177
-Annual Accounting Software License,0.002545068928950159,0.175
-Annual Food Handling Permit,0.002332979851537646,0.173
-Annual Public Liability Insurance Fee,0.002332979851537646,0.172
-Annual Data Protection Officer Fee,0.0021208907741251328,0.171
-Annual Import License Renewal,0.0021208907741251328,0.169
-Adobe Creative Cloud License,0.001972428419936374,0.167
-Annual ISO 14001 Certification,0.0019300106044538707,0.166
-Annual LEI Registration,0.001887592788971368,0.165
-Annual Audio-Visual Equipment Lease,0.00176033934252386,0.161
-Annual Timesheet Software License,0.0016755037115588549,0.158
-Annual CRM User License,0.0015906680805938495,0.155
-Annual VPN Subscription,0.0015482502651113469,0.154
-Annual Payroll Software License,0.001420996818663839,0.15
-Annual Virtual Server Subscription,0.0013785790031813363,0.149
-Annual Social Media Listening Tool,0.0013361611876988337,0.148
-Annual Data Visualization Tool License,0.0012089077412513257,0.145
-Annual Mobile App Store Developer Fee,0.0011240721102863203,0.143
-Annual Analytics Platform License,0.001081654294803818,0.142
-Annual Online Survey Tool License,0.0009968186638388125,0.14
-Annual Utility Grid Connection Fee,0.0009544008483563097,0.139
-Annual Trade Mark Renewal Fee,0.000911983032873807,0.138
-Annual Industry Association Dues,0.0008695652173913044,0.137
-Annual Digital Certificate Renewal,0.0008271474019088018,0.136
-Annual Customs Warehouse Permit,0.0007847295864262991,0.135
-Annual News Monitoring Service,0.0007423117709437965,0.134
-Annual Professional Membership Dues,0.0006998939554612938,0.133
-Annual Mobile Network Fee,0.0006150583244962885,0.131
-Annual Domain Privacy Protection,0.0005726405090137859,0.13
-Annual Address Validation Service,0.0005302226935312832,0.129
+Enterprise IT Outsourcing,0.03864734299516909,9.0
+Product Design and Development Consulting,0.03381642512077295,8.5
+Global Logistics and Freight Management,0.03260869565217392,8.2
+Supply Chain Management Services,0.03019323671497585,7.8
+Large-Scale Manufacturing Automation Support,0.027777777777777783,7.6
+SAP Enterprise License,0.026570048309178747,7.4
+Facility Management Contract,0.025362318840579715,7.0
+Warehouse Operations Outsourcing,0.024154589371980683,6.7
+Cloud Infrastructure Subscription,0.022946859903381644,6.5
+R&D Project Management,0.019323671497584544,5.8
+Regional Distribution Center Lease,0.019323671497584544,5.7
+Data Center Co-Location Services,0.018115942028985508,5.4
+Annual IT Security Audit,0.016908212560386476,5.2
+Workforce Recruitment Process Outsourcing,0.01570048309178744,4.9
+Brand Licensing Fees,0.01570048309178744,4.8
+Product Safety Testing Services,0.014492753623188408,4.7
+ERP System Maintenance Contract,0.014492753623188408,4.6
+SAP Maintenance and Support Fee,0.013285024154589374,4.45
+ISO 9001 Certification,0.013285024154589374,4.35
+National Advertising Campaign Management,0.012077294685990341,4.3
+Global HR Outsourcing Contract,0.012077294685990341,4.25
+CRM Platform License,0.012077294685990341,4.15
+Annual Environmental Compliance Audit,0.010869565217391304,4.1
+National Tax Advisory Retainer,0.010869565217391304,4.05
+SAP User License,0.010869565217391304,4.0
+Packaging Design Consulting,0.009661835748792272,3.95
+Third-Party Logistics Service Fee,0.009661835748792272,3.8
+Corporate Insurance Premiums,0.009661835748792272,3.7
+Enterprise Antivirus Subscription,0.009661835748792272,3.6
+Annual Product Certification Fee,0.009661835748792272,3.55
+Energy Procurement Consulting,0.008454106280193238,3.5
+Strategic Planning Consulting,0.008454106280193238,3.4
+UK Trade Compliance Services,0.008454106280193238,3.35
+E-commerce Platform License,0.008454106280193238,3.3
+Bulk Printing Services,0.007246376811594204,3.25
+Corporate Communication Consulting,0.007246376811594204,3.2
+Global Payroll Processing Service,0.007246376811594204,3.15
+Danish Data Protection Legal Support,0.007246376811594204,3.1
+Annual Sustainability Reporting Fee,0.007246376811594204,3.05
+Mobile Device Management License,0.007246376811594204,3.0
+Market Research Services,0.006038647342995171,2.95
+Domestic Freight Forwarding Fees,0.006038647342995171,2.9
+Patent Registration Fee,0.006038647342995171,2.8
+Corporate Event Production Service,0.006038647342995171,2.75
+Custom Product Mold Production,0.006038647342995171,2.7
+ISO 14001 Certification,0.006038647342995171,2.65
+European Union Regulatory Filing,0.006038647342995171,2.6
+Annual Corporate Tax Filing Fee,0.004830917874396136,2.5
+Translation and Localization Services,0.004830917874396136,2.45
+Cloud Storage License,0.004830917874396136,2.4
+Corporate Fleet Management Service,0.004830917874396136,2.35
+Legal Document Review Service,0.004830917874396136,2.25
+Machine Maintenance Contract,0.004830917874396136,2.2
+Health and Safety Audit,0.004830917874396136,2.15
+CCTV Security Monitoring Service,0.004830917874396136,2.1
+Utility Infrastructure Maintenance Fee,0.004830917874396136,2.05
+IT Disaster Recovery Planning,0.004830917874396136,2.0
+Internal Audit Services,0.004830917874396136,1.98
+Employee Health Insurance Premium,0.004830917874396136,1.96
+Danish Business Registration Fee,0.004830917874396136,1.94
+High-Volume Telecom Service Contract,0.004830917874396136,1.91
+Facility Cleaning Contract,0.004830917874396136,1.88
+Employee Assistance Program Subscription,0.004830917874396136,1.85
+Waste Management Service,0.004830917874396136,1.82
+Product Liability Insurance Fee,0.004830917874396136,1.8
+Corporate Travel Insurance,0.004830917874396136,1.78
+Annual Fire Safety Training,0.004830917874396136,1.75
+Digital Asset Management License,0.004830917874396136,1.72
+Server Hosting Fee,0.004830917874396136,1.7
+Annual Network Penetration Testing,0.004830917874396136,1.68
+Legal Entity Maintenance Fee,0.004830917874396136,1.66
+Annual Pension Scheme Administration,0.004830917874396136,1.62
+Customs Broker Service,0.004830917874396136,1.6
+Annual Copyright Registration Fee,0.004830917874396136,1.58
+Annual Trademarks Renewal,0.004830917874396136,1.56
+Time and Attendance Software License,0.004830917874396136,1.54
+Facility Access Control Service,0.004830917874396136,1.52
+HRIS Platform License,0.004830917874396136,1.5
+Microsoft 365 Enterprise License,0.004830917874396136,1.48
+Foreign Exchange Transaction Fees,0.004830917874396136,1.46
+Occupational Health Provider Fee,0.004830917874396136,1.42
+Corporate Governance Advisory Retainer,0.003623188405797102,1.38
+Graphic Design Agency Retainer,0.003623188405797102,1.36
+Website Hosting Fee,0.003623188405797102,1.34
+Digital Marketing Subscription,0.003623188405797102,1.32
+Executive Training Program Fee,0.003623188405797102,1.3
+Mobile Carrier Corporate Plan,0.003623188405797102,1.28
+Annual GDPR Compliance Audit,0.003623188405797102,1.26
+Document Management Software License,0.003623188405797102,1.22
+Licensing Board Registration Fee,0.003623188405797102,1.2
+Cloud Backup Subscription,0.003623188405797102,1.16
+IT Helpdesk Outsourcing,0.003623188405797102,1.14
+Corporate Recruitment Platform License,0.003623188405797102,1.12
+Annual Emergency Response Training,0.003623188405797102,1.08
+Annual Hazardous Waste Disposal Fee,0.003623188405797102,1.06
+HR Benefits Administration Fee,0.003623188405797102,1.0
+Annual Public Relations Retainer,0.003623188405797102,0.98
+Corporate Branding License,0.003623188405797102,0.96
+Product Recall Insurance Premium,0.003623188405797102,0.94
+Facility HVAC Maintenance Fee,0.003623188405797102,0.92
+Document Translation Software License,0.003623188405797102,0.9
+Annual Export Control Audit,0.003623188405797102,0.88
+Annual Water Quality Testing Fee,0.003623188405797102,0.84
+Enterprise Backup Appliance Maintenance,0.003623188405797102,0.82
+Annual Cybersecurity Awareness Training,0.003623188405797102,0.8
+Domain Registration Fee,0.003623188405797102,0.76
+Customs Clearance Fee,0.003623188405797102,0.74
+Annual Social Media Monitoring Fee,0.003623188405797102,0.72
+Annual Market Access Licensing,0.003623188405797102,0.68
+Annual Mobile Device Audit,0.002415458937198068,0.66
+Board of Directors Fee,0.002415458937198068,0.64
+Annual Workplace Ergonomics Assessment,0.002415458937198068,0.62
+Corporate Library Subscription,0.002415458937198068,0.6
+Annual Network Equipment Renewal,0.002415458937198068,0.56
+Annual Anti-Bribery Compliance Review,0.002415458937198068,0.54
+Annual Cafeteria Service Contract,0.002415458937198068,0.52
+Annual Printer Maintenance Fee,0.002415458937198068,0.5
+Annual Employee Onboarding Training,0.002415458937198068,0.48
+Annual Environmental Impact Study,0.002415458937198068,0.46
+Annual Social Responsibility Certification,0.002415458937198068,0.42
+Annual Diversity and Inclusion Training,0.002415458937198068,0.4
+Annual Payroll Software Subscription,0.002415458937198068,0.38
+Annual Timekeeping System License,0.002415458937198068,0.36
+Annual Workstation Health Check,0.002415458937198068,0.34
+Annual Event Sponsorship Fee,0.002415458937198068,0.32
+Annual Cloud Security Audit,0.002415458937198068,0.3
+Annual Leadership Development Program,0.002415458937198068,0.28
+Annual Email Security Filter License,0.002415458937198068,0.26
+Annual Corporate Social Media License,0.002415458937198068,0.24
+Annual Industry Membership Fee,0.002415458937198068,0.22
+Annual Danish Chamber of Commerce Dues,0.002415458937198068,0.2
+Annual Professional Association Membership,0.002415458937198068,0.18
+Annual Mobile Device Management Fee,0.002415458937198068,0.16
+Annual Telephone Number License,0.002415458937198068,0.12
+Annual Postal Licensing Fee,0.002415458937198068,0.1
+Annual Vehicle Registration Fee,0.002415458937198068,0.08
+Annual Electric Vehicle Charging Permit,0.002415458937198068,0.06
+Annual Music Licensing Fee,0.002415458937198068,0.04
+Annual Trademark Monitoring Fee,0.002415458937198068,0.02
+Annual Copyright Deposit Fee,0.002415458937198068,0.01
