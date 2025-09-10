@@ -1,551 +1,291 @@
 role_name,monthly_pay,first_name,last_name,employee_id,department_id
-CFO,150000.0,Henrik,Kristensen,661,155
-VP of Marketing,105900.0,Tine,Vedel,397,162
-VP of Supply Chain,90100.0,Louise,Engberg,741,155
-Marketing Manager,80300.0,Lone,Skytte,732,163
-Sales Manager,75100.0,Jacob,Haugaard,142,158
-Operations Manager,71000.0,Claus,Haastrup,686,162
-Production Manager,71000.0,Frank,Stær,170,159
-Supply Chain Manager,69800.0,Pernille,Munch,193,175
-Logistics Manager,69500.0,Mette,Krogsgaard,156,158
-Engineering Manager,69200.0,Allan,Bundgaard,642,158
-Design Manager,68800.0,Daniel,Seerup,491,160
-R&D Manager,67900.0,Jonas,Seerup,555,174
-Business Development Manager,67000.0,Jonas,Bredahl,147,156
-Quality Manager,64100.0,Diana,Storm,558,166
-Innovation Manager,62600.0,Christian,Friis,319,166
-Facilities Manager,62200.0,Anders,Jensen,553,160
-Data Science Manager,61900.0,Johnny,Thomassen,550,159
-ERP Manager,61600.0,Maj-Britt,Enevoldsen,416,155
-Security Manager,61300.0,René,Nystrøm,402,172
-Environment Health and Safety Manager,61000.0,Jesper,Dahl,497,155
-CRM Manager,60400.0,Maria,Dahlin,578,156
-Communications Manager,58600.0,Heidi,Sonne,852,169
-Audit Manager,58400.0,Vibeke,Daugaard,376,155
-Risk Manager,56600.0,Kasper,Hvidt,607,157
-Brand Manager,55500.0,Frank,Busk,211,158
-Corporate Affairs Manager,55200.0,Thomas,Pedersen,859,167
-Training Manager,55100.0,Katrine,Glavind,874,160
-Talent Acquisition Manager,54100.0,Maja,Lund,587,164
-Compensation and Benefits Manager,53900.0,Camilla,Grøn,444,157
-Infrastructure Manager,53600.0,Michael,Rahn,911,162
-Maintenance Manager,53200.0,Henrik,Blichfeldt,902,164
-Software Engineer,53200.0,Malene,Ravn,820,156
-Software Engineer,52900.0,Michael,Rahn,389,169
-Software Engineer,52800.0,Johnny,Thomassen,310,160
-Software Engineer,52600.0,Katrine,Damgaard,320,157
-Software Engineer,52600.0,Lars,Klitgaard,662,155
-Software Engineer,52100.0,Anne,Knudsen,362,155
-Software Engineer,51600.0,Gitte,Dideriksen,987,157
-Software Engineer,51500.0,Jesper,Thyrrestrup,199,157
-Data Engineer,51500.0,Dennis,Graversen,403,155
-Data Engineer,51200.0,Bo,Jakobsen,134,155
-Data Engineer,51000.0,Kasper,Bang,109,163
-Data Engineer,50900.0,Nicolai,Kruse,127,157
-Data Engineer,50700.0,Esben,Husted,354,155
-Data Scientist,50700.0,Jan,Brovst,234,156
-Data Scientist,49800.0,Esben,Krøyer,704,162
-Data Scientist,49000.0,Lars,Klitgaard,364,165
-Data Scientist,49000.0,Lars,Klitgaard,774,177
-Data Scientist,48800.0,Mads,Gregersen,586,166
-Data Scientist,48700.0,Nicoline,Bennedsen,952,167
-Data Scientist,47700.0,Mette,Dideriksen,753,158
-Data Analyst,47700.0,Nicolaj,Mørk,794,156
-Data Analyst,47100.0,Jesper,Thyrrestrup,797,171
-Data Analyst,47100.0,Malene,Ravn,901,156
-Data Analyst,46900.0,Brian,Thomsen,450,160
-Data Analyst,46200.0,Martin,Mejlvang,556,155
-Data Analyst,45000.0,Steen,Brink,635,158
-Data Analyst,45000.0,Brian,Kjeldsen,956,169
-Data Analyst,44700.0,Thomas,Hagedorn,644,155
-Data Analyst,44600.0,Steen,Brink,288,155
-Data Analyst,44600.0,Pernille,Munch,949,173
-Data Analyst,44300.0,Rasmus,Hertz,135,161
-Data Analyst,44200.0,Brian,Kjeldsen,863,159
-Data Analyst,43800.0,Rikke,Vedel,664,155
-Data Analyst,43400.0,Mads,Westermann,792,157
-Business Analyst,43200.0,Dorte,Veje,688,157
-Business Analyst,43100.0,Maria,Jørgensen,569,165
-Business Analyst,42700.0,Thomas,Pedersen,378,159
-Business Analyst,42600.0,Kenneth,Leth,169,156
-Business Analyst,42600.0,Marianne,Graversen,399,166
-Business Analyst,42200.0,Christian,Trier,894,175
-Business Analyst,42100.0,Johnny,Hjorth,345,156
-Business Analyst,41700.0,Mette,Bjerring,393,166
-Business Analyst,41600.0,Heidi,Just,695,158
-Financial Analyst,41100.0,Mette,Skaarup,930,161
-Financial Analyst,41100.0,Brian,Thomsen,873,162
-Financial Analyst,41000.0,Steen,Brink,289,159
-Financial Analyst,41000.0,Christina,Brandt,190,159
-Financial Controller,40900.0,Kristoffer,Mejlvang,615,156
-Financial Controller,40800.0,Steen,Brink,583,160
-Financial Controller,40700.0,Jakob,Bro,677,166
-Financial Controller,40700.0,Brian,Lykke,182,163
-Accountant,40600.0,Louise,Engberg,879,163
-Accountant,40300.0,Allan,Bundgaard,406,157
-Accountant,40200.0,Søren,Isaksen,543,176
-Accountant,40000.0,Philip,Bendsen,571,160
-Accountant,40000.0,Dennis,Fogh,424,163
-Accountant,39700.0,Helene,Bendixen,973,155
-Accountant,39400.0,Stine,Bækkelund,951,155
-Accountant,39200.0,Jesper,Dideriksen,511,165
-Accountant,39100.0,Daniel,Seerup,532,155
-Accountant,39000.0,Heidi,Frandsen,650,157
-Accountant,39000.0,Peter,Mortensen,304,156
-Accountant,38900.0,Rikke,Vedel,166,157
-Accountant,38800.0,Pernille,Munch,461,155
-Procurement Specialist,38600.0,Mette,Dideriksen,329,155
-Procurement Specialist,38400.0,Vibeke,Niemann,818,156
-Procurement Specialist,38400.0,Bo,Jakobsen,629,163
-Procurement Specialist,38400.0,Maria,Skafte,447,156
-Procurement Specialist,38400.0,Daniel,Dalsgaard,579,163
-Procurement Specialist,38400.0,Lars,Klitgaard,228,156
-Procurement Specialist,38200.0,Line,Bloch,806,156
-Supply Planner,38200.0,Martin,Mejlvang,430,163
-Supply Planner,38200.0,Lars,Klitgaard,165,165
-Supply Planner,38200.0,Allan,Ravn,585,155
-Supply Planner,37800.0,Torben,Hassing,307,158
-Supply Planner,37800.0,Mia,Hede,637,159
-Supply Planner,37800.0,Henrik,Westh,531,160
-Supply Planner,37700.0,Kristoffer,Buch,375,156
-Supply Planner,37500.0,Helena,Bay,129,166
-Demand Planner,37400.0,Carsten,Nyborg,654,162
-Demand Planner,37300.0,Carsten,Riis,861,155
-Demand Planner,37300.0,Johnny,Simonsen,778,165
-Demand Planner,37200.0,Johnny,Thomassen,313,158
-Demand Planner,37200.0,Lene,Hviid,101,159
-Demand Planner,37200.0,Dorte,La Cour,929,164
-Demand Planner,37100.0,René,Nystrøm,420,155
-Production Planner,36900.0,Niels,Enevoldsen,924,161
-Production Planner,36600.0,Jacob,Haugaard,526,175
-Production Planner,36500.0,Karen,Tofte,786,168
-Production Planner,36500.0,Anja,Dahl,235,164
-Production Technician,36100.0,Anders,Jensen,881,156
-Production Technician,36100.0,Ole,Boesen,711,156
-Production Technician,36100.0,Patrick,Bech,604,174
-Production Technician,36000.0,Jonas,Bredahl,469,168
-Production Technician,36000.0,Lotte,Bjørn,179,157
-Production Technician,35800.0,Jesper,Stensgaard,398,173
-Production Technician,35700.0,Diana,Lykke,988,155
-Production Technician,35600.0,Vibeke,Daugaard,333,166
-Industrial Designer,35500.0,Kasper,Bang,220,160
-Industrial Designer,35500.0,Louise,Storgaard,175,163
-Industrial Designer,35400.0,Kenneth,Bøgh,694,158
-Industrial Designer,35300.0,Camilla,Plum,249,156
-Industrial Designer,35200.0,Philip,Kirkegaard,237,156
-Industrial Designer,35200.0,Christian,Trier,632,163
-Product Designer,35200.0,Line,Bloch,337,157
-Product Designer,35100.0,Martin,Olesen,676,159
-Product Designer,35100.0,Sanne,Just,868,155
-Product Designer,35100.0,Søren,Brandstrup,312,174
-Product Designer,34900.0,Jesper,Thyrrestrup,903,158
-Product Designer,34900.0,Anja,Dahl,209,163
-Graphic Designer,34900.0,Malene,Skytte,960,161
-Graphic Designer,34600.0,Kenneth,Bøgh,787,157
-Graphic Designer,34500.0,Bente,Lauritzen,656,167
-Graphic Designer,34500.0,Nicoline,Bennedsen,618,156
-Packaging Designer,34300.0,Preben,Bach,974,163
-Packaging Designer,34300.0,Dennis,Schrøder,850,157
-Packaging Designer,34300.0,Jonas,Kure,853,169
-Packaging Designer,34200.0,Kasper,Bang,466,165
-Packaging Designer,34100.0,Maja,Langkjær,754,157
-Packaging Designer,34100.0,Diana,Lykke,311,157
-Mechanical Engineer,33900.0,Mia,Svenningsen,834,156
-Mechanical Engineer,33800.0,Dennis,Krogh,484,155
-Mechanical Engineer,33800.0,Lone,Skytte,436,155
-Mechanical Engineer,33800.0,Dennis,Schrøder,757,162
-Mechanical Engineer,33600.0,Heidi,Frandsen,306,155
-Electrical Engineer,33500.0,Marianne,Graversen,489,163
-Electrical Engineer,33500.0,Kasper,Bang,492,179
-Electrical Engineer,33400.0,Niels,Bjerregaard,904,160
-Electrical Engineer,33400.0,Dennis,Krogh,706,156
-Electronics Engineer,33400.0,Niels,Enevoldsen,486,157
-Electronics Engineer,33400.0,Katrine,Skytte,266,158
-Electronics Engineer,33400.0,Daniel,Dalsgaard,221,157
-Electronics Engineer,33300.0,Steen,Kolding,516,159
-Safety Engineer,33200.0,Bo,Winther,746,155
-Safety Engineer,33200.0,Charlotte,Dalsgaard,272,155
-Safety Engineer,33100.0,Anne,Hjulmand,603,155
-Process Engineer,33100.0,Jonas,Kure,351,158
-Process Engineer,33100.0,Heidi,Sonne,816,156
-Process Engineer,32900.0,Helle,Lauridsen,862,157
-Process Engineer,32800.0,Jan,Mikkelsen,937,158
-Process Engineer,32800.0,Lotte,Holm,724,158
-QA Engineer,32800.0,Niels,Enevoldsen,192,166
-QA Engineer,32600.0,Katrine,Glavind,457,157
-QA Engineer,32400.0,Kenneth,Marcussen,849,163
-Test Engineer,31900.0,Kristina,Bræmer,836,159
-Test Engineer,31900.0,Anders,Brinch,487,175
-Test Engineer,31800.0,Helene,Vestergård,352,156
-Test Engineer,31800.0,Annette,Skov,296,160
-Test Engineer,31700.0,Jeanette,Stjerne,791,171
-Test Engineer,31500.0,Camilla,Grøn,619,163
-Test Engineer,31500.0,Christina,Egede,123,157
-Automation Engineer,31400.0,Ole,Boesen,648,157
-Automation Engineer,31300.0,Rasmus,Mørch,163,157
-Automation Engineer,31200.0,Gitte,Dideriksen,370,155
-Automation Engineer,31200.0,Pia,Herskind,776,158
-Industrial Engineer,31200.0,Signe,Nørskov,483,164
-Industrial Engineer,31100.0,Thomas,Skafte,265,160
-Industrial Engineer,31100.0,Ole,Boesen,733,157
-Production Operator,31100.0,Gitte,Dideriksen,934,159
-Production Operator,31000.0,Camilla,Hall,857,155
-Production Operator,30900.0,Rikke,Larsen,573,158
-Production Operator,30900.0,Jacob,Hald,533,165
-Production Operator,30900.0,Jesper,Høj,407,156
-Production Operator,30800.0,Sanne,Rahbek,105,155
-Production Operator,30800.0,Simon,Thisted,652,171
-Production Operator,30700.0,Brian,Skou,663,173
-Production Operator,30700.0,Jesper,Dahl,200,158
-Production Operator,30700.0,Nicolaj,Mørk,468,169
-Production Operator,30600.0,Carsten,Riis,120,155
-Production Operator,30500.0,Rasmus,Hertz,405,155
-Assembly Operator,30500.0,Helena,Bay,283,173
-Assembly Operator,30500.0,Christina,Egede,225,155
-Assembly Operator,30400.0,Vibeke,Daugaard,421,159
-Assembly Operator,30300.0,Anne-Mette,Illum,440,158
-Assembly Operator,30300.0,Annette,Rosted,961,177
-Assembly Operator,30300.0,Katrine,Glavind,331,161
-Assembly Operator,30200.0,Gitte,Dideriksen,356,179
-Assembly Operator,30100.0,Jeanette,Skou,817,158
-Assembly Operator,30000.0,Frank,Busk,898,161
-Assembly Operator,29900.0,Anja,Dahl,982,166
-Assembly Operator,29800.0,Dennis,Eskildsen,822,161
-Assembly Operator,29800.0,Jesper,Christensen,801,175
-Assembly Operator,29800.0,Morten,Høegh,215,165
-Assembly Operator,29700.0,Preben,Bach,699,165
-Machine Operator,29700.0,Simon,Rasmussen,909,172
-Machine Operator,29600.0,Preben,Ring,953,156
-Machine Operator,29600.0,Philip,Gravgaard,730,156
-Machine Operator,29500.0,Charlotte,Bruun,680,156
-Machine Operator,29400.0,Bente,Bak,917,155
-Machine Operator,29400.0,Jonas,Kure,545,158
-Machine Operator,29300.0,Susanne,Thybo,942,158
-Machine Operator,29300.0,Merete,Falk,714,170
-Machine Operator,29200.0,Mette,Sørensen,564,157
-Machine Operator,29200.0,Karina,Flensted,339,159
-Machine Operator,29200.0,Peter,Mortensen,916,156
-Machine Operator,29100.0,Kristina,Blicher,273,173
-Machine Operator,29000.0,Henrik,Schack,494,170
-Warehouse Associate,29000.0,Michael,Stenstrup,125,164
-Warehouse Associate,28900.0,Helle,Andreasen,467,170
-Warehouse Associate,28800.0,Kristoffer,Mejlvang,157,158
-Warehouse Associate,28800.0,Mia,Hede,302,161
-Warehouse Associate,28800.0,Stine,Askjær,833,162
-Warehouse Associate,28700.0,Annette,Skov,995,157
-Warehouse Associate,28600.0,Jeanette,Malling,178,162
-Warehouse Associate,28600.0,Torben,Hald,210,170
-Warehouse Associate,28400.0,Anne,Sørum,892,155
-Warehouse Associate,28300.0,Frank,Boe,132,164
-Warehouse Worker,28100.0,Lotte,Bjørn,238,155
-Warehouse Worker,28000.0,Anne,Hjulmand,347,164
-Warehouse Worker,27900.0,Jeanette,Skou,608,162
-Warehouse Worker,27900.0,Jesper,Ahrenkiel,941,157
-Logistics Coordinator,27900.0,Steen,Kolding,224,159
-Logistics Coordinator,27800.0,Sanne,Just,829,157
-Logistics Coordinator,27700.0,Katrine,Skytte,453,155
-Logistics Coordinator,27700.0,Rikke,Bredal,263,165
-Logistics Coordinator,27700.0,Søren,Isaksen,303,172
-Logistics Coordinator,27700.0,Rikke,Bredal,442,156
-Shipping Coordinator,27700.0,Anne,Knudsen,815,155
-Shipping Coordinator,27600.0,Lars,Rasmussen,433,159
-Shipping Coordinator,27600.0,Christina,Kragh,580,167
-Shipping Coordinator,27500.0,Henrik,Blichfeldt,149,177
-Shipping Coordinator,27400.0,Patrick,Kragh,560,157
-Shipping Coordinator,27400.0,Søren,Hoffmann,449,164
-Shipping Coordinator,27400.0,Charlotte,Bæk,451,166
-Shipping Coordinator,27300.0,Camilla,Nørup,518,168
-Supply Chain Coordinator,27300.0,Sanne,Helt,121,158
-Supply Chain Coordinator,27300.0,Louise,Hansen,512,159
-Supply Chain Coordinator,27300.0,Diana,Lykke,709,155
-Forklift Operator,27300.0,Johnny,Simonsen,544,155
-Forklift Operator,27200.0,Peter,Abrahamsen,291,160
-Forklift Operator,27200.0,Christina,Hørdum,318,157
-Forklift Operator,27100.0,Steen,Kolding,341,158
-Forklift Operator,27100.0,Mia,Hede,925,174
-Material Handler,27100.0,Philip,Kirkegaard,425,168
-Material Handler,27100.0,Stine,Thygesen,783,172
-Material Handler,27000.0,Sanne,Just,159,171
-Material Handler,26900.0,Malene,Ravn,720,156
-Material Handler,26800.0,Nicolai,Dam,630,171
-Material Handler,26700.0,Hanne,Østergaard,173,167
-Material Handler,26600.0,Martin,Olesen,262,157
-Maintenance Technician,26600.0,Frank,Busk,996,155
-Maintenance Technician,26600.0,Esben,Husted,589,162
-Maintenance Technician,26600.0,Diana,Storm,835,170
-Maintenance Technician,26600.0,Thomas,Skafte,332,160
-Maintenance Technician,26400.0,Jesper,Stensgaard,669,158
-Maintenance Technician,26300.0,René,Kjær,866,170
-Facilities Technician,26300.0,Carsten,Nyborg,145,161
-Facilities Technician,26300.0,Mette,Dideriksen,112,156
-Facilities Technician,26300.0,Christian,Toft,536,169
-Electrician,26200.0,Tine,Vedel,713,160
-IT Support Specialist,26200.0,Christina,Hørdum,176,165
-IT Support Specialist,26100.0,Lene,Vest,305,171
-Network Administrator,26100.0,Henrik,Blichfeldt,357,163
-Network Administrator,26100.0,Brian,Lykke,655,160
-Network Administrator,25900.0,Pia,Holten,539,157
-Network Administrator,25800.0,Sofie,Nyholm,756,159
-System Administrator,25800.0,Dorte,Ehlers,454,171
-System Administrator,25800.0,Lisbeth,Høgh,890,160
-System Administrator,25700.0,Louise,Engberg,130,161
-System Administrator,25600.0,Lars,Dam,348,155
-System Administrator,25600.0,Jakob,Munch,499,165
-System Administrator,25600.0,Dennis,Fogh,705,165
-System Administrator,25600.0,Helene,Bendixen,875,161
-Database Administrator,25500.0,Johnny,Simonsen,598,162
-Database Administrator,25200.0,Patrick,Bech,591,159
-Database Administrator,25200.0,René,Nystrøm,254,158
-Database Administrator,25200.0,Johnny,Thomassen,290,164
-Database Administrator,25200.0,Peter,Mortensen,808,155
-Database Administrator,25200.0,Anne,Malling,280,156
-ERP Specialist,25200.0,Anders,Brinch,144,155
-ERP Specialist,25000.0,Thomas,Damm,452,157
-Information Security Analyst,25000.0,Katrine,Damgaard,268,165
-Information Security Analyst,24900.0,Camilla,Eskesen,975,161
-Information Security Analyst,24800.0,Peter,Overgaard,731,156
-Web Developer,24800.0,Christina,Hørdum,191,156
-Web Developer,24700.0,Ole,Boesen,685,171
-Web Developer,24700.0,Martin,Mejlvang,740,168
-Web Developer,24600.0,Malene,Skytte,456,158
-Application Developer,24400.0,Charlotte,Bæk,482,162
-Application Developer,24300.0,Daniel,Seerup,807,161
-Application Developer,24300.0,Brian,Kjeldsen,710,171
-Application Developer,24200.0,Lone,Vester,413,168
-Application Developer,24200.0,Bente,Bak,993,175
-Application Developer,24100.0,Brian,Skou,155,157
-Application Developer,24100.0,Heidi,Frandsen,285,162
-Application Developer,24000.0,Peter,Overgaard,880,157
-Application Developer,24000.0,Louise,Storgaard,323,157
-Front End Developer,24000.0,Søren,Hoffmann,681,155
-Front End Developer,24000.0,Diana,Lykke,435,156
-Front End Developer,23900.0,Patrick,Kolby,906,166
-Front End Developer,23800.0,Søren,Hoffmann,923,161
-Front End Developer,23800.0,Johnny,Thomassen,383,155
-Back End Developer,23800.0,Martin,Olesen,502,155
-Back End Developer,23800.0,Allan,Falkenberg,415,164
-Back End Developer,23800.0,Jacob,Buch,136,164
-Back End Developer,23700.0,Morten,Dalgaard,189,155
-Back End Developer,23700.0,Lars,Klitgaard,595,157
-Back End Developer,23700.0,Malene,Ravn,548,156
-UI Designer,23600.0,Kenneth,Bøgh,594,155
-UI Designer,23500.0,Mads,Gregersen,137,157
-UI Designer,23500.0,Vibeke,Daugaard,223,156
-UI Designer,23400.0,Rasmus,Mørch,524,156
-UI Designer,23300.0,Jesper,Dahl,626,155
-UI Designer,23200.0,Nina,Schmidt,641,173
-UI Designer,23200.0,Maria,Winther,139,155
-UI Designer,23100.0,Pernille,Hesselbjerg,738,170
-UX Designer,23100.0,Trine,Poulsen,749,168
-UX Designer,23000.0,Ole,Frandsen,431,157
-UX Designer,23000.0,Jacob,Haugaard,690,163
-UX Designer,22900.0,Line,Aagaard,294,156
-UX Designer,22900.0,Martin,Olesen,638,169
-Scrum Master,22900.0,Frederik,Nygaard,537,155
-Scrum Master,22800.0,Trine,Poulsen,222,157
-Scrum Master,22700.0,Rune,Dreyer,422,157
-Scrum Master,22300.0,Heidi,Just,204,166
-Scrum Master,22300.0,Christina,Egede,366,162
-Scrum Master,22300.0,Patrick,Bech,838,156
-Agile Coach,22200.0,Frank,Boe,167,155
-Agile Coach,22100.0,Steen,Kolding,428,160
-Agile Coach,21900.0,Nicoline,Bennedsen,922,158
-Agile Coach,21700.0,Vibeke,Niemann,751,160
-Agile Coach,21700.0,Kenneth,Bøgh,546,155
-HR Generalist,21600.0,Michael,Rahn,702,167
-HR Generalist,21500.0,Lene,Vest,259,174
-HR Generalist,21500.0,Nicolai,Kruse,520,155
-HR Generalist,21500.0,Jesper,Ahrenkiel,728,156
-HR Generalist,21500.0,Jeanette,Kristiansen,954,161
-HR Generalist,21400.0,Jakob,Bro,813,159
-HR Generalist,21400.0,Gitte,Dideriksen,437,161
-HR Generalist,21400.0,Pia,Herskind,771,169
-HR Specialist,21400.0,Stine,Clausen,503,168
-HR Specialist,21400.0,Ole,Vang,474,168
-HR Specialist,21300.0,Helene,Bendixen,119,167
-HR Specialist,21300.0,Dorte,Veje,198,155
-HR Specialist,21300.0,Lone,Vester,108,156
-HR Specialist,21200.0,Maria,Dahlin,959,157
-Recruiter,21100.0,Jesper,Stensgaard,592,156
-Recruiter,21100.0,Jesper,Christensen,921,156
-Recruiter,21100.0,Jonas,Bredahl,955,170
-Recruiter,21000.0,Louise,Møller,727,165
-Recruiter,21000.0,Steen,Kolding,979,157
-Recruiter,20900.0,Merete,Falk,361,158
-Recruiter,20900.0,Dennis,Eskildsen,358,172
-Talent Acquisition Specialist,20900.0,Tobias,Nørgaard,340,155
-Talent Acquisition Specialist,20900.0,Claus,Haastrup,885,155
-Talent Acquisition Specialist,20700.0,Anne,Knudsen,767,162
-Talent Acquisition Specialist,20700.0,Johnny,Hjorth,493,161
-Talent Acquisition Specialist,20600.0,Malene,Skytte,206,172
-Payroll Specialist,20600.0,Nina,Schmidt,627,159
-Payroll Specialist,20600.0,Susanne,Thybo,465,156
-Payroll Specialist,20500.0,Karen,Friis,342,159
-Payroll Specialist,20400.0,Christina,Hørdum,472,170
-Payroll Specialist,20400.0,Rasmus,Mørch,856,164
-Payroll Specialist,20400.0,Mia,Hede,810,155
-Compensation Specialist,20400.0,Allan,Ravn,563,157
-Compensation Specialist,20300.0,Christian,Hald,658,160
-Compensation Specialist,20300.0,Mads,Gregersen,171,159
-Compensation Specialist,20300.0,Brian,Thomsen,717,156
-Compensation Specialist,20200.0,Louise,Hansen,359,164
-Compensation Specialist,20200.0,Line,Bloch,151,176
-Training Specialist,20200.0,Preben,Bach,609,173
-Training Specialist,20200.0,Stine,Clausen,527,156
-Training Specialist,20200.0,Nina,Schmidt,725,155
-Training Specialist,20200.0,Peter,Overgaard,432,163
-Training Specialist,20000.0,Rikke,Mark,161,162
-Training Specialist,19800.0,Hanne,Østergaard,992,169
-Learning and Development Specialist,19800.0,Søren,Brandstrup,507,161
-Learning and Development Specialist,19800.0,Jacob,Hald,538,161
-Learning and Development Specialist,19800.0,Kasper,Skytte,418,155
-Learning and Development Specialist,19800.0,Daniel,Dalsgaard,965,159
-Customer Support Specialist,19700.0,Signe,Højlund,947,158
-Customer Support Specialist,19700.0,Anne-Mette,Illum,775,160
-Customer Support Specialist,19700.0,Peter,Overgaard,643,179
-Customer Support Specialist,19500.0,Mads,Gregersen,514,164
-Customer Support Specialist,19500.0,Johnny,Simonsen,668,156
-Customer Support Specialist,19500.0,Nicklas,Trier,239,176
-Customer Support Specialist,19400.0,Jonas,Seerup,443,156
-Customer Support Specialist,19300.0,Jonas,Nørregaard,529,156
-Customer Service Representative,19300.0,Mette,Lykke,798,158
-Customer Service Representative,19300.0,Jonas,Seerup,498,156
-Customer Service Representative,19200.0,Brian,Skou,659,164
-Customer Service Representative,19200.0,Pia,Herskind,292,168
-Customer Service Representative,19200.0,Nicklas,Hede,691,177
-Customer Service Representative,19200.0,Dennis,Schrøder,572,178
-Customer Service Representative,19100.0,Søren,Nielsen,698,156
-Call Center Agent,18900.0,Vibeke,Justesen,876,155
-Call Center Agent,18900.0,Anne,Hjulmand,718,159
-Call Center Agent,18900.0,Stine,Thygesen,617,161
-Call Center Agent,18800.0,Mia,Hede,241,156
-Call Center Agent,18800.0,Esben,Husted,102,162
-Retail Associate,18800.0,Lars,Dam,865,159
-Retail Associate,18700.0,Patrick,Kolby,164,167
-Retail Associate,18700.0,Annette,Jakobsen,488,159
-Retail Associate,18600.0,Thomas,Damm,439,158
-Retail Associate,18500.0,Mia,Hede,896,160
-Retail Associate,18500.0,Morten,Dalgaard,562,165
-Retail Associate,18500.0,Nicoline,Bennedsen,683,156
-Retail Associate,18500.0,Katrine,Damgaard,670,160
-Store Manager,18400.0,Peter,Mortensen,476,164
-Store Manager,18400.0,Maja,Lund,831,164
-Store Manager,18400.0,Jeanette,Malling,634,166
-Store Manager,18300.0,Esben,Husted,371,157
-Store Manager,18300.0,Ole,Vang,284,169
-Store Manager,18300.0,Eva,Terkelsen,335,155
-Merchandiser,18300.0,Malene,Enggaard,344,156
-Merchandiser,18300.0,Jesper,Ahrenkiel,624,157
-Merchandiser,18200.0,Lene,Justesen,845,167
-Merchandiser,18200.0,Heidi,Frandsen,888,160
-Merchandiser,18200.0,Kasper,Bang,567,161
-Merchandiser,18200.0,Philip,Bendsen,977,172
-Merchandiser,18100.0,Rikke,Damgaard,552,161
-Sales Representative,18000.0,Jeanette,Malling,755,162
-Sales Representative,18000.0,Maria,Skafte,515,161
-Sales Representative,18000.0,Allan,Svenstrup,373,159
-Sales Representative,18000.0,Bo,Bjerre,805,164
-Sales Representative,17900.0,Anne-Mette,Nyborg,368,155
-Key Account Manager,17800.0,Thomas,Pedersen,346,155
-Key Account Manager,17800.0,Kristoffer,Mejlvang,350,167
-Key Account Manager,17700.0,Sanne,Rahbek,513,156
-Key Account Manager,17700.0,Jakob,Bro,693,156
-Key Account Manager,17600.0,Steen,Kolding,269,163
-Key Account Manager,17600.0,Dennis,Schrøder,667,156
-Key Account Manager,17600.0,Lars,Rasmussen,410,161
-Field Sales Representative,17600.0,Niels,Ladegaard,962,157
-Field Sales Representative,17500.0,Helle,Andreasen,481,155
-Field Sales Representative,17500.0,Allan,Svenstrup,614,158
-Field Sales Representative,17400.0,Morten,Dalgaard,525,169
-Field Sales Representative,17400.0,Camilla,Hall,610,159
-Field Sales Representative,17200.0,Maja,Lund,826,157
-Field Sales Representative,17200.0,Jan,Brovst,839,156
-Marketing Specialist,17100.0,Heidi,Just,496,157
-Marketing Specialist,17100.0,Søren,Nielsen,508,176
-Marketing Specialist,17000.0,Katrine,Søborg,828,155
-Marketing Specialist,17000.0,Peter,Overgaard,758,155
-Marketing Specialist,17000.0,Kasper,Skytte,475,167
-Marketing Specialist,16900.0,Jeanette,Skou,913,157
-Marketing Specialist,16800.0,Michael,Rahn,640,167
-Digital Marketing Specialist,16800.0,Mie,Bjerg,860,158
-Digital Marketing Specialist,16700.0,Christina,Hørdum,282,166
-Digital Marketing Specialist,16600.0,René,Nystrøm,793,156
-Digital Marketing Specialist,16600.0,Anette,Stokholm,270,162
-Digital Marketing Specialist,16500.0,Kenneth,Leth,392,155
-Digital Marketing Specialist,16400.0,Johnny,Simonsen,639,160
-Digital Marketing Specialist,16400.0,Jonas,Bredahl,665,155
-Digital Marketing Specialist,16400.0,Henrik,Schack,400,156
-Content Specialist,16400.0,Jeanette,Malling,287,168
-Content Specialist,16300.0,Rikke,Mark,843,159
-Content Specialist,16300.0,Lars,Rasmussen,251,156
-Content Specialist,16100.0,Christina,Kragh,918,178
-Content Specialist,16000.0,Kenneth,Bøgh,113,159
-Content Specialist,15900.0,Kristoffer,Mejlvang,372,167
-Social Media Specialist,15800.0,Jeanette,Malling,202,160
-Social Media Specialist,15800.0,Trine,Mose,766,161
-Social Media Specialist,15700.0,Pernille,Munch,968,161
-Social Media Specialist,15600.0,Søren,Brandstrup,582,168
-Social Media Specialist,15500.0,Louise,Møller,522,155
-Social Media Specialist,15500.0,Camilla,Plum,471,162
-Public Relations Specialist,15500.0,Claus,Villadsen,633,158
-Public Relations Specialist,15400.0,Louise,Møller,322,160
-Public Relations Specialist,15400.0,Bente,Vestergård,735,156
-Public Relations Specialist,15300.0,Frank,Boe,796,155
-Public Relations Specialist,15300.0,Helene,Vestergård,804,156
-Public Relations Specialist,15200.0,Christina,Kragh,414,168
-Communications Specialist,15200.0,Karen,Friis,821,156
-Communications Specialist,15200.0,Katrine,Skytte,275,164
-Communications Specialist,15100.0,Søren,Isaksen,679,167
-Communications Specialist,15100.0,Gitte,Greve,851,173
-Visual Merchandiser,15000.0,Karina,Brøndum,744,158
-Visual Merchandiser,14700.0,Christina,Kragh,847,178
-Visual Merchandiser,14600.0,Christina,Kragh,434,160
-Visual Merchandiser,14600.0,Henrik,Blichfeldt,985,157
-Project Manager,14600.0,Brian,Kjeldsen,770,159
-Project Manager,14300.0,Anne-Mette,Nyborg,349,157
-Project Manager,14200.0,Heidi,Just,185,156
-Project Manager,14200.0,Philip,Gravgaard,946,174
-Project Coordinator,14100.0,Tine,Vedel,381,155
-Project Coordinator,14100.0,Helena,Bay,864,162
-Project Coordinator,14100.0,Jesper,Ahrenkiel,682,162
-Project Coordinator,14000.0,Jesper,Ahrenkiel,298,157
-Operations Coordinator,14000.0,Michael,Holm,115,159
-Operations Coordinator,14000.0,Kasper,Skytte,365,171
-Operations Coordinator,14000.0,Jonas,Vestergaard,752,156
-Admin Coordinator,13900.0,Jakob,Munch,908,161
-Admin Coordinator,13900.0,Rikke,Mark,588,155
-Admin Coordinator,13800.0,René,Bertelsen,684,163
-Admin Coordinator,13700.0,Claus,Holst,969,161
-Admin Coordinator,13600.0,Susanne,Thybo,565,160
-Administrative Assistant,13400.0,Jesper,Christensen,299,163
-Administrative Assistant,13400.0,Torben,Hassing,473,156
-Administrative Assistant,13400.0,Sanne,Helt,584,160
-Administrative Assistant,13300.0,Jonas,Vestergaard,180,165
-Administrative Assistant,13200.0,Simon,Thisted,438,157
-Administrative Assistant,12900.0,Allan,Toft,915,165
-Office Assistant,12900.0,Bo,Jakobsen,802,170
-Office Assistant,12900.0,Katrine,Søborg,111,157
-Office Assistant,12800.0,Anne,Hjulmand,596,158
-Office Assistant,12700.0,Mads,Gregersen,781,155
-Office Assistant,12500.0,Merete,Falk,645,157
-Office Assistant,12500.0,Line,Kure,143,160
-Office Assistant,12300.0,Anne,Weis,374,158
-Office Assistant,12300.0,Emil,Bach,623,156
-Office Assistant,12200.0,Trine,Poulsen,201,158
-Office Assistant,12000.0,Katrine,Damgaard,935,158
-Receptionist,12000.0,Katrine,Skytte,803,158
-Receptionist,11800.0,Henrik,Kristensen,271,159
-Receptionist,11400.0,Dorte,Ehlers,207,170
-Receptionist,11200.0,Claus,Holst,762,155
-Receptionist,11200.0,Anders,Brinch,597,157
-Legal Assistant,11000.0,Martin,Gormsen,230,157
-Legal Assistant,11000.0,Martin,Olesen,948,155
-Legal Assistant,10800.0,Dennis,Eskildsen,830,169
-Legal Assistant,10700.0,Susanne,Thybo,696,157
-Legal Assistant,10600.0,Martin,Kaas,160,155
-Legal Assistant,10400.0,Mia,Hviid,316,156
-Legal Assistant,10200.0,Martin,Gormsen,719,155
-Document Controller,9400.0,Katrine,Skytte,672,159
-Document Controller,8700.0,Maj-Britt,Enevoldsen,172,155
-Document Controller,8200.0,Annette,Skov,827,160
-Document Controller,6200.0,Claus,Villadsen,549,172
+CEO,165000.0,Claus,Haastrup,530,71
+Finance Manager,99100.0,Jesper,Dideriksen,688,74
+Finance Manager,88300.0,Jesper,Dahl,396,73
+Legal Counsel,82600.0,Mette,Skaarup,284,78
+Legal Counsel,78100.0,Heidi,Møller,344,72
+Legal Counsel,76500.0,Annette,Rosted,690,76
+Legal Counsel,76100.0,René,Bertelsen,178,71
+Legal Counsel,75700.0,Signe,Nørskov,808,77
+IT Manager,68400.0,Carsten,Riis,511,74
+Operations Manager,68100.0,Vibeke,Niemann,143,76
+Project Manager,67500.0,Karina,Flensted,984,74
+Project Manager,67100.0,Patrick,Bech,563,73
+Project Manager,64500.0,Lars,Klitgaard,333,74
+Project Manager,60800.0,Katrine,Glavind,993,76
+Project Manager,59500.0,Nina,Skytte,422,83
+Project Manager,59300.0,Stine,Bækkelund,896,77
+Project Manager,58900.0,Dennis,Graversen,939,71
+Business Development Manager,58500.0,Mette,Sørensen,280,75
+Business Development Manager,58200.0,Maria,Winther,987,74
+Business Development Manager,57800.0,Brian,Skou,115,72
+Account Manager,56700.0,Jeanette,Skou,167,71
+Account Manager,56400.0,Brian,Thomsen,431,74
+Account Manager,56100.0,Thomas,Engholm,951,75
+Account Manager,55700.0,Martin,Gormsen,651,75
+Account Manager,54800.0,Preben,Ring,996,72
+Account Manager,53700.0,Susanne,Thybo,800,78
+Account Manager,52500.0,Frank,Boe,389,80
+Account Manager,51500.0,Tine,Lindberg,871,75
+Account Manager,49200.0,Nicklas,Ringsted,697,73
+Account Manager,49100.0,Trine,Mose,532,71
+Account Manager,48700.0,Johnny,Thomassen,686,71
+Account Manager,48600.0,Jonas,Nørregaard,412,71
+Account Manager,47600.0,Karen,Tofte,292,77
+Account Manager,47400.0,Lone,Vester,325,71
+Account Manager,46900.0,Bo,Winther,970,72
+Account Manager,46800.0,Christian,Toft,176,73
+Sales Manager,46400.0,Steen,Brink,789,84
+Sales Representative,46300.0,Michael,Stenstrup,774,71
+Sales Representative,45800.0,Hanne,Østergaard,911,74
+Sales Representative,45200.0,Charlotte,Dalsgaard,149,81
+Sales Representative,45100.0,Christina,Kragh,480,75
+Sales Representative,45000.0,Michael,Holm,819,77
+Sales Representative,44800.0,Rune,Kaas,858,74
+Sales Representative,44300.0,Mette,Krogsgaard,533,77
+Sales Representative,44000.0,Mie,Bjerg,886,84
+Sales Representative,44000.0,Lars,Dam,994,80
+Sales Representative,43000.0,Tobias,Laursen,479,75
+Sales Representative,42800.0,Nicolaj,Mørk,275,72
+Sales Representative,42800.0,Christina,Hørdum,683,74
+Sales Representative,42300.0,Mia,Hede,957,75
+Sales Representative,42200.0,Kim,Herlufsen,699,73
+Sales Representative,42200.0,Louise,Møller,151,72
+Sales Representative,42200.0,Malene,Hviid,582,77
+Sales Representative,42000.0,Mia,Svenningsen,585,84
+Sales Representative,42000.0,Daniel,Madsen,761,74
+Sales Representative,41600.0,Pernille,Mølholm,357,71
+Sales Representative,41500.0,Line,Bloch,494,80
+Sales Representative,41400.0,Allan,Falkenberg,132,79
+Sales Representative,41300.0,Pernille,Munch,658,73
+Sales Representative,41200.0,Allan,Svenstrup,830,83
+Sales Representative,41000.0,Allan,Toft,259,76
+Sales Representative,40900.0,Nicklas,Bach,165,78
+Sales Representative,40600.0,Tine,Bramsen,543,84
+Sales Representative,40200.0,Rikke,Damgaard,467,83
+Sales Representative,39700.0,Michael,Rahn,268,71
+Sales Representative,39600.0,Ole,Boesen,837,81
+Sales Representative,39300.0,Michael,Jeppesen,461,72
+Sales Representative,39200.0,Nicoline,Bennedsen,439,71
+Sales Representative,39100.0,Nicoline,Koch,474,76
+Sales Representative,39000.0,Louise,Engberg,287,75
+Sales Representative,38800.0,Rikke,Bredal,739,77
+Sales Representative,38600.0,Jesper,Ahrenkiel,263,74
+Sales Representative,38400.0,Tobias,Nørgaard,120,80
+Sales Representative,38000.0,Jeanette,Kristiansen,416,79
+Sales Representative,38000.0,Peter,Mortensen,379,71
+Sales Representative,37700.0,Bo,Falk,451,76
+Sales Representative,37500.0,Lotte,Holm,760,76
+Sales Representative,37200.0,Brian,Lykke,910,78
+Sales Representative,36900.0,Rasmus,Hertz,849,76
+Sales Representative,36700.0,Mia,Torp,918,71
+Software Engineer,36700.0,Louise,Storgaard,254,72
+Software Engineer,36700.0,Henrik,Schack,163,74
+Software Engineer,36700.0,Maria,Jørgensen,620,73
+Software Engineer,36600.0,Signe,Vang,626,81
+Software Engineer,36400.0,Kasper,Hvidt,671,71
+Software Engineer,36200.0,Kenneth,Marcussen,660,77
+Software Engineer,36100.0,Heidi,Just,144,74
+Software Engineer,36100.0,Merete,Falk,928,74
+Software Engineer,36100.0,Camilla,Madsen,526,74
+Software Engineer,35900.0,Kim,Skibsted,765,79
+Software Engineer,35600.0,Dorte,Ehlers,815,75
+Software Engineer,35100.0,Frank,Stær,359,73
+Software Engineer,35000.0,Gitte,Dideriksen,870,78
+Software Engineer,35000.0,Kristoffer,Buch,640,77
+Software Engineer,34700.0,Emil,Bach,590,71
+Software Engineer,34500.0,Trine,Meier,851,74
+Software Engineer,34300.0,Brian,Kjeldsen,126,76
+Software Engineer,34300.0,Patrick,Kolby,406,73
+Software Engineer,34200.0,Philip,Bendsen,339,72
+Software Engineer,34200.0,Kasper,Bang,215,75
+Software Engineer,34100.0,Anja,Dahl,982,76
+Software Engineer,34000.0,Lisbeth,Høgh,201,79
+Software Engineer,34000.0,Camilla,Eskesen,571,84
+Software Engineer,33800.0,Nicolai,Dam,513,76
+Software Engineer,33800.0,Carsten,Nyborg,371,82
+Software Engineer,33700.0,Heidi,Sonne,694,72
+Data Analyst,33600.0,Gitte,Snedker,649,71
+Data Analyst,33400.0,Vibeke,Abildgaard,799,73
+Data Analyst,33300.0,Maj-Britt,Enevoldsen,199,72
+Data Analyst,33300.0,Nicolai,Kruse,456,71
+Data Analyst,33300.0,Peter,Thomsen,913,73
+Data Analyst,33100.0,Preben,Bach,669,80
+Data Analyst,33000.0,Søren,Hoffmann,606,72
+Data Analyst,32800.0,Diana,Lykke,644,78
+Data Analyst,32800.0,Rikke,Larsen,934,75
+Data Analyst,32700.0,Esben,Krøyer,363,73
+Data Analyst,32600.0,Anja,Lauritsen,724,73
+Data Analyst,32500.0,Kristina,Bræmer,745,71
+Data Analyst,32400.0,Pernille,Hesselbjerg,307,77
+Data Analyst,32300.0,Lene,Justesen,843,74
+Data Analyst,32100.0,Annette,Skov,566,71
+QA Engineer,32100.0,Christian,Trier,579,82
+QA Engineer,32000.0,Morten,Høegh,796,77
+QA Engineer,31900.0,Karen,Bjørnsen,666,82
+QA Engineer,31800.0,Kasper,Skytte,121,72
+QA Engineer,31700.0,Anders,Refslund,743,78
+QA Engineer,31700.0,Thomas,Skafte,674,71
+QA Engineer,31500.0,Lene,Hviid,305,75
+QA Engineer,31500.0,Søren,Nielsen,365,79
+QA Engineer,31500.0,Karina,Friis,589,71
+QA Engineer,31200.0,Sanne,Rahbek,906,83
+QA Engineer,30900.0,Allan,Ravn,773,77
+QA Engineer,30700.0,Maja,Langkjær,318,80
+QA Engineer,30600.0,Anne,Knudsen,337,75
+QA Engineer,30500.0,Dennis,Krogh,370,71
+QA Engineer,30400.0,Dorte,La Cour,158,71
+QA Engineer,30400.0,Helle,Andreasen,900,72
+QA Engineer,30300.0,Marianne,Graversen,354,75
+QA Engineer,30200.0,Rune,Dreyer,123,76
+QA Engineer,30100.0,Jakob,Bro,207,71
+QA Engineer,30100.0,Esben,Husted,673,73
+QA Engineer,30000.0,Helene,Bendixen,770,77
+QA Engineer,30000.0,Claus,Holst,703,75
+QA Engineer,29900.0,Mette,Dideriksen,525,79
+QA Engineer,29900.0,Heidi,Aggerholm,964,77
+Accountant,29700.0,Karina,Brøndum,884,72
+Accountant,29300.0,Camilla,Nørup,941,79
+Accountant,29300.0,Helena,Bay,552,79
+Accountant,29200.0,Rasmus,Mørch,783,73
+Accountant,29000.0,Anders,Jensen,561,73
+Accountant,28800.0,Nicklas,Trier,413,72
+Accountant,28700.0,Henrik,Westh,930,75
+Accountant,28700.0,Morten,Dalgaard,880,78
+Accountant,28400.0,Heidi,Frandsen,522,71
+Accountant,28200.0,Betina,Thorsen,101,73
+Accountant,28200.0,Anne,Hjulmand,181,81
+Accountant,28200.0,Sanne,Helt,902,77
+Accountant,28100.0,Line,Holmberg,750,75
+Accountant,27700.0,Rikke,Vedel,726,72
+Accountant,27700.0,Signe,Højlund,510,76
+Accountant,27400.0,Mette,Lykke,908,74
+Accountant,27200.0,Esben,Lunding,246,79
+Accountant,27100.0,Nina,Schmidt,909,77
+Accountant,26800.0,Kristina,Blicher,989,71
+Accountant,26700.0,Johnny,Hjorth,362,76
+Accountant,26400.0,Kristina,Fabricius,340,74
+Accountant,26400.0,Bo,Bjerre,905,73
+Accountant,26300.0,Camilla,Grøn,648,71
+Accountant,26200.0,Jonas,Vestergaard,296,72
+Procurement Specialist,26200.0,Steen,Ahlgren,751,80
+Procurement Specialist,26200.0,Jesper,Høj,490,81
+Procurement Specialist,26200.0,Henrik,Blichfeldt,465,73
+Procurement Specialist,26100.0,Jonas,Kure,730,74
+Procurement Specialist,26000.0,Philip,Haahr,219,79
+Procurement Specialist,25900.0,Christina,Brandt,678,71
+Procurement Specialist,25600.0,Louise,Bang,347,80
+Procurement Specialist,25500.0,Jeanette,Stjerne,187,74
+Procurement Specialist,25500.0,Frank,Busk,969,78
+Procurement Specialist,25400.0,Johnny,Simonsen,684,71
+Procurement Specialist,25300.0,Thomas,Pedersen,409,71
+Procurement Specialist,25200.0,Jeanette,Malling,715,78
+Procurement Specialist,25100.0,René,Kjær,477,83
+Procurement Specialist,25100.0,Vibeke,Daugaard,708,72
+Procurement Specialist,25000.0,Jonas,Bredahl,397,81
+Procurement Specialist,24500.0,Rikke,Mark,345,74
+Procurement Specialist,24500.0,Bente,Vestergård,738,82
+Procurement Specialist,24400.0,Jonas,Seerup,746,77
+Procurement Specialist,24100.0,Trine,Haagensen,286,72
+IT Support Specialist,23900.0,Jesper,Christensen,458,83
+IT Support Specialist,23800.0,Jan,Brovst,156,73
+IT Support Specialist,23700.0,Lotte,Bjørn,781,79
+IT Support Specialist,23700.0,Mia,Hviid,308,73
+IT Support Specialist,23600.0,Anne-Mette,Nyborg,689,73
+IT Support Specialist,23600.0,Mette,Bjerring,234,81
+IT Support Specialist,23600.0,Stine,Thygesen,742,72
+IT Support Specialist,23500.0,René,Nystrøm,303,81
+IT Support Specialist,23500.0,Lars,Kaspersen,732,73
+IT Support Specialist,23400.0,Torben,Hassing,186,74
+IT Support Specialist,23400.0,Sofie,Nyholm,223,78
+IT Support Specialist,23300.0,Vibeke,Justesen,261,71
+Business Analyst,23200.0,Peter,Brandstrup,437,75
+Business Analyst,23100.0,Gitte,Greve,692,78
+Business Analyst,23000.0,Malene,Ravn,442,75
+Business Analyst,22800.0,Jakob,Munch,331,79
+Business Analyst,22600.0,Peter,Abrahamsen,230,73
+Business Analyst,22600.0,Mads,Gregersen,727,76
+Business Analyst,22200.0,Frederik,Nygaard,383,75
+Business Analyst,22200.0,Maria,Skafte,487,74
+Business Analyst,22200.0,Stine,Askjær,661,80
+Business Analyst,22000.0,Torben,Hald,228,74
+Business Analyst,21800.0,Kenneth,Leth,768,71
+Business Analyst,21700.0,Bente,Lauritzen,593,73
+Business Analyst,21700.0,Kenneth,Bøgh,482,71
+Business Analyst,21600.0,Thomas,Hagedorn,718,81
+Consultant,21500.0,Charlotte,Bæk,213,78
+Consultant,21500.0,Daniel,Seerup,553,71
+Consultant,21200.0,Jesper,Stensgaard,816,79
+Consultant,21200.0,Helle,Lauridsen,274,78
+Consultant,21100.0,Martin,Mejlvang,443,71
+Consultant,21100.0,Johnny,Præst,986,71
+Consultant,21100.0,Eva,Terkelsen,786,74
+Consultant,21000.0,Sanne,Just,117,81
+Consultant,20800.0,Dennis,Eskildsen,949,76
+Consultant,20600.0,Anne,Weis,529,78
+Consultant,20500.0,Gitte,Skov,924,72
+Consultant,20400.0,Ole,Vang,129,73
+Consultant,20300.0,Lars,Rasmussen,320,72
+Consultant,20300.0,Diana,Storm,424,73
+Consultant,20200.0,Karen,Friis,608,74
+Consultant,20100.0,Niels,Bjerregaard,953,72
+Warehouse Associate,20000.0,Annette,Jakobsen,257,80
+Warehouse Associate,19900.0,Pia,Callesen,131,73
+Warehouse Associate,19800.0,Kristoffer,Mejlvang,531,75
+Warehouse Associate,19600.0,Jan,Mikkelsen,310,72
+Warehouse Associate,19500.0,Thomas,Damm,541,72
+Warehouse Associate,19400.0,Daniel,Dalsgaard,440,84
+Warehouse Associate,19400.0,Dorte,Veje,368,72
+Warehouse Associate,19300.0,Katrine,Damgaard,912,77
+Warehouse Associate,19200.0,Charlotte,Bruun,321,81
+Warehouse Associate,19100.0,Lone,Skytte,515,78
+Warehouse Associate,18800.0,Maja,Lund,779,72
+Warehouse Associate,18700.0,Søren,Brandstrup,384,72
+Warehouse Associate,18700.0,Martin,Olesen,170,71
+Warehouse Associate,18500.0,Susanne,Mogensen,748,73
+Warehouse Associate,18400.0,Maria,Dahlin,878,71
+Warehouse Associate,18100.0,Malene,Enggaard,288,72
+Warehouse Associate,18100.0,Pia,Herskind,523,76
+Warehouse Associate,18000.0,Bo,Jakobsen,581,82
+Warehouse Associate,17900.0,Henrik,Kristensen,444,77
+Customer Support Specialist,17700.0,Christian,Hald,736,74
+Customer Support Specialist,17400.0,Anders,Brinch,613,76
+Customer Support Specialist,17400.0,Patrick,Kragh,361,79
+Customer Support Specialist,17200.0,Claus,Villadsen,840,72
+Customer Support Specialist,17000.0,Katrine,Skytte,527,71
+Customer Support Specialist,17000.0,Pia,Holten,712,80
+Customer Support Specialist,17000.0,Simon,Rasmussen,298,76
+Customer Support Specialist,16800.0,Dennis,Fogh,148,74
+Customer Support Specialist,16700.0,Rasmus,Holten,255,72
+Customer Support Specialist,16700.0,Bente,Bak,959,77
+Customer Support Specialist,16700.0,Niels,Ladegaard,609,75
+Customer Support Specialist,16600.0,Dennis,Schrøder,377,75
+HR Generalist,16600.0,Peter,Overgaard,777,75
+HR Generalist,16500.0,Charlotte,Sloth,539,75
+HR Generalist,16100.0,Anne,Malling,917,71
+HR Generalist,16000.0,Simon,Thisted,279,76
+HR Generalist,15700.0,Jacob,Buch,375,72
+HR Generalist,15500.0,Philip,Kirkegaard,596,81
+HR Generalist,15400.0,Helene,Vestergård,628,79
+HR Generalist,15400.0,Mads,Westermann,869,82
+HR Generalist,15300.0,Anette,Stokholm,785,76
+HR Generalist,15300.0,Søren,Isaksen,227,79
+HR Generalist,15300.0,Ole,Frandsen,116,80
+HR Generalist,15100.0,Simon,Leth,720,71
+Marketing Specialist,15000.0,Christina,Egede,717,71
+Marketing Specialist,14700.0,Camilla,Plum,702,83
+Marketing Specialist,14700.0,Steen,Kolding,629,73
+Marketing Specialist,14500.0,Christian,Friis,343,82
+Marketing Specialist,14100.0,Helena,Falkenberg,469,74
+Marketing Specialist,14100.0,Michael,Gertz,764,81
+Marketing Specialist,13400.0,Allan,Bundgaard,845,80
+Marketing Specialist,13200.0,Trine,Poulsen,301,80
+Marketing Specialist,12600.0,Line,Aagaard,846,71
+Marketing Specialist,12300.0,Rasmus,Brandt,973,76
+Marketing Specialist,12300.0,Tine,Vedel,154,78
+Marketing Specialist,12100.0,Nicklas,Hede,505,73
+Operations Coordinator,12100.0,Lene,Vest,872,71
+Operations Coordinator,11900.0,Jacob,Haugaard,209,75
+Operations Coordinator,11700.0,Jesper,Thyrrestrup,766,78
+Operations Coordinator,9000.0,Kim,Winther,713,71
+Operations Coordinator,6800.0,Martin,Kaas,520,71

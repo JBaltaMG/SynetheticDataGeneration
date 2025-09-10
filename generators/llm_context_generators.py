@@ -9,8 +9,9 @@ import requests
 import dotenv
 from openai import OpenAI
 import os
-from pdfminer.high_level import extract_text
+#from pdfminer.high_level import extract_text
 import fitz  # PyMuPDF
+import pymupdf
 import re
 import json
 from typing import Dict, Any
@@ -176,7 +177,7 @@ def extract_pdf_text(company_name, max_pages=None):
     
     try:
         text_chunks = []
-        with fitz.open(pdf_path) as doc:
+        with pymupdf.open(pdf_path) as doc:
             n_pages = len(doc) if max_pages is None else min(len(doc), max_pages)
             for i in range(n_pages):
                 page = doc[i]

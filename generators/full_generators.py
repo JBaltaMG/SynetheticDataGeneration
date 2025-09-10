@@ -46,7 +46,7 @@ def create_company_data(company_name: str, save_to_csv: bool = True) -> dict:
     #data_context = read_cached_context_report(company_name)
     #if data_context is None:
         #print(f"No cached context found. Generating context numbers with LLM...")
-        data_context = generate_context_numbers_llm(company_name=company_name)
+    data_context = generate_context_numbers_llm(company_name=company_name)
     #else:
     #    print(f"Using cached context data for {company_name}.")
     
