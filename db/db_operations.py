@@ -28,7 +28,7 @@ def get_sqlalchemy_engine():
     password = dotenv.get_key(".env", "PWD")
 
     params = urllib.parse.quote_plus(
-        f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+        f"DRIVER={{ODBC Driver 18 for SQL Server}};"
         f"SERVER={servername};"
         f"DATABASE={database};"
         f"UID={username};"
@@ -208,7 +208,7 @@ def execute_db_operations(version_tag: str = "test_version"):
         engine=engine,
         version_tag=version_tag
     )
-
+    print("All data inserted successfully.")
 
 if __name__ == "__main__":
     version_tag = "demo_" + dt.now().strftime("%Y%m%d_%H%M")

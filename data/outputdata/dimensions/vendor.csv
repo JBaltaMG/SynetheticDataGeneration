@@ -1,76 +1,61 @@
 vendor_id,name,vendor_type,proportionality
-20,TotalEnergies Polymers,Raw Materials,0.10282776349614399
-21,Covestro Deutschland AG,Raw Materials,0.08997429305912599
-22,Wanhua Chemical Group,Raw Materials,0.051413881748071995
-23,DOW Polycarbonate,Raw Materials,0.03856041131105399
-24,Evonik Industries AG,Raw Materials,0.03856041131105399
-25,Sumitomo Chemical Europe,Raw Materials,0.025706940874035997
-26,LyondellBasell Industries,Raw Materials,0.025706940874035997
-27,PolyOne Corporation,Raw Materials,0.012853470437017999
-28,Clariant Colorants,Raw Materials,0.012853470437017999
-29,Songwon International AG,Raw Materials,0.012853470437017999
-30,Akzo Nobel Polymers,Raw Materials,0.012853470437017999
-31,Lanxess AG,Raw Materials,0.012853470437017999
-32,Archroma Management LLC,Raw Materials,0.012853470437017999
-33,ENGEL Austria GmbH,Equipment,0.044987146529562996
-34,Arburg GmbH + Co KG,Equipment,0.025706940874035997
-35,Sumitomo (SHI) Demag,Equipment,0.015424164524421599
-36,Wittmann Battenfeld,Equipment,0.012853470437017999
-37,Sidel Group,Equipment,0.012853470437017999
-38,Piovan Group,Equipment,0.011568123393316197
-39,Sepro Group,Equipment,0.007712082262210799
-40,Festo AG & Co. KG,Equipment,0.007712082262210799
-41,Rockwell Automation Inc.,Equipment,0.006426735218508999
-42,Atlas Copco A/S,Equipment,0.005141388174807199
-43,FIPA GmbH,Equipment,0.0038560411311053997
-44,KUKA Robotics,Equipment,0.0038560411311053997
-45,Siemens Digital Industries,IT Services,0.032133676092545
-46,Microsoft Denmark ApS,IT Services,0.015424164524421599
-47,Capgemini Danmark,IT Services,0.012853470437017999
-48,T-Systems Nordic,IT Services,0.007712082262210799
-49,Accenture Denmark,IT Services,0.007712082262210799
-50,NTT Data Denmark,IT Services,0.0038560411311053997
-51,Cegid SAS,IT Services,0.0025706940874035997
-52,Netcompany Group,IT Services,0.0025706940874035997
-53,Kuehne + Nagel A/S,Logistics,0.025706940874035997
-54,Maersk Logistics,Logistics,0.023136246786632394
-55,DB Schenker Scandinavia,Logistics,0.019280205655526995
-56,GEODIS Denmark,Logistics,0.014138817480719797
-57,Bring Danmark,Logistics,0.008997429305912599
-58,Hellmann Worldwide Logistics,Logistics,0.006426735218508999
-59,Blue Water Shipping,Logistics,0.005141388174807199
-60,PostNord Danmark,Logistics,0.0038560411311053997
-61,Freja Transport & Logistics,Logistics,0.0025706940874035997
-62,Danske Fragtmænd,Logistics,0.0025706940874035997
-63,ISS Facility Services Denmark,Facilities,0.025706940874035997
-64,Sodexo Danmark,Facilities,0.012853470437017999
-65,Initial Danmark A/S,Facilities,0.007712082262210799
-66,REN KBH ApS,Facilities,0.005141388174807199
-67,G4S Danmark,Facilities,0.0038560411311053997
-68,Lyreco Danmark A/S,Office Supplies,0.010282776349614399
-69,Office Depot Denmark,Office Supplies,0.007712082262210799
-70,Staples Denmark,Office Supplies,0.005141388174807199
-71,Nordic Office Supplies,Office Supplies,0.0025706940874035997
-72,Papyrus A/S,Office Supplies,0.0025706940874035997
-73,Jysk Kontorcenter,Office Supplies,0.0019280205655526998
-74,Canon Danmark A/S,Office Supplies,0.0012853470437017998
-75,Adecco Denmark,Contract Labor,0.012853470437017999
-76,ManpowerGroup Denmark,Contract Labor,0.011568123393316197
-77,Randstad Denmark,Contract Labor,0.010282776349614399
-78,Kelly Services Denmark,Contract Labor,0.006426735218508999
-79,Moment A/S,Contract Labor,0.0038560411311053997
-80,Tempu A/S,Contract Labor,0.0025706940874035997
-81,Mercuri Urval Denmark,Consulting,0.015424164524421599
-82,Boston Consulting Group Denmark,Consulting,0.012853470437017999
-83,McKinsey & Company Denmark,Consulting,0.010282776349614399
-84,KPMG Denmark,Consulting,0.007712082262210799
-85,EY Denmark,Consulting,0.005141388174807199
-86,Deloitte Denmark,Consulting,0.0038560411311053997
-87,Qvartz (Bain Nordics),Consulting,0.0012853470437017998
-88,Morson Projects,Contract Labor,0.0006426735218508999
-89,AFRY Denmark,Consulting,0.0006426735218508999
-90,Xellia Pharmaceuticals ApS,Facilities,0.0006426735218508999
-91,Unger Steel Group,Equipment,0.0006426735218508999
-92,Imtech Nordic,Facilities,0.0006426735218508999
-93,Schneider Electric Danmark,IT Services,0.0006426735218508999
-94,Würth Denmark A/S,Office Supplies,0.0006426735218508999
+20,EcoSynth Solutions,Raw Materials,0.05466778805719093
+21,NextGen Biomass,Raw Materials,0.05130361648444071
+22,RenewAgro Inputs,Raw Materials,0.04457527333894029
+23,CelluSupply LLC,Raw Materials,0.04289318755256519
+24,HarvestCore Suppliers,Raw Materials,0.04037005887300253
+25,VitalRoot Industries,Raw Materials,0.03700588730025232
+26,Quanta Bioproducts,Raw Materials,0.03364171572750211
+27,FermaPro Resources,Raw Materials,0.03280067283431456
+28,SustainaSource,Raw Materials,0.030277544154751895
+29,BioFusion Inc,Raw Materials,0.026913372582001688
+30,AquaGrow Inputs,Raw Materials,0.02523128679562658
+31,SterilEquip Systems,Equipment,0.02439024390243903
+32,BioFlow Machinery,Equipment,0.023549201009251477
+33,CleanPath Automation,Equipment,0.02186711522287637
+34,PuraTech Instruments,Equipment,0.01850294365012616
+35,MachinaBio Systems,Equipment,0.0159798149705635
+36,FlowGuard Devices,Equipment,0.015138772077375948
+37,LogiChain Partners,Logistics,0.026913372582001688
+38,QuickTrans Freight,Logistics,0.023549201009251477
+39,EcoMove Logistics,Logistics,0.020185029436501266
+40,GreenHaul Solutions,Logistics,0.01850294365012616
+41,BioFleet Distribution,Logistics,0.0159798149705635
+42,SwiftCargo Group,Logistics,0.014297729184188396
+43,PureTrack Transport,Logistics,0.010933557611438185
+44,BioSoft Consulting,IT Services,0.017661900756938607
+45,SysGen Technologies,IT Services,0.015138772077375948
+46,DataBridge Networks,IT Services,0.011774600504625738
+47,Agilis IT Solutions,IT Services,0.010933557611438185
+48,RenewSpace Group,Facilities,0.017661900756938607
+49,GreenBuild Services,Facilities,0.014297729184188396
+50,EcoZone Cleaners,Facilities,0.011774600504625738
+51,SafeSite Operations,Facilities,0.010933557611438185
+52,MaintainPlus,Facilities,0.010092514718250633
+53,WorkSafe Services,Facilities,0.00925147182506308
+54,SupplyWorks Depot,Office Supplies,0.006728343145500422
+55,EcoPaper Co,Office Supplies,0.005887300252312869
+56,SmartDesk Supplies,Office Supplies,0.0050462573591253165
+57,OfficeEssence,Office Supplies,0.004205214465937764
+58,BioStation Office,Office Supplies,0.004205214465937764
+59,DailyDesk Products,Office Supplies,0.003364171572750211
+60,TalentEdge Staffing,Contract Labor,0.010092514718250633
+61,LaborLink Services,Contract Labor,0.00925147182506308
+62,SkillSync Pros,Contract Labor,0.008410428931875527
+63,WorkFlex Contractors,Contract Labor,0.007569386038687974
+64,BlueWave Recruitment,Contract Labor,0.007569386038687974
+65,ExpertHire Group,Contract Labor,0.006728343145500422
+66,PrecisionLabor Solutions,Contract Labor,0.005887300252312869
+67,StrategicBio Advisors,Consulting,0.008410428931875527
+68,OptiProcure Consultants,Consulting,0.007569386038687974
+69,ChainVision Partners,Consulting,0.007569386038687974
+70,GrowthMinds Consulting,Consulting,0.005887300252312869
+71,ProcessCrafters,Consulting,0.005887300252312869
+72,BioScale Strategy,Consulting,0.005887300252312869
+73,ValuePath Advisors,Consulting,0.0050462573591253165
+74,DeltaChem Inputs,Raw Materials,0.0159798149705635
+75,Agrisource Worldwide,Raw Materials,0.014297729184188396
+76,ChemEco Pro,Raw Materials,0.01261564339781329
+77,Central Biologics,Raw Materials,0.010933557611438185
+78,BioHarvest Labs,Raw Materials,0.00925147182506308
+79,Logisource Partners,Logistics,0.006728343145500422

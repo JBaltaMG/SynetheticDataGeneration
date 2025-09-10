@@ -19,6 +19,7 @@ schemadict = {
 
     "dim_product": {
         "product_name": "str",
+        "proportionality": "float",
         "unit_price": "str",
     },
 

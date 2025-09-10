@@ -1,281 +1,201 @@
 item_name,account_id,account_name,vendor_name
-Robotic arms,45461,Component Sourcing Expense,KUKA Robotics
-Electric motors,45461,Component Sourcing Expense,Schneider Electric Danmark
-Automated assembly equipment,49144,Product Assembly Subcontracting,ENGEL Austria GmbH
-Injection molding machine,45461,Component Sourcing Expense,ENGEL Austria GmbH
-Thermoplastic elastomers,45461,Component Sourcing Expense,TotalEnergies Polymers
-Conveyor systems,49144,Product Assembly Subcontracting,ENGEL Austria GmbH
-Steel molds,41430,Mould Maintenance,Unger Steel Group
-Mold maintenance tools,41430,Mould Maintenance,ENGEL Austria GmbH
-ABS plastic resin,45461,Component Sourcing Expense,TotalEnergies Polymers
-Polyethylene resin,46564,Packaging Material Purchases,TotalEnergies Polymers
-Pneumatic cylinders,45461,Component Sourcing Expense,Festo AG & Co. KG
-Polycarbonate resin,45461,Component Sourcing Expense,DOW Polycarbonate
-Quality control scanners,42043,Finished Goods Inspection,ENGEL Austria GmbH
-Industrial chillers,44554,Production Utilities,Piovan Group
-Packaging machines,46564,Packaging Material Purchases,ENGEL Austria GmbH
-Printed instructions booklets,46564,Packaging Material Purchases,Papyrus A/S
-Pallets (plastic),46564,Packaging Material Purchases,TotalEnergies Polymers
-Adhesive labels,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Shrink wrap film,46564,Packaging Material Purchases,TotalEnergies Polymers
-Plastic granulate transport tubes,45461,Component Sourcing Expense,Freja Transport & Logistics
-Granulate dryers,44554,Production Utilities,Piovan Group
-Spare machine parts,41430,Mould Maintenance,ENGEL Austria GmbH
-Plastic storage bins,46564,Packaging Material Purchases,TotalEnergies Polymers
-Cardboard packaging boxes,46564,Packaging Material Purchases,Papyrus A/S
-Barcode readers,45461,Component Sourcing Expense,Canon Danmark A/S
-Linear actuators,45461,Component Sourcing Expense,Festo AG & Co. KG
-Dust extraction filters,44554,Production Utilities,Atlas Copco A/S
-Central vacuum system components,45461,Component Sourcing Expense,Piovan Group
-Granule silos,45461,Component Sourcing Expense,TotalEnergies Polymers
-Material handling trolleys,46404,Freight Inward,Kuehne + Nagel A/S
-Machine lubricants,44554,Production Utilities,TotalEnergies Polymers
-Industrial cleaning agents,44554,Production Utilities,Initial Danmark A/S
-Industrial safety guards,44554,Production Utilities,G4S Danmark
-Workbenches,45461,Component Sourcing Expense,ENGEL Austria GmbH
-Mold temperature controllers,44554,Production Utilities,Piovan Group
-Compressed air systems,44554,Production Utilities,Atlas Copco A/S
-Pallet stretch wrap,46564,Packaging Material Purchases,TotalEnergies Polymers
-Forklifts,46564,Packaging Material Purchases,TotalEnergies Polymers
-Granule colorants,45461,Component Sourcing Expense,Clariant Colorants
-Safety sensors,45461,Component Sourcing Expense,Rockwell Automation Inc.
-Industrial gloves,45461,Component Sourcing Expense,TotalEnergies Polymers
-Precision cutting blades,45461,Component Sourcing Expense,FIPA GmbH
-Machine screws,45461,Component Sourcing Expense,Würth Denmark A/S
-Tool calibration kits,41430,Mould Maintenance,ENGEL Austria GmbH
-Alarm systems,45461,Component Sourcing Expense,G4S Danmark
-Emergency stop switches,45461,Component Sourcing Expense,Rockwell Automation Inc.
-Ear protection equipment,45461,Component Sourcing Expense,TotalEnergies Polymers
-Fire suppression systems,44554,Production Utilities,Imtech Nordic
-First aid kits,45461,Component Sourcing Expense,Lyreco Danmark A/S
-Hi-vis safety vests,45461,Component Sourcing Expense,Lyreco Danmark A/S
-Safety helmets,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Industrial signage,46564,Packaging Material Purchases,TotalEnergies Polymers
-Protective eyewear,46564,Packaging Material Purchases,PolyOne Corporation
-Replacement circuit boards,45461,Component Sourcing Expense,Rockwell Automation Inc.
-LED lighting fixtures,45461,Component Sourcing Expense,DOW Polycarbonate
-Ethernet cables,45461,Component Sourcing Expense,Würth Denmark A/S
-PLC controllers,45461,Component Sourcing Expense,Rockwell Automation Inc.
-Data loggers,45461,Component Sourcing Expense,NTT Data Denmark
-Humidity sensors,45461,Component Sourcing Expense,TotalEnergies Polymers
-Laptop computers,45461,Component Sourcing Expense,Office Depot Denmark
-UPS backup units,44554,Production Utilities,Schneider Electric Danmark
-Computer monitors,45461,Component Sourcing Expense,Covestro Deutschland AG
-Laser printers,46564,Packaging Material Purchases,Canon Danmark A/S
-Desktop computers,45461,Component Sourcing Expense,Microsoft Denmark ApS
-Barcode label printers,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Office chairs,46564,Packaging Material Purchases,Nordic Office Supplies
-Waste bins,46564,Packaging Material Purchases,LyondellBasell Industries
-Filing cabinets,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Office desks,46564,Packaging Material Purchases,Nordic Office Supplies
-Conference phones,46564,Packaging Material Purchases,TotalEnergies Polymers
-Meeting room tables,49697,Production Facility Rent,ISS Facility Services Denmark
-Wireless headsets,45461,Component Sourcing Expense,DOW Polycarbonate
-Coffee machines,45461,Component Sourcing Expense,DOW Polycarbonate
-Breakroom furniture,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Kitchen appliances,46564,Packaging Material Purchases,TotalEnergies Polymers
-Water dispensers,44554,Production Utilities,ISS Facility Services Denmark
-Refrigerators,45461,Component Sourcing Expense,Wanhua Chemical Group
-Toilet paper,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Soap cartridges,46564,Packaging Material Purchases,Initial Danmark A/S
-Cleaning detergents,44554,Production Utilities,Initial Danmark A/S
-Mops and buckets,44554,Production Utilities,Initial Danmark A/S
-Hand sanitizer dispensers,46564,Packaging Material Purchases,TotalEnergies Polymers
-Microwave ovens,45461,Component Sourcing Expense,DOW Polycarbonate
-Brooms,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Vacuum cleaners,45461,Component Sourcing Expense,DOW Polycarbonate
-Hand dryers,44554,Production Utilities,Initial Danmark A/S
-Batteries (AA),45461,Component Sourcing Expense,Lyreco Danmark A/S
-Extension cords,44554,Production Utilities,Schneider Electric Danmark
-Batteries (AAA),45461,Component Sourcing Expense,Lyreco Danmark A/S
-Light bulbs (LED),44554,Production Utilities,Schneider Electric Danmark
-USB drives,45461,Component Sourcing Expense,TotalEnergies Polymers
-External hard drives,45461,Component Sourcing Expense,Office Depot Denmark
-Markers,45461,Component Sourcing Expense,Clariant Colorants
-Whiteboards,46564,Packaging Material Purchases,Papyrus A/S
-Projectors,46564,Packaging Material Purchases,Papyrus A/S
-Pencils,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Pens,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Staple refills,46564,Packaging Material Purchases,Staples Denmark
-Binder folders,46564,Packaging Material Purchases,Papyrus A/S
-Notebooks,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Paper clips,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Printer paper (A3),46564,Packaging Material Purchases,Lyreco Danmark A/S
-Printer paper (A4),46564,Packaging Material Purchases,Lyreco Danmark A/S
-Envelopes,46564,Packaging Material Purchases,Papyrus A/S
-Highlighters,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Desk organizers,46564,Packaging Material Purchases,TotalEnergies Polymers
-Scissors,45461,Component Sourcing Expense,PolyOne Corporation
-Rubber bands,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Rulers,45461,Component Sourcing Expense,TotalEnergies Polymers
-Post-it notes,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Clear tape,46564,Packaging Material Purchases,Papyrus A/S
-USB cables,45461,Component Sourcing Expense,PolyOne Corporation
-Glue sticks,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Laptop docking stations,45461,Component Sourcing Expense,Lyreco Danmark A/S
-Tape dispensers,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Monitor stands,45461,Component Sourcing Expense,PolyOne Corporation
-Webcams,45461,Component Sourcing Expense,Canon Danmark A/S
-Packing tape,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Document trays,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Keyboards,45461,Component Sourcing Expense,DOW Polycarbonate
-Mouse pads,45461,Component Sourcing Expense,TotalEnergies Polymers
-Cable organizers,46564,Packaging Material Purchases,Clariant Colorants
-Computer mice,45461,Component Sourcing Expense,DOW Polycarbonate
-Whiteboard erasers,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Surge protectors,45461,Component Sourcing Expense,Schneider Electric Danmark
-Printer ink cartridges,46564,Packaging Material Purchases,Canon Danmark A/S
-ID card holders,46564,Packaging Material Purchases,TotalEnergies Polymers
-Lanyards,46564,Packaging Material Purchases,Clariant Colorants
-Photo paper,46564,Packaging Material Purchases,Canon Danmark A/S
-Window blinds,49697,Production Facility Rent,ISS Facility Services Denmark
-Magnetic badges,46564,Packaging Material Purchases,TotalEnergies Polymers
-Printer toner cartridges,46564,Packaging Material Purchases,Lyreco Danmark A/S
-AED units,45461,Component Sourcing Expense,TotalEnergies Polymers
-Visitor badges,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Coat racks,45461,Component Sourcing Expense,TotalEnergies Polymers
-First response kits,45461,Component Sourcing Expense,TotalEnergies Polymers
-Fire extinguishers,44554,Production Utilities,ISS Facility Services Denmark
-Hand tools set,45461,Component Sourcing Expense,Würth Denmark A/S
-Emergency torches,45461,Component Sourcing Expense,Covestro Deutschland AG
-Door mats,46564,Packaging Material Purchases,Initial Danmark A/S
-Enterprise IT Outsourcing,51317,IT Support Services,Accenture Denmark
-Product Design and Development Consulting,55700,Research Collaboration Fees,Boston Consulting Group Denmark
-Regional Distribution Center Lease,58010,Distribution Center Services,Kuehne + Nagel A/S
-Supply Chain Management Services,59197,Logistics Outsourcing,Hellmann Worldwide Logistics
-Data Center Co-Location Services,51317,IT Support Services,NTT Data Denmark
-R&D Project Management,55700,Research Collaboration Fees,Archroma Management LLC
-Large-Scale Manufacturing Automation Support,51317,IT Support Services,Rockwell Automation Inc.
-Cloud Infrastructure Subscription,57933,IT Software Subscriptions,Microsoft Denmark ApS
-Global Logistics and Freight Management,59197,Logistics Outsourcing,Hellmann Worldwide Logistics
-Warehouse Operations Outsourcing,59197,Logistics Outsourcing,Maersk Logistics
-Facility Management Contract,58010,Distribution Center Services,ISS Facility Services Denmark
-SAP Enterprise License,56493,Licensing Fees Paid,Siemens Digital Industries
-Annual IT Security Audit,54617,Legal and Audit Fees,Deloitte Denmark
-Workforce Recruitment Process Outsourcing,59197,Logistics Outsourcing,Adecco Denmark
-Brand Licensing Fees,56493,Licensing Fees Paid,TotalEnergies Polymers
-Product Safety Testing Services,55700,Research Collaboration Fees,DOW Polycarbonate
-ISO 9001 Certification,56493,Licensing Fees Paid,TotalEnergies Polymers
-SAP Maintenance and Support Fee,51317,IT Support Services,Capgemini Danmark
-Annual Environmental Compliance Audit,54617,Legal and Audit Fees,KPMG Denmark
-ERP System Maintenance Contract,51317,IT Support Services,Accenture Denmark
-CRM Platform License,56493,Licensing Fees Paid,Microsoft Denmark ApS
-National Advertising Campaign Management,59490,Advertising Expense,Boston Consulting Group Denmark
-Global HR Outsourcing Contract,59197,Logistics Outsourcing,Adecco Denmark
-SAP User License,56493,Licensing Fees Paid,Siemens Digital Industries
-Packaging Design Consulting,52835,Marketing Agency Fees,Boston Consulting Group Denmark
-National Tax Advisory Retainer,54617,Legal and Audit Fees,KPMG Denmark
-Corporate Insurance Premiums,50434,Insurance Expense,G4S Danmark
-Third-Party Logistics Service Fee,59197,Logistics Outsourcing,Maersk Logistics
-Enterprise Antivirus Subscription,57933,IT Software Subscriptions,Microsoft Denmark ApS
-Energy Procurement Consulting,56493,Licensing Fees Paid,Boston Consulting Group Denmark
-Bulk Printing Services,59490,Advertising Expense,Canon Danmark A/S
-E-commerce Platform License,56493,Licensing Fees Paid,Cegid SAS
-Strategic Planning Consulting,52835,Marketing Agency Fees,Boston Consulting Group Denmark
-Annual Product Certification Fee,56493,Licensing Fees Paid,Covestro Deutschland AG
-Corporate Communication Consulting,52835,Marketing Agency Fees,Boston Consulting Group Denmark
-Global Payroll Processing Service,56493,Licensing Fees Paid,Cegid SAS
-Danish Data Protection Legal Support,54617,Legal and Audit Fees,KPMG Denmark
-Mobile Device Management License,56493,Licensing Fees Paid,Microsoft Denmark ApS
-Annual Sustainability Reporting Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Market Research Services,55700,Research Collaboration Fees,Boston Consulting Group Denmark
-UK Trade Compliance Services,59197,Logistics Outsourcing,Maersk Logistics
-Patent Registration Fee,54617,Legal and Audit Fees,KPMG Denmark
-Corporate Event Production Service,58078,Brand Promotion Events,Accenture Denmark
-Custom Product Mold Production,55700,Research Collaboration Fees,ENGEL Austria GmbH
-ISO 14001 Certification,56493,Licensing Fees Paid,Covestro Deutschland AG
-European Union Regulatory Filing,56493,Licensing Fees Paid,Covestro Deutschland AG
-Domestic Freight Forwarding Fees,59197,Logistics Outsourcing,Maersk Logistics
-Annual Corporate Tax Filing Fee,54617,Legal and Audit Fees,KPMG Denmark
-Translation and Localization Services,52835,Marketing Agency Fees,Kelly Services Denmark
-Cloud Storage License,56493,Licensing Fees Paid,Microsoft Denmark ApS
-Corporate Fleet Management Service,58010,Distribution Center Services,Kuehne + Nagel A/S
-Legal Document Review Service,54617,Legal and Audit Fees,KPMG Denmark
-Machine Maintenance Contract,51317,IT Support Services,Siemens Digital Industries
-Health and Safety Audit,54617,Legal and Audit Fees,KPMG Denmark
-CCTV Security Monitoring Service,51317,IT Support Services,G4S Danmark
-Utility Infrastructure Maintenance Fee,50647,Utilities - Non-production,Imtech Nordic
-IT Disaster Recovery Planning,51317,IT Support Services,Capgemini Danmark
-Internal Audit Services,54617,Legal and Audit Fees,KPMG Denmark
-Employee Health Insurance Premium,50434,Insurance Expense,TotalEnergies Polymers
-Facility Cleaning Contract,58010,Distribution Center Services,ISS Facility Services Denmark
-Danish Business Registration Fee,56493,Licensing Fees Paid,Microsoft Denmark ApS
-High-Volume Telecom Service Contract,51317,IT Support Services,T-Systems Nordic
-Employee Assistance Program Subscription,52727,Staff Training & Development,Adecco Denmark
-Waste Management Service,50647,Utilities - Non-production,REN KBH ApS
-Corporate Travel Insurance,50434,Insurance Expense,TotalEnergies Polymers
-Digital Asset Management License,56493,Licensing Fees Paid,Siemens Digital Industries
-Annual Fire Safety Training,52727,Staff Training & Development,ISS Facility Services Denmark
-Product Liability Insurance Fee,50434,Insurance Expense,TotalEnergies Polymers
-Server Hosting Fee,51317,IT Support Services,T-Systems Nordic
-Annual Network Penetration Testing,51317,IT Support Services,Capgemini Danmark
-Annual Pension Scheme Administration,54617,Legal and Audit Fees,KPMG Denmark
-Customs Broker Service,59197,Logistics Outsourcing,Maersk Logistics
-Annual Trademarks Renewal,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Copyright Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Time and Attendance Software License,57933,IT Software Subscriptions,Cegid SAS
-HRIS Platform License,56493,Licensing Fees Paid,Cegid SAS
-Facility Access Control Service,58010,Distribution Center Services,G4S Danmark
-Occupational Health Provider Fee,56493,Licensing Fees Paid,Xellia Pharmaceuticals ApS
-Microsoft 365 Enterprise License,56493,Licensing Fees Paid,Microsoft Denmark ApS
-Legal Entity Maintenance Fee,54617,Legal and Audit Fees,KPMG Denmark
-Corporate Governance Advisory Retainer,54617,Legal and Audit Fees,KPMG Denmark
-Graphic Design Agency Retainer,52835,Marketing Agency Fees,TotalEnergies Polymers
-Digital Marketing Subscription,52835,Marketing Agency Fees,Accenture Denmark
-Executive Training Program Fee,52727,Staff Training & Development,Boston Consulting Group Denmark
-Foreign Exchange Transaction Fees,57933,IT Software Subscriptions,Microsoft Denmark ApS
-Mobile Carrier Corporate Plan,51317,IT Support Services,T-Systems Nordic
-Website Hosting Fee,51317,IT Support Services,T-Systems Nordic
-Document Management Software License,57933,IT Software Subscriptions,Microsoft Denmark ApS
-IT Helpdesk Outsourcing,51317,IT Support Services,Capgemini Danmark
-Annual Emergency Response Training,52727,Staff Training & Development,Adecco Denmark
-Licensing Board Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Corporate Recruitment Platform License,56493,Licensing Fees Paid,Adecco Denmark
-Cloud Backup Subscription,57933,IT Software Subscriptions,Microsoft Denmark ApS
-HR Benefits Administration Fee,52727,Staff Training & Development,Adecco Denmark
-Annual Hazardous Waste Disposal Fee,56493,Licensing Fees Paid,ISS Facility Services Denmark
-Annual Public Relations Retainer,52835,Marketing Agency Fees,Boston Consulting Group Denmark
-Product Recall Insurance Premium,50434,Insurance Expense,TotalEnergies Polymers
-Corporate Branding License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Document Translation Software License,57933,IT Software Subscriptions,Microsoft Denmark ApS
-Facility HVAC Maintenance Fee,58010,Distribution Center Services,ISS Facility Services Denmark
-Annual Export Control Audit,54617,Legal and Audit Fees,KPMG Denmark
-Annual Water Quality Testing Fee,56493,Licensing Fees Paid,Blue Water Shipping
-Enterprise Backup Appliance Maintenance,51317,IT Support Services,Microsoft Denmark ApS
-Domain Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Social Media Monitoring Fee,52835,Marketing Agency Fees,TotalEnergies Polymers
-Annual Cybersecurity Awareness Training,52727,Staff Training & Development,Microsoft Denmark ApS
-Customs Clearance Fee,59197,Logistics Outsourcing,Maersk Logistics
-Annual GDPR Compliance Audit,54617,Legal and Audit Fees,KPMG Denmark
-Annual Market Access Licensing,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Mobile Device Audit,54617,Legal and Audit Fees,KPMG Denmark
-Board of Directors Fee,54617,Legal and Audit Fees,KPMG Denmark
-Corporate Library Subscription,56493,Licensing Fees Paid,Cegid SAS
-Annual Network Equipment Renewal,56493,Licensing Fees Paid,Microsoft Denmark ApS
-Annual Anti-Bribery Compliance Review,54617,Legal and Audit Fees,KPMG Denmark
-Annual Workplace Ergonomics Assessment,52727,Staff Training & Development,ISS Facility Services Denmark
-Annual Cafeteria Service Contract,58010,Distribution Center Services,ISS Facility Services Denmark
-Annual Printer Maintenance Fee,51317,IT Support Services,Canon Danmark A/S
-Annual Employee Onboarding Training,52727,Staff Training & Development,Adecco Denmark
-Annual Environmental Impact Study,55700,Research Collaboration Fees,Covestro Deutschland AG
-Annual Social Responsibility Certification,56493,Licensing Fees Paid,Covestro Deutschland AG
-Annual Diversity and Inclusion Training,52727,Staff Training & Development,Adecco Denmark
-Annual Payroll Software Subscription,57933,IT Software Subscriptions,Cegid SAS
-Annual Timekeeping System License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Workstation Health Check,51317,IT Support Services,Capgemini Danmark
-Annual Cloud Security Audit,54617,Legal and Audit Fees,KPMG Denmark
-Annual Leadership Development Program,52727,Staff Training & Development,Mercuri Urval Denmark
-Annual Event Sponsorship Fee,58078,Brand Promotion Events,TotalEnergies Polymers
-Annual Email Security Filter License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Corporate Social Media License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Danish Chamber of Commerce Dues,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Professional Association Membership,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Industry Membership Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Mobile Device Management Fee,51317,IT Support Services,Microsoft Denmark ApS
-Annual Telephone Number License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Vehicle Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Postal Licensing Fee,56493,Licensing Fees Paid,PostNord Danmark
-Annual Electric Vehicle Charging Permit,56493,Licensing Fees Paid,Schneider Electric Danmark
-Annual Copyright Deposit Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Trademark Monitoring Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Music Licensing Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Pelletized biomass,49148,COGS - Materials,NextGen Biomass
+Industrial heat exchangers,49148,COGS - Materials,BioFlow Machinery
+Boiler system parts,42400,COGS - Spare Parts,SterilEquip Systems
+Steam turbine assemblies,49148,COGS - Materials,BioFlow Machinery
+Wastewater treatment chemicals,49148,COGS - Materials,DeltaChem Inputs
+Biogas upgrading membranes,49148,COGS - Materials,EcoSynth Solutions
+Wood chips (locally sourced),49148,COGS - Materials,EcoSynth Solutions
+Combined Heat and Power (CHP) modules,49148,COGS - Materials,BioFlow Machinery
+Activated carbon filters,49148,COGS - Materials,EcoSynth Solutions
+SCADA control software licenses,49148,COGS - Materials,SysGen Technologies
+Fermentation tank steel plates,49148,COGS - Materials,BioFlow Machinery
+Biogas feedstock (organic waste),49148,COGS - Materials,EcoSynth Solutions
+Centrifugal pumps,49148,COGS - Materials,BioFlow Machinery
+Gas storage balloons,49148,COGS - Materials,EcoSynth Solutions
+Gas flowmeters,49148,COGS - Materials,BioFlow Machinery
+"Pipework (stainless steel, DN200)",49148,COGS - Materials,BioFlow Machinery
+Biogas compressors,49148,COGS - Materials,BioFlow Machinery
+Feedstock pre-processing conveyors,49148,COGS - Materials,BioFlow Machinery
+Emergency power generators,49148,COGS - Materials,SterilEquip Systems
+Process safety valves,49148,COGS - Materials,FlowGuard Devices
+Sludge dewatering units,49148,COGS - Materials,BioFlow Machinery
+Instrumentation cabling,49148,COGS - Materials,PuraTech Instruments
+Fire suppression systems,49148,COGS - Materials,FlowGuard Devices
+Industrial valves (DN100-DN250),49148,COGS - Materials,BioFlow Machinery
+CHP generator spare parts,42400,COGS - Spare Parts,BioFlow Machinery
+Process pressure transmitters,49148,COGS - Materials,PuraTech Instruments
+Stainless steel fasteners,49148,COGS - Materials,SupplyWorks Depot
+Industrial piping insulation,49148,COGS - Materials,CelluSupply LLC
+Boiler feedwater pumps,49148,COGS - Materials,BioFlow Machinery
+Feedstock storage silos,49148,COGS - Materials,EcoSynth Solutions
+Hydraulic actuators,49148,COGS - Materials,BioFlow Machinery
+Safety relief valves,49148,COGS - Materials,FlowGuard Devices
+Cooling tower systems,49148,COGS - Materials,MachinaBio Systems
+Dust suppression systems,49148,COGS - Materials,ChemEco Pro
+Lab gas chromatograph,49148,COGS - Materials,BioHarvest Labs
+Level transmitters,49148,COGS - Materials,PuraTech Instruments
+Gas detection sensors,49148,COGS - Materials,PuraTech Instruments
+Industrial lubricants (200L drum),49148,COGS - Materials,ChemEco Pro
+Process pH probes,49148,COGS - Materials,PuraTech Instruments
+Emergency eyewash stations,49148,COGS - Materials,FlowGuard Devices
+Biofilter media,49148,COGS - Materials,EcoSynth Solutions
+Industrial heat tracing cables,49148,COGS - Materials,SterilEquip Systems
+Biogas analyzer units,49148,COGS - Materials,PuraTech Instruments
+Chemical dosing pumps,49148,COGS - Materials,ChemEco Pro
+Heat-resistant gaskets,49148,COGS - Materials,FlowGuard Devices
+Gas-tight dampers,49148,COGS - Materials,FlowGuard Devices
+Maintenance toolkits,42400,COGS - Spare Parts,MaintainPlus
+Ammonia scrubbers,49148,COGS - Materials,EcoSynth Solutions
+CO2 removal modules,49148,COGS - Materials,EcoSynth Solutions
+High-visibility safety clothing,49148,COGS - Materials,WorkSafe Services
+Ear protection (industrial),49148,COGS - Materials,SupplyWorks Depot
+Safety signage packs,49148,COGS - Materials,SafeSite Operations
+Chemical-resistant gloves,49148,COGS - Materials,ChemEco Pro
+Lockout/tagout kits,49148,COGS - Materials,WorkSafe Services
+Spill response kits,49148,COGS - Materials,SafeSite Operations
+Tool trolleys,49148,COGS - Materials,SupplyWorks Depot
+Safety helmets,49148,COGS - Materials,WorkSafe Services
+Grease cartridges,49148,COGS - Materials,SupplyWorks Depot
+Grounding rods,49148,COGS - Materials,HarvestCore Suppliers
+Site first aid kits,49148,COGS - Materials,SafeSite Operations
+Extension leads (industrial),49148,COGS - Materials,SupplyWorks Depot
+Filter cartridges (process),49148,COGS - Materials,FlowGuard Devices
+Industrial LED luminaires,49148,COGS - Materials,SupplyWorks Depot
+Hand tools (assorted sets),42400,COGS - Spare Parts,SupplyWorks Depot
+Outdoor CCTV cameras,49148,COGS - Materials,SterilEquip Systems
+Access control card readers,49148,COGS - Materials,FlowGuard Devices
+Weatherproof junction boxes,49148,COGS - Materials,SterilEquip Systems
+Two-way radios,49148,COGS - Materials,SupplyWorks Depot
+Uninterruptible Power Supplies (UPS),49148,COGS - Materials,FlowGuard Devices
+Solar-powered warning lights,49148,COGS - Materials,FlowGuard Devices
+Padlocks (heavy duty),49148,COGS - Materials,SupplyWorks Depot
+Spare SCADA terminals,42400,COGS - Spare Parts,SysGen Technologies
+Office desks,49148,COGS - Materials,SmartDesk Supplies
+Handheld gas detectors,49148,COGS - Materials,PuraTech Instruments
+Industrial ethernet switches,49148,COGS - Materials,DataBridge Networks
+Office chairs (ergonomic),49148,COGS - Materials,SmartDesk Supplies
+Network patch cables,49148,COGS - Materials,DataBridge Networks
+Computer monitors (24-inch),49148,COGS - Materials,SmartDesk Supplies
+Desktop computers,49148,COGS - Materials,SmartDesk Supplies
+Laptops (industrial grade),49148,COGS - Materials,SysGen Technologies
+Network printers,49148,COGS - Materials,SmartDesk Supplies
+Business software licenses,49148,COGS - Materials,SysGen Technologies
+Conference speakerphones,49148,COGS - Materials,SmartDesk Supplies
+Document shredders,49148,COGS - Materials,BioFlow Machinery
+Office telephones,49148,COGS - Materials,SmartDesk Supplies
+Whiteboards (120x90cm),49148,COGS - Materials,SmartDesk Supplies
+Dishwasher (office kitchen),49148,COGS - Materials,BioFlow Machinery
+Disposable coffee cups (1000),49148,COGS - Materials,EcoPaper Co
+Water coolers (bottle-fed),49148,COGS - Materials,AquaGrow Inputs
+Coffee machines (office),49148,COGS - Materials,BioFlow Machinery
+Tea bags (box),49148,COGS - Materials,EcoPaper Co
+Sugar (1kg bags),49148,COGS - Materials,DeltaChem Inputs
+Toilet paper (48 rolls),49148,COGS - Materials,EcoPaper Co
+Liquid soap refill (5L),49148,COGS - Materials,EcoSynth Solutions
+Ballpoint pens (box of 12),49148,COGS - Materials,SmartDesk Supplies
+Cleaning sponges (10-pack),49148,COGS - Materials,SupplyWorks Depot
+Disinfectant wipes (80-pack),49148,COGS - Materials,EcoZone Cleaners
+Staple refills (box),49148,COGS - Materials,SmartDesk Supplies
+Staplers (desk),49148,COGS - Materials,SmartDesk Supplies
+Rubber bands (bag of 100g),49148,COGS - Materials,SupplyWorks Depot
+Keyboard (USB),49148,COGS - Materials,SupplyWorks Depot
+"Batteries (AA, pack of 24)",49148,COGS - Materials,SupplyWorks Depot
+Highlighter pens (set of 6),49148,COGS - Materials,SmartDesk Supplies
+Postage stamps (20-pack),44251,COGS - Freight Outbound,QuickTrans Freight
+Envelopes (box of 100),49148,COGS - Materials,EcoPaper Co
+Visitor badges (box of 100),49148,COGS - Materials,SmartDesk Supplies
+Monitor risers,49148,COGS - Materials,SupplyWorks Depot
+Screen cleaning kits,49148,COGS - Materials,EcoZone Cleaners
+Wall clocks,49148,COGS - Materials,EcoSynth Solutions
+Flipchart markers (set),49148,COGS - Materials,SmartDesk Supplies
+Flipchart pads,49148,COGS - Materials,EcoPaper Co
+Meeting room signage,49148,COGS - Materials,EcoPaper Co
+Door nameplates,49148,COGS - Materials,EcoPaper Co
+Catering napkins (200-pack),49148,COGS - Materials,EcoPaper Co
+Mop heads (replacement),42400,COGS - Spare Parts,EcoZone Cleaners
+Floor cleaning detergent (5L),49148,COGS - Materials,EcoZone Cleaners
+Canteen cutlery (set),49148,COGS - Materials,EcoSynth Solutions
+Brooms (office/corridor),49148,COGS - Materials,EcoZone Cleaners
+Canteen crockery (plate),49148,COGS - Materials,SupplyWorks Depot
+Reception area rugs,49148,COGS - Materials,SupplyWorks Depot
+SAP ERP Annual License,59459,IT & Telecom Expenses,Agilis IT Solutions
+Industrial Equipment Maintenance Contract,55781,Service Direct Costs - Specialist Subcontractors,MaintainPlus
+Energy Supply Agreement,51362,Utilities,EcoSynth Solutions
+Enterprise IT Outsourcing Contract,59459,IT & Telecom Expenses,Agilis IT Solutions
+Data Center Hosting Services,59459,IT & Telecom Expenses,DataBridge Networks
+R&D Laboratory Supplies Contract,50645,Service Direct Costs - Consumables,BioHarvest Labs
+Cleaning & Sanitation Service,50645,Service Direct Costs - Consumables,EcoZone Cleaners
+Corporate Insurance Premiums,51960,Insurance,EcoSynth Solutions
+Payroll Processing Outsourcing,56468,Consulting Fees - Non-project,BioSoft Consulting
+Facility Management Retainer,55781,Service Direct Costs - Specialist Subcontractors,MaintainPlus
+Annual Legal Counsel Retainer,56468,Consulting Fees - Non-project,StrategicBio Advisors
+Annual Environmental Compliance Audit,55781,Service Direct Costs - Specialist Subcontractors,StrategicBio Advisors
+IT Consulting Services,59459,IT & Telecom Expenses,Agilis IT Solutions
+Waste Disposal Services,51362,Utilities,EcoZone Cleaners
+Regulatory Affairs Consulting Retainer,56468,Consulting Fees - Non-project,BioSoft Consulting
+Internal Audit Service,56468,Consulting Fees - Non-project,BioSoft Consulting
+Annual Data Privacy Audit,56468,Consulting Fees - Non-project,BioSoft Consulting
+Marketing Agency Retainer,58989,Advertising & Promotion,GrowthMinds Consulting
+IT Security Assessment,59459,IT & Telecom Expenses,Agilis IT Solutions
+Chemical Handling Permit Fee,50645,Service Direct Costs - Consumables,ChemEco Pro
+Corporate Tax Advisory Retainer,56468,Consulting Fees - Non-project,GrowthMinds Consulting
+Annual Corporate Social Responsibility Audit,56468,Consulting Fees - Non-project,BioSoft Consulting
+Annual Management Consulting Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
+Annual Network Penetration Test,55781,Service Direct Costs - Specialist Subcontractors,DataBridge Networks
+Annual Software Asset Management Audit,56468,Consulting Fees - Non-project,BioSoft Consulting
+Company Car Leasing,57274,Service Direct Costs - Travel,EcoMove Logistics
+Occupational Health & Safety Assessment,55781,Service Direct Costs - Specialist Subcontractors,WorkSafe Services
+Patent Renewal Fees,56468,Consulting Fees - Non-project,BioSoft Consulting
+MS Dynamics Annual License,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Board Member Remuneration,56468,Consulting Fees - Non-project,BioSoft Consulting
+Business Intelligence Software License,59459,IT & Telecom Expenses,SysGen Technologies
+External Recruitment Agency Fee,55781,Service Direct Costs - Specialist Subcontractors,BlueWave Recruitment
+Annual IT Audit,59459,IT & Telecom Expenses,Agilis IT Solutions
+Medical Waste Disposal Fee,50645,Service Direct Costs - Consumables,SterilEquip Systems
+Annual Building Maintenance,55781,Service Direct Costs - Specialist Subcontractors,GreenBuild Services
+Annual Staff Training Program,56468,Consulting Fees - Non-project,BioSoft Consulting
+Conference & Event Sponsorships,59606,Customer Events,EcoSynth Solutions
+Internal Communications Platform License,59459,IT & Telecom Expenses,SysGen Technologies
+Recruitment Advertising Fee,58989,Advertising & Promotion,BlueWave Recruitment
+Quality Assurance Certification,55781,Service Direct Costs - Specialist Subcontractors,BioHarvest Labs
+Annual GDPR Training Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
+Company Website Hosting,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Trademark Registration,55781,Service Direct Costs - Specialist Subcontractors,StrategicBio Advisors
+Document Management System License,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Parking Permit,52716,Office Rent,BioStation Office
+Annual Uniform Rental,50645,Service Direct Costs - Consumables,EcoZone Cleaners
+Office Supplies Contract,50645,Service Direct Costs - Consumables,SmartDesk Supplies
+Annual Elevator Maintenance,55781,Service Direct Costs - Specialist Subcontractors,MaintainPlus
+Food Safety Inspection Fee,50645,Service Direct Costs - Consumables,BioHarvest Labs
+Annual Fuel Card Service Fee,57274,Service Direct Costs - Travel,BioFleet Distribution
+Annual Press Release Distribution Fee,58989,Advertising & Promotion,SustainaSource
+Annual Security System License,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Digital Signature Service Fee,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Laboratory Accreditation Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
+Annual Industrial Scale Calibration,55781,Service Direct Costs - Specialist Subcontractors,PuraTech Instruments
+Annual Access Control License,56468,Consulting Fees - Non-project,BioSoft Consulting
+Annual Chemical Inventory Report Fee,50645,Service Direct Costs - Consumables,ChemEco Pro
+Annual Office Coffee Service,50645,Service Direct Costs - Consumables,OfficeEssence
+Lift Certification Fee,55781,Service Direct Costs - Specialist Subcontractors,StrategicBio Advisors
+Annual Green Energy Certificate,51362,Utilities,SustainaSource
+Annual CO2 Emissions Reporting Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
+Annual Photocopier Service Fee,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Digital Archive Subscription,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Safety Data Sheet Subscription,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Ergonomics Assessment,55781,Service Direct Costs - Specialist Subcontractors,WorkSafe Services
+Annual Postage Meter License,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Employee ID Card Fee,50645,Service Direct Costs - Consumables,SmartDesk Supplies
+Annual Fire Extinguisher Check,55781,Service Direct Costs - Specialist Subcontractors,SafeSite Operations
+Annual Employee Recognition Platform License,59459,IT & Telecom Expenses,SysGen Technologies
+Annual Compliance E-learning License,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Press Archive Access,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Office Music License,51362,Utilities,BioStation Office
+Annual Company Vehicle Registration Fee,51960,Insurance,BioFleet Distribution
+Annual Meeting Room Booking License,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Shift Scheduling Software License,59459,IT & Telecom Expenses,Agilis IT Solutions
+Annual Public Relations Membership,58989,Advertising & Promotion,SustainaSource
+Annual Desk Booking Software License,59459,IT & Telecom Expenses,SysGen Technologies
+Annual Coffee Machine Maintenance,50645,Service Direct Costs - Consumables,MaintainPlus
+Annual Employee Wellbeing Survey,55781,Service Direct Costs - Specialist Subcontractors,StrategicBio Advisors
+Annual Waste Sorting Training Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
