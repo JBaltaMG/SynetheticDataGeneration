@@ -1,281 +1,221 @@
 item_name,account_id,account_name,vendor_name
-Robotic arms,45461,Component Sourcing Expense,KUKA Robotics
-Electric motors,45461,Component Sourcing Expense,Schneider Electric Danmark
-Automated assembly equipment,49144,Product Assembly Subcontracting,ENGEL Austria GmbH
-Injection molding machine,45461,Component Sourcing Expense,ENGEL Austria GmbH
-Thermoplastic elastomers,45461,Component Sourcing Expense,TotalEnergies Polymers
-Conveyor systems,49144,Product Assembly Subcontracting,ENGEL Austria GmbH
-Steel molds,41430,Mould Maintenance,Unger Steel Group
-Mold maintenance tools,41430,Mould Maintenance,ENGEL Austria GmbH
-ABS plastic resin,45461,Component Sourcing Expense,TotalEnergies Polymers
-Polyethylene resin,46564,Packaging Material Purchases,TotalEnergies Polymers
-Pneumatic cylinders,45461,Component Sourcing Expense,Festo AG & Co. KG
-Polycarbonate resin,45461,Component Sourcing Expense,DOW Polycarbonate
-Quality control scanners,42043,Finished Goods Inspection,ENGEL Austria GmbH
-Industrial chillers,44554,Production Utilities,Piovan Group
-Packaging machines,46564,Packaging Material Purchases,ENGEL Austria GmbH
-Printed instructions booklets,46564,Packaging Material Purchases,Papyrus A/S
-Pallets (plastic),46564,Packaging Material Purchases,TotalEnergies Polymers
-Adhesive labels,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Shrink wrap film,46564,Packaging Material Purchases,TotalEnergies Polymers
-Plastic granulate transport tubes,45461,Component Sourcing Expense,Freja Transport & Logistics
-Granulate dryers,44554,Production Utilities,Piovan Group
-Spare machine parts,41430,Mould Maintenance,ENGEL Austria GmbH
-Plastic storage bins,46564,Packaging Material Purchases,TotalEnergies Polymers
-Cardboard packaging boxes,46564,Packaging Material Purchases,Papyrus A/S
-Barcode readers,45461,Component Sourcing Expense,Canon Danmark A/S
-Linear actuators,45461,Component Sourcing Expense,Festo AG & Co. KG
-Dust extraction filters,44554,Production Utilities,Atlas Copco A/S
-Central vacuum system components,45461,Component Sourcing Expense,Piovan Group
-Granule silos,45461,Component Sourcing Expense,TotalEnergies Polymers
-Material handling trolleys,46404,Freight Inward,Kuehne + Nagel A/S
-Machine lubricants,44554,Production Utilities,TotalEnergies Polymers
-Industrial cleaning agents,44554,Production Utilities,Initial Danmark A/S
-Industrial safety guards,44554,Production Utilities,G4S Danmark
-Workbenches,45461,Component Sourcing Expense,ENGEL Austria GmbH
-Mold temperature controllers,44554,Production Utilities,Piovan Group
-Compressed air systems,44554,Production Utilities,Atlas Copco A/S
-Pallet stretch wrap,46564,Packaging Material Purchases,TotalEnergies Polymers
-Forklifts,46564,Packaging Material Purchases,TotalEnergies Polymers
-Granule colorants,45461,Component Sourcing Expense,Clariant Colorants
-Safety sensors,45461,Component Sourcing Expense,Rockwell Automation Inc.
-Industrial gloves,45461,Component Sourcing Expense,TotalEnergies Polymers
-Precision cutting blades,45461,Component Sourcing Expense,FIPA GmbH
-Machine screws,45461,Component Sourcing Expense,Würth Denmark A/S
-Tool calibration kits,41430,Mould Maintenance,ENGEL Austria GmbH
-Alarm systems,45461,Component Sourcing Expense,G4S Danmark
-Emergency stop switches,45461,Component Sourcing Expense,Rockwell Automation Inc.
-Ear protection equipment,45461,Component Sourcing Expense,TotalEnergies Polymers
-Fire suppression systems,44554,Production Utilities,Imtech Nordic
-First aid kits,45461,Component Sourcing Expense,Lyreco Danmark A/S
-Hi-vis safety vests,45461,Component Sourcing Expense,Lyreco Danmark A/S
-Safety helmets,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Industrial signage,46564,Packaging Material Purchases,TotalEnergies Polymers
-Protective eyewear,46564,Packaging Material Purchases,PolyOne Corporation
-Replacement circuit boards,45461,Component Sourcing Expense,Rockwell Automation Inc.
-LED lighting fixtures,45461,Component Sourcing Expense,DOW Polycarbonate
-Ethernet cables,45461,Component Sourcing Expense,Würth Denmark A/S
-PLC controllers,45461,Component Sourcing Expense,Rockwell Automation Inc.
-Data loggers,45461,Component Sourcing Expense,NTT Data Denmark
-Humidity sensors,45461,Component Sourcing Expense,TotalEnergies Polymers
-Laptop computers,45461,Component Sourcing Expense,Office Depot Denmark
-UPS backup units,44554,Production Utilities,Schneider Electric Danmark
-Computer monitors,45461,Component Sourcing Expense,Covestro Deutschland AG
-Laser printers,46564,Packaging Material Purchases,Canon Danmark A/S
-Desktop computers,45461,Component Sourcing Expense,Microsoft Denmark ApS
-Barcode label printers,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Office chairs,46564,Packaging Material Purchases,Nordic Office Supplies
-Waste bins,46564,Packaging Material Purchases,LyondellBasell Industries
-Filing cabinets,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Office desks,46564,Packaging Material Purchases,Nordic Office Supplies
-Conference phones,46564,Packaging Material Purchases,TotalEnergies Polymers
-Meeting room tables,49697,Production Facility Rent,ISS Facility Services Denmark
-Wireless headsets,45461,Component Sourcing Expense,DOW Polycarbonate
-Coffee machines,45461,Component Sourcing Expense,DOW Polycarbonate
-Breakroom furniture,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Kitchen appliances,46564,Packaging Material Purchases,TotalEnergies Polymers
-Water dispensers,44554,Production Utilities,ISS Facility Services Denmark
-Refrigerators,45461,Component Sourcing Expense,Wanhua Chemical Group
-Toilet paper,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Soap cartridges,46564,Packaging Material Purchases,Initial Danmark A/S
-Cleaning detergents,44554,Production Utilities,Initial Danmark A/S
-Mops and buckets,44554,Production Utilities,Initial Danmark A/S
-Hand sanitizer dispensers,46564,Packaging Material Purchases,TotalEnergies Polymers
-Microwave ovens,45461,Component Sourcing Expense,DOW Polycarbonate
-Brooms,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Vacuum cleaners,45461,Component Sourcing Expense,DOW Polycarbonate
-Hand dryers,44554,Production Utilities,Initial Danmark A/S
-Batteries (AA),45461,Component Sourcing Expense,Lyreco Danmark A/S
-Extension cords,44554,Production Utilities,Schneider Electric Danmark
-Batteries (AAA),45461,Component Sourcing Expense,Lyreco Danmark A/S
-Light bulbs (LED),44554,Production Utilities,Schneider Electric Danmark
-USB drives,45461,Component Sourcing Expense,TotalEnergies Polymers
-External hard drives,45461,Component Sourcing Expense,Office Depot Denmark
-Markers,45461,Component Sourcing Expense,Clariant Colorants
-Whiteboards,46564,Packaging Material Purchases,Papyrus A/S
-Projectors,46564,Packaging Material Purchases,Papyrus A/S
-Pencils,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Pens,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Staple refills,46564,Packaging Material Purchases,Staples Denmark
-Binder folders,46564,Packaging Material Purchases,Papyrus A/S
-Notebooks,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Paper clips,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Printer paper (A3),46564,Packaging Material Purchases,Lyreco Danmark A/S
-Printer paper (A4),46564,Packaging Material Purchases,Lyreco Danmark A/S
-Envelopes,46564,Packaging Material Purchases,Papyrus A/S
-Highlighters,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Desk organizers,46564,Packaging Material Purchases,TotalEnergies Polymers
-Scissors,45461,Component Sourcing Expense,PolyOne Corporation
-Rubber bands,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Rulers,45461,Component Sourcing Expense,TotalEnergies Polymers
-Post-it notes,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Clear tape,46564,Packaging Material Purchases,Papyrus A/S
-USB cables,45461,Component Sourcing Expense,PolyOne Corporation
-Glue sticks,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Laptop docking stations,45461,Component Sourcing Expense,Lyreco Danmark A/S
-Tape dispensers,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Monitor stands,45461,Component Sourcing Expense,PolyOne Corporation
-Webcams,45461,Component Sourcing Expense,Canon Danmark A/S
-Packing tape,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Document trays,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Keyboards,45461,Component Sourcing Expense,DOW Polycarbonate
-Mouse pads,45461,Component Sourcing Expense,TotalEnergies Polymers
-Cable organizers,46564,Packaging Material Purchases,Clariant Colorants
-Computer mice,45461,Component Sourcing Expense,DOW Polycarbonate
-Whiteboard erasers,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Surge protectors,45461,Component Sourcing Expense,Schneider Electric Danmark
-Printer ink cartridges,46564,Packaging Material Purchases,Canon Danmark A/S
-ID card holders,46564,Packaging Material Purchases,TotalEnergies Polymers
-Lanyards,46564,Packaging Material Purchases,Clariant Colorants
-Photo paper,46564,Packaging Material Purchases,Canon Danmark A/S
-Window blinds,49697,Production Facility Rent,ISS Facility Services Denmark
-Magnetic badges,46564,Packaging Material Purchases,TotalEnergies Polymers
-Printer toner cartridges,46564,Packaging Material Purchases,Lyreco Danmark A/S
-AED units,45461,Component Sourcing Expense,TotalEnergies Polymers
-Visitor badges,46564,Packaging Material Purchases,Lyreco Danmark A/S
-Coat racks,45461,Component Sourcing Expense,TotalEnergies Polymers
-First response kits,45461,Component Sourcing Expense,TotalEnergies Polymers
-Fire extinguishers,44554,Production Utilities,ISS Facility Services Denmark
-Hand tools set,45461,Component Sourcing Expense,Würth Denmark A/S
-Emergency torches,45461,Component Sourcing Expense,Covestro Deutschland AG
-Door mats,46564,Packaging Material Purchases,Initial Danmark A/S
-Enterprise IT Outsourcing,51317,IT Support Services,Accenture Denmark
-Product Design and Development Consulting,55700,Research Collaboration Fees,Boston Consulting Group Denmark
-Regional Distribution Center Lease,58010,Distribution Center Services,Kuehne + Nagel A/S
-Supply Chain Management Services,59197,Logistics Outsourcing,Hellmann Worldwide Logistics
-Data Center Co-Location Services,51317,IT Support Services,NTT Data Denmark
-R&D Project Management,55700,Research Collaboration Fees,Archroma Management LLC
-Large-Scale Manufacturing Automation Support,51317,IT Support Services,Rockwell Automation Inc.
-Cloud Infrastructure Subscription,57933,IT Software Subscriptions,Microsoft Denmark ApS
-Global Logistics and Freight Management,59197,Logistics Outsourcing,Hellmann Worldwide Logistics
-Warehouse Operations Outsourcing,59197,Logistics Outsourcing,Maersk Logistics
-Facility Management Contract,58010,Distribution Center Services,ISS Facility Services Denmark
-SAP Enterprise License,56493,Licensing Fees Paid,Siemens Digital Industries
-Annual IT Security Audit,54617,Legal and Audit Fees,Deloitte Denmark
-Workforce Recruitment Process Outsourcing,59197,Logistics Outsourcing,Adecco Denmark
-Brand Licensing Fees,56493,Licensing Fees Paid,TotalEnergies Polymers
-Product Safety Testing Services,55700,Research Collaboration Fees,DOW Polycarbonate
-ISO 9001 Certification,56493,Licensing Fees Paid,TotalEnergies Polymers
-SAP Maintenance and Support Fee,51317,IT Support Services,Capgemini Danmark
-Annual Environmental Compliance Audit,54617,Legal and Audit Fees,KPMG Denmark
-ERP System Maintenance Contract,51317,IT Support Services,Accenture Denmark
-CRM Platform License,56493,Licensing Fees Paid,Microsoft Denmark ApS
-National Advertising Campaign Management,59490,Advertising Expense,Boston Consulting Group Denmark
-Global HR Outsourcing Contract,59197,Logistics Outsourcing,Adecco Denmark
-SAP User License,56493,Licensing Fees Paid,Siemens Digital Industries
-Packaging Design Consulting,52835,Marketing Agency Fees,Boston Consulting Group Denmark
-National Tax Advisory Retainer,54617,Legal and Audit Fees,KPMG Denmark
-Corporate Insurance Premiums,50434,Insurance Expense,G4S Danmark
-Third-Party Logistics Service Fee,59197,Logistics Outsourcing,Maersk Logistics
-Enterprise Antivirus Subscription,57933,IT Software Subscriptions,Microsoft Denmark ApS
-Energy Procurement Consulting,56493,Licensing Fees Paid,Boston Consulting Group Denmark
-Bulk Printing Services,59490,Advertising Expense,Canon Danmark A/S
-E-commerce Platform License,56493,Licensing Fees Paid,Cegid SAS
-Strategic Planning Consulting,52835,Marketing Agency Fees,Boston Consulting Group Denmark
-Annual Product Certification Fee,56493,Licensing Fees Paid,Covestro Deutschland AG
-Corporate Communication Consulting,52835,Marketing Agency Fees,Boston Consulting Group Denmark
-Global Payroll Processing Service,56493,Licensing Fees Paid,Cegid SAS
-Danish Data Protection Legal Support,54617,Legal and Audit Fees,KPMG Denmark
-Mobile Device Management License,56493,Licensing Fees Paid,Microsoft Denmark ApS
-Annual Sustainability Reporting Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Market Research Services,55700,Research Collaboration Fees,Boston Consulting Group Denmark
-UK Trade Compliance Services,59197,Logistics Outsourcing,Maersk Logistics
-Patent Registration Fee,54617,Legal and Audit Fees,KPMG Denmark
-Corporate Event Production Service,58078,Brand Promotion Events,Accenture Denmark
-Custom Product Mold Production,55700,Research Collaboration Fees,ENGEL Austria GmbH
-ISO 14001 Certification,56493,Licensing Fees Paid,Covestro Deutschland AG
-European Union Regulatory Filing,56493,Licensing Fees Paid,Covestro Deutschland AG
-Domestic Freight Forwarding Fees,59197,Logistics Outsourcing,Maersk Logistics
-Annual Corporate Tax Filing Fee,54617,Legal and Audit Fees,KPMG Denmark
-Translation and Localization Services,52835,Marketing Agency Fees,Kelly Services Denmark
-Cloud Storage License,56493,Licensing Fees Paid,Microsoft Denmark ApS
-Corporate Fleet Management Service,58010,Distribution Center Services,Kuehne + Nagel A/S
-Legal Document Review Service,54617,Legal and Audit Fees,KPMG Denmark
-Machine Maintenance Contract,51317,IT Support Services,Siemens Digital Industries
-Health and Safety Audit,54617,Legal and Audit Fees,KPMG Denmark
-CCTV Security Monitoring Service,51317,IT Support Services,G4S Danmark
-Utility Infrastructure Maintenance Fee,50647,Utilities - Non-production,Imtech Nordic
-IT Disaster Recovery Planning,51317,IT Support Services,Capgemini Danmark
-Internal Audit Services,54617,Legal and Audit Fees,KPMG Denmark
-Employee Health Insurance Premium,50434,Insurance Expense,TotalEnergies Polymers
-Facility Cleaning Contract,58010,Distribution Center Services,ISS Facility Services Denmark
-Danish Business Registration Fee,56493,Licensing Fees Paid,Microsoft Denmark ApS
-High-Volume Telecom Service Contract,51317,IT Support Services,T-Systems Nordic
-Employee Assistance Program Subscription,52727,Staff Training & Development,Adecco Denmark
-Waste Management Service,50647,Utilities - Non-production,REN KBH ApS
-Corporate Travel Insurance,50434,Insurance Expense,TotalEnergies Polymers
-Digital Asset Management License,56493,Licensing Fees Paid,Siemens Digital Industries
-Annual Fire Safety Training,52727,Staff Training & Development,ISS Facility Services Denmark
-Product Liability Insurance Fee,50434,Insurance Expense,TotalEnergies Polymers
-Server Hosting Fee,51317,IT Support Services,T-Systems Nordic
-Annual Network Penetration Testing,51317,IT Support Services,Capgemini Danmark
-Annual Pension Scheme Administration,54617,Legal and Audit Fees,KPMG Denmark
-Customs Broker Service,59197,Logistics Outsourcing,Maersk Logistics
-Annual Trademarks Renewal,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Copyright Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Time and Attendance Software License,57933,IT Software Subscriptions,Cegid SAS
-HRIS Platform License,56493,Licensing Fees Paid,Cegid SAS
-Facility Access Control Service,58010,Distribution Center Services,G4S Danmark
-Occupational Health Provider Fee,56493,Licensing Fees Paid,Xellia Pharmaceuticals ApS
-Microsoft 365 Enterprise License,56493,Licensing Fees Paid,Microsoft Denmark ApS
-Legal Entity Maintenance Fee,54617,Legal and Audit Fees,KPMG Denmark
-Corporate Governance Advisory Retainer,54617,Legal and Audit Fees,KPMG Denmark
-Graphic Design Agency Retainer,52835,Marketing Agency Fees,TotalEnergies Polymers
-Digital Marketing Subscription,52835,Marketing Agency Fees,Accenture Denmark
-Executive Training Program Fee,52727,Staff Training & Development,Boston Consulting Group Denmark
-Foreign Exchange Transaction Fees,57933,IT Software Subscriptions,Microsoft Denmark ApS
-Mobile Carrier Corporate Plan,51317,IT Support Services,T-Systems Nordic
-Website Hosting Fee,51317,IT Support Services,T-Systems Nordic
-Document Management Software License,57933,IT Software Subscriptions,Microsoft Denmark ApS
-IT Helpdesk Outsourcing,51317,IT Support Services,Capgemini Danmark
-Annual Emergency Response Training,52727,Staff Training & Development,Adecco Denmark
-Licensing Board Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Corporate Recruitment Platform License,56493,Licensing Fees Paid,Adecco Denmark
-Cloud Backup Subscription,57933,IT Software Subscriptions,Microsoft Denmark ApS
-HR Benefits Administration Fee,52727,Staff Training & Development,Adecco Denmark
-Annual Hazardous Waste Disposal Fee,56493,Licensing Fees Paid,ISS Facility Services Denmark
-Annual Public Relations Retainer,52835,Marketing Agency Fees,Boston Consulting Group Denmark
-Product Recall Insurance Premium,50434,Insurance Expense,TotalEnergies Polymers
-Corporate Branding License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Document Translation Software License,57933,IT Software Subscriptions,Microsoft Denmark ApS
-Facility HVAC Maintenance Fee,58010,Distribution Center Services,ISS Facility Services Denmark
-Annual Export Control Audit,54617,Legal and Audit Fees,KPMG Denmark
-Annual Water Quality Testing Fee,56493,Licensing Fees Paid,Blue Water Shipping
-Enterprise Backup Appliance Maintenance,51317,IT Support Services,Microsoft Denmark ApS
-Domain Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Social Media Monitoring Fee,52835,Marketing Agency Fees,TotalEnergies Polymers
-Annual Cybersecurity Awareness Training,52727,Staff Training & Development,Microsoft Denmark ApS
-Customs Clearance Fee,59197,Logistics Outsourcing,Maersk Logistics
-Annual GDPR Compliance Audit,54617,Legal and Audit Fees,KPMG Denmark
-Annual Market Access Licensing,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Mobile Device Audit,54617,Legal and Audit Fees,KPMG Denmark
-Board of Directors Fee,54617,Legal and Audit Fees,KPMG Denmark
-Corporate Library Subscription,56493,Licensing Fees Paid,Cegid SAS
-Annual Network Equipment Renewal,56493,Licensing Fees Paid,Microsoft Denmark ApS
-Annual Anti-Bribery Compliance Review,54617,Legal and Audit Fees,KPMG Denmark
-Annual Workplace Ergonomics Assessment,52727,Staff Training & Development,ISS Facility Services Denmark
-Annual Cafeteria Service Contract,58010,Distribution Center Services,ISS Facility Services Denmark
-Annual Printer Maintenance Fee,51317,IT Support Services,Canon Danmark A/S
-Annual Employee Onboarding Training,52727,Staff Training & Development,Adecco Denmark
-Annual Environmental Impact Study,55700,Research Collaboration Fees,Covestro Deutschland AG
-Annual Social Responsibility Certification,56493,Licensing Fees Paid,Covestro Deutschland AG
-Annual Diversity and Inclusion Training,52727,Staff Training & Development,Adecco Denmark
-Annual Payroll Software Subscription,57933,IT Software Subscriptions,Cegid SAS
-Annual Timekeeping System License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Workstation Health Check,51317,IT Support Services,Capgemini Danmark
-Annual Cloud Security Audit,54617,Legal and Audit Fees,KPMG Denmark
-Annual Leadership Development Program,52727,Staff Training & Development,Mercuri Urval Denmark
-Annual Event Sponsorship Fee,58078,Brand Promotion Events,TotalEnergies Polymers
-Annual Email Security Filter License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Corporate Social Media License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Danish Chamber of Commerce Dues,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Professional Association Membership,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Industry Membership Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Mobile Device Management Fee,51317,IT Support Services,Microsoft Denmark ApS
-Annual Telephone Number License,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Vehicle Registration Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Postal Licensing Fee,56493,Licensing Fees Paid,PostNord Danmark
-Annual Electric Vehicle Charging Permit,56493,Licensing Fees Paid,Schneider Electric Danmark
-Annual Copyright Deposit Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Trademark Monitoring Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
-Annual Music Licensing Fee,56493,Licensing Fees Paid,TotalEnergies Polymers
+Vehicle tires,45088,Product COGS - New Vehicles,Toyota Material Handling
+Vehicle brake systems,45088,Product COGS - New Vehicles,SKF Danmark A/S
+Engine oil,45088,Product COGS - New Vehicles,Brdr. Dahl A/S
+Vehicle infotainment systems,45088,Product COGS - New Vehicles,Siemens Danmark
+"Vehicle glass (windscreens, windows)",45088,Product COGS - New Vehicles,Dansk Glasimport A/S
+Vehicle exhaust systems,45088,Product COGS - New Vehicles,Nordic Steel Supplies
+Electric vehicle batteries,45088,Product COGS - New Vehicles,Danfoss A/S
+New passenger vehicles,45088,Product COGS - New Vehicles,Toyota Material Handling
+Interior trim components,45088,Product COGS - New Vehicles,Owens Corning Nordics
+Vehicle air conditioning units,45088,Product COGS - New Vehicles,Danfoss A/S
+Vehicle transmissions,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
+New commercial vans,45088,Product COGS - New Vehicles,Jungheinrich Danmark
+Vehicle steering systems,45088,Product COGS - New Vehicles,SKF Danmark A/S
+Paints and coatings for vehicles,45088,Product COGS - New Vehicles,Sika Danmark A/S
+Automotive lubricants,45088,Product COGS - New Vehicles,SKF Danmark A/S
+Engine control units (ECU),45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
+Vehicle seats,45088,Product COGS - New Vehicles,SKF Danmark A/S
+Vehicle drivetrains,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
+Vehicle radiators,45088,Product COGS - New Vehicles,Danfoss A/S
+Vehicle tailgates,45088,Product COGS - New Vehicles,ArcelorMittal Denmark
+Vehicle batteries (12V),45088,Product COGS - New Vehicles,Jungheinrich Danmark
+Vehicle alloy wheels,45088,Product COGS - New Vehicles,ArcelorMittal Denmark
+Vehicle doors,45088,Product COGS - New Vehicles,SKF Danmark A/S
+Vehicle bumpers,45088,Product COGS - New Vehicles,ArcelorMittal Denmark
+Vehicle mirrors,45088,Product COGS - New Vehicles,Dansk Glasimport A/S
+Vehicle grilles,45088,Product COGS - New Vehicles,ArcelorMittal Denmark
+Rental fleet vehicles,45088,Product COGS - New Vehicles,Toyota Material Handling
+Workshop compressors,45088,Product COGS - New Vehicles,Atlas Copco Danmark
+Workshop hand tools,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
+Workshop pneumatic tools,45088,Product COGS - New Vehicles,Atlas Copco Danmark
+Vehicle jacks,45088,Product COGS - New Vehicles,Nordic Steel Supplies
+Workshop alignment systems,45088,Product COGS - New Vehicles,Scanvaegt Systems A/S
+Workshop vehicle lifts,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
+Workshop tool cabinets,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
+Battery charging units,45088,Product COGS - New Vehicles,ABB A/S
+Tire mounting machines,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
+Workshop creepers,45088,Product COGS - New Vehicles,Jungheinrich Danmark
+Vehicle cleaning robots,45088,Product COGS - New Vehicles,Nilfisk A/S
+Workshop workbenches,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
+Workshop lighting,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
+Workshop floor coatings,45088,Product COGS - New Vehicles,Sika Danmark A/S
+Fuel dispensers,49980,Product Freight & Delivery,Blue Water Shipping A/S
+Workshop gloves,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
+Mechanic coveralls,45088,Product COGS - New Vehicles,Berendsen Textil Service
+Fire extinguishers,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
+Workshop first aid kits,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
+Protective eyewear,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
+Workshop absorbent mats,45088,Product COGS - New Vehicles,Berendsen Textil Service
+Workshop ventilation systems,45088,Product COGS - New Vehicles,Atlas Copco Danmark
+Protective seat covers,45088,Product COGS - New Vehicles,Berendsen Textil Service
+Workshop signage,45088,Product COGS - New Vehicles,Paperflow A/S
+Workshop ladders,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
+Warehouse racking,49980,Product Freight & Delivery,Jungheinrich Danmark
+Spare wheel covers,45088,Product COGS - New Vehicles,SKF Danmark A/S
+Pallet jacks,49980,Product Freight & Delivery,Jungheinrich Danmark
+Warehouse forklifts,45088,Product COGS - New Vehicles,Jungheinrich Danmark
+Warehouse safety barriers,45088,Product COGS - New Vehicles,Jungheinrich Danmark
+Warehouse label printers,45088,Product COGS - New Vehicles,Scanvaegt Systems A/S
+Warehouse barcode scanners,45088,Product COGS - New Vehicles,Scanvaegt Systems A/S
+Warehouse bins and totes,45088,Product COGS - New Vehicles,Jungheinrich Danmark
+Warehouse cleaning supplies,45088,Product COGS - New Vehicles,Hako Danmark A/S
+Warehouse gloves,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
+Shipping pallets,49980,Product Freight & Delivery,Blue Water Shipping A/S
+Warehouse hand trucks,45088,Product COGS - New Vehicles,Jungheinrich Danmark
+Warehouse fans,49980,Product Freight & Delivery,Blue Water Shipping A/S
+Warehouse shrink wrap machines,45088,Product COGS - New Vehicles,Jungheinrich Danmark
+Warehouse carts,49980,Product Freight & Delivery,Blue Water Shipping A/S
+Shipping labels,49980,Product Freight & Delivery,Blue Water Shipping A/S
+Warehouse safety signs,49980,Product Freight & Delivery,Jungheinrich Danmark
+IT desktop computers,45088,Product COGS - New Vehicles,IT Relation A/S
+Warehouse ladders,45088,Product COGS - New Vehicles,Jungheinrich Danmark
+Network switches,45088,Product COGS - New Vehicles,Atea Danmark A/S
+IT servers,45088,Product COGS - New Vehicles,IT Relation A/S
+Network cabling,49980,Product Freight & Delivery,Atea Danmark A/S
+Printers,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Printer toner cartridges,49980,Product Freight & Delivery,OfficeTeam Danmark
+IT keyboards,45088,Product COGS - New Vehicles,IT Relation A/S
+Uninterruptible power supplies,45088,Product COGS - New Vehicles,ABB A/S
+Printer paper (A4),45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Firewall appliances,45088,Product COGS - New Vehicles,Atea Danmark A/S
+Server racks,45088,Product COGS - New Vehicles,Atea Danmark A/S
+Document scanners,45088,Product COGS - New Vehicles,Paperflow A/S
+IT mice,45088,Product COGS - New Vehicles,IT Relation A/S
+Office chairs,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office desks,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
+Office meeting tables,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office telephones,45088,Product COGS - New Vehicles,TDC Erhverv
+Office mobile phones,45088,Product COGS - New Vehicles,TDC Erhverv
+Office lockers,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office shredders,45088,Product COGS - New Vehicles,Paperflow A/S
+Office storage cabinets,45088,Product COGS - New Vehicles,Paperflow A/S
+Office visitor chairs,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office coat racks,45088,Product COGS - New Vehicles,Paperflow A/S
+Office whiteboards,45088,Product COGS - New Vehicles,Paperflow A/S
+Microwave ovens,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
+Dishwashers,45088,Product COGS - New Vehicles,Siemens Danmark
+Office kettles,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
+Office cutlery sets,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office mugs,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
+Cleaning detergents,45088,Product COGS - New Vehicles,Hako Danmark A/S
+Dishwashing liquid,45088,Product COGS - New Vehicles,Nilfisk A/S
+Office glasses,49980,Product Freight & Delivery,Dansk Glasimport A/S
+Hand sanitizer,45088,Product COGS - New Vehicles,Sika Danmark A/S
+Office napkins,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office pencils,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office pens,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Paper towels,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Toilet paper,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Air fresheners,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Trash bags,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
+Office highlighters,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office staple refills,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office notepads,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office folders,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office sticky notes,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office binders,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office scissors,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office paper clips,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office push pins,45088,Product COGS - New Vehicles,OfficeTeam Danmark
+Office rulers,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
+Managed Security Services,51718,IT & Telecom Costs,IT Relation A/S
+Software Licensing Consolidation,51718,IT & Telecom Costs,IT Relation A/S
+Global IT Outsourcing Contract,51718,IT & Telecom Costs,IT Relation A/S
+CRM System Subscription,51718,IT & Telecom Costs,IT Relation A/S
+Mainframe Support Contract,51718,IT & Telecom Costs,IT Relation A/S
+Annual Audit & Assurance Fees,51653,Audit & Legal Fees,Deloitte Denmark
+Telecommunications Network Service,51718,IT & Telecom Costs,TDC Erhverv
+SAP ERP Implementation,51718,IT & Telecom Costs,NNIT A/S
+IT Infrastructure Maintenance,51718,IT & Telecom Costs,IT Relation A/S
+Enterprise Networking Service,51718,IT & Telecom Costs,TDC Erhverv
+Corporate Tax Consulting,51867,Consultancy Fees,Deloitte Denmark
+Annual Cybersecurity Audits,51653,Audit & Legal Fees,NNIT A/S
+Pension Administration Fees,51867,Consultancy Fees,Deloitte Denmark
+Annual Facility Safety Inspection,50775,Service COGS - External Service Providers,ISS Facility Services A/S
+HR Outsourcing Service,50775,Service COGS - External Service Providers,Adecco Danmark A/S
+Digital Marketing Retainer,54390,Marketing - Advertising,Netcompany A/S
+Building Lease Management Fee,56714,Lease & Rental - Buildings,Coor Service Management
+Annual IT Audit,51653,Audit & Legal Fees,Deloitte Denmark
+Workforce Training Programs,58538,Service COGS - Workshop Materials,Adecco Danmark A/S
+Environmental Compliance Audits,51653,Audit & Legal Fees,Deloitte Denmark
+Annual Disaster Recovery Testing,51718,IT & Telecom Costs,IT Relation A/S
+External Whistleblower Hotline,50775,Service COGS - External Service Providers,Deloitte Denmark
+Payroll Processing Service,50775,Service COGS - External Service Providers,Forenede Service A/S
+Executive Recruitment Retainer,51867,Consultancy Fees,Mercuri Urval A/S
+Server Room Maintenance,51718,IT & Telecom Costs,IT Relation A/S
+Supplier Performance Review Fee,51867,Consultancy Fees,Implement Consulting Group
+Brand Licensing Fee,51718,IT & Telecom Costs,IT Relation A/S
+ERP User Training License,51718,IT & Telecom Costs,IT Relation A/S
+Occupational Health & Safety Service,50775,Service COGS - External Service Providers,ISS Facility Services A/S
+Translation & Localization Services,50775,Service COGS - External Service Providers,Celsa Steel Service A/S
+Annual Fire Safety Audit,51653,Audit & Legal Fees,Deloitte Denmark
+Shareholder Registry Maintenance,51867,Consultancy Fees,McKinsey & Company Denmark
+Technical Documentation Service,50775,Service COGS - External Service Providers,KMD A/S
+Annual Data Privacy Assessment,51867,Consultancy Fees,Deloitte Denmark
+Annual Board Membership Fee,51867,Consultancy Fees,Implement Consulting Group
+ISO Certification Audit Fee,51653,Audit & Legal Fees,Deloitte Denmark
+Quality Management System Audit,51653,Audit & Legal Fees,Deloitte Denmark
+IT Asset Disposal Service,51718,IT & Telecom Costs,Stena Recycling A/S
+Annual Vehicle Registration Fee,53118,Service COGS - Courtesy Vehicles,Hako Danmark A/S
+Recruitment Advertising Service,54390,Marketing - Advertising,Adecco Danmark A/S
+Group IT Helpdesk Support,51718,IT & Telecom Costs,IT Relation A/S
+Annual Network Penetration Test,51718,IT & Telecom Costs,IT Relation A/S
+Share Point Online Licensing,51718,IT & Telecom Costs,IT Relation A/S
+GDPR Compliance Monitoring,51653,Audit & Legal Fees,Deloitte Denmark
+HR Policy Review Fee,51867,Consultancy Fees,Implement Consulting Group
+Industrial Waste Disposal License,50775,Service COGS - External Service Providers,Stena Recycling A/S
+Annual Environmental Audit,51653,Audit & Legal Fees,Deloitte Denmark
+License Management Service,51718,IT & Telecom Costs,IT Relation A/S
+Cloud Backup Subscription,51718,IT & Telecom Costs,IT Relation A/S
+ISO Training Course Fee,51867,Consultancy Fees,Implement Consulting Group
+Banking Transaction Processing Fee,53118,Service COGS - Courtesy Vehicles,Celsa Steel Service A/S
+Annual Trademark Registration Fee,51653,Audit & Legal Fees,Deloitte Denmark
+Phishing Simulation Service,50775,Service COGS - External Service Providers,NNIT A/S
+Intranet Hosting Subscription,51718,IT & Telecom Costs,IT Relation A/S
+E-signature Platform License,51718,IT & Telecom Costs,IT Relation A/S
+Conference Room Scheduling Software,51718,IT & Telecom Costs,IT Relation A/S
+Occupational Medical Examination Fee,50775,Service COGS - External Service Providers,ISS Facility Services A/S
+Annual Domain Name Renewal,51718,IT & Telecom Costs,IT Relation A/S
+Annual Elevator Inspection Fee,50775,Service COGS - External Service Providers,ISS Facility Services A/S
+Corporate Car Parking Permit,56714,Lease & Rental - Buildings,NCC Property Development
+Load Testing Service Subscription,51718,IT & Telecom Costs,IT Relation A/S
+Anti-virus Software Subscription,51718,IT & Telecom Costs,IT Relation A/S
+SSL Certificate Renewal,51718,IT & Telecom Costs,IT Relation A/S
+Remote Meeting Platform License,51718,IT & Telecom Costs,IT Relation A/S
+Company Credit Rating Assessment,51867,Consultancy Fees,Bain & Company Nordics
+Public Affairs Monitoring Service,50775,Service COGS - External Service Providers,Celsa Steel Service A/S
+Annual Elevator License Fee,50675,Utilities & Energy,ISS Facility Services A/S
+Procurement Portal License,51718,IT & Telecom Costs,IT Relation A/S
+E-learning Platform License,51718,IT & Telecom Costs,IT Relation A/S
+Courier Service Contract,50775,Service COGS - External Service Providers,Bring Danmark
+Supplier Registration Fee,51867,Consultancy Fees,Implement Consulting Group
+Annual Utility Connection Fee,50675,Utilities & Energy,SKF Danmark A/S
+Annual Association Membership Fee,51867,Consultancy Fees,Implement Consulting Group
+Employee Sport Club Subsidy Fee,58538,Service COGS - Workshop Materials,Forenede Service A/S
+Annual Food Handler Certificate,50775,Service COGS - External Service Providers,Forenede Service A/S
+Digital Signature Device License,51718,IT & Telecom Costs,IT Relation A/S
+Annual Phone Directory Registration,54390,Marketing - Advertising,SKF Danmark A/S
+Safety Data Sheet Management Fee,50775,Service COGS - External Service Providers,Ramboll Management Consulting
+Business Card Printing Fee,54400,Marketing - Print Media,Paperflow A/S
+Health & Safety Poster Subscription,54510,Office Supplies,OfficeTeam Danmark
+Annual Water Discharge License,50675,Utilities & Energy,NCC Industry
+Annual Energy Labeling Fee,50675,Utilities & Energy,SKF Danmark A/S
+Annual Archive Storage Fee,51718,IT & Telecom Costs,IT Relation A/S
+Document Shredding Service,50775,Service COGS - External Service Providers,Stena Recycling A/S
+Annual Fire Extinguisher Inspection,50775,Service COGS - External Service Providers,Forenede Service A/S
+Annual Key Holder Registration,51867,Consultancy Fees,Implement Consulting Group
+Uniform Laundry Service,50775,Service COGS - External Service Providers,Berendsen Textil Service
+Annual Copier Maintenance Fee,54510,Office Supplies,OfficeTeam Danmark
+Annual Subscription to Industry Magazine,54400,Marketing - Print Media,NCC Industry
+Annual Public Broadcast License,54390,Marketing - Advertising,SKF Danmark A/S
+Annual Plant Maintenance Fee,50675,Utilities & Energy,ISS Facility Services A/S
+Meeting Room Booking System License,51718,IT & Telecom Costs,IT Relation A/S
+Annual Influenza Vaccination Fee,50775,Service COGS - External Service Providers,ISS Facility Services A/S
+Annual Bicycle Parking Permit,56714,Lease & Rental - Buildings,NCC Property Development
+Annual Library Membership Fee,51718,IT & Telecom Costs,IT Relation A/S
+Annual Employee Gift Tax Fee,50775,Service COGS - External Service Providers,ISS Facility Services A/S
+Annual Internal Newsletter Platform Fee,54390,Marketing - Advertising,SKF Danmark A/S
+Annual Social Event License,56254,Marketing - Events & Sponsorships,SKF Danmark A/S
+Annual Coffee Machine Service Fee,54510,Office Supplies,Coor Service Management
+Annual Warehouse Racking Inspection,50775,Service COGS - External Service Providers,Jungheinrich Danmark

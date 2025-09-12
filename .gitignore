@@ -1,11 +1,15 @@
 .env
 Pipfile
 Pipfile.lock
+DemoDataVenv/
 */__pycache__/
 /api
 # Ignore Python cache
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+*.so
 
 # Ignore all CSV output files
 #data/outputdata/**/*.csv

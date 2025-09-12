@@ -1,8 +1,10 @@
+from multiprocessing import context
 import pandas as pd 
 import os
 import numpy as np
 import json
 from pathlib import Path
+from schemas.date_schemas import schema_constant_balanced
 import utils.utils as utils
 import utils.utils_llm as utils_llm
 import generators.random_generators as random_generators
@@ -28,27 +30,23 @@ def read_cached_context_report(company_name: str) -> dict:
         pass
     return None
 
-def create_company_data(company_name: str, save_to_csv: bool = True) -> dict:
+def create_company_data(company_name: str, save_to_csv: bool = True, context: bool = False) -> dict:
     """
     Generates all dimension tables for a company and saves them to CSV files.
     """
 
     print(f"Generating data for company: {company_name}...")
 
-    path_to_report = f"data/inputdata/reports/generated/{company_name}_context_report.txt"
-    if not os.path.exists(path_to_report):
-        print(f"No context report found for {company_name}. Generating a new one...")
-        generate_context_report(company_name=company_name)
-    else:
-        print(f"Using existing context report for {company_name}.")
+
+    if context:
+        path_to_report = f"data/inputdata/reports/generated/{company_name}_context_report.txt"
+        if not os.path.exists(path_to_report):
+            print(f"No context report found for {company_name}. Generating a new one...")
+            generate_context_report(company_name=company_name)
+        else:
+            print(f"Using existing context report for {company_name}.")
     
-    # Check for cached context data first
-    #data_context = read_cached_context_report(company_name)
-    #if data_context is None:
-        #print(f"No cached context found. Generating context numbers with LLM...")
-        data_context = generate_context_numbers_llm(company_name=company_name)
-    #else:
-    #    print(f"Using cached context data for {company_name}.")
+    data_context = generate_context_numbers_llm(company_name=company_name)
     
     # Unpack the context data:
     (count_employee, count_product, count_department, count_procurement,
@@ -446,7 +444,8 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     if save_to_csv:
         output_dir = f"data/outputdata/mapping"
         os.makedirs(output_dir, exist_ok=True)
-        df_erp_expenses.to_csv(f"{output_dir}/erp_expenses_test.csv", index=False)
+        df_erp_expenses.to_csv(f"{output_dir}/erp_expenses.csv", index=False)
+        df_erp_products.to_csv(f"{output_dir}/erp_products.csv", index=False)
         df_map_expenses.to_csv(f"{output_dir}/map_expenses.csv", index=False)
         df_map_products.to_csv(f"{output_dir}/map_products.csv", index=False)
         print(f"✔ All mapping CSVs saved to: {output_dir}")
@@ -463,21 +462,33 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     """
     Creates all ERP-related data by combining generated and mapped data.
     """
+    import schemas.date_schemas as date_schemas
+
+    document_metadata_expense = random_generators.generate_document_metadata(n=2000, start_index=1000)
+    document_metadata_products = random_generators.generate_document_metadata(n=2000, start_index=2000)
 
     df_map_products = generated_mapped_data["df_map_products"]
     df_map_expenses = generated_mapped_data["df_map_expenses"]
     df_erp_products = generated_mapped_data["df_erp_products"]
     df_erp_expenses = generated_mapped_data["df_erp_expenses"]
 
-    document_metadata_expense = random_generators.generate_document_metadata(n=2000, start_index=1000)
-    document_metadata_products = random_generators.generate_document_metadata(n=2000, start_index=2000)
-    
-    df_erp_expenses_full = erp.create_erp_data(df_expenses=df_erp_expenses, df_expenses_mapping=df_map_expenses, df_document_metadata=document_metadata_expense)
-    df_erp_products_full = erp.create_erp_data(df_expenses=df_erp_products, df_expenses_mapping=df_map_products, df_document_metadata=document_metadata_products)
-      
+    df_erp_expenses_full = erp.create_erp_data(
+        df_expenses=df_erp_expenses,
+        df_expenses_mapping=df_map_expenses,
+        df_document_metadata=document_metadata_expense,
+        date_schema=schema_constant_balanced,
+    )
+
+    df_erp_products_full = erp.create_erp_data(
+        df_expenses=df_erp_products,
+        df_expenses_mapping=df_map_products,
+        df_document_metadata=document_metadata_products,
+        date_schema=schema_constant_balanced,
+    )
+
     # Full target schema # also currency, amount_eur, Type
-    full_columns = ['document_number', 'type', 'date', 'amount', 'quantity', 'account_name', 'product_id', 'procurement_id', 'service_id']
-    vendor_col = ['vendor_name']    
+    full_columns = ['document_number', 'type', 'date', 'amount', 'quantity', 'unit_price', 'account_name', 'product_id', 'procurement_id', 'service_id']
+    vendor_col = ['vendor_name']
     customer_col = ['customer_name']
 
     # Reindex all ERP dataframes to align to full schema
@@ -485,30 +496,28 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     df_products_full = df_erp_products_full.reindex(columns=full_columns + customer_col)
 
     rename_cols = {
-        'document_number': 'document_number',
-        'type': 'debit_credit', 
-        'date': 'date',
-        'amount': 'amount',
-        'quantity': 'quantity',
-        'account_name': 'account_id',
-        'product_id': 'product_id',
-        'procurement_id': 'procurement_id',
-        'service_id': 'service_id',
-        'vendor_name': 'vendor_id',
-        'customer_name': 'customer_id'}
-    
+            'document_number': 'document_number',
+            'type': 'debit_credit', 
+            'date': 'date',
+            'amount': 'amount',
+            'quantity': 'quantity',
+            'unit_price': 'unit_price',
+            'account_name': 'account_id',
+            'product_id': 'product_id',
+            'procurement_id': 'procurement_id',
+            'service_id': 'service_id',
+            'vendor_name': 'vendor_id',
+            'customer_name': 'customer_id'}
+        
     df_expenses_full.rename(columns=rename_cols, inplace=True)
     df_products_full.rename(columns=rename_cols, inplace=True)
-    
-    if save_to_csv:
-        output_dir = f"data/outputdata/fact"
-        os.makedirs(output_dir, exist_ok=True)
-        df_erp_expenses_full.to_csv(f"{output_dir}/erp_expenses.csv", index=False)
-        df_erp_products_full.to_csv(f"{output_dir}/erp_products.csv", index=False)
 
-
-    # Concatenate all ERP data
     df_erp_all = pd.concat([df_expenses_full, df_products_full], ignore_index=True)
+
+    df_erp_all["quantity"] = np.ceil(df_erp_all["quantity"].astype(int))
+    df_erp_all.loc[df_erp_all['quantity'] == 0, 'quantity'] = 1
+    df_erp_all["amount"] = np.sign(df_erp_all["amount"]) * df_erp_all["quantity"] * df_erp_all["unit_price"]
+
     df_accounts = pd.read_csv("data/outputdata/dimensions/account.csv")
 
     df_erp_all = erp.balance_documents_with_assets(df_erp=df_erp_all, df_accounts=df_accounts, tolerance=100)

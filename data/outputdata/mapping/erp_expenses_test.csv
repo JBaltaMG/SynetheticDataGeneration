@@ -1,281 +1,221 @@
 item_name,source_type,annual_spend,unit_price,proportionality,product_id,procurement_id,service_id
-ABS plastic resin,procurement,826322000.0,13500.0,0.2434133506427271,,ABS plastic resin,
-Polycarbonate resin,procurement,472184000.0,15000.0,0.1390933432244155,,Polycarbonate resin,
-Thermoplastic elastomers,procurement,283310000.0,11000.0,0.0834560059346493,,Thermoplastic elastomers,
-Polyethylene resin,procurement,188874000.0,9500.0,0.0556373372897662,,Polyethylene resin,
-Injection molding machine,procurement,98372000.0,950000.0,0.0289777798384199,,Injection molding machine,
-Steel molds,procurement,90502000.0,250000.0,0.0266595574513463,,Steel molds,
-Mold maintenance tools,procurement,55088000.0,32000.0,0.0162275567095151,,Mold maintenance tools,
-Automated assembly equipment,procurement,51153000.0,780000.0,0.0150684455159783,,Automated assembly equipment,
-Robotic arms,procurement,47218000.0,600000.0,0.0139093343224415,,Robotic arms,
-Pneumatic cylinders,procurement,43284000.0,12000.0,0.0127502231289047,,Pneumatic cylinders,
-Conveyor systems,procurement,41316000.0,110000.0,0.0121706675321363,,Conveyor systems,
-Electric motors,procurement,39349000.0,8000.0,0.0115911119353679,,Electric motors,
-Granulate dryers,procurement,38562000.0,90000.0,0.0113592896966606,,Granulate dryers,
-Industrial chillers,procurement,37775000.0,85000.0,0.0111274674579532,,Industrial chillers,
-Quality control scanners,procurement,37381000.0,38000.0,0.0110115563385995,,Quality control scanners,
-Packaging machines,procurement,36201000.0,140000.0,0.0106638229805385,,Packaging machines,
-Cardboard packaging boxes,procurement,34627000.0,12.0,0.0102001785031238,,Cardboard packaging boxes,
-Printed instructions booklets,procurement,33446000.0,2.0,0.0098524451450627,,Printed instructions booklets,
-Shrink wrap film,procurement,32266000.0,15.0,0.0095047117870017,,Shrink wrap film,
-Adhesive labels,procurement,31085000.0,1.0,0.0091569784289406,,Adhesive labels,
-Pallets (plastic),procurement,30692000.0,110.0,0.009041067309587,,Pallets (plastic),
-Plastic storage bins,procurement,28725000.0,55.0,0.0084615117128186,,Plastic storage bins,
-Plastic granulate transport tubes,procurement,27544000.0,850.0,0.0081137783547575,,Plastic granulate transport tubes,
-Spare machine parts,procurement,26757000.0,4500.0,0.0078819561160502,,Spare machine parts,
-Linear actuators,procurement,26364000.0,3200.0,0.0077660449966965,,Linear actuators,
-Barcode readers,procurement,25577000.0,1800.0,0.0075342227579891,,Barcode readers,
-Central vacuum system components,procurement,24396000.0,2100.0,0.0071864893999281,,Central vacuum system components,
-Dust extraction filters,procurement,24003000.0,350.0,0.0070705782805744,,Dust extraction filters,
-Granule silos,procurement,23609000.0,98000.0,0.0069546671612207,,Granule silos,
-Material handling trolleys,procurement,23216000.0,800.0,0.006838756041867,,Material handling trolleys,
-Industrial cleaning agents,procurement,22822000.0,60.0,0.0067228449225134,,Industrial cleaning agents,
-Machine lubricants,procurement,22429000.0,85.0,0.0066069338031597,,Machine lubricants,
-Industrial safety guards,procurement,21642000.0,1200.0,0.0063751115644523,,Industrial safety guards,
-Workbenches,procurement,20855000.0,1400.0,0.006143289325745,,Workbenches,
-Mold temperature controllers,procurement,20068000.0,32000.0,0.0059114670870376,,Mold temperature controllers,
-Compressed air systems,procurement,19674000.0,95000.0,0.0057955559676839,,Compressed air systems,
-Pallet stretch wrap,procurement,18494000.0,16.0,0.0054478226096229,,Pallet stretch wrap,
-Forklifts,procurement,18100000.0,240000.0,0.0053319114902692,,Forklifts,
-Safety sensors,procurement,17313000.0,650.0,0.0051000892515619,,Safety sensors,
-Granule colorants,procurement,16526000.0,6500.0,0.0048682670128545,,Granule colorants,
-Industrial gloves,procurement,16133000.0,12.0,0.0047523558935008,,Industrial gloves,
-Machine screws,procurement,15739000.0,0.8,0.0046364447741471,,Machine screws,
-Precision cutting blades,procurement,15346000.0,320.0,0.0045205336547935,,Precision cutting blades,
-Tool calibration kits,procurement,14952000.0,850.0,0.0044046225354398,,Tool calibration kits,
-Emergency stop switches,procurement,14559000.0,170.0,0.0042887114160861,,Emergency stop switches,
-Alarm systems,procurement,14166000.0,6000.0,0.0041728002967324,,Alarm systems,
-Fire suppression systems,procurement,13772000.0,38000.0,0.0040568891773787,,Fire suppression systems,
-Protective eyewear,procurement,13379000.0,25.0,0.0039409780580251,,Protective eyewear,
-Ear protection equipment,procurement,12985000.0,30.0,0.0038250669386714,,Ear protection equipment,
-First aid kits,procurement,12592000.0,450.0,0.0037091558193177,,First aid kits,
-Hi-vis safety vests,procurement,12198000.0,40.0,0.003593244699964,,Hi-vis safety vests,
-Safety helmets,procurement,11805000.0,95.0,0.0034773335806103,,Safety helmets,
-Industrial signage,procurement,11411000.0,120.0,0.0033614224612567,,Industrial signage,
-LED lighting fixtures,procurement,11018000.0,340.0,0.003245511341903,,LED lighting fixtures,
-Replacement circuit boards,procurement,10624000.0,3500.0,0.0031296002225493,,Replacement circuit boards,
-PLC controllers,procurement,10231000.0,8200.0,0.0030136891031956,,PLC controllers,
-Ethernet cables,procurement,9444000.0,85.0,0.0027818668644883,,Ethernet cables,
-UPS backup units,procurement,9050000.0,3200.0,0.0026659557451346,,UPS backup units,
-Humidity sensors,procurement,8263000.0,140.0,0.0024341335064272,,Humidity sensors,
-Data loggers,procurement,7870000.0,2100.0,0.0023182223870735,,Data loggers,
-Laptop computers,procurement,7476000.0,8500.0,0.0022023112677199,,Laptop computers,
-Desktop computers,procurement,7083000.0,7000.0,0.0020864001483662,,Desktop computers,
-Computer monitors,procurement,6689000.0,1800.0,0.0019704890290125,,Computer monitors,
-Laser printers,procurement,6296000.0,2900.0,0.0018545779096588,,Laser printers,
-Barcode label printers,procurement,5902000.0,3600.0,0.0017386667903051,,Barcode label printers,
-Office chairs,procurement,5509000.0,1150.0,0.0016227556709515,,Office chairs,
-Office desks,procurement,5115000.0,1850.0,0.0015068445515978,,Office desks,
-Filing cabinets,procurement,4722000.0,1950.0,0.0013909334322441,,Filing cabinets,
-Waste bins,procurement,3935000.0,120.0,0.0011591111935367,,Waste bins,
-Meeting room tables,procurement,3738000.0,4800.0,0.0011011556338599,,Meeting room tables,
-Conference phones,procurement,3659000.0,3100.0,0.0010779734099892,,Conference phones,
-Wireless headsets,procurement,3581000.0,800.0,0.0010547911861184,,Wireless headsets,
-Coffee machines,procurement,3423000.0,2200.0,0.001008426738377,,Coffee machines,
-Kitchen appliances,procurement,3345000.0,1100.0,0.0009852445145062,,Kitchen appliances,
-Water dispensers,procurement,3266000.0,950.0,0.0009620622906355,,Water dispensers,
-Breakroom furniture,procurement,3187000.0,2100.0,0.0009388800667648,,Breakroom furniture,
-Refrigerators,procurement,3109000.0,3200.0,0.000915697842894,,Refrigerators,
-Microwave ovens,procurement,3030000.0,800.0,0.0008925156190233,,Microwave ovens,
-Hand sanitizer dispensers,procurement,2912000.0,270.0,0.0008577422832172,,Hand sanitizer dispensers,
-Toilet paper,procurement,2833000.0,0.4,0.0008345600593464,,Toilet paper,
-Soap cartridges,procurement,2794000.0,1.2,0.0008229689474111,,Soap cartridges,
-Cleaning detergents,procurement,2754000.0,17.0,0.0008113778354757,,Cleaning detergents,
-Mops and buckets,procurement,2715000.0,110.0,0.0007997867235403,,Mops and buckets,
-Vacuum cleaners,procurement,2676000.0,900.0,0.000788195611605,,Vacuum cleaners,
-Brooms,procurement,2636000.0,42.0,0.0007766044996696,,Brooms,
-Hand dryers,procurement,2558000.0,1750.0,0.0007534222757989,,Hand dryers,
-Light bulbs (LED),procurement,2479000.0,32.0,0.0007302400519281,,Light bulbs (LED),
-Extension cords,procurement,2440000.0,85.0,0.0007186489399928,,Extension cords,
-Batteries (AA),procurement,2361000.0,4.5,0.000695466716122,,Batteries (AA),
-Batteries (AAA),procurement,2322000.0,4.1,0.0006838756041867,,Batteries (AAA),
-USB drives,procurement,2282000.0,55.0,0.0006722844922513,,USB drives,
-External hard drives,procurement,2243000.0,650.0,0.0006606933803159,,External hard drives,
-Projectors,procurement,2204000.0,4000.0,0.0006491022683806,,Projectors,
-Whiteboards,procurement,2125000.0,540.0,0.0006259200445098,,Whiteboards,
-Markers,procurement,2085000.0,7.0,0.0006143289325745,,Markers,
-Pens,procurement,2046000.0,3.0,0.0006027378206391,,Pens,
-Pencils,procurement,2007000.0,1.5,0.0005911467087037,,Pencils,
-Staple refills,procurement,1928000.0,8.0,0.000567964484833,,Staple refills,
-Paper clips,procurement,1889000.0,0.6,0.0005563733728976,,Paper clips,
-Binder folders,procurement,1849000.0,6.5,0.0005447822609622,,Binder folders,
-Notebooks,procurement,1810000.0,28.0,0.0005331911490269,,Notebooks,
-Printer paper (A4),procurement,1771000.0,33.0,0.0005216000370915,,Printer paper (A4),
-Printer paper (A3),procurement,1731000.0,45.0,0.0005100089251561,,Printer paper (A3),
-Envelopes,procurement,1692000.0,1.7,0.0004984178132208,,Envelopes,
-Scissors,procurement,1653000.0,15.0,0.0004868267012854,,Scissors,
-Rulers,procurement,1613000.0,12.0,0.00047523558935,,Rulers,
-Highlighters,procurement,1574000.0,6.0,0.0004636444774147,,Highlighters,
-Post-it notes,procurement,1535000.0,11.0,0.0004520533654793,,Post-it notes,
-Desk organizers,procurement,1495000.0,55.0,0.0004404622535439,,Desk organizers,
-Tape dispensers,procurement,1456000.0,25.0,0.0004288711416086,,Tape dispensers,
-Clear tape,procurement,1417000.0,6.0,0.0004172800296732,,Clear tape,
-Packing tape,procurement,1377000.0,13.0,0.0004056889177378,,Packing tape,
-Rubber bands,procurement,1338000.0,0.9,0.0003940978058025,,Rubber bands,
-Glue sticks,procurement,1299000.0,8.0,0.0003825066938671,,Glue sticks,
-Document trays,procurement,1180000.0,45.0,0.000347733358061,,Document trays,
-USB cables,procurement,1102000.0,18.0,0.0003245511341903,,USB cables,
-Laptop docking stations,procurement,1023000.0,950.0,0.0003013689103195,,Laptop docking stations,
-Monitor stands,procurement,984000.0,160.0,0.0002897777983841,,Monitor stands,
-Webcams,procurement,944000.0,450.0,0.0002781866864488,,Webcams,
-Computer mice,procurement,905000.0,110.0,0.0002665955745134,,Computer mice,
-Keyboards,procurement,866000.0,190.0,0.000255004462578,,Keyboards,
-Mouse pads,procurement,826000.0,20.0,0.0002434133506427,,Mouse pads,
-Surge protectors,procurement,787000.0,110.0,0.0002318222387073,,Surge protectors,
-Cable organizers,procurement,748000.0,12.0,0.0002202311267719,,Cable organizers,
-Whiteboard erasers,procurement,708000.0,10.0,0.0002086400148366,,Whiteboard erasers,
-Printer toner cartridges,procurement,630000.0,620.0,0.0001854577909658,,Printer toner cartridges,
-Printer ink cartridges,procurement,590000.0,440.0,0.0001738666790305,,Printer ink cartridges,
-Photo paper,procurement,551000.0,70.0,0.0001622755670951,,Photo paper,
-ID card holders,procurement,512000.0,9.0,0.0001506844551597,,ID card holders,
-Lanyards,procurement,472000.0,13.0,0.0001390933432244,,Lanyards,
-Visitor badges,procurement,433000.0,3.0,0.000127502231289,,Visitor badges,
-Magnetic badges,procurement,393000.0,18.0,0.0001159111193536,,Magnetic badges,
-Window blinds,procurement,354000.0,890.0,0.0001043200074183,,Window blinds,
-Door mats,procurement,275000.0,160.0,8.113778354757572e-05,,Door mats,
-Coat racks,procurement,236000.0,340.0,6.954667161220777e-05,,Coat racks,
-Fire extinguishers,procurement,197000.0,380.0,5.79555596768398e-05,,Fire extinguishers,
-AED units,procurement,157000.0,10500.0,4.636444774147185e-05,,AED units,
-Emergency torches,procurement,118000.0,65.0,3.4773335806103885e-05,,Emergency torches,
-First response kits,procurement,79000.0,850.0,2.3182223870735924e-05,,First response kits,
-Hand tools set,procurement,39000.0,950.0,1.1591111935367962e-05,,Hand tools set,
-Enterprise IT Outsourcing,service,65599000.0,9.0,0.038647342995169,,,Enterprise IT Outsourcing
-Product Design and Development Consulting,service,57399000.0,8.5,0.0338164251207729,,,Product Design and Development Consulting
-Global Logistics and Freight Management,service,55349000.0,8.2,0.0326086956521739,,,Global Logistics and Freight Management
-Supply Chain Management Services,service,51249000.0,7.8,0.0301932367149758,,,Supply Chain Management Services
-Large-Scale Manufacturing Automation Support,service,47149000.0,7.6,0.0277777777777777,,,Large-Scale Manufacturing Automation Support
-SAP Enterprise License,service,45099000.0,7.4,0.0265700483091787,,,SAP Enterprise License
-Facility Management Contract,service,43049000.0,7.0,0.0253623188405797,,,Facility Management Contract
-Warehouse Operations Outsourcing,service,40999000.0,6.7,0.0241545893719806,,,Warehouse Operations Outsourcing
-Cloud Infrastructure Subscription,service,38949000.0,6.5,0.0229468599033816,,,Cloud Infrastructure Subscription
-R&D Project Management,service,32799000.0,5.8,0.0193236714975845,,,R&D Project Management
-Regional Distribution Center Lease,service,32799000.0,5.7,0.0193236714975845,,,Regional Distribution Center Lease
-Data Center Co-Location Services,service,30749000.0,5.4,0.0181159420289855,,,Data Center Co-Location Services
-Annual IT Security Audit,service,28699000.0,5.2,0.0169082125603864,,,Annual IT Security Audit
-Workforce Recruitment Process Outsourcing,service,26649000.0,4.9,0.0157004830917874,,,Workforce Recruitment Process Outsourcing
-Brand Licensing Fees,service,26649000.0,4.8,0.0157004830917874,,,Brand Licensing Fees
-Product Safety Testing Services,service,24599000.0,4.7,0.0144927536231884,,,Product Safety Testing Services
-ERP System Maintenance Contract,service,24599000.0,4.6,0.0144927536231884,,,ERP System Maintenance Contract
-SAP Maintenance and Support Fee,service,22550000.0,4.45,0.0132850241545893,,,SAP Maintenance and Support Fee
-ISO 9001 Certification,service,22550000.0,4.35,0.0132850241545893,,,ISO 9001 Certification
-National Advertising Campaign Management,service,20500000.0,4.3,0.0120772946859903,,,National Advertising Campaign Management
-Global HR Outsourcing Contract,service,20500000.0,4.25,0.0120772946859903,,,Global HR Outsourcing Contract
-CRM Platform License,service,20500000.0,4.15,0.0120772946859903,,,CRM Platform License
-Annual Environmental Compliance Audit,service,18450000.0,4.1,0.0108695652173913,,,Annual Environmental Compliance Audit
-National Tax Advisory Retainer,service,18450000.0,4.05,0.0108695652173913,,,National Tax Advisory Retainer
-SAP User License,service,18450000.0,4.0,0.0108695652173913,,,SAP User License
-Packaging Design Consulting,service,16400000.0,3.95,0.0096618357487922,,,Packaging Design Consulting
-Third-Party Logistics Service Fee,service,16400000.0,3.8,0.0096618357487922,,,Third-Party Logistics Service Fee
-Corporate Insurance Premiums,service,16400000.0,3.7,0.0096618357487922,,,Corporate Insurance Premiums
-Enterprise Antivirus Subscription,service,16400000.0,3.6,0.0096618357487922,,,Enterprise Antivirus Subscription
-Annual Product Certification Fee,service,16400000.0,3.55,0.0096618357487922,,,Annual Product Certification Fee
-Energy Procurement Consulting,service,14350000.0,3.5,0.0084541062801932,,,Energy Procurement Consulting
-Strategic Planning Consulting,service,14350000.0,3.4,0.0084541062801932,,,Strategic Planning Consulting
-UK Trade Compliance Services,service,14350000.0,3.35,0.0084541062801932,,,UK Trade Compliance Services
-E-commerce Platform License,service,14350000.0,3.3,0.0084541062801932,,,E-commerce Platform License
-Bulk Printing Services,service,12300000.0,3.25,0.0072463768115942,,,Bulk Printing Services
-Corporate Communication Consulting,service,12300000.0,3.2,0.0072463768115942,,,Corporate Communication Consulting
-Global Payroll Processing Service,service,12300000.0,3.15,0.0072463768115942,,,Global Payroll Processing Service
-Danish Data Protection Legal Support,service,12300000.0,3.1,0.0072463768115942,,,Danish Data Protection Legal Support
-Annual Sustainability Reporting Fee,service,12300000.0,3.05,0.0072463768115942,,,Annual Sustainability Reporting Fee
-Mobile Device Management License,service,12300000.0,3.0,0.0072463768115942,,,Mobile Device Management License
-Market Research Services,service,10250000.0,2.95,0.0060386473429951,,,Market Research Services
-Domestic Freight Forwarding Fees,service,10250000.0,2.9,0.0060386473429951,,,Domestic Freight Forwarding Fees
-Patent Registration Fee,service,10250000.0,2.8,0.0060386473429951,,,Patent Registration Fee
-Corporate Event Production Service,service,10250000.0,2.75,0.0060386473429951,,,Corporate Event Production Service
-Custom Product Mold Production,service,10250000.0,2.7,0.0060386473429951,,,Custom Product Mold Production
-ISO 14001 Certification,service,10250000.0,2.65,0.0060386473429951,,,ISO 14001 Certification
-European Union Regulatory Filing,service,10250000.0,2.6,0.0060386473429951,,,European Union Regulatory Filing
-Annual Corporate Tax Filing Fee,service,8200000.0,2.5,0.0048309178743961,,,Annual Corporate Tax Filing Fee
-Translation and Localization Services,service,8200000.0,2.45,0.0048309178743961,,,Translation and Localization Services
-Cloud Storage License,service,8200000.0,2.4,0.0048309178743961,,,Cloud Storage License
-Corporate Fleet Management Service,service,8200000.0,2.35,0.0048309178743961,,,Corporate Fleet Management Service
-Legal Document Review Service,service,8200000.0,2.25,0.0048309178743961,,,Legal Document Review Service
-Machine Maintenance Contract,service,8200000.0,2.2,0.0048309178743961,,,Machine Maintenance Contract
-Health and Safety Audit,service,8200000.0,2.15,0.0048309178743961,,,Health and Safety Audit
-CCTV Security Monitoring Service,service,8200000.0,2.1,0.0048309178743961,,,CCTV Security Monitoring Service
-Utility Infrastructure Maintenance Fee,service,8200000.0,2.05,0.0048309178743961,,,Utility Infrastructure Maintenance Fee
-IT Disaster Recovery Planning,service,8200000.0,2.0,0.0048309178743961,,,IT Disaster Recovery Planning
-Internal Audit Services,service,8200000.0,1.98,0.0048309178743961,,,Internal Audit Services
-Employee Health Insurance Premium,service,8200000.0,1.96,0.0048309178743961,,,Employee Health Insurance Premium
-Danish Business Registration Fee,service,8200000.0,1.94,0.0048309178743961,,,Danish Business Registration Fee
-High-Volume Telecom Service Contract,service,8200000.0,1.91,0.0048309178743961,,,High-Volume Telecom Service Contract
-Facility Cleaning Contract,service,8200000.0,1.88,0.0048309178743961,,,Facility Cleaning Contract
-Employee Assistance Program Subscription,service,8200000.0,1.85,0.0048309178743961,,,Employee Assistance Program Subscription
-Waste Management Service,service,8200000.0,1.82,0.0048309178743961,,,Waste Management Service
-Product Liability Insurance Fee,service,8200000.0,1.8,0.0048309178743961,,,Product Liability Insurance Fee
-Corporate Travel Insurance,service,8200000.0,1.78,0.0048309178743961,,,Corporate Travel Insurance
-Annual Fire Safety Training,service,8200000.0,1.75,0.0048309178743961,,,Annual Fire Safety Training
-Digital Asset Management License,service,8200000.0,1.72,0.0048309178743961,,,Digital Asset Management License
-Server Hosting Fee,service,8200000.0,1.7,0.0048309178743961,,,Server Hosting Fee
-Annual Network Penetration Testing,service,8200000.0,1.68,0.0048309178743961,,,Annual Network Penetration Testing
-Legal Entity Maintenance Fee,service,8200000.0,1.66,0.0048309178743961,,,Legal Entity Maintenance Fee
-Annual Pension Scheme Administration,service,8200000.0,1.62,0.0048309178743961,,,Annual Pension Scheme Administration
-Customs Broker Service,service,8200000.0,1.6,0.0048309178743961,,,Customs Broker Service
-Annual Copyright Registration Fee,service,8200000.0,1.58,0.0048309178743961,,,Annual Copyright Registration Fee
-Annual Trademarks Renewal,service,8200000.0,1.56,0.0048309178743961,,,Annual Trademarks Renewal
-Time and Attendance Software License,service,8200000.0,1.54,0.0048309178743961,,,Time and Attendance Software License
-Facility Access Control Service,service,8200000.0,1.52,0.0048309178743961,,,Facility Access Control Service
-HRIS Platform License,service,8200000.0,1.5,0.0048309178743961,,,HRIS Platform License
-Microsoft 365 Enterprise License,service,8200000.0,1.48,0.0048309178743961,,,Microsoft 365 Enterprise License
-Foreign Exchange Transaction Fees,service,8200000.0,1.46,0.0048309178743961,,,Foreign Exchange Transaction Fees
-Occupational Health Provider Fee,service,8200000.0,1.42,0.0048309178743961,,,Occupational Health Provider Fee
-Corporate Governance Advisory Retainer,service,6150000.0,1.38,0.0036231884057971,,,Corporate Governance Advisory Retainer
-Graphic Design Agency Retainer,service,6150000.0,1.36,0.0036231884057971,,,Graphic Design Agency Retainer
-Website Hosting Fee,service,6150000.0,1.34,0.0036231884057971,,,Website Hosting Fee
-Digital Marketing Subscription,service,6150000.0,1.32,0.0036231884057971,,,Digital Marketing Subscription
-Executive Training Program Fee,service,6150000.0,1.3,0.0036231884057971,,,Executive Training Program Fee
-Mobile Carrier Corporate Plan,service,6150000.0,1.28,0.0036231884057971,,,Mobile Carrier Corporate Plan
-Annual GDPR Compliance Audit,service,6150000.0,1.26,0.0036231884057971,,,Annual GDPR Compliance Audit
-Document Management Software License,service,6150000.0,1.22,0.0036231884057971,,,Document Management Software License
-Licensing Board Registration Fee,service,6150000.0,1.2,0.0036231884057971,,,Licensing Board Registration Fee
-Cloud Backup Subscription,service,6150000.0,1.16,0.0036231884057971,,,Cloud Backup Subscription
-IT Helpdesk Outsourcing,service,6150000.0,1.14,0.0036231884057971,,,IT Helpdesk Outsourcing
-Corporate Recruitment Platform License,service,6150000.0,1.12,0.0036231884057971,,,Corporate Recruitment Platform License
-Annual Emergency Response Training,service,6150000.0,1.08,0.0036231884057971,,,Annual Emergency Response Training
-Annual Hazardous Waste Disposal Fee,service,6150000.0,1.06,0.0036231884057971,,,Annual Hazardous Waste Disposal Fee
-HR Benefits Administration Fee,service,6150000.0,1.0,0.0036231884057971,,,HR Benefits Administration Fee
-Annual Public Relations Retainer,service,6150000.0,0.98,0.0036231884057971,,,Annual Public Relations Retainer
-Corporate Branding License,service,6150000.0,0.96,0.0036231884057971,,,Corporate Branding License
-Product Recall Insurance Premium,service,6150000.0,0.94,0.0036231884057971,,,Product Recall Insurance Premium
-Facility HVAC Maintenance Fee,service,6150000.0,0.92,0.0036231884057971,,,Facility HVAC Maintenance Fee
-Document Translation Software License,service,6150000.0,0.9,0.0036231884057971,,,Document Translation Software License
-Annual Export Control Audit,service,6150000.0,0.88,0.0036231884057971,,,Annual Export Control Audit
-Annual Water Quality Testing Fee,service,6150000.0,0.84,0.0036231884057971,,,Annual Water Quality Testing Fee
-Enterprise Backup Appliance Maintenance,service,6150000.0,0.82,0.0036231884057971,,,Enterprise Backup Appliance Maintenance
-Annual Cybersecurity Awareness Training,service,6150000.0,0.8,0.0036231884057971,,,Annual Cybersecurity Awareness Training
-Domain Registration Fee,service,6150000.0,0.76,0.0036231884057971,,,Domain Registration Fee
-Customs Clearance Fee,service,6150000.0,0.74,0.0036231884057971,,,Customs Clearance Fee
-Annual Social Media Monitoring Fee,service,6150000.0,0.72,0.0036231884057971,,,Annual Social Media Monitoring Fee
-Annual Market Access Licensing,service,6150000.0,0.68,0.0036231884057971,,,Annual Market Access Licensing
-Annual Mobile Device Audit,service,4100000.0,0.66,0.002415458937198,,,Annual Mobile Device Audit
-Board of Directors Fee,service,4100000.0,0.64,0.002415458937198,,,Board of Directors Fee
-Annual Workplace Ergonomics Assessment,service,4100000.0,0.62,0.002415458937198,,,Annual Workplace Ergonomics Assessment
-Corporate Library Subscription,service,4100000.0,0.6,0.002415458937198,,,Corporate Library Subscription
-Annual Network Equipment Renewal,service,4100000.0,0.56,0.002415458937198,,,Annual Network Equipment Renewal
-Annual Anti-Bribery Compliance Review,service,4100000.0,0.54,0.002415458937198,,,Annual Anti-Bribery Compliance Review
-Annual Cafeteria Service Contract,service,4100000.0,0.52,0.002415458937198,,,Annual Cafeteria Service Contract
-Annual Printer Maintenance Fee,service,4100000.0,0.5,0.002415458937198,,,Annual Printer Maintenance Fee
-Annual Employee Onboarding Training,service,4100000.0,0.48,0.002415458937198,,,Annual Employee Onboarding Training
-Annual Environmental Impact Study,service,4100000.0,0.46,0.002415458937198,,,Annual Environmental Impact Study
-Annual Social Responsibility Certification,service,4100000.0,0.42,0.002415458937198,,,Annual Social Responsibility Certification
-Annual Diversity and Inclusion Training,service,4100000.0,0.4,0.002415458937198,,,Annual Diversity and Inclusion Training
-Annual Payroll Software Subscription,service,4100000.0,0.38,0.002415458937198,,,Annual Payroll Software Subscription
-Annual Timekeeping System License,service,4100000.0,0.36,0.002415458937198,,,Annual Timekeeping System License
-Annual Workstation Health Check,service,4100000.0,0.34,0.002415458937198,,,Annual Workstation Health Check
-Annual Event Sponsorship Fee,service,4100000.0,0.32,0.002415458937198,,,Annual Event Sponsorship Fee
-Annual Cloud Security Audit,service,4100000.0,0.3,0.002415458937198,,,Annual Cloud Security Audit
-Annual Leadership Development Program,service,4100000.0,0.28,0.002415458937198,,,Annual Leadership Development Program
-Annual Email Security Filter License,service,4100000.0,0.26,0.002415458937198,,,Annual Email Security Filter License
-Annual Corporate Social Media License,service,4100000.0,0.24,0.002415458937198,,,Annual Corporate Social Media License
-Annual Industry Membership Fee,service,4100000.0,0.22,0.002415458937198,,,Annual Industry Membership Fee
-Annual Danish Chamber of Commerce Dues,service,4100000.0,0.2,0.002415458937198,,,Annual Danish Chamber of Commerce Dues
-Annual Professional Association Membership,service,4100000.0,0.18,0.002415458937198,,,Annual Professional Association Membership
-Annual Mobile Device Management Fee,service,4100000.0,0.16,0.002415458937198,,,Annual Mobile Device Management Fee
-Annual Telephone Number License,service,4100000.0,0.12,0.002415458937198,,,Annual Telephone Number License
-Annual Postal Licensing Fee,service,4100000.0,0.1,0.002415458937198,,,Annual Postal Licensing Fee
-Annual Vehicle Registration Fee,service,4100000.0,0.08,0.002415458937198,,,Annual Vehicle Registration Fee
-Annual Electric Vehicle Charging Permit,service,4100000.0,0.06,0.002415458937198,,,Annual Electric Vehicle Charging Permit
-Annual Music Licensing Fee,service,4100000.0,0.04,0.002415458937198,,,Annual Music Licensing Fee
-Annual Trademark Monitoring Fee,service,4100000.0,0.02,0.002415458937198,,,Annual Trademark Monitoring Fee
-Annual Copyright Deposit Fee,service,4100000.0,0.01,0.002415458937198,,,Annual Copyright Deposit Fee
+Passenger vehicles,procurement,600916000.0,350000.0,0.2175480769230769,,Passenger vehicles,
+Commercial vans,procurement,215799000.0,275000.0,0.078125,,Commercial vans,
+Electric vehicles,procurement,199199000.0,400000.0,0.0721153846153846,,Electric vehicles,
+Hybrid vehicles,procurement,185919000.0,375000.0,0.0673076923076923,,Hybrid vehicles,
+Vehicle engines,procurement,149399000.0,60000.0,0.0540865384615384,,Vehicle engines,
+Chassis,procurement,99599000.0,55000.0,0.0360576923076923,,Chassis,
+Vehicle batteries,procurement,96279000.0,21000.0,0.0348557692307692,,Vehicle batteries,
+Tires,procurement,86319000.0,1200.0,0.03125,,Tires,
+Car infotainment systems,procurement,69720000.0,6500.0,0.0252403846153846,,Car infotainment systems,
+Air conditioning units,procurement,59760000.0,3000.0,0.0216346153846153,,Air conditioning units,
+Vehicle paint,procurement,56440000.0,800.0,0.0204326923076923,,Vehicle paint,
+Suspension components,procurement,53120000.0,1100.0,0.0192307692307692,,Suspension components,
+Vehicle glass,procurement,43160000.0,2000.0,0.015625,,Vehicle glass,
+Steering systems,procurement,43160000.0,1900.0,0.015625,,Steering systems,
+Exhaust systems,procurement,39840000.0,1500.0,0.0144230769230769,,Exhaust systems,
+Headlights,procurement,39840000.0,1600.0,0.0144230769230769,,Headlights,
+Vehicle seats,procurement,36520000.0,2600.0,0.0132211538461538,,Vehicle seats,
+Car navigation units,procurement,33200000.0,4200.0,0.0120192307692307,,Car navigation units,
+Vehicle sensors,procurement,29880000.0,700.0,0.0108173076923076,,Vehicle sensors,
+Drive shafts,procurement,26560000.0,1200.0,0.0096153846153846,,Drive shafts,
+Wiring harnesses,procurement,26560000.0,750.0,0.0096153846153846,,Wiring harnesses,
+Power steering pumps,procurement,23240000.0,1250.0,0.0084134615384615,,Power steering pumps,
+Vehicle carpets,procurement,23240000.0,850.0,0.0084134615384615,,Vehicle carpets,
+Windshield wipers,procurement,19920000.0,210.0,0.0072115384615384,,Windshield wipers,
+Vehicle mirrors,procurement,19920000.0,450.0,0.0072115384615384,,Vehicle mirrors,
+Oil filters,procurement,19920000.0,80.0,0.0072115384615384,,Oil filters,
+Cabin air filters,procurement,19920000.0,120.0,0.0072115384615384,,Cabin air filters,
+Fuel filters,procurement,19920000.0,110.0,0.0072115384615384,,Fuel filters,
+Transmission fluid,procurement,13280000.0,450.0,0.0048076923076923,,Transmission fluid,
+Bulbs,procurement,13280000.0,70.0,0.0048076923076923,,Bulbs,
+Wheel rims,procurement,13280000.0,1800.0,0.0048076923076923,,Wheel rims,
+Floor mats,procurement,13280000.0,700.0,0.0048076923076923,,Floor mats,
+Vehicle emblems,procurement,9960000.0,250.0,0.0036057692307692,,Vehicle emblems,
+Fuses,procurement,9960000.0,20.0,0.0036057692307692,,Fuses,
+Relays,procurement,9960000.0,90.0,0.0036057692307692,,Relays,
+Door handles,procurement,9960000.0,500.0,0.0036057692307692,,Door handles,
+Bonnet latches,procurement,9960000.0,200.0,0.0036057692307692,,Bonnet latches,
+Tail lights,procurement,9960000.0,1200.0,0.0036057692307692,,Tail lights,
+Parking sensors,procurement,9960000.0,900.0,0.0036057692307692,,Parking sensors,
+Tow bars,procurement,9960000.0,2500.0,0.0036057692307692,,Tow bars,
+Wheel bearings,procurement,6640000.0,700.0,0.0024038461538461,,Wheel bearings,
+Timing belts,procurement,6640000.0,900.0,0.0024038461538461,,Timing belts,
+Fan belts,procurement,6640000.0,200.0,0.0024038461538461,,Fan belts,
+Pulleys,procurement,6640000.0,350.0,0.0024038461538461,,Pulleys,
+Fasteners,procurement,6640000.0,30.0,0.0024038461538461,,Fasteners,
+Clips,procurement,6640000.0,10.0,0.0024038461538461,,Clips,
+Safety boots,procurement,6640000.0,650.0,0.0024038461538461,,Safety boots,
+Protective eyewear,procurement,6640000.0,90.0,0.0024038461538461,,Protective eyewear,
+Hearing protection,procurement,3320000.0,100.0,0.001201923076923,,Hearing protection,
+Workshop towels,procurement,3320000.0,12.0,0.001201923076923,,Workshop towels,
+Hand cleaner,procurement,3320000.0,45.0,0.001201923076923,,Hand cleaner,
+Brake cleaner,procurement,3320000.0,60.0,0.001201923076923,,Brake cleaner,
+Degreaser,procurement,3320000.0,55.0,0.001201923076923,,Degreaser,
+Battery chargers,procurement,3320000.0,2400.0,0.001201923076923,,Battery chargers,
+Workshop tool kits,procurement,3320000.0,4000.0,0.001201923076923,,Workshop tool kits,
+Impact wrenches,procurement,3320000.0,2600.0,0.001201923076923,,Impact wrenches,
+Torque wrenches,procurement,3320000.0,1100.0,0.001201923076923,,Torque wrenches,
+Hydraulic lifts,procurement,3320000.0,85000.0,0.001201923076923,,Hydraulic lifts,
+Wheel balancers,procurement,3320000.0,21000.0,0.001201923076923,,Wheel balancers,
+Jack stands,procurement,3320000.0,350.0,0.001201923076923,,Jack stands,
+Floor jacks,procurement,3320000.0,1800.0,0.001201923076923,,Floor jacks,
+Engine hoists,procurement,3320000.0,11000.0,0.001201923076923,,Engine hoists,
+Diagnostic scanners,procurement,3320000.0,7500.0,0.001201923076923,,Diagnostic scanners,
+Emission testers,procurement,3320000.0,13500.0,0.001201923076923,,Emission testers,
+Wheel alignment systems,procurement,3320000.0,42000.0,0.001201923076923,,Wheel alignment systems,
+Battery testers,procurement,3320000.0,1600.0,0.001201923076923,,Battery testers,
+Parts washers,procurement,3320000.0,5800.0,0.001201923076923,,Parts washers,
+Compressed air systems,procurement,3320000.0,25000.0,0.001201923076923,,Compressed air systems,
+Air hoses,procurement,3320000.0,320.0,0.001201923076923,,Air hoses,
+Workshop lighting,procurement,3320000.0,300.0,0.001201923076923,,Workshop lighting,
+Extension cords,procurement,3320000.0,140.0,0.001201923076923,,Extension cords,
+Mobile tool cabinets,procurement,3320000.0,3800.0,0.001201923076923,,Mobile tool cabinets,
+Storage shelving,procurement,3320000.0,1800.0,0.001201923076923,,Storage shelving,
+Waste oil containers,procurement,3320000.0,1500.0,0.001201923076923,,Waste oil containers,
+Recycling containers,procurement,3320000.0,1050.0,0.001201923076923,,Recycling containers,
+Fire extinguishers,procurement,3320000.0,600.0,0.001201923076923,,Fire extinguishers,
+First aid kits,procurement,3320000.0,450.0,0.001201923076923,,First aid kits,
+Safety signage,procurement,3320000.0,200.0,0.001201923076923,,Safety signage,
+Batteries (AA/AAA),procurement,3320000.0,20.0,0.001201923076923,,Batteries (AA/AAA),
+Mobile phones,procurement,3320000.0,4200.0,0.001201923076923,,Mobile phones,
+Laptops,procurement,3320000.0,6500.0,0.001201923076923,,Laptops,
+Desktop computers,procurement,3320000.0,5200.0,0.001201923076923,,Desktop computers,
+Printers,procurement,3320000.0,2100.0,0.001201923076923,,Printers,
+Copiers,procurement,3320000.0,8500.0,0.001201923076923,,Copiers,
+Monitors,procurement,3320000.0,1800.0,0.001201923076923,,Monitors,
+Keyboards,procurement,3320000.0,220.0,0.001201923076923,,Keyboards,
+Computer mice,procurement,3320000.0,110.0,0.001201923076923,,Computer mice,
+USB drives,procurement,3320000.0,88.0,0.001201923076923,,USB drives,
+Toner cartridges,procurement,3320000.0,700.0,0.001201923076923,,Toner cartridges,
+Printer paper,procurement,3320000.0,35.0,0.001201923076923,,Printer paper,
+Envelopes,procurement,3320000.0,4.0,0.001201923076923,,Envelopes,
+Business cards,procurement,3320000.0,1.0,0.001201923076923,,Business cards,
+Letterhead paper,procurement,3320000.0,6.0,0.001201923076923,,Letterhead paper,
+Notebooks,procurement,3320000.0,14.0,0.001201923076923,,Notebooks,
+Pencils,procurement,3320000.0,2.0,0.001201923076923,,Pencils,
+Highlighters,procurement,3320000.0,7.0,0.001201923076923,,Highlighters,
+Staplers,procurement,3320000.0,65.0,0.001201923076923,,Staplers,
+Paper clips,procurement,3320000.0,1.0,0.001201923076923,,Paper clips,
+Binder clips,procurement,3320000.0,5.0,0.001201923076923,,Binder clips,
+Binders,procurement,3320000.0,28.0,0.001201923076923,,Binders,
+Desk organizers,procurement,3320000.0,75.0,0.001201923076923,,Desk organizers,
+Markers,procurement,3320000.0,8.0,0.001201923076923,,Markers,
+Desk chairs,procurement,3320000.0,980.0,0.001201923076923,,Desk chairs,
+Desks,procurement,3320000.0,2400.0,0.001201923076923,,Desks,
+Meeting tables,procurement,3320000.0,3800.0,0.001201923076923,,Meeting tables,
+Bookcases,procurement,3320000.0,1100.0,0.001201923076923,,Bookcases,
+Coat racks,procurement,3320000.0,350.0,0.001201923076923,,Coat racks,
+Water dispensers,procurement,3320000.0,900.0,0.001201923076923,,Water dispensers,
+Tea bags,procurement,3320000.0,18.0,0.001201923076923,,Tea bags,
+Bottled water,procurement,3320000.0,8.0,0.001201923076923,,Bottled water,
+Milk (office use),procurement,3320000.0,11.0,0.001201923076923,,Milk (office use),
+Hand soap,procurement,3320000.0,12.0,0.001201923076923,,Hand soap,
+Paper towels,procurement,3320000.0,18.0,0.001201923076923,,Paper towels,
+Toilet paper,procurement,3320000.0,6.0,0.001201923076923,,Toilet paper,
+Dishwasher tablets,procurement,3320000.0,50.0,0.001201923076923,,Dishwasher tablets,
+Waste bins,procurement,3320000.0,180.0,0.001201923076923,,Waste bins,
+Waste bags,procurement,3320000.0,4.0,0.001201923076923,,Waste bags,
+Batteries (office),procurement,3320000.0,20.0,0.001201923076923,,Batteries (office),
+Extension leads (office),procurement,3320000.0,110.0,0.001201923076923,,Extension leads (office),
+WiFi routers,procurement,3320000.0,850.0,0.001201923076923,,WiFi routers,
+Enterprise IT Outsourcing Contract,service,85299000.0,4.5,0.061761072878066,,,Enterprise IT Outsourcing Contract
+Managed Data Center Services,service,80425000.0,3.8,0.0582318687136051,,,Managed Data Center Services
+Global SAP ERP License,service,75550000.0,3.2,0.0547026645491441,,,Global SAP ERP License
+Outsourced Payroll Processing,service,65802000.0,1.95,0.0476442562202223,,,Outsourced Payroll Processing
+Fleet Vehicle Leasing,service,63365000.0,2.5,0.0458796541379918,,,Fleet Vehicle Leasing
+IT Infrastructure Support Retainer,service,60928000.0,1.7,0.0441150520557614,,,IT Infrastructure Support Retainer
+Annual Cybersecurity Audit,service,53616000.0,1.3,0.03882124580907,,,Annual Cybersecurity Audit
+Cloud Computing Services (Azure),service,51179000.0,1.4,0.0370566437268396,,,Cloud Computing Services (Azure)
+Comprehensive Insurance Premiums,service,46305000.0,1.2,0.0335274395623786,,,Comprehensive Insurance Premiums
+HR Recruitment Process Outsourcing,service,41431000.0,0.9,0.0299982353979177,,,HR Recruitment Process Outsourcing
+Data Warehousing Solutions,service,38994000.0,0.95,0.0282336333156873,,,Data Warehousing Solutions
+External Audit Services,service,36557000.0,1.05,0.0264690312334568,,,External Audit Services
+Software Maintenance Agreement,service,34120000.0,0.87,0.0247044291512264,,,Software Maintenance Agreement
+Digital Transformation Consulting,service,31682000.0,0.85,0.0229398270689959,,,Digital Transformation Consulting
+Annual Network Penetration Test,service,29245000.0,0.7,0.0211752249867654,,,Annual Network Penetration Test
+Custom Software Development Project,service,29245000.0,0.8,0.0211752249867654,,,Custom Software Development Project
+Warehouse Logistics Contract,service,26808000.0,0.78,0.019410622904535,,,Warehouse Logistics Contract
+Annual Environmental Compliance Fee,service,26808000.0,0.69,0.019410622904535,,,Annual Environmental Compliance Fee
+Microsoft Enterprise Agreement,service,24371000.0,0.59,0.0176460208223045,,,Microsoft Enterprise Agreement
+Marketing Agency Retainer,service,24371000.0,0.52,0.0176460208223045,,,Marketing Agency Retainer
+Business Continuity Services,service,21934000.0,0.53,0.0158814187400741,,,Business Continuity Services
+Telecommunications Infrastructure Lease,service,21934000.0,0.31,0.0158814187400741,,,Telecommunications Infrastructure Lease
+IT Disaster Recovery Services,service,17060000.0,0.39,0.0123522145756132,,,IT Disaster Recovery Services
+SAP Business Analytics License,service,17060000.0,0.34,0.0123522145756132,,,SAP Business Analytics License
+Customs Brokerage Services,service,14623000.0,0.25,0.0105876124933827,,,Customs Brokerage Services
+Payroll Software Subscription,service,14623000.0,0.31,0.0105876124933827,,,Payroll Software Subscription
+Data Privacy Consulting,service,14623000.0,0.295,0.0105876124933827,,,Data Privacy Consulting
+ISO Certification Audit Fee,service,14623000.0,0.275,0.0105876124933827,,,ISO Certification Audit Fee
+SAP Support and Maintenance,service,12186000.0,0.26,0.0088230104111522,,,SAP Support and Maintenance
+Enterprise Antivirus License,service,12186000.0,0.185,0.0088230104111522,,,Enterprise Antivirus License
+Annual Fire Safety Inspection,service,12186000.0,0.19,0.0088230104111522,,,Annual Fire Safety Inspection
+Employee Assistance Programme,service,12186000.0,0.2,0.0088230104111522,,,Employee Assistance Programme
+IT Asset Disposal Service,service,9748000.0,0.1,0.0070584083289218,,,IT Asset Disposal Service
+Annual GDPR Compliance Audit,service,9748000.0,0.17,0.0070584083289218,,,Annual GDPR Compliance Audit
+Electrical Systems Maintenance,service,9748000.0,0.12,0.0070584083289218,,,Electrical Systems Maintenance
+Annual Building Security Assessment,service,9748000.0,0.145,0.0070584083289218,,,Annual Building Security Assessment
+Annual Legal Compliance Training,service,9748000.0,0.11,0.0070584083289218,,,Annual Legal Compliance Training
+Personal Data Handling License,service,9748000.0,0.08,0.0070584083289218,,,Personal Data Handling License
+Internal Controls Assessment,service,7311000.0,0.085,0.0052938062466913,,,Internal Controls Assessment
+Annual Tax Advisory Services,service,7311000.0,0.16,0.0052938062466913,,,Annual Tax Advisory Services
+Annual Shareholder Meeting Fee,service,7311000.0,0.14,0.0052938062466913,,,Annual Shareholder Meeting Fee
+Annual Waste Disposal Contract,service,7311000.0,0.11,0.0052938062466913,,,Annual Waste Disposal Contract
+Annual Energy Efficiency Audit,service,7311000.0,0.09,0.0052938062466913,,,Annual Energy Efficiency Audit
+Digital Marketing Platform License,service,7311000.0,0.13,0.0052938062466913,,,Digital Marketing Platform License
+Professional Indemnity Insurance,service,7311000.0,0.125,0.0052938062466913,,,Professional Indemnity Insurance
+E-learning Platform Subscription,service,7311000.0,0.09,0.0052938062466913,,,E-learning Platform Subscription
+Annual HR Policy Review,service,7311000.0,0.075,0.0052938062466913,,,Annual HR Policy Review
+Outsourced Call Center Service,service,7311000.0,0.35,0.0052938062466913,,,Outsourced Call Center Service
+Annual Food Safety Inspection,service,4874000.0,0.08,0.0035292041644609,,,Annual Food Safety Inspection
+IT Helpdesk Outsourcing Fee,service,4874000.0,0.4,0.0035292041644609,,,IT Helpdesk Outsourcing Fee
+Remote Work Collaboration Suite License,service,4874000.0,0.095,0.0035292041644609,,,Remote Work Collaboration Suite License
+External Recruitment Agency Fee,service,4874000.0,0.33,0.0035292041644609,,,External Recruitment Agency Fee
+Annual Fleet Vehicle Registration Fee,service,4874000.0,0.065,0.0035292041644609,,,Annual Fleet Vehicle Registration Fee
+Annual Intellectual Property Review,service,4874000.0,0.105,0.0035292041644609,,,Annual Intellectual Property Review
+Secure Print Management License,service,4874000.0,0.06,0.0035292041644609,,,Secure Print Management License
+Annual Safety Training Programme,service,4874000.0,0.075,0.0035292041644609,,,Annual Safety Training Programme
+Time and Attendance System License,service,4874000.0,0.065,0.0035292041644609,,,Time and Attendance System License
+Annual Sustainability Report Fee,service,4874000.0,0.1,0.0035292041644609,,,Annual Sustainability Report Fee
+Health and Safety Compliance Fee,service,4874000.0,0.06,0.0035292041644609,,,Health and Safety Compliance Fee
+Annual Internal Audit Services,service,4874000.0,0.195,0.0035292041644609,,,Annual Internal Audit Services
+Corporate Web Hosting,service,4874000.0,0.04,0.0035292041644609,,,Corporate Web Hosting
+Internal Communication Platform License,service,2437000.0,0.055,0.0017646020822304,,,Internal Communication Platform License
+Annual Workplace Ergonomics Assessment,service,2437000.0,0.07,0.0017646020822304,,,Annual Workplace Ergonomics Assessment
+Annual Hazardous Material Disposal,service,2437000.0,0.06,0.0017646020822304,,,Annual Hazardous Material Disposal
+Annual Utility Contract Management Fee,service,2437000.0,0.065,0.0017646020822304,,,Annual Utility Contract Management Fee
+Annual Worker’s Compensation Insurance,service,2437000.0,0.07,0.0017646020822304,,,Annual Worker’s Compensation Insurance
+Annual Internal Whistleblower Hotline,service,2437000.0,0.04,0.0017646020822304,,,Annual Internal Whistleblower Hotline
+SAP User Access License,service,2437000.0,0.038,0.0017646020822304,,,SAP User Access License
+Annual Local Business Permit,service,2437000.0,0.03,0.0017646020822304,,,Annual Local Business Permit
+Annual Cloud Cost Optimization Audit,service,2437000.0,0.045,0.0017646020822304,,,Annual Cloud Cost Optimization Audit
+Annual Customer Satisfaction Survey,service,2437000.0,0.028,0.0017646020822304,,,Annual Customer Satisfaction Survey
+Annual Regulatory Filing Fee,service,2437000.0,0.025,0.0017646020822304,,,Annual Regulatory Filing Fee
+Annual Archive Storage Fee,service,2437000.0,0.035,0.0017646020822304,,,Annual Archive Storage Fee
+Annual Board Member Remuneration Fee,service,2437000.0,0.13,0.0017646020822304,,,Annual Board Member Remuneration Fee
+Annual Telecom Regulatory Fee,service,2437000.0,0.045,0.0017646020822304,,,Annual Telecom Regulatory Fee
+Annual Document Shredding Service,service,2437000.0,0.02,0.0017646020822304,,,Annual Document Shredding Service
+Annual Training Materials License,service,2437000.0,0.032,0.0017646020822304,,,Annual Training Materials License
+Remote Access VPN License,service,1950000.0,0.022,0.0014116816657843,,,Remote Access VPN License
+Annual Digital Certificate Renewal,service,1950000.0,0.01,0.0014116816657843,,,Annual Digital Certificate Renewal
+Annual Software Subscription Renewal,service,1950000.0,0.018,0.0014116816657843,,,Annual Software Subscription Renewal
+Annual Financial Regulator License,service,1950000.0,0.026,0.0014116816657843,,,Annual Financial Regulator License
+Annual Company Registration Fee,service,1950000.0,0.035,0.0014116816657843,,,Annual Company Registration Fee
+Annual Local Government Environmental Fee,service,1950000.0,0.02,0.0014116816657843,,,Annual Local Government Environmental Fee
+Annual Print Supplies Service,service,1706000.0,0.018,0.0012352214575613,,,Annual Print Supplies Service
+Annual Mobile App Store License,service,1706000.0,0.015,0.0012352214575613,,,Annual Mobile App Store License
+Annual Exhibition Participation Fee,service,1706000.0,0.06,0.0012352214575613,,,Annual Exhibition Participation Fee
+Annual Staff ID Card Printing,service,1706000.0,0.008,0.0012352214575613,,,Annual Staff ID Card Printing
+Annual Driving License Check,service,1706000.0,0.012,0.0012352214575613,,,Annual Driving License Check
+Annual Fire Alarm System License,service,1462000.0,0.015,0.0010587612493382,,,Annual Fire Alarm System License
+Annual Postal Meter License,service,1462000.0,0.01,0.0010587612493382,,,Annual Postal Meter License
+Annual Visitor Management License,service,1462000.0,0.009,0.0010587612493382,,,Annual Visitor Management License
+Annual Bank Account Maintenance Fee,service,1462000.0,0.017,0.0010587612493382,,,Annual Bank Account Maintenance Fee
+Annual Elevator Inspection Fee,service,1219000.0,0.012,0.0008823010411152,,,Annual Elevator Inspection Fee
+Annual Energy Consumption Report Fee,service,1219000.0,0.015,0.0008823010411152,,,Annual Energy Consumption Report Fee
+Annual Meeting Room Booking License,service,1219000.0,0.008,0.0008823010411152,,,Annual Meeting Room Booking License
+Annual Employee Gift Tax Fee,service,1219000.0,0.005,0.0008823010411152,,,Annual Employee Gift Tax Fee
+Annual Event License Fee,service,1219000.0,0.01,0.0008823010411152,,,Annual Event License Fee
+Annual Bike Parking License,service,1219000.0,0.004,0.0008823010411152,,,Annual Bike Parking License
+Annual Digital Archiving License,service,1219000.0,0.009,0.0008823010411152,,,Annual Digital Archiving License
+Annual Print Advertising Fee,service,1219000.0,0.012,0.0008823010411152,,,Annual Print Advertising Fee

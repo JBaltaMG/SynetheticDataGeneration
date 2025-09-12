@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from generators.random_generators import generate_dim_date, generate_document_metadata
-
+from schemas.date_schemas import schema_constant_balanced
 
 def estimate_costs_from_payroll(
     df_pay: pd.DataFrame,
@@ -15,6 +15,7 @@ def estimate_costs_from_payroll(
     """
     temp_df = df_pay[df_pay["line_id"] == "Monthly-pay"]
     total_payroll = temp_df["amount"].sum()
+    total_payroll = total_payroll/10
 
     return {
         "estimated_payroll": total_payroll,
@@ -116,48 +117,116 @@ def pre_split_spend_lines(
 
     return pd.DataFrame(line_items)
 
-def create_erp_data(
-    df_expenses: pd.DataFrame,
-    df_expenses_mapping: pd.DataFrame,
-    df_document_metadata: pd.DataFrame
+def split_qty(
+    df: pd.DataFrame,
+    df_date: pd.DataFrame,
+    *,
+    max_qty: int = 100,
+    business_days_only: bool = False,
+    random_state: int | None = 42,
 ) -> pd.DataFrame:
     """
-    Create ERP journal lines from spend data and mapping.
-    Expenses are negative, revenues are positive. No balancing logic.
+    Split rows with quantity > max_qty into multiple rows (<= max_qty).
+    Spread split rows evenly across months (per YEAR), assign each split
+    a random existing document_number (no suffixes), and preserve totals.
+
+    Pre-step:
+        If quantity > 10000, divide both quantity and amount by 100.
+
+    Required df columns: 'document_number','date','amount','quantity'
+    Optional: 'unit_price' (if present, amounts are recomputed as unit_price * quantity)
+    df_date must have a 'date' column defining the calendar to sample from.
     """
-    df_expenses = assign_split_count(df_expenses)
-    df_date = generate_dim_date(year_start=2020, year_end=2025)
+    df = df.copy()
 
-    df = pre_split_spend_lines(
-        df_spend=df_expenses,
-        df_mapping=df_expenses_mapping,
-        n_lines_per_item=30
-    )
+    # --- scale adjustment at the start ---
+    if "quantity" in df.columns:
+        mask = df["quantity"] > 10000
+        df.loc[mask, "quantity"] = df.loc[mask, "quantity"] / 100
+        df.loc[mask, "amount"]   = df.loc[mask, "amount"] / 100
 
-    # Assign document number, date, and currency randomly (no balancing)
-    df["currency"] = np.random.choice(df_document_metadata["currency"], size=len(df), replace=True)
-    df["document_number"] = np.random.choice(df_document_metadata["document_number"], size=len(df), replace=True)
-    df["date"] = np.random.choice(df_date["date"], size=len(df), replace=True)
+    rng = np.random.default_rng(random_state)
+    cols = df.columns.tolist()
+    out_rows = []
 
-    df['quantity'] = np.ceil(df['amount'] / df['unit_price'])
+    # --- build business-day calendar grouped by Year-Month ---
+    cal = pd.DataFrame({"date": pd.to_datetime(df_date["date"])})
+    if business_days_only:
+        cal = cal[cal["date"].dt.dayofweek < 5]  # Mon-Fri only
+    cal["YM"] = cal["date"].dt.to_period("M")
+    dates_by_month: dict[pd.Period, np.ndarray] = {
+        ym: grp["date"].values for ym, grp in cal.groupby("YM")
+    }
 
-    if df["service_id"].isna().all():   # all values are NaN
-        df['amount'] = df['unit_price'] * df['quantity']
+    # global per-year month usage to keep splits even
+    usage: dict[int, dict[pd.Period, int]] = {}
 
-    df['quantity'] = abs(df['quantity'])
+    def choose_month_for_year(year: int) -> pd.Period:
+        # months that exist in calendar for this year
+        candidates = sorted([ym for ym in dates_by_month.keys() if ym.start_time.year == year])
+        if not candidates:
+            candidates = sorted(dates_by_month.keys())
+            if not candidates:
+                return pd.Timestamp(year=year, month=1, day=1).to_period("M")
 
-    # Final output columns
-    cols = ['document_number', 'date', 'currency', 'amount', 'quantity', 'type',
-            'account_id', 'account_name', 'product_id', 'procurement_id', 'service_id']
+        usage.setdefault(year, {})
+        for ym in candidates:
+            usage[year].setdefault(ym, 0)
 
-    if "department_name" in df.columns:
-        cols.append("department_name")
-    if "customer_name" in df.columns:
-        cols.append("customer_name")
-    if "vendor_name" in df.columns:
-        cols.append("vendor_name")
+        ym_pick = min(candidates, key=lambda m: usage[year][m])
+        usage[year][ym_pick] += 1
+        return ym_pick
 
-    return df[cols]
+    def pick_date_in_month(ym: pd.Period, fallback_date: pd.Timestamp) -> pd.Timestamp:
+        arr = dates_by_month.get(ym)
+        if arr is not None and len(arr) > 0:
+            return pd.Timestamp(arr[rng.integers(0, len(arr))])
+        # fallback to same year if no days in that month
+        year_mask = cal["date"].dt.year == ym.start_time.year
+        cand = cal.loc[year_mask, "date"].values
+        if len(cand) > 0:
+            return pd.Timestamp(cand[rng.integers(0, len(cand))])
+        return pd.Timestamp(fallback_date)
+
+    doc_pool = df["document_number"].dropna().astype(str).unique()
+    has_unit_price = "unit_price" in df.columns
+
+    for _, row in df.iterrows():
+        qty = float(row["quantity"])
+        amt = float(row["amount"])
+        orig_date = pd.to_datetime(row["date"])
+        year = orig_date.year
+
+        if qty <= max_qty:
+            out_rows.append(row.to_dict())
+            continue
+
+        # quantities per split
+        n_parts = int(np.ceil(qty / max_qty))
+        qty_splits = [max_qty] * (n_parts - 1) + [qty - max_qty * (n_parts - 1)]
+
+        # amounts per split
+        if has_unit_price and pd.notna(row["unit_price"]):
+            unit_price = float(row["unit_price"])
+            split_amts = [unit_price * q for q in qty_splits]
+            split_amts[-1] += amt - sum(split_amts)  # drift correction
+        else:
+            split_amts = [amt * (q / qty) for q in qty_splits]
+            split_amts[-1] += amt - sum(split_amts)
+
+        for q_i, a_i in zip(qty_splits, split_amts):
+            ym = choose_month_for_year(year)
+            new_date = pick_date_in_month(ym, orig_date)
+            new_doc = str(rng.choice(doc_pool)) if len(doc_pool) else row["document_number"]
+
+            child = row.to_dict()
+            child["document_number"] = new_doc
+            child["date"] = new_date
+            child["quantity"] = q_i
+            child["amount"] = a_i
+            out_rows.append(child)
+
+    return pd.DataFrame(out_rows, columns=cols)
 
 def balance_documents_with_assets(
     df_erp: pd.DataFrame,
@@ -256,3 +325,58 @@ def balance_documents_with_assets(
         df = pd.concat([df, pd.DataFrame(correction_rows)], ignore_index=True)
 
     return df
+
+def create_erp_data(
+    df_expenses: pd.DataFrame,
+    df_expenses_mapping: pd.DataFrame,
+    df_document_metadata: pd.DataFrame,
+    date_schema,
+) -> pd.DataFrame:
+    """
+    Create ERP journal lines from spend data and mapping.
+    Expenses are negative, revenues are positive. No balancing logic.
+    """
+    df_expenses = assign_split_count(df_expenses)
+    df_date = generate_dim_date(year_start=2022, year_end=2025)
+    
+    df = pre_split_spend_lines(
+        df_spend=df_expenses,
+        df_mapping=df_expenses_mapping,
+        n_lines_per_item=20
+    )
+
+    df[["date", "amount"]] = date_schema(
+        df_date=df_date,
+        amounts=df["amount"],
+        noise_pct=0.05,
+        random_state=42,
+    )
+
+    # Assign document number, date, and currency randomly (no balancing)
+    df["currency"] = np.random.choice(df_document_metadata["currency"], size=len(df), replace=True)
+    df["document_number"] = np.random.choice(df_document_metadata["document_number"], size=len(df), replace=True)
+
+    df['quantity'] = np.ceil(df['amount'] / df['unit_price'])
+    df['quantity'] = abs(df['quantity'])
+
+    df = split_qty(
+        df=df,
+        df_date=df_date,
+        max_qty=100,
+        random_state=42,
+    )
+
+    df['amount'] = df['unit_price'] * df['quantity']
+    
+    # Final output columns
+    cols = ['document_number', 'date', 'currency', 'amount', 'quantity', 'unit_price', 'type',
+            'account_id', 'account_name', 'product_id', 'procurement_id', 'service_id']
+
+    if "department_name" in df.columns:
+        cols.append("department_name")
+    if "customer_name" in df.columns:
+        cols.append("customer_name")
+    if "vendor_name" in df.columns:
+        cols.append("vendor_name")
+        
+    return df[cols]

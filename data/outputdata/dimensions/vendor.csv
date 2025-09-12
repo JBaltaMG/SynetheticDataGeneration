@@ -1,76 +1,61 @@
 vendor_id,name,vendor_type,proportionality
-20,TotalEnergies Polymers,Raw Materials,0.10282776349614399
-21,Covestro Deutschland AG,Raw Materials,0.08997429305912599
-22,Wanhua Chemical Group,Raw Materials,0.051413881748071995
-23,DOW Polycarbonate,Raw Materials,0.03856041131105399
-24,Evonik Industries AG,Raw Materials,0.03856041131105399
-25,Sumitomo Chemical Europe,Raw Materials,0.025706940874035997
-26,LyondellBasell Industries,Raw Materials,0.025706940874035997
-27,PolyOne Corporation,Raw Materials,0.012853470437017999
-28,Clariant Colorants,Raw Materials,0.012853470437017999
-29,Songwon International AG,Raw Materials,0.012853470437017999
-30,Akzo Nobel Polymers,Raw Materials,0.012853470437017999
-31,Lanxess AG,Raw Materials,0.012853470437017999
-32,Archroma Management LLC,Raw Materials,0.012853470437017999
-33,ENGEL Austria GmbH,Equipment,0.044987146529562996
-34,Arburg GmbH + Co KG,Equipment,0.025706940874035997
-35,Sumitomo (SHI) Demag,Equipment,0.015424164524421599
-36,Wittmann Battenfeld,Equipment,0.012853470437017999
-37,Sidel Group,Equipment,0.012853470437017999
-38,Piovan Group,Equipment,0.011568123393316197
-39,Sepro Group,Equipment,0.007712082262210799
-40,Festo AG & Co. KG,Equipment,0.007712082262210799
-41,Rockwell Automation Inc.,Equipment,0.006426735218508999
-42,Atlas Copco A/S,Equipment,0.005141388174807199
-43,FIPA GmbH,Equipment,0.0038560411311053997
-44,KUKA Robotics,Equipment,0.0038560411311053997
-45,Siemens Digital Industries,IT Services,0.032133676092545
-46,Microsoft Denmark ApS,IT Services,0.015424164524421599
-47,Capgemini Danmark,IT Services,0.012853470437017999
-48,T-Systems Nordic,IT Services,0.007712082262210799
-49,Accenture Denmark,IT Services,0.007712082262210799
-50,NTT Data Denmark,IT Services,0.0038560411311053997
-51,Cegid SAS,IT Services,0.0025706940874035997
-52,Netcompany Group,IT Services,0.0025706940874035997
-53,Kuehne + Nagel A/S,Logistics,0.025706940874035997
-54,Maersk Logistics,Logistics,0.023136246786632394
-55,DB Schenker Scandinavia,Logistics,0.019280205655526995
-56,GEODIS Denmark,Logistics,0.014138817480719797
-57,Bring Danmark,Logistics,0.008997429305912599
-58,Hellmann Worldwide Logistics,Logistics,0.006426735218508999
-59,Blue Water Shipping,Logistics,0.005141388174807199
-60,PostNord Danmark,Logistics,0.0038560411311053997
-61,Freja Transport & Logistics,Logistics,0.0025706940874035997
-62,Danske Fragtmænd,Logistics,0.0025706940874035997
-63,ISS Facility Services Denmark,Facilities,0.025706940874035997
-64,Sodexo Danmark,Facilities,0.012853470437017999
-65,Initial Danmark A/S,Facilities,0.007712082262210799
-66,REN KBH ApS,Facilities,0.005141388174807199
-67,G4S Danmark,Facilities,0.0038560411311053997
-68,Lyreco Danmark A/S,Office Supplies,0.010282776349614399
-69,Office Depot Denmark,Office Supplies,0.007712082262210799
-70,Staples Denmark,Office Supplies,0.005141388174807199
-71,Nordic Office Supplies,Office Supplies,0.0025706940874035997
-72,Papyrus A/S,Office Supplies,0.0025706940874035997
-73,Jysk Kontorcenter,Office Supplies,0.0019280205655526998
-74,Canon Danmark A/S,Office Supplies,0.0012853470437017998
-75,Adecco Denmark,Contract Labor,0.012853470437017999
-76,ManpowerGroup Denmark,Contract Labor,0.011568123393316197
-77,Randstad Denmark,Contract Labor,0.010282776349614399
-78,Kelly Services Denmark,Contract Labor,0.006426735218508999
-79,Moment A/S,Contract Labor,0.0038560411311053997
-80,Tempu A/S,Contract Labor,0.0025706940874035997
-81,Mercuri Urval Denmark,Consulting,0.015424164524421599
-82,Boston Consulting Group Denmark,Consulting,0.012853470437017999
-83,McKinsey & Company Denmark,Consulting,0.010282776349614399
-84,KPMG Denmark,Consulting,0.007712082262210799
-85,EY Denmark,Consulting,0.005141388174807199
-86,Deloitte Denmark,Consulting,0.0038560411311053997
-87,Qvartz (Bain Nordics),Consulting,0.0012853470437017998
-88,Morson Projects,Contract Labor,0.0006426735218508999
-89,AFRY Denmark,Consulting,0.0006426735218508999
-90,Xellia Pharmaceuticals ApS,Facilities,0.0006426735218508999
-91,Unger Steel Group,Equipment,0.0006426735218508999
-92,Imtech Nordic,Facilities,0.0006426735218508999
-93,Schneider Electric Danmark,IT Services,0.0006426735218508999
-94,Würth Denmark A/S,Office Supplies,0.0006426735218508999
+20,SKF Danmark A/S,Raw Materials,0.0373134328358209
+21,Nordic Steel Supplies,Raw Materials,0.031606672519754166
+22,ArcelorMittal Denmark,Raw Materials,0.02985074626865672
+23,Celsa Steel Service A/S,Raw Materials,0.021949078138718176
+24,Stena Recycling A/S,Raw Materials,0.019754170324846356
+25,Icopal Danmark,Raw Materials,0.015803336259877083
+26,Brdr. Dahl A/S,Raw Materials,0.014047410008779631
+27,Lemvigh-Müller A/S,Raw Materials,0.013169446883230903
+28,NCC Industry,Raw Materials,0.012291483757682178
+29,Owens Corning Nordics,Raw Materials,0.010535557506584723
+30,Dansk Glasimport A/S,Raw Materials,0.009218612818261633
+31,ABB A/S,Equipment,0.03950834064969271
+32,Siemens Danmark,Equipment,0.035996488147497806
+33,Bosch Rexroth Danmark,Equipment,0.033362598770851626
+34,KUKA Nordic,Equipment,0.03204565408252853
+35,Jungheinrich Danmark,Equipment,0.02897278314310799
+36,Danfoss A/S,Equipment,0.025899912203687443
+37,Atlas Copco Danmark,Equipment,0.023266022827041263
+38,Sika Danmark A/S,Equipment,0.021071115013169446
+39,Hako Danmark A/S,Equipment,0.01887620719929763
+40,Kärcher A/S,Equipment,0.016681299385425813
+41,Nilfisk A/S,Equipment,0.015364354697102723
+42,Toyota Material Handling,Equipment,0.012730465320456541
+43,Scanvaegt Systems A/S,Equipment,0.010974539069359088
+44,Bila A/S,Equipment,0.009218612818261633
+45,CGI Danmark,IT Services,0.026338893766461806
+46,NNIT A/S,IT Services,0.0228270412642669
+47,KMD A/S,IT Services,0.019754170324846356
+48,Atea Danmark A/S,IT Services,0.018437225636523266
+49,Netcompany A/S,IT Services,0.016242317822651446
+50,IT Relation A/S,IT Services,0.013169446883230903
+51,Visma Consulting,IT Services,0.010974539069359088
+52,Columbus Global,IT Services,0.009218612818261633
+53,TDC Erhverv,IT Services,0.007023705004389816
+54,Freja Transport & Logistics A/S,Logistics,0.023705004389815626
+55,Blue Water Shipping A/S,Logistics,0.020632133450395083
+56,JH Container Transport,Logistics,0.017998244073748903
+57,Frode Laursen A/S,Logistics,0.014047410008779631
+58,Bring Danmark,Logistics,0.01141352063213345
+59,ISS Facility Services A/S,Facilities,0.0228270412642669
+60,Coor Service Management,Facilities,0.020632133450395083
+61,Danren Bogdol A/S,Facilities,0.016681299385425813
+62,NCC Property Development,Facilities,0.01492537313432836
+63,Forenede Service A/S,Facilities,0.012730465320456541
+64,Berendsen Textil Service,Facilities,0.010535557506584723
+65,OfficeTeam Danmark,Office Supplies,0.012291483757682178
+66,Paperflow A/S,Office Supplies,0.008340649692712906
+67,Adecco Danmark A/S,Contract Labor,0.014486391571553995
+68,Randstad A/S,Contract Labor,0.012730465320456541
+69,Moment A/S,Contract Labor,0.01141352063213345
+70,ManpowerGroup Danmark,Contract Labor,0.007901668129938541
+71,Mercuri Urval A/S,Consulting,0.011852502194907813
+72,Deloitte Denmark,Consulting,0.00877963125548727
+73,Implement Consulting Group,Consulting,0.008340649692712906
+74,Bain & Company Nordics,Consulting,0.00746268656716418
+75,McKinsey & Company Denmark,Consulting,0.0065847234416154515
+76,Valcon A/S,Consulting,0.005706760316066725
+77,Qvartz Management,Consulting,0.0052677787532923615
+78,PA Consulting Group,Consulting,0.004828797190517998
+79,Ramboll Management Consulting,Consulting,0.004389815627743635
