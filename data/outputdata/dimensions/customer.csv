@@ -1,56 +1,51 @@
 customer_id,name,customer_segment,proportionality
-10,Walmart,Retail,0.1347068145800317
-11,"Toys ""R"" Us",Retail,0.11093502377179082
-12,Costco,Wholesale,0.07131537242472266
-13,John Lewis,Retail,0.03961965134706815
-14,Carrefour,Wholesale,0.04754358161648177
-15,Kroger,Retail,0.03961965134706815
-16,Tesco,Wholesale,0.05546751188589541
-17,Smyths Toys,Retail,0.03486529318541996
-18,Big W,Retail,0.03169572107765452
-19,Hamleys,Retail,0.03169572107765452
-20,The Entertainer,Retail,0.023771790808240885
-21,Auchan,Wholesale,0.03169572107765452
-22,El Corte Inglés,Retail,0.023771790808240885
-23,Macy’s,Retail,0.020602218700475433
-24,Myer,Retail,0.01901743264659271
-25,Argos,Retail,0.02694136291600634
-26,Meijer,Retail,0.01901743264659271
-27,Woolworths Group,Wholesale,0.01901743264659271
-28,Sam’s Club,Wholesale,0.028526148969889063
-29,Science Museum Group,Non-profit,0.003169572107765452
-30,The LEGO Store Cologne,Retail,0.004754358161648178
-31,The LEGO Store Dubai,Retail,0.004754358161648178
-32,The LEGO Store Paris,Retail,0.004754358161648178
-33,The LEGO Store London,Retail,0.006339144215530904
-34,Zappos,Retail,0.011093502377179081
-35,Toys Planet,Retail,0.004754358161648178
-36,Brickworld LLC,SME,0.006339144215530904
-37,Playful Learning Academy,Non-profit,0.003169572107765452
-38,First LEGO League,Non-profit,0.004754358161648178
-39,Bricks4Kidz Franchise,SME,0.006339144215530904
-40,Blocks & Beyond Therapy Clinic,SME,0.004754358161648178
-41,K12 EdTech Solutions,Enterprise,0.014263074484944531
-42,Children’s Hospital of Boston,Non-profit,0.003169572107765452
-43,Community Toy Library,Non-profit,0.003169572107765452
-44,Hobbylandia,SME,0.004754358161648178
-45,DreamBricks,Startup,0.003169572107765452
-46,Blockspace Coworking,Startup,0.003169572107765452
-47,NextGen STEM Labs,Enterprise,0.012678288431061807
-48,Brix Mania,SME,0.004754358161648178
-49,Kidspace Museum,Non-profit,0.003169572107765452
-50,Creative Play Consultants,SME,0.004754358161648178
-51,Future Engineers Program,Non-profit,0.003169572107765452
-52,BuildBright Startups,Startup,0.003169572107765452
-53,Playful City Labs,Startup,0.003169572107765452
-54,Edumax Distributors,Wholesale,0.014263074484944531
-55,Global Play Events,Enterprise,0.011093502377179081
-56,TechEd Outreach,Non-profit,0.003169572107765452
-57,City of Munich Youth Services,Government,0.004754358161648178
-58,InnovatePlay Startup Studio,Startup,0.003169572107765452
-59,Family Fun Retailers,Retail,0.004754358161648178
-60,Mindful Play Foundation,Non-profit,0.003169572107765452
-61,EduPlay Scandinavia,SME,0.004754358161648178
-62,STEM4Kids Initiative,Non-profit,0.003169572107765452
-63,BlockMate Startups,Startup,0.003169572107765452
-64,EduTech Ventures,Startup,0.003169572107765452
+10,Carlsberg Group,Enterprise,0.05000000000000001
+11,DSV A/S,Enterprise,0.05000000000000001
+12,Vestas Wind Systems A/S,Enterprise,0.05000000000000001
+13,AP Moller Maersk,Enterprise,0.05000000000000001
+14,Arla Foods,Enterprise,0.04285714285714286
+15,Copenhagen Municipality,Government,0.03571428571428572
+16,Region Hovedstaden,Government,0.03571428571428572
+17,Dansk Supermarked Group,Retail,0.028571428571428574
+18,COOP Danmark,Retail,0.028571428571428574
+19,Brøndby IF,Non-profit,0.02142857142857143
+20,Red Barnet Danmark,Non-profit,0.02142857142857143
+21,Odense Kommune,Government,0.014285714285714287
+22,Roskilde University,Government,0.014285714285714287
+23,JYSK,Retail,0.02142857142857143
+24,Silvan,Retail,0.02142857142857143
+25,STARK Danmark,Wholesale,0.02142857142857143
+26,Netcompany A/S,Enterprise,0.02142857142857143
+27,DFDS Seaways,Enterprise,0.02142857142857143
+28,Kromann Reumert,Enterprise,0.02142857142857143
+29,Atea A/S,Enterprise,0.02142857142857143
+30,Foss Analytical A/S,Enterprise,0.02142857142857143
+31,ISS Facility Services,Enterprise,0.02142857142857143
+32,Bang & Olufsen,Enterprise,0.02142857142857143
+33,Haldor Topsøe A/S,Enterprise,0.02142857142857143
+34,SimCorp A/S,Enterprise,0.02142857142857143
+35,Pandora A/S,Enterprise,0.02142857142857143
+36,Niras A/S,Enterprise,0.014285714285714287
+37,NCC Danmark,Enterprise,0.014285714285714287
+38,Herning Kommune,Government,0.014285714285714287
+39,Syddansk Universitet,Government,0.014285714285714287
+40,FOA (Fag og Arbejde),Non-profit,0.014285714285714287
+41,Danish Refugee Council,Non-profit,0.014285714285714287
+42,Mødrehjælpen,Non-profit,0.014285714285714287
+43,Unicef Danmark,Non-profit,0.014285714285714287
+44,BL - Danmarks Almene Boliger,Non-profit,0.014285714285714287
+45,Berlingske Media,SME,0.014285714285714287
+46,Zleep Hotels,SME,0.014285714285714287
+47,Bruuns Bazaar,SME,0.014285714285714287
+48,Joe & The Juice,SME,0.014285714285714287
+49,Kamille Blomster,SME,0.0071428571428571435
+50,Copenhagen Bicycles,SME,0.0071428571428571435
+51,Café Norden,SME,0.0071428571428571435
+52,Skagerak Consulting,SME,0.0071428571428571435
+53,Nordic Startups,Startup,0.0071428571428571435
+54,Too Good To Go,Startup,0.0071428571428571435
+55,Tradeshift,Startup,0.0071428571428571435
+56,Organic Basics,Startup,0.0071428571428571435
+57,ByFounders,Startup,0.0071428571428571435
+58,Hørkram Foodservice,Wholesale,0.014285714285714287
+59,DLG a.m.b.a.,Wholesale,0.014285714285714287

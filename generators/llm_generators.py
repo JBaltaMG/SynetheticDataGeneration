@@ -37,9 +37,6 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
     - Middle ranks: tools, spares, operational items
     - Bottom ranks: low-cost office/admin supplies
 
-    For context, here is a short version of the latest year-end report for {company_name}: 
-    {ctxb}
-
     {constraints}
     """.strip()
 
@@ -79,8 +76,6 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
     - Avoid overly granular SKUs or vague placeholders like "Miscellaneous".
     - Rank the list in descending order of proportionality.
 
-    For context, here is a short version of the latest year-end report for {company_name}:
-    {ctxb}
     {constraints}
     """.strip()
 
@@ -127,9 +122,6 @@ def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4.
     - Avoid internship/student titles.
     - Keep roles realistic for Denmark-only operations; no global country managers.
 
-    For context, here is a short version of the lastest year-end report for {company_name}:
-    {ctxb}
-
     {constraints}
     """.strip()
 
@@ -148,7 +140,7 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
 
     header = "name;proportionality;unit_price"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-    ctxb = prompt_utils._ctx_block(company_name)
+    #ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
     You are a finance and procurement expert. 
@@ -168,9 +160,6 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     - Bottom ranks: standardized low-cost licenses and administrative fees.
     - Include a balance across IT, legal, marketing, HR, facilities, and general admin.
 
-    For context, here is a short version of the latest year-end report for {company_name}:
-    {ctxb}
-
     {constraints}
     """.strip()
 
@@ -182,7 +171,6 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     )
     df_services = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
     df_services = utils.convert_column_to_percentage(df_services, "proportionality", scale=1.0)
-    df_services["unit_price"] = df_services["unit_price"].astype(float) / 1000.0  # Scale down by factor of 1000
     return df_services
 
 def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-4.1", temp: float=0.8) -> pd.DataFrame:
@@ -281,7 +269,6 @@ def generate_customers_llm(company_name: str, count: int = 100, model: str = "gp
     - proportionality: the proportionality of this customer 
     Reflect size/segment mix implied by the context.
 
-
     {constraints}
     """.strip()
 
@@ -330,12 +317,10 @@ def estimate_financials_llm(company_name: str, model: str = "gpt-4o", temp: floa
     ctxb = prompt_utils._ctx_block(company_name)
 
     prompt = f"""
-Estimate the **annual total revenue + operating costs (DKK)** for {company_name}, Denmark-only.
-Return a single integer (no text, no separators). Prefer explicit figures from context; otherwise estimate from scale/industry.
+    Estimate the **annual total revenue + operating costs (DKK)** for {company_name}, Denmark-only.
+    Return a single integer (no text, no separators). Prefer explicit figures from context; otherwise estimate from scale/industry.
 
-For context, here is a short version of the lastest year-end report for {company_name}: 
-{ctxb}
-""".strip()
+    """
 
     response = client.chat.completions.create(
         model=model,
@@ -366,9 +351,7 @@ def estimate_mean_pay_llm(company_name: str, model: str = "gpt-4o", temp: float 
     What is the mean monthly pay in DKK for a {company_name} employee (incl. pension, vacation, benefits)?
     Return just one integer (no text, no separators). Prefer explicit salary numbers from context; otherwise estimate realistically for Denmark/industry.
 
-    For context, here is a short version of the lastest year-end report for {company_name}: 
-    {ctxb}
-    """.strip()
+    """
 
     response = client.chat.completions.create(
         model=model,

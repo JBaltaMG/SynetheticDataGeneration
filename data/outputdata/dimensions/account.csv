@@ -1,61 +1,61 @@
 level3,level4,name,account_type,account_id
-1000,1100,Bank Deposits,Asset,11637
-1000,1110,Petty Cash,Asset,15934
-1000,1120,Short-term Marketable Securities,Asset,18698
-1000,1130,Customer Receivables - Domestic,Asset,16073
-1000,1150,VAT Receivable,Asset,12627
-1000,1160,Prepaid Insurance,Asset,15437
-1000,1170,Prepaid Rent,Asset,17084
-1000,1180,Prepaid Royalties,Asset,13551
-1000,1190,Other Prepaid Expenses,Asset,17604
-1200,1210,Plastic Resin Inventory,Asset,15313
-1200,1220,Packaging Materials Inventory,Asset,10611
-1200,1230,Finished Goods Inventory,Asset,18418
-1200,1250,Spare Parts Inventory,Asset,18023
-1300,1300,Machinery and Equipment,Asset,16931
-1300,1310,Production Moulds,Asset,16525
-1300,1330,Computer Hardware,Asset,15439
-1300,1340,Leasehold Improvements,Asset,10951
-1300,1360,Buildings,Asset,12795
-1300,1370,Land,Asset,12638
-1400,1400,Goodwill,Asset,14211
-1400,1410,Patents and Licenses,Asset,12131
-1400,1420,Software Assets,Asset,19818
-1500,1520,Accrued Expenses,Liability,95030
-1500,1530,VAT Payable,Liability,95322
-1500,1550,Customer Advances,Liability,98584
-1600,1600,Current Portion Long-term Debt,Liability,91741
-1600,1610,Bank Overdrafts,Liability,93833
-1700,1710,Corporate Bonds,Liability,91516
-1800,1800,Share Capital,Equity,22242
-1800,1810,Share Premium,Equity,21981
-1800,1820,Statutory Reserves,Equity,21786
-1800,1830,Retained Earnings,Equity,22824
-2000,2110,LEGO Product Sales Export,Revenue,38260
-2000,2120,Direct-to-Consumer Sales,Revenue,33367
-2000,2130,Retail Store Sales,Revenue,30463
-2000,2140,Online Store Sales,Revenue,33356
-2000,2170,Educational Services Revenue,Revenue,31432
-2100,2210,Packaging Material Purchases,Product Expense,46564
-2100,2220,Component Sourcing Expense,Product Expense,45461
-2100,2230,Production Utilities,Product Expense,44554
-2100,2250,Production Facility Rent,Product Expense,49697
-2100,2260,Freight Inward,Product Expense,46404
-2200,2300,Product Assembly Subcontracting,Product Expense,49144
-2200,2310,Mould Maintenance,Product Expense,41430
-2200,2330,Finished Goods Inspection,Product Expense,42043
-2300,2400,Licensing Fees Paid,Service Expense,56493
-2300,2410,IT Support Services,Service Expense,51317
-2300,2420,Marketing Agency Fees,Service Expense,52835
-2300,2430,Advertising Expense,Service Expense,59490
-2300,2440,Brand Promotion Events,Service Expense,58078
-2300,2460,Distribution Center Services,Service Expense,58010
-2300,2470,Logistics Outsourcing,Service Expense,59197
-2300,2495,Legal and Audit Fees,Service Expense,54617
-2300,2496,Research Collaboration Fees,Service Expense,55700
-2400,2500,Office Rent,Service Expense,56724
-2400,2510,Utilities - Non-production,Service Expense,50647
-2400,2520,Travel Expenses,Service Expense,57860
-2400,2530,Staff Training & Development,Service Expense,52727
-2400,2540,Insurance Expense,Service Expense,50434
-2400,2550,IT Software Subscriptions,Service Expense,57933
+1000,1100,Main Operating Bank Account,Asset,18554
+1000,1101,Secondary Bank Account,Asset,14177
+1000,1110,Petty Cash,Asset,10741
+1000,1120,Short-term Deposits,Asset,11580
+1000,1130,Cash in Transit,Asset,15875
+1100,1200,Trade Receivables - Domestic,Asset,12780
+1100,1201,Trade Receivables - Export,Asset,18553
+1100,1210,Receivables from Group Companies,Asset,10971
+1200,1301,Inventory - Used Vehicles,Asset,10100
+1200,1302,Inventory - Spare Parts,Asset,18039
+1200,1303,Inventory - Accessories,Asset,15615
+1200,1310,Work in Progress - Service,Asset,16991
+1300,1400,Prepaid Expenses,Asset,11960
+1300,1410,VAT Receivable,Asset,17258
+1300,1420,Other Current Assets,Asset,15868
+1400,1500,Land & Buildings,Asset,11771
+1400,1510,Plant & Machinery,Asset,13633
+1400,1520,Vehicles for Company Use,Asset,15959
+1400,1530,Office Equipment,Asset,12891
+1400,1540,Leasehold Improvements,Asset,15682
+1400,1551,Accumulated Depreciation - Machinery,Asset,19263
+1400,1552,Accumulated Depreciation - Vehicles,Asset,17646
+1500,1600,Investments in Subsidiaries,Asset,12151
+1500,1610,Investments in Associates,Asset,12547
+1500,1620,Long-term Receivables,Asset,18292
+2000,2100,Share Capital,Equity,22506
+2000,2130,Net Profit (Current Year),Equity,20497
+2000,2140,Proposed Dividend,Equity,23433
+2100,2200,Other Reserves,Equity,27102
+3000,3110,Short-term Borrowings,Asset,18394
+3000,3120,Trade Payables - Domestic,Asset,11311
+3000,3130,Payables to Group Companies,Asset,13569
+4000,4101,Revenue - Used Vehicle Sales,Revenue,32295
+4000,4103,Revenue - Accessories Sales,Revenue,32174
+4000,4104,Revenue - Vehicle Leasing,Revenue,30297
+4000,4105,Revenue - Service Labour,Revenue,33691
+4000,4107,Revenue - Warranty Services,Revenue,36445
+4000,4108,Revenue - Commission Income,Revenue,38576
+4000,4109,Revenue - Insurance Brokerage,Revenue,38316
+5000,5100,Product COGS - New Vehicles,Product Expense,45088
+5000,5101,Product COGS - Used Vehicles,Product Expense,41244
+5000,5104,Product COGS - Internal Transfers,Product Expense,40773
+5000,5106,Product COGS - Write-downs,Product Expense,46925
+5000,5110,Product Freight & Delivery,Product Expense,49980
+5000,5111,Product Import Duties,Product Expense,44370
+5100,5200,Service COGS - Workshop Materials,Service Expense,58538
+5100,5204,Service COGS - Vehicle Preparation,Service Expense,54440
+5100,5211,Service COGS - External Service Providers,Service Expense,50775
+5100,5212,Service COGS - Courtesy Vehicles,Service Expense,53118
+6000,6100,Marketing - Advertising,Service Expense,54390
+6000,6101,Marketing - Events & Sponsorships,Service Expense,56254
+6000,6103,Marketing - Print Media,Service Expense,54400
+6000,6110,Sales Commissions,Service Expense,52934
+6100,6200,IT & Telecom Costs,Service Expense,51718
+6100,6210,Consultancy Fees,Service Expense,51867
+6100,6220,Audit & Legal Fees,Service Expense,51653
+6100,6230,Insurance - Operations,Service Expense,56319
+6100,6240,Lease & Rental - Buildings,Service Expense,56714
+6100,6250,Utilities & Energy,Service Expense,50675
+6100,6260,Office Supplies,Service Expense,54510
