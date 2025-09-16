@@ -1,221 +1,589 @@
-item_name,account_id,account_name,vendor_name
-Vehicle tires,45088,Product COGS - New Vehicles,Toyota Material Handling
-Vehicle brake systems,45088,Product COGS - New Vehicles,SKF Danmark A/S
-Engine oil,45088,Product COGS - New Vehicles,Brdr. Dahl A/S
-Vehicle infotainment systems,45088,Product COGS - New Vehicles,Siemens Danmark
-"Vehicle glass (windscreens, windows)",45088,Product COGS - New Vehicles,Dansk Glasimport A/S
-Vehicle exhaust systems,45088,Product COGS - New Vehicles,Nordic Steel Supplies
-Electric vehicle batteries,45088,Product COGS - New Vehicles,Danfoss A/S
-New passenger vehicles,45088,Product COGS - New Vehicles,Toyota Material Handling
-Interior trim components,45088,Product COGS - New Vehicles,Owens Corning Nordics
-Vehicle air conditioning units,45088,Product COGS - New Vehicles,Danfoss A/S
-Vehicle transmissions,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
-New commercial vans,45088,Product COGS - New Vehicles,Jungheinrich Danmark
-Vehicle steering systems,45088,Product COGS - New Vehicles,SKF Danmark A/S
-Paints and coatings for vehicles,45088,Product COGS - New Vehicles,Sika Danmark A/S
-Automotive lubricants,45088,Product COGS - New Vehicles,SKF Danmark A/S
-Engine control units (ECU),45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
-Vehicle seats,45088,Product COGS - New Vehicles,SKF Danmark A/S
-Vehicle drivetrains,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
-Vehicle radiators,45088,Product COGS - New Vehicles,Danfoss A/S
-Vehicle tailgates,45088,Product COGS - New Vehicles,ArcelorMittal Denmark
-Vehicle batteries (12V),45088,Product COGS - New Vehicles,Jungheinrich Danmark
-Vehicle alloy wheels,45088,Product COGS - New Vehicles,ArcelorMittal Denmark
-Vehicle doors,45088,Product COGS - New Vehicles,SKF Danmark A/S
-Vehicle bumpers,45088,Product COGS - New Vehicles,ArcelorMittal Denmark
-Vehicle mirrors,45088,Product COGS - New Vehicles,Dansk Glasimport A/S
-Vehicle grilles,45088,Product COGS - New Vehicles,ArcelorMittal Denmark
-Rental fleet vehicles,45088,Product COGS - New Vehicles,Toyota Material Handling
-Workshop compressors,45088,Product COGS - New Vehicles,Atlas Copco Danmark
-Workshop hand tools,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
-Workshop pneumatic tools,45088,Product COGS - New Vehicles,Atlas Copco Danmark
-Vehicle jacks,45088,Product COGS - New Vehicles,Nordic Steel Supplies
-Workshop alignment systems,45088,Product COGS - New Vehicles,Scanvaegt Systems A/S
-Workshop vehicle lifts,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
-Workshop tool cabinets,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
-Battery charging units,45088,Product COGS - New Vehicles,ABB A/S
-Tire mounting machines,45088,Product COGS - New Vehicles,Bosch Rexroth Danmark
-Workshop creepers,45088,Product COGS - New Vehicles,Jungheinrich Danmark
-Vehicle cleaning robots,45088,Product COGS - New Vehicles,Nilfisk A/S
-Workshop workbenches,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
-Workshop lighting,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
-Workshop floor coatings,45088,Product COGS - New Vehicles,Sika Danmark A/S
-Fuel dispensers,49980,Product Freight & Delivery,Blue Water Shipping A/S
-Workshop gloves,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
-Mechanic coveralls,45088,Product COGS - New Vehicles,Berendsen Textil Service
-Fire extinguishers,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
-Workshop first aid kits,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
-Protective eyewear,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
-Workshop absorbent mats,45088,Product COGS - New Vehicles,Berendsen Textil Service
-Workshop ventilation systems,45088,Product COGS - New Vehicles,Atlas Copco Danmark
-Protective seat covers,45088,Product COGS - New Vehicles,Berendsen Textil Service
-Workshop signage,45088,Product COGS - New Vehicles,Paperflow A/S
-Workshop ladders,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
-Warehouse racking,49980,Product Freight & Delivery,Jungheinrich Danmark
-Spare wheel covers,45088,Product COGS - New Vehicles,SKF Danmark A/S
-Pallet jacks,49980,Product Freight & Delivery,Jungheinrich Danmark
-Warehouse forklifts,45088,Product COGS - New Vehicles,Jungheinrich Danmark
-Warehouse safety barriers,45088,Product COGS - New Vehicles,Jungheinrich Danmark
-Warehouse label printers,45088,Product COGS - New Vehicles,Scanvaegt Systems A/S
-Warehouse barcode scanners,45088,Product COGS - New Vehicles,Scanvaegt Systems A/S
-Warehouse bins and totes,45088,Product COGS - New Vehicles,Jungheinrich Danmark
-Warehouse cleaning supplies,45088,Product COGS - New Vehicles,Hako Danmark A/S
-Warehouse gloves,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
-Shipping pallets,49980,Product Freight & Delivery,Blue Water Shipping A/S
-Warehouse hand trucks,45088,Product COGS - New Vehicles,Jungheinrich Danmark
-Warehouse fans,49980,Product Freight & Delivery,Blue Water Shipping A/S
-Warehouse shrink wrap machines,45088,Product COGS - New Vehicles,Jungheinrich Danmark
-Warehouse carts,49980,Product Freight & Delivery,Blue Water Shipping A/S
-Shipping labels,49980,Product Freight & Delivery,Blue Water Shipping A/S
-Warehouse safety signs,49980,Product Freight & Delivery,Jungheinrich Danmark
-IT desktop computers,45088,Product COGS - New Vehicles,IT Relation A/S
-Warehouse ladders,45088,Product COGS - New Vehicles,Jungheinrich Danmark
-Network switches,45088,Product COGS - New Vehicles,Atea Danmark A/S
-IT servers,45088,Product COGS - New Vehicles,IT Relation A/S
-Network cabling,49980,Product Freight & Delivery,Atea Danmark A/S
-Printers,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Printer toner cartridges,49980,Product Freight & Delivery,OfficeTeam Danmark
-IT keyboards,45088,Product COGS - New Vehicles,IT Relation A/S
-Uninterruptible power supplies,45088,Product COGS - New Vehicles,ABB A/S
-Printer paper (A4),45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Firewall appliances,45088,Product COGS - New Vehicles,Atea Danmark A/S
-Server racks,45088,Product COGS - New Vehicles,Atea Danmark A/S
-Document scanners,45088,Product COGS - New Vehicles,Paperflow A/S
-IT mice,45088,Product COGS - New Vehicles,IT Relation A/S
-Office chairs,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office desks,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
-Office meeting tables,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office telephones,45088,Product COGS - New Vehicles,TDC Erhverv
-Office mobile phones,45088,Product COGS - New Vehicles,TDC Erhverv
-Office lockers,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office shredders,45088,Product COGS - New Vehicles,Paperflow A/S
-Office storage cabinets,45088,Product COGS - New Vehicles,Paperflow A/S
-Office visitor chairs,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office coat racks,45088,Product COGS - New Vehicles,Paperflow A/S
-Office whiteboards,45088,Product COGS - New Vehicles,Paperflow A/S
-Microwave ovens,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
-Dishwashers,45088,Product COGS - New Vehicles,Siemens Danmark
-Office kettles,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
-Office cutlery sets,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office mugs,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
-Cleaning detergents,45088,Product COGS - New Vehicles,Hako Danmark A/S
-Dishwashing liquid,45088,Product COGS - New Vehicles,Nilfisk A/S
-Office glasses,49980,Product Freight & Delivery,Dansk Glasimport A/S
-Hand sanitizer,45088,Product COGS - New Vehicles,Sika Danmark A/S
-Office napkins,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office pencils,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office pens,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Paper towels,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Toilet paper,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Air fresheners,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Trash bags,49980,Product Freight & Delivery,Freja Transport & Logistics A/S
-Office highlighters,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office staple refills,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office notepads,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office folders,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office sticky notes,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office binders,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office scissors,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office paper clips,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office push pins,45088,Product COGS - New Vehicles,OfficeTeam Danmark
-Office rulers,45088,Product COGS - New Vehicles,Lemvigh-Müller A/S
-Managed Security Services,51718,IT & Telecom Costs,IT Relation A/S
-Software Licensing Consolidation,51718,IT & Telecom Costs,IT Relation A/S
-Global IT Outsourcing Contract,51718,IT & Telecom Costs,IT Relation A/S
-CRM System Subscription,51718,IT & Telecom Costs,IT Relation A/S
-Mainframe Support Contract,51718,IT & Telecom Costs,IT Relation A/S
-Annual Audit & Assurance Fees,51653,Audit & Legal Fees,Deloitte Denmark
-Telecommunications Network Service,51718,IT & Telecom Costs,TDC Erhverv
-SAP ERP Implementation,51718,IT & Telecom Costs,NNIT A/S
-IT Infrastructure Maintenance,51718,IT & Telecom Costs,IT Relation A/S
-Enterprise Networking Service,51718,IT & Telecom Costs,TDC Erhverv
-Corporate Tax Consulting,51867,Consultancy Fees,Deloitte Denmark
-Annual Cybersecurity Audits,51653,Audit & Legal Fees,NNIT A/S
-Pension Administration Fees,51867,Consultancy Fees,Deloitte Denmark
-Annual Facility Safety Inspection,50775,Service COGS - External Service Providers,ISS Facility Services A/S
-HR Outsourcing Service,50775,Service COGS - External Service Providers,Adecco Danmark A/S
-Digital Marketing Retainer,54390,Marketing - Advertising,Netcompany A/S
-Building Lease Management Fee,56714,Lease & Rental - Buildings,Coor Service Management
-Annual IT Audit,51653,Audit & Legal Fees,Deloitte Denmark
-Workforce Training Programs,58538,Service COGS - Workshop Materials,Adecco Danmark A/S
-Environmental Compliance Audits,51653,Audit & Legal Fees,Deloitte Denmark
-Annual Disaster Recovery Testing,51718,IT & Telecom Costs,IT Relation A/S
-External Whistleblower Hotline,50775,Service COGS - External Service Providers,Deloitte Denmark
-Payroll Processing Service,50775,Service COGS - External Service Providers,Forenede Service A/S
-Executive Recruitment Retainer,51867,Consultancy Fees,Mercuri Urval A/S
-Server Room Maintenance,51718,IT & Telecom Costs,IT Relation A/S
-Supplier Performance Review Fee,51867,Consultancy Fees,Implement Consulting Group
-Brand Licensing Fee,51718,IT & Telecom Costs,IT Relation A/S
-ERP User Training License,51718,IT & Telecom Costs,IT Relation A/S
-Occupational Health & Safety Service,50775,Service COGS - External Service Providers,ISS Facility Services A/S
-Translation & Localization Services,50775,Service COGS - External Service Providers,Celsa Steel Service A/S
-Annual Fire Safety Audit,51653,Audit & Legal Fees,Deloitte Denmark
-Shareholder Registry Maintenance,51867,Consultancy Fees,McKinsey & Company Denmark
-Technical Documentation Service,50775,Service COGS - External Service Providers,KMD A/S
-Annual Data Privacy Assessment,51867,Consultancy Fees,Deloitte Denmark
-Annual Board Membership Fee,51867,Consultancy Fees,Implement Consulting Group
-ISO Certification Audit Fee,51653,Audit & Legal Fees,Deloitte Denmark
-Quality Management System Audit,51653,Audit & Legal Fees,Deloitte Denmark
-IT Asset Disposal Service,51718,IT & Telecom Costs,Stena Recycling A/S
-Annual Vehicle Registration Fee,53118,Service COGS - Courtesy Vehicles,Hako Danmark A/S
-Recruitment Advertising Service,54390,Marketing - Advertising,Adecco Danmark A/S
-Group IT Helpdesk Support,51718,IT & Telecom Costs,IT Relation A/S
-Annual Network Penetration Test,51718,IT & Telecom Costs,IT Relation A/S
-Share Point Online Licensing,51718,IT & Telecom Costs,IT Relation A/S
-GDPR Compliance Monitoring,51653,Audit & Legal Fees,Deloitte Denmark
-HR Policy Review Fee,51867,Consultancy Fees,Implement Consulting Group
-Industrial Waste Disposal License,50775,Service COGS - External Service Providers,Stena Recycling A/S
-Annual Environmental Audit,51653,Audit & Legal Fees,Deloitte Denmark
-License Management Service,51718,IT & Telecom Costs,IT Relation A/S
-Cloud Backup Subscription,51718,IT & Telecom Costs,IT Relation A/S
-ISO Training Course Fee,51867,Consultancy Fees,Implement Consulting Group
-Banking Transaction Processing Fee,53118,Service COGS - Courtesy Vehicles,Celsa Steel Service A/S
-Annual Trademark Registration Fee,51653,Audit & Legal Fees,Deloitte Denmark
-Phishing Simulation Service,50775,Service COGS - External Service Providers,NNIT A/S
-Intranet Hosting Subscription,51718,IT & Telecom Costs,IT Relation A/S
-E-signature Platform License,51718,IT & Telecom Costs,IT Relation A/S
-Conference Room Scheduling Software,51718,IT & Telecom Costs,IT Relation A/S
-Occupational Medical Examination Fee,50775,Service COGS - External Service Providers,ISS Facility Services A/S
-Annual Domain Name Renewal,51718,IT & Telecom Costs,IT Relation A/S
-Annual Elevator Inspection Fee,50775,Service COGS - External Service Providers,ISS Facility Services A/S
-Corporate Car Parking Permit,56714,Lease & Rental - Buildings,NCC Property Development
-Load Testing Service Subscription,51718,IT & Telecom Costs,IT Relation A/S
-Anti-virus Software Subscription,51718,IT & Telecom Costs,IT Relation A/S
-SSL Certificate Renewal,51718,IT & Telecom Costs,IT Relation A/S
-Remote Meeting Platform License,51718,IT & Telecom Costs,IT Relation A/S
-Company Credit Rating Assessment,51867,Consultancy Fees,Bain & Company Nordics
-Public Affairs Monitoring Service,50775,Service COGS - External Service Providers,Celsa Steel Service A/S
-Annual Elevator License Fee,50675,Utilities & Energy,ISS Facility Services A/S
-Procurement Portal License,51718,IT & Telecom Costs,IT Relation A/S
-E-learning Platform License,51718,IT & Telecom Costs,IT Relation A/S
-Courier Service Contract,50775,Service COGS - External Service Providers,Bring Danmark
-Supplier Registration Fee,51867,Consultancy Fees,Implement Consulting Group
-Annual Utility Connection Fee,50675,Utilities & Energy,SKF Danmark A/S
-Annual Association Membership Fee,51867,Consultancy Fees,Implement Consulting Group
-Employee Sport Club Subsidy Fee,58538,Service COGS - Workshop Materials,Forenede Service A/S
-Annual Food Handler Certificate,50775,Service COGS - External Service Providers,Forenede Service A/S
-Digital Signature Device License,51718,IT & Telecom Costs,IT Relation A/S
-Annual Phone Directory Registration,54390,Marketing - Advertising,SKF Danmark A/S
-Safety Data Sheet Management Fee,50775,Service COGS - External Service Providers,Ramboll Management Consulting
-Business Card Printing Fee,54400,Marketing - Print Media,Paperflow A/S
-Health & Safety Poster Subscription,54510,Office Supplies,OfficeTeam Danmark
-Annual Water Discharge License,50675,Utilities & Energy,NCC Industry
-Annual Energy Labeling Fee,50675,Utilities & Energy,SKF Danmark A/S
-Annual Archive Storage Fee,51718,IT & Telecom Costs,IT Relation A/S
-Document Shredding Service,50775,Service COGS - External Service Providers,Stena Recycling A/S
-Annual Fire Extinguisher Inspection,50775,Service COGS - External Service Providers,Forenede Service A/S
-Annual Key Holder Registration,51867,Consultancy Fees,Implement Consulting Group
-Uniform Laundry Service,50775,Service COGS - External Service Providers,Berendsen Textil Service
-Annual Copier Maintenance Fee,54510,Office Supplies,OfficeTeam Danmark
-Annual Subscription to Industry Magazine,54400,Marketing - Print Media,NCC Industry
-Annual Public Broadcast License,54390,Marketing - Advertising,SKF Danmark A/S
-Annual Plant Maintenance Fee,50675,Utilities & Energy,ISS Facility Services A/S
-Meeting Room Booking System License,51718,IT & Telecom Costs,IT Relation A/S
-Annual Influenza Vaccination Fee,50775,Service COGS - External Service Providers,ISS Facility Services A/S
-Annual Bicycle Parking Permit,56714,Lease & Rental - Buildings,NCC Property Development
-Annual Library Membership Fee,51718,IT & Telecom Costs,IT Relation A/S
-Annual Employee Gift Tax Fee,50775,Service COGS - External Service Providers,ISS Facility Services A/S
-Annual Internal Newsletter Platform Fee,54390,Marketing - Advertising,SKF Danmark A/S
-Annual Social Event License,56254,Marketing - Events & Sponsorships,SKF Danmark A/S
-Annual Coffee Machine Service Fee,54510,Office Supplies,Coor Service Management
-Annual Warehouse Racking Inspection,50775,Service COGS - External Service Providers,Jungheinrich Danmark
+item_name,account_id,account_name,vendor_name,bu_id
+Anaerobic digestion enzymes,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Anaerobic digestion enzymes,1003,Raw Materials,UltraPure Vessels,BIOCIRC_BIOGAS_PRODUCTION
+Anaerobic digestion enzymes,1003,Raw Materials,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Industrial water (process),1003,Raw Materials,AquaPure Extracts,BIOCIRC_BIOGAS_PRODUCTION
+Industrial water (process),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Industrial water (process),1003,Raw Materials,Genetix Instruments,BIOCIRC_BIOGAS_PRODUCTION
+Turbine generator sets,1505,Machinery & Equipment,BIOCIRC_RENEWABLE_POWER_GENERATION,BIOCIRC_RENEWABLE_POWER_GENERATION
+Turbine generator sets,1505,Machinery & Equipment,EcoTherm Controls,BIOCIRC_RENEWABLE_POWER_GENERATION
+Turbine generator sets,1505,Machinery & Equipment,BIOCIRC_CARBON_CERTIFICATION,BIOCIRC_RENEWABLE_POWER_GENERATION
+Sludge dewatering polymers,1003,Raw Materials,AquaPure Extracts,BIOCIRC_BIOGAS_PRODUCTION
+Sludge dewatering polymers,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Sludge dewatering polymers,1003,Raw Materials,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Combined heat and power (CHP) units,1505,Machinery & Equipment,BIOCIRC_RENEWABLE_POWER_GENERATION,BIOCIRC_RENEWABLE_POWER_GENERATION
+Combined heat and power (CHP) units,1505,Machinery & Equipment,CelluForm Suppliers,BIOCIRC_RENEWABLE_POWER_GENERATION
+Combined heat and power (CHP) units,1505,Machinery & Equipment,BioOrganic Feedstock,BIOCIRC_RENEWABLE_POWER_GENERATION
+Heat exchanger plates,1003,Raw Materials,UltraPure Vessels,BIOCIRC_BIOGAS_PRODUCTION
+Heat exchanger plates,1003,Raw Materials,EcoSynthetics Co.,BIOCIRC_BIOGAS_PRODUCTION
+Heat exchanger plates,1003,Raw Materials,EcoTherm Controls,BIOCIRC_BIOGAS_PRODUCTION
+Wood pellets (industrial grade),1003,Raw Materials,BioGenesis Materials,BIOCIRC_RENEWABLE_POWER_GENERATION
+Wood pellets (industrial grade),1003,Raw Materials,MicroCell Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Wood pellets (industrial grade),1003,Raw Materials,EnviroHarvest,BIOCIRC_RENEWABLE_POWER_GENERATION
+Natural gas,1003,Raw Materials,CleanAir Filtration,BIOCIRC_BIOGAS_PRODUCTION
+Natural gas,1003,Raw Materials,TerraSource Partners,BIOCIRC_BIOGAS_PRODUCTION
+Natural gas,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Biogas feedstock (organic waste),1003,Raw Materials,BioOrganic Feedstock,BIOCIRC_BIOGAS_PRODUCTION
+Biogas feedstock (organic waste),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Biogas feedstock (organic waste),1003,Raw Materials,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Flue gas cleaning systems,1505,Machinery & Equipment,CleanAir Filtration,BIOCIRC_RENEWABLE_POWER_GENERATION
+Flue gas cleaning systems,1505,Machinery & Equipment,ClariClean Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+Flue gas cleaning systems,1505,Machinery & Equipment,Digisoft Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+Activated carbon (industrial),1003,Raw Materials,BioGenesis Materials,BIOCIRC_CARBON_CERTIFICATION
+Activated carbon (industrial),1003,Raw Materials,CelluForm Suppliers,BIOCIRC_CARBON_CERTIFICATION
+Activated carbon (industrial),1003,Raw Materials,BioOrganic Feedstock,BIOCIRC_CARBON_CERTIFICATION
+Wood chips (biomass quality),1003,Raw Materials,FiberFlow Biomass,BIOCIRC_BIOGAS_PRODUCTION
+Wood chips (biomass quality),1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOGAS_PRODUCTION
+Wood chips (biomass quality),1003,Raw Materials,BioOrganic Feedstock,BIOCIRC_BIOGAS_PRODUCTION
+Industrial valves (DN 100),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Industrial valves (DN 100),1003,Raw Materials,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Industrial valves (DN 100),1003,Raw Materials,BioMotion Conveyance,BIOCIRC_BIOGAS_PRODUCTION
+Stainless steel tanks (storage),1505,Machinery & Equipment,UltraPure Vessels,BIOCIRC_BIOGAS_PRODUCTION
+Stainless steel tanks (storage),1505,Machinery & Equipment,Precision Fermenters Inc.,BIOCIRC_BIOGAS_PRODUCTION
+Stainless steel tanks (storage),1505,Machinery & Equipment,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Insulation materials (mineral wool),1003,Raw Materials,FiberFlow Biomass,BIOCIRC_RENEWABLE_POWER_GENERATION
+Insulation materials (mineral wool),1003,Raw Materials,BioGenesis Materials,BIOCIRC_RENEWABLE_POWER_GENERATION
+Insulation materials (mineral wool),1003,Raw Materials,MicroCell Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Ash handling systems,1505,Machinery & Equipment,Digisoft Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+Ash handling systems,1505,Machinery & Equipment,MicroCell Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Ash handling systems,1505,Machinery & Equipment,BioGenesis Materials,BIOCIRC_RENEWABLE_POWER_GENERATION
+Flange assemblies,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Flange assemblies,1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOGAS_PRODUCTION
+Flange assemblies,1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOGAS_PRODUCTION
+Steel piping (DN 150),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Steel piping (DN 150),1003,Raw Materials,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Steel piping (DN 150),1003,Raw Materials,Genetix Instruments,BIOCIRC_BIOGAS_PRODUCTION
+Heat transfer oil,1003,Raw Materials,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Heat transfer oil,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Heat transfer oil,1003,Raw Materials,BioMotion Conveyance,BIOCIRC_BIOGAS_PRODUCTION
+Biomass shredders,1505,Machinery & Equipment,FiberFlow Biomass,BIOCIRC_BIOGAS_PRODUCTION
+Biomass shredders,1505,Machinery & Equipment,CelluForm Suppliers,BIOCIRC_BIOGAS_PRODUCTION
+Biomass shredders,1505,Machinery & Equipment,RenewAgro Inputs,BIOCIRC_BIOGAS_PRODUCTION
+Gas compressors,1505,Machinery & Equipment,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Gas compressors,1505,Machinery & Equipment,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Gas compressors,1505,Machinery & Equipment,Genetix Instruments,BIOCIRC_BIOGAS_PRODUCTION
+Centrifugal pumps,1505,Machinery & Equipment,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Centrifugal pumps,1505,Machinery & Equipment,Genetix Instruments,BIOCIRC_BIOGAS_PRODUCTION
+Centrifugal pumps,1505,Machinery & Equipment,EcoTherm Controls,BIOCIRC_BIOGAS_PRODUCTION
+Control panels (SIEMENS),1505,Machinery & Equipment,EcoTherm Controls,BIOCIRC_RENEWABLE_POWER_GENERATION
+Control panels (SIEMENS),1505,Machinery & Equipment,CloudMatrix Data,BIOCIRC_RENEWABLE_POWER_GENERATION
+Control panels (SIEMENS),1505,Machinery & Equipment,DataBridge Technologies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Dust filters (baghouse),1505,Machinery & Equipment,CleanAir Filtration,BIOCIRC_BIOGAS_PRODUCTION
+Dust filters (baghouse),1505,Machinery & Equipment,ClariClean Systems,BIOCIRC_BIOGAS_PRODUCTION
+Dust filters (baghouse),1505,Machinery & Equipment,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Boiler tubes (alloy steel),1003,Raw Materials,BioGenesis Materials,BIOCIRC_RENEWABLE_POWER_GENERATION
+Boiler tubes (alloy steel),1003,Raw Materials,FlowTech Pumps,BIOCIRC_RENEWABLE_POWER_GENERATION
+Boiler tubes (alloy steel),1003,Raw Materials,Genetix Instruments,BIOCIRC_RENEWABLE_POWER_GENERATION
+Power transformers (500 kVA),1505,Machinery & Equipment,BIOCIRC_RENEWABLE_POWER_GENERATION,BIOCIRC_RENEWABLE_POWER_GENERATION
+Power transformers (500 kVA),1505,Machinery & Equipment,CelluForm Suppliers,BIOCIRC_RENEWABLE_POWER_GENERATION
+Power transformers (500 kVA),1505,Machinery & Equipment,BioOrganic Feedstock,BIOCIRC_RENEWABLE_POWER_GENERATION
+PLC controllers,1505,Machinery & Equipment,Digisoft Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+PLC controllers,1505,Machinery & Equipment,EcoTherm Controls,BIOCIRC_RENEWABLE_POWER_GENERATION
+PLC controllers,1505,Machinery & Equipment,LogiCore Freight,BIOCIRC_RENEWABLE_POWER_GENERATION
+Gasket sets (high-temp),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Gasket sets (high-temp),1003,Raw Materials,PlantCycle Farms,BIOCIRC_BIOGAS_PRODUCTION
+Gasket sets (high-temp),1003,Raw Materials,TerraSource Partners,BIOCIRC_BIOGAS_PRODUCTION
+Motor drives (VFDs),1505,Machinery & Equipment,FlowTech Pumps,BIOCIRC_RENEWABLE_POWER_GENERATION
+Motor drives (VFDs),1505,Machinery & Equipment,ClariClean Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+Motor drives (VFDs),1505,Machinery & Equipment,BioMotion Conveyance,BIOCIRC_RENEWABLE_POWER_GENERATION
+Laboratory analyzers (biogas),1505,Machinery & Equipment,LabPro Scientific,BIOCIRC_BIOGAS_PRODUCTION
+Laboratory analyzers (biogas),1505,Machinery & Equipment,EcoTherm Controls,BIOCIRC_BIOGAS_PRODUCTION
+Laboratory analyzers (biogas),1505,Machinery & Equipment,RapidFleet Couriers,BIOCIRC_BIOGAS_PRODUCTION
+Flow meters (digital),1505,Machinery & Equipment,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Flow meters (digital),1505,Machinery & Equipment,LabPro Scientific,BIOCIRC_BIOGAS_PRODUCTION
+Flow meters (digital),1505,Machinery & Equipment,DataBridge Technologies,BIOCIRC_BIOGAS_PRODUCTION
+Pressure relief valves,1003,Raw Materials,LabPro Scientific,BIOCIRC_BIOGAS_PRODUCTION
+Pressure relief valves,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Pressure relief valves,1003,Raw Materials,Genetix Instruments,BIOCIRC_BIOGAS_PRODUCTION
+Stack monitoring equipment,1505,Machinery & Equipment,Digisoft Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+Stack monitoring equipment,1505,Machinery & Equipment,LabPro Scientific,BIOCIRC_RENEWABLE_POWER_GENERATION
+Stack monitoring equipment,1505,Machinery & Equipment,LabLogix Distribution,BIOCIRC_RENEWABLE_POWER_GENERATION
+Industrial lubricants,1003,Raw Materials,GreenPath Biochem,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Industrial lubricants,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Industrial lubricants,1003,Raw Materials,TerraSource Partners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Pipe insulation (foam),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Pipe insulation (foam),1003,Raw Materials,PlantCycle Farms,BIOCIRC_BIOGAS_PRODUCTION
+Pipe insulation (foam),1003,Raw Materials,TerraSource Partners,BIOCIRC_BIOGAS_PRODUCTION
+Deionized water,1003,Raw Materials,AquaPure Extracts,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Deionized water,1003,Raw Materials,Precision Fermenters Inc.,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Deionized water,1003,Raw Materials,BioMix Technologies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Bearings (roller type),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Bearings (roller type),1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOGAS_PRODUCTION
+Bearings (roller type),1003,Raw Materials,BioMix Technologies,BIOCIRC_BIOGAS_PRODUCTION
+Flange bolts (M16),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Flange bolts (M16),1003,Raw Materials,EnviroHarvest,BIOCIRC_BIOGAS_PRODUCTION
+Flange bolts (M16),1003,Raw Materials,BioHarvest Group,BIOCIRC_BIOGAS_PRODUCTION
+Biomass moisture analyzers,1505,Machinery & Equipment,FiberFlow Biomass,BIOCIRC_BIOGAS_PRODUCTION
+Biomass moisture analyzers,1505,Machinery & Equipment,Precision Fermenters Inc.,BIOCIRC_BIOGAS_PRODUCTION
+Biomass moisture analyzers,1505,Machinery & Equipment,BioMix Technologies,BIOCIRC_BIOGAS_PRODUCTION
+Level transmitters,1505,Machinery & Equipment,LabPro Scientific,BIOCIRC_BIOGAS_PRODUCTION
+Level transmitters,1505,Machinery & Equipment,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Level transmitters,1505,Machinery & Equipment,ClariClean Systems,BIOCIRC_BIOGAS_PRODUCTION
+Maintenance scaffolding,1506,Office Furniture & Equipment,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Maintenance scaffolding,1506,Office Furniture & Equipment,PureAir Maintenance,BIOCIRC_RENEWABLE_POWER_GENERATION
+Maintenance scaffolding,1506,Office Furniture & Equipment,StapleSource,BIOCIRC_RENEWABLE_POWER_GENERATION
+Industrial fans (extraction),1505,Machinery & Equipment,CleanAir Filtration,BIOCIRC_RENEWABLE_POWER_GENERATION
+Industrial fans (extraction),1505,Machinery & Equipment,GreenPath Biochem,BIOCIRC_RENEWABLE_POWER_GENERATION
+Industrial fans (extraction),1505,Machinery & Equipment,MicroCell Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Process hoses (EPDM),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Process hoses (EPDM),1003,Raw Materials,PlantCycle Farms,BIOCIRC_BIOGAS_PRODUCTION
+Process hoses (EPDM),1003,Raw Materials,TerraSource Partners,BIOCIRC_BIOGAS_PRODUCTION
+Hydraulic cylinders,1505,Machinery & Equipment,FlowTech Pumps,BIOCIRC_RENEWABLE_POWER_GENERATION
+Hydraulic cylinders,1505,Machinery & Equipment,UltraPure Vessels,BIOCIRC_RENEWABLE_POWER_GENERATION
+Hydraulic cylinders,1505,Machinery & Equipment,ClariClean Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+Flange gaskets,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Flange gaskets,1003,Raw Materials,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Flange gaskets,1003,Raw Materials,Genetix Instruments,BIOCIRC_BIOGAS_PRODUCTION
+Process air blowers,1505,Machinery & Equipment,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+Process air blowers,1505,Machinery & Equipment,LabLogix Distribution,BIOCIRC_BIOGAS_PRODUCTION
+Process air blowers,1505,Machinery & Equipment,Digisoft Systems,BIOCIRC_BIOGAS_PRODUCTION
+"Sample bottles (glass, sterile)",1003,Raw Materials,LabPro Scientific,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Sample bottles (glass, sterile)",1003,Raw Materials,FlowTech Pumps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Sample bottles (glass, sterile)",1003,Raw Materials,Genetix Instruments,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Safety relief devices,1505,Machinery & Equipment,UltraPure Vessels,BIOCIRC_BIOGAS_PRODUCTION
+Safety relief devices,1505,Machinery & Equipment,Genetix Instruments,BIOCIRC_BIOGAS_PRODUCTION
+Safety relief devices,1505,Machinery & Equipment,LabPro Scientific,BIOCIRC_BIOGAS_PRODUCTION
+Oxygen sensors,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Oxygen sensors,1003,Raw Materials,Precision Fermenters Inc.,BIOCIRC_BIOGAS_PRODUCTION
+Oxygen sensors,1003,Raw Materials,BioMix Technologies,BIOCIRC_BIOGAS_PRODUCTION
+Spare parts kits (biogas engines),1505,Machinery & Equipment,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_PRODUCTION
+Spare parts kits (biogas engines),1505,Machinery & Equipment,CelluForm Suppliers,BIOCIRC_BIOGAS_PRODUCTION
+Spare parts kits (biogas engines),1505,Machinery & Equipment,BioOrganic Feedstock,BIOCIRC_BIOGAS_PRODUCTION
+Sealing compounds (high-temp),1003,Raw Materials,GreenPath Biochem,BIOCIRC_RENEWABLE_POWER_GENERATION
+Sealing compounds (high-temp),1003,Raw Materials,Precision Fermenters Inc.,BIOCIRC_RENEWABLE_POWER_GENERATION
+Sealing compounds (high-temp),1003,Raw Materials,BioMix Technologies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Vibration monitoring systems,1505,Machinery & Equipment,Digisoft Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+Vibration monitoring systems,1505,Machinery & Equipment,CleanAir Filtration,BIOCIRC_RENEWABLE_POWER_GENERATION
+Vibration monitoring systems,1505,Machinery & Equipment,EnviroHarvest,BIOCIRC_RENEWABLE_POWER_GENERATION
+Work boots (steel-toe),1004,Work in Progress,FacilityWorks Services,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Work boots (steel-toe),1004,Work in Progress,EcoPaper Goods,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Work boots (steel-toe),1004,Work in Progress,StapleSource,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Safety helmets,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Safety helmets,1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Safety helmets,1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Acidic cleaning agents,1003,Raw Materials,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Acidic cleaning agents,1003,Raw Materials,Precision Fermenters Inc.,BIOCIRC_BIOGAS_PRODUCTION
+Acidic cleaning agents,1003,Raw Materials,BioMix Technologies,BIOCIRC_BIOGAS_PRODUCTION
+Fire extinguishers (CO2),1505,Machinery & Equipment,LabPro Scientific,BIOCIRC_RENEWABLE_POWER_GENERATION
+Fire extinguishers (CO2),1505,Machinery & Equipment,PureAir Maintenance,BIOCIRC_RENEWABLE_POWER_GENERATION
+Fire extinguishers (CO2),1505,Machinery & Equipment,BioGuard Security,BIOCIRC_RENEWABLE_POWER_GENERATION
+Gloves (chemical-resistant),1003,Raw Materials,LabPro Scientific,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Gloves (chemical-resistant),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Gloves (chemical-resistant),1003,Raw Materials,CloudMatrix Data,BIOCIRC_BIOFERTILIZER_PRODUCTION
+First aid kits (industrial),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+First aid kits (industrial),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+First aid kits (industrial),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Disposable dust masks,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Disposable dust masks,1003,Raw Materials,EnviroHarvest,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Disposable dust masks,1003,Raw Materials,BioHarvest Group,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Safety goggles,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Safety goggles,1003,Raw Materials,Precision Fermenters Inc.,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Safety goggles,1003,Raw Materials,BioMix Technologies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Cable trays (galvanized),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Cable trays (galvanized),1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOGAS_PRODUCTION
+Cable trays (galvanized),1003,Raw Materials,MicroCell Supplies,BIOCIRC_BIOGAS_PRODUCTION
+Lockout/tagout kits,1505,Machinery & Equipment,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Lockout/tagout kits,1505,Machinery & Equipment,CleanSuite Janitorial,BIOCIRC_RENEWABLE_POWER_GENERATION
+Lockout/tagout kits,1505,Machinery & Equipment,SafeSpace Consulting,BIOCIRC_RENEWABLE_POWER_GENERATION
+Cable glands,1003,Raw Materials,BioGenesis Materials,BIOCIRC_RENEWABLE_POWER_GENERATION
+Cable glands,1003,Raw Materials,PlantCycle Farms,BIOCIRC_RENEWABLE_POWER_GENERATION
+Cable glands,1003,Raw Materials,TerraSource Partners,BIOCIRC_RENEWABLE_POWER_GENERATION
+Control relays,1003,Raw Materials,EcoTherm Controls,BIOCIRC_RENEWABLE_POWER_GENERATION
+Control relays,1003,Raw Materials,BioGenesis Materials,BIOCIRC_RENEWABLE_POWER_GENERATION
+Control relays,1003,Raw Materials,DataBridge Technologies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Thermal insulation tape,1003,Raw Materials,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Thermal insulation tape,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Thermal insulation tape,1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOGAS_PRODUCTION
+Welding rods (low hydrogen),1003,Raw Materials,LabPro Scientific,BIOCIRC_RENEWABLE_POWER_GENERATION
+Welding rods (low hydrogen),1003,Raw Materials,BioGenesis Materials,BIOCIRC_RENEWABLE_POWER_GENERATION
+Welding rods (low hydrogen),1003,Raw Materials,EnviroHarvest,BIOCIRC_RENEWABLE_POWER_GENERATION
+Portable gas detectors,1505,Machinery & Equipment,LabPro Scientific,BIOCIRC_RENEWABLE_POWER_GENERATION
+Portable gas detectors,1505,Machinery & Equipment,LabLogix Distribution,BIOCIRC_RENEWABLE_POWER_GENERATION
+Portable gas detectors,1505,Machinery & Equipment,EcoTherm Controls,BIOCIRC_RENEWABLE_POWER_GENERATION
+Hand tools (wrench set),1505,Machinery & Equipment,GreenPath Biochem,BIOCIRC_RENEWABLE_POWER_GENERATION
+Hand tools (wrench set),1505,Machinery & Equipment,EcoPaper Goods,BIOCIRC_RENEWABLE_POWER_GENERATION
+Hand tools (wrench set),1505,Machinery & Equipment,StapleSource,BIOCIRC_RENEWABLE_POWER_GENERATION
+Soldering wire (industrial),1003,Raw Materials,LabPro Scientific,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Soldering wire (industrial),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Soldering wire (industrial),1003,Raw Materials,CloudMatrix Data,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Welding helmets,1505,Machinery & Equipment,LabPro Scientific,BIOCIRC_RENEWABLE_POWER_GENERATION
+Welding helmets,1505,Machinery & Equipment,FlowTech Pumps,BIOCIRC_RENEWABLE_POWER_GENERATION
+Welding helmets,1505,Machinery & Equipment,Genetix Instruments,BIOCIRC_RENEWABLE_POWER_GENERATION
+Hydraulic oil (barrel),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Hydraulic oil (barrel),1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOGAS_PRODUCTION
+Hydraulic oil (barrel),1003,Raw Materials,EcoTherm Controls,BIOCIRC_BIOGAS_PRODUCTION
+"Paint (industrial, anti-corrosive)",1003,Raw Materials,GreenPath Biochem,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Paint (industrial, anti-corrosive)",1003,Raw Materials,PlantCycle Farms,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Paint (industrial, anti-corrosive)",1003,Raw Materials,TerraSource Partners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Angle grinders,1505,Machinery & Equipment,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Angle grinders,1505,Machinery & Equipment,FlowTech Pumps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Angle grinders,1505,Machinery & Equipment,CelluForm Suppliers,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Janitorial paper towels,1003,Raw Materials,EcoPaper Goods,BIOCIRC_BIOGAS_PRODUCTION
+Janitorial paper towels,1003,Raw Materials,CleanSuite Janitorial,BIOCIRC_BIOGAS_PRODUCTION
+Janitorial paper towels,1003,Raw Materials,StapleSource,BIOCIRC_BIOGAS_PRODUCTION
+Rags (industrial cleaning),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Rags (industrial cleaning),1003,Raw Materials,SafeSpace Consulting,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Rags (industrial cleaning),1003,Raw Materials,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Trash bags (industrial),1003,Raw Materials,CleanSuite Janitorial,BIOCIRC_BIOGAS_PRODUCTION
+Trash bags (industrial),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Trash bags (industrial),1003,Raw Materials,StapleSource,BIOCIRC_BIOGAS_PRODUCTION
+Floor degreasers,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Floor degreasers,1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOGAS_PRODUCTION
+Floor degreasers,1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOGAS_PRODUCTION
+Buckets (cleaning),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Buckets (cleaning),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_RENEWABLE_POWER_GENERATION
+Buckets (cleaning),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_RENEWABLE_POWER_GENERATION
+Conference room tables,1506,Office Furniture & Equipment,BIOCIRC_BIOFERTILIZER_PRODUCTION,BIOCIRC_BIOFERTILIZER_SALES
+"Light bulbs (LED, E27)",1003,Raw Materials,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Light bulbs (LED, E27)",1003,Raw Materials,LabPro Scientific,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Light bulbs (LED, E27)",1003,Raw Materials,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Whiteboards (magnetic),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Whiteboards (magnetic),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Whiteboards (magnetic),1506,Office Furniture & Equipment,StapleSource,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Filing cabinets (lockable),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Filing cabinets (lockable),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Filing cabinets (lockable),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Industrial batteries (AA),1003,Raw Materials,OfficeStream Supplies,BIOCIRC_BIOGAS_PRODUCTION
+Industrial batteries (AA),1003,Raw Materials,LabPro Scientific,BIOCIRC_BIOGAS_PRODUCTION
+Industrial batteries (AA),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOGAS_PRODUCTION
+Disinfectant sprays,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Disinfectant sprays,1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Disinfectant sprays,1003,Raw Materials,AquaPure Extracts,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Extension cords (25m),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Extension cords (25m),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_RENEWABLE_POWER_GENERATION
+Extension cords (25m),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_RENEWABLE_POWER_GENERATION
+Projectors (meeting room),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Projectors (meeting room),1506,Office Furniture & Equipment,Digisoft Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+Projectors (meeting room),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_RENEWABLE_POWER_GENERATION
+Laptops (business grade),1506,Office Furniture & Equipment,Digisoft Systems,BIOCIRC_ENERGY_CONSULTING
+Laptops (business grade),1506,Office Furniture & Equipment,EcoPaper Goods,BIOCIRC_ENERGY_CONSULTING
+Laptops (business grade),1506,Office Furniture & Equipment,StapleSource,BIOCIRC_ENERGY_CONSULTING
+Printer toner cartridges,1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Printer toner cartridges,1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Printer toner cartridges,1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Desktop computers,1506,Office Furniture & Equipment,Digisoft Systems,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Desktop computers,1506,Office Furniture & Equipment,DataBridge Technologies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Desktop computers,1506,Office Furniture & Equipment,StapleSource,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Monitors (24 inch),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_ENERGY_CONSULTING
+Monitors (24 inch),1506,Office Furniture & Equipment,Digisoft Systems,BIOCIRC_ENERGY_CONSULTING
+Monitors (24 inch),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_ENERGY_CONSULTING
+"Pencils (HB, box of 12)",1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Pencils (HB, box of 12)",1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Pencils (HB, box of 12)",1003,Raw Materials,StapleSource,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Pens (blue, box of 50)",1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Pens (blue, box of 50)",1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Pens (blue, box of 50)",1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Highlighters (set of 6),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Highlighters (set of 6),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Highlighters (set of 6),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Document binders (A4),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_ENERGY_CONSULTING
+Document binders (A4),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_ENERGY_CONSULTING
+Document binders (A4),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_ENERGY_CONSULTING
+Sticky notes (pack),1506,Office Furniture & Equipment,EcoPaper Goods,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Sticky notes (pack),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Sticky notes (pack),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Staple refills (box),1506,Office Furniture & Equipment,StapleSource,BIOCIRC_ENERGY_CONSULTING
+Staple refills (box),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_ENERGY_CONSULTING
+Staple refills (box),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_ENERGY_CONSULTING
+Staplers (office),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Staplers (office),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Staplers (office),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Desk organizers,1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Desk organizers,1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Desk organizers,1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Coffee machines (office),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Coffee machines (office),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Coffee machines (office),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+USB flash drives (32GB),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+USB flash drives (32GB),1506,Office Furniture & Equipment,CloudMatrix Data,BIOCIRC_BIOFERTILIZER_PRODUCTION
+USB flash drives (32GB),1506,Office Furniture & Equipment,Digisoft Systems,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Envelopes (C5, box of 250)",1506,Office Furniture & Equipment,EcoPaper Goods,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Envelopes (C5, box of 250)",1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Envelopes (C5, box of 250)",1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Bottled water (0.5L),1002,Finished Goods,BIOCIRC_BIOFERTILIZER_PRODUCTION,BIOCIRC_BIOFERTILIZER_SALES
+"Network cables (Cat6, 5m)",1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+"Network cables (Cat6, 5m)",1506,Office Furniture & Equipment,Digisoft Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+"Network cables (Cat6, 5m)",1506,Office Furniture & Equipment,DataBridge Technologies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Coffee beans (kg),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Coffee beans (kg),1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Coffee beans (kg),1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Tea bags (box of 100),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Tea bags (box of 100),1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Tea bags (box of 100),1003,Raw Materials,GreenPath Biochem,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Paper cups (pack of 50),1003,Raw Materials,EcoPaper Goods,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Paper cups (pack of 50),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Paper cups (pack of 50),1003,Raw Materials,StapleSource,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Sugar (1kg),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Sugar (1kg),1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Sugar (1kg),1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Plastic stirrers (pack of 100),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Plastic stirrers (pack of 100),1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Plastic stirrers (pack of 100),1003,Raw Materials,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Milk (lactose-free, 1L)",1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Milk (lactose-free, 1L)",1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Milk (lactose-free, 1L)",1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Disposable plates (pack of 50),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Disposable plates (pack of 50),1003,Raw Materials,StapleSource,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Disposable plates (pack of 50),1003,Raw Materials,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Microwave ovens (office),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Microwave ovens (office),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Microwave ovens (office),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Refrigerators (office),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Refrigerators (office),1506,Office Furniture & Equipment,FacilityWorks Services,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Refrigerators (office),1506,Office Furniture & Equipment,LabPro Scientific,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Dishwashing liquid,1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Dishwashing liquid,1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Dishwashing liquid,1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Paper napkins (pack of 100),1003,Raw Materials,EcoPaper Goods,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Paper napkins (pack of 100),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Paper napkins (pack of 100),1003,Raw Materials,MicroCell Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Hand sanitizer (500ml),1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Hand sanitizer (500ml),1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Hand sanitizer (500ml),1003,Raw Materials,CelluForm Suppliers,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Cutlery (disposable, pack of 100)",1003,Raw Materials,BioGenesis Materials,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Cutlery (disposable, pack of 100)",1003,Raw Materials,RenewAgro Inputs,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Cutlery (disposable, pack of 100)",1003,Raw Materials,GreenPath Biochem,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Soap dispensers (wall-mounted),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_ENERGY_CONSULTING
+Soap dispensers (wall-mounted),1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_ENERGY_CONSULTING
+Soap dispensers (wall-mounted),1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_ENERGY_CONSULTING
+Toilet paper (roll),1009,Prepaid Expenses,EcoPaper Goods,BIOCIRC_BIOGAS_PRODUCTION
+Toilet paper (roll),1009,Prepaid Expenses,OfficeStream Supplies,BIOCIRC_BIOGAS_PRODUCTION
+Toilet paper (roll),1009,Prepaid Expenses,WorkForce Temps,BIOCIRC_BIOGAS_PRODUCTION
+"Batteries (9V, office)",1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Batteries (9V, office)",1506,Office Furniture & Equipment,GreenInk Toners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+"Batteries (9V, office)",1506,Office Furniture & Equipment,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Air fresheners (office),1506,Office Furniture & Equipment,OfficeStream Supplies,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Air fresheners (office),1506,Office Furniture & Equipment,PureAir Maintenance,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Air fresheners (office),1506,Office Furniture & Equipment,SafeSpace Consulting,BIOCIRC_BIOFERTILIZER_PRODUCTION
+IT Disaster Recovery Services,5023,Professional Services,DataBridge Technologies,BIOCIRC_ENERGY_CONSULTING
+IT Disaster Recovery Services,5023,Professional Services,CloudMatrix Data,BIOCIRC_ENERGY_CONSULTING
+IT Disaster Recovery Services,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Global Insurance Policy Fee,5022,Other Expenses,FacilityWorks Services,BIOCIRC_ENERGY_CONSULTING
+Global Insurance Policy Fee,5022,Other Expenses,Global Freight Solutions,BIOCIRC_ENERGY_CONSULTING
+Global Insurance Policy Fee,5022,Other Expenses,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_ENERGY_CONSULTING
+R&D Laboratory Equipment Leasing,5009,Equipment,LabPro Scientific,BIOCIRC_BIOGAS_PRODUCTION
+R&D Laboratory Equipment Leasing,5009,Equipment,FlowTech Pumps,BIOCIRC_BIOGAS_PRODUCTION
+R&D Laboratory Equipment Leasing,5009,Equipment,Genetix Instruments,BIOCIRC_BIOGAS_PRODUCTION
+Enterprise Data Security Audit,5023,Professional Services,SecureWave Consulting,BIOCIRC_ENERGY_CONSULTING
+Enterprise Data Security Audit,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Enterprise Data Security Audit,5023,Professional Services,OmniSys Solution,BIOCIRC_ENERGY_CONSULTING
+Global Legal Counsel Retainer,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Global Legal Counsel Retainer,5023,Professional Services,OmniSys Solution,BIOCIRC_ENERGY_CONSULTING
+Global Legal Counsel Retainer,5023,Professional Services,LogiCore Freight,BIOCIRC_ENERGY_CONSULTING
+Facilities Management Retainer,5013,Repairs and Maintenance,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Facilities Management Retainer,5013,Repairs and Maintenance,PureAir Maintenance,BIOCIRC_RENEWABLE_POWER_GENERATION
+Facilities Management Retainer,5013,Repairs and Maintenance,OfficeStream Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Cloud Infrastructure Subscription,5022,Other Expenses,CloudMatrix Data,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Cloud Infrastructure Subscription,5022,Other Expenses,Digisoft Systems,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Cloud Infrastructure Subscription,5022,Other Expenses,OmniSys Solution,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Outsourced Payroll Service,5023,Professional Services,QuantumSoft Services,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Outsourced Payroll Service,5023,Professional Services,SkilledOps Contractors,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Outsourced Payroll Service,5023,Professional Services,TechAssist Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Enterprise IT Outsourcing Contract,5023,Professional Services,Digisoft Systems,BIOCIRC_ENERGY_CONSULTING
+Enterprise IT Outsourcing Contract,5023,Professional Services,CleanAir Filtration,BIOCIRC_ENERGY_CONSULTING
+Enterprise IT Outsourcing Contract,5023,Professional Services,DataBridge Technologies,BIOCIRC_ENERGY_CONSULTING
+SAP ERP Implementation,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+SAP ERP Implementation,5023,Professional Services,CloudMatrix Data,BIOCIRC_ENERGY_CONSULTING
+SAP ERP Implementation,5023,Professional Services,GreenLine Transport,BIOCIRC_ENERGY_CONSULTING
+Annual Environmental Audit,5023,Professional Services,EcoCompliance Advisors,BIOCIRC_ENERGY_CONSULTING
+Annual Environmental Audit,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Environmental Audit,5023,Professional Services,Regulatory Partners,BIOCIRC_ENERGY_CONSULTING
+Strategic HR Business Partner Service,5023,Professional Services,WorkForce Temps,BIOCIRC_ENERGY_CONSULTING
+Strategic HR Business Partner Service,5023,Professional Services,TechAssist Temps,BIOCIRC_ENERGY_CONSULTING
+Strategic HR Business Partner Service,5023,Professional Services,GreenEdge Strategies,BIOCIRC_ENERGY_CONSULTING
+Strategic Marketing Agency Retainer,5020,Marketing Collateral,BIOCIRC_BIOFERTILIZER_PRODUCTION,BIOCIRC_BIOFERTILIZER_SALES
+Annual Corporate Tax Advisory,5023,Professional Services,ProcessWise Advisors,BIOCIRC_ENERGY_CONSULTING
+Annual Corporate Tax Advisory,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Corporate Tax Advisory,5023,Professional Services,MarketReach Analytics,BIOCIRC_ENERGY_CONSULTING
+Annual Internal Audit,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Internal Audit,5023,Professional Services,GreenEdge Strategies,BIOCIRC_ENERGY_CONSULTING
+Annual Internal Audit,5023,Professional Services,OmniSys Solution,BIOCIRC_ENERGY_CONSULTING
+Commercial Real Estate Lease Fee,5008,Building Leasehold,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Commercial Real Estate Lease Fee,5008,Building Leasehold,GreenPath Biochem,BIOCIRC_RENEWABLE_POWER_GENERATION
+Commercial Real Estate Lease Fee,5008,Building Leasehold,LabPro Scientific,BIOCIRC_RENEWABLE_POWER_GENERATION
+External Financial Audit,5023,Professional Services,QuantumSoft Services,BIOCIRC_BIOFERTILIZER_PRODUCTION
+External Financial Audit,5023,Professional Services,OmniSys Solution,BIOCIRC_BIOFERTILIZER_PRODUCTION
+External Financial Audit,5023,Professional Services,Regulatory Partners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Enterprise Risk Management Consulting,5023,Professional Services,SecureWave Consulting,BIOCIRC_ENERGY_CONSULTING
+Enterprise Risk Management Consulting,5023,Professional Services,ProcessWise Advisors,BIOCIRC_ENERGY_CONSULTING
+Enterprise Risk Management Consulting,5023,Professional Services,Regulatory Partners,BIOCIRC_ENERGY_CONSULTING
+Labor Union Negotiation Consulting,5023,Professional Services,ProcessWise Advisors,BIOCIRC_ENERGY_CONSULTING
+Labor Union Negotiation Consulting,5023,Professional Services,InnoLab Consultants,BIOCIRC_ENERGY_CONSULTING
+Labor Union Negotiation Consulting,5023,Professional Services,BioStrategy Group,BIOCIRC_ENERGY_CONSULTING
+Annual Health & Safety Certification,5023,Professional Services,BIOCIRC_CARBON_CERTIFICATION,BIOCIRC_CARBON_CERTIFICATION
+Annual Health & Safety Certification,5023,Professional Services,QuantumSoft Services,BIOCIRC_CARBON_CERTIFICATION
+Annual Health & Safety Certification,5023,Professional Services,ProcessWise Advisors,BIOCIRC_CARBON_CERTIFICATION
+Annual Energy Procurement Contract,5006,Utilities,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Energy Procurement Contract,5006,Utilities,BIOCIRC_RENEWABLE_POWER_GENERATION,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Energy Procurement Contract,5006,Utilities,QuantumSoft Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+IT Network Managed Services,5023,Professional Services,Digisoft Systems,BIOCIRC_ENERGY_CONSULTING
+IT Network Managed Services,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+IT Network Managed Services,5023,Professional Services,DataBridge Technologies,BIOCIRC_ENERGY_CONSULTING
+Annual Sustainability Reporting Service,5023,Professional Services,EcoCompliance Advisors,BIOCIRC_ENERGY_CONSULTING
+Annual Sustainability Reporting Service,5023,Professional Services,GreenEdge Strategies,BIOCIRC_ENERGY_CONSULTING
+Annual Sustainability Reporting Service,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Onsite Catering Services Contract,5023,Professional Services,FacilityWorks Services,BIOCIRC_ENERGY_CONSULTING
+Onsite Catering Services Contract,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Onsite Catering Services Contract,5023,Professional Services,OfficeStream Supplies,BIOCIRC_ENERGY_CONSULTING
+Custom Analytics Dashboard Service,5023,Professional Services,MarketReach Analytics,BIOCIRC_ENERGY_CONSULTING
+Custom Analytics Dashboard Service,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Custom Analytics Dashboard Service,5023,Professional Services,DataBridge Technologies,BIOCIRC_ENERGY_CONSULTING
+Waste Disposal Contract,5022,Other Expenses,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Waste Disposal Contract,5022,Other Expenses,CelluForm Suppliers,BIOCIRC_BIOGAS_PRODUCTION
+Waste Disposal Contract,5022,Other Expenses,BioGuard Security,BIOCIRC_BIOGAS_PRODUCTION
+Annual Board Meeting Facilitation,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Board Meeting Facilitation,5023,Professional Services,ProcessWise Advisors,BIOCIRC_ENERGY_CONSULTING
+Annual Board Meeting Facilitation,5023,Professional Services,SupplyChain Gurus,BIOCIRC_ENERGY_CONSULTING
+Supply Chain Management Software Subscription,5022,Other Expenses,Digisoft Systems,BIOCIRC_ENERGY_CONSULTING
+Supply Chain Management Software Subscription,5022,Other Expenses,EcoMove Supply Chain,BIOCIRC_ENERGY_CONSULTING
+Supply Chain Management Software Subscription,5022,Other Expenses,DataBridge Technologies,BIOCIRC_ENERGY_CONSULTING
+Professional Translation Service,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Professional Translation Service,5023,Professional Services,ProcessWise Advisors,BIOCIRC_ENERGY_CONSULTING
+Professional Translation Service,5023,Professional Services,GreenEdge Strategies,BIOCIRC_ENERGY_CONSULTING
+Annual Shareholder Meeting Organization,5019,Conferences,GreenPath Biochem,BIOCIRC_ENERGY_CONSULTING
+Annual Shareholder Meeting Organization,5019,Conferences,PureAir Maintenance,BIOCIRC_ENERGY_CONSULTING
+Annual Shareholder Meeting Organization,5019,Conferences,BioGuard Security,BIOCIRC_ENERGY_CONSULTING
+Custom e-Learning Platform License,5022,Other Expenses,Digisoft Systems,BIOCIRC_ENERGY_CONSULTING
+Custom e-Learning Platform License,5022,Other Expenses,DataBridge Technologies,BIOCIRC_ENERGY_CONSULTING
+Custom e-Learning Platform License,5022,Other Expenses,SecureWave Consulting,BIOCIRC_ENERGY_CONSULTING
+Annual Fire Safety Inspection,5023,Professional Services,FacilityWorks Services,BIOCIRC_ENERGY_CONSULTING
+Annual Fire Safety Inspection,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Fire Safety Inspection,5023,Professional Services,EcoPaper Goods,BIOCIRC_ENERGY_CONSULTING
+Annual HR Policy Review,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual HR Policy Review,5023,Professional Services,ProcessWise Advisors,BIOCIRC_ENERGY_CONSULTING
+Annual HR Policy Review,5023,Professional Services,OfficeStream Supplies,BIOCIRC_ENERGY_CONSULTING
+Executive Coaching Services,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Executive Coaching Services,5023,Professional Services,OfficeStream Supplies,BIOCIRC_ENERGY_CONSULTING
+Executive Coaching Services,5023,Professional Services,EcoPaper Goods,BIOCIRC_ENERGY_CONSULTING
+Shared Mobility Fleet Management,5013,Repairs and Maintenance,PureAir Maintenance,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Shared Mobility Fleet Management,5013,Repairs and Maintenance,BioRoute Distribution,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Shared Mobility Fleet Management,5013,Repairs and Maintenance,Global Freight Solutions,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Chamber of Commerce Fee,5022,Other Expenses,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Annual Chamber of Commerce Fee,5022,Other Expenses,SupplyChain Gurus,BIOCIRC_BIOGAS_PRODUCTION
+Annual Chamber of Commerce Fee,5022,Other Expenses,MarketReach Analytics,BIOCIRC_BIOGAS_PRODUCTION
+Annual First Aid Training,5023,Professional Services,QuantumSoft Services,BIOCIRC_BIOGAS_PRODUCTION
+Annual First Aid Training,5023,Professional Services,OfficeStream Supplies,BIOCIRC_BIOGAS_PRODUCTION
+Annual First Aid Training,5023,Professional Services,EcoPaper Goods,BIOCIRC_BIOGAS_PRODUCTION
+Mobile Device Management License,5005,Telephone,Digisoft Systems,BIOCIRC_ENERGY_CONSULTING
+Mobile Device Management License,5005,Telephone,DataBridge Technologies,BIOCIRC_ENERGY_CONSULTING
+Mobile Device Management License,5005,Telephone,SecureWave Consulting,BIOCIRC_ENERGY_CONSULTING
+Recruitment Advertising Campaign,5020,Marketing Collateral,BIOCIRC_BIOFERTILIZER_PRODUCTION,BIOCIRC_BIOFERTILIZER_SALES
+Employee Assistance Program Fee,5002,Employee Benefits,GreenPath Biochem,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Employee Assistance Program Fee,5002,Employee Benefits,SkilledOps Contractors,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Employee Assistance Program Fee,5002,Employee Benefits,TechAssist Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Workstation Ergonomics Assessment,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Workstation Ergonomics Assessment,5023,Professional Services,CelluForm Suppliers,BIOCIRC_ENERGY_CONSULTING
+Workstation Ergonomics Assessment,5023,Professional Services,BioOrganic Feedstock,BIOCIRC_ENERGY_CONSULTING
+Cloud Backup Subscription,5023,Professional Services,CloudMatrix Data,BIOCIRC_ENERGY_CONSULTING
+Cloud Backup Subscription,5023,Professional Services,Digisoft Systems,BIOCIRC_ENERGY_CONSULTING
+Cloud Backup Subscription,5023,Professional Services,OmniSys Solution,BIOCIRC_ENERGY_CONSULTING
+Meeting Room Audio-Visual Support,5023,Professional Services,FacilityWorks Services,BIOCIRC_ENERGY_CONSULTING
+Meeting Room Audio-Visual Support,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Meeting Room Audio-Visual Support,5023,Professional Services,LogiCore Freight,BIOCIRC_ENERGY_CONSULTING
+Annual ISO Certification Audit,5023,Professional Services,BIOCIRC_CARBON_CERTIFICATION,BIOCIRC_CARBON_CERTIFICATION
+Annual ISO Certification Audit,5023,Professional Services,GreenEdge Strategies,BIOCIRC_CARBON_CERTIFICATION
+Annual ISO Certification Audit,5023,Professional Services,MarketReach Analytics,BIOCIRC_CARBON_CERTIFICATION
+Annual Employee Satisfaction Survey,5002,Employee Benefits,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Employee Satisfaction Survey,5002,Employee Benefits,GreenPath Biochem,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Employee Satisfaction Survey,5002,Employee Benefits,ProcessWise Advisors,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Business Continuity Planning,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Business Continuity Planning,5023,Professional Services,GreenEdge Strategies,BIOCIRC_ENERGY_CONSULTING
+Annual Business Continuity Planning,5023,Professional Services,Regulatory Partners,BIOCIRC_ENERGY_CONSULTING
+Office Cleaning Contract,5013,Repairs and Maintenance,CleanSuite Janitorial,BIOCIRC_BIOGAS_PRODUCTION
+Office Cleaning Contract,5013,Repairs and Maintenance,FacilityWorks Services,BIOCIRC_BIOGAS_PRODUCTION
+Office Cleaning Contract,5013,Repairs and Maintenance,PureAir Maintenance,BIOCIRC_BIOGAS_PRODUCTION
+Recruitment Background Checks,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Recruitment Background Checks,5023,Professional Services,SkilledOps Contractors,BIOCIRC_ENERGY_CONSULTING
+Recruitment Background Checks,5023,Professional Services,TechAssist Temps,BIOCIRC_ENERGY_CONSULTING
+Annual Corporate Social Responsibility Audit,5023,Professional Services,EcoCompliance Advisors,BIOCIRC_ENERGY_CONSULTING
+Annual Corporate Social Responsibility Audit,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Corporate Social Responsibility Audit,5023,Professional Services,Regulatory Partners,BIOCIRC_ENERGY_CONSULTING
+Annual Network Security Update,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Network Security Update,5023,Professional Services,OmniSys Solution,BIOCIRC_ENERGY_CONSULTING
+Annual Network Security Update,5023,Professional Services,LogiCore Freight,BIOCIRC_ENERGY_CONSULTING
+Annual Website Hosting Fee,5022,Other Expenses,CloudMatrix Data,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Website Hosting Fee,5022,Other Expenses,SecureWave Consulting,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Website Hosting Fee,5022,Other Expenses,OmniSys Solution,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Workforce Management Software License,5022,Other Expenses,WorkForce Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Workforce Management Software License,5022,Other Expenses,QuantumSoft Services,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Workforce Management Software License,5022,Other Expenses,CloudMatrix Data,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Data Privacy Training,5023,Professional Services,SecureWave Consulting,BIOCIRC_ENERGY_CONSULTING
+Annual Data Privacy Training,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Data Privacy Training,5023,Professional Services,FacilityWorks Services,BIOCIRC_ENERGY_CONSULTING
+Enterprise Antivirus License,5009,Equipment,Digisoft Systems,BIOCIRC_RENEWABLE_POWER_GENERATION
+Enterprise Antivirus License,5009,Equipment,DataBridge Technologies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Enterprise Antivirus License,5009,Equipment,SecureWave Consulting,BIOCIRC_RENEWABLE_POWER_GENERATION
+Onsite Security Guard Service,5023,Professional Services,BioGuard Security,BIOCIRC_ENERGY_CONSULTING
+Onsite Security Guard Service,5023,Professional Services,FacilityWorks Services,BIOCIRC_ENERGY_CONSULTING
+Onsite Security Guard Service,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Water Quality Testing,5023,Professional Services,LabPro Scientific,BIOCIRC_BIOGAS_PRODUCTION
+Annual Water Quality Testing,5023,Professional Services,FacilityWorks Services,BIOCIRC_BIOGAS_PRODUCTION
+Annual Water Quality Testing,5023,Professional Services,QuantumSoft Services,BIOCIRC_BIOGAS_PRODUCTION
+Annual Export/Import License,5022,Other Expenses,BIOCIRC_BIOFERTILIZER_PRODUCTION,BIOCIRC_BIOFERTILIZER_SALES
+Annual Parking Space Leasing,5024,Rent,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Parking Space Leasing,5024,Rent,GreenPath Biochem,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Parking Space Leasing,5024,Rent,EcoPaper Goods,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Worksite Environmental Monitoring,5023,Professional Services,EnviroHarvest,BIOCIRC_ENERGY_CONSULTING
+Annual Worksite Environmental Monitoring,5023,Professional Services,FacilityWorks Services,BIOCIRC_ENERGY_CONSULTING
+Annual Worksite Environmental Monitoring,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Pest Control Service,5013,Repairs and Maintenance,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Pest Control Service,5013,Repairs and Maintenance,PureAir Maintenance,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Pest Control Service,5013,Repairs and Maintenance,OfficeStream Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Noise Monitoring Service,5023,Professional Services,FacilityWorks Services,BIOCIRC_ENERGY_CONSULTING
+Annual Noise Monitoring Service,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual Noise Monitoring Service,5023,Professional Services,CleanSuite Janitorial,BIOCIRC_ENERGY_CONSULTING
+Annual Elevator Inspection Fee,5013,Repairs and Maintenance,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Elevator Inspection Fee,5013,Repairs and Maintenance,PureAir Maintenance,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Elevator Inspection Fee,5013,Repairs and Maintenance,OfficeStream Supplies,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Wireless Spectrum License,5022,Other Expenses,CloudMatrix Data,BIOCIRC_ENERGY_CONSULTING
+Annual Wireless Spectrum License,5022,Other Expenses,Digisoft Systems,BIOCIRC_ENERGY_CONSULTING
+Annual Wireless Spectrum License,5022,Other Expenses,OmniSys Solution,BIOCIRC_ENERGY_CONSULTING
+Annual Wastewater Discharge License,5006,Utilities,AquaPure Extracts,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Wastewater Discharge License,5006,Utilities,GreenPath Biochem,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Wastewater Discharge License,5006,Utilities,BioGuard Security,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Carbon Emission Allowance Fee,5022,Other Expenses,BIOCIRC_CARBON_CERTIFICATION,BIOCIRC_CARBON_CERTIFICATION
+Annual Carbon Emission Allowance Fee,5022,Other Expenses,SupplyChain Gurus,BIOCIRC_CARBON_CERTIFICATION
+Annual Carbon Emission Allowance Fee,5022,Other Expenses,BIOCIRC_BIOFERTILIZER_PRODUCTION,BIOCIRC_CARBON_CERTIFICATION
+Annual HVAC Maintenance,5013,Repairs and Maintenance,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_DISTRICT_HEATING
+Annual E-invoicing Platform Subscription,5023,Professional Services,QuantumSoft Services,BIOCIRC_ENERGY_CONSULTING
+Annual E-invoicing Platform Subscription,5023,Professional Services,CloudMatrix Data,BIOCIRC_ENERGY_CONSULTING
+Annual E-invoicing Platform Subscription,5023,Professional Services,CleanAir Filtration,BIOCIRC_ENERGY_CONSULTING
+Annual Employee Transport Subsidy Fee,5002,Employee Benefits,GreenLine Transport,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Employee Transport Subsidy Fee,5002,Employee Benefits,BioOrganic Feedstock,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Employee Transport Subsidy Fee,5002,Employee Benefits,TechAssist Temps,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Fuel Storage Permit,5022,Other Expenses,Regulatory Partners,BIOCIRC_BIOGAS_PRODUCTION
+Annual Fuel Storage Permit,5022,Other Expenses,GreenPath Biochem,BIOCIRC_BIOGAS_PRODUCTION
+Annual Fuel Storage Permit,5022,Other Expenses,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Annual Building Permit Renewal,5008,Building Leasehold,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Building Permit Renewal,5008,Building Leasehold,SupplyChain Gurus,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Building Permit Renewal,5008,Building Leasehold,MarketReach Analytics,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Company Vehicle Inspection,5013,Repairs and Maintenance,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Company Vehicle Inspection,5013,Repairs and Maintenance,PureAir Maintenance,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Company Vehicle Inspection,5013,Repairs and Maintenance,BioRoute Distribution,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Fire Safety Certificate,5023,Professional Services,FacilityWorks Services,BIOCIRC_BIOGAS_PRODUCTION
+Annual Fire Safety Certificate,5023,Professional Services,QuantumSoft Services,BIOCIRC_BIOGAS_PRODUCTION
+Annual Fire Safety Certificate,5023,Professional Services,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Annual Bank Account Maintenance Fee,5022,Other Expenses,PureAir Maintenance,BIOCIRC_BIOGAS_PRODUCTION
+Annual Bank Account Maintenance Fee,5022,Other Expenses,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Annual Bank Account Maintenance Fee,5022,Other Expenses,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_BIOGAS_PRODUCTION
+Annual Water Extraction Fee,5006,Utilities,AquaPure Extracts,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Water Extraction Fee,5006,Utilities,GreenPath Biochem,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Water Extraction Fee,5006,Utilities,BioGuard Security,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Public Performance Fee (KODA),5022,Other Expenses,Regulatory Partners,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Public Performance Fee (KODA),5022,Other Expenses,BIOCIRC_BIOFERTILIZER_PRODUCTION,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Public Performance Fee (KODA),5022,Other Expenses,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Patent Renewal Fee,5023,Professional Services,Regulatory Partners,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Patent Renewal Fee,5023,Professional Services,InnoLab Consultants,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Patent Renewal Fee,5023,Professional Services,QuantumSoft Services,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Alarm System Monitoring Fee,5023,Professional Services,BioGuard Security,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Alarm System Monitoring Fee,5023,Professional Services,FacilityWorks Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Alarm System Monitoring Fee,5023,Professional Services,QuantumSoft Services,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Office Recycling Service,5022,Other Expenses,GreenPath Biochem,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Office Recycling Service,5022,Other Expenses,PureAir Maintenance,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Office Recycling Service,5022,Other Expenses,BioGuard Security,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Mailroom Service Fee,5022,Other Expenses,GreenPath Biochem,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Mailroom Service Fee,5022,Other Expenses,PureAir Maintenance,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Mailroom Service Fee,5022,Other Expenses,BioGuard Security,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Annual Utility Network Access Fee,5006,Utilities,BIOCIRC_DISTRICT_HEATING,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Utility Network Access Fee,5006,Utilities,BIOCIRC_BIOFERTILIZER_PRODUCTION,BIOCIRC_RENEWABLE_POWER_GENERATION
+Annual Utility Network Access Fee,5006,Utilities,MarketReach Analytics,BIOCIRC_RENEWABLE_POWER_GENERATION

@@ -103,7 +103,8 @@ def pre_split_spend_lines(
                 "source_type": source_type,
                 "product_id": product_id,
                 "procurement_id": procurement_id,
-                "service_id": service_id
+                "service_id": service_id,
+                "bu_id": map_row["bu_id"],
             }
 
             if "department_name" in map_row:
@@ -142,8 +143,8 @@ def split_qty(
     # --- scale adjustment at the start ---
     if "quantity" in df.columns:
         mask = df["quantity"] > 10000
-        df.loc[mask, "quantity"] = df.loc[mask, "quantity"] / 100
-        df.loc[mask, "amount"]   = df.loc[mask, "amount"] / 100
+        df.loc[mask, "quantity"] = df.loc[mask, "quantity"] / 10
+        df.loc[mask, "amount"]   = df.loc[mask, "amount"] / 10
 
     rng = np.random.default_rng(random_state)
     cols = df.columns.tolist()
@@ -256,7 +257,9 @@ def balance_documents_with_assets(
         rng = np.random.RandomState()
 
     df = df_erp.copy()
-    asset_accounts = df_accounts[df_accounts["account_type"] == "Asset"]
+    #asset_accounts = df_accounts[df_accounts["account_type"] == "Asset"] OLD
+    asset_accounts = df_accounts[df_accounts["GLLevel02"] == "Assets"]
+    
     if asset_accounts.empty:
         # nothing to correct with
         return df
@@ -312,6 +315,7 @@ def balance_documents_with_assets(
                 "product_id": None,
                 "procurement_id": None,
                 "service_id": None,
+                "bu_id": None,
             }
 
             # copy context fields if present
@@ -348,7 +352,7 @@ def create_erp_data(
     df[["date", "amount"]] = date_schema(
         df_date=df_date,
         amounts=df["amount"],
-        noise_pct=0.05,
+        noise_pct=0.1,
         random_state=42,
     )
 
@@ -366,11 +370,18 @@ def create_erp_data(
         random_state=42,
     )
 
-    df['amount'] = df['unit_price'] * df['quantity']
-    
+    df[["date", "amount"]] = date_schema(
+        df_date=df_date,
+        amounts=df["amount"],
+        noise_pct=0.1,
+        random_state=42,
+    )
+
+    df['amount'] = np.sign(df['amount']) * df['unit_price'] * df['quantity']
+
     # Final output columns
-    cols = ['document_number', 'date', 'currency', 'amount', 'quantity', 'unit_price', 'type',
-            'account_id', 'account_name', 'product_id', 'procurement_id', 'service_id']
+    cols = ['document_number', 'date', 'currency', 'amount', 'quantity', 'type',
+            'bu_id', 'account_id', 'account_name', 'product_id', 'procurement_id', 'service_id']
 
     if "department_name" in df.columns:
         cols.append("department_name")
@@ -378,5 +389,5 @@ def create_erp_data(
         cols.append("customer_name")
     if "vendor_name" in df.columns:
         cols.append("vendor_name")
-        
+
     return df[cols]

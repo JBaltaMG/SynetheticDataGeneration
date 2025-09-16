@@ -1,151 +1,309 @@
-item_name,account_id,account_name,customer_name
-Leasing Contracts - Business,30297,Revenue - Vehicle Leasing,Carlsberg Group
-Fleet Sales,32295,Revenue - Used Vehicle Sales,Carlsberg Group
-Used Passenger Cars,32295,Revenue - Used Vehicle Sales,Carlsberg Group
-Premium Car Models,32295,Revenue - Used Vehicle Sales,Carlsberg Group
-Service & Maintenance Packages,33691,Revenue - Service Labour,Vestas Wind Systems A/S
-New Electric Vehicles,32295,Revenue - Used Vehicle Sales,DSV A/S
-Luxury Used Cars,32295,Revenue - Used Vehicle Sales,Bang & Olufsen
-Hybrid Vehicles,32295,Revenue - Used Vehicle Sales,Vestas Wind Systems A/S
-Car Subscription Services,30297,Revenue - Vehicle Leasing,Carlsberg Group
-Leasing Contracts - Private,30297,Revenue - Vehicle Leasing,Carlsberg Group
-Certified Pre-Owned Cars,32295,Revenue - Used Vehicle Sales,Carlsberg Group
-Electric Van Models,32295,Revenue - Used Vehicle Sales,DSV A/S
-Light Commercial Leasing,30297,Revenue - Vehicle Leasing,DSV A/S
-Plug-in Hybrid Vehicles,32295,Revenue - Used Vehicle Sales,DSV A/S
-Demo/Showroom Cars,32295,Revenue - Used Vehicle Sales,Carlsberg Group
-Mid-size Sedan Models,32295,Revenue - Used Vehicle Sales,Dansk Supermarked Group
-Service Inspections,33691,Revenue - Service Labour,ISS Facility Services
-Car Buyback Programs,32295,Revenue - Used Vehicle Sales,Dansk Supermarked Group
-Commercial Vehicle Upfitting,32174,Revenue - Accessories Sales,DSV A/S
-Performance Car Models,32295,Revenue - Used Vehicle Sales,Carlsberg Group
-Winter Tire Kits,32174,Revenue - Accessories Sales,Silvan
-Trade-In Services,32295,Revenue - Used Vehicle Sales,Dansk Supermarked Group
-Automotive Software Upgrades,32174,Revenue - Accessories Sales,Bang & Olufsen
-Car Extended Warranty,36445,Revenue - Warranty Services,Carlsberg Group
-Used EVs,32295,Revenue - Used Vehicle Sales,Dansk Supermarked Group
-Mobility Consulting Services,38576,Revenue - Commission Income,Skagerak Consulting
-Alloy Wheels,32174,Revenue - Accessories Sales,JYSK
-Van Conversion Packages,32174,Revenue - Accessories Sales,Silvan
-Brake Systems,33691,Revenue - Service Labour,Vestas Wind Systems A/S
-Tow Bars & Hitches,32174,Revenue - Accessories Sales,Carlsberg Group
-Child Safety Seats,32174,Revenue - Accessories Sales,Red Barnet Danmark
-Driver Assistance Upgrades,32174,Revenue - Accessories Sales,Carlsberg Group
-Cargo Management Accessories,32174,Revenue - Accessories Sales,DSV A/S
-Roof Boxes,32174,Revenue - Accessories Sales,Carlsberg Group
-Car Security Systems,32174,Revenue - Accessories Sales,Silvan
-Aftermarket GPS Units,32174,Revenue - Accessories Sales,DSV A/S
-Roadside Assistance,38576,Revenue - Commission Income,DSV A/S
-Car Bodywork Repairs,33691,Revenue - Service Labour,Carlsberg Group
-Brake Pad Replacement,33691,Revenue - Service Labour,Carlsberg Group
-EV Charging Stations,32174,Revenue - Accessories Sales,Vestas Wind Systems A/S
-Battery Replacement,33691,Revenue - Service Labour,Carlsberg Group
-Paint Protection Film,32174,Revenue - Accessories Sales,Silvan
-Used Fleet Vehicles,32295,Revenue - Used Vehicle Sales,DSV A/S
-Oil Change Service,33691,Revenue - Service Labour,Carlsberg Group
-Seasonal Tire Storage,32174,Revenue - Accessories Sales,Silvan
-Car Air Conditioning Service,33691,Revenue - Service Labour,Carlsberg Group
-Vehicle Registration Service,36445,Revenue - Warranty Services,Copenhagen Municipality
-Headlight Upgrades,32174,Revenue - Accessories Sales,Carlsberg Group
-Car Mats & Liners,32174,Revenue - Accessories Sales,Silvan
-Body Kit Accessories,32174,Revenue - Accessories Sales,Silvan
-Vehicle Tracking Systems,32174,Revenue - Accessories Sales,DSV A/S
-Spark Plug Replacement,33691,Revenue - Service Labour,Carlsberg Group
-Paint Touch-Up Kits,32174,Revenue - Accessories Sales,Silvan
-Interior Cleaning Service,33691,Revenue - Service Labour,ISS Facility Services
-Leather Interior Upgrades,32174,Revenue - Accessories Sales,Carlsberg Group
-Commercial Van Insurance,38316,Revenue - Insurance Brokerage,DSV A/S
-Rubber Floor Mats,32174,Revenue - Accessories Sales,Silvan
-Personalized License Plates,32174,Revenue - Accessories Sales,Copenhagen Municipality
-Car Seat Covers,32174,Revenue - Accessories Sales,JYSK
-Car Battery Chargers,32174,Revenue - Accessories Sales,Silvan
-Hands-Free Calling Systems,32174,Revenue - Accessories Sales,Bang & Olufsen
-Exhaust System Upgrades,32174,Revenue - Accessories Sales,Carlsberg Group
-Rear View Camera Systems,32174,Revenue - Accessories Sales,DSV A/S
-Car Care Kits,32174,Revenue - Accessories Sales,Carlsberg Group
-Parking Sensors,32174,Revenue - Accessories Sales,Carlsberg Group
-Car Polishing Service,33691,Revenue - Service Labour,Carlsberg Group
-Van Racking Solutions,32174,Revenue - Accessories Sales,Silvan
-Mobile App Services,38576,Revenue - Commission Income,ISS Facility Services
-Rain Sensors,32174,Revenue - Accessories Sales,Carlsberg Group
-Tow Service,33691,Revenue - Service Labour,Carlsberg Group
-Mirror Replacement,32174,Revenue - Accessories Sales,Carlsberg Group
-Motor Oil,32174,Revenue - Accessories Sales,Carlsberg Group
-Coolant & Fluids,32174,Revenue - Accessories Sales,Carlsberg Group
-Wiper Blade Replacement,33691,Revenue - Service Labour,Carlsberg Group
-Car Alarm Systems,32174,Revenue - Accessories Sales,Carlsberg Group
-First Aid Kits,32174,Revenue - Accessories Sales,Region Hovedstaden
-Sunshades,32174,Revenue - Accessories Sales,Carlsberg Group
-Boot Trays,32174,Revenue - Accessories Sales,JYSK
-Roof Rack Systems,32174,Revenue - Accessories Sales,Silvan
-Front Grilles,32174,Revenue - Accessories Sales,Carlsberg Group
-Side Step Bars,32174,Revenue - Accessories Sales,Carlsberg Group
-Upholstery Cleaning,33691,Revenue - Service Labour,ISS Facility Services
-Mud Flaps,32174,Revenue - Accessories Sales,DSV A/S
-Wheel Lock Sets,32174,Revenue - Accessories Sales,Carlsberg Group
-Fuel System Cleaners,32174,Revenue - Accessories Sales,Carlsberg Group
-Tire Pressure Monitors,32174,Revenue - Accessories Sales,DSV A/S
-Automatic Car Covers,32174,Revenue - Accessories Sales,Silvan
-Phone Mounts,32174,Revenue - Accessories Sales,Carlsberg Group
-License Plate Holders,32174,Revenue - Accessories Sales,Carlsberg Group
-Trunk Organizers,32174,Revenue - Accessories Sales,JYSK
-Seat Belt Pads,32174,Revenue - Accessories Sales,JYSK
-Jump Starter Packs,32174,Revenue - Accessories Sales,Carlsberg Group
-Reflective Vests,32174,Revenue - Accessories Sales,Carlsberg Group
-Spare Tire Kits,32174,Revenue - Accessories Sales,Silvan
-Charging Cables,32174,Revenue - Accessories Sales,Carlsberg Group
-LED Headlights,32174,Revenue - Accessories Sales,Carlsberg Group
-Bluetooth Adapters,32174,Revenue - Accessories Sales,Carlsberg Group
-Car Fragrance Dispensers,32174,Revenue - Accessories Sales,Dansk Supermarked Group
-Van Floor Protection,32174,Revenue - Accessories Sales,Carlsberg Group
-Roof Ladder Racks,32174,Revenue - Accessories Sales,STARK Danmark
-Car Jack Kits,32174,Revenue - Accessories Sales,Silvan
-Child Sun Shades,32174,Revenue - Accessories Sales,COOP Danmark
-Blind Spot Mirrors,32174,Revenue - Accessories Sales,Carlsberg Group
-Tablet Holders,32174,Revenue - Accessories Sales,Carlsberg Group
-Electronic Toll Tags,32174,Revenue - Accessories Sales,DSV A/S
-Air Fresheners,32174,Revenue - Accessories Sales,Dansk Supermarked Group
-Travel Coolers,32174,Revenue - Accessories Sales,Dansk Supermarked Group
-Valve Caps,32174,Revenue - Accessories Sales,Copenhagen Bicycles
-Boot Organizers,32174,Revenue - Accessories Sales,JYSK
-Windshield Washer Fluid,32174,Revenue - Accessories Sales,Silvan
-Underbody Protection,32174,Revenue - Accessories Sales,Carlsberg Group
-Car Interior Brushes,32174,Revenue - Accessories Sales,Silvan
-Touchscreen Protectors,32174,Revenue - Accessories Sales,Carlsberg Group
-Cup Holders,32174,Revenue - Accessories Sales,Carlsberg Group
-Roof Spoilers,32174,Revenue - Accessories Sales,Carlsberg Group
-Tyre Storage Bags,32174,Revenue - Accessories Sales,Carlsberg Group
-ICE Scrapers,32174,Revenue - Accessories Sales,Silvan
-Replacement Antennas,32174,Revenue - Accessories Sales,Atea A/S
-Front Seat Protectors,32174,Revenue - Accessories Sales,Carlsberg Group
-Car Organizer Pockets,32174,Revenue - Accessories Sales,Dansk Supermarked Group
-Car Key Fobs,32174,Revenue - Accessories Sales,Carlsberg Group
-Rear Window Wipers,32174,Revenue - Accessories Sales,Carlsberg Group
-Exterior Trim Kits,32174,Revenue - Accessories Sales,Carlsberg Group
-Garage Parking Sensors,32174,Revenue - Accessories Sales,Silvan
-Tyre Tread Depth Gauges,32174,Revenue - Accessories Sales,Carlsberg Group
-Wireless Charging Pads,32174,Revenue - Accessories Sales,Bang & Olufsen
-Pet Seat Belts,32174,Revenue - Accessories Sales,Dansk Supermarked Group
-Trunk Cargo Liners,32174,Revenue - Accessories Sales,Carlsberg Group
-Digital Tyre Inflators,32174,Revenue - Accessories Sales,Silvan
-Door Sill Protectors,32174,Revenue - Accessories Sales,Carlsberg Group
-Emergency Hammers,32174,Revenue - Accessories Sales,Carlsberg Group
-Magnetic Phone Holders,32174,Revenue - Accessories Sales,Dansk Supermarked Group
-Rear Bumper Guards,32174,Revenue - Accessories Sales,Carlsberg Group
-Car Sun Curtains,32174,Revenue - Accessories Sales,JYSK
-Cigarette Lighter Sockets,32174,Revenue - Accessories Sales,Carlsberg Group
-Paddle Shifters,32174,Revenue - Accessories Sales,Bang & Olufsen
-Microfiber Towels,32174,Revenue - Accessories Sales,Carlsberg Group
-Seat Gap Fillers,32174,Revenue - Accessories Sales,Carlsberg Group
-Engine Oil Filters,32174,Revenue - Accessories Sales,Carlsberg Group
-Parking Disc Holders,32174,Revenue - Accessories Sales,Carlsberg Group
-Tire Valve Tools,32174,Revenue - Accessories Sales,Copenhagen Bicycles
-Dashboard Storage Trays,32174,Revenue - Accessories Sales,Carlsberg Group
-Wheel Alignment Service,33691,Revenue - Service Labour,Carlsberg Group
-Reflective Warning Triangles,32174,Revenue - Accessories Sales,Silvan
-Van Shelving Units,32174,Revenue - Accessories Sales,Carlsberg Group
-Car Audio Fuses,32174,Revenue - Accessories Sales,Carlsberg Group
-Rubber Pedal Covers,32174,Revenue - Accessories Sales,Silvan
-Door Edge Guards,32174,Revenue - Accessories Sales,Silvan
-Anti-Fog Sprays,32174,Revenue - Accessories Sales,COOP Danmark
-Fuel Canisters,32174,Revenue - Accessories Sales,Carlsberg Group
+item_name,account_id,account_name,bu_id,customer_name
+Renewable Fuel for Transport,4001,Retail Gross Sales,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_DISTRICT_HEATING
+Green Electricity Power Purchase Agreements,4001,Retail Gross Sales,BIOCIRC_RENEWABLE_POWER_GENERATION,BIOCIRC_POWER_SALES
+Biogas Energy Supply Contracts,4004,Trade Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+BioCO2 Industrial Supply,4004,Trade Gross Sales,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_DISTRICT_HEATING
+Organic Waste Management Services,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Organic Waste Management Services,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Urban Health Initiative
+Organic Waste Management Services,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Anaerobic Digester Sales,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_POWER_SALES
+Anaerobic Digester Sales,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Anaerobic Digester Sales,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Redwood Retail
+Renewable Gas Certificates,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_BIOGAS_DISTRIBUTION
+Renewable Gas Certificates,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Renewable Gas Certificates,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_POWER_SALES
+Food Waste Collection Service,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant EPC Projects,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant EPC Projects,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Biogas Plant EPC Projects,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Biofertilizer Bulk Sales,4004,Trade Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Biofertilizer Bulk Sales,4004,Trade Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Biofertilizer Bulk Sales,4004,Trade Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,GreenMed Clinics
+Sludge Treatment Solutions,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Sludge Treatment Solutions,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Sludge Treatment Solutions,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,GreenMed Clinics
+Agricultural Digestate Delivery,4004,Trade Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Agricultural Digestate Delivery,4004,Trade Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Agricultural Digestate Delivery,4004,Trade Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Organic Fertilizer Pellets,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Organic Fertilizer Pellets,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Urban Wellness Labs
+Organic Fertilizer Pellets,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,LifeAid Nonprofit
+Biogas Pipeline Design,4001,Retail Gross Sales,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_DISTRICT_HEATING
+Biochar Bulk Supply,4004,Trade Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Biochar Bulk Supply,4004,Trade Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,GreenMed Clinics
+Biochar Bulk Supply,4004,Trade Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,VitalPharma Corp
+Industrial Heat Recovery Solutions,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_POWER_SALES
+Industrial Heat Recovery Solutions,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_ENERGY_CONSULTING
+Industrial Heat Recovery Solutions,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_RENEWABLE_POWER_GENERATION
+Renewable Energy Audits,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_RENEWABLE_POWER_GENERATION
+Renewable Energy Audits,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_POWER_SALES
+Renewable Energy Audits,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Biogas Plant Maintenance Service,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Landfill Gas Capture Technology,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Quality Monitoring Systems,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Compostable Bag Distribution,4001,Retail Gross Sales,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_DISTRICT_HEATING
+Bioenergy Educational Seminars,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Bioenergy Educational Seminars,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOFERTILIZER_SALES
+Bioenergy Educational Seminars,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,MedSupply Partners
+Waste Pre-treatment Units,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Waste Pre-treatment Units,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Redwood Retail
+Waste Pre-treatment Units,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,InnovateMed Retail
+Feedstock Transport Services,4001,Retail Gross Sales,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_DISTRICT_HEATING
+Odor Control Systems,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_POWER_SALES
+Odor Control Systems,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,GreenMed Clinics
+Odor Control Systems,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,VitalPharma Corp
+Remote Monitoring Subscriptions,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Remote Monitoring Subscriptions,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Remote Monitoring Subscriptions,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Organic Waste Bin Leasing,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Organic Waste Bin Leasing,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Urban Health Initiative
+Organic Waste Bin Leasing,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Quantum Biologics
+Bioenergy Research Partnerships,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_POWER_SALES
+Bioenergy Research Partnerships,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,MedSupply Partners
+Bioenergy Research Partnerships,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,GreenMed Clinics
+Industrial Gas Cylinder Leasing,4004,Trade Gross Sales,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_DISTRICT_HEATING
+Renewable Heat Credits,4001,Retail Gross Sales,BIOCIRC_DISTRICT_HEATING,BIOCIRC_DISTRICT_HEATING
+Renewable Heat Credits,4001,Retail Gross Sales,BIOCIRC_DISTRICT_HEATING,BIOCIRC_RENEWABLE_POWER_GENERATION
+Renewable Heat Credits,4001,Retail Gross Sales,BIOCIRC_DISTRICT_HEATING,InnovateMed Retail
+Biosolids Cake Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Biosolids Cake Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Biosolids Cake Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Sludge Dewatering Systems,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Sludge Dewatering Systems,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Sludge Dewatering Systems,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Inoculant Additives,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Inoculant Additives,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Inoculant Additives,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Nutrient Recovery Solutions,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Nutrient Recovery Solutions,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Nutrient Recovery Solutions,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Mobile Biogas Plant Leasing,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Agricultural Residue Collection,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Agricultural Residue Collection,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Agricultural Residue Collection,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,GreenMed Clinics
+Digestate Dewatering Polymers,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Dewatering Polymers,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Digestate Dewatering Polymers,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Energy Performance Certificates,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,BIOCIRC_ENERGY_CONSULTING
+Energy Performance Certificates,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,Metro Health Retail
+Energy Performance Certificates,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,Vitality Health Network
+Green Waste Compost Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Green Waste Compost Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Urban Health Initiative
+Green Waste Compost Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Quantum Biologics
+Consulting: Plant Optimization,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_ENERGY_CONSULTING
+Consulting: Plant Optimization,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Consulting: Plant Optimization,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Renewable Energy Project Feasibility Studies,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_RENEWABLE_POWER_GENERATION
+Renewable Energy Project Feasibility Studies,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_POWER_SALES
+Renewable Energy Project Feasibility Studies,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Digestate Spreader Rental,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Digestate Spreader Rental,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Digestate Spreader Rental,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Hydrogen Co-Production Services,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Substrate Analysis Kits,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Substrate Analysis Kits,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Genesis Health Startups
+Substrate Analysis Kits,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Feedstock Storage Tank Sales,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_POWER_SALES
+Feedstock Storage Tank Sales,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,GreenMed Clinics
+Feedstock Storage Tank Sales,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,VitalPharma Corp
+Fleet Vehicle Renewable Fuel Card,4001,Retail Gross Sales,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_DISTRICT_HEATING
+Equipment Decommissioning Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Equipment Decommissioning Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Equipment Decommissioning Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Natural Gas Network Access Fees,4001,Retail Gross Sales,BIOCIRC_BIOGAS_DISTRIBUTION,BIOCIRC_DISTRICT_HEATING
+Biogas Flaring Equipment,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Wastewater Treatment Additives,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Wastewater Treatment Additives,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Wastewater Treatment Additives,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Safety Equipment for Plants,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Safety Equipment for Plants,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Central Biotech Startup
+Safety Equipment for Plants,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Medline Wholesale
+Organic Certification Consulting,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,GreenLeaf Retailers
+Organic Certification Consulting,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,LifeAid Nonprofit
+Organic Certification Consulting,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,Pioneer Biotech Startups
+Mobile Odor Monitoring Units,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Mobile Odor Monitoring Units,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Redwood Retail
+Mobile Odor Monitoring Units,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,VitalPharma Corp
+Biogas Market Analysis Reports,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Market Analysis Reports,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Biogas Market Analysis Reports,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Biogas Plant Insurance Brokerage,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Equipment Spare Parts,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Equipment Spare Parts,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Redwood Retail
+Equipment Spare Parts,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,InnovateMed Retail
+Fertilizer Spreader Calibration,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Fertilizer Spreader Calibration,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Fertilizer Spreader Calibration,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Quantum Biologics
+Construction Project Management,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Construction Project Management,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,FutureWell Clinic Group
+Construction Project Management,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,VitalPharma Corp
+Green Energy Awareness Campaigns,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_RENEWABLE_POWER_GENERATION
+Green Energy Awareness Campaigns,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_POWER_SALES
+Green Energy Awareness Campaigns,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Urban Health Initiative
+Biogas Laboratory Test Services,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Nutrient Monitoring Probes,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Nutrient Monitoring Probes,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Nutrient Monitoring Probes,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Quantum Biologics
+Digestate Pasteurization Units,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Pasteurization Units,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Digestate Pasteurization Units,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Biogas Plant Control Panels,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Storage Bag Sales,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Energy Storage Integration Solutions,4001,Retail Gross Sales,BIOCIRC_RENEWABLE_POWER_GENERATION,BIOCIRC_POWER_SALES
+On-site Farm Consultations,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+On-site Farm Consultations,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,MedSupply Partners
+On-site Farm Consultations,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Quantum Biologics
+Process Water Treatment Systems,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Process Water Treatment Systems,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Redwood Retail
+Process Water Treatment Systems,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,InnovateMed Retail
+Fugitive Emission Detection Kits,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_POWER_SALES
+Fugitive Emission Detection Kits,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,Public Health England
+Fugitive Emission Detection Kits,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,GreenBridge Labs
+Feedstock Logistics Software,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Feedstock Logistics Software,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Feedstock Logistics Software,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Digestate Distribution Management,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Digestate Distribution Management,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Digestate Distribution Management,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,InnovateMed Retail
+Biogas-Ready CHP Unit Sales,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas-Ready CHP Unit Sales,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Biogas-Ready CHP Unit Sales,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Healthy Horizons Foundation
+Biogas Project Licensing Assistance,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Project Licensing Assistance,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Biogas Project Licensing Assistance,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Feedstock Contract Auditing,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Feedstock Contract Auditing,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Feedstock Contract Auditing,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,InnovateMed Retail
+Digestate pH Control Agents,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate pH Control Agents,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Digestate pH Control Agents,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Digestate Application Software,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Application Software,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Digestate Application Software,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,GreenMed Clinics
+Eco-label Certification Support,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,Metro Health Retail
+Eco-label Certification Support,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,BIOCIRC_POWER_SALES
+Eco-label Certification Support,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,Vitality Health Network
+Waste Sampling Bottles,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Waste Sampling Bottles,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Waste Sampling Bottles,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,InnovateMed Retail
+Substrate Mixing System Sales,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_POWER_SALES
+Substrate Mixing System Sales,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,GreenMed Clinics
+Substrate Mixing System Sales,4004,Trade Gross Sales,BIOCIRC_POWER_SALES,VitalPharma Corp
+Digestate Crop Trial Coordination,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Digestate Crop Trial Coordination,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Urban Wellness Labs
+Digestate Crop Trial Coordination,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOGAS_PRODUCTION
+Biogas Plant Site Surveys,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant Site Surveys,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Biogas Plant Site Surveys,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Feedstock Quality Benchmarking Reports,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Feedstock Quality Benchmarking Reports,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Feedstock Quality Benchmarking Reports,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,VitalPharma Corp
+Bioenergy Industry Publications,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_POWER_SALES
+Bioenergy Industry Publications,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,MedSupply Partners
+Bioenergy Industry Publications,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,GreenMed Clinics
+Maintenance Call-out Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Maintenance Call-out Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Maintenance Call-out Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Plant Operator PPE Kits,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Plant Operator PPE Kits,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Redwood Retail
+Plant Operator PPE Kits,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,InnovateMed Retail
+Organic Residue Sampling Tools,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Organic Residue Sampling Tools,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Organic Residue Sampling Tools,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,InnovateMed Retail
+Bioenergy Policy Analysis,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_POWER_SALES
+Bioenergy Policy Analysis,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,MedSupply Partners
+Bioenergy Policy Analysis,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,GreenMed Clinics
+Gas Tightness Testing Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Gas Tightness Testing Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Gas Tightness Testing Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Digestate Storage Liner Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Digestate Storage Liner Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Digestate Storage Liner Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Renewable Gas Market Newsletters,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Renewable Gas Market Newsletters,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Renewable Gas Market Newsletters,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_RENEWABLE_POWER_GENERATION
+Biogas Plant Commissioning Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant Commissioning Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Biogas Plant Commissioning Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Healthy Horizons Foundation
+Fugitive Emissions Mitigation Consulting,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Fugitive Emissions Mitigation Consulting,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_POWER_SALES
+Fugitive Emissions Mitigation Consulting,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Digestate Odor Masking Agents,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Odor Masking Agents,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Digestate Odor Masking Agents,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Quantum Biologics
+Feedstock Supplier Vetting Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Feedstock Supplier Vetting Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Feedstock Supplier Vetting Service,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,VitalPharma Corp
+Waste Collection App Subscriptions,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Waste Collection App Subscriptions,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Redwood Retail
+Waste Collection App Subscriptions,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,BIOCIRC_BIOFERTILIZER_PRODUCTION
+On-site Bioenergy Workshops,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+On-site Bioenergy Workshops,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOFERTILIZER_SALES
+On-site Bioenergy Workshops,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,MedSupply Partners
+Digestate Application Field Trials,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Digestate Application Field Trials,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Urban Wellness Labs
+Digestate Application Field Trials,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Biogas Plant Job Board Listings,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Fugitive Emission Data Loggers,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Fugitive Emission Data Loggers,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Redwood Retail
+Fugitive Emission Data Loggers,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,VitalPharma Corp
+Biogas Plant ROI Calculators,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant ROI Calculators,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Biogas Plant ROI Calculators,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Digestate Management E-books,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Management E-books,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Digestate Management E-books,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,GreenMed Clinics
+Energy Sector Media Sponsorships,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_POWER_SALES
+Energy Sector Media Sponsorships,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_ENERGY_CONSULTING
+Energy Sector Media Sponsorships,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Plant Emergency Drill Planning,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Plant Emergency Drill Planning,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Redwood Retail
+Plant Emergency Drill Planning,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,InnovateMed Retail
+Digestate Application Instruction Videos,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Digestate Application Instruction Videos,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Application Instruction Videos,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Digestate Trial Sample Kits,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Trial Sample Kits,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Genesis Health Startups
+Digestate Trial Sample Kits,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_PRODUCTION
+Biogas Plant Staff Induction Packs,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Digestate Application Record Apps,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Application Record Apps,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Digestate Application Record Apps,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,GreenMed Clinics
+Biogas Plant Knowledgebase Licensing,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant Knowledgebase Licensing,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Biogas Plant Knowledgebase Licensing,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Metro Health Retail
+Biogas Plant Digital Twin Models,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant Digital Twin Models,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_POWER_SALES
+Biogas Plant Digital Twin Models,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Organic Waste Classroom Kits,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Organic Waste Classroom Kits,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Urban Health Initiative
+Organic Waste Classroom Kits,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Quantum Biologics
+Feedstock Sustainability Certificates,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,Metro Health Retail
+Feedstock Sustainability Certificates,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,Urban Health Initiative
+Feedstock Sustainability Certificates,4001,Retail Gross Sales,BIOCIRC_CARBON_CERTIFICATION,Quantum Biologics
+Biogas Plant Webinars,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant Webinars,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,InnovateMed Retail
+Biogas Plant Webinars,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,Redwood Retail
+Plant Maintenance Procedure Posters,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Metro Health Retail
+Plant Maintenance Procedure Posters,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Urban Health Initiative
+Plant Maintenance Procedure Posters,4001,Retail Gross Sales,BIOCIRC_POWER_SALES,Quantum Biologics
+Biogas Plant System Animation Videos,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant Branding Merchandise,4001,Retail Gross Sales,BIOCIRC_BIOGAS_PRODUCTION,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant Case Study Reports,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_DISTRIBUTION
+Biogas Plant Case Study Reports,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_BIOGAS_PRODUCTION
+Biogas Plant Case Study Reports,4001,Retail Gross Sales,BIOCIRC_ENERGY_CONSULTING,BIOCIRC_POWER_SALES
+Digestate Field Research Grants,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Digestate Field Research Grants,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_POWER_SALES
+Digestate Field Research Grants,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Safety Information Cards,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Safety Information Cards,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Digestate Safety Information Cards,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,GreenMed Clinics
+Digestate Handling PPE Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Digestate Handling PPE Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Handling PPE Sales,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,GreenMed Clinics
+Digestate Sample Submission Bags,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Sample Submission Bags,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,BIOCIRC_BIOFERTILIZER_SALES
+Digestate Sample Submission Bags,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,VitalPharma Corp
+Digestate Photography Services,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Metro Health Retail
+Digestate Photography Services,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,MedSupply Partners
+Digestate Photography Services,4001,Retail Gross Sales,BIOCIRC_BIOFERTILIZER_SALES,Quantum Biologics

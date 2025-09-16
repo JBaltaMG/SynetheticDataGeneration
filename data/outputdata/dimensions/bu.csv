@@ -1,0 +1,10 @@
+companyname,companycode,name,bu_name,bu_type,sells_to,buys_from,customer_id,vendor_id
+BioCirc_denmark,1000,BIOCIRC_BIOGAS_PRODUCTION,Biogas Production,Manufacturing,BIOCIRC_BIOGAS_DISTRIBUTION,,65,80
+BioCirc_denmark,1000,BIOCIRC_BIOGAS_DISTRIBUTION,Biogas Distribution,Services,BIOCIRC_DISTRICT_HEATING,BIOCIRC_BIOGAS_PRODUCTION,66,81
+BioCirc_denmark,1000,BIOCIRC_DISTRICT_HEATING,District Heating Supply,Retail,,BIOCIRC_BIOGAS_DISTRIBUTION,67,82
+BioCirc_germany,1002,BIOCIRC_ENERGY_CONSULTING,Energy Transition Consulting,Consulting,,,68,83
+BioCirc_germany,1002,BIOCIRC_BIOFERTILIZER_PRODUCTION,Biofertilizer Production,Manufacturing,BIOCIRC_BIOFERTILIZER_SALES,,69,84
+BioCirc_germany,1002,BIOCIRC_BIOFERTILIZER_SALES,Biofertilizer Sales,Retail,,BIOCIRC_BIOFERTILIZER_PRODUCTION,70,85
+BioCirc_netherlands,1003,BIOCIRC_CARBON_CERTIFICATION,Carbon Certification Services,Services,,,71,86
+BioCirc_netherlands,1003,BIOCIRC_RENEWABLE_POWER_GENERATION,Renewable Power Generation,Manufacturing,BIOCIRC_POWER_SALES,,72,87
+BioCirc_netherlands,1003,BIOCIRC_POWER_SALES,Renewable Power Sales,Retail,,BIOCIRC_RENEWABLE_POWER_GENERATION,73,88

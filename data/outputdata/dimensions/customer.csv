@@ -1,51 +1,65 @@
 customer_id,name,customer_segment,proportionality
-10,Carlsberg Group,Enterprise,0.05000000000000001
-11,DSV A/S,Enterprise,0.05000000000000001
-12,Vestas Wind Systems A/S,Enterprise,0.05000000000000001
-13,AP Moller Maersk,Enterprise,0.05000000000000001
-14,Arla Foods,Enterprise,0.04285714285714286
-15,Copenhagen Municipality,Government,0.03571428571428572
-16,Region Hovedstaden,Government,0.03571428571428572
-17,Dansk Supermarked Group,Retail,0.028571428571428574
-18,COOP Danmark,Retail,0.028571428571428574
-19,Brøndby IF,Non-profit,0.02142857142857143
-20,Red Barnet Danmark,Non-profit,0.02142857142857143
-21,Odense Kommune,Government,0.014285714285714287
-22,Roskilde University,Government,0.014285714285714287
-23,JYSK,Retail,0.02142857142857143
-24,Silvan,Retail,0.02142857142857143
-25,STARK Danmark,Wholesale,0.02142857142857143
-26,Netcompany A/S,Enterprise,0.02142857142857143
-27,DFDS Seaways,Enterprise,0.02142857142857143
-28,Kromann Reumert,Enterprise,0.02142857142857143
-29,Atea A/S,Enterprise,0.02142857142857143
-30,Foss Analytical A/S,Enterprise,0.02142857142857143
-31,ISS Facility Services,Enterprise,0.02142857142857143
-32,Bang & Olufsen,Enterprise,0.02142857142857143
-33,Haldor Topsøe A/S,Enterprise,0.02142857142857143
-34,SimCorp A/S,Enterprise,0.02142857142857143
-35,Pandora A/S,Enterprise,0.02142857142857143
-36,Niras A/S,Enterprise,0.014285714285714287
-37,NCC Danmark,Enterprise,0.014285714285714287
-38,Herning Kommune,Government,0.014285714285714287
-39,Syddansk Universitet,Government,0.014285714285714287
-40,FOA (Fag og Arbejde),Non-profit,0.014285714285714287
-41,Danish Refugee Council,Non-profit,0.014285714285714287
-42,Mødrehjælpen,Non-profit,0.014285714285714287
-43,Unicef Danmark,Non-profit,0.014285714285714287
-44,BL - Danmarks Almene Boliger,Non-profit,0.014285714285714287
-45,Berlingske Media,SME,0.014285714285714287
-46,Zleep Hotels,SME,0.014285714285714287
-47,Bruuns Bazaar,SME,0.014285714285714287
-48,Joe & The Juice,SME,0.014285714285714287
-49,Kamille Blomster,SME,0.0071428571428571435
-50,Copenhagen Bicycles,SME,0.0071428571428571435
-51,Café Norden,SME,0.0071428571428571435
-52,Skagerak Consulting,SME,0.0071428571428571435
-53,Nordic Startups,Startup,0.0071428571428571435
-54,Too Good To Go,Startup,0.0071428571428571435
-55,Tradeshift,Startup,0.0071428571428571435
-56,Organic Basics,Startup,0.0071428571428571435
-57,ByFounders,Startup,0.0071428571428571435
-58,Hørkram Foodservice,Wholesale,0.014285714285714287
-59,DLG a.m.b.a.,Wholesale,0.014285714285714287
+10,GreenMed Clinics,Enterprise,0.03457059679767105
+11,VitalPharma Corp,Enterprise,0.02911208151382824
+12,MedSupply Partners,Wholesale,0.018195050946142623
+13,NuGen Labs,SME,0.01455604075691412
+14,LifeBridge Hospitals,Enterprise,0.03093158660844254
+15,HealthCity Retailers,Retail,0.009097525473071312
+16,FutureWell Clinic Group,Enterprise,0.02256186317321688
+17,Healthy Horizons Foundation,Non-profit,0.006550218340611359
+18,Pioneer Hospital Group,Enterprise,0.025473071324599736
+19,BlueRiver Medical,SME,0.009825327510917014
+20,Vitality Health Network,Enterprise,0.02147016011644833
+21,Metro Health Retail,Retail,0.0076419213973799105
+22,Community Health Outreach,Non-profit,0.004730713245997056
+23,VitalPath Startups,Startup,0.004366812227074206
+24,City Medical Group,Enterprise,0.017103347889374076
+25,District Health Council,Government,0.018922852983988374
+26,Precision BioAnalytics,SME,0.0076419213973799105
+27,Public Health England,Government,0.019286754002911223
+28,GreenBridge Labs,SME,0.00727802037845706
+29,Advanced Pharma Retailers,Retail,0.004730713245997056
+30,Regional Medical Authority,Government,0.01455604075691412
+31,MedTech Startups,Startup,0.003275109170305654
+32,Evergreen Hospital Group,Enterprise,0.015647743813682672
+33,Global Diagnostics Wholesale,Wholesale,0.013100436681222717
+34,GreenLeaf Retailers,Retail,0.0036390101892285046
+35,Summit Healthcare Retail,Retail,0.0036390101892285046
+36,Urban Health Initiative,Non-profit,0.004002911208151355
+37,Quantum Biologics,SME,0.0061863173216885085
+38,Healthcare City Supplies,Wholesale,0.009461426491994163
+39,PrimeGen Startup Labs,Startup,0.002183406113537103
+40,NextStep NGO,Non-profit,0.0036390101892285046
+41,InspireMed Startups,Startup,0.0025473071324599536
+42,BlueSky Hospital Group,Enterprise,0.011644832605531265
+43,PureHealth Retailers,Retail,0.003275109170305654
+44,Bridge Biotech,SME,0.004730713245997056
+45,Regional Hospital Network,Enterprise,0.011280931586608416
+46,CarePlus Nonprofit,Non-profit,0.0036390101892285046
+47,Smart Health Supplies,Wholesale,0.006550218340611359
+48,MediPulse Startups,Startup,0.002183406113537103
+49,InnovateMed Retail,Retail,0.002911208151382804
+50,Medline Wholesale,Wholesale,0.0069141193595342095
+51,Central Biotech Startup,Startup,0.0018195050946142523
+52,Cityline Clinics,SME,0.004002911208151355
+53,Health For All Foundation,Non-profit,0.003275109170305654
+54,Elite Medical Group,Enterprise,0.0076419213973799105
+55,Redwood Retail,Retail,0.002183406113537103
+56,Pioneer Biotech Startups,Startup,0.0018195050946142523
+57,LifeAid Nonprofit,Non-profit,0.002911208151382804
+58,Municipal Health Board,Government,0.008733624454148462
+59,PharmaDirect Wholesale,Wholesale,0.004730713245997056
+60,QuickCare Retailers,Retail,0.002183406113537103
+61,Genesis Health Startups,Startup,0.001455604075691402
+62,FairCare Foundation,Non-profit,0.002911208151382804
+63,Biovision Wholesale,Wholesale,0.004002911208151355
+64,Urban Wellness Labs,SME,0.003275109170305654
+65,BIOCIRC_BIOGAS_PRODUCTION,Intercompany,0.05555555555555563
+66,BIOCIRC_BIOGAS_DISTRIBUTION,Intercompany,0.05555555555555563
+67,BIOCIRC_DISTRICT_HEATING,Intercompany,0.05555555555555563
+68,BIOCIRC_ENERGY_CONSULTING,Intercompany,0.05555555555555563
+69,BIOCIRC_BIOFERTILIZER_PRODUCTION,Intercompany,0.05555555555555563
+70,BIOCIRC_BIOFERTILIZER_SALES,Intercompany,0.05555555555555563
+71,BIOCIRC_CARBON_CERTIFICATION,Intercompany,0.05555555555555563
+72,BIOCIRC_RENEWABLE_POWER_GENERATION,Intercompany,0.05555555555555563
+73,BIOCIRC_POWER_SALES,Intercompany,0.05555555555555563

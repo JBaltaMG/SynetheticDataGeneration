@@ -514,9 +514,8 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
 
     df_erp_all = pd.concat([df_expenses_full, df_products_full], ignore_index=True)
 
-    df_erp_all["quantity"] = np.ceil(df_erp_all["quantity"].astype(int))
     df_erp_all.loc[df_erp_all['quantity'] == 0, 'quantity'] = 1
-    df_erp_all["amount"] = np.sign(df_erp_all["amount"]) * df_erp_all["quantity"] * df_erp_all["unit_price"]
+    #df_erp_all["amount"] = np.sign(df_erp_all["amount"]) * df_erp_all["quantity"] * df_erp_all["unit_price"]
 
     df_accounts = pd.read_csv("data/outputdata/dimensions/account.csv")
 
@@ -530,7 +529,7 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         os.makedirs(output_dir, exist_ok=True)
         df_erp_expenses_full.to_csv(f"{output_dir}/erp_expenses.csv", index=False)
         df_erp_products_full.to_csv(f"{output_dir}/erp_products.csv", index=False)
-        df_erp_all.to_csv(f"{output_dir}/general_ledger.csv", index=False)
+        df.to_csv(f"{output_dir}/general_ledger.csv", index=False)
         df_erp_budget.to_csv(f"{output_dir}/fact_budget.csv", index=False)
         print(f"✔ All ERP CSVs saved to: {output_dir}")
     

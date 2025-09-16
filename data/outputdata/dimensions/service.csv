@@ -1,101 +1,81 @@
 name,proportionality,unit_price
-SAP ERP Implementation,0.059659090909090925,12000
-Global IT Outsourcing Contract,0.046875000000000014,9000
-Managed Security Services,0.034090909090909095,4200
-Annual Audit & Assurance Fees,0.03125000000000001,3800
-IT Infrastructure Maintenance,0.029829545454545463,3600
-Mainframe Support Contract,0.026988636363636367,3400
-Software Licensing Consolidation,0.02556818181818182,3200
-Enterprise Networking Service,0.02556818181818182,3100
-CRM System Subscription,0.02272727272727273,2900
-Telecommunications Network Service,0.02272727272727273,2850
-Annual Cybersecurity Audits,0.021306818181818187,2700
-Corporate Tax Consulting,0.021306818181818187,2600
-HR Outsourcing Service,0.019886363636363643,2500
-Pension Administration Fees,0.019886363636363643,2450
-Building Lease Management Fee,0.019886363636363643,2350
-Digital Marketing Retainer,0.018465909090909092,2300
-Annual Facility Safety Inspection,0.018465909090909092,2250
-Workforce Training Programs,0.017045454545454548,2100
-Payroll Processing Service,0.017045454545454548,2050
-Environmental Compliance Audits,0.015625000000000003,2000
-Brand Licensing Fee,0.014204545454545458,1800
-Annual IT Audit,0.014204545454545458,1700
-External Whistleblower Hotline,0.014204545454545458,1650
-Annual Disaster Recovery Testing,0.014204545454545458,1600
-Executive Recruitment Retainer,0.01278409090909091,1550
-Supplier Performance Review Fee,0.01278409090909091,1520
-Server Room Maintenance,0.011363636363636366,1450
-Occupational Health & Safety Service,0.011363636363636366,1430
-Translation & Localization Services,0.011363636363636366,1380
-ERP User Training License,0.011363636363636366,1360
-Annual Board Membership Fee,0.011363636363636366,1350
-Shareholder Registry Maintenance,0.009943181818181821,1300
-Annual Fire Safety Audit,0.009943181818181821,1280
-Annual Data Privacy Assessment,0.009943181818181821,1260
-Technical Documentation Service,0.009943181818181821,1250
-ISO Certification Audit Fee,0.009943181818181821,1220
-IT Asset Disposal Service,0.008522727272727274,1190
-Quality Management System Audit,0.008522727272727274,1170
-Annual Vehicle Registration Fee,0.008522727272727274,1160
-Recruitment Advertising Service,0.008522727272727274,1150
-Group IT Helpdesk Support,0.008522727272727274,1140
-Annual Network Penetration Test,0.008522727272727274,1130
-Banking Transaction Processing Fee,0.008522727272727274,1120
-Share Point Online Licensing,0.008522727272727274,1090
-GDPR Compliance Monitoring,0.008522727272727274,1080
-Annual Environmental Audit,0.007102272727272729,1030
-Industrial Waste Disposal License,0.007102272727272729,1000
-HR Policy Review Fee,0.007102272727272729,990
-License Management Service,0.007102272727272729,970
-Cloud Backup Subscription,0.007102272727272729,960
-ISO Training Course Fee,0.007102272727272729,950
-Phishing Simulation Service,0.005681818181818183,940
-Annual Trademark Registration Fee,0.005681818181818183,910
-Intranet Hosting Subscription,0.005681818181818183,880
-E-signature Platform License,0.005681818181818183,870
-Conference Room Scheduling Software,0.005681818181818183,860
-Annual Domain Name Renewal,0.005681818181818183,850
-Corporate Car Parking Permit,0.005681818181818183,840
-Occupational Medical Examination Fee,0.005681818181818183,830
-Annual Elevator Inspection Fee,0.004261363636363637,790
-Load Testing Service Subscription,0.004261363636363637,780
-Anti-virus Software Subscription,0.004261363636363637,760
-SSL Certificate Renewal,0.004261363636363637,740
-Remote Meeting Platform License,0.004261363636363637,730
-Company Credit Rating Assessment,0.004261363636363637,710
-Supplier Registration Fee,0.004261363636363637,700
-Public Affairs Monitoring Service,0.004261363636363637,690
-Annual Elevator License Fee,0.004261363636363637,660
-E-learning Platform License,0.004261363636363637,640
-Annual Utility Connection Fee,0.004261363636363637,620
-Procurement Portal License,0.0028409090909090914,610
-Courier Service Contract,0.0028409090909090914,590
-Annual Association Membership Fee,0.0028409090909090914,570
-Employee Sport Club Subsidy Fee,0.0028409090909090914,560
-Annual Food Handler Certificate,0.0028409090909090914,550
-Digital Signature Device License,0.0028409090909090914,540
-Annual Phone Directory Registration,0.0028409090909090914,530
-Safety Data Sheet Management Fee,0.0028409090909090914,520
-Business Card Printing Fee,0.0028409090909090914,510
-Annual Water Discharge License,0.0028409090909090914,500
-Health & Safety Poster Subscription,0.0028409090909090914,490
-Annual Copier Maintenance Fee,0.0028409090909090914,480
-Annual Energy Labeling Fee,0.0028409090909090914,470
-Document Shredding Service,0.0028409090909090914,460
-Annual Fire Extinguisher Inspection,0.0028409090909090914,420
-Annual Archive Storage Fee,0.0028409090909090914,400
-Annual Key Holder Registration,0.0028409090909090914,360
-Uniform Laundry Service,0.0028409090909090914,350
-Annual Subscription to Industry Magazine,0.0028409090909090914,340
-Annual Plant Maintenance Fee,0.0028409090909090914,320
-Annual Public Broadcast License,0.0028409090909090914,310
-Meeting Room Booking System License,0.0028409090909090914,290
-Annual Influenza Vaccination Fee,0.0028409090909090914,280
-Annual Bicycle Parking Permit,0.0028409090909090914,270
-Annual Employee Gift Tax Fee,0.0028409090909090914,260
-Annual Library Membership Fee,0.0028409090909090914,250
-Annual Warehouse Racking Inspection,0.0028409090909090914,240
-Annual Internal Newsletter Platform Fee,0.0028409090909090914,230
-Annual Coffee Machine Service Fee,0.0028409090909090914,220
-Annual Social Event License,0.0028409090909090914,210
+SAP ERP Implementation,0.05871559633027523,75000
+Enterprise IT Outsourcing Contract,0.05504587155963303,68000
+Facilities Management Retainer,0.04954128440366973,65000
+Annual Cloud Infrastructure Subscription,0.04036697247706422,40000
+Global Legal Counsel Retainer,0.03486238532110092,35000
+Enterprise Data Security Audit,0.03302752293577982,32000
+Annual Energy Procurement Contract,0.031192660550458717,29000
+Outsourced Payroll Service,0.029357798165137616,27000
+Annual Environmental Audit,0.027522935779816515,26000
+R&D Laboratory Equipment Leasing,0.025688073394495414,23000
+Global Insurance Policy Fee,0.025688073394495414,22000
+IT Disaster Recovery Services,0.023853211009174313,21000
+Strategic HR Business Partner Service,0.023853211009174313,20000
+Annual Corporate Tax Advisory,0.02018348623853211,15000
+Commercial Real Estate Lease Fee,0.02018348623853211,14000
+Annual Internal Audit,0.02018348623853211,13000
+External Financial Audit,0.02018348623853211,12000
+Enterprise Risk Management Consulting,0.02018348623853211,11500
+Labor Union Negotiation Consulting,0.01834862385321101,10000
+Strategic Marketing Agency Retainer,0.01834862385321101,8500
+Annual Health & Safety Certification,0.014678899082568808,6500
+IT Network Managed Services,0.014678899082568808,6200
+Annual Sustainability Reporting Service,0.014678899082568808,6100
+Onsite Catering Services Contract,0.014678899082568808,6000
+Custom Analytics Dashboard Service,0.012844036697247707,5900
+Waste Disposal Contract,0.012844036697247707,5750
+Employee Assistance Program Fee,0.012844036697247707,5600
+Shared Mobility Fleet Management,0.012844036697247707,5400
+Annual Board Meeting Facilitation,0.012844036697247707,5000
+Professional Translation Service,0.011009174311926606,4800
+Supply Chain Management Software Subscription,0.011009174311926606,4700
+Annual Shareholder Meeting Organization,0.011009174311926606,4650
+Annual Fire Safety Inspection,0.011009174311926606,4600
+Custom e-Learning Platform License,0.011009174311926606,4500
+Annual HR Policy Review,0.011009174311926606,4300
+Executive Coaching Services,0.009174311926605505,4100
+Annual Chamber of Commerce Fee,0.009174311926605505,3950
+Mobile Device Management License,0.009174311926605505,3800
+Recruitment Advertising Campaign,0.009174311926605505,3700
+Annual First Aid Training,0.009174311926605505,3650
+Meeting Room Audio-Visual Support,0.009174311926605505,3600
+Workstation Ergonomics Assessment,0.009174311926605505,3500
+Cloud Backup Subscription,0.007339449541284404,3400
+Annual ISO Certification Audit,0.007339449541284404,3200
+Office Cleaning Contract,0.007339449541284404,3100
+Annual Employee Satisfaction Survey,0.007339449541284404,3000
+Annual Business Continuity Planning,0.007339449541284404,2950
+Annual Network Security Update,0.007339449541284404,2800
+Annual Corporate Social Responsibility Audit,0.005504587155963303,2600
+Workforce Management Software License,0.005504587155963303,2500
+Recruitment Background Checks,0.005504587155963303,2400
+Annual Website Hosting Fee,0.005504587155963303,2300
+Annual Data Privacy Training,0.005504587155963303,2250
+Enterprise Antivirus License,0.005504587155963303,2200
+Onsite Security Guard Service,0.005504587155963303,2150
+Annual Water Quality Testing,0.005504587155963303,2100
+Annual Worksite Environmental Monitoring,0.005504587155963303,1950
+Annual Parking Space Leasing,0.003669724770642202,1800
+Annual Elevator Inspection Fee,0.003669724770642202,1650
+Annual Pest Control Service,0.003669724770642202,1600
+Annual Wastewater Discharge License,0.003669724770642202,1550
+Annual Noise Monitoring Service,0.003669724770642202,1500
+Annual Export/Import License,0.003669724770642202,1450
+Annual Carbon Emission Allowance Fee,0.003669724770642202,1400
+Annual Wireless Spectrum License,0.003669724770642202,1350
+Annual Fuel Storage Permit,0.001834862385321101,1300
+Annual Employee Transport Subsidy Fee,0.001834862385321101,1100
+Annual E-invoicing Platform Subscription,0.001834862385321101,1050
+Annual Building Permit Renewal,0.001834862385321101,950
+Annual Utility Network Access Fee,0.001834862385321101,900
+Annual Water Extraction Fee,0.001834862385321101,850
+Annual HVAC Maintenance,0.001834862385321101,750
+Annual Company Vehicle Inspection,0.001834862385321101,700
+Annual Fire Safety Certificate,0.001834862385321101,650
+Annual Public Performance Fee (KODA),0.001834862385321101,480
+Annual Bank Account Maintenance Fee,0.001834862385321101,450
+Annual Patent Renewal Fee,0.001834862385321101,400
+Annual Alarm System Monitoring Fee,0.001834862385321101,380
+Annual Office Recycling Service,0.001834862385321101,370
+Annual Mailroom Service Fee,0.001834862385321101,350

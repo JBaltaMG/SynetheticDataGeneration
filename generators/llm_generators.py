@@ -3,6 +3,7 @@ import utils.prompt_utils as prompt_utils
 import utils.utils as utils
 import generators.random_generators as random_generators
 import numpy as np
+import re
 
 
 def generate_procurement_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
@@ -286,7 +287,7 @@ def generate_customers_llm(company_name: str, count: int = 100, model: str = "gp
 def generate_vendors_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
     over_request_count = int(np.floor(int(count) * 1.4))
-    header = "name;vendor_type;proportionality"
+    header = "name;vendor_segment;proportionality"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
@@ -294,7 +295,7 @@ def generate_vendors_llm(company_name: str, count: int = 100, model: str = "gpt-
     You are a B2B procurement and supply chain expert. Generate {over_request_count} realistic vendors for {company_name}.
     Fields:
     - name
-    - vendor_type: Raw Materials, Equipment, IT Services, Logistics, Facilities, Office Supplies, Contract Labor, Consulting
+    - vendor_segment: Raw Materials, Equipment, IT Services, Logistics, Facilities, Office Supplies, Contract Labor, Consulting
     - proportionality: the proportionality of this vendor.
     Bias critical categories and concentration based on the context.
 
@@ -360,3 +361,75 @@ def estimate_mean_pay_llm(company_name: str, model: str = "gpt-4o", temp: float 
         temperature=temp,
     )
     return int(response.choices[0].message.content)
+
+
+def generate_business_units_llm(
+    company_name: str,
+    count: int = 9,
+    model: str = "gpt-4.1",
+    temp: float = 0.8,
+) -> str:
+    """
+    LLM-driven generator for Business Units (BUs) inside a single company.
+    Returns a CSV string with columns: bu_key,bu_name,bu_type,region,currency,fiscal_start_month,sells_to,buys_from,notes
+
+    - bu_key: UPPER_SNAKE, prefixed with company acronym (e.g., ACME_SALES)
+    - bu_type: one of [Manufacturing, Sales, Services, SharedServices, RnD, Logistics, ECommerce, Retail, Consulting]
+    - region: optional (e.g., Denmark, Nordics, EU North) — keep Denmark-centric / realistic
+    - sells_to / buys_from: semicolon-separated list of other bu_keys (optional; use for intercompany)
+    - currency: ISO (DKK/EUR/GBP, etc.)
+    - fiscal_start_month: 1–12 (integers)
+    - notes: 1 short sentence about what makes the BU “work differently” (patterns, seasonality, pricing, etc.)
+
+    Distribution guidance (soft constraints):
+      - Ensure coverage of core functions:
+        * ≥1 Sales-type BU (Sales, Retail, ECommerce)
+        * ≥1 Delivery/Production BU (Manufacturing, Logistics, Services)
+        * ≥1 Shared function (SharedServices or similar)
+      - Max 1–2 regionally scoped BUs (e.g., “Nordics Sales”)
+      - Keep Denmark-only operations in mind (no “Global Country Manager” roles)
+
+    Output is intentionally over-generated (x1.4) and later truncated to 'count'.
+    """
+
+    client = prompt_utils.get_openai_client()
+
+    over_request_count = int(np.floor(int(count) * 1.4))
+    header = "companyname;companycode;bu_key;bu_name;bu_type;sells_to;buys_from"
+    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
+    ctxb = prompt_utils._ctx_block(company_name)
+
+    # Build a stable company prefix for keys (ACME, LEGO, etc.)
+    company_prefix = re.sub(r"[^A-Za-z0-9]+", "", company_name).upper()
+    company_prefix = company_prefix[:8] if company_prefix else "COMPANY"
+
+    prompt = f"""
+    You are an experienced CFO/COO designing Business Units (BUs) for a company named {company_name}.
+    Generate {over_request_count} BUs and companies as a CSV with the columns:
+    {header}
+
+    Rules & style:
+    - companyname: create {np.floor(over_request_count/3)} geographical companies (e.g. {company_name}_denmark, {company_name}_sweden).
+    - companycode: start at 1000 and increment for each new company.
+    - bu_key: UPPER_SNAKE, prefixed with {company_prefix}_ (e.g., {company_prefix}_ELECTRICITY).  
+      Each company must have ~3 BUs. Use industry-specific terms relevant to {company_name}, 
+      not generic "Sales" or "Manufacturing".
+    - bu_name: human-readable, e.g., "Electricity Generation", "District Heating", "Biogas Production", "Carbon Consulting".
+    - bu_type: choose from [Manufacturing, Services, SharedServices, RnD, Retail, Consulting].
+      Map your industry-specific BU into the closest category.
+    - sells_to / buys_from: list of other bu_keys (ONLY THE ONES THAT HAVE BEEN GENERATED) if intercompany flows apply; allow empty. Only one intercompany per BU.
+
+    {constraints}
+    """.strip()
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "You are a helpful finance data modeller and HR/operations expert."},
+            {"role": "user", "content": prompt},
+        ],
+        temperature=temp,
+    )
+
+    # Reuse your existing CSV parser/truncator
+    return prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
