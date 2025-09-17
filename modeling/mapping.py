@@ -248,7 +248,7 @@ def create_mapping_parallel_simple(
                 break
 
             par_payload = {
-                "task":"Select one partner by index",
+                "task":"Select one partner by index. Intercompany trades should be picked around 10% of the time. If it is COMPANYNAME_XX, it is an intercompany trade.",
                 "item_name": item_name,
                 "account_name": account_name,
                 "candidates": filtered,
