@@ -26,7 +26,7 @@ def assign_monthly_pay(df_roles: pd.DataFrame, mean_pay: float = 42000) -> pd.Da
     return df_roles
 
 def expand_employees_across_months(df_employees: pd.DataFrame, year: int = 2025) -> pd.DataFrame:
-    months = random_generators.generate_month_list(year_start=year-5, year_end=year)
+    months = random_generators.generate_month_list(year_start=year-1, year_end=year)
     rows = []
 
     for _, row in df_employees.iterrows():

@@ -24,7 +24,9 @@ def generate_procurement_llm(company_name: str, count: int = 100, model: str = "
     - CSV with two columns: name;proportionality
     - `name` = specific purchased item/material (avoid vague terms like "miscellaneous" or "other")
     - `proportionality` = share of total procurement budget
-    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number 
+    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number. Do not exceed 100.000 dkk. 
+
+    IMPORTANT: DO not include any assets or liabilities. Only P&L relevant items.
 
     Coverage requirements (all must appear at least once):
     - Raw materials & base components
@@ -70,7 +72,9 @@ def generate_sales_products_llm(company_name: str, count: int = 100, model: str 
     Each row after the header:
     - `name` = realistic product/SKU category (broad but specific enough for revenue analysis; e.g., "Running Shoes", not "Product A")
     - `proportionality` = share of total sales revenue
-    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number 
+    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number. Do not exceed 100.000 dkk. 
+
+    IMPORTANT: DO not include any assets or liabilities. Only P&L relevant items.
 
     Composition rules:
     - Include a mix of high-revenue flagship lines, mid-range products, and low-cost accessories/services.
@@ -153,7 +157,9 @@ def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt
     - Avoid vague terms like "Miscellaneous" or "Various".
     - Include annual/temporal entries such as "Annual IT Audit".
     - `proportionality` = share of total sales revenue
-    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number. Make the value much lower than you would think.
+    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number. Do not exceed 10.000 dkk. 
+
+    IMPORTANT: DO not include any big projects or one-off costs. Only regular, recurring services.
 
     Composition rules:
     - Top ranks: expensive projects, enterprise retainers, major outsourcing contracts.
@@ -409,9 +415,9 @@ def generate_business_units_llm(
     {header}
 
     Rules & style:
-    - companyname: create {np.floor(over_request_count/3)} geographical companies (e.g. {company_name}_denmark, {company_name}_sweden).
+    - companyname: create {np.floor(over_request_count/3)} geographical companies (e.g. {company_name} Denmark, {company_name} Sweden).
     - companycode: start at 1000 and increment for each new company.
-    - bu_key: UPPER_SNAKE, prefixed with {company_prefix}_ (e.g., {company_prefix}_ELECTRICITY).  
+    - bu_key: Prefixed with {company_prefix} (e.g., {company_prefix} Electricity).  
       Each company must have ~3 BUs. Use industry-specific terms relevant to {company_name}, 
       not generic "Sales" or "Manufacturing".
     - bu_name: human-readable, e.g., "Electricity Generation", "District Heating", "Biogas Production", "Carbon Consulting".

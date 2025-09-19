@@ -4,6 +4,7 @@ import os
 import numpy as np
 import json
 from pathlib import Path
+from modeling.erp_fast import balance_monthly, mirror_intercompany_expenses_to_products
 from schemas.date_schemas import schema_constant_balanced
 import utils.utils as utils
 import utils.utils_llm as utils_llm
@@ -386,6 +387,7 @@ def create_payroll_data(df_pay: pd.DataFrame, df_payroll: pd.DataFrame, df_depar
     df_erp_payroll_full, df_line_mapping = payroll.create_full_payroll(df_payroll=df_erp_payroll, df_mapping=df_map_payroll)
     return df_pay, df_erp_payroll_full, df_line_mapping
 
+
 def create_mapping_between_all(generated_data: dict = None, company_name: str = None, save_to_csv: bool = True) -> dict:
     """
     Creates a mapping between products, services, payroll, and GL accounts,
@@ -406,15 +408,15 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     if company_name:
         base_path = f"data/outputdata/dimensions/"
         try:
-            df_products    = pd.read_csv(os.path.join(base_path, "product.csv"))
-            df_services    = pd.read_csv(os.path.join(base_path, "service.csv"))
-            df_procurement = pd.read_csv(os.path.join(base_path, "procurement.csv"))
-            df_departments = pd.read_csv(os.path.join(base_path, "department.csv"))
-            df_accounts    = pd.read_csv(os.path.join(base_path, "account.csv"))
-            df_customers   = pd.read_csv(os.path.join(base_path, "customer.csv"))
-            df_vendors     = pd.read_csv(os.path.join(base_path, "vendor.csv"))
+            df_products     = pd.read_csv(os.path.join(base_path, "product.csv"))
+            df_services     = pd.read_csv(os.path.join(base_path, "service.csv"))
+            df_procurement  = pd.read_csv(os.path.join(base_path, "procurement.csv"))
+            df_departments  = pd.read_csv(os.path.join(base_path, "department.csv"))
+            df_accounts     = pd.read_csv(os.path.join(base_path, "account.csv"))
+            df_customers    = pd.read_csv(os.path.join(base_path, "customer.csv"))
+            df_vendors      = pd.read_csv(os.path.join(base_path, "vendor.csv"))
             df_bu_companies = pd.read_csv(os.path.join(base_path, "bu.csv"))
-            df_payroll     = pd.read_csv(os.path.join("data/outputdata/fact/", "erp_payroll.csv"))
+            df_payroll      = pd.read_csv(os.path.join("data/outputdata/fact/", "erp_payroll.csv"))
         except FileNotFoundError as e:
             raise FileNotFoundError(f"Missing file in folder: {e.filename}")
     else:
@@ -448,10 +450,15 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
     df_erp_expenses, df_map_expenses = mapping.map_procurement_services(df_procurement=df_procurement, df_services=df_services, df_accounts=df_accounts, df_customers=df_customers, df_bu_companies=df_bu_companies, df_vendors=df_vendors)
     df_erp_products, df_map_products = mapping.map_products(df_products=df_products, df_accounts=df_accounts, df_customers=df_customers, df_bu_companies=df_bu_companies, df_vendors=df_vendors)
 
+    # Pick random indices once (shared between products & expenses)
+    
+    df_map_products, df_map_expenses = mapping.pick_intercomp(df_map_products=df_map_products, df_map_expenses=df_map_expenses, df_bu_companies=df_bu_companies)
+    
     df_customers, df_vendors, df_bu_companies = mapping.remap_vendors_customers_with_bu(df_customers=df_customers, df_vendors=df_vendors, df_bu_companies=df_bu_companies)
 
-    print(f"✔ All mapping data generated.")
+    df_bu_companies.rename(columns={"bu_key": "name"}, inplace=True)
 
+    print(f"✔ All mapping data generated.")
 
     if save_to_csv:
         df_customers.to_csv(f"data/outputdata/dimensions/customer.csv", index=False)
@@ -473,16 +480,15 @@ def create_mapping_between_all(generated_data: dict = None, company_name: str = 
         "df_map_products": df_map_products,
     }
 
-
 def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_csv: bool = True) -> dict:
     """
     Creates all ERP-related data by combining generated and mapped data.
     """
-    from modeling.erp_fast import balance_monthly
-    from modeling.erp_fast import create_erp_data_fast
+    from modeling.erp_fast import balance_monthly, create_erp_data_fast, mirror_intercompany_expenses_to_products
+    
 
-    document_metadata_expense = random_generators.generate_document_metadata(n=2000, start_index=1000)
-    document_metadata_products = random_generators.generate_document_metadata(n=2000, start_index=2000)
+    document_metadata_expense = random_generators.generate_document_metadata(n=200, start_index=1000)
+    document_metadata_products = random_generators.generate_document_metadata(n=400, start_index=2000)
 
     df_map_products = generated_mapped_data["df_map_products"]
     df_map_expenses = generated_mapped_data["df_map_expenses"]
@@ -498,6 +504,9 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         balance_tolerance=100.0,     # how close to 0 before correction lines added
         year_start=2024,
         year_end=2025,
+        target_qty_per_line=20.0,
+        qty_sigma=0.5,
+        lines_for_band=(20, 4),
         seed=42
     )
 
@@ -510,12 +519,23 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         balance_tolerance=100.0,
         year_start=2024,
         year_end=2025,
+        target_qty_per_line=5.0,
+        qty_sigma=0.5,
+        lines_for_band=(12, 2),
         seed=43
     )
 
-    df_expenses_full = balance_monthly(data_expenses, target_types=("product"), noise_pct=0.1)
-    df_products_full = balance_monthly(data_products, target_types=("Product Sales"), noise_pct=0.1)
-    # Full target schema # also currency, amount_eur, Type
+    data_products = mirror_intercompany_expenses_to_products(
+       df_products=data_products,
+       df_expenses=data_expenses,
+    )
+    
+    
+    df_expenses_full = balance_monthly(data_expenses, target_types=("procurement", "services"), noise_pct=0.01)
+
+    df_products_full = balance_monthly(data_products, target_types=("Product Sales",), noise_pct=0.01) 
+    
+
     full_columns = ['document_number', 'type', 'date', 'amount', 'quantity', 'account_name', 'product_id', 'procurement_id', 'service_id', 'bu_id']
     vendor_col = ['vendor_name']
     customer_col = ['customer_name']
@@ -524,21 +544,21 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
     df_expenses_full = df_expenses_full.reindex(columns=full_columns + vendor_col)
     df_products_full = df_products_full.reindex(columns=full_columns + customer_col)
 
-   
+    
     rename_cols = {
-            'document_number': 'document_number',
-            'type': 'debit_credit', 
-            'date': 'date',
-            'amount': 'amount',
-            'quantity': 'quantity',
-            'account_name': 'account_id',
-            'bu_id': 'bu_id',
-            'product_id': 'product_id',
-            'procurement_id': 'procurement_id',
-            'service_id': 'service_id',
-            'vendor_name': 'vendor_id',
-            'customer_name': 'customer_id'}
-        
+        'document_number': 'document_number',
+        'type': 'debit_credit', 
+        'date': 'date',
+        'amount': 'amount',
+        'quantity': 'quantity',
+        'account_name': 'account_id',
+        'bu_id': 'bu_id',
+        'product_id': 'product_id',
+        'procurement_id': 'procurement_id',
+        'service_id': 'service_id',
+        'vendor_name': 'vendor_id',
+        'customer_name': 'customer_id'}
+            
     df_expenses_full.rename(columns=rename_cols, inplace=True)
     df_products_full.rename(columns=rename_cols, inplace=True)
 

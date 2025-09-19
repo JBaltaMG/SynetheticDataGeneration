@@ -16,12 +16,12 @@ erp_cols = {
     "date": "date",
     "amount": "amount",
     "quantity": "quantity",
-    "account_name": "account_id",
+    "account_name": "account_name",
     "product_id": "product_id",
     "procurement_id": "procurement_id",
     "service_id": "service_id",
-    "vendor_name": "vendor_id",
-    "customer_name": "customer_id",
+    "vendor_name": "vendor_name",
+    "customer_name": "customer_name",
 }
 
 @dataclass(frozen=True)
@@ -44,7 +44,7 @@ class Schema:
     @property
     def quantity(self):        return "quantity"
     @property
-    def account_id(self):      return "account_id"
+    def account_id(self):      return "account_name"
     @property
     def product_id(self):      return "product_id"
     @property
@@ -52,9 +52,9 @@ class Schema:
     @property
     def service_id(self):      return "service_id"
     @property
-    def vendor_id(self):       return "vendor_id"
+    def vendor_id(self):       return "vendor_name"
     @property
-    def customer_id(self):     return "customer_id"
+    def customer_id(self):     return "customer_name"
 
 S = Schema(mapping=erp_cols)
 
@@ -172,11 +172,11 @@ def compute_target_doc_value_per_item(
     df: pd.DataFrame,
     *,
     unit_price_col: str = "unit_price",
-    max_lines_per_doc: int = 25,
+    max_lines_per_doc: int = 50,
     cap_factor: float = 1.15,
-    min_doc_value: float = 5_000,
+    min_doc_value: float = 10_000,
     cheap_expensive_log10: tuple[float, float] = (3.0, 6.0),  # 10^3..10^6 price band
-    lines_for_band: tuple[int, int] = (12, 2),                # cheap→12 lines, expensive→2 lines
+    lines_for_band: tuple[int, int] = (20, 4),                # cheap→20 lines, expensive→4 lines
 ) -> pd.DataFrame:
     """
     Adds:
@@ -214,6 +214,7 @@ def fast_assign_counts(
     max_lines_per_doc: int = 25,
     cap_factor: float = 1.15,
     rng: Optional[np.random.Generator] = None,
+    lines_for_band: tuple[int, int] = (12, 2),  # cheap→12 lines, expensive→2 lines
     total_cols: Iterable[str] = ("total_amount", "annual_spend", "total_ammount", "total"),
 ) -> pd.DataFrame:
     """
@@ -248,7 +249,7 @@ def fast_assign_counts(
         # sanitize & clip
         tgt = np.where(np.isfinite(tgt) & (tgt > 0), tgt, np.nan)
     else:
-        tmp = compute_target_doc_value_per_item(out, max_lines_per_doc=max_lines_per_doc, cap_factor=cap_factor)
+        tmp = compute_target_doc_value_per_item(out, max_lines_per_doc=max_lines_per_doc, lines_for_band=lines_for_band,cap_factor=cap_factor)
         out[["desired_lines", "target_doc_value", "doc_value_cap"]] = tmp[["desired_lines", "target_doc_value", "doc_value_cap"]]
         tgt = out["target_doc_value"].to_numpy()
 
@@ -289,7 +290,7 @@ def fast_make_doc_plan(
     df_date=None,
     ensure_quarter_balance=True,
     total_cols=("total_amount","annual_spend","total_ammount","total"),
-    target_qty_per_line: float = 4.0,
+    target_qty_per_line: float = 20.0,
     qty_sigma: float = 0.6,        # ← NEW: variability for target qty (lognormal)
 ) -> pd.DataFrame:
     
@@ -360,7 +361,7 @@ def build_mapping_index(
     df_mapping: pd.DataFrame,
     *,
     schema: Schema = S,
-    passthrough: tuple[str, ...] = ("vendor_name", "bu_id"),  # add more if you like
+    passthrough: tuple[str, ...] = ("vendor_name", "bu_id", "customer_name"),  # add more if you like
 ) -> dict:
     dfm = df_mapping.copy()
     # Safety: coalesce if duplicates slipped through
@@ -392,7 +393,7 @@ def fast_materialize_lines(
     rng=None,
     schema=S,
     qty_line_sigma: float = 0.5,   
-    min_qty: float = 1.0,
+    min_qty: float = 2.0,
     max_qty: float | None = None,  # e.g., 50 or None
 ) -> pd.DataFrame:
     
@@ -463,7 +464,7 @@ def fast_materialize_lines(
         # your IDs if present in plan:
         schema.product_id, schema.procurement_id, schema.service_id,
         # passthroughs:
-        "vendor_name", "bu_id",
+        "vendor_name", "bu_id", "customer_name"
     ]
     keep = [c for c in keep if c in lines.columns]
     return lines[keep]
@@ -473,7 +474,7 @@ def fast_materialize_lines(
 # 7) Metadata (doc numbers, currency) + balancing
 # =============================================================================
 
-def assign_document_numbers_and_currency(
+def assign_document_numbers(
     df_lines: pd.DataFrame,
     df_document_metadata: Optional[pd.DataFrame],
     *,
@@ -485,16 +486,6 @@ def assign_document_numbers_and_currency(
         rng = np.random.default_rng(46)
 
     out = df_lines.copy()
-
-    # currency pool
-    if df_document_metadata is not None and "currency" in df_document_metadata.columns:
-        cur_pool = df_document_metadata["currency"].dropna().to_numpy()
-        if cur_pool.size == 0:
-            cur_pool = np.array(["EUR", "USD", "DKK"])
-    else:
-        cur_pool = np.array(["EUR", "USD", "DKK"])
-
-    out["currency"] = rng.choice(cur_pool, size=len(out), replace=True)
 
     # document number pool
     if df_document_metadata is not None and schema.document_number in df_document_metadata.columns:
@@ -555,7 +546,6 @@ def fast_balance(
             schema.quantity: -1,
             schema.account_id: assets[rng.integers(0, len(assets))],
             schema.product_id: None, schema.procurement_id: None, schema.service_id: None,
-            "currency": r.get("currency", None),
             "item_name": "Balance Correction",
             "source_type": "correction",
         })
@@ -582,6 +572,10 @@ def create_erp_data_fast(
     cap_factor: float = 1.15,
     balance_documents: bool = False,
     balance_tolerance: float = 100.0,
+    target_qty_per_line: float = 4.0,
+    qty_sigma: float = 0.5,
+    lines_for_band: tuple[int, int] = (12, 2),
+    min_doc_value: float = 5_000,
 ) -> pd.DataFrame:
     """
     High-speed, generalizable ERP data generator.
@@ -628,6 +622,7 @@ def create_erp_data_fast(
         df_expenses,
         max_lines_per_doc=max_lines_per_doc,
         cap_factor=cap_factor,
+        lines_for_band=lines_for_band,
         rng=rng,
     )
 
@@ -638,22 +633,23 @@ def create_erp_data_fast(
         rng=rng,
         df_date=df_date,
         ensure_quarter_balance=ensure_quarter_balance,
+        target_qty_per_line=target_qty_per_line, 
+        qty_sigma=qty_sigma,
     )
 
     # 5) Mapping index (with passthroughs like vendor_name, bu_id) + materialize
-    mapping_index = build_mapping_index(df_mapping, schema=schema, passthrough=("vendor_name", "bu_id"))
+    mapping_index = build_mapping_index(df_mapping, schema=schema, passthrough=("vendor_name", "bu_id", "customer_name"))
     lines = fast_materialize_lines(plan, mapping_index, rng=rng, schema=schema)
 
-    # 6) Document numbers & currency
-    lines = assign_document_numbers_and_currency(lines, df_document_metadata, rng=rng, schema=schema)
+    # 6) Document numbers
+    lines = assign_document_numbers(lines, df_document_metadata, rng=rng, schema=schema)
 
     # 7) Output (canonical order)
     cols = [
-        schema.document_number, schema.date, "currency",
+        schema.document_number, schema.date,
         schema.amount, schema.quantity, schema.debit_credit,
         schema.account_id, schema.product_id, schema.procurement_id, schema.service_id,
-        "item_name", "source_type", "unit_price",
-        "department_name", "customer_name", "vendor_name", "bu_id", schema.customer_id, schema.vendor_id
+        "item_name", "source_type", "unit_price", "bu_id", schema.customer_id, schema.vendor_id
     ]
     cols = [c for c in cols if c in lines.columns]
     out = lines[cols].copy()
@@ -668,6 +664,54 @@ def create_erp_data_fast(
 
     return out.reset_index(drop=True)
 
+def mirror_intercompany_expenses_to_products(
+    df_products: pd.DataFrame,
+    df_expenses: pd.DataFrame,
+    *,
+    intercompany_sales_account="Inter Company Gross Sales",
+    intercompany_expense_account="Inter Company COS",
+    account_id_sales=4007,
+) -> pd.DataFrame:
+    """
+    Remove existing IC sales from df_products, then for every
+    intercompany expense row, add two mirrored product rows (+ and -)
+    copying *all* columns from df_expenses and just changing account fields.
+    """
+    # 1) Drop existing IC rows from products
+    df_products_clean = df_products[df_products["account_name"] != intercompany_sales_account].copy()
+
+    # 2) Filter for IC expenses
+    ic_expenses = df_expenses[df_expenses["account_name"] == intercompany_expense_account].copy()
+    if ic_expenses.empty:
+        print("⚠ No intercompany expenses found — nothing to mirror.")
+        return df_products
+
+    mirrored_rows = []
+    for _, row in ic_expenses.iterrows():
+        # Convert Series to dict to make a copy we can modify
+        base = row.to_dict()
+
+        # Overwrite fields for intercompany sales
+        base["account_name"] = intercompany_sales_account
+        base["account_id"] = account_id_sales
+        base["customer_name"] = row["vendor_name"]  # vendor becomes customer
+        base["debit_credit"] = "credit"  # sales usually credit
+        base["quantity"] = row["quantity"]
+        base["amount"] = abs(row["amount"])  # make it positive
+
+        mirrored_rows.append(base)  # positive row
+
+        # Create contra row (negative)
+        contra = base.copy()
+        contra["amount"] = -contra["amount"]
+        contra["debit_credit"] = "Debit"
+        mirrored_rows.append(contra)
+
+    mirrored_df = pd.DataFrame(mirrored_rows)
+
+    # 3) Combine and reset index
+    out = pd.concat([df_products_clean, mirrored_df], ignore_index=True)
+    return out
 
 def balance_monthly(
     df: pd.DataFrame,

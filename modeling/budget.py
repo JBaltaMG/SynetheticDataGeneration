@@ -45,7 +45,7 @@ def generate_budget_from_gl_all_years(
 
     df['unit_price'] = df['amount'] / df['quantity'].replace(0, np.nan)
 
-    dims = ['account_id','product_id','procurement_id','service_id','vendor_id','customer_id']
+    dims = ['account_id','product_id','procurement_id','service_id','vendor_id','customer_id', 'bu_id']
     base_keys = ['document_number','Month', *dims]  # doc-level month packet
 
     years = sorted(df['Year'].unique())
@@ -76,8 +76,8 @@ def generate_budget_from_gl_all_years(
     out_all_years = []
 
     # iterate each target year that has a baseline year present
-    for target_year in years[1:]:
-        baseline_year = target_year - 1
+    for target_year in years:
+        baseline_year = target_year
         base = df.loc[df['Year'] == baseline_year].copy()
         if base.empty:
             continue
@@ -242,6 +242,8 @@ def generate_budget_from_gl_all_years(
     out['quantity'] = abs(np.round(out['quantity']))
 
     # Sort for readability
-    out = out.sort_values(['date','document_number']).reset_index(drop=True)
-    cols = ['document_number','debit_credit','date','amount','quantity', *dims]
+    cols = ['document_number','debit_credit','date','amount','quantity',
+        'account_id','product_id','procurement_id','service_id','vendor_id','customer_id','bu_id']
+    out = out[cols] 
+
     return out[cols]
