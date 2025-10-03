@@ -8,21 +8,9 @@ import numpy as np
 import pandas as pd
 import os
 from utils.utils_llm import create_mapping_from_metadata
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 import time
 import random
-
-import openai
-
-import dotenv
-
-import utils.prompt_utils as prompt_utils
-import generators.random_generators as random_generators
-
-
-from concurrent.futures import ThreadPoolExecutor, as_completed
-import re, hashlib, json, dotenv
-from openai import OpenAI
 
 def _overlap_tokens(s: str) -> set:
     return set(re.findall(r"[a-z0-9]+", str(s).lower()))
@@ -113,7 +101,7 @@ def create_mapping_parallel_simple(
     ACC_ALLOWED = {
         "product_name": "Net Sales",
         "service_name": "Operating Expenses",
-        "procurement_name": "Assets",
+        "procurement_name": "Cost Of Sales",
     }[name_column]
 
     dotenv.load_dotenv()
@@ -180,12 +168,12 @@ def create_mapping_parallel_simple(
         return [p for p in allowed if p in bu_key_set]
 
     def worker(item_name: str):
-        # 1) Pick account (unchanged, but use ACC_ALLOWED)
+        # --- 1) Pick account (same as before) ---
         acc_cands = _shortlist_accounts(df_accounts, ACC_ALLOWED, item_name, k=80) or \
                     _shortlist_accounts(df_accounts, ACC_ALLOWED, "", k=80)
 
         acc_payload = {
-            "task":"Select one GL account by index",
+            "task": "Select one GL account by index (normal account, not intercompany).",
             "item_category": name_column,
             "item_name": item_name,
             "candidates": acc_cands,
@@ -201,13 +189,13 @@ def create_mapping_parallel_simple(
         acct = acc_cands[acc_idx]
         account_name = acct["name"]
 
-        # 2) Pick OWN BU first (as you had)
+        # --- 2) Pick OWN BU (unchanged) ---
         own_bu = None
         if bu_names_df is not None and not bu_names_df.empty:
             bu_cands = _shortlist_partners(bu_names_df, item_name, account_name, k=50)
             if bu_cands:
                 bu_payload = {
-                    "task": ("Select the SELLER BU by index" if name_column=="product_name"
+                    "task": ("Select the SELLER BU by index" if name_column == "product_name"
                             else "Select the BUYER BU by index"),
                     "item_name": item_name,
                     "account_name": account_name,
@@ -223,7 +211,7 @@ def create_mapping_parallel_simple(
                 )
                 own_bu = bu_cands[bu_idx]["name"]
 
-        # 3) Build partner pool from BU graph; FALLBACK to combined pool if empty
+        # --- 3) Build partner pool and pick ONE external partner ---
         if own_bu:
             allowed_partner_keys = _allowed_bu_partners(own_bu)
         else:
@@ -235,56 +223,36 @@ def create_mapping_parallel_simple(
             partner_pool = _combined_partner_pool()
 
         partner_cands = _shortlist_partners(partner_pool, item_name, account_name, k=200)
+        external_cands = [c for c in partner_cands if not str(c["name"]).startswith("BIOCIRC")]
 
-        # Select up to 3 distinct partners
-        rows_for_item = []
-        used_names = set()
-        picks_needed = 3
-
-        for pick_idx in range(picks_needed):
-            # filter out already used partner names
-            filtered = [c for c in partner_cands if c["name"] not in used_names]
-            if not filtered:
-                break
-
+        if external_cands:
             par_payload = {
-                "task":"Select one partner by index. Intercompany trades should be picked around 10% of the time. If it is COMPANYNAME_XX, it is an intercompany trade.",
+                "task": "Select one EXTERNAL partner by index (avoid BIOCIRC intercompany).",
                 "item_name": item_name,
                 "account_name": account_name,
-                "candidates": filtered,
+                "candidates": external_cands,
                 "output_schema": {"partner_idx": 0},
             }
             pidx = _pick_idx_with_gpt(
                 client,
                 'Return STRICT JSON: {"partner_idx": <int>}.',
-                par_payload, len(filtered),
-                f"{item_name}|{acct['name']}|partner|{pick_idx}",
+                par_payload, len(external_cands),
+                f"{item_name}|{acct['name']}|partner_external",
                 model=model
             )
-            partner_name = filtered[pidx]["name"]
-            used_names.add(partner_name)
+            partner_name = external_cands[pidx]["name"]
+        else:
+            partner_name = "External Partner"
 
-            rows_for_item.append({
-                "name": item_name,
-                "account_id": acct["AccountKey"],
-                "account_name": account_name,
-                "customer_name": partner_name if name_column=="product_name" else None,
-                "vendor_name":   partner_name if name_column!="product_name" else None,
-                "bu_id":        own_bu,
-            })
-
-        # Ensure at least one row (fallback)
-        if not rows_for_item:
-            rows_for_item.append({
-                "name": item_name,
-                "account_id": acct["AccountKey"],
-                "account_name": account_name,
-                "customer_name": None if name_column!="product_name" else "Unknown Customer",
-                "vendor_name":   None if name_column=="product_name" else "Unknown Vendor",
-                "bu_id":        own_bu,
-            })
-
-        return rows_for_item
+        # --- Return only ONE row (no intercompany rows here) ---
+        return [{
+            "name": item_name,
+            "account_id": acct["AccountKey"],
+            "account_name": account_name,
+            "customer_name": partner_name if name_column == "product_name" else None,
+            "vendor_name": partner_name if name_column != "product_name" else None,
+            "bu_id": own_bu,
+        }]
 
     rows = []
     with ThreadPoolExecutor(max_workers=max_workers) as ex:
@@ -393,48 +361,134 @@ def map_products(
     df_mapping = df_mapping[["item_name", "account_id", "account_name", "bu_id", "customer_name"]]
     return df_spend, df_mapping
 
+    
 def remap_vendors_customers_with_bu(
     df_customers: pd.DataFrame,
     df_vendors: pd.DataFrame,
-    df_bu_companies: pd.DataFrame
-    ) -> tuple[pd.DataFrame, pd.DataFrame]:
-
+    df_bu_companies: pd.DataFrame,
+    *,
+    ic_range: tuple[float, float] = (0.05, 0.10),   # target Intercompany share
+    rng_seed: int | None = 123                      # set None for nondeterministic
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """
-    Remaps customers and vendors by adding business units (BUs) as intercompany entities.
+    Add BU entries as intercompany partners and make them account for a target share
+    (5–10% by default) of the 'proportionality' column (which sums to 1).
+    """
+    rng = np.random.default_rng(rng_seed)
+    ic_share = float(rng.uniform(*ic_range))
 
-    Args:
-        df_customers (pd.DataFrame): DataFrame containing customer data.
-        df_vendors (pd.DataFrame): DataFrame containing vendor data.
-        df_bu_companies (pd.DataFrame): DataFrame containing business unit data with 'bu_key'.
+    # --- Work on copies
+    cust = df_customers.copy()
+    vend = df_vendors.copy()
+    bu   = df_bu_companies.copy()
 
-    Returns:
-        tuple: Updated DataFrames for customers and vendors with BUs added.
+    # --- Ensure proportionality exists and sums to 1 before scaling
+    def _ensure_prop(df: pd.DataFrame, col: str = "proportionality") -> pd.DataFrame:
+        if col not in df.columns:
+            df[col] = 1.0 / max(len(df), 1)
+        df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0.0)
+        s = df[col].sum()
+        if s <= 0:
+            df[col] = 1.0 / max(len(df), 1)
+        else:
+            df[col] = df[col] / s
+        return df
+
+    cust = _ensure_prop(cust, "proportionality")
+    vend = _ensure_prop(vend, "proportionality")
+
+    # --- Build BU partner rows (equal split of the IC share)
+    if "bu_key" not in bu.columns or len(bu) == 0:
+        raise ValueError("df_bu_companies must contain non-empty 'bu_key' column.")
+
+    bu_rows = pd.DataFrame({
+        "name": bu["bu_key"].astype(str)
+    })
+    bu_n = len(bu_rows)
+    bu_share_each = ic_share / bu_n
+
+    bu_rows["proportionality"] = bu_share_each
+    bu_rows["customer_segment"] = "Intercompany"
+    bu_rows["vendor_segment"]   = "Intercompany"
+
+    # --- Assign new IDs
+    start_id_cust = (int(cust["customer_id"].max()) + 1) if "customer_id" in cust.columns and len(cust) else 1
+    start_id_vend = (int(vend["vendor_id"].max()) + 1) if "vendor_id" in vend.columns and len(vend) else 1
+    bu_rows["customer_id"] = range(start_id_cust, start_id_cust + bu_n)
+    bu_rows["vendor_id"]   = range(start_id_vend, start_id_vend + bu_n)
+
+    # propagate IDs back to df_bu_companies (handy for graph lookups later)
+    bu["customer_id"] = bu_rows["customer_id"].values
+    bu["vendor_id"]   = bu_rows["vendor_id"].values
+
+    # --- Scale existing partners down to (1 - ic_share)
+    cust["proportionality"] *= (1.0 - ic_share)
+    vend["proportionality"] *= (1.0 - ic_share)
+
+    # --- Merge & final normalize (exactly sum to 1.0)
+    cust_out = pd.concat(
+        [cust, bu_rows[["name","proportionality","customer_segment","customer_id"]]],
+        ignore_index=True
+    )
+    vend_out = pd.concat(
+        [vend, bu_rows[["name","proportionality","vendor_segment","vendor_id"]]],
+        ignore_index=True
+    )
+
+    # exact re-normalization to guard against float drift
+    cust_out["proportionality"] /= cust_out["proportionality"].sum()
+    vend_out["proportionality"] /= vend_out["proportionality"].sum()
+
+    return cust_out, vend_out, bu
+
+def pick_intercomp(
+    df_map_products: pd.DataFrame,
+    df_map_expenses: pd.DataFrame,
+    df_bu_companies: pd.DataFrame,
+) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    Pick intercompany mappings for products and expenses.
+    If no valid intercompany candidates are found, returns input unchanged.
     """
 
-     # Create BU entries for customers and vendors
+    # 1) Filter to rows where bu_id is in buys_from (valid intercompany candidates)
+    valid_idx_prod = df_map_products.index[
+        df_map_products["bu_id"].isin(df_bu_companies["buys_from"].values)
+    ]
+    valid_idx_exp = df_map_expenses.index[
+        df_map_expenses["bu_id"].isin(df_bu_companies["buys_from"].values)
+    ]
 
-    df_bu = pd.DataFrame()
-    df_bu["name"] = df_bu_companies["bu_key"]
-    df_bu["proportionality"] = 1 / len(df_bu_companies)
-    df_bu["customer_segment"] = "Intercompany"
-    df_bu["vendor_segment"] = "Intercompany"
+    # If no valid candidates → skip gracefully
+    if len(valid_idx_prod) == 0 or len(valid_idx_exp) == 0:
+        print("⚠️ No intercompany candidates found → skipping intercompany assignment.")
+        return df_map_products, df_map_expenses
 
-    start_id_cust = int(df_customers["customer_id"].max()) + 1
-    end_id_cust   = start_id_cust + len(df_bu)
+    # Make sure we have enough candidates
+    n_pick = min(15, len(valid_idx_prod), len(valid_idx_exp))
+    if n_pick == 0:
+        print("⚠️ Intercompany pools empty → skipping intercompany assignment.")
+        return df_map_products, df_map_expenses
 
-    start_id_vendor = int(df_vendors["vendor_id"].max()) + 1
-    end_id_vendor   = start_id_vendor + len(df_bu)
+    # Pick the SAME random subset from both
+    ic_indices = np.random.choice(valid_idx_prod, size=n_pick, replace=False)
 
-    df_bu["customer_id"] = range(start_id_cust, end_id_cust)
-    df_bu["vendor_id"] = range(start_id_vendor, end_id_vendor)
+    # Precompute pools for performance
+    sells_to_pool = df_bu_companies["sells_to"].dropna().tolist()
+    buys_from_pool = df_bu_companies["buys_from"].dropna().tolist()
 
-    df_bu_companies["customer_id"] = range(start_id_cust, end_id_cust)
-    df_bu_companies["vendor_id"] = range(start_id_vendor, end_id_vendor)
+    # 2) Apply to products and expenses
+    for idx in ic_indices:
+        # --- Products: intercompany sales ---
+        df_map_products.loc[idx, "account_id"] = 4007
+        df_map_products.loc[idx, "account_name"] = "Inter Company Gross Sales"
+        if sells_to_pool:
+            df_map_products.loc[idx, "customer_name"] = np.random.choice(sells_to_pool)
 
-    df_customers = pd.concat([df_customers, df_bu.drop(columns=["vendor_id", "vendor_segment"])], axis=0, ignore_index=True)
-    df_vendors = pd.concat([df_vendors, df_bu.drop(columns=["customer_id", "customer_segment"])], axis=0, ignore_index=True)
+        # --- Expenses: intercompany COS ---
+        df_map_expenses.loc[idx, "account_id"] = 4009
+        df_map_expenses.loc[idx, "account_name"] = "Inter Company COS"
+        if buys_from_pool:
+            df_map_expenses.loc[idx, "vendor_name"] = np.random.choice(buys_from_pool)
 
-    df_customers = utils.convert_column_to_percentage(df_customers, "proportionality", scale=1.0)
-    df_vendors = utils.convert_column_to_percentage(df_vendors, "proportionality", scale=1.0)
-
-    return df_customers, df_vendors, df_bu_companies
+    return df_map_products, df_map_expenses

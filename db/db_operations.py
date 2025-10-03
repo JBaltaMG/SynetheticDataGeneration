@@ -71,10 +71,11 @@ def insert_dataframe(df: pd.DataFrame, table_name: str, engine) -> None:
     df.to_sql(
         name=table_name,
         con=engine,
+        schema="dbo",
         index=False,
-        if_exists='append',
-        method=None,
-        chunksize=2_000
+        if_exists="append",
+        chunksize=2_000,
+        dtype=schemadict.get(table_name) 
     )
 
 
@@ -147,7 +148,7 @@ def execute_db_operations(version_tag: str = "test_version"):
 
     dimension_files = [
         "department.csv", "customer.csv", "product.csv", "account.csv",
-        "procurement.csv", "service.csv", "payline.csv", "vendor.csv", "bu.csv"
+        "procurement.csv", "service.csv", "line.csv", "vendor.csv", "bu.csv"
     ]
 
     for file_name in dimension_files:
@@ -161,29 +162,29 @@ def execute_db_operations(version_tag: str = "test_version"):
             final_dim_dict=final_dim_dict
         )
 
-    #df_employee = pd.read_csv("data/outputdata/dimensions/employee.csv")
-    #df_employee = remap_dataframe_ids(df_employee, final_dim_dict)
-    #df_employee.to_csv("data/outputdata/dimensions/employee_mapped.csv", index=False)
+    df_employee = pd.read_csv("data/outputdata/dimensions/employee.csv")
+    df_employee = remap_dataframe_ids(df_employee, final_dim_dict)
+    df_employee.to_csv("data/outputdata/dimensions/employee_mapped.csv", index=False)
 
-    #insert_dataframe_from_csv_fact(
-    #    csv_path="data/outputdata/dimensions/employee_mapped.csv",
-    #    table_name="dim_employee",
-    #    schemadict=schemadict,
-    #    engine=engine,
-    ##    version_tag=version_tag,
-    #)
+    insert_dataframe_from_csv_fact(
+        csv_path="data/outputdata/dimensions/employee_mapped.csv",
+        table_name="dim_employee",
+        schemadict=schemadict,
+        engine=engine,
+        version_tag=version_tag,
+    )
 
-    #df_payroll = pd.read_csv("data/outputdata/fact/erp_payroll.csv")
-    #df_payroll = remap_dataframe_ids(df_payroll, final_dim_dict)
-    #df_payroll.to_csv("data/outputdata/fact/erp_payroll_mapped.csv", index=False)
+    df_payroll = pd.read_csv("data/outputdata/fact/erp_payroll.csv")
+    df_payroll = remap_dataframe_ids(df_payroll, final_dim_dict)
+    df_payroll.to_csv("data/outputdata/fact/erp_payroll_mapped.csv", index=False)
     
-   # insert_dataframe_from_csv_fact(
-   #     csv_path="data/outputdata/fact/erp_payroll_mapped.csv",
-   #     table_name="fact_payroll",
-   #     schemadict=schemadict,
-   #     engine=engine,
-   #     version_tag=version_tag
-   # )
+    insert_dataframe_from_csv_fact(
+        csv_path="data/outputdata/fact/erp_payroll_mapped.csv",
+        table_name="fact_payroll",
+        schemadict=schemadict,
+        engine=engine,
+        version_tag=version_tag
+    )
 
     df_erp = pd.read_csv("data/outputdata/fact/general_ledger.csv")
     df_erp = remap_dataframe_ids(df_erp, final_dim_dict)
@@ -192,6 +193,14 @@ def execute_db_operations(version_tag: str = "test_version"):
     insert_dataframe_from_csv_fact(
         csv_path="data/outputdata/fact/general_ledger_mapped.csv",
         table_name="fact_general_ledger",
+        schemadict=schemadict,
+        engine=engine,
+        version_tag=version_tag
+    )
+
+    insert_dataframe_from_csv_fact(
+        csv_path="data/outputdata/fact/fact_reporting.csv",
+        table_name="fact_reporting",
         schemadict=schemadict,
         engine=engine,
         version_tag=version_tag

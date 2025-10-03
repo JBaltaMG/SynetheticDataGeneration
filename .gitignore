@@ -2,9 +2,11 @@
 Pipfile
 Pipfile.lock
 DemoDataVenv/
-data/
+data/**
+PowerBI_rapporter/
 */__pycache__/
 /api
+demo_vm
 # Ignore Python cache
 __pycache__/
 *.py[cod]
@@ -13,7 +15,7 @@ __pycache__/
 *.so
 
 # Ignore all CSV output files
-#data/outputdata/**/*.csv
+data/outputdata/**
 
 # Ignore all input line_id mapping
 #data/inputdata/line_id_accounts.csv
