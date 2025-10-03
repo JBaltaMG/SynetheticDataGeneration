@@ -4,7 +4,7 @@ import numpy as np
 from datetime import datetime as dt
 from sqlalchemy import create_engine
 import urllib
-from db.schema import schemadict
+from schemas.schema_sql import schemadict
 from sqlalchemy import text
 from sqlalchemy.exc import ProgrammingError
 
@@ -28,7 +28,7 @@ def get_sqlalchemy_engine():
     password = dotenv.get_key(".env", "PWD")
 
     params = urllib.parse.quote_plus(
-        f"DRIVER={{ODBC Driver 18 for SQL Server}};"
+        f"DRIVER={{ODBC Driver 17 for SQL Server}};"
         f"SERVER={servername};"
         f"DATABASE={database};"
         f"UID={username};"
@@ -71,10 +71,11 @@ def insert_dataframe(df: pd.DataFrame, table_name: str, engine) -> None:
     df.to_sql(
         name=table_name,
         con=engine,
+        schema="dbo",
         index=False,
-        if_exists='append',
-        method=None,
-        chunksize=2_000
+        if_exists="append",
+        chunksize=2_000,
+        dtype=schemadict.get(table_name) 
     )
 
 
@@ -147,7 +148,7 @@ def execute_db_operations(version_tag: str = "test_version"):
 
     dimension_files = [
         "department.csv", "customer.csv", "product.csv", "account.csv",
-        "procurement.csv", "service.csv", "payline.csv", "vendor.csv"
+        "procurement.csv", "service.csv", "line.csv", "vendor.csv", "bu.csv"
     ]
 
     for file_name in dimension_files:
@@ -197,18 +198,13 @@ def execute_db_operations(version_tag: str = "test_version"):
         version_tag=version_tag
     )
 
-    df_budget = pd.read_csv("data/outputdata/fact/fact_budget.csv")
-    df_budget = remap_dataframe_ids(df_budget, final_dim_dict)
-    df_budget.to_csv("data/outputdata/fact/fact_budget_mapped.csv", index=False)
-
     insert_dataframe_from_csv_fact(
-        csv_path="data/outputdata/fact/fact_budget_mapped.csv",
-        table_name="fact_budget",
+        csv_path="data/outputdata/fact/fact_reporting.csv",
+        table_name="fact_reporting",
         schemadict=schemadict,
         engine=engine,
         version_tag=version_tag
     )
-    print("All data inserted successfully.")
 
 if __name__ == "__main__":
     version_tag = "demo_" + dt.now().strftime("%Y%m%d_%H%M")
