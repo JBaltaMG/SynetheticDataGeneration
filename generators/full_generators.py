@@ -33,12 +33,6 @@ def read_cached_context_report(company_name: str) -> dict:
         pass
     return None
 
-def create_company_data(company_name: str, save_to_csv: bool = True) -> dict:
-import modeling.mapping as mapping
-import modeling.budget as budget
-from generators.llm_context_generators import generate_context_numbers_llm, generate_context_report, generate_year_end_report_from_pdf
-from typing import Dict, List, Tuple
-
 def read_cached_context_report(company_name: str) -> dict:
     """
     Read cached context report from JSON file.
@@ -136,7 +130,8 @@ def create_company_data(company_name: str, save_to_csv: bool = True, context: bo
     return {
         "dimensions": generated_data,
         "mapping": mapped_data,
-        "erp_data": erp_data
+        "erp_data": erp_data,
+        "report": df_report
     }
 
 def generate_context_report(company_name: str) -> dict:
@@ -314,15 +309,6 @@ def generate_all_dimensions(
     )
 
 
-def generate_all_dimensions_v1(company_name: str,
-                            report: str = None,
-                            count_employee: int = 200,
-                            count_product: int = 100,
-                            count_account: int = 30,
-                            count_customer: int = 30,
-                            count_department: int = 20,
-                            count_service: int = 100,
-                            count_procurement: int = 100,
 def generate_context_report(company_name: str) -> dict:
     """
     Generate a full context for the given company.
@@ -904,11 +890,6 @@ def create_all_erp_data(generated_mapped_data: dict, company_name: str, save_to_
         "df_erp_products_full": df_erp_products_full,
         "df_erp_all": df_erp_all,
         "df_erp_budget": df_erp_budget
-    }
-        "df_erp_expenses_full": df_expenses_full,
-        "df_erp_products_full": df_products_full,
-        "df_erp_all": df,
-        #"df_erp_budget": df_erp_budget
     }
 
 def create_reporting(generated_erp_data: dict, company_name: str, save_to_csv: bool = True) -> dict:
