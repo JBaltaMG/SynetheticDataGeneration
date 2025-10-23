@@ -78,7 +78,7 @@ def create_company_data(company_name: str, save_to_csv: bool = True, context: bo
     # Create all ERP data
     erp_data = create_all_erp_data(generated_mapped_data=mapped_data, company_name=company_name, save_to_csv=save_to_csv)
 
-    df_report = create_reporting(generated_erp_data=erp_data, company_name=company_name, save_to_csv=save_to_csv)
+    #df_report = create_reporting(generated_erp_data=erp_data, company_name=company_name, save_to_csv=save_to_csv)
 
     print(f"✔ All ERP data and mapping generated for company: {company_name}")
 
