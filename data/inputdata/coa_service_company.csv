@@ -1,0 +1,15 @@
+L1 Code,L1 Name,L2 Code,L2 Name,L3 Code,L3 Name,account_type
+1000,Assets,1100,Current Assets,1110,Cash,balancing_entries
+1000,Assets,1100,Current Assets,1120,Accounts Receivable,products_sold
+1000,Assets,1100,Current Assets,1130,Prepaid Expenses,overhead
+2000,Liabilities,2100,Current Liabilities,2110,Accounts Payable,procurement_expenses
+2000,Liabilities,2100,Current Liabilities,2120,Accrued Expenses,overhead
+3000,Equity,3100,Shareholders’ Equity,3110,Share Capital,balancing_entries
+3000,Equity,3100,Shareholders’ Equity,3120,Retained Earnings,balancing_entries
+4000,Revenue,4100,Service Revenue,4110,Consulting Revenue,products_sold
+4000,Revenue,4100,Service Revenue,4120,IT Support Revenue,products_sold
+5000,Expenses,5100,Operating Expenses,5110,Salaries & Wages Expense,payroll_expenses
+5000,Expenses,5100,Operating Expenses,5120,Rent Expense,overhead
+5000,Expenses,5100,Operating Expenses,5130,Office Supplies Expense,overhead
+5000,Expenses,5100,Operating Expenses,5140,Marketing Expense,overhead
+5000,Expenses,5100,Operating Expenses,5150,Professional Fees Expense,service_expenses
