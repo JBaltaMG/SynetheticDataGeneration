@@ -14,8 +14,6 @@ import fitz  # PyMuPDF
 import re
 import json
 from typing import Dict, Any
-import time
-import httpx
 
 # ---- Load API key from .env ----
 dotenv.load_dotenv()
@@ -24,24 +22,6 @@ API_KEY = dotenv.get_key('.env', 'api_key')
 # --- Init OpenAI client ---
 def get_openai_client():
     return OpenAI(api_key=API_KEY)
-
-def retry_with_backoff(func, max_retries=3, base_delay=1.0):
-    """
-    Retry a function with exponential backoff.
-    Catches httpx.TimeoutException and transient HTTP/network errors.
-    """
-    for attempt in range(max_retries):
-        try:
-            return func()
-        except (httpx.TimeoutException, httpx.ConnectError, httpx.ReadTimeout) as e:
-            if attempt == max_retries - 1:
-                raise e
-            delay = base_delay * (2 ** attempt)
-            print(f"Request failed (attempt {attempt + 1}/{max_retries}), retrying in {delay:.1f}s...")
-            time.sleep(delay)
-        except Exception as e:
-            # For non-network errors, don't retry
-            raise e
 
 def generate_context_report(company_name: str) -> dict:
     """
@@ -133,15 +113,14 @@ def generate_context_numbers_llm(
     \"\"\"{ctx if ctx else 'No context found. Use the mid-size Denmark guardrails.'}\"\"\"
     """.strip()
 
-    resp = retry_with_backoff(lambda: client.chat.completions.create(
+    resp = client.chat.completions.create(
         model=model,
         messages=[
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
         temperature=temp,
-        timeout=60.0,
-    ))
+    )
 
     raw = (resp.choices[0].message.content or "").strip()
     try:
@@ -175,6 +154,7 @@ def extract_pdf_text(company_name, max_pages=None):
         raise RuntimeError(f"File not found: {pdf_path}")
     
     try:
+        # Attempt to use PyMuPDF (fitz)
         text_chunks = []
         with fitz.open(pdf_path) as doc:
             n_pages = len(doc) if max_pages is None else min(len(doc), max_pages)
@@ -255,7 +235,7 @@ def generate_year_end_report_from_pdf(
         \"\"\"{chunk}\"\"\"
         """.strip()
 
-        r = retry_with_backoff(lambda: client.chat.completions.create(
+        r = client.chat.completions.create(
             model=model,
             messages=[
                 {"role": "system", "content": "You extract structured KPIs from noisy text. Output JSON only."},
@@ -263,8 +243,7 @@ def generate_year_end_report_from_pdf(
             ],
             temperature=0,
             max_tokens=900,
-            timeout=60.0,
-        ))
+        )
         content = (r.choices[0].message.content or "").strip()
         if content:
             kpi_snippets.append(content)
@@ -287,7 +266,7 @@ def generate_year_end_report_from_pdf(
     {kpis_text}
     """.strip()
 
-    r2 = retry_with_backoff(lambda: client.chat.completions.create(
+    r2 = client.chat.completions.create(
         model=model,
         messages=[
             {"role": "system", "content": "You craft crisp corporate year-end summaries focused on financial performance."},
@@ -295,7 +274,6 @@ def generate_year_end_report_from_pdf(
         ],
         temperature=temp,
         max_tokens=1500,
-        timeout=60.0,
-    ))
+    )
     return (r2.choices[0].message.content or "").strip()
 

@@ -5,7 +5,6 @@ import utils.prompt_utils as prompt_utils
 import utils.utils as utils
 import generators.random_generators as random_generators
 
-
 def generate_from_prompt(
     company_name: str,
     count: int,
@@ -54,24 +53,5 @@ def generate_from_prompt(
 
     # Parse CSV
     df = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-
-    # --- Post-processing by type ---
-    if prompt_type in ["procurement", "products", "services", "vendors", "customers", "departments"]:
-        df = utils.convert_column_to_percentage(df, "proportionality", scale=1.0)
-
-    if prompt_type == "services":
-        df["unit_price"] = df["unit_price"].astype(float) / 1000.0
-
-    if prompt_type == "accounts":
-        df["account_id"] = random_generators.generate_account_ids(df["account_type"])
-
-    if prompt_type == "departments":
-        df.insert(0, "department_id", range(100, len(df) + 100))
-
-    if prompt_type == "customers":
-        df.insert(0, "customer_id", range(10, len(df) + 10))
-
-    if prompt_type == "vendors":
-        df.insert(0, "vendor_id", range(20, len(df) + 20))
 
     return df
