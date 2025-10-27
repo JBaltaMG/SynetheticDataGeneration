@@ -1,0 +1,51 @@
+customer_id,name,customer_segment,proportionality
+10,GreenGen Corp,Enterprise,0.04174120453190221
+11,EcoVantage Ltd,SME,0.01073345259391771
+12,City of Riverton,Government,0.031007751937984492
+13,Blue Horizon Biotech,Enterprise,0.03875968992248062
+14,VitalCycle Wholesale,Wholesale,0.02683363148479427
+15,CleanLoop Solutions,Startup,0.007155635062611806
+16,Civic Health Council,Non-profit,0.009540846750149075
+17,State of Northvale,Government,0.036374478234943344
+18,EcoSmart Distributors,Wholesale,0.022063208109719734
+19,GreenLeaf Retailers,Retail,0.011926058437686342
+20,RenewWell Group,Enterprise,0.03935599284436494
+21,EnviroWave SME,SME,0.011329755515802026
+22,BioCycle Foundation,Non-profit,0.01073345259391771
+23,PureEarth Startup,Startup,0.007751937984496123
+24,WorldCare Initiative,Non-profit,0.010137149672033392
+25,CoreRenew Enterprises,Enterprise,0.04233750745378652
+26,County of Brookfield,Government,0.029815146094215858
+27,GreenGrowth SME,SME,0.013118664281454976
+28,River City Authority,Government,0.030411449016100173
+29,SunBio Wholesale,Wholesale,0.020870602265951103
+30,HealthyCycle Retail,Retail,0.01073345259391771
+31,Community Renewers,Non-profit,0.008944543828264758
+32,Circularity Innovations,Startup,0.005963029218843171
+33,BlueSky Biologics,Enterprise,0.04114490161001789
+34,PlanetPure Wholesale,Wholesale,0.023852116875372684
+35,Sustainable Pathways,Non-profit,0.007751937984496123
+36,State of Westmoor,Government,0.034585569469290395
+37,Evergreen Biotech,Enterprise,0.04054859868813357
+38,Urban Life Foundation,Non-profit,0.008348240906380441
+39,EcoTrends Retail,Retail,0.008944543828264758
+40,Clearstream Solutions,Enterprise,0.03995229576624926
+41,LifeCycle Market,Retail,0.011926058437686342
+42,Bright Future Distributors,Wholesale,0.025641025641025633
+43,Town of Willowdale,Government,0.029218843172331543
+44,GreenRoots Startups,Startup,0.007155635062611806
+45,Earthwise Retail,Retail,0.008944543828264758
+46,State of Southpoint,Government,0.03577817531305903
+47,Renewal Innovations,Enterprise,0.03756708407871198
+48,VitalSource SME,SME,0.01073345259391771
+49,EcoFirst Nonprofit,Non-profit,0.008348240906380441
+50,Uptown Organic Markets,Retail,0.009540846750149075
+51,Elemental Wholesale,Wholesale,0.022063208109719734
+52,City of Hillcrest,Government,0.032200357781753126
+53,Greenline Solutions,SME,0.011926058437686342
+54,Sunnyside Foundation,Non-profit,0.008944543828264758
+55,Fresh Future Retail,Retail,0.010137149672033392
+56,Circular Innovations Lab,Startup,0.006559332140727488
+57,CleanStream Wholesale,Wholesale,0.024448419797257002
+58,Rooted Impact Nonprofit,Non-profit,0.007751937984496123
+59,EcoWave Startups,Startup,0.008348240906380441
