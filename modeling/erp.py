@@ -873,3 +873,181 @@ def estimate_costs_from_payroll(
         "estimated_revenue": round(total_payroll * revenue_multiplier)
     }
 
+
+def create_erp_data_from_driver_rows(
+    df_driver: pd.DataFrame,
+    *,
+    df_document_metadata: Optional[pd.DataFrame] = None,
+    df_accounts: Optional[pd.DataFrame] = None,
+    category_sign_map: Optional[Dict[str, int]] = None,
+    seed: int = 4321,
+    ensure_quarter_balance: bool = True,
+    max_lines_per_doc: int = 15,
+    cap_factor: float = 1.2,
+    target_qty_per_line: float = 6.0,
+    qty_sigma: float = 0.55,
+    lines_for_band: tuple[int, int] = (10, 3),
+) -> pd.DataFrame:
+    """Turn aggregated driver rows into synthetic ERP line items."""
+
+    required_cols = {
+        "company",
+        "AccountKey",
+        "account_name",
+        "item_name",
+        "category",
+        "annual_spend",
+        "unit_price",
+        "party_id",
+        "party_name",
+        "bu_id",
+        "bu_name",
+    }
+    missing = required_cols - set(df_driver.columns)
+    if missing:
+        raise ValueError(f"df_driver is missing required columns: {sorted(missing)}")
+
+    df_driver = df_driver.copy()
+    df_driver["annual_spend"] = (
+        pd.to_numeric(df_driver["annual_spend"], errors="coerce")
+        .fillna(0.0)
+        .clip(lower=0.0)
+    )
+    df_driver["unit_price"] = (
+        pd.to_numeric(df_driver["unit_price"], errors="coerce")
+        .replace([np.inf, -np.inf], np.nan)
+        .fillna(1.0)
+        .clip(lower=1.0)
+    )
+
+    df_driver["source_type"] = df_driver["category"].astype(str).str.lower().str.strip()
+
+    revenue_mask = df_driver["source_type"].eq("revenue")
+    expense_mask = df_driver["source_type"].isin({"cogs", "fixedcost", "ebit"})
+
+    df_driver["customer_name"] = np.where(revenue_mask, df_driver["party_name"], None)
+    df_driver["vendor_name"] = np.where(expense_mask, df_driver["party_name"], None)
+
+    df_expenses = df_driver[
+        [
+            "item_name",
+            "source_type",
+            "annual_spend",
+            "unit_price",
+            "account_name",
+            "customer_name",
+            "vendor_name",
+            "bu_id",
+        ]
+    ].copy()
+
+    df_mapping = df_driver[
+        [
+            "item_name",
+            "account_name",
+            "customer_name",
+            "vendor_name",
+            "bu_id",
+        ]
+    ].drop_duplicates()
+
+    erp_df = create_erp_data(
+        df_expenses=df_expenses,
+        df_mapping=df_mapping,
+        df_document_metadata=df_document_metadata,
+        df_accounts=df_accounts,
+        seed=seed,
+        ensure_quarter_balance=ensure_quarter_balance,
+        max_lines_per_doc=max_lines_per_doc,
+        cap_factor=cap_factor,
+        target_qty_per_line=target_qty_per_line,
+        qty_sigma=qty_sigma,
+        lines_for_band=lines_for_band,
+    )
+
+    meta = df_driver[
+        [
+            "item_name",
+            "source_type",
+            "account_name",
+            "customer_name",
+            "vendor_name",
+            "AccountKey",
+            "company",
+            "bu_id",
+            "bu_name",
+            "party_id",
+            "party_name",
+            "category",
+        ]
+    ].drop_duplicates()
+
+    meta_key_cols = [
+        "item_name",
+        "source_type",
+        "account_name",
+        "customer_name",
+        "vendor_name",
+        "bu_id",
+    ]
+
+    meta_merge = meta.copy()
+    erp_merge = erp_df.copy()
+    for col in ("customer_name", "vendor_name"):
+        if col not in erp_merge:
+            erp_merge[col] = np.nan
+        meta_merge[col] = meta_merge[col].fillna("")
+        erp_merge[col] = erp_merge[col].fillna("")
+
+    meta_merge["bu_id"] = meta_merge["bu_id"].astype(str)
+    if "bu_id" in erp_merge:
+        erp_merge["bu_id"] = erp_merge["bu_id"].astype(str)
+
+    enriched = erp_merge.merge(
+        meta_merge,
+        how="left",
+        on=meta_key_cols,
+        suffixes=("", "_meta"),
+    )
+
+    category_sign_map = category_sign_map or {
+        "revenue": -1,
+        "cogs": 1,
+        "fixedcost": 1,
+        "ebit": 1,
+        "balancesheet": 1,
+    }
+
+    enriched["source_type"] = enriched["source_type"].astype(str).str.lower()
+    signs = enriched["source_type"].map(category_sign_map).fillna(1)
+    enriched["amount"] = enriched["amount"].abs() * signs
+    enriched["debit_credit"] = np.where(enriched["amount"] >= 0, "Debit", "Credit")
+
+    enriched.rename(columns={"date": "posting_date"}, inplace=True)
+
+    for col in ("customer_name", "vendor_name"):
+        enriched[col] = enriched[col].replace("", np.nan)
+
+    ordered_cols = [
+        "document_number",
+        "posting_date",
+        "company",
+        "bu_id",
+        "bu_name",
+        "party_id",
+        "party_name",
+        "AccountKey",
+        "account_name",
+        "item_name",
+        "category",
+        "debit_credit",
+        "amount",
+        "quantity",
+        "unit_price",
+        "customer_name",
+        "vendor_name",
+    ]
+    ordered_cols = [c for c in ordered_cols if c in enriched.columns]
+    remaining_cols = [c for c in enriched.columns if c not in ordered_cols]
+    return enriched[ordered_cols + remaining_cols].reset_index(drop=True)
+
