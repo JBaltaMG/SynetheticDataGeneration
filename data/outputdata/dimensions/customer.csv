@@ -1,51 +1,60 @@
 customer_id,name,customer_segment,proportionality
-10,GreenGen Corp,Enterprise,0.04174120453190221
-11,EcoVantage Ltd,SME,0.01073345259391771
-12,City of Riverton,Government,0.031007751937984492
-13,Blue Horizon Biotech,Enterprise,0.03875968992248062
-14,VitalCycle Wholesale,Wholesale,0.02683363148479427
-15,CleanLoop Solutions,Startup,0.007155635062611806
-16,Civic Health Council,Non-profit,0.009540846750149075
-17,State of Northvale,Government,0.036374478234943344
-18,EcoSmart Distributors,Wholesale,0.022063208109719734
-19,GreenLeaf Retailers,Retail,0.011926058437686342
-20,RenewWell Group,Enterprise,0.03935599284436494
-21,EnviroWave SME,SME,0.011329755515802026
-22,BioCycle Foundation,Non-profit,0.01073345259391771
-23,PureEarth Startup,Startup,0.007751937984496123
-24,WorldCare Initiative,Non-profit,0.010137149672033392
-25,CoreRenew Enterprises,Enterprise,0.04233750745378652
-26,County of Brookfield,Government,0.029815146094215858
-27,GreenGrowth SME,SME,0.013118664281454976
-28,River City Authority,Government,0.030411449016100173
-29,SunBio Wholesale,Wholesale,0.020870602265951103
-30,HealthyCycle Retail,Retail,0.01073345259391771
-31,Community Renewers,Non-profit,0.008944543828264758
-32,Circularity Innovations,Startup,0.005963029218843171
-33,BlueSky Biologics,Enterprise,0.04114490161001789
-34,PlanetPure Wholesale,Wholesale,0.023852116875372684
-35,Sustainable Pathways,Non-profit,0.007751937984496123
-36,State of Westmoor,Government,0.034585569469290395
-37,Evergreen Biotech,Enterprise,0.04054859868813357
-38,Urban Life Foundation,Non-profit,0.008348240906380441
-39,EcoTrends Retail,Retail,0.008944543828264758
-40,Clearstream Solutions,Enterprise,0.03995229576624926
-41,LifeCycle Market,Retail,0.011926058437686342
-42,Bright Future Distributors,Wholesale,0.025641025641025633
-43,Town of Willowdale,Government,0.029218843172331543
-44,GreenRoots Startups,Startup,0.007155635062611806
-45,Earthwise Retail,Retail,0.008944543828264758
-46,State of Southpoint,Government,0.03577817531305903
-47,Renewal Innovations,Enterprise,0.03756708407871198
-48,VitalSource SME,SME,0.01073345259391771
-49,EcoFirst Nonprofit,Non-profit,0.008348240906380441
-50,Uptown Organic Markets,Retail,0.009540846750149075
-51,Elemental Wholesale,Wholesale,0.022063208109719734
-52,City of Hillcrest,Government,0.032200357781753126
-53,Greenline Solutions,SME,0.011926058437686342
-54,Sunnyside Foundation,Non-profit,0.008944543828264758
-55,Fresh Future Retail,Retail,0.010137149672033392
-56,Circular Innovations Lab,Startup,0.006559332140727488
-57,CleanStream Wholesale,Wholesale,0.024448419797257002
-58,Rooted Impact Nonprofit,Non-profit,0.007751937984496123
-59,EcoWave Startups,Startup,0.008348240906380441
+10,Target,Retail,0.11813354261182937
+11,Walmart,Retail,0.12508257453017224
+12,Amazon,Retail,0.11118451069348642
+13,Costco Wholesale,Wholesale,0.05559225534674317
+14,Barnes & Noble,Retail,0.03474515959171445
+15,The Entertainer,Retail,0.025016514906034435
+16,Smyths Toys,Retail,0.029185934057040154
+17,Hamleys,Retail,0.013898063836685745
+18,Mastermind Toys,Retail,0.01806748298769147
+19,Indigo Books & Music,Retail,0.016677676604022897
+20,Galeries Lafayette,Retail,0.01528787022035432
+21,Target Australia,Retail,0.016677676604022897
+22,El Corte Inglés,Retail,0.019457289371360136
+23,Carrefour,Retail,0.027796127673371585
+24,Migros,Retail,0.01250825745301717
+25,Aeon Co.,Retail,0.016677676604022897
+26,Toy Universe,Wholesale,0.01806748298769147
+27,Goliath Games,Wholesale,0.009728644685680021
+28,Playtime Wholesale,Wholesale,0.01528787022035432
+29,DKSH Hong Kong,Wholesale,0.013898063836685745
+30,Aldi Süd,Retail,0.01806748298769147
+31,Edeka,Retail,0.01250825745301717
+32,Williams Sonoma Kids,Retail,0.011118451069348596
+33,Jumbo Group,Retail,0.011118451069348596
+34,UNICEF,Non-profit,0.005559225534674298
+35,Save the Children,Non-profit,0.005559225534674298
+36,City of Copenhagen Schools,Government,0.008338838302011448
+37,Ministry of Education Singapore,Government,0.01250825745301717
+38,London Public Libraries,Government,0.005559225534674298
+39,Ontario Science Centre,Government,0.005559225534674298
+40,Apple Inc. Corporate Learning,Enterprise,0.011118451069348596
+41,Google Employee Programs,Enterprise,0.01250825745301717
+42,SAP Corporate Training,Enterprise,0.011118451069348596
+43,Microsoft Learning & Development,Enterprise,0.01250825745301717
+44,Happy Blocks Preschool,SME,0.004169419151005724
+45,Playful Engineers Robotics,SME,0.005559225534674298
+46,Spark Creativity Studio,SME,0.004169419151005724
+47,Bricktastic Events,SME,0.005559225534674298
+48,InnovateEd Academy,SME,0.004169419151005724
+49,FutureMakers STEM Camp,SME,0.005559225534674298
+50,Block Party Events,SME,0.004169419151005724
+51,BuildIt Learning Center,SME,0.004169419151005724
+52,Edublocks Tech,Startup,0.002779612767337149
+53,EduCastle Robotics,Startup,0.002779612767337149
+54,Young Engineers Hub,Startup,0.002779612767337149
+55,BrighterTomorrow Apps,Startup,0.002779612767337149
+56,Robotics4Kids Startup,Startup,0.002779612767337149
+57,PlayFuture Labs,Startup,0.002779612767337149
+58,BuildBots Inc.,Startup,0.002779612767337149
+59,Brickverse EdTech,Startup,0.002779612767337149
+60,LEGO_DK_DESIGN,Intercompany,0.009346399240267464
+61,LEGO_DK_EDU,Intercompany,0.009346399240267464
+62,LEGO_DK_TOUR,Intercompany,0.009346399240267464
+63,LEGO_SE_LOGISTICS,Intercompany,0.009346399240267464
+64,LEGO_SE_THEME,Intercompany,0.009346399240267464
+65,LEGO_DE_ASSEMBLY,Intercompany,0.009346399240267464
+66,LEGO_DE_ENGINEERING,Intercompany,0.009346399240267464
+67,LEGO_US_DIGITAL,Intercompany,0.009346399240267464
+68,LEGO_US_PACKAGING,Intercompany,0.009346399240267464

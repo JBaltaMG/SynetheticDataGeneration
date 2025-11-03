@@ -1,201 +1,221 @@
-item_name,account_id,account_name,vendor_name
-Pelletized biomass,49148,COGS - Materials,NextGen Biomass
-Industrial heat exchangers,49148,COGS - Materials,BioFlow Machinery
-Boiler system parts,42400,COGS - Spare Parts,SterilEquip Systems
-Steam turbine assemblies,49148,COGS - Materials,BioFlow Machinery
-Wastewater treatment chemicals,49148,COGS - Materials,DeltaChem Inputs
-Biogas upgrading membranes,49148,COGS - Materials,EcoSynth Solutions
-Wood chips (locally sourced),49148,COGS - Materials,EcoSynth Solutions
-Combined Heat and Power (CHP) modules,49148,COGS - Materials,BioFlow Machinery
-Activated carbon filters,49148,COGS - Materials,EcoSynth Solutions
-SCADA control software licenses,49148,COGS - Materials,SysGen Technologies
-Fermentation tank steel plates,49148,COGS - Materials,BioFlow Machinery
-Biogas feedstock (organic waste),49148,COGS - Materials,EcoSynth Solutions
-Centrifugal pumps,49148,COGS - Materials,BioFlow Machinery
-Gas storage balloons,49148,COGS - Materials,EcoSynth Solutions
-Gas flowmeters,49148,COGS - Materials,BioFlow Machinery
-"Pipework (stainless steel, DN200)",49148,COGS - Materials,BioFlow Machinery
-Biogas compressors,49148,COGS - Materials,BioFlow Machinery
-Feedstock pre-processing conveyors,49148,COGS - Materials,BioFlow Machinery
-Emergency power generators,49148,COGS - Materials,SterilEquip Systems
-Process safety valves,49148,COGS - Materials,FlowGuard Devices
-Sludge dewatering units,49148,COGS - Materials,BioFlow Machinery
-Instrumentation cabling,49148,COGS - Materials,PuraTech Instruments
-Fire suppression systems,49148,COGS - Materials,FlowGuard Devices
-Industrial valves (DN100-DN250),49148,COGS - Materials,BioFlow Machinery
-CHP generator spare parts,42400,COGS - Spare Parts,BioFlow Machinery
-Process pressure transmitters,49148,COGS - Materials,PuraTech Instruments
-Stainless steel fasteners,49148,COGS - Materials,SupplyWorks Depot
-Industrial piping insulation,49148,COGS - Materials,CelluSupply LLC
-Boiler feedwater pumps,49148,COGS - Materials,BioFlow Machinery
-Feedstock storage silos,49148,COGS - Materials,EcoSynth Solutions
-Hydraulic actuators,49148,COGS - Materials,BioFlow Machinery
-Safety relief valves,49148,COGS - Materials,FlowGuard Devices
-Cooling tower systems,49148,COGS - Materials,MachinaBio Systems
-Dust suppression systems,49148,COGS - Materials,ChemEco Pro
-Lab gas chromatograph,49148,COGS - Materials,BioHarvest Labs
-Level transmitters,49148,COGS - Materials,PuraTech Instruments
-Gas detection sensors,49148,COGS - Materials,PuraTech Instruments
-Industrial lubricants (200L drum),49148,COGS - Materials,ChemEco Pro
-Process pH probes,49148,COGS - Materials,PuraTech Instruments
-Emergency eyewash stations,49148,COGS - Materials,FlowGuard Devices
-Biofilter media,49148,COGS - Materials,EcoSynth Solutions
-Industrial heat tracing cables,49148,COGS - Materials,SterilEquip Systems
-Biogas analyzer units,49148,COGS - Materials,PuraTech Instruments
-Chemical dosing pumps,49148,COGS - Materials,ChemEco Pro
-Heat-resistant gaskets,49148,COGS - Materials,FlowGuard Devices
-Gas-tight dampers,49148,COGS - Materials,FlowGuard Devices
-Maintenance toolkits,42400,COGS - Spare Parts,MaintainPlus
-Ammonia scrubbers,49148,COGS - Materials,EcoSynth Solutions
-CO2 removal modules,49148,COGS - Materials,EcoSynth Solutions
-High-visibility safety clothing,49148,COGS - Materials,WorkSafe Services
-Ear protection (industrial),49148,COGS - Materials,SupplyWorks Depot
-Safety signage packs,49148,COGS - Materials,SafeSite Operations
-Chemical-resistant gloves,49148,COGS - Materials,ChemEco Pro
-Lockout/tagout kits,49148,COGS - Materials,WorkSafe Services
-Spill response kits,49148,COGS - Materials,SafeSite Operations
-Tool trolleys,49148,COGS - Materials,SupplyWorks Depot
-Safety helmets,49148,COGS - Materials,WorkSafe Services
-Grease cartridges,49148,COGS - Materials,SupplyWorks Depot
-Grounding rods,49148,COGS - Materials,HarvestCore Suppliers
-Site first aid kits,49148,COGS - Materials,SafeSite Operations
-Extension leads (industrial),49148,COGS - Materials,SupplyWorks Depot
-Filter cartridges (process),49148,COGS - Materials,FlowGuard Devices
-Industrial LED luminaires,49148,COGS - Materials,SupplyWorks Depot
-Hand tools (assorted sets),42400,COGS - Spare Parts,SupplyWorks Depot
-Outdoor CCTV cameras,49148,COGS - Materials,SterilEquip Systems
-Access control card readers,49148,COGS - Materials,FlowGuard Devices
-Weatherproof junction boxes,49148,COGS - Materials,SterilEquip Systems
-Two-way radios,49148,COGS - Materials,SupplyWorks Depot
-Uninterruptible Power Supplies (UPS),49148,COGS - Materials,FlowGuard Devices
-Solar-powered warning lights,49148,COGS - Materials,FlowGuard Devices
-Padlocks (heavy duty),49148,COGS - Materials,SupplyWorks Depot
-Spare SCADA terminals,42400,COGS - Spare Parts,SysGen Technologies
-Office desks,49148,COGS - Materials,SmartDesk Supplies
-Handheld gas detectors,49148,COGS - Materials,PuraTech Instruments
-Industrial ethernet switches,49148,COGS - Materials,DataBridge Networks
-Office chairs (ergonomic),49148,COGS - Materials,SmartDesk Supplies
-Network patch cables,49148,COGS - Materials,DataBridge Networks
-Computer monitors (24-inch),49148,COGS - Materials,SmartDesk Supplies
-Desktop computers,49148,COGS - Materials,SmartDesk Supplies
-Laptops (industrial grade),49148,COGS - Materials,SysGen Technologies
-Network printers,49148,COGS - Materials,SmartDesk Supplies
-Business software licenses,49148,COGS - Materials,SysGen Technologies
-Conference speakerphones,49148,COGS - Materials,SmartDesk Supplies
-Document shredders,49148,COGS - Materials,BioFlow Machinery
-Office telephones,49148,COGS - Materials,SmartDesk Supplies
-Whiteboards (120x90cm),49148,COGS - Materials,SmartDesk Supplies
-Dishwasher (office kitchen),49148,COGS - Materials,BioFlow Machinery
-Disposable coffee cups (1000),49148,COGS - Materials,EcoPaper Co
-Water coolers (bottle-fed),49148,COGS - Materials,AquaGrow Inputs
-Coffee machines (office),49148,COGS - Materials,BioFlow Machinery
-Tea bags (box),49148,COGS - Materials,EcoPaper Co
-Sugar (1kg bags),49148,COGS - Materials,DeltaChem Inputs
-Toilet paper (48 rolls),49148,COGS - Materials,EcoPaper Co
-Liquid soap refill (5L),49148,COGS - Materials,EcoSynth Solutions
-Ballpoint pens (box of 12),49148,COGS - Materials,SmartDesk Supplies
-Cleaning sponges (10-pack),49148,COGS - Materials,SupplyWorks Depot
-Disinfectant wipes (80-pack),49148,COGS - Materials,EcoZone Cleaners
-Staple refills (box),49148,COGS - Materials,SmartDesk Supplies
-Staplers (desk),49148,COGS - Materials,SmartDesk Supplies
-Rubber bands (bag of 100g),49148,COGS - Materials,SupplyWorks Depot
-Keyboard (USB),49148,COGS - Materials,SupplyWorks Depot
-"Batteries (AA, pack of 24)",49148,COGS - Materials,SupplyWorks Depot
-Highlighter pens (set of 6),49148,COGS - Materials,SmartDesk Supplies
-Postage stamps (20-pack),44251,COGS - Freight Outbound,QuickTrans Freight
-Envelopes (box of 100),49148,COGS - Materials,EcoPaper Co
-Visitor badges (box of 100),49148,COGS - Materials,SmartDesk Supplies
-Monitor risers,49148,COGS - Materials,SupplyWorks Depot
-Screen cleaning kits,49148,COGS - Materials,EcoZone Cleaners
-Wall clocks,49148,COGS - Materials,EcoSynth Solutions
-Flipchart markers (set),49148,COGS - Materials,SmartDesk Supplies
-Flipchart pads,49148,COGS - Materials,EcoPaper Co
-Meeting room signage,49148,COGS - Materials,EcoPaper Co
-Door nameplates,49148,COGS - Materials,EcoPaper Co
-Catering napkins (200-pack),49148,COGS - Materials,EcoPaper Co
-Mop heads (replacement),42400,COGS - Spare Parts,EcoZone Cleaners
-Floor cleaning detergent (5L),49148,COGS - Materials,EcoZone Cleaners
-Canteen cutlery (set),49148,COGS - Materials,EcoSynth Solutions
-Brooms (office/corridor),49148,COGS - Materials,EcoZone Cleaners
-Canteen crockery (plate),49148,COGS - Materials,SupplyWorks Depot
-Reception area rugs,49148,COGS - Materials,SupplyWorks Depot
-SAP ERP Annual License,59459,IT & Telecom Expenses,Agilis IT Solutions
-Industrial Equipment Maintenance Contract,55781,Service Direct Costs - Specialist Subcontractors,MaintainPlus
-Energy Supply Agreement,51362,Utilities,EcoSynth Solutions
-Enterprise IT Outsourcing Contract,59459,IT & Telecom Expenses,Agilis IT Solutions
-Data Center Hosting Services,59459,IT & Telecom Expenses,DataBridge Networks
-R&D Laboratory Supplies Contract,50645,Service Direct Costs - Consumables,BioHarvest Labs
-Cleaning & Sanitation Service,50645,Service Direct Costs - Consumables,EcoZone Cleaners
-Corporate Insurance Premiums,51960,Insurance,EcoSynth Solutions
-Payroll Processing Outsourcing,56468,Consulting Fees - Non-project,BioSoft Consulting
-Facility Management Retainer,55781,Service Direct Costs - Specialist Subcontractors,MaintainPlus
-Annual Legal Counsel Retainer,56468,Consulting Fees - Non-project,StrategicBio Advisors
-Annual Environmental Compliance Audit,55781,Service Direct Costs - Specialist Subcontractors,StrategicBio Advisors
-IT Consulting Services,59459,IT & Telecom Expenses,Agilis IT Solutions
-Waste Disposal Services,51362,Utilities,EcoZone Cleaners
-Regulatory Affairs Consulting Retainer,56468,Consulting Fees - Non-project,BioSoft Consulting
-Internal Audit Service,56468,Consulting Fees - Non-project,BioSoft Consulting
-Annual Data Privacy Audit,56468,Consulting Fees - Non-project,BioSoft Consulting
-Marketing Agency Retainer,58989,Advertising & Promotion,GrowthMinds Consulting
-IT Security Assessment,59459,IT & Telecom Expenses,Agilis IT Solutions
-Chemical Handling Permit Fee,50645,Service Direct Costs - Consumables,ChemEco Pro
-Corporate Tax Advisory Retainer,56468,Consulting Fees - Non-project,GrowthMinds Consulting
-Annual Corporate Social Responsibility Audit,56468,Consulting Fees - Non-project,BioSoft Consulting
-Annual Management Consulting Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
-Annual Network Penetration Test,55781,Service Direct Costs - Specialist Subcontractors,DataBridge Networks
-Annual Software Asset Management Audit,56468,Consulting Fees - Non-project,BioSoft Consulting
-Company Car Leasing,57274,Service Direct Costs - Travel,EcoMove Logistics
-Occupational Health & Safety Assessment,55781,Service Direct Costs - Specialist Subcontractors,WorkSafe Services
-Patent Renewal Fees,56468,Consulting Fees - Non-project,BioSoft Consulting
-MS Dynamics Annual License,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Board Member Remuneration,56468,Consulting Fees - Non-project,BioSoft Consulting
-Business Intelligence Software License,59459,IT & Telecom Expenses,SysGen Technologies
-External Recruitment Agency Fee,55781,Service Direct Costs - Specialist Subcontractors,BlueWave Recruitment
-Annual IT Audit,59459,IT & Telecom Expenses,Agilis IT Solutions
-Medical Waste Disposal Fee,50645,Service Direct Costs - Consumables,SterilEquip Systems
-Annual Building Maintenance,55781,Service Direct Costs - Specialist Subcontractors,GreenBuild Services
-Annual Staff Training Program,56468,Consulting Fees - Non-project,BioSoft Consulting
-Conference & Event Sponsorships,59606,Customer Events,EcoSynth Solutions
-Internal Communications Platform License,59459,IT & Telecom Expenses,SysGen Technologies
-Recruitment Advertising Fee,58989,Advertising & Promotion,BlueWave Recruitment
-Quality Assurance Certification,55781,Service Direct Costs - Specialist Subcontractors,BioHarvest Labs
-Annual GDPR Training Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
-Company Website Hosting,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Trademark Registration,55781,Service Direct Costs - Specialist Subcontractors,StrategicBio Advisors
-Document Management System License,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Parking Permit,52716,Office Rent,BioStation Office
-Annual Uniform Rental,50645,Service Direct Costs - Consumables,EcoZone Cleaners
-Office Supplies Contract,50645,Service Direct Costs - Consumables,SmartDesk Supplies
-Annual Elevator Maintenance,55781,Service Direct Costs - Specialist Subcontractors,MaintainPlus
-Food Safety Inspection Fee,50645,Service Direct Costs - Consumables,BioHarvest Labs
-Annual Fuel Card Service Fee,57274,Service Direct Costs - Travel,BioFleet Distribution
-Annual Press Release Distribution Fee,58989,Advertising & Promotion,SustainaSource
-Annual Security System License,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Digital Signature Service Fee,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Laboratory Accreditation Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
-Annual Industrial Scale Calibration,55781,Service Direct Costs - Specialist Subcontractors,PuraTech Instruments
-Annual Access Control License,56468,Consulting Fees - Non-project,BioSoft Consulting
-Annual Chemical Inventory Report Fee,50645,Service Direct Costs - Consumables,ChemEco Pro
-Annual Office Coffee Service,50645,Service Direct Costs - Consumables,OfficeEssence
-Lift Certification Fee,55781,Service Direct Costs - Specialist Subcontractors,StrategicBio Advisors
-Annual Green Energy Certificate,51362,Utilities,SustainaSource
-Annual CO2 Emissions Reporting Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
-Annual Photocopier Service Fee,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Digital Archive Subscription,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Safety Data Sheet Subscription,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Ergonomics Assessment,55781,Service Direct Costs - Specialist Subcontractors,WorkSafe Services
-Annual Postage Meter License,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Employee ID Card Fee,50645,Service Direct Costs - Consumables,SmartDesk Supplies
-Annual Fire Extinguisher Check,55781,Service Direct Costs - Specialist Subcontractors,SafeSite Operations
-Annual Employee Recognition Platform License,59459,IT & Telecom Expenses,SysGen Technologies
-Annual Compliance E-learning License,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Press Archive Access,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Office Music License,51362,Utilities,BioStation Office
-Annual Company Vehicle Registration Fee,51960,Insurance,BioFleet Distribution
-Annual Meeting Room Booking License,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Shift Scheduling Software License,59459,IT & Telecom Expenses,Agilis IT Solutions
-Annual Public Relations Membership,58989,Advertising & Promotion,SustainaSource
-Annual Desk Booking Software License,59459,IT & Telecom Expenses,SysGen Technologies
-Annual Coffee Machine Maintenance,50645,Service Direct Costs - Consumables,MaintainPlus
-Annual Employee Wellbeing Survey,55781,Service Direct Costs - Specialist Subcontractors,StrategicBio Advisors
-Annual Waste Sorting Training Fee,56468,Consulting Fees - Non-project,BioSoft Consulting
+item_name,account_id,account_name,vendor_name,bu_id
+Color pigment masterbatch,4009,Inter Company COS,LEGO_DE_ASSEMBLY,LEGO_US_PACKAGING
+Laser engraving heads,4003,Retail COS,ENGEL Group,LEGO_DE_ENGINEERING
+Conveyor belts,4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+ABS resin pellets,4003,Retail COS,BASF Plastics,LEGO_DE_ASSEMBLY
+Component feeders,4003,Retail COS,Motan Colortronic,LEGO_DE_ASSEMBLY
+Thermoplastic elastomer pellets,4003,Retail COS,BASF Plastics,LEGO_DE_ASSEMBLY
+Pallet stretch film rolls,4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+Machine lubricants,4003,Retail COS,Perstorp AB,LEGO_DE_ENGINEERING
+Electric drive motors,4003,Retail COS,Schneider Electric,LEGO_DE_ENGINEERING
+Shipping corrugated cartons,4003,Retail COS,LEGO_DE_ASSEMBLY,LEGO_US_PACKAGING
+Mold steel blocks,4003,Retail COS,ENGEL Group,LEGO_DE_ENGINEERING
+Tool steel inserts,4003,Retail COS,ENGEL Group,LEGO_DE_ENGINEERING
+Hydraulic oil,4003,Retail COS,Perstorp AB,LEGO_SE_LOGISTICS
+Spare solenoid coils,4009,Inter Company COS,LEGO_DE_ASSEMBLY,LEGO_DE_ASSEMBLY
+Air compressor filters,4003,Retail COS,Lyreco Nordic,LEGO_DE_ENGINEERING
+High-precision temperature sensors,4003,Retail COS,Solvay Specialty Polymers,LEGO_DE_ENGINEERING
+Vacuum pumps,4003,Retail COS,ENGEL Group,LEGO_DE_ENGINEERING
+Electric heating elements,4003,Retail COS,Schneider Electric,LEGO_DE_ENGINEERING
+Automated sorting sensors,4003,Retail COS,KUKA Robotics,LEGO_SE_LOGISTICS
+Stainless steel fasteners,4003,Retail COS,BASF Plastics,LEGO_DE_ENGINEERING
+Production line light fixtures,4003,Retail COS,AkzoNobel Coatings,LEGO_DE_ASSEMBLY
+Desiccant dryer media,4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+Digital display panels,4003,Retail COS,Schneider Electric,LEGO_US_DIGITAL
+Laser sensors,4003,Retail COS,KUKA Robotics,LEGO_DE_ENGINEERING
+Industrial ethernet cables,4003,Retail COS,Siemens Industry,LEGO_DE_ENGINEERING
+Workstation anti-fatigue mats,4003,Retail COS,Staples Denmark,LEGO_SE_LOGISTICS
+Vacuum suction cups,4003,Retail COS,BASF Plastics,LEGO_DE_ENGINEERING
+Replacement conveyor chains,4003,Retail COS,ENGEL Group,LEGO_SE_LOGISTICS
+Vibration isolation pads,4003,Retail COS,Sika Adhesives,LEGO_DE_ENGINEERING
+Aluminum mounting brackets,4003,Retail COS,BASF Plastics,LEGO_DE_ASSEMBLY
+Hydraulic hose assemblies,4003,Retail COS,ENGEL Group,LEGO_DE_ASSEMBLY
+Grease cartridges,4009,Inter Company COS,LEGO_DE_ASSEMBLY,LEGO_SE_LOGISTICS
+PTFE lubricants,4003,Retail COS,Solvay Specialty Polymers,LEGO_DE_ASSEMBLY
+Shock absorbers (machine),4003,Retail COS,ENGEL Group,LEGO_DE_ASSEMBLY
+O-ring kits,4003,Retail COS,BASF Plastics,LEGO_DE_ASSEMBLY
+Adhesive tapes (industrial),4003,Retail COS,Sika Adhesives,LEGO_DE_ASSEMBLY
+High-speed data cables,4003,Retail COS,Solvay Specialty Polymers,LEGO_US_DIGITAL
+Industrial RFID tags,4003,Retail COS,Siemens Industry,LEGO_SE_LOGISTICS
+Circuit breakers,4003,Retail COS,Schneider Electric,LEGO_DE_ENGINEERING
+Pneumatic tubing,4003,Retail COS,BASF Plastics,LEGO_DE_ENGINEERING
+Hearing protection plugs,4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+Insulation sleeving,4003,Retail COS,BASF Plastics,LEGO_DE_ASSEMBLY
+Safety gloves (nitrile),4003,Retail COS,Lyreco Nordic,LEGO_SE_LOGISTICS
+Hand tools (pliers),4003,Retail COS,BASF Plastics,LEGO_DE_ENGINEERING
+Uniforms (operator),4003,Retail COS,Initial Denmark,LEGO_SE_LOGISTICS
+Hand tools (hex wrenches),4003,Retail COS,Lyreco Nordic,LEGO_DE_ASSEMBLY
+Conveyor rollers,4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+Lockout tagout kits,4003,Retail COS,Schneider Electric,LEGO_DE_ASSEMBLY
+First aid kits,4003,Retail COS,Lyreco Nordic,LEGO_SE_LOGISTICS
+Industrial rags,4003,Retail COS,Initial Denmark,LEGO_SE_LOGISTICS
+Safety signage,4003,Retail COS,AkzoNobel Coatings,LEGO_DK_TOUR
+Fire extinguishers,4003,Retail COS,ISS Facility Services,LEGO_DK_TOUR
+Safety goggles,4003,Retail COS,BASF Plastics,LEGO_DE_ENGINEERING
+Broom and dustpan sets,4003,Retail COS,Staples Denmark,LEGO_SE_LOGISTICS
+Waste collection bags,4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+Battery packs (AA),4003,Retail COS,BIC Nordic,LEGO_DE_ASSEMBLY
+Motor couplings,4009,Inter Company COS,LEGO_US_DIGITAL,LEGO_DE_ASSEMBLY
+Heat shrink tubing,4003,Retail COS,BASF Plastics,LEGO_DE_ENGINEERING
+Battery packs (AAA),4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+Industrial vacuum cleaner bags,4003,Retail COS,Lyreco Nordic,LEGO_SE_LOGISTICS
+Sticky note pads,4003,Retail COS,Staples Denmark,LEGO_DE_ASSEMBLY
+Replacement light bulbs,4003,Retail COS,Staples Denmark,LEGO_DK_TOUR
+Notebook pads,4003,Retail COS,Staples Denmark,LEGO_DE_ASSEMBLY
+Staplers,4003,Retail COS,Staples Denmark,LEGO_DE_ASSEMBLY
+Printer toner cartridges,4003,Retail COS,Staples Denmark,LEGO_SE_LOGISTICS
+Document folders,4003,Retail COS,Staples Denmark,LEGO_DE_ENGINEERING
+Binder clips,4009,Inter Company COS,LEGO_SE_MOULDING,LEGO_DE_ASSEMBLY
+Paper clips,4003,Retail COS,Staples Denmark,LEGO_DE_ASSEMBLY
+Printer ink cartridges,4003,Retail COS,Staples Denmark,LEGO_SE_LOGISTICS
+Ring binders,4003,Retail COS,LEGO_US_DIGITAL,LEGO_DK_EDU
+Document shredders,4003,Retail COS,Staples Denmark,LEGO_DE_ENGINEERING
+Desk calculators,4003,Retail COS,Staples Denmark,LEGO_DE_ENGINEERING
+Correction tape,4003,Retail COS,BIC Nordic,LEGO_SE_LOGISTICS
+Highlighter pens,4003,Retail COS,BIC Nordic,LEGO_DE_ASSEMBLY
+Envelopes (DL),4003,Retail COS,Staples Denmark,LEGO_DK_DESIGN
+Bubble wrap,4003,Retail COS,LEGO_DE_ASSEMBLY,LEGO_US_PACKAGING
+USB flash drives,4003,Retail COS,Staples Denmark,LEGO_US_DIGITAL
+Mailing labels,4003,Retail COS,LEGO_DE_ASSEMBLY,LEGO_US_PACKAGING
+External hard drives,4003,Retail COS,Staples Denmark,LEGO_US_DIGITAL
+Packing tape,4003,Retail COS,LEGO_DE_ASSEMBLY,LEGO_US_PACKAGING
+Keyboard devices,4003,Retail COS,BASF Plastics,LEGO_US_DIGITAL
+Computer monitors,4003,Retail COS,Staples Denmark,LEGO_US_DIGITAL
+Smartphone chargers,4003,Retail COS,Solvay Specialty Polymers,LEGO_US_DIGITAL
+Ethernet patch cables,4003,Retail COS,Staples Denmark,LEGO_SE_LOGISTICS
+Mouse devices,4009,Inter Company COS,LEGO_DE_ASSEMBLY,LEGO_US_DIGITAL
+Wireless routers,4003,Retail COS,Microsoft Azure,LEGO_US_DIGITAL
+Bottled water (0.5L),4009,Inter Company COS,LEGO_DK_TOUR,LEGO_DK_TOUR
+Hand soap refills,4009,Inter Company COS,LEGO_DK_TOUR,LEGO_SE_LOGISTICS
+Sanitary bin liners,4009,Inter Company COS,LEGO_DE_ASSEMBLY,LEGO_SE_LOGISTICS
+Air freshener sprays,4003,Retail COS,Evonik Additives,LEGO_SE_LOGISTICS
+Floor cleaner,4003,Retail COS,ISS Facility Services,LEGO_SE_LOGISTICS
+Tea bags,4003,Retail COS,BASF Plastics,LEGO_DK_TOUR
+Conference speakerphones,4003,Retail COS,Lyreco Nordic,LEGO_DE_ENGINEERING
+Kitchen paper roll,4003,Retail COS,Lyreco Nordic,LEGO_SE_LOGISTICS
+Milk (long-life cartons),4003,Retail COS,Kuehne + Nagel,LEGO_SE_LOGISTICS
+Disposable plates,4003,Retail COS,LEGO_DE_ASSEMBLY,LEGO_US_PACKAGING
+Lunch napkins,4003,Retail COS,LEGO_DE_ASSEMBLY,LEGO_US_PACKAGING
+Hand sanitizer gel,4003,Retail COS,Perstorp AB,LEGO_SE_LOGISTICS
+Disposable cutlery,4003,Retail COS,BASF Plastics,LEGO_DK_TOUR
+Visitor ID badges,4003,Retail COS,Staples Denmark,LEGO_DK_TOUR
+Sugar packets,4003,Retail COS,BIC Nordic,LEGO_DK_TOUR
+Coat hangers (plastic),4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+Umbrellas (promotional),4009,Inter Company COS,LEGO_US_DIGITAL,LEGO_DK_TOUR
+Keycard holders,4003,Retail COS,BASF Plastics,LEGO_DK_TOUR
+Catering coffee filters,4003,Retail COS,Sodexo Danmark,LEGO_DK_TOUR
+Dish soap,4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+Chocolate bars,4003,Retail COS,BASF Plastics,LEGO_DE_ASSEMBLY
+Calendar pads,4003,Retail COS,Staples Denmark,LEGO_DK_TOUR
+Desk fans,4003,Retail COS,BASF Plastics,LEGO_SE_LOGISTICS
+Fruit baskets,4003,Retail COS,BASF Plastics,LEGO_DK_TOUR
+Desk lamps,4003,Retail COS,Staples Denmark,LEGO_DE_ASSEMBLY
+Lanyards,4003,Retail COS,BASF Plastics,LEGO_DK_TOUR
+Pinboards,4003,Retail COS,BASF Plastics,LEGO_DK_DESIGN
+Wall clocks,4003,Retail COS,BASF Plastics,LEGO_DK_TOUR
+Flipchart pads,4003,Retail COS,Lyreco Nordic,LEGO_DE_ASSEMBLY
+Table covers,4003,Retail COS,Lyreco Nordic,LEGO_DK_TOUR
+Mouse pads,4009,Inter Company COS,LEGO_DE_ASSEMBLY,LEGO_DE_ASSEMBLY
+Label printer tapes,4003,Retail COS,Staples Denmark,LEGO_SE_LOGISTICS
+Shoe covers (disposable),4003,Retail COS,Initial Denmark,LEGO_DK_TOUR
+Trash bin bags,4003,Retail COS,Lyreco Nordic,LEGO_SE_LOGISTICS
+Facility Management Service Fee,5013,Repairs and Maintenance,ISS Facility Services,LEGO_DE_ENGINEERING
+SAP Enterprise License,5023,Professional Services,SAP Denmark,LEGO_DE_ENGINEERING
+International Payroll Tax Filing Service,4009,Inter Company COS,LEGO_DE_ASSEMBLY,LEGO_DE_ENGINEERING
+Business Intelligence Platform License,5023,Professional Services,IBM Cloud Services,LEGO_DE_ENGINEERING
+Employee Benefits Management Fee,5002,Employee Benefits,Adecco Denmark,LEGO_DE_ASSEMBLY
+Global HR Payroll Service,5003,Payroll Taxes,Adecco Denmark,LEGO_DE_ASSEMBLY
+Annual Financial Audit,5023,Professional Services,PwC Denmark,LEGO_DE_ASSEMBLY
+Legal Advisory Retainer,5023,Professional Services,EY Advisory,LEGO_DE_ASSEMBLY
+Enterprise IT Outsourcing Retainer,5023,Professional Services,IBM Cloud Services,LEGO_DE_ENGINEERING
+Corporate IT Helpdesk Outsourcing,5023,Professional Services,Tata Consultancy Services,LEGO_US_DIGITAL
+Corporate Governance Reporting Service,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Content Management System License,5022,Other Expenses,Microsoft Azure,LEGO_US_DIGITAL
+Workforce Health Insurance Administration,4009,Inter Company COS,LEGO_US_DIGITAL,LEGO_DE_ENGINEERING
+Cross-Border VAT Filing Subscription,5023,Professional Services,PwC Denmark,LEGO_DE_ENGINEERING
+Enterprise Backup Storage Subscription,5009,Equipment,Microsoft Azure,LEGO_US_DIGITAL
+Corporate Travel Management Fee,5018,Other Travel Related,Ramboll Management,LEGO_DE_ASSEMBLY
+Annual Internal Control Review,4009,Inter Company COS,LEGO_US_DIGITAL,LEGO_DE_ENGINEERING
+Annual ISO Certification Fee,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Occupational Health Service Retainer,5023,Professional Services,Sodexo Danmark,LEGO_DE_ENGINEERING
+Data Privacy Compliance Consulting,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Treasury Management System License,5023,Professional Services,IBM Cloud Services,LEGO_DE_ASSEMBLY
+HR Recruitment Platform License,5023,Professional Services,Adecco Denmark,LEGO_DE_ENGINEERING
+Mailroom Outsourcing Service,5023,Professional Services,ISS Facility Services,LEGO_SE_LOGISTICS
+Employee Training Platform Subscription,5002,Employee Benefits,LEGO_US_DIGITAL,LEGO_DK_EDU
+Annual Workplace Ergonomics Assessment,4009,Inter Company COS,LEGO_DE_ASSEMBLY,LEGO_DE_ENGINEERING
+Environmental Compliance Service,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Trade Mark Renewal Fee,5023,Professional Services,Tata Consultancy Services,LEGO_DK_DESIGN
+Annual Customs Audit Fee,5023,Professional Services,PwC Denmark,LEGO_DE_ENGINEERING
+Annual Fire Safety Inspection,5013,Repairs and Maintenance,ISS Facility Services,LEGO_DE_ENGINEERING
+Annual Brand Protection Monitoring,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Data Protection Officer Service,5023,Professional Services,NNIT A/S,LEGO_DE_ENGINEERING
+Outsourced Call Center Service,5023,Professional Services,LEGO_US_DIGITAL,LEGO_DK_EDU
+Cloud Collaboration Suite License,5005,Telephone,IBM Cloud Services,LEGO_US_DIGITAL
+Annual Packaging Compliance Fee,5022,Other Expenses,LEGO_DE_ASSEMBLY,LEGO_US_PACKAGING
+Fleet Management Service,5013,Repairs and Maintenance,ISS Facility Services,LEGO_SE_LOGISTICS
+Annual Energy Use Certification,5006,Utilities,Schneider Electric,LEGO_DE_ASSEMBLY
+Annual Building Insurance Fee,5011,Property,ISS Facility Services,LEGO_DE_ASSEMBLY
+Payroll Software Subscription,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Translation Service Retainer,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Occupational Pension Administration Service,5002,Employee Benefits,Adecco Denmark,LEGO_DE_ASSEMBLY
+Annual VAT Registration Fee,5022,Other Expenses,BASF Plastics,LEGO_DE_ASSEMBLY
+Corporate Insurance Brokerage Fee,5023,Professional Services,Boston Consulting Group,LEGO_DE_ASSEMBLY
+Annual Fair Employment Certification,5023,Professional Services,Adecco Denmark,LEGO_DE_ENGINEERING
+Annual Employee Wellbeing Program,5002,Employee Benefits,Sodexo Danmark,LEGO_DE_ENGINEERING
+Annual Telecommunication Audit,5005,Telephone,Microsoft Azure,LEGO_DE_ASSEMBLY
+Annual Trademark Watch Service,5023,Professional Services,Boston Consulting Group,LEGO_DK_DESIGN
+Annual GDPR Compliance Audit,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Cyber Threat Intelligence Subscription,5023,Professional Services,IBM Cloud Services,LEGO_DE_ENGINEERING
+Annual Energy Labelling Inspection,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Access Control System Maintenance,5013,Repairs and Maintenance,ISS Facility Services,LEGO_DE_ENGINEERING
+Annual IT Asset Disposal Service,5012,Gains/Losses On Asset Disposal - Property,Deloitte IT Solutions,LEGO_DE_ASSEMBLY
+Annual CSR Reporting Service,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Water Use Audit,5006,Utilities,ISS Facility Services,LEGO_DE_ASSEMBLY
+Annual Travel Insurance Policy,5018,Other Travel Related,Blue Water Shipping,LEGO_DK_TOUR
+Annual Import/Export License Fee,5022,Other Expenses,Kuehne + Nagel,LEGO_SE_LOGISTICS
+Annual Employee Assistance Program Fee,5002,Employee Benefits,Adecco Denmark,LEGO_DE_ENGINEERING
+Annual Recruitment Process Outsourcing Fee,5023,Professional Services,Adecco Denmark,LEGO_DE_ENGINEERING
+Annual Anti-money Laundering Audit,5023,Professional Services,PwC Denmark,LEGO_DE_ASSEMBLY
+Annual Risk Management Consulting,5023,Professional Services,Ramboll Management,LEGO_DE_ENGINEERING
+Annual Diversity & Inclusion Program Fee,5023,Professional Services,Boston Consulting Group,LEGO_DE_ENGINEERING
+Annual Digital Marketing Analytics Subscription,5020,Marketing Collateral,LEGO_US_DIGITAL,LEGO_US_DIGITAL
+Annual Data Center Maintenance Fee,5013,Repairs and Maintenance,Microsoft Azure,LEGO_DE_ENGINEERING
+Annual Sustainability Reporting Fee,5023,Professional Services,Boston Consulting Group,LEGO_DE_ENGINEERING
+Annual Internal Mobility Platform Fee,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Customer Experience Monitoring,5023,Professional Services,Tata Consultancy Services,LEGO_DK_TOUR
+Annual Office Plants Maintenance Service,5013,Repairs and Maintenance,HedeDanmark Landscaping,LEGO_DE_ENGINEERING
+Annual Social Media Monitoring Subscription,5023,Professional Services,Tata Consultancy Services,LEGO_US_DIGITAL
+Annual Crisis Management Retainer,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Fixed Asset Register Audit,5023,Professional Services,PwC Denmark,LEGO_DE_ENGINEERING
+Annual IT Asset Tagging Fee,5013,Repairs and Maintenance,Deloitte IT Solutions,LEGO_US_DIGITAL
+Annual Cafeteria Health Inspection,5023,Professional Services,Sodexo Danmark,LEGO_DK_TOUR
+Annual Parking Management Fee,5024,Rent,ISS Facility Services,LEGO_DE_ASSEMBLY
+Annual PC Antivirus License,5009,Equipment,Microsoft Azure,LEGO_US_DIGITAL
+Annual Business Magazine Subscription,5022,Other Expenses,Staples Denmark,LEGO_DE_ASSEMBLY
+Annual HR Legal Helpline Subscription,5023,Professional Services,Adecco Denmark,LEGO_DE_ASSEMBLY
+Annual Freight Forwarder Administration Fee,5022,Other Expenses,Kuehne + Nagel,LEGO_SE_LOGISTICS
+Annual Conference Room Booking License,5019,Conferences,LEGO_US_DIGITAL,LEGO_DK_EDU
+Annual Mobile Device SIM Management Fee,5005,Telephone,Ramboll Management,LEGO_DE_ASSEMBLY
+Annual Visitor Management License,5023,Professional Services,Tata Consultancy Services,LEGO_DK_TOUR
+Annual Public Address System Service,5013,Repairs and Maintenance,ISS Facility Services,LEGO_DE_ENGINEERING
+Annual E-learning Content Fee,5022,Other Expenses,Microsoft Azure,LEGO_DE_ENGINEERING
+Annual Document Shredding Service,5023,Professional Services,ISS Facility Services,LEGO_DE_ENGINEERING
+Annual Postage Permit Fee,5022,Other Expenses,FedEx Express,LEGO_DE_ASSEMBLY
+Annual Chamber of Commerce Membership,5022,Other Expenses,BASF Plastics,LEGO_DE_ASSEMBLY
+Annual Risk & Compliance Newsletter Subscription,5022,Other Expenses,PwC Denmark,LEGO_DE_ASSEMBLY
+Annual Employee Survey Platform Fee,5002,Employee Benefits,Microsoft Azure,LEGO_DE_ENGINEERING
+Annual Public Holiday Calendar License,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Secure Email Gateway License,5023,Professional Services,IBM Cloud Services,LEGO_US_DIGITAL
+Annual Cloud Storage License,5022,Other Expenses,IBM Cloud Services,LEGO_US_DIGITAL
+Annual Fax-to-Email License,5005,Telephone,BASF Plastics,LEGO_DE_ASSEMBLY
+Annual Corporate Social Responsibility Fee,5022,Other Expenses,BASF Plastics,LEGO_DE_ASSEMBLY
+Annual Board Portal License,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Digital Timesheet License,5023,Professional Services,Tata Consultancy Services,LEGO_US_DIGITAL
+Annual Statistical Reporting License,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Relocation Counseling Subscription,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual DPA Registration Fee,5022,Other Expenses,SAP Denmark,LEGO_DK_DESIGN
+Annual Public Tender Portal Access,5023,Professional Services,Tata Consultancy Services,LEGO_DE_ENGINEERING
+Annual Team Collaboration App License,5022,Other Expenses,Microsoft Azure,LEGO_US_DIGITAL
+Annual Company Seal Registration,5023,Professional Services,McKinsey & Company,LEGO_DE_ENGINEERING
+Annual Business Registry Renewal Fee,5022,Other Expenses,BASF Plastics,LEGO_DE_ASSEMBLY
