@@ -217,3 +217,85 @@ def assign_departments(df_pay: pd.DataFrame, df_departments: pd.DataFrame) -> pd
     })
     
     return df_pay[cols]
+
+def mirror_intercompany_flows(df_revenue: pd.DataFrame,
+                              df_cogs: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    Create mirrored intercompany entries so that total intercompany balances net to zero.
+
+    Parameters
+    ----------
+    df_rev_ic : pd.DataFrame
+        Intercompany revenue lines (e.g., account_id = 4007).
+    df_cogs_ic : pd.DataFrame
+        Intercompany COGS lines (e.g., account_id = 4009).
+
+    Returns
+    -------
+    rev_mirror : pd.DataFrame
+        New revenue lines created from intercompany COGS (4009 -> 4007).
+    cogs_mirror : pd.DataFrame
+        New COGS lines created from intercompany revenue (4007 -> 4009).
+    """
+    df_rev_ic  = df_revenue.query("account_id == 4007").copy()
+    df_cogs_ic = df_cogs.query("account_id == 4009").copy()
+
+    # --- Helper: swap BU <-> Party columns ---
+    def swap_bu_and_party(df: pd.DataFrame) -> pd.DataFrame:
+        df = df.copy()
+        df["bu_id"], df["party_id"] = df["party_id"], df["bu_id"]
+        df["bu_name"], df["party_name"] = df["party_name"], df["bu_name"]
+        return df
+
+    # --- Revenue → mirror into COGS ---
+    cogs_mirror = df_rev_ic.copy()
+    cogs_mirror = swap_bu_and_party(cogs_mirror)
+    cogs_mirror["account_id"] = 4009
+    cogs_mirror["category"] = "COGS"
+    
+    # --- COGS → mirror into Revenue ---
+    rev_mirror = df_cogs_ic.copy()
+    rev_mirror = swap_bu_and_party(rev_mirror)
+    rev_mirror["account_id"] = 4007
+    rev_mirror["category"] = "Revenue"
+
+    df_revenue_final = pd.concat([df_revenue, rev_mirror], ignore_index=True)
+    df_cogs_final    = pd.concat([df_cogs, cogs_mirror], ignore_index=True)
+    
+    return df_revenue_final, df_cogs_final
+
+def get_party_list(
+    df_fact: pd.DataFrame,
+    df_parties: pd.DataFrame,
+    df_bus: pd.DataFrame,
+    name: str = "party"
+) -> pd.DataFrame:  
+    
+    df_list = df_fact[["party_id", "party_name"]].drop_duplicates("party_id")
+    df_list = df_list.merge(df_parties, left_on="party_id", right_on="party_ID", how="left")
+    df_list = df_list.drop(columns=["party_name_y", "party_ID"])
+    df_list = df_list.rename(columns={"party_name_x": "party_name"})
+
+    mask_nan = df_list['party_country'].isna()
+
+    # Merge on matching names (party_name ↔ bu_name)
+    df_list.loc[mask_nan, 'party_country'] = (
+        df_list.loc[mask_nan, 'party_name']
+        .map(df_bus.set_index('bu_name')['country'])
+    )
+
+    df_list.loc[mask_nan, 'party_type'] = 'INTERNAL_BU'
+
+    # === 3. Dynamic renaming ===
+    rename_dict = {
+        "party_id": f"{name}_id",
+        "party_name": f"{name}_name",
+        "party_type": f"{name}_type",
+        "party_country": f"{name}_country",
+    }
+
+    df_list = df_list.rename(columns=rename_dict)
+    df_terms = pd.read_csv("data/inputdata/generic_terms.csv", sep=",")
+    df_list["terms_id"] = pd.Series(np.random.choice(df_terms["terms_id"], size=len(df_list), replace=True)).reset_index(drop=True)
+
+    return df_list

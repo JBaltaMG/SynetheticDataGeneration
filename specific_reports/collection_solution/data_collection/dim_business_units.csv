@@ -1,0 +1,13 @@
+bu_id,bu_name,bu_type,country,company_code,Company Code,SALESORGANIZATION,CreditcontrolArea,SALESORGANIZATION_DESC
+BU001,Lego HQ,HQ,Denmark,1000,BU001,SO-001,CCA03,Sales Org 1
+BU002,Lego Billund Factory,Factory,Denmark,1000,BU002,SO-002,CCA03,Sales Org 2
+BU003,Lego Shared Services Center,Shared Service,Denmark,1000,BU003,SO-003,CCA03,Sales Org 3
+BU005,Lego Kladno Factory,Factory,Czech Republic,1250,BU005,SO-004,CCA03,Sales Org 4
+BU006,Lego North America Sales,Retail,United States,1500,BU006,SO-005,CCA02,Sales Org 5
+BU007,Lego USA Distribution Center,Distribution,United States,1500,BU007,SO-006,CCA01,Sales Org 6
+BU008,Lego Monterrey Factory,Factory,Mexico,1750,BU008,SO-007,CCA02,Sales Org 7
+BU009,Lego Asia-Pacific Sales,Retail,Singapore,2000,BU009,SO-008,CCA01,Sales Org 8
+BU010,Lego Singapore Distribution Hub,Distribution,Singapore,2000,BU010,SO-009,CCA03,Sales Org 9
+BU011,Lego Mexico Distribution Center,Distribution,Mexico,1750,BU011,SO-010,CCA02,Sales Org 10
+BU013,Lego Online Store,Online,Denmark,1000,BU013,SO-011,CCA03,Sales Org 11
+BU015,Lego Discovery Center Chicago,Retail,United States,1500,BU015,SO-012,CCA02,Sales Org 12

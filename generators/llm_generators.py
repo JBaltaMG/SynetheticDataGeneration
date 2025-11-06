@@ -4,327 +4,176 @@ import utils.utils as utils
 import generators.random_generators as random_generators
 import numpy as np
 
-
-def generate_procurement_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
+def generate_bus_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
     client = prompt_utils.get_openai_client()
-
     over_request_count = int(np.floor(int(count) * 1.4))
-
-    header = "name;proportionality;unit_price"
+    header = "bu_id;bu_name;bu_type;country;company_code"
     constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
-    prompt = f"""
-    You are a procurement and industry expert. 
-    Generate a realistic ranked list of the top {over_request_count} procurement items, materials, and consumables 
-    commonly purchased by a Denmark-only, large-scale company like {company_name}, based on its industry and typical operations.
+    PROMPT_BUSINESS_UNITS = f"""
+    You are creating a realistic internal org structure for a company.
 
-    Output format:
-    - CSV with two columns: name;proportionality
-    - `name` = specific purchased item/material (avoid vague terms like "miscellaneous" or "other")
-    - `proportionality` = share of total procurement budget
-    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number 
+    Company: {company_name}
 
-    Coverage requirements (all must appear at least once):
-    - Raw materials & base components
-    - Operational & maintenance supplies
-    - General equipment & consumables
-    - Office/admin products
+    Task:
+    Generate 10-15 business units and departments that reflect how this company would actually operate (production sites, regional sales orgs, HQ functions, logistics hubs, shared services, etc.).
 
-    Ranking rules:
-    - Sort by proportionality in descending order
-    - Top ranks: most expensive raw/specialized inputs
-    - Middle ranks: tools, spares, operational items
-    - Bottom ranks: low-cost office/admin supplies
+    Return ONLY a semicolon-separated CSV with the following columns in this exact order:
+    {header}
 
-    For context, here is a short version of the latest year-end report for {company_name}: 
-    {ctxb}
+    Definitions:
+    - BU_ID: stable ID like BU001, BU002, ...
+    - BU_Name: human label, e.g. "{company_name} Retail", "{company_name} Factory". ALSO WE need a headquarter in the correct country. JUST CALLED "{company_name} HQ".
+    - BU_Type: one of [Factory, Retail, HQ, Licensing, Shared Service, Online, Distribution]
+    - Country: realistic country/region for that BU. Max of 5 countries total. 
+    - CompanyCode: For each country make a company Code. Start at 1000 and increment by 250 for each new country. 
 
-    {constraints}
-    """.strip()
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "system", "content": "You are a helpful data analyst and industry expert."},
-                  {"role": "user", "content": prompt}],
-        temperature=temp,
-    )
-    df_procurement = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_procurement = utils.convert_column_to_percentage(df_procurement, "proportionality", scale=1.0)
-    return df_procurement
-
-def generate_sales_products_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
-    client = prompt_utils.get_openai_client()
-
-    over_request_count = int(np.floor(int(count) * 1.4))
-
-    header = "name;proportionality;unit_price"
-    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-    ctxb = prompt_utils._ctx_block(company_name)
-
-    prompt = f"""
-    You are a product marketing and industry expert. 
-    Generate a realistic ranked list of the top {over_request_count} product categories 
-    that a Denmark-only, large-scale company like {company_name} would sell, 
-    based on its industry, brand identity, and market focus.
-
-
-    Each row after the header:
-    - `name` = realistic product/SKU category (broad but specific enough for revenue analysis; e.g., "Running Shoes", not "Product A")
-    - `proportionality` = share of total sales revenue
-    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number 
-
-    Composition rules:
-    - Include a mix of high-revenue flagship lines, mid-range products, and low-cost accessories/services.
-    - Avoid overly granular SKUs or vague placeholders like "Miscellaneous".
-    - Rank the list in descending order of proportionality.
-
-    For context, here is a short version of the latest year-end report for {company_name}:
-    {ctxb}
-    {constraints}
-    """.strip()
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "system", "content": "You are a helpful data analyst and industry expert."},
-                  {"role": "user", "content": prompt}],
-        temperature=temp,
-    )
-    df_products = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_products = utils.convert_column_to_percentage(df_products, "proportionality", scale=1.0)
-    return df_products
-
-def generate_roles_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.9):
-    client = prompt_utils.get_openai_client()
-
-    over_request_count = int(np.floor(int(count) * 1.4))
-
-    header = "role_name"
-    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-    ctxb = prompt_utils._ctx_block(company_name)
-
-    
-    prompt = f"""
-    You are an HR and industry expert. Generate {over_request_count} employee roles for a Denmark-only, large company like {company_name}.
-
-    Output format:
-    - CSV with a single column: role_name
-    - Duplicates are ALLOWED and ENCOURAGED for common roles.
-    - Rank by highest paid roles first. Any duplicates should be together. 
-
-    Distribution requirements:
-    - 60–80% must be generic base titles without seniority modifiers, e.g.:
-    Software Engineer, Data Analyst, Consultant, Accountant, Sales Representative,
-    Customer Support Specialist, Marketing Specialist, HR Generalist, Operations Coordinator,
-    Procurement Specialist, Warehouse Associate, Project Manager, Business Analyst,
-    QA Engineer, IT Support Specialist.
-    - ≤10% may include seniority prefixes (Senior, Lead, Director, Head, Chief). Prefer none.
-    - ≤3 entries total may be C‑level (CEO/CFO/CTO/etc.) or VP.
-    - Avoid hyper‑granular one-offs; repetition of core roles is preferred.
-
-    Style constraints:
-    - Avoid prefixes: Senior, Lead, Director, Head, Chief, Principal, Staff — unless within the ≤10% cap.
-    - Avoid internship/student titles.
-    - Keep roles realistic for Denmark-only operations; no global country managers.
-
-    For context, here is a short version of the lastest year-end report for {company_name}:
-    {ctxb}
-
-    {constraints}
-    """.strip()
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "system", "content": "You are a helpful data analyst and HR expert."},
-                  {"role": "user", "content": prompt}],
-        temperature=temp,
-    )
-    return prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-
-def generate_services_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
-    client = prompt_utils.get_openai_client()
-
-    over_request_count = int(np.floor(int(count) * 1.4))
-
-    header = "name;proportionality;unit_price"
-    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-    ctxb = prompt_utils._ctx_block(company_name)
-
-    prompt = f"""
-    You are a finance and procurement expert. 
-    Generate a realistic ranked list of the top {over_request_count} services, licenses, and fees 
-    commonly incurred by a Denmark-only, large-scale company like {company_name}.
-
-    Each row after the header:
-    - `name` = specific service, license, or fee (e.g., "IT Consulting", "Microsoft 365 License", "Legal Retainer")
-    - Avoid vague terms like "Miscellaneous" or "Various".
-    - Include annual/temporal entries such as "Annual IT Audit".
-    - `proportionality` = share of total sales revenue
-    - `unit_price` = cost per unit (e.g., "1000"). The currency should be DKK. but only output the number. Make the value much lower than you would think.
-
-    Composition rules:
-    - Top ranks: expensive projects, enterprise retainers, major outsourcing contracts.
-    - Middle ranks: recurring professional services and departmental support.
-    - Bottom ranks: standardized low-cost licenses and administrative fees.
-    - Include a balance across IT, legal, marketing, HR, facilities, and general admin.
-
-    For context, here is a short version of the latest year-end report for {company_name}:
-    {ctxb}
-
-    {constraints}
-    """.strip()
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "system", "content": "You are a helpful data analyst and finance expert."},
-                  {"role": "user", "content": prompt}],
-        temperature=temp,
-    )
-    df_services = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_services = utils.convert_column_to_percentage(df_services, "proportionality", scale=1.0)
-    df_services["unit_price"] = df_services["unit_price"].astype(float) / 1000.0  # Scale down by factor of 1000
-    return df_services
-
-def generate_accounts_llm(company_name: str, count: int = 30, model: str = "gpt-4.1", temp: float=0.8) -> pd.DataFrame:
-    client = prompt_utils.get_openai_client()
-    over_request_count = int(np.floor(int(count) * 1.4))
-
-    header = "level3;level4;name;account_type"
-    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-    ctxb = prompt_utils._ctx_block(company_name)
-
-    prompt = f"""
-    You are a financial accountant and ERP systems expert. Generate a realistic Chart of Accounts for {company_name} (Denmark-only, large company).
-
-    Each row describes a **leaf (posting) account** at level4:
-    l1_code: General posting codes, i.e. 1000, 2000, 3000, etc 
-    account_type: "Revenue","Product Expense","Service Expense","Asset","Equity". THEY NEED TO MATCH THE BUSINESS CONTEXT.
-    l2_code: More specific posting codes, i.e. 1100, 2100, etc. 
-    l2_name: category (e.g., "Cash & Cash Equivalents", "Product COGS", "Service Delivery Costs", "Marketing")
-    account_id = the posting account id
-    name = the posting account name (concise, no codes)
-    WE NEED MANY COGS. For both products, services.     
     Rules:
-    - Ignore payroll accounts.
-    - Clearly separate **Product Expense** vs **Service Expense** under Expenses.
-    - Include a balanced P&L and Balance Sheet spread (not only P&L).
-    - Keep names realistic; avoid vague buckets like "Miscellaneous".
-
+    - Make sure there is at least one HQ / corporate finance unit.
+    - Make sure there are both commercial (sales/retail) and production/supply-side units.
+    - IDs must be unique.
     {constraints}
-    """.strip()
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "system", "content": "You are a helpful ERP and accounting assistant."},
-                  {"role": "user", "content": prompt}],
-        temperature=temp,
-    )
-    df_accounts = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_accounts["account_id"] = random_generators.generate_account_ids(df_accounts["account_type"])
-    return df_accounts
-
-def generate_departments_llm(company_name: str, count: int = 10, model: str = "gpt-4.1", temp: float = 0.8):
-    client = prompt_utils.get_openai_client()
-    header = "name;proportionality"
-    over_request_count = int(np.floor(int(count) * 1.4))
-
-    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-    ctxb = prompt_utils._ctx_block(company_name)
-
-    prompt = f"""
-    You are an HR and workforce distribution expert.
-    Generate {over_request_count} realistic departments for a Denmark-only, large company like {company_name}, each with a payroll share.
-
-    STRICT OUTPUT:
-    - Fields (header must match exactly): name;proportionality
-    - proportionality = decimal share of total payroll using a dot (e.g., 0.125)
-    - Sort rows by proportionality in descending order.
-
-    Composition rules:
-    - Prefer **general department names** (avoid seniority or role-specific titles).
-    - Include a balanced mix across core functions. Strong candidates:
-    "Operations","Production","Manufacturing","R&D","Engineering","IT","Data & Analytics",
-    "Sales","Marketing","Customer Service","Finance","Procurement","Logistics",
-    "HR","Legal & Compliance","Facilities","Quality Assurance","Strategy/PMO".
-    - Avoid hyper-granular teams (e.g., "Backend Platform Team") and avoid temporal qualifiers.
-
-    Distribution rules:
-    - Shares should be realistic for a large Danish company.
-    - Sum of proportionality should be approximately 1.0 (±0.01).
-    - Allow multiple mid-sized departments; do not make one department dominate unrealistically.
-
-    {constraints}
-    """.strip()
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "system", "content": "You are a helpful real estate and HR data assistant."},
-                  {"role": "user", "content": prompt}],
-        temperature=temp,
-    )
-    df_offices = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_offices.insert(0, "department_id", range(100, len(df_offices) + 100))
-    df_offices = utils.convert_column_to_percentage(df_offices, "proportionality", scale=1.0)
-    return df_offices
-
-def generate_customers_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
-    client = prompt_utils.get_openai_client()
-    over_request_count = int(np.floor(int(count) * 1.4))
-    header = "name;customer_segment;proportionality"
-    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-
-    prompt = f"""
-    You are a B2B sales/marketing expert. Generate {over_request_count} realistic customers for {company_name}.
-    Fields:
-    - name
-    - customer_segment: Enterprise, SME, Government, Non-profit, Retail, Wholesale, Startup
-    - proportionality: the proportionality of this customer 
-    Reflect size/segment mix implied by the context.
-
-
-    {constraints}
-    """.strip()
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "system", "content": "You are a helpful data assistant and B2B customer segmentation expert."},
-                  {"role": "user", "content": prompt}],
-        temperature=temp,
-    )
-    df_customers = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_customers.insert(0, "customer_id", range(10, len(df_customers) + 10))
-    df_customers = utils.convert_column_to_percentage(df_customers, "proportionality", scale=1.0)
-    return df_customers
-
-def generate_vendors_llm(company_name: str, count: int = 100, model: str = "gpt-4.1", temp: float = 0.8):
-    client = prompt_utils.get_openai_client()
-    over_request_count = int(np.floor(int(count) * 1.4))
-    header = "name;vendor_type;proportionality"
-    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
-    ctxb = prompt_utils._ctx_block(company_name)
-
-    prompt = f"""
-    You are a B2B procurement and supply chain expert. Generate {over_request_count} realistic vendors for {company_name}.
-    Fields:
-    - name
-    - vendor_type: Raw Materials, Equipment, IT Services, Logistics, Facilities, Office Supplies, Contract Labor, Consulting
-    - proportionality: the proportionality of this vendor.
-    Bias critical categories and concentration based on the context.
-
-    {constraints}
-    """.strip()
+    """
 
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "system", "content": "You are a helpful data assistant and B2B vendor segmentation expert."},
-                  {"role": "user", "content": prompt}],
+                  {"role": "user", "content": PROMPT_BUSINESS_UNITS}],
         temperature=temp,
     )
-    df_vendors = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
-    df_vendors.insert(0, "vendor_id", range(20, len(df_vendors) + 20))
-    df_vendors = utils.convert_column_to_percentage(df_vendors, "proportionality", scale=1.0)
-    return df_vendors
+    
+    return prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
 
+def generate_line_items_llm(company_name: str, 
+                            count: int = 100, 
+                            category_name: str = "COGS", 
+                            financial_total: float = 100000.0, 
+                            df_business_units: pd.DataFrame = pd.DataFrame(),
+                            df_parties: pd.DataFrame = pd.DataFrame(),
+                            df_accounts: pd.DataFrame = pd.DataFrame(),
+                            model: str = "gpt-4.1", 
+                            temp: float = 0.5):
+    
+    """
+    Generate COGS (Cost of Goods Sold) items for a company.
+    Each item should map to Product Expense or Service Expense accounts in the COA.
+    """
+
+    accounts_subset_csv = df_accounts.iloc[:, :2].to_csv(index=False, header=False, sep=";")
+    business_units_csv = df_business_units.iloc[:, :2].to_csv(index=False, header=False, sep=";")
+    parties_csv = df_parties.iloc[:, :3].to_csv(index=False, header=False, sep=";")
+
+    client = prompt_utils.get_openai_client()
+    over_request_count = int(np.floor(int(count) * 1.4))
+
+    header = "document_number;posting_date;company;bu_id;bu_name;party_id;party_name;account_id;account_name;item_name;proportionality;unit_price;markdown;category"
+    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
+    ctxb = prompt_utils._ctx_block(company_name)
+
+    PROMPT_LINES = f"""
+    You are generating aggregated GL driver lines for synthetic financial data.
+    This is NOT journal entries yet. This is the template that will later be exploded
+    into many detailed postings with dates, document numbers, etc.
+
+    Company: {company_name}
+    Category to generate: {category_name}   # e.g. Revenue, COGS, FixedCost, EBIT
+    Number of rows to generate (before later down-splitting): {over_request_count}
+
+    ACCOUNTS (only use these AccountKeys for this category):
+    {accounts_subset_csv}
+
+    BUSINESS UNITS (use these bu_id values only):
+    {business_units_csv}
+
+    PARTIES (customers, vendors, internal units):
+    {parties_csv}
+
+    YOUR TASK
+    Generate {over_request_count} high-level economic driver lines for the given category {category_name}.
+
+    For each item, there must be 2-3 lines. Proportionality should be split accordingly.
+    ONLY 5% of all lines must be intercompany. 
+    
+    COLUMNS AND ORDER
+    You MUST output a semicolon-separated CSV with columns in this exact order:
+
+    {header}
+    
+    Column definitions:
+    - bu_id:
+    - Must match one of the bu_id values from BUSINESS UNITS.
+    - Pick whichever BU is most natural for that driver (e.g. retail cost -> retail BU).
+
+    - party_id:
+    - Revenue:
+        - If AccountKey is an intercompany revenue account, party_id must be an INTERNAL_BU from PARTIES. IMPORTANT: MAX {over_request_count*0.05} or 5% internal sales total. 
+        - Otherwise use a CUSTOMER from PARTIES.
+    - COGS:
+        - If AccountKey is an intercompany COGS account, party_id must be an INTERNAL_BU. IMPORTANT: MAX {over_request_count*0.05} or 5% internal sales total. 
+        - Otherwise use a VENDOR from PARTIES.
+    - FixedCost:
+        - Can be blank unless there's a clear vendor/counterparty (e.g. "External legal services").
+    - EBIT (other income/expense categories):
+        - Can be blank unless it's obviously a financing/royalty counterparty.
+
+    - AccountKey:
+    - Must be copied from the provided ACCOUNTS list.
+    - Only use AccountKeys valid for this category:
+        - Revenue  → 4001–4009
+        - COGS     → 4003, 4006, 4009
+        - FixedCost→ 5001–5027
+        - EBIT     → 6001–6503
+        - BalanceSheet → 1001–3005
+
+    - AccountName:
+    - Must be copied from 'name' in the accounts list for that AccountKey.
+
+    - item_name:
+    - BE specific. Must look like a real item or service description. ex. "Consulting services", "Plastic gloves" etc.
+    - MUST NOT include dates, months, regions, shipment references, batch IDs, PO numbers, 'January', 'Copenhagen', etc.
+    - MUST NOT include "for" phrases or detailed invoice descriptions.
+
+    `proportionality` rules:
+    - `proportionality` = share of total budget
+    -  Represents how large this driver is relative to the TOTAL for this category.
+    -  Must be larger than 1
+    
+    - unit_price (sales):
+    - unit_price of the item in DKK. (Unit_price must be larger than 10Dkk and lower than 100000 Dkk) 
+
+    - markdown: 
+    - Conversion of unit_price sales to cost.
+    - E.g. 0.25 = 25% markdown on cost.
+
+    - category:
+    - Must equal {category_name} exactly, for every row.
+
+    FINAL OUTPUT RULES
+    - Output ONLY CSV rows, one row per driver line.
+    - Use semicolons as separators.
+    - Do NOT include headers.
+    - Do NOT include document_number.
+    - Do NOT include amount_DKK.
+    - Do NOT include unit_price.
+    - Do NOT include explanations, notes, or markdown fences.
+
+    {constraints}
+    """
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "You are a helpful financial analyst and ERP mapping assistant."},
+            {"role": "user", "content": PROMPT_LINES},
+        ],
+        temperature=temp,
+    )
+
+    df_lines = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
+    df_lines = utils.convert_column_to_percentage(df_lines, "proportionality", scale=1.0)
+    df_lines["annual_spend"] = np.round(df_lines["proportionality"] * financial_total, -2)
+    df_lines = df_lines.drop(columns=["account_name", "document_number", "posting_date", "proportionality", "company"])
+    return df_lines
 
 def tailor_coa_names_llm(
     df_coa: pd.DataFrame,
@@ -395,38 +244,71 @@ def tailor_coa_names_llm(
 
     return df_coa
 
-def estimate_financials_llm(company_name: str, model: str = "gpt-4o", temp: float = 0):
+
+def generate_parties(company_name: str, 
+                            count: int = 100, 
+                            df_business_units: pd.DataFrame = pd.DataFrame(),
+                            model: str = "gpt-5", 
+                            temp: float = 1):
+    
+    """
+    Generate COGS (Cost of Goods Sold) items for a company.
+    Each item should map to Product Expense or Service Expense accounts in the COA.
+    """
+    business_units_csv = df_business_units.iloc[:, :4].to_csv(index=False, header=False, sep=";")
+    
     client = prompt_utils.get_openai_client()
+    over_request_count = int(np.floor(int(count) * 1.4))
+    
+    header = "party_ID;party_name;party_type;party_country"
+    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
     ctxb = prompt_utils._ctx_block(company_name)
 
-    prompt = f"""
-Estimate the **annual total revenue + operating costs (DKK)** for {company_name}, Denmark-only.
-Return a single integer (no text, no separators). Prefer explicit figures from context; otherwise estimate from scale/industry.
+    PROMPT_PARTIES = f"""
+    You are creating master data for all counterparties in this company.
 
-For context, here is a short version of the lastest year-end report for {company_name}: 
-{ctxb}
-""".strip()
+    Company: {company_name}
 
+    Internal business units (BU master data):
+    {business_units_csv}
+
+    Task:
+    1. For each internal BU, create a row where that BU is treated as a party.
+    2. Also create external customers (distributors, retailers, channels).
+    3. Also create external vendors (materials suppliers, logistics, energy, maintenance, IT services).
+
+    Generate {over_request_count} rows TOTAL across all types. About 47.5% for custumers, 47.5% for vendors, and 5% for internal sales.
+
+    Return ONLY a semicolon-separated CSV with columns in this exact order:
+    {header}
+
+    Where:
+    - party_ID:
+    - INTERNAL_BU => bu_id for the party. Can be found in the provided CSV. - MAX {over_request_count*0.05} or 5% internal sales total. 
+    - CUSTOMER    => "CUS###"
+    - VENDOR      => "VEN###"
+    - party_Type is exactly one of [INTERNAL_BU, CUSTOMER, VENDOR]
+    - INTERNAL_BU rows must include ALL internal business units given above.
+    - IF INTERNAL_BU: It cannot be identical to bu_id on the same line. They must sell between units. 
+    - party_name for INTERNAL_BU must match BU_Name exactly.
+    - party_country: country of origin of the party. 
+    - No commentary, no markdown, only CSV.
+
+    {constraints}
+
+    """
     response = client.chat.completions.create(
         model=model,
-        messages=[{"role": "system", "content": "You are a helpful payroll analyst."},
-                  {"role": "user", "content": prompt}],
+        messages=[
+            {"role": "system", "content": "You are a helpful financial analyst and ERP mapping assistant."},
+            {"role": "user", "content": PROMPT_PARTIES},
+        ],
         temperature=temp,
     )
-    total_finances = int(response.choices[0].message.content)
 
-    payroll  = int(total_finances * 0.35)
-    products = int(total_finances * 0.45)
-    services = int(total_finances * 0.15)
-    overhead = int(total_finances * 0.05)
+    df_parties = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
 
-    return {
-        "total_finances": total_finances,
-        "payroll": payroll,
-        "products": products,
-        "services": services,
-        "overhead": overhead
-    }
+    return df_parties
 
 def estimate_mean_pay_llm(company_name: str, model: str = "gpt-4o", temp: float = 0):
     client = prompt_utils.get_openai_client()
@@ -447,3 +329,69 @@ def estimate_mean_pay_llm(company_name: str, model: str = "gpt-4o", temp: float 
         temperature=temp,
     )
     return int(response.choices[0].message.content)
+
+
+def generate_roles_and_departments_llm(company_name: str, 
+                       count: int = 100, 
+                       model: str = "gpt-4.1", 
+                       df_business_units: pd.DataFrame = pd.DataFrame(),
+                       temp: float = 0.9):
+    client = prompt_utils.get_openai_client()
+
+    over_request_count = int(np.floor(int(count) * 1.4))
+
+    header = "role_name;department;department_id;bu_id"
+    constraints = prompt_utils.get_standard_constraints(header, over_request_count)
+    ctxb = prompt_utils._ctx_block(company_name)
+
+    business_units_csv = df_business_units.iloc[:, :2].to_csv(index=False, header=False, sep=";")
+    
+    prompt = f"""
+    You are an HR and industry expert. Generate {over_request_count} employee roles and departments for a large company like {company_name}.
+
+    Internal business units (BU master data):
+    {business_units_csv}
+    
+    
+    Output format:
+    - CSV with columns: {header}
+    - Duplicates are ALLOWED and ENCOURAGED for common roles.
+    - Rank by highest paid roles first. Any duplicates should be together. 
+    
+    COLS: 
+    - role_name: realistic job title. Must include CEO and CFO.
+    - department: name of the department the role belongs to. Ex. Data Scientist -> R&D. Must be an actual realistic department name.
+    - department_id: stable ID for the department, e.g. "DPT001", "DPT002".
+    - bu_id: assign each role to one of the bu_id's from the internal business units list. Ex. CFO -> HQ BU.
+
+    Distribution requirements:
+    - 60–80% must be generic base titles without seniority modifiers, e.g.:
+    Software Engineer, Data Analyst, Consultant, Accountant, Sales Representative,
+    Customer Support Specialist, Marketing Specialist, HR Generalist, Operations Coordinator,
+    Procurement Specialist, Warehouse Associate, Project Manager, Business Analyst,
+    QA Engineer, IT Support Specialist.
+    - ≤10% may include seniority prefixes (Senior, Lead, Director, Head, Chief). Prefer none.
+    - ≤3 entries total may be C‑level (CEO/CFO/CTO/etc.) or VP.
+    - Avoid hyper‑granular one-offs; repetition of core roles is preferred.
+
+    Style constraints:
+    - Avoid prefixes: Senior, Lead, Director, Head, Chief, Principal, Staff — unless within the ≤10% cap.
+    - Avoid internship/student titles.
+    - Keep roles realistic for Denmark-only operations; no global country managers.
+
+    For context, here is a short version of the lastest year-end report for {company_name}:
+    {ctxb}
+
+    {constraints}
+    """.strip()
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "system", "content": "You are a helpful data analyst and HR expert."},
+                  {"role": "user", "content": prompt}],
+        temperature=temp,
+    )
+    df_roles = prompt_utils.parse_and_truncate_csv(response.choices[0].message.content, count)
+    df_departments = df_roles.iloc[:,-3:].drop_duplicates("department").reset_index(drop=True)
+    df_roles = df_roles.drop(columns=["department", "bu_id"])
+    return df_roles, df_departments

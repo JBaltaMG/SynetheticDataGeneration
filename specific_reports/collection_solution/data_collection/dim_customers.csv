@@ -1,0 +1,58 @@
+customer_id,customer_name,customer_type,customer_country,terms_id,CUSTOMERNUMBER,SFBusinessArea,CCARCUSTOMERNUMBER,Customer Email,creditblock,CREDITLIMITLOCALCURRENCY,DunsNumber,DNB_CL,PAYMENTTERM,FACTORINGCUSTOMER,CustomerSegment,RiskCategoryText,CUSTOMERCREATIONDATE,RTEXT,CLERKPHONE
+CUS003,Target,CUSTOMER,United States,6,CUS003,Certificates,CCAR-000000,cus003@example.com,No,73273.79,318520688,B,Net 60,Yes,Enterprise,Low,2021-10-19,OK,+4569907857
+CUS004,Amazon,CUSTOMER,United States,4,CUS004,Retail,CCAR-000001,cus004@example.com,No,67303.82,736028516,B,Net 60,Yes,SME,Medium,2022-01-20,Escalated,+4599569119
+CUS018,Kmart Australia,CUSTOMER,Australia,3,CUS018,Feedstock,CCAR-000002,cus018@example.com,No,41977.74,249638768,B,Net 30,No,Corporate,Low,2021-08-10,Escalated,+4591021806
+CUS020,Toys R Us Japan,CUSTOMER,Japan,4,CUS020,Certificates,CCAR-000003,cus020@example.com,No,64899.47,258428240,A,Net 30,Yes,SME,Medium,2022-10-29,OK,+4527468810
+CUS013,MyToys.de,CUSTOMER,Germany,7,CUS013,Certificates,CCAR-000004,cus013@example.com,Yes,50634.15,172073914,A,Net 45,Yes,SME,Low,2023-01-02,Review ongoing,+4521635156
+CUS027,Barnes & Noble,CUSTOMER,United States,3,CUS027,Retail,CCAR-000005,cus027@example.com,No,97736.97,570575216,B,Net 30,No,Corporate,Medium,2022-08-11,Escalated,+4545301054
+CUS034,Toys R Us Singapore,CUSTOMER,Singapore,7,CUS034,Feedstock,CCAR-000006,cus034@example.com,No,87913.11,111506305,A,Net 45,Yes,SME,Low,2021-05-06,OK,+4597264088
+CUS030,Macy's,CUSTOMER,United States,3,CUS030,Feedstock,CCAR-000007,cus030@example.com,No,77738.36,791648731,A,Net 30,No,Enterprise,Low,2022-07-01,OK,+4525001045
+CUS037,Parkson,CUSTOMER,Malaysia,4,CUS037,Certificates,CCAR-000008,cus037@example.com,Yes,38878.79,321099573,C,Net 45,Yes,SME,Low,2023-04-12,Review ongoing,+4591572282
+CUS031,Galeries Lafayette,CUSTOMER,France,3,CUS031,Gas,CCAR-000009,cus031@example.com,No,40485.47,241951830,A,Net 60,No,Corporate,Medium,2023-04-06,Escalated,+4548267184
+CUS041,Sears Mexico,CUSTOMER,Mexico,3,CUS041,Certificates,CCAR-000010,cus041@example.com,No,23234.69,223035620,A,Net 30,No,Corporate,Low,2020-06-18,Escalated,+4524345760
+CUS036,Central Department Store,CUSTOMER,Thailand,2,CUS036,Certificates,CCAR-000011,cus036@example.com,No,76853.03,508327903,C,Net 30,No,Corporate,High,2022-08-03,OK,+4543930984
+CUS033,Coop,CUSTOMER,Switzerland,5,CUS033,Certificates,CCAR-000012,cus033@example.com,No,28871.27,779746784,C,Net 30,No,SME,Low,2022-03-05,OK,+4556805730
+CUS039,Liverpool,CUSTOMER,Mexico,5,CUS039,Certificates,CCAR-000013,cus039@example.com,No,55146.92,677034624,A,Net 30,Yes,Corporate,Low,2021-09-25,Review ongoing,+4558019582
+CUS048,Toys R Us India,CUSTOMER,India,6,CUS048,Retail,CCAR-000014,cus048@example.com,No,36137.54,876124029,B,Net 45,No,Corporate,High,2020-01-29,Review ongoing,+4578720660
+CUS049,FirstCry,CUSTOMER,India,6,CUS049,Feedstock,CCAR-000015,cus049@example.com,No,91661.09,722318721,A,Net 30,No,SME,Low,2023-04-03,Escalated,+4575229238
+CUS040,La Comer,CUSTOMER,Mexico,8,CUS040,Retail,CCAR-000016,cus040@example.com,No,58029.62,232863028,A,Net 60,No,Enterprise,Low,2020-12-04,Escalated,+4538100699
+CUS050,Toys R Us South Africa,CUSTOMER,South Africa,8,CUS050,Retail,CCAR-000017,cus050@example.com,No,65062.05,949472217,B,Net 60,No,SME,Low,2021-05-14,OK,+4521722320
+CUS052,Toys Centre Russia,CUSTOMER,Russia,8,CUS052,Retail,CCAR-000018,cus052@example.com,No,75641.29,327174085,B,Net 30,Yes,Corporate,Low,2021-05-25,Escalated,+4533298372
+CUS053,Detsky Mir,CUSTOMER,Russia,2,CUS053,Certificates,CCAR-000019,cus053@example.com,No,31146.52,498129398,B,Net 60,No,Corporate,Medium,2020-08-04,Review ongoing,+4549702914
+CUS054,Toys R Us Brazil,CUSTOMER,Brazil,6,CUS054,Gas,CCAR-000020,cus054@example.com,No,68353.39,839316547,A,Net 30,No,SME,Low,2023-03-01,Review ongoing,+4551657524
+CUS055,Ri Happy,CUSTOMER,Brazil,7,CUS055,Feedstock,CCAR-000021,cus055@example.com,Yes,63187.29,447262390,B,Net 30,No,Enterprise,Low,2022-12-29,OK,+4551206052
+CUS056,Toys R Us Turkey,CUSTOMER,Turkey,8,CUS056,Gas,CCAR-000022,cus056@example.com,No,36244.9,149905866,B,Net 60,No,Corporate,Low,2021-03-20,Review ongoing,+4550413513
+CUS058,Toys R Us UAE,CUSTOMER,United Arab Emirates,8,CUS058,Retail,CCAR-000023,cus058@example.com,No,95428.29,613911991,C,Net 30,No,Corporate,Medium,2022-05-25,Review ongoing,+4545329097
+CUS059,Virgin Megastore,CUSTOMER,United Arab Emirates,4,CUS059,Retail,CCAR-000024,cus059@example.com,No,67909.24,328233509,B,Net 60,No,Corporate,Low,2020-06-15,Review ongoing,+4532243026
+CUS024,Argos,CUSTOMER,United Kingdom,1,CUS024,Gas,CCAR-000025,cus024@example.com,No,75582.79,605874711,B,Net 45,No,SME,Low,2020-03-31,Review ongoing,+4576024141
+CUS023,Hamleys,CUSTOMER,United Kingdom,7,CUS023,Gas,CCAR-000026,cus023@example.com,No,90437.43,668249203,A,Net 30,No,Corporate,Medium,2021-12-14,OK,+4595356616
+CUS026,FAO Schwarz,CUSTOMER,United States,8,CUS026,Gas,CCAR-000027,cus026@example.com,No,69948.32,673505733,A,Net 45,Yes,Enterprise,Medium,2020-02-08,OK,+4537864557
+CUS057,LC Waikiki,CUSTOMER,Turkey,8,CUS057,Retail,CCAR-000028,cus057@example.com,No,43650.69,739196117,C,Net 60,No,Corporate,Low,2023-02-23,Escalated,+4526195200
+BU013,Lego Online Store,INTERNAL_BU,Denmark,8,BU013,Retail,CCAR-000029,bu013@example.com,No,28439.54,253651082,C,Net 45,No,Corporate,Low,2020-06-21,Review ongoing,+4591086130
+BU013,Lego Online Store,INTERNAL_BU,Denmark,1,BU013,Feedstock,CCAR-000030,bu013@example.com,No,56522.77,385322750,A,Net 45,Yes,Enterprise,Low,2021-10-14,Escalated,+4573363404
+BU013,Lego Online Store,INTERNAL_BU,Denmark,1,BU013,Feedstock,CCAR-000031,bu013@example.com,No,37475.23,487791599,A,Net 60,Yes,Corporate,Low,2022-01-23,OK,+4562489277
+CUS009,El Corte Inglés,CUSTOMER,Spain,2,CUS009,Retail,CCAR-000032,cus009@example.com,No,53320.8,307640719,A,Net 45,No,SME,Low,2022-12-17,OK,+4533832640
+BU003,Lego HQ,INTERNAL_BU,Denmark,7,BU003,Gas,CCAR-000033,bu003@example.com,No,90662.42,466371424,A,Net 45,No,SME,Low,2021-04-20,OK,+4586360176
+BU003,Lego HQ,INTERNAL_BU,Denmark,2,BU003,Gas,CCAR-000034,bu003@example.com,No,45947.6,747326920,C,Net 60,Yes,SME,Low,2021-03-31,OK,+4550061031
+BU003,Lego HQ,INTERNAL_BU,Czech Republic,3,BU003,Feedstock,CCAR-000035,bu003@example.com,No,29767.04,403998075,A,Net 45,No,Enterprise,Low,2022-04-08,OK,+4587201057
+BU007,Lego HQ,INTERNAL_BU,Denmark,1,BU007,Retail,CCAR-000036,bu007@example.com,No,48503.83,135213498,A,Net 60,No,Corporate,High,2022-06-13,OK,+4581902171
+BU007,Lego HQ,INTERNAL_BU,Denmark,4,BU007,Feedstock,CCAR-000037,bu007@example.com,No,92546.28,901090885,A,Net 45,No,SME,Medium,2022-10-21,OK,+4585812633
+BU007,Lego HQ,INTERNAL_BU,Czech Republic,6,BU007,Feedstock,CCAR-000038,bu007@example.com,No,41770.58,941009615,A,Net 60,No,Enterprise,Low,2021-01-21,Review ongoing,+4552043445
+BU007,Lego HQ,INTERNAL_BU,United States,4,BU007,Certificates,CCAR-000039,bu007@example.com,No,71815.21,275127900,A,Net 60,Yes,Corporate,High,2020-12-13,Escalated,+4556213003
+BU009,Lego HQ,INTERNAL_BU,Denmark,6,BU009,Certificates,CCAR-000040,bu009@example.com,Yes,20041.63,565397506,B,Net 45,Yes,Enterprise,Medium,2020-07-08,OK,+4536689088
+BU009,Lego HQ,INTERNAL_BU,Denmark,1,BU009,Certificates,CCAR-000041,bu009@example.com,No,48205.51,490382227,B,Net 45,No,SME,Low,2021-05-19,Review ongoing,+4527102173
+BU009,Lego HQ,INTERNAL_BU,Denmark,1,BU009,Gas,CCAR-000042,bu009@example.com,No,44382.5,426241019,A,Net 45,No,SME,Low,2022-04-03,Review ongoing,+4565388538
+BU009,Lego HQ,INTERNAL_BU,United States,1,BU009,Retail,CCAR-000043,bu009@example.com,No,33172.47,862633146,A,Net 30,Yes,SME,Low,2022-07-17,Escalated,+4558720111
+BU015,Lego HQ,INTERNAL_BU,Denmark,2,BU015,Retail,CCAR-000044,bu015@example.com,Yes,62727.15,171244178,A,Net 30,No,Enterprise,Low,2022-07-22,OK,+4568515838
+BU015,Lego HQ,INTERNAL_BU,Denmark,7,BU015,Retail,CCAR-000045,bu015@example.com,No,58786.4,151939266,B,Net 30,No,Enterprise,Medium,2023-02-14,Escalated,+4581356950
+BU001,Lego Billund Factory,INTERNAL_BU,Denmark,6,BU001,Retail,CCAR-000046,bu001@example.com,No,75394.88,355555070,A,Net 60,No,SME,Low,2020-05-13,OK,+4542064334
+BU001,Lego Billund Factory,INTERNAL_BU,Denmark,7,BU001,Certificates,CCAR-000047,bu001@example.com,No,41552.99,523767187,A,Net 45,Yes,Enterprise,Low,2020-02-27,Review ongoing,+4534681316
+BU008,Lego Billund Factory,INTERNAL_BU,Denmark,2,BU008,Gas,CCAR-000048,bu008@example.com,No,39530.04,723512415,C,Net 60,Yes,SME,High,2021-11-15,Review ongoing,+4581681549
+BU008,Lego Billund Factory,INTERNAL_BU,Denmark,2,BU008,Gas,CCAR-000049,bu008@example.com,No,33463.28,513075142,A,Net 30,No,SME,Medium,2021-11-02,Review ongoing,+4591209537
+BU008,Lego Billund Factory,INTERNAL_BU,Czech Republic,5,BU008,Certificates,CCAR-000050,bu008@example.com,No,37501.14,848898099,C,Net 45,No,Corporate,Low,2020-06-21,Review ongoing,+4568840101
+BU008,Lego Billund Factory,INTERNAL_BU,United States,4,BU008,Gas,CCAR-000051,bu008@example.com,No,64648.16,918291176,A,Net 60,No,Enterprise,High,2022-03-25,Escalated,+4582468859
+BU002,Lego Billund Factory,INTERNAL_BU,United States,4,BU002,Certificates,CCAR-000052,bu002@example.com,No,52306.89,920071328,A,Net 45,No,SME,High,2023-03-18,OK,+4570305761
+BU005,Lego Kladno Factory,INTERNAL_BU,Czech Republic,3,BU005,Retail,CCAR-000053,bu005@example.com,No,25191.38,733816999,B,Net 60,No,SME,High,2020-03-20,OK,+4549367077
+BU006,Lego North America Sales,INTERNAL_BU,Denmark,8,BU006,Certificates,CCAR-000054,bu006@example.com,No,40313.23,687273855,B,Net 45,No,Enterprise,Low,2022-06-04,Escalated,+4581580593
+BU010,Lego Singapore Distribution Hub,INTERNAL_BU,Denmark,2,BU010,Retail,CCAR-000055,bu010@example.com,No,39750.09,176241446,B,Net 30,Yes,Corporate,Medium,2020-07-21,OK,+4570011985
+BU010,Lego Singapore Distribution Hub,INTERNAL_BU,United States,6,BU010,Retail,CCAR-000056,bu010@example.com,No,75704.34,901999185,A,Net 30,No,Corporate,Low,2022-02-02,Review ongoing,+4594062621
