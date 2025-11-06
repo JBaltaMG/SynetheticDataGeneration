@@ -16,6 +16,7 @@ __pycache__/
 
 # Ignore all CSV output files
 data/outputdata/**
+specific_reports/collection_solution/data_collection/**
 
 # Ignore all input line_id mapping
 #data/inputdata/line_id_accounts.csv
