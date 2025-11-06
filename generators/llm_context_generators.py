@@ -130,16 +130,11 @@ def generate_context_numbers_llm(
         data = {
             "company_name": company_name,
             "count_employee": 300,
-            "count_department": 10,
-            "count_customer": 250,
-            "count_product": 50,
-            "count_procurement": 80,
-            "count_service": 40,
-            "count_account": 140,
-            "estimated_revenue": 1_600_000_000,
-            "estimated_product": 560_000_000,   # 35%
-            "estimated_service": 224_000_000,   # 14%
-            "estimated_overhead": 96_000_000    # 6%
+            "count_parties": 100,
+            "count_revenue_items": 150,
+            "count_cogs_items": 150,
+            "count_others": 100,
+            "count_bus": 140,
         }
 
     data["company_name"] = company_name
